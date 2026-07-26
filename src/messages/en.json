@@ -1,0 +1,289 @@
+{
+  "meta": {
+    "siteName": "Studiva",
+    "tagline": "Germany Education Consultancy"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "programs": "Programs",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Free Consultation"
+  },
+  "footer": {
+    "description": "At Studiva, we focus solely on Germany: from your uni-assist application to your visa, blocked account, and Anmeldung, we're with you at every step of your bachelor's, master's, or dual studium journey.",
+    "quickLinks": "Quick Links",
+    "servicesTitle": "Our Services",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved.",
+    "address": "Levent, Buyukdere St. No:201, 34394 Sisli/Istanbul",
+    "phone": "+90 532 555 01 01",
+    "email": "info@studiva.com.tr"
+  },
+  "home": {
+    "hero": {
+      "badge": "Founded in 2026, exclusively focused on Germany",
+      "title": "Your Bachelor's, Master's, or Dual Studium Dream in Germany, Backed by Studiva",
+      "subtitle": "From your uni-assist application to your blocked account, language exam prep to partner-company matching, our Germany-focused advisors are with you every step of the way.",
+      "ctaPrimary": "Get a Free Consultation",
+      "ctaSecondary": "Explore Programs",
+      "stats": [
+        { "value": "100%", "label": "Admission Guarantee" },
+        { "value": "420+", "label": "Higher Education Institutions in Germany" },
+        { "value": "€0", "label": "Public University Tuition in Most States" },
+        { "value": "16", "label": "Federal States to Choose From" }
+      ]
+    },
+    "services": {
+      "title": "End-to-End Consultancy, Built for Germany",
+      "subtitle": "Bachelor's, master's, or dual studium; we build a roadmap tailored to you.",
+      "linkText": "View all services",
+      "items": [
+        {
+          "icon": "graduation-cap",
+          "title": "Bachelor's, Master's & Dual Studium Selection",
+          "description": "Based on your academic background and goals, we match you with the right program and city among Universitäten, Fachhochschulen, and Duale Hochschulen."
+        },
+        {
+          "icon": "file-text",
+          "title": "uni-assist Application Consultancy",
+          "description": "We manage your entire uni-assist application, motivation letter, and document equivalency (Anabin) process from start to finish."
+        },
+        {
+          "icon": "briefcase",
+          "title": "Dual Studium Consultancy",
+          "description": "We support you step by step in finding a partner company and navigating the contract process at institutions like DHBW, IU, and FOM."
+        },
+        {
+          "icon": "stamp",
+          "title": "Visa & Blocked Account Consultancy",
+          "description": "We help you complete your national visa application, open your blocked account (Sperrkonto), and choose health insurance."
+        },
+        {
+          "icon": "languages",
+          "title": "Language Exam & Studienkolleg Prep",
+          "description": "We provide guidance for TestDaF/DSH/Goethe exam prep and Studienkolleg applications where required."
+        },
+        {
+          "icon": "plane",
+          "title": "Housing, Anmeldung & Orientation",
+          "description": "We organize housing applications, city registration (Anmeldung), and post-arrival orientation."
+        }
+      ]
+    },
+    "programs": {
+      "title": "Three Paths in Germany: Bachelor's, Master's, Dual Studium",
+      "subtitle": "We help you choose the right starting point for your academic profile.",
+      "linkText": "View all programs"
+    },
+    "process": {
+      "title": "Studying in Germany in 4 Steps",
+      "subtitle": "We follow a simple, transparent process.",
+      "steps": [
+        {
+          "title": "Free Consultation",
+          "description": "We assess your goals, budget, and academic profile together."
+        },
+        {
+          "title": "Program & University/Company Selection",
+          "description": "We present the best-fit institution and city options for a bachelor's, master's, or dual studium track."
+        },
+        {
+          "title": "uni-assist, Visa & Blocked Account",
+          "description": "We complete the application, national visa, and blocked account process together with you."
+        },
+        {
+          "title": "Preparation & Departure",
+          "description": "We organize Anmeldung, housing, and final pre-flight preparations."
+        }
+      ]
+    },
+    "whyUs": {
+      "title": "Why Studiva?",
+      "items": [
+        {
+          "title": "Germany Is All We Do",
+          "description": "Not a generic study-abroad agency; a team specialized solely in Germany's higher education system."
+        },
+        {
+          "title": "Admission Guarantee",
+          "description": "We offer an admission guarantee to students who complete our process in full."
+        },
+        {
+          "title": "A New, Transparent Team",
+          "description": "As a company founded in 2026, we offer a concrete, traceable process instead of inflated numbers."
+        },
+        {
+          "title": "End-to-End Support",
+          "description": "We stay with you from the first call to your Anmeldung appointment in Germany."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Start Your Journey to Germany Today",
+      "subtitle": "Let's build your personalized roadmap in a free 15-minute call.",
+      "button": "Book an Appointment"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive consultancy at every stage of your bachelor's, master's, or dual studium journey in Germany."
+    },
+    "items": [
+      {
+        "icon": "graduation-cap",
+        "title": "Bachelor's, Master's & Dual Studium Selection",
+        "description": "Based on your academic background, budget, and career goals, we identify the best-fit program and city among Universität, Fachhochschule, and Duale Hochschule options.",
+        "points": ["Bachelor's vs. master's vs. dual studium comparison", "Equivalency pre-check against the Anabin database", "Admission chance analysis"]
+      },
+      {
+        "icon": "file-text",
+        "title": "uni-assist Application Consultancy",
+        "description": "From filling out the uni-assist application to your motivation letter (Motivationsschreiben) and reference letters, we manage your entire documentation process professionally.",
+        "points": ["Motivation letter (Motivationsschreiben) editing", "Document translation and notarization guidance", "uni-assist application tracking"]
+      },
+      {
+        "icon": "briefcase",
+        "title": "Dual Studium Consultancy",
+        "description": "In the dual studium model, which alternates theory and practice in three-month cycles, we provide end-to-end support for finding a partner company and applying.",
+        "points": ["Partner company research and matching", "Application guidance for institutions like DHBW, IU, and FOM", "Contract and internship process support"]
+      },
+      {
+        "icon": "stamp",
+        "title": "Visa & Blocked Account Consultancy",
+        "description": "We strengthen your national (Type D) visa application with document checks, blocked account (Sperrkonto) setup, and appointment scheduling.",
+        "points": ["Blocked account (Sperrkonto) setup support", "Document checklist and appointment scheduling", "Health insurance selection"]
+      },
+      {
+        "icon": "languages",
+        "title": "Language Exam & Studienkolleg Prep",
+        "description": "We provide end-to-end support for TestDaF/DSH/Goethe exam prep and Studienkolleg applications for students who don't yet qualify for direct admission.",
+        "points": ["TestDaF/DSH/Goethe prep guidance", "Studienkolleg application support", "Language course enrollment"]
+      },
+      {
+        "icon": "plane",
+        "title": "Housing, Anmeldung & Orientation",
+        "description": "From dorm or housing applications to city registration (Anmeldung), airport pickup, and post-arrival orientation, we organize all the practical details.",
+        "points": ["Dorm/housing application support", "Anmeldung (residence registration) guidance", "Airport pickup and orientation"]
+      }
+    ],
+    "cta": {
+      "title": "Not Sure Which Service You Need?",
+      "subtitle": "Let's determine the right service package for you together in a free consultation.",
+      "button": "Schedule a Free Call"
+    }
+  },
+  "programs": {
+    "hero": {
+      "title": "Three Paths to Study in Germany",
+      "subtitle": "Based on your academic background and goals, we help you choose between a bachelor's, master's, or dual studium track."
+    },
+    "items": [
+      {
+        "name": "Bachelor Studium",
+        "flag": "🎓",
+        "description": "Undergraduate study at one of Germany's 420+ state-recognized higher education institutions; tuition-free in most federal states.",
+        "highlights": ["€0 tuition in most states (€1,500/semester for non-EU students in Baden-Württemberg)", "Direct or restricted admission based on your YKS score, otherwise Studienkolleg", "Equivalency check via the Anabin database"]
+      },
+      {
+        "name": "Master Studium",
+        "flag": "🎯",
+        "description": "With your bachelor's degree and relevant qualifications, hundreds of English- or German-taught programs at a Universität or Fachhochschule.",
+        "highlights": ["Hundreds of English-taught master's programs", "Research-focused (Universität) or applied (Fachhochschule) options", "Centralized application tracking via uni-assist"]
+      },
+      {
+        "name": "Dual Studium",
+        "flag": "💼",
+        "description": "University in theory, a partner company in practice; a three-month rotating model that lets you study while working.",
+        "highlights": ["Monthly salary from your partner company, tuition-free in most programs", "24+ campus options at institutions like DHBW, IU, and FOM", "Applications are typically made directly to the partner company"]
+      }
+    ],
+    "cta": {
+      "title": "Let's Find the Right Path Together",
+      "subtitle": "We recommend the best starting point for your bachelor's, master's, or dual studium journey based on your academic profile.",
+      "button": "Get Program Guidance"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Studiva",
+      "subtitle": "Founded in 2026 for students who want to study in Germany, we're a consultancy focused exclusively on Germany."
+    },
+    "story": {
+      "title": "Our Story",
+      "paragraphs": [
+        "Studiva was founded in Istanbul in 2026 on the idea that study-abroad consultancy shouldn't spread thin across dozens of countries — it should go deep on one: Germany.",
+        "We're not a generic study-abroad agency; we're a team focused solely on Germany's higher education system — bachelor's, master's, and dual studium — closely following uni-assist procedures, Anabin equivalency rules, and blocked account requirements.",
+        "As a newly founded company, we offer a concrete commitment instead of inflated numbers: an admission guarantee when you complete our process in full."
+      ]
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To ensure every student reaches the German university or dual studium program best suited to their academic profile through a transparent, trustworthy process backed by an admission guarantee."
+    },
+    "values": {
+      "title": "Our Values",
+      "items": [
+        {
+          "title": "Transparency",
+          "description": "We always provide clear and honest information about the process, costs (blocked account, tuition, insurance), and possibilities."
+        },
+        {
+          "title": "Personalized Approach",
+          "description": "We build a distinct strategy for every student across bachelor's, master's, and dual studium tracks."
+        },
+        {
+          "title": "Germany Expertise",
+          "description": "Our advisors closely follow current visa regulations, uni-assist procedures, and Anabin equivalency rules."
+        },
+        {
+          "title": "Ongoing Support",
+          "description": "We stay with you from the very first call until your Anmeldung appointment in Germany."
+        }
+      ]
+    },
+    "stats": [
+      { "value": "2026", "label": "Founded" },
+      { "value": "420+", "label": "Higher Education Institutions in Germany" },
+      { "value": "100%", "label": "Admission Guarantee" },
+      { "value": "16", "label": "Federal States" }
+    ]
+  },
+  "contact": {
+    "hero": {
+      "title": "Get in Touch",
+      "subtitle": "Fill out the form or book directly via WhatsApp, and one of our expert advisors will get back to you shortly."
+    },
+    "info": {
+      "title": "Contact Information",
+      "addressLabel": "Address",
+      "address": "Levent, Buyukdere St. No:201, 34394 Sisli/Istanbul",
+      "phoneLabel": "Phone",
+      "phone": "+90 532 555 01 01",
+      "emailLabel": "Email",
+      "email": "info@studiva.com.tr",
+      "hoursLabel": "Working Hours",
+      "hours": "Monday - Friday: 9:00 AM - 6:30 PM"
+    },
+    "scheduling": {
+      "title": "Book a Slot Instantly",
+      "description": "Prefer not to fill out a form? Request a free 15-minute consultation directly via WhatsApp in a few seconds.",
+      "button": "Book via WhatsApp"
+    },
+    "form": {
+      "title": "Free Consultation Request",
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "program": "Program of Interest",
+      "programPlaceholder": "Select",
+      "programOptions": ["Bachelor Studium", "Master Studium", "Dual Studium", "Not Sure Yet"],
+      "message": "Your Message",
+      "messagePlaceholder": "Tell us about your target program, university, or any questions you have.",
+      "submit": "Submit",
+      "disclaimer": "This form is currently for demo purposes only; submission is not connected to a server. For a fast reply, message us on WhatsApp."
+    }
+  }
+}

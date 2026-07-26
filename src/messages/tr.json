@@ -1,0 +1,289 @@
+{
+  "meta": {
+    "siteName": "Studiva",
+    "tagline": "Almanya Eğitim Danışmanlığı"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "programs": "Programlar",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "cta": "Ücretsiz Danışmanlık"
+  },
+  "footer": {
+    "description": "Studiva olarak sadece Almanya'ya odaklanıyoruz: bachelor, master ve dual studium yolculuğunuzun uni-assist başvurusundan vizeye, bloke hesaptan Anmeldung'a kadar her adımında yanınızdayız.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "servicesTitle": "Hizmetlerimiz",
+    "contactTitle": "İletişim",
+    "rights": "Tüm hakları saklıdır.",
+    "address": "Levent, Büyükdere Cd. No:201, 34394 Şişli/İstanbul",
+    "phone": "+90 532 555 01 01",
+    "email": "info@studiva.com.tr"
+  },
+  "home": {
+    "hero": {
+      "badge": "2026'da kurulan, sadece Almanya'ya özel danışmanlık",
+      "title": "Almanya'da Bachelor, Master ve Dual Studium Hayaliniz Studiva Güvencesiyle Gerçek Olsun",
+      "subtitle": "uni-assist başvurunuzdan bloke hesabınıza, dil sınavı hazırlığınızdan partner şirket eşleştirmenize kadar Almanya'ya özel uzman danışmanlarımızla yanınızdayız.",
+      "ctaPrimary": "Ücretsiz Ön Görüşme Al",
+      "ctaSecondary": "Programları İncele",
+      "stats": [
+        { "value": "%100", "label": "Kabul Garantisi" },
+        { "value": "420+", "label": "Almanya'da Yükseköğretim Kurumu" },
+        { "value": "€0", "label": "Çoğu Eyalette Devlet Üniversite Harcı" },
+        { "value": "16", "label": "Eyalette Kampüs Seçeneği" }
+      ]
+    },
+    "services": {
+      "title": "Almanya'ya Özel Uçtan Uca Danışmanlık",
+      "subtitle": "Bachelor, master ya da dual studium; her öğrenci için ayrı bir yol haritası çıkarıyoruz.",
+      "linkText": "Tüm hizmetleri gör",
+      "items": [
+        {
+          "icon": "graduation-cap",
+          "title": "Bachelor, Master ve Dual Studium Seçimi",
+          "description": "Akademik geçmişiniz ve hedeflerinize göre Universität, Fachhochschule ya da Duale Hochschule arasından size en uygun program ve şehri belirliyoruz."
+        },
+        {
+          "icon": "file-text",
+          "title": "uni-assist Başvuru Danışmanlığı",
+          "description": "uni-assist üzerinden başvuru sürecinizi, motivasyon mektubunuzu ve belge denkliğinizi (Anabin) baştan sona yönetiyoruz."
+        },
+        {
+          "icon": "briefcase",
+          "title": "Dual Studium (Duales Studium) Danışmanlığı",
+          "description": "DHBW, IU ve FOM gibi kurumlarda partner şirket bulma ve sözleşme sürecinde adım adım destek sağlıyoruz."
+        },
+        {
+          "icon": "stamp",
+          "title": "Vize ve Bloke Hesap Danışmanlığı",
+          "description": "Ulusal vize başvurunuzu, bloke hesap (Sperrkonto) açılışınızı ve sağlık sigortası seçiminizi birlikte tamamlıyoruz."
+        },
+        {
+          "icon": "languages",
+          "title": "Dil Sınavı ve Studienkolleg Hazırlığı",
+          "description": "TestDaF/DSH/Goethe sınav hazırlığı ve gerekiyorsa Studienkolleg başvurunuzda yönlendirme sağlıyoruz."
+        },
+        {
+          "icon": "plane",
+          "title": "Konaklama, Anmeldung ve Oryantasyon",
+          "description": "Yurt/ev başvurusu, şehre kayıt (Anmeldung) ve varış sonrası oryantasyon organizasyonunu üstleniyoruz."
+        }
+      ]
+    },
+    "programs": {
+      "title": "Almanya'da Üç Yol: Bachelor, Master, Dual Studium",
+      "subtitle": "Akademik profilinize göre en uygun başlangıç noktasını birlikte seçiyoruz.",
+      "linkText": "Tüm programları gör"
+    },
+    "process": {
+      "title": "4 Adımda Almanya'da Eğitim",
+      "subtitle": "Basit ve şeffaf bir süreç izliyoruz.",
+      "steps": [
+        {
+          "title": "Ücretsiz Ön Görüşme",
+          "description": "Hedeflerinizi, bütçenizi ve akademik profilinizi birlikte değerlendiriyoruz."
+        },
+        {
+          "title": "Program ve Üniversite/Şirket Seçimi",
+          "description": "Bachelor, master ya da dual studium için en uygun kurum ve şehir seçeneklerini sunuyoruz."
+        },
+        {
+          "title": "uni-assist, Vize ve Bloke Hesap",
+          "description": "Başvuru, ulusal vize ve bloke hesap işlemlerini sizinle birlikte tamamlıyoruz."
+        },
+        {
+          "title": "Hazırlık ve Uçuş",
+          "description": "Anmeldung, konaklama ve uçuş öncesi son hazırlıkları organize ediyoruz."
+        }
+      ]
+    },
+    "whyUs": {
+      "title": "Neden Studiva?",
+      "items": [
+        {
+          "title": "Sadece Almanya'ya Odaklanıyoruz",
+          "description": "Genel bir yurt dışı danışmanlığı değil, yalnızca Almanya'nın yükseköğretim sistemi konusunda uzmanlaşmış bir ekibiz."
+        },
+        {
+          "title": "Kabul Garantisi",
+          "description": "Sürecimizi eksiksiz takip eden öğrencilerimize kabul garantisi sunuyoruz."
+        },
+        {
+          "title": "Yeni ve Şeffaf Bir Ekip",
+          "description": "2026'da kurulan bir firma olarak şişirilmiş rakamlar yerine somut, takip edilebilir bir süreç sunuyoruz."
+        },
+        {
+          "title": "Uçtan Uca Destek",
+          "description": "İlk görüşmeden Almanya'da Anmeldung işleminize kadar yanınızda oluyoruz."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Almanya'daki Eğitim Yolculuğunuza Bugün Başlayın",
+      "subtitle": "15 dakikalık ücretsiz görüşmede size özel bir yol haritası çıkaralım.",
+      "button": "Hemen Randevu Al"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Hizmetlerimiz",
+      "subtitle": "Almanya'da bachelor, master ve dual studium sürecinizin her aşamasında kapsamlı danışmanlık sunuyoruz."
+    },
+    "items": [
+      {
+        "icon": "graduation-cap",
+        "title": "Bachelor, Master ve Dual Studium Seçimi",
+        "description": "Akademik geçmişiniz, bütçeniz ve kariyer hedeflerinize göre Universität, Fachhochschule ve Duale Hochschule seçenekleri arasından size en uygun program ve şehri belirliyoruz.",
+        "points": ["Bachelor, master ve dual studium karşılaştırması", "Anabin veritabanına göre denklik ön kontrolü", "Kabul şansı analizi"]
+      },
+      {
+        "icon": "file-text",
+        "title": "uni-assist Başvuru Danışmanlığı",
+        "description": "uni-assist üzerinden başvuru formu doldurmadan motivasyon mektubuna (Motivationsschreiben) ve referans mektuplarına kadar tüm evrak sürecinizi profesyonel destekle yönetiyoruz.",
+        "points": ["Motivasyon mektubu (Motivationsschreiben) düzenleme", "Belge çevirisi ve noter onayı yönlendirmesi", "uni-assist başvuru takibi"]
+      },
+      {
+        "icon": "briefcase",
+        "title": "Dual Studium (Duales Studium) Danışmanlığı",
+        "description": "Teori ve uygulamayı 3 aylık dönemlerle birleştiren dual studium modelinde partner şirket araştırması ve başvuru sürecinde uçtan uca destek sağlıyoruz.",
+        "points": ["Partner şirket araştırması ve eşleştirme", "DHBW, IU, FOM gibi kurumlara başvuru rehberliği", "Sözleşme ve staj süreci desteği"]
+      },
+      {
+        "icon": "stamp",
+        "title": "Vize ve Bloke Hesap Danışmanlığı",
+        "description": "Ulusal vize (Type D) başvurunuzu güçlendirmek için evrak kontrolü, bloke hesap (Sperrkonto) açılışı ve randevu planlaması sağlıyoruz.",
+        "points": ["Bloke hesap (Sperrkonto) açılış desteği", "Evrak kontrol listesi ve randevu planlaması", "Sağlık sigortası seçimi"]
+      },
+      {
+        "icon": "languages",
+        "title": "Dil Sınavı ve Studienkolleg Hazırlığı",
+        "description": "TestDaF/DSH/Goethe sınav hazırlığı ve doğrudan kabul için yeterli olmayan öğrenciler için Studienkolleg başvurusunda uçtan uca destek veriyoruz.",
+        "points": ["TestDaF/DSH/Goethe sınav hazırlık yönlendirmesi", "Studienkolleg başvuru desteği", "Dil kursu kayıt işlemleri"]
+      },
+      {
+        "icon": "plane",
+        "title": "Konaklama, Anmeldung ve Oryantasyon",
+        "description": "Yurt veya ev başvurunuzdan şehre kayıt (Anmeldung) işlemine, havalimanı karşılamadan varış sonrası oryantasyona kadar pratik detayları organize ediyoruz.",
+        "points": ["Yurt/ev başvuru desteği", "Anmeldung (ikamet kaydı) rehberliği", "Havalimanı karşılama ve oryantasyon"]
+      }
+    ],
+    "cta": {
+      "title": "Hangi Hizmete İhtiyacınız Olduğundan Emin Değil Misiniz?",
+      "subtitle": "Ücretsiz ön görüşmede sizin için en uygun hizmet paketini birlikte belirleyelim.",
+      "button": "Ücretsiz Görüşme Planla"
+    }
+  },
+  "programs": {
+    "hero": {
+      "title": "Almanya'da Üç Eğitim Yolu",
+      "subtitle": "Akademik geçmişinize ve hedeflerinize göre bachelor, master ya da dual studium arasından size en uygun yolu birlikte belirliyoruz."
+    },
+    "items": [
+      {
+        "name": "Bachelor Studium",
+        "flag": "🎓",
+        "description": "Almanya'da 420'den fazla devlet onaylı yükseköğretim kurumunda lisans eğitimi; çoğu eyalette öğrenim harcı yok.",
+        "highlights": ["Çoğu eyalette 0€ öğrenim harcı (Baden-Württemberg'de AB dışı öğrenciler için dönemlik 1.500€)", "YKS puanınıza göre doğrudan ya da kısıtlı kabul, yetersizse Studienkolleg", "Anabin veritabanına göre denklik kontrolü"]
+      },
+      {
+        "name": "Master Studium",
+        "flag": "🎯",
+        "description": "Lisans diplomanız ve alan yeterliliğinizle Universität ya da Fachhochschule'de İngilizce ya da Almanca yürütülen yüzlerce program.",
+        "highlights": ["İngilizce eğitim veren yüzlerce master programı", "Araştırma ağırlıklı (Universität) ya da uygulamalı (Fachhochschule) seçenekler", "uni-assist üzerinden merkezi başvuru takibi"]
+      },
+      {
+        "name": "Dual Studium (Duales Studium)",
+        "flag": "💼",
+        "description": "Teoride üniversite, uygulamada partner şirket; 3 aylık dönüşümlü model ile çalışarak okuma imkanı.",
+        "highlights": ["Şirketten aylık maaş, çoğu programda öğrenim harcı yok", "DHBW, IU, FOM gibi kurumlarda 24'ten fazla kampüs seçeneği", "Başvurular genellikle doğrudan partner şirkete yapılır"]
+      }
+    ],
+    "cta": {
+      "title": "Size Uygun Yolu Birlikte Belirleyelim",
+      "subtitle": "Akademik profilinize göre bachelor, master ya da dual studium arasından en doğru başlangıcı öneriyoruz.",
+      "button": "Program Danışmanlığı Al"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Studiva Hakkında",
+      "subtitle": "Almanya'da eğitim almak isteyen öğrenciler için 2026'da kurulan, yalnızca Almanya'ya odaklanan bir danışmanlık firmasıyız."
+    },
+    "story": {
+      "title": "Hikayemiz",
+      "paragraphs": [
+        "Studiva, 2026 yılında İstanbul'da, yurt dışı eğitim danışmanlığının genele yayılmak yerine tek bir ülkede derinleşmesi gerektiği fikriyle kuruldu: Almanya.",
+        "Genel bir yurt dışı danışmanlığı değil, yalnızca Almanya'nın yükseköğretim sistemine -bachelor, master ve dual studium- odaklanan bir ekibiz; uni-assist süreçlerini, Anabin denklik kurallarını ve bloke hesap uygulamalarını yakından takip ediyoruz.",
+        "Yeni kurulan bir firma olarak şişirilmiş rakamlar yerine somut bir taahhüt sunuyoruz: sürecinizi eksiksiz tamamladığınızda kabul garantisi."
+      ]
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "Her öğrencinin akademik profiline en uygun Alman üniversitesine ya da dual studium programına şeffaf, güvenilir ve kabul garantili bir süreçle ulaşmasını sağlamak."
+    },
+    "values": {
+      "title": "Değerlerimiz",
+      "items": [
+        {
+          "title": "Şeffaflık",
+          "description": "Süreç, maliyet (bloke hesap, harç, sigorta) ve olasılıklar konusunda her zaman net ve dürüst bilgi veriyoruz."
+        },
+        {
+          "title": "Kişiye Özel Yaklaşım",
+          "description": "Her öğrenci için bachelor, master ya da dual studium arasında ayrı bir strateji kurgularız."
+        },
+        {
+          "title": "Almanya Uzmanlığı",
+          "description": "Danışmanlarımız güncel vize mevzuatını, uni-assist süreçlerini ve Anabin denklik kurallarını yakından takip eder."
+        },
+        {
+          "title": "Sürekli Destek",
+          "description": "İlk görüşmeden Almanya'da Anmeldung işleminize kadar yanınızda oluyoruz."
+        }
+      ]
+    },
+    "stats": [
+      { "value": "2026", "label": "Kuruluş Yılı" },
+      { "value": "420+", "label": "Almanya'da Yükseköğretim Kurumu" },
+      { "value": "%100", "label": "Kabul Garantisi" },
+      { "value": "16", "label": "Eyalet" }
+    ]
+  },
+  "contact": {
+    "hero": {
+      "title": "Bizimle İletişime Geçin",
+      "subtitle": "Sorularınız için formu doldurun ya da doğrudan WhatsApp üzerinden randevu alın, uzman danışmanlarımız en kısa sürede size dönüş yapsın."
+    },
+    "info": {
+      "title": "İletişim Bilgileri",
+      "addressLabel": "Adres",
+      "address": "Levent, Büyükdere Cd. No:201, 34394 Şişli/İstanbul",
+      "phoneLabel": "Telefon",
+      "phone": "+90 532 555 01 01",
+      "emailLabel": "E-posta",
+      "email": "info@studiva.com.tr",
+      "hoursLabel": "Çalışma Saatleri",
+      "hours": "Pazartesi - Cuma: 09:00 - 18:30"
+    },
+    "scheduling": {
+      "title": "Hemen Randevu Alın",
+      "description": "Formu doldurmak istemiyorsanız, WhatsApp üzerinden birkaç saniyede 15 dakikalık ücretsiz bir ön görüşme talep edebilirsiniz.",
+      "button": "WhatsApp'tan Randevu Al"
+    },
+    "form": {
+      "title": "Ücretsiz Ön Görüşme Formu",
+      "name": "Ad Soyad",
+      "email": "E-posta Adresi",
+      "phone": "Telefon Numarası",
+      "program": "İlgilendiğiniz Program",
+      "programPlaceholder": "Seçiniz",
+      "programOptions": ["Bachelor Studium", "Master Studium", "Dual Studium (Duales Studium)", "Henüz Emin Değilim"],
+      "message": "Mesajınız",
+      "messagePlaceholder": "Hedeflediğiniz bölüm, üniversite ya da sorularınızı yazabilirsiniz.",
+      "submit": "Gönder",
+      "disclaimer": "Bu form şu anda demo amaçlıdır; gönderim işlemi bir sunucuya bağlanmamaktadır. Hızlı yanıt için WhatsApp üzerinden yazabilirsiniz."
+    }
+  }
+}
