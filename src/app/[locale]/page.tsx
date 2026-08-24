@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
-import { ArrowRight, Check, ShieldCheck, Sparkles, HeartHandshake, Target } from "lucide-react";
+import { ArrowRight, Check, ShieldCheck, Sparkles, HeartHandshake, Target, MapPin } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
@@ -10,9 +10,11 @@ type ServiceItem = { icon: string; title: string; description: string };
 type ProcessStep = { title: string; description: string };
 type WhyUsItem = { title: string; description: string };
 type ProgramItem = { name: string; flag: string };
+type UniversityItem = { name: string; city: string; type: string };
 type Stat = { value: string; label: string };
 
 const whyUsIcons = [Target, ShieldCheck, Sparkles, HeartHandshake];
+const UNIVERSITY_PREVIEW_COUNT = 6;
 
 export default async function HomePage({
   params,
@@ -24,12 +26,16 @@ export default async function HomePage({
 
   const home = await getTranslations({ locale, namespace: "home" });
   const programsT = await getTranslations({ locale, namespace: "programs" });
+  const universitiesT = await getTranslations({ locale, namespace: "universities" });
 
   const stats = home.raw("hero.stats") as Stat[];
   const services = home.raw("services.items") as ServiceItem[];
   const steps = home.raw("process.steps") as ProcessStep[];
   const whyUsItems = home.raw("whyUs.items") as WhyUsItem[];
   const programItems = programsT.raw("items") as ProgramItem[];
+  const universityItems = (
+    universitiesT.raw("items") as UniversityItem[]
+  ).slice(0, UNIVERSITY_PREVIEW_COUNT);
 
   return (
     <>
@@ -68,6 +74,10 @@ export default async function HomePage({
                 {home("hero.ctaSecondary")}
               </Link>
             </div>
+            <p className="mt-6 flex items-center justify-center gap-2 text-sm font-medium text-blue-200">
+              <ShieldCheck size={16} className="shrink-0" />
+              {home("hero.guaranteeNote")}
+            </p>
           </div>
 
           <div className="mx-auto mt-16 grid max-w-4xl grid-cols-2 gap-6 sm:grid-cols-4">
@@ -148,6 +158,44 @@ export default async function HomePage({
               className="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-brand-dark"
             >
               {home("programs.linkText")}
+              <ArrowRight size={16} />
+            </Link>
+          </div>
+        </Container>
+      </section>
+
+      {/* Universities preview */}
+      <section className="py-20 sm:py-24">
+        <Container>
+          <SectionHeading
+            title={home("universities.title")}
+            subtitle={home("universities.subtitle")}
+          />
+          <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {universityItems.map((uni) => (
+              <div
+                key={uni.name}
+                className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm"
+              >
+                <span className="inline-flex w-fit items-center rounded-full bg-brand-light px-3 py-1 text-xs font-semibold text-brand">
+                  {uni.type}
+                </span>
+                <h3 className="mt-3 text-base font-semibold text-slate-900">
+                  {uni.name}
+                </h3>
+                <div className="mt-1 flex items-center gap-1.5 text-xs text-slate-500">
+                  <MapPin size={13} />
+                  {uni.city}
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Link
+              href="/universities"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-brand-dark"
+            >
+              {home("universities.linkText")}
               <ArrowRight size={16} />
             </Link>
           </div>

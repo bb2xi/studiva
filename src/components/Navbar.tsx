@@ -15,6 +15,7 @@ export default function Navbar() {
     { href: "/", label: t("home") },
     { href: "/services", label: t("services") },
     { href: "/programs", label: t("programs") },
+    { href: "/universities", label: t("universities") },
     { href: "/about", label: t("about") },
     { href: "/contact", label: t("contact") },
   ];

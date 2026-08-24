@@ -7,6 +7,7 @@
     "home": "Ana Sayfa",
     "services": "Hizmetler",
     "programs": "Programlar",
+    "universities": "Üniversiteler",
     "about": "Hakkımızda",
     "contact": "İletişim",
     "cta": "Ücretsiz Danışmanlık"
@@ -28,6 +29,7 @@
       "subtitle": "uni-assist başvurunuzdan bloke hesabınıza, dil sınavı hazırlığınızdan partner şirket eşleştirmenize kadar Almanya'ya özel uzman danışmanlarımızla yanınızdayız.",
       "ctaPrimary": "Ücretsiz Ön Görüşme Al",
       "ctaSecondary": "Programları İncele",
+      "guaranteeNote": "Sürecimizi eksiksiz tamamlayan öğrencilerimize kabul garantisi veriyoruz.",
       "stats": [
         { "value": "%100", "label": "Kabul Garantisi" },
         { "value": "420+", "label": "Almanya'da Yükseköğretim Kurumu" },
@@ -42,13 +44,13 @@
       "items": [
         {
           "icon": "graduation-cap",
-          "title": "Bachelor, Master ve Dual Studium Seçimi",
-          "description": "Akademik geçmişiniz ve hedeflerinize göre Universität, Fachhochschule ya da Duale Hochschule arasından size en uygun program ve şehri belirliyoruz."
+          "title": "Kişiye Özel, Kariyer Odaklı Yol Haritası",
+          "description": "Akademik geçmişiniz, hedefleriniz ve kariyer planlarınıza göre bachelor, master ya da dual studium arasında size özel bir yol haritası çıkarıyoruz; hazır bir paket değil, sizin profilinize göre kurgulanmış bir strateji sunuyoruz."
         },
         {
           "icon": "file-text",
-          "title": "uni-assist Başvuru Danışmanlığı",
-          "description": "uni-assist üzerinden başvuru sürecinizi, motivasyon mektubunuzu ve belge denkliğinizi (Anabin) baştan sona yönetiyoruz."
+          "title": "Süreç Boyu Danışmanlık",
+          "description": "İlk görüşmeden kabul mektubuna kadar; uni-assist başvurunuz, motivasyon mektubunuz ve belge denkliğiniz (Anabin) dahil sürecin her aşamasında sürekli yanınızdayız."
         },
         {
           "icon": "briefcase",
@@ -76,6 +78,11 @@
       "title": "Almanya'da Üç Yol: Bachelor, Master, Dual Studium",
       "subtitle": "Akademik profilinize göre en uygun başlangıç noktasını birlikte seçiyoruz.",
       "linkText": "Tüm programları gör"
+    },
+    "universities": {
+      "title": "Almanya'da Öne Çıkan Üniversiteler",
+      "subtitle": "Universität, Fachhochschule ve Duale Hochschule kurumlarından bir kesit.",
+      "linkText": "Tüm üniversiteleri gör"
     },
     "process": {
       "title": "4 Adımda Almanya'da Eğitim",
@@ -134,15 +141,15 @@
     "items": [
       {
         "icon": "graduation-cap",
-        "title": "Bachelor, Master ve Dual Studium Seçimi",
-        "description": "Akademik geçmişiniz, bütçeniz ve kariyer hedeflerinize göre Universität, Fachhochschule ve Duale Hochschule seçenekleri arasından size en uygun program ve şehri belirliyoruz.",
-        "points": ["Bachelor, master ve dual studium karşılaştırması", "Anabin veritabanına göre denklik ön kontrolü", "Kabul şansı analizi"]
+        "title": "Kişiye Özel, Kariyer Odaklı Yol Haritası",
+        "description": "Akademik geçmişiniz, bütçeniz ve kariyer hedeflerinize göre bachelor, master ya da dual studium arasında; hazır bir paket değil, size özel kurgulanmış bir yol haritası çıkarıyoruz.",
+        "points": ["Kariyer hedefine göre kişiselleştirilmiş strateji", "Anabin veritabanına göre denklik ön kontrolü", "Kabul şansı analizi"]
       },
       {
         "icon": "file-text",
-        "title": "uni-assist Başvuru Danışmanlığı",
-        "description": "uni-assist üzerinden başvuru formu doldurmadan motivasyon mektubuna (Motivationsschreiben) ve referans mektuplarına kadar tüm evrak sürecinizi profesyonel destekle yönetiyoruz.",
-        "points": ["Motivasyon mektubu (Motivationsschreiben) düzenleme", "Belge çevirisi ve noter onayı yönlendirmesi", "uni-assist başvuru takibi"]
+        "title": "Süreç Boyu Danışmanlık",
+        "description": "İlk görüşmeden kabul mektubuna kadar; uni-assist başvurunuzdan motivasyon mektubunuza (Motivationsschreiben), referans mektuplarınızdan belge denkliğinize kadar tüm süreçte sürekli yanınızdayız.",
+        "points": ["Sürecin her aşamasında kesintisiz danışmanlık", "Motivasyon mektubu (Motivationsschreiben) düzenleme", "uni-assist başvuru takibi ve belge çevirisi yönlendirmesi"]
       },
       {
         "icon": "briefcase",
@@ -204,6 +211,79 @@
       "title": "Size Uygun Yolu Birlikte Belirleyelim",
       "subtitle": "Akademik profilinize göre bachelor, master ya da dual studium arasından en doğru başlangıcı öneriyoruz.",
       "button": "Program Danışmanlığı Al"
+    }
+  },
+  "universities": {
+    "hero": {
+      "title": "Almanya'da Üniversiteler",
+      "subtitle": "Universität, Fachhochschule ve Duale Hochschule kategorilerinden, bachelor, master ve dual studium hedefinize göre değerlendirebileceğiniz kurumlardan bir kesit."
+    },
+    "items": [
+      {
+        "name": "TU München (TUM)",
+        "city": "München",
+        "type": "Universität",
+        "description": "Mühendislik, bilgisayar bilimleri ve doğa bilimlerinde Almanya'nın en iyi teknik üniversitelerinden biri."
+      },
+      {
+        "name": "LMU München",
+        "city": "München",
+        "type": "Universität",
+        "description": "Tıp, hukuk ve sosyal bilimlerde güçlü, Almanya'nın en köklü üniversitelerinden."
+      },
+      {
+        "name": "Humboldt-Universität zu Berlin",
+        "city": "Berlin",
+        "type": "Universität",
+        "description": "Beşeri bilimler ve sosyal bilimlerde uluslararası tanınırlığa sahip araştırma üniversitesi."
+      },
+      {
+        "name": "RWTH Aachen",
+        "city": "Aachen",
+        "type": "Universität",
+        "description": "Mühendislik ve bilgisayar bilimlerinde Avrupa'nın önde gelen teknik üniversitelerinden."
+      },
+      {
+        "name": "Universität Mannheim",
+        "city": "Mannheim",
+        "type": "Universität",
+        "description": "İşletme ve ekonomi alanında Almanya'nın en iyi programlarından birine sahip."
+      },
+      {
+        "name": "Hochschule München",
+        "city": "München",
+        "type": "Fachhochschule",
+        "description": "Uygulamalı mühendislik ve işletme programlarıyla güçlü sektör bağlantılarına sahip bir Fachhochschule."
+      },
+      {
+        "name": "Frankfurt University of Applied Sciences",
+        "city": "Frankfurt am Main",
+        "type": "Fachhochschule",
+        "description": "Finans merkezi Frankfurt'ta işletme ve bilgi teknolojileri odaklı uygulamalı programlar."
+      },
+      {
+        "name": "DHBW (Duale Hochschule Baden-Württemberg)",
+        "city": "Stuttgart, Mannheim, Karlsruhe ve diğer kampüsler",
+        "type": "Duale Hochschule",
+        "description": "Almanya'da dual studium modelinin öncüsü; teori ve uygulamayı 3 aylık dönemlerle birleştirir."
+      },
+      {
+        "name": "IU Internationale Hochschule",
+        "city": "Almanya genelinde 24'ten fazla kampüs",
+        "type": "Duale Hochschule",
+        "description": "Dual studium ve uzaktan eğitimde Almanya'nın en büyük özel yükseköğretim kurumlarından."
+      },
+      {
+        "name": "FOM Hochschule",
+        "city": "Almanya genelinde 30'dan fazla şehir",
+        "type": "Duale Hochschule",
+        "description": "Çalışarak okuyan öğrenciler için Almanya'nın en büyük özel yükseköğretim kurumlarından."
+      }
+    ],
+    "cta": {
+      "title": "Size Uygun Üniversiteyi Birlikte Bulalım",
+      "subtitle": "Akademik profilinize ve hedeflediğiniz şehre göre en doğru üniversite ve programı öneriyoruz.",
+      "button": "Üniversite Danışmanlığı Al"
     }
   },
   "about": {

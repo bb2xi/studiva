@@ -13,6 +13,7 @@ export default function Footer() {
     { href: "/", label: nav("home") },
     { href: "/services", label: nav("services") },
     { href: "/programs", label: nav("programs") },
+    { href: "/universities", label: nav("universities") },
     { href: "/about", label: nav("about") },
     { href: "/contact", label: nav("contact") },
   ];

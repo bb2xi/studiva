@@ -7,6 +7,7 @@
     "home": "Home",
     "services": "Services",
     "programs": "Programs",
+    "universities": "Universities",
     "about": "About",
     "contact": "Contact",
     "cta": "Free Consultation"
@@ -28,6 +29,7 @@
       "subtitle": "From your uni-assist application to your blocked account, language exam prep to partner-company matching, our Germany-focused advisors are with you every step of the way.",
       "ctaPrimary": "Get a Free Consultation",
       "ctaSecondary": "Explore Programs",
+      "guaranteeNote": "We offer an admission guarantee to students who complete our process in full.",
       "stats": [
         { "value": "100%", "label": "Admission Guarantee" },
         { "value": "420+", "label": "Higher Education Institutions in Germany" },
@@ -42,13 +44,13 @@
       "items": [
         {
           "icon": "graduation-cap",
-          "title": "Bachelor's, Master's & Dual Studium Selection",
-          "description": "Based on your academic background and goals, we match you with the right program and city among Universitäten, Fachhochschulen, and Duale Hochschulen."
+          "title": "A Personalized, Career-Focused Roadmap",
+          "description": "Based on your academic background, goals, and career plans, we build a roadmap tailored to you across bachelor's, master's, or dual studium — not a one-size-fits-all package."
         },
         {
           "icon": "file-text",
-          "title": "uni-assist Application Consultancy",
-          "description": "We manage your entire uni-assist application, motivation letter, and document equivalency (Anabin) process from start to finish."
+          "title": "Consultancy Throughout the Process",
+          "description": "From the first call to your admission letter, we're with you at every stage — including your uni-assist application, motivation letter, and document equivalency (Anabin)."
         },
         {
           "icon": "briefcase",
@@ -76,6 +78,11 @@
       "title": "Three Paths in Germany: Bachelor's, Master's, Dual Studium",
       "subtitle": "We help you choose the right starting point for your academic profile.",
       "linkText": "View all programs"
+    },
+    "universities": {
+      "title": "Leading Universities in Germany",
+      "subtitle": "A cross-section of Universitäten, Fachhochschulen, and Duale Hochschulen.",
+      "linkText": "View all universities"
     },
     "process": {
       "title": "Studying in Germany in 4 Steps",
@@ -134,15 +141,15 @@
     "items": [
       {
         "icon": "graduation-cap",
-        "title": "Bachelor's, Master's & Dual Studium Selection",
-        "description": "Based on your academic background, budget, and career goals, we identify the best-fit program and city among Universität, Fachhochschule, and Duale Hochschule options.",
-        "points": ["Bachelor's vs. master's vs. dual studium comparison", "Equivalency pre-check against the Anabin database", "Admission chance analysis"]
+        "title": "A Personalized, Career-Focused Roadmap",
+        "description": "Based on your academic background, budget, and career goals, we build a roadmap tailored specifically to you across bachelor's, master's, or dual studium — not a one-size-fits-all package.",
+        "points": ["Personalized strategy built around your career goal", "Equivalency pre-check against the Anabin database", "Admission chance analysis"]
       },
       {
         "icon": "file-text",
-        "title": "uni-assist Application Consultancy",
-        "description": "From filling out the uni-assist application to your motivation letter (Motivationsschreiben) and reference letters, we manage your entire documentation process professionally.",
-        "points": ["Motivation letter (Motivationsschreiben) editing", "Document translation and notarization guidance", "uni-assist application tracking"]
+        "title": "Consultancy Throughout the Process",
+        "description": "From the first call to your admission letter, we stay with you through every stage of the process — your uni-assist application, motivation letter (Motivationsschreiben), reference letters, and document equivalency.",
+        "points": ["Uninterrupted support at every stage of the process", "Motivation letter (Motivationsschreiben) editing", "uni-assist application tracking and translation guidance"]
       },
       {
         "icon": "briefcase",
@@ -204,6 +211,79 @@
       "title": "Let's Find the Right Path Together",
       "subtitle": "We recommend the best starting point for your bachelor's, master's, or dual studium journey based on your academic profile.",
       "button": "Get Program Guidance"
+    }
+  },
+  "universities": {
+    "hero": {
+      "title": "Universities in Germany",
+      "subtitle": "A cross-section of Universität, Fachhochschule, and Duale Hochschule institutions you can consider based on your bachelor's, master's, or dual studium goals."
+    },
+    "items": [
+      {
+        "name": "TU Munich (TUM)",
+        "city": "Munich",
+        "type": "Universität",
+        "description": "One of Germany's leading technical universities in engineering, computer science, and natural sciences."
+      },
+      {
+        "name": "LMU Munich",
+        "city": "Munich",
+        "type": "Universität",
+        "description": "One of Germany's oldest and most established universities, strong in medicine, law, and social sciences."
+      },
+      {
+        "name": "Humboldt University of Berlin",
+        "city": "Berlin",
+        "type": "Universität",
+        "description": "A research university with international recognition in the humanities and social sciences."
+      },
+      {
+        "name": "RWTH Aachen",
+        "city": "Aachen",
+        "type": "Universität",
+        "description": "One of Europe's leading technical universities in engineering and computer science."
+      },
+      {
+        "name": "University of Mannheim",
+        "city": "Mannheim",
+        "type": "Universität",
+        "description": "Home to one of Germany's top business and economics programs."
+      },
+      {
+        "name": "Munich University of Applied Sciences",
+        "city": "Munich",
+        "type": "Fachhochschule",
+        "description": "A Fachhochschule with strong industry ties in applied engineering and business programs."
+      },
+      {
+        "name": "Frankfurt University of Applied Sciences",
+        "city": "Frankfurt am Main",
+        "type": "Fachhochschule",
+        "description": "Applied programs in business and information technology in the financial hub of Frankfurt."
+      },
+      {
+        "name": "DHBW (Baden-Württemberg Cooperative State University)",
+        "city": "Stuttgart, Mannheim, Karlsruhe, and other campuses",
+        "type": "Duale Hochschule",
+        "description": "The pioneer of the dual studium model in Germany, alternating theory and practice in three-month cycles."
+      },
+      {
+        "name": "IU International University of Applied Sciences",
+        "city": "24+ campuses across Germany",
+        "type": "Duale Hochschule",
+        "description": "One of Germany's largest private higher education institutions for dual studium and distance learning."
+      },
+      {
+        "name": "FOM University of Applied Sciences",
+        "city": "30+ cities across Germany",
+        "type": "Duale Hochschule",
+        "description": "One of Germany's largest private higher education institutions for students who work while studying."
+      }
+    ],
+    "cta": {
+      "title": "Let's Find the Right University Together",
+      "subtitle": "We recommend the right university and program based on your academic profile and target city.",
+      "button": "Get University Guidance"
     }
   },
   "about": {
