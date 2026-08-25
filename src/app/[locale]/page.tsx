@@ -1,16 +1,17 @@
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
-import { ArrowRight, Check, ShieldCheck, Sparkles, HeartHandshake, Target, MapPin } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Check, ShieldCheck, Sparkles, HeartHandshake, Target, MapPin } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
 import { serviceIcons } from "@/lib/icons";
+import { universityMedia } from "@/lib/universityMedia";
 
 type ServiceItem = { icon: string; title: string; description: string };
 type ProcessStep = { title: string; description: string };
 type WhyUsItem = { title: string; description: string };
 type ProgramItem = { name: string; flag: string };
-type UniversityItem = { name: string; city: string; type: string };
+type UniversityItem = { slug: string; name: string; city: string; type: string };
 type Stat = { value: string; label: string };
 
 const whyUsIcons = [Target, ShieldCheck, Sparkles, HeartHandshake];
@@ -172,23 +173,47 @@ export default async function HomePage({
             subtitle={home("universities.subtitle")}
           />
           <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {universityItems.map((uni) => (
-              <div
-                key={uni.name}
-                className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm"
-              >
-                <span className="inline-flex w-fit items-center rounded-full bg-brand-light px-3 py-1 text-xs font-semibold text-brand">
-                  {uni.type}
-                </span>
-                <h3 className="mt-3 text-base font-semibold text-slate-900">
-                  {uni.name}
-                </h3>
-                <div className="mt-1 flex items-center gap-1.5 text-xs text-slate-500">
-                  <MapPin size={13} />
-                  {uni.city}
-                </div>
-              </div>
-            ))}
+            {universityItems.map((uni) => {
+              const cover = universityMedia[uni.slug]?.[0];
+              return (
+                <Link
+                  key={uni.name}
+                  href={`/universities/${uni.slug}`}
+                  className="group flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+                >
+                  {cover && (
+                    <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={cover.url}
+                        alt={uni.name}
+                        loading="lazy"
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
+                        {uni.type}
+                      </span>
+                    </div>
+                  )}
+                  <div className="p-5">
+                    <h3 className="text-base font-semibold text-slate-900 transition-colors group-hover:text-brand">
+                      {uni.name}
+                    </h3>
+                    <div className="mt-1 flex items-center gap-1.5 text-xs text-slate-500">
+                      <MapPin size={13} />
+                      {uni.city}
+                    </div>
+                    <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-brand">
+                      {locale === "tr" ? "Detayları Gör" : "View Details"}
+                      <ArrowUpRight
+                        size={13}
+                        className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                      />
+                    </span>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
           <div className="mt-10 text-center">
             <Link

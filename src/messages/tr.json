@@ -220,64 +220,104 @@
     },
     "items": [
       {
+        "slug": "tum",
         "name": "TU München (TUM)",
         "city": "München",
         "type": "Universität",
-        "description": "Mühendislik, bilgisayar bilimleri ve doğa bilimlerinde Almanya'nın en iyi teknik üniversitelerinden biri."
+        "founded": "1868",
+        "description": "Mühendislik, bilgisayar bilimleri ve doğa bilimlerinde Almanya'nın en iyi teknik üniversitelerinden biri.",
+        "history": "TUM, 1868 yılında Polytechnische Schule München adıyla kuruldu ve zamanla Almanya'nın önde gelen teknik üniversitelerinden birine dönüştü. Bugün TU9 (Almanya'nın önde gelen teknik üniversiteler birliği) üyesi olan TUM, 'Excellence Üniversite' statüsüne sahip kurumlardan biri.",
+        "highlights": ["Mühendislik, bilgisayar bilimi ve doğa bilimlerinde güçlü araştırma altyapısı", "TU9 teknik üniversiteler birliği üyesi", "Garching ve Weihenstephan gibi büyük araştırma kampüsleri"]
       },
       {
+        "slug": "lmu",
         "name": "LMU München",
         "city": "München",
         "type": "Universität",
-        "description": "Tıp, hukuk ve sosyal bilimlerde güçlü, Almanya'nın en köklü üniversitelerinden."
+        "founded": "1472",
+        "description": "Tıp, hukuk ve sosyal bilimlerde güçlü, Almanya'nın en köklü üniversitelerinden.",
+        "history": "1472'de Ingolstadt'ta kurulan LMU, 1826'da Münih'e taşındı ve Avrupa'nın en eski üniversitelerinden biri haline geldi. Tıp, hukuk, sosyal bilimler ve doğa bilimleri alanlarındaki güçlü akademik kadrosuyla tanınan LMU, tarih boyunca çok sayıda Nobel ödüllü bilim insanına ev sahipliği yaptı.",
+        "highlights": ["Almanya'nın en köklü ve en prestijli üniversitelerinden biri", "Tıp, hukuk ve doğa bilimlerinde güçlü araştırma geleneği", "Şehir merkezinde, Münih'in kalbinde bir kampüs"]
       },
       {
+        "slug": "huberlin",
         "name": "Humboldt-Universität zu Berlin",
         "city": "Berlin",
         "type": "Universität",
-        "description": "Beşeri bilimler ve sosyal bilimlerde uluslararası tanınırlığa sahip araştırma üniversitesi."
+        "founded": "1810",
+        "description": "Beşeri bilimler ve sosyal bilimlerde uluslararası tanınırlığa sahip araştırma üniversitesi.",
+        "history": "1810 yılında Wilhelm von Humboldt tarafından kurulan Humboldt Üniversitesi, öğretim ve araştırmanın bir arada yürütülmesini savunan 'Humboldt modeli'nin doğduğu yer olarak bilinir. Berlin'in en köklü üniversitesi olan kurum, tarihinde Albert Einstein ve Max Planck gibi isimlerin de aralarında bulunduğu çok sayıda Nobel ödüllü akademisyene ev sahipliği yaptı.",
+        "highlights": ["Modern araştırma üniversitesi anlayışının doğduğu kurum", "Beşeri ve sosyal bilimlerde uluslararası tanınırlık", "Berlin şehir merkezinde, Unter den Linden'de tarihi kampüs"]
       },
       {
+        "slug": "rwth",
         "name": "RWTH Aachen",
         "city": "Aachen",
         "type": "Universität",
-        "description": "Mühendislik ve bilgisayar bilimlerinde Avrupa'nın önde gelen teknik üniversitelerinden."
+        "founded": "1870",
+        "description": "Mühendislik ve bilgisayar bilimlerinde Avrupa'nın önde gelen teknik üniversitelerinden.",
+        "history": "1870'te kurulan RWTH Aachen, bugün TU9 birliğinin üyesi ve Almanya'nın en büyük teknik üniversitelerinden biri. Otomotiv ve makine mühendisliğinde sanayiyle güçlü iş birlikleri kurmasıyla tanınan üniversite, ikonik SuperC binasıyla da öğrenci hizmetlerinde öne çıkıyor.",
+        "highlights": ["Otomotiv ve makine mühendisliğinde güçlü sanayi bağlantıları", "TU9 teknik üniversiteler birliği üyesi", "Uluslararası öğrenci oranı yüksek, İngilizce yürütülen master programları"]
       },
       {
+        "slug": "mannheim",
         "name": "Universität Mannheim",
         "city": "Mannheim",
         "type": "Universität",
-        "description": "İşletme ve ekonomi alanında Almanya'nın en iyi programlarından birine sahip."
+        "founded": "1907",
+        "description": "İşletme ve ekonomi alanında Almanya'nın en iyi programlarından birine sahip.",
+        "history": "1907'de Handelshochschule Mannheim (Mannheim Ticaret Yüksekokulu) olarak kurulan üniversite, 1967'de tam üniversite statüsü kazandı. Barok mimarisiyle bilinen tarihi Mannheim Sarayı'nda (Schloss Mannheim) eğitim veren üniversite, işletme ve ekonomi alanındaki Almanya sıralamalarında düzenli olarak ilk sıralarda yer alıyor.",
+        "highlights": ["Almanya'nın en iyi işletme ve ekonomi fakültelerinden biri", "Tarihi Mannheim Sarayı içinde eğitim", "Güçlü uluslararası değişim programı ağı"]
       },
       {
+        "slug": "hm",
         "name": "Hochschule München",
         "city": "München",
         "type": "Fachhochschule",
-        "description": "Uygulamalı mühendislik ve işletme programlarıyla güçlü sektör bağlantılarına sahip bir Fachhochschule."
+        "founded": "1971",
+        "description": "Uygulamalı mühendislik ve işletme programlarıyla güçlü sektör bağlantılarına sahip bir Fachhochschule.",
+        "history": "1971'de yedi farklı teknik ve meslek yüksekokulunun birleşmesiyle kurulan Hochschule München, bugün Bavyera'nın en büyük ikinci uygulamalı bilimler üniversitesi. Mühendislik, tasarım ve işletme alanlarında sanayiyle iç içe bir eğitim modeli sunan üniversite, ikonik 'Roter Würfel' (Kırmızı Küp) binasıyla da tanınıyor.",
+        "highlights": ["Bavyera'nın en büyük ikinci uygulamalı bilimler üniversitesi (Fachhochschule)", "Mühendislik, tasarım ve işletmede güçlü sektör bağlantıları", "Yaklaşık 18.000 öğrenciyle geniş bir kampüs topluluğu"]
       },
       {
+        "slug": "frankfurtuas",
         "name": "Frankfurt University of Applied Sciences",
         "city": "Frankfurt am Main",
         "type": "Fachhochschule",
-        "description": "Finans merkezi Frankfurt'ta işletme ve bilgi teknolojileri odaklı uygulamalı programlar."
+        "founded": "1971",
+        "description": "Finans merkezi Frankfurt'ta işletme ve bilgi teknolojileri odaklı uygulamalı programlar.",
+        "history": "1 Ağustos 1971'de kurulan Frankfurt UAS, Almanya'nın en büyük uygulamalı bilimler üniversitelerinden biri. Almanya'nın finans merkezi Frankfurt'ta konumlanan üniversite; işletme, bilgi teknolojileri, mühendislik ve sosyal çalışma alanlarında güçlü, sektöre dönük programlarıyla tanınıyor.",
+        "highlights": ["Almanya'nın finans merkezi Frankfurt'ta merkezi konum", "İşletme, bilgi teknolojileri ve mühendislikte uygulamalı eğitim", "15.000'den fazla öğrenciyle geniş bir kampüs"]
       },
       {
+        "slug": "dhbw",
         "name": "DHBW (Duale Hochschule Baden-Württemberg)",
         "city": "Stuttgart, Mannheim, Karlsruhe ve diğer kampüsler",
         "type": "Duale Hochschule",
-        "description": "Almanya'da dual studium modelinin öncüsü; teori ve uygulamayı 3 aylık dönemlerle birleştirir."
+        "founded": "2009",
+        "description": "Almanya'da dual studium modelinin öncüsü; teori ve uygulamayı 3 aylık dönemlerle birleştirir.",
+        "history": "DHBW'nin kökleri 1974'te kurulan Berufsakademie Baden-Württemberg'e dayanıyor; 2009'da bu kurum, devlet tarafından tam yükseköğretim statüsü verilerek DHBW'ye dönüştürüldü. Bugün Baden-Württemberg eyaletinde çok sayıda kampüste eğitim veren DHBW, binlerce partner şirketle çalışarak Almanya'daki dual studium modelinin öncüsü kabul ediliyor.",
+        "highlights": ["Almanya'da dual studium modelinin öncüsü kurum", "Binlerce partner şirketle işbirliği ağı", "Baden-Württemberg genelinde çok sayıda kampüs seçeneği"]
       },
       {
+        "slug": "iu",
         "name": "IU Internationale Hochschule",
         "city": "Almanya genelinde 24'ten fazla kampüs",
         "type": "Duale Hochschule",
-        "description": "Dual studium ve uzaktan eğitimde Almanya'nın en büyük özel yükseköğretim kurumlarından."
+        "founded": "1998",
+        "description": "Dual studium ve uzaktan eğitimde Almanya'nın en büyük özel yükseköğretim kurumlarından.",
+        "history": "1998'de Bad Honnef ve Bonn'da Internationale Fachhochschule adıyla kurulan kurum, 2017'de IUBH, 2021'de ise IU Internationale Hochschule adını aldı. Hızlı büyümesiyle bugün Almanya'nın öğrenci sayısı bakımından en büyük üniversitesi konumuna gelen IU, dual studium ve uzaktan eğitim programlarıyla öne çıkıyor.",
+        "highlights": ["Almanya'nın öğrenci sayısı bakımından en büyük üniversitesi", "24'ten fazla kampüs ve güçlü uzaktan eğitim seçenekleri", "Dual studium için geniş partner şirket ağı"]
       },
       {
+        "slug": "fom",
         "name": "FOM Hochschule",
         "city": "Almanya genelinde 30'dan fazla şehir",
         "type": "Duale Hochschule",
-        "description": "Çalışarak okuyan öğrenciler için Almanya'nın en büyük özel yükseköğretim kurumlarından."
+        "founded": "1993",
+        "description": "Çalışarak okuyan öğrenciler için Almanya'nın en büyük özel yükseköğretim kurumlarından.",
+        "history": "1993'te kurulan ve 1994'te eğitime başlayan FOM, çalışan öğrenciler için akşam ve hafta sonu programları sunmak üzere tasarlandı. Bugün Almanya genelinde 30'dan fazla şehirde eğitim merkezi bulunan FOM, işletme ve ekonomi ağırlıklı programlarıyla Almanya'nın en büyük özel yükseköğretim kurumlarından biri haline geldi.",
+        "highlights": ["Çalışarak okuyan öğrenciler için akşam/hafta sonu programları", "Almanya genelinde 30'dan fazla şehirde eğitim merkezi", "İşletme ve ekonomi ağırlıklı geniş program yelpazesi"]
       }
     ],
     "cta": {

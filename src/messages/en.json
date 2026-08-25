@@ -220,64 +220,104 @@
     },
     "items": [
       {
+        "slug": "tum",
         "name": "TU Munich (TUM)",
         "city": "Munich",
         "type": "Universität",
-        "description": "One of Germany's leading technical universities in engineering, computer science, and natural sciences."
+        "founded": "1868",
+        "description": "One of Germany's leading technical universities in engineering, computer science, and natural sciences.",
+        "history": "Founded in 1868 as the Polytechnische Schule München, TUM grew into one of Germany's leading technical universities. Today it's a member of TU9, the alliance of Germany's leading technical universities, and holds \"University of Excellence\" status.",
+        "highlights": ["Strong research infrastructure in engineering, computer science, and natural sciences", "Member of the TU9 alliance of technical universities", "Major research campuses in Garching and Weihenstephan"]
       },
       {
+        "slug": "lmu",
         "name": "LMU Munich",
         "city": "Munich",
         "type": "Universität",
-        "description": "One of Germany's oldest and most established universities, strong in medicine, law, and social sciences."
+        "founded": "1472",
+        "description": "One of Germany's oldest and most established universities, strong in medicine, law, and social sciences.",
+        "history": "Founded in Ingolstadt in 1472, LMU moved to Munich in 1826 and became one of Europe's oldest universities. Known for its strong faculty in medicine, law, social sciences, and natural sciences, LMU has been home to numerous Nobel laureates throughout its history.",
+        "highlights": ["One of Germany's oldest and most prestigious universities", "Strong research tradition in medicine, law, and natural sciences", "A city-center campus in the heart of Munich"]
       },
       {
+        "slug": "huberlin",
         "name": "Humboldt University of Berlin",
         "city": "Berlin",
         "type": "Universität",
-        "description": "A research university with international recognition in the humanities and social sciences."
+        "founded": "1810",
+        "description": "A research university with international recognition in the humanities and social sciences.",
+        "history": "Founded in 1810 by Wilhelm von Humboldt, Humboldt University is known as the birthplace of the \"Humboldtian model,\" which champions the unity of teaching and research. Berlin's oldest university has been home to numerous Nobel laureates over its history, including Albert Einstein and Max Planck.",
+        "highlights": ["The institution where the modern research university concept was born", "International recognition in the humanities and social sciences", "A historic campus in central Berlin, on Unter den Linden"]
       },
       {
+        "slug": "rwth",
         "name": "RWTH Aachen",
         "city": "Aachen",
         "type": "Universität",
-        "description": "One of Europe's leading technical universities in engineering and computer science."
+        "founded": "1870",
+        "description": "One of Europe's leading technical universities in engineering and computer science.",
+        "history": "Founded in 1870, RWTH Aachen is today a member of the TU9 alliance and one of Germany's largest technical universities. Known for its strong industry ties in automotive and mechanical engineering, the university is also recognized for its iconic SuperC student services building.",
+        "highlights": ["Strong industry ties in automotive and mechanical engineering", "Member of the TU9 alliance of technical universities", "High share of international students, with English-taught master's programs"]
       },
       {
+        "slug": "mannheim",
         "name": "University of Mannheim",
         "city": "Mannheim",
         "type": "Universität",
-        "description": "Home to one of Germany's top business and economics programs."
+        "founded": "1907",
+        "description": "Home to one of Germany's top business and economics programs.",
+        "history": "Founded in 1907 as the Handelshochschule Mannheim (Mannheim Commercial College), the university gained full university status in 1967. Housed in the Baroque Mannheim Palace, it consistently ranks among the top German universities for business and economics.",
+        "highlights": ["One of Germany's top business and economics faculties", "Housed in the historic Mannheim Palace", "A strong international exchange program network"]
       },
       {
+        "slug": "hm",
         "name": "Munich University of Applied Sciences",
         "city": "Munich",
         "type": "Fachhochschule",
-        "description": "A Fachhochschule with strong industry ties in applied engineering and business programs."
+        "founded": "1971",
+        "description": "A Fachhochschule with strong industry ties in applied engineering and business programs.",
+        "history": "Formed in 1971 through the merger of seven technical and vocational colleges, Hochschule München is today Bavaria's second-largest university of applied sciences. Offering an industry-linked education in engineering, design, and business, the university is also known for its iconic \"Roter Würfel\" (Red Cube) building.",
+        "highlights": ["Bavaria's second-largest university of applied sciences (Fachhochschule)", "Strong industry ties in engineering, design, and business", "A community of around 18,000 students"]
       },
       {
+        "slug": "frankfurtuas",
         "name": "Frankfurt University of Applied Sciences",
         "city": "Frankfurt am Main",
         "type": "Fachhochschule",
-        "description": "Applied programs in business and information technology in the financial hub of Frankfurt."
+        "founded": "1971",
+        "description": "Applied programs in business and information technology in the financial hub of Frankfurt.",
+        "history": "Founded on August 1, 1971, Frankfurt UAS is one of Germany's largest universities of applied sciences. Located in Germany's financial capital, it's known for its strong, industry-facing programs in business, IT, engineering, and social work.",
+        "highlights": ["Centrally located in Frankfurt, Germany's financial capital", "Applied programs in business, IT, and engineering", "A campus community of more than 15,000 students"]
       },
       {
+        "slug": "dhbw",
         "name": "DHBW (Baden-Württemberg Cooperative State University)",
         "city": "Stuttgart, Mannheim, Karlsruhe, and other campuses",
         "type": "Duale Hochschule",
-        "description": "The pioneer of the dual studium model in Germany, alternating theory and practice in three-month cycles."
+        "founded": "2009",
+        "description": "The pioneer of the dual studium model in Germany, alternating theory and practice in three-month cycles.",
+        "history": "DHBW's roots trace back to the Berufsakademie Baden-Württemberg, founded in 1974; in 2009, the state granted it full higher-education status and it became DHBW. Today, spread across numerous campuses in Baden-Württemberg and working with thousands of partner companies, DHBW is considered the pioneer of Germany's dual studium model.",
+        "highlights": ["The pioneering institution behind Germany's dual studium model", "A network of thousands of partner companies", "Numerous campus locations across Baden-Württemberg"]
       },
       {
+        "slug": "iu",
         "name": "IU International University of Applied Sciences",
         "city": "24+ campuses across Germany",
         "type": "Duale Hochschule",
-        "description": "One of Germany's largest private higher education institutions for dual studium and distance learning."
+        "founded": "1998",
+        "description": "One of Germany's largest private higher education institutions for dual studium and distance learning.",
+        "history": "Founded in 1998 in Bad Honnef and Bonn as the Internationale Fachhochschule, the institution was renamed IUBH in 2017 and IU International University of Applied Sciences in 2021. Through rapid growth, IU has become Germany's largest university by student enrollment, known for its dual studium and distance-learning programs.",
+        "highlights": ["Germany's largest university by student enrollment", "24+ campuses plus strong distance-learning options", "A wide partner-company network for dual studium"]
       },
       {
+        "slug": "fom",
         "name": "FOM University of Applied Sciences",
         "city": "30+ cities across Germany",
         "type": "Duale Hochschule",
-        "description": "One of Germany's largest private higher education institutions for students who work while studying."
+        "founded": "1993",
+        "description": "One of Germany's largest private higher education institutions for students who work while studying.",
+        "history": "Founded in 1993 and opening its doors in 1994, FOM was designed to offer evening and weekend programs for working students. With study centers in more than 30 cities across Germany today, FOM has grown into one of the country's largest private higher education institutions, focused on business and economics programs.",
+        "highlights": ["Evening and weekend programs for working students", "Study centers in more than 30 German cities", "A broad range of business and economics programs"]
       }
     ],
     "cta": {
