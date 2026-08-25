@@ -14,7 +14,7 @@ type UniversityItem = {
   type: string;
   founded: string;
   description: string;
-  history: string;
+  history: string[];
   highlights: string[];
 };
 
@@ -116,9 +116,13 @@ export default async function UniversityDetailPage({
             <h2 className="text-xl font-bold text-slate-900">
               {locale === "tr" ? "Tarihçe" : "History"}
             </h2>
-            <p className="mt-4 text-sm leading-relaxed text-slate-600">
-              {university.history}
-            </p>
+            <div className="mt-4 space-y-4">
+              {university.history.map((paragraph) => (
+                <p key={paragraph} className="text-sm leading-relaxed text-slate-600">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </div>
         </Container>
       </section>

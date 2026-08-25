@@ -31,10 +31,22 @@
       "ctaSecondary": "Explore Programs",
       "guaranteeNote": "We offer an admission guarantee to students who complete our process in full.",
       "stats": [
-        { "value": "100%", "label": "Admission Guarantee" },
-        { "value": "420+", "label": "Higher Education Institutions in Germany" },
-        { "value": "€0", "label": "Public University Tuition in Most States" },
-        { "value": "16", "label": "Federal States to Choose From" }
+        {
+          "value": "100%",
+          "label": "Admission Guarantee"
+        },
+        {
+          "value": "420+",
+          "label": "Higher Education Institutions in Germany"
+        },
+        {
+          "value": "€0",
+          "label": "Public University Tuition in Most States"
+        },
+        {
+          "value": "16",
+          "label": "Federal States to Choose From"
+        }
       ]
     },
     "services": {
@@ -143,37 +155,61 @@
         "icon": "graduation-cap",
         "title": "A Personalized, Career-Focused Roadmap",
         "description": "Based on your academic background, budget, and career goals, we build a roadmap tailored specifically to you across bachelor's, master's, or dual studium — not a one-size-fits-all package.",
-        "points": ["Personalized strategy built around your career goal", "Equivalency pre-check against the Anabin database", "Admission chance analysis"]
+        "points": [
+          "Personalized strategy built around your career goal",
+          "Equivalency pre-check against the Anabin database",
+          "Admission chance analysis"
+        ]
       },
       {
         "icon": "file-text",
         "title": "Consultancy Throughout the Process",
         "description": "From the first call to your admission letter, we stay with you through every stage of the process — your uni-assist application, motivation letter (Motivationsschreiben), reference letters, and document equivalency.",
-        "points": ["Uninterrupted support at every stage of the process", "Motivation letter (Motivationsschreiben) editing", "uni-assist application tracking and translation guidance"]
+        "points": [
+          "Uninterrupted support at every stage of the process",
+          "Motivation letter (Motivationsschreiben) editing",
+          "uni-assist application tracking and translation guidance"
+        ]
       },
       {
         "icon": "briefcase",
         "title": "Dual Studium Consultancy",
         "description": "In the dual studium model, which alternates theory and practice in three-month cycles, we provide end-to-end support for finding a partner company and applying.",
-        "points": ["Partner company research and matching", "Application guidance for institutions like DHBW, IU, and FOM", "Contract and internship process support"]
+        "points": [
+          "Partner company research and matching",
+          "Application guidance for institutions like DHBW, IU, and FOM",
+          "Contract and internship process support"
+        ]
       },
       {
         "icon": "stamp",
         "title": "Visa & Blocked Account Consultancy",
         "description": "We strengthen your national (Type D) visa application with document checks, blocked account (Sperrkonto) setup, and appointment scheduling.",
-        "points": ["Blocked account (Sperrkonto) setup support", "Document checklist and appointment scheduling", "Health insurance selection"]
+        "points": [
+          "Blocked account (Sperrkonto) setup support",
+          "Document checklist and appointment scheduling",
+          "Health insurance selection"
+        ]
       },
       {
         "icon": "languages",
         "title": "Language Exam & Studienkolleg Prep",
         "description": "We provide end-to-end support for TestDaF/DSH/Goethe exam prep and Studienkolleg applications for students who don't yet qualify for direct admission.",
-        "points": ["TestDaF/DSH/Goethe prep guidance", "Studienkolleg application support", "Language course enrollment"]
+        "points": [
+          "TestDaF/DSH/Goethe prep guidance",
+          "Studienkolleg application support",
+          "Language course enrollment"
+        ]
       },
       {
         "icon": "plane",
         "title": "Housing, Anmeldung & Orientation",
         "description": "From dorm or housing applications to city registration (Anmeldung), airport pickup, and post-arrival orientation, we organize all the practical details.",
-        "points": ["Dorm/housing application support", "Anmeldung (residence registration) guidance", "Airport pickup and orientation"]
+        "points": [
+          "Dorm/housing application support",
+          "Anmeldung (residence registration) guidance",
+          "Airport pickup and orientation"
+        ]
       }
     ],
     "cta": {
@@ -192,19 +228,31 @@
         "name": "Bachelor Studium",
         "flag": "🎓",
         "description": "Undergraduate study at one of Germany's 420+ state-recognized higher education institutions; tuition-free in most federal states.",
-        "highlights": ["€0 tuition in most states (€1,500/semester for non-EU students in Baden-Württemberg)", "Direct or restricted admission based on your YKS score, otherwise Studienkolleg", "Equivalency check via the Anabin database"]
+        "highlights": [
+          "€0 tuition in most states (€1,500/semester for non-EU students in Baden-Württemberg)",
+          "Direct or restricted admission based on your YKS score, otherwise Studienkolleg",
+          "Equivalency check via the Anabin database"
+        ]
       },
       {
         "name": "Master Studium",
         "flag": "🎯",
         "description": "With your bachelor's degree and relevant qualifications, hundreds of English- or German-taught programs at a Universität or Fachhochschule.",
-        "highlights": ["Hundreds of English-taught master's programs", "Research-focused (Universität) or applied (Fachhochschule) options", "Centralized application tracking via uni-assist"]
+        "highlights": [
+          "Hundreds of English-taught master's programs",
+          "Research-focused (Universität) or applied (Fachhochschule) options",
+          "Centralized application tracking via uni-assist"
+        ]
       },
       {
         "name": "Dual Studium",
         "flag": "💼",
         "description": "University in theory, a partner company in practice; a three-month rotating model that lets you study while working.",
-        "highlights": ["Monthly salary from your partner company, tuition-free in most programs", "24+ campus options at institutions like DHBW, IU, and FOM", "Applications are typically made directly to the partner company"]
+        "highlights": [
+          "Monthly salary from your partner company, tuition-free in most programs",
+          "24+ campus options at institutions like DHBW, IU, and FOM",
+          "Applications are typically made directly to the partner company"
+        ]
       }
     ],
     "cta": {
@@ -226,8 +274,17 @@
         "type": "Universität",
         "founded": "1868",
         "description": "One of Germany's leading technical universities in engineering, computer science, and natural sciences.",
-        "history": "Founded in 1868 as the Polytechnische Schule München, TUM grew into one of Germany's leading technical universities. Today it's a member of TU9, the alliance of Germany's leading technical universities, and holds \"University of Excellence\" status.",
-        "highlights": ["Strong research infrastructure in engineering, computer science, and natural sciences", "Member of the TU9 alliance of technical universities", "Major research campuses in Garching and Weihenstephan"]
+        "history": [
+          "TUM was founded in 1868 by King Ludwig II of Bavaria as the Polytechnische Schule München. Its name changed several times over the decades, becoming the Technische Hochschule München in 1901 and finally the Technische Universität München in 1970.",
+          "Today the university is a member of TU9, the alliance of Germany's nine leading technical universities, and holds \"University of Excellence\" status from the federal government. It maintains a comprehensive research infrastructure across engineering, computer science, natural sciences, and medicine.",
+          "TUM's campuses span three main areas: the historic main campus in central Munich, the Garching campus focused on natural sciences and engineering, and the Weihenstephan campus focused on agriculture and life sciences. The university has produced numerous Nobel laureates throughout its history."
+        ],
+        "highlights": [
+          "Strong research infrastructure in engineering, computer science, and natural sciences",
+          "Member of the TU9 alliance and holder of \"University of Excellence\" status",
+          "Large, specialized research campuses in Garching and Weihenstephan",
+          "Home to some of Germany's most sought-after engineering programs"
+        ]
       },
       {
         "slug": "lmu",
@@ -236,8 +293,17 @@
         "type": "Universität",
         "founded": "1472",
         "description": "One of Germany's oldest and most established universities, strong in medicine, law, and social sciences.",
-        "history": "Founded in Ingolstadt in 1472, LMU moved to Munich in 1826 and became one of Europe's oldest universities. Known for its strong faculty in medicine, law, social sciences, and natural sciences, LMU has been home to numerous Nobel laureates throughout its history.",
-        "highlights": ["One of Germany's oldest and most prestigious universities", "Strong research tradition in medicine, law, and natural sciences", "A city-center campus in the heart of Munich"]
+        "history": [
+          "LMU was founded in 1472 in Ingolstadt by Duke Ludwig IX of Bavaria. It moved to Landshut in 1800 and then to its current home in Munich in 1826 — the \"Ludwig-Maximilians\" in its name honors the two rulers associated with that journey.",
+          "One of Europe's oldest universities, LMU has been home to numerous Nobel laureates throughout its history, including Wilhelm Röntgen, Max Planck, and Werner Heisenberg. Members of the White Rose (Weiße Rose), the student resistance group that opposed the Nazi regime during World War II, were also LMU students.",
+          "Today, with a strong faculty in medicine, law, natural sciences, and social sciences, LMU teaches on a historic campus stretching along Ludwigstraße in the heart of Munich."
+        ],
+        "highlights": [
+          "One of Germany's oldest and most prestigious universities",
+          "Strong research tradition in medicine, law, and natural sciences",
+          "Home to numerous Nobel laureates throughout its history",
+          "A city-center campus in the heart of Munich"
+        ]
       },
       {
         "slug": "huberlin",
@@ -246,8 +312,17 @@
         "type": "Universität",
         "founded": "1810",
         "description": "A research university with international recognition in the humanities and social sciences.",
-        "history": "Founded in 1810 by Wilhelm von Humboldt, Humboldt University is known as the birthplace of the \"Humboldtian model,\" which champions the unity of teaching and research. Berlin's oldest university has been home to numerous Nobel laureates over its history, including Albert Einstein and Max Planck.",
-        "highlights": ["The institution where the modern research university concept was born", "International recognition in the humanities and social sciences", "A historic campus in central Berlin, on Unter den Linden"]
+        "history": [
+          "Founded in 1810 by the linguist and statesman Wilhelm von Humboldt, Humboldt University is Berlin's oldest university. Its founding gave rise to the \"Humboldtian model,\" which champions the unity of teaching and research under the principle of academic freedom — a model that became the foundation of the modern research university worldwide.",
+          "Throughout its history, figures such as Albert Einstein, Max Planck, Georg Wilhelm Friedrich Hegel, and Karl Marx have been associated with the university, and numerous Nobel laureates have taught or studied there.",
+          "Located on Unter den Linden boulevard in the very center of Berlin, the university suffered heavy damage during World War II and stood within East Berlin during the country's division; its rebuilt historic main building remains the heart of the university today."
+        ],
+        "highlights": [
+          "The institution where the modern research university concept was born",
+          "International recognition in the humanities and social sciences",
+          "Historical ties to figures like Einstein and Planck",
+          "A historic campus in central Berlin, on Unter den Linden"
+        ]
       },
       {
         "slug": "rwth",
@@ -256,8 +331,17 @@
         "type": "Universität",
         "founded": "1870",
         "description": "One of Europe's leading technical universities in engineering and computer science.",
-        "history": "Founded in 1870, RWTH Aachen is today a member of the TU9 alliance and one of Germany's largest technical universities. Known for its strong industry ties in automotive and mechanical engineering, the university is also recognized for its iconic SuperC student services building.",
-        "highlights": ["Strong industry ties in automotive and mechanical engineering", "Member of the TU9 alliance of technical universities", "High share of international students, with English-taught master's programs"]
+        "history": [
+          "Founded in 1870 as the Polytechnicum, RWTH Aachen is today a member of the TU9 alliance and one of Germany's largest technical universities. Its location near the Belgian and Dutch borders has given the university a strong, international network of industry partnerships.",
+          "Known for its close ties to industry in automotive and mechanical engineering, RWTH Aachen also takes an innovative approach to student services: its iconic SuperC building, opened in 2009, serves as a central hub for student affairs and advising.",
+          "With a high share of international students and a wide range of English-taught master's programs, the university is one of the most popular destinations in Germany for international students seeking an engineering education."
+        ],
+        "highlights": [
+          "Strong industry ties in automotive and mechanical engineering",
+          "Member of the TU9 alliance of technical universities",
+          "An innovative approach to student services via the iconic SuperC building",
+          "High share of international students, with English-taught master's programs"
+        ]
       },
       {
         "slug": "mannheim",
@@ -266,8 +350,17 @@
         "type": "Universität",
         "founded": "1907",
         "description": "Home to one of Germany's top business and economics programs.",
-        "history": "Founded in 1907 as the Handelshochschule Mannheim (Mannheim Commercial College), the university gained full university status in 1967. Housed in the Baroque Mannheim Palace, it consistently ranks among the top German universities for business and economics.",
-        "highlights": ["One of Germany's top business and economics faculties", "Housed in the historic Mannheim Palace", "A strong international exchange program network"]
+        "history": [
+          "Founded in 1907 as the Handelshochschule Mannheim (Mannheim Commercial College), the institution was established through the efforts of then-mayor Otto Beck and economist Eberhard Gothein. Absorbed into the University of Heidelberg under the National Socialist regime in 1933, it reopened after the war in 1946 and gained full university status in 1967.",
+          "The university is housed in the historic Mannheim Palace (Schloss Mannheim), Europe's second-largest Baroque palace after Versailles — a distinctive setting that visually sets it apart from other German business schools.",
+          "Today, Mannheim consistently ranks among the top German universities for business and economics, with a strong international exchange network and a research-driven academic culture."
+        ],
+        "highlights": [
+          "One of Germany's top business and economics faculties",
+          "Housed in the historic Mannheim Palace, Europe's second-largest Baroque palace",
+          "A strong international exchange program network",
+          "A research-driven academic culture with international recognition"
+        ]
       },
       {
         "slug": "hm",
@@ -276,8 +369,17 @@
         "type": "Fachhochschule",
         "founded": "1971",
         "description": "A Fachhochschule with strong industry ties in applied engineering and business programs.",
-        "history": "Formed in 1971 through the merger of seven technical and vocational colleges, Hochschule München is today Bavaria's second-largest university of applied sciences. Offering an industry-linked education in engineering, design, and business, the university is also known for its iconic \"Roter Würfel\" (Red Cube) building.",
-        "highlights": ["Bavaria's second-largest university of applied sciences (Fachhochschule)", "Strong industry ties in engineering, design, and business", "A community of around 18,000 students"]
+        "history": [
+          "Formed in 1971 through the merger of seven technical and vocational colleges, Hochschule München is today Bavaria's second-largest university of applied sciences (Fachhochschule).",
+          "Offering an education tightly linked to industry in engineering, design, and business, the university introduces students to the working world before graduation through applied project work and mandatory internship periods.",
+          "The campus's landmark \"Roter Würfel\" (Red Cube) building houses the design faculty and is part of a community of around 18,000 students."
+        ],
+        "highlights": [
+          "Bavaria's second-largest university of applied sciences (Fachhochschule)",
+          "Strong industry ties in engineering, design, and business",
+          "An applied, internship-driven education model",
+          "A community of around 18,000 students"
+        ]
       },
       {
         "slug": "frankfurtuas",
@@ -286,8 +388,17 @@
         "type": "Fachhochschule",
         "founded": "1971",
         "description": "Applied programs in business and information technology in the financial hub of Frankfurt.",
-        "history": "Founded on August 1, 1971, Frankfurt UAS is one of Germany's largest universities of applied sciences. Located in Germany's financial capital, it's known for its strong, industry-facing programs in business, IT, engineering, and social work.",
-        "highlights": ["Centrally located in Frankfurt, Germany's financial capital", "Applied programs in business, IT, and engineering", "A campus community of more than 15,000 students"]
+        "history": [
+          "Founded on August 1, 1971, Frankfurt UAS is today one of Germany's largest universities of applied sciences, home to more than 15,000 students.",
+          "Located in Germany's financial capital, the university leverages its position to build close partnerships with the banking, finance, and IT sectors, offering industry-facing programs in business, information technology, engineering, and social work.",
+          "Through applied research projects and mandatory industry internships, the university aims to give its students a strong, direct path into the job market after graduation."
+        ],
+        "highlights": [
+          "Centrally located in Frankfurt, Germany's financial capital",
+          "Applied programs in business, IT, and engineering",
+          "Close partnerships with the banking and finance sector",
+          "A campus community of more than 15,000 students"
+        ]
       },
       {
         "slug": "dhbw",
@@ -296,8 +407,17 @@
         "type": "Duale Hochschule",
         "founded": "2009",
         "description": "The pioneer of the dual studium model in Germany, alternating theory and practice in three-month cycles.",
-        "history": "DHBW's roots trace back to the Berufsakademie Baden-Württemberg, founded in 1974; in 2009, the state granted it full higher-education status and it became DHBW. Today, spread across numerous campuses in Baden-Württemberg and working with thousands of partner companies, DHBW is considered the pioneer of Germany's dual studium model.",
-        "highlights": ["The pioneering institution behind Germany's dual studium model", "A network of thousands of partner companies", "Numerous campus locations across Baden-Württemberg"]
+        "history": [
+          "DHBW's roots trace back to the Berufsakademie Baden-Württemberg, founded in 1974. Conceived as an entirely new type of educational institution at the time, it grew quickly to include locations across the state.",
+          "In 2009, the Baden-Württemberg state parliament granted this 35-year-old, successful model full higher-education status, transforming the Berufsakademie into the Duale Hochschule Baden-Württemberg (DHBW). By that point, enrollment had surpassed 23,000 students, working with more than 8,000 partner companies.",
+          "Today, spread across numerous campuses throughout Baden-Württemberg and working with thousands of partner companies, DHBW offers students a model that alternates theory and practice in three-month cycles, and is considered the pioneer of Germany's dual studium system."
+        ],
+        "highlights": [
+          "The pioneering institution behind Germany's dual studium model",
+          "A network of thousands of partner companies",
+          "Numerous campus locations across Baden-Württemberg",
+          "A state-recognized evolution of a model with more than 35 years of history"
+        ]
       },
       {
         "slug": "iu",
@@ -306,8 +426,17 @@
         "type": "Duale Hochschule",
         "founded": "1998",
         "description": "One of Germany's largest private higher education institutions for dual studium and distance learning.",
-        "history": "Founded in 1998 in Bad Honnef and Bonn as the Internationale Fachhochschule, the institution was renamed IUBH in 2017 and IU International University of Applied Sciences in 2021. Through rapid growth, IU has become Germany's largest university by student enrollment, known for its dual studium and distance-learning programs.",
-        "highlights": ["Germany's largest university by student enrollment", "24+ campuses plus strong distance-learning options", "A wide partner-company network for dual studium"]
+        "history": [
+          "Founded in 1998 in Bad Honnef and Bonn as the Internationale Fachhochschule with just 23 students in its first year, the institution entered a period of rapid growth. It merged with the Adam-Ries-Fachhochschule in 2013, was renamed IUBH Internationale Hochschule in 2017, and took its current name, IU International University of Applied Sciences, in 2021.",
+          "Through this rapid expansion, IU has become Germany's largest university by student enrollment, surpassing 130,000 students as of 2025.",
+          "IU is known for its dual studium and distance-learning programs, offering in-person study at more than 24 campuses across Germany while also serving students who need flexible schedules through a strong digital learning infrastructure."
+        ],
+        "highlights": [
+          "Germany's largest university by student enrollment",
+          "24+ campuses plus strong distance-learning options",
+          "A wide partner-company network for dual studium",
+          "Rapid, continuous growth since its founding in 1998"
+        ]
       },
       {
         "slug": "fom",
@@ -316,8 +445,169 @@
         "type": "Duale Hochschule",
         "founded": "1993",
         "description": "One of Germany's largest private higher education institutions for students who work while studying.",
-        "history": "Founded in 1993 and opening its doors in 1994, FOM was designed to offer evening and weekend programs for working students. With study centers in more than 30 cities across Germany today, FOM has grown into one of the country's largest private higher education institutions, focused on business and economics programs.",
-        "highlights": ["Evening and weekend programs for working students", "Study centers in more than 30 German cities", "A broad range of business and economics programs"]
+        "history": [
+          "Founded in 1993 and receiving official state recognition on September 18, 1993, FOM opened its doors in 1994. Its founding purpose was to let full-time working students pursue a university education through evening and weekend programs.",
+          "Thanks to this focus, FOM grew rapidly and today operates study centers in more than 30 cities across Germany, making it one of the country's largest private higher education institutions with over 47,000 students.",
+          "With a broad range of business and economics programs, FOM also offers flexible study options that include the dual studium model, serving students who want to combine working life with a university education."
+        ],
+        "highlights": [
+          "Evening and weekend programs for working students",
+          "Study centers in more than 30 German cities",
+          "One of Germany's largest private higher education institutions, with 47,000+ students",
+          "A broad range of business and economics programs"
+        ]
+      },
+      {
+        "slug": "heidelberg",
+        "name": "Heidelberg University (Ruprecht-Karls-Universität)",
+        "city": "Heidelberg",
+        "type": "Universität",
+        "founded": "1386",
+        "description": "Founded in 1386, Germany's oldest and one of its most prestigious research universities.",
+        "history": [
+          "Heidelberg University was founded on October 18, 1386, when Elector Ruprecht I received the Pope's permission to establish it. It is Germany's oldest university and the third to be founded in the Holy Roman Empire. Modeled after the University of Paris, it initially comprised four faculties — philosophy, theology, law, and medicine — with the Dutch scholar Marsilius of Inghen, who came from Paris, serving as its first rector.",
+          "Also known as \"Ruperto Carola,\" the university has been home to leading scientists throughout its history, including Robert Bunsen, Hermann von Helmholtz, Gustav Kirchhoff, and Max Weber; to date, its professors have been awarded 11 Nobel Prizes.",
+          "Set in the historic city center in the shadow of Heidelberg Castle, the university is today regarded as one of Europe's strongest research universities, offering bachelor's, master's, and doctoral programs across 12 faculties and around 100 disciplines."
+        ],
+        "highlights": [
+          "Germany's oldest and one of Europe's most established universities",
+          "11 Nobel Prizes awarded to its professors to date",
+          "A broad academic range across 12 faculties and around 100 disciplines",
+          "A campus in the historic city center, in the shadow of Heidelberg Castle"
+        ]
+      },
+      {
+        "slug": "tuebingen",
+        "name": "University of Tübingen",
+        "city": "Tübingen",
+        "type": "Universität",
+        "founded": "1477",
+        "description": "Founded in 1477, a classic German university-town institution strong in medicine and the natural sciences.",
+        "history": [
+          "The University of Tübingen was founded in 1477 by Count Eberhard VI, following a 1476 bull from Pope Sixtus IV. It initially comprised four faculties — theology, law, medicine, and philosophy — and fourteen professorships in total. Philipp Melanchthon, one of the leading figures of the Reformation, played an important role in shaping the university's academic direction.",
+          "Over the centuries, Tübingen has counted astronomer Johannes Kepler, poet Friedrich Hölderlin, and philosophers Friedrich Schelling and G.W.F. Hegel among its students. Pope Benedict XVI also briefly studied theology there in his youth.",
+          "Located in the heart of a historic town on the Neckar River, the university today carries a strong academic tradition in medicine, natural sciences, and the humanities, having produced numerous Nobel laureates, particularly in medicine and chemistry."
+        ],
+        "highlights": [
+          "An unbroken academic tradition dating back to 1477",
+          "Alma mater of historic figures like Kepler, Hölderlin, and Hegel",
+          "A strong Nobel Prize track record in medicine and chemistry",
+          "A classic German university-town campus on the Neckar River"
+        ]
+      },
+      {
+        "slug": "kit",
+        "name": "Karlsruhe Institute of Technology (KIT)",
+        "city": "Karlsruhe",
+        "type": "Universität",
+        "founded": "2009",
+        "description": "A research-driven technology university carrying the legacy of Germany's first technical higher-education institution.",
+        "history": [
+          "KIT's roots trace back to the Fridericiana, founded in 1825 as Germany's first \"Technische Hochschule\" — the Universität Karlsruhe. It was here that Heinrich Hertz first experimentally demonstrated electromagnetic waves, and automobile pioneer Carl Benz studied at this historic institution.",
+          "In 2009, an act passed by the Baden-Württemberg state parliament merged the Universität Karlsruhe with Forschungszentrum Karlsruhe, a large-scale research institution founded in 1956, forming today's Karlsruhe Institute of Technology (KIT).",
+          "Through this merger, KIT carries out both the teaching and research duties of a state university and the mission of a large-scale research institution within the Helmholtz Association, making it one of Germany's most comprehensive centers for technology and engineering research."
+        ],
+        "highlights": [
+          "Carries the legacy of Germany's first technical higher-education institution, founded in 1825",
+          "Formed in 2009 through the merger of a university and a large-scale research institution",
+          "Also carries out large-scale research duties within the Helmholtz Association",
+          "Historical ties to figures like Heinrich Hertz and Carl Benz"
+        ]
+      },
+      {
+        "slug": "freiburg",
+        "name": "University of Freiburg",
+        "city": "Freiburg im Breisgau",
+        "type": "Universität",
+        "founded": "1457",
+        "description": "Founded in 1457, a Habsburg-legacy university strong in philosophy and the social sciences.",
+        "history": [
+          "The University of Freiburg was established by a charter issued by Albert VI of the House of Habsburg on September 21, 1457, making it the second university founded in Habsburg territory after the University of Vienna. From its founding, the university taught theology, law, and medicine, along with the \"Artes Liberales\" (liberal arts), which formed the basis of today's faculty of humanities.",
+          "Originally named the \"Albertina,\" the university's continued existence was secured in 1818 by a significant gift from Grand Duke Ludwig of Baden, on which occasion it was renamed the Albert-Ludwigs-Universität, its name today. As Germany's fifth-oldest university, Freiburg built a strong tradition in philosophy, philology, historical research, economics, and law.",
+          "Associated with figures such as Martin Heidegger, Edmund Husserl, Max Weber, Walter Eucken, and Nobel laureate Friedrich Hayek, Freiburg continues to carry this deep-rooted academic identity in those disciplines today."
+        ],
+        "highlights": [
+          "Germany's fifth-oldest university",
+          "An unbroken tradition since 1457, rooted in Habsburg heritage",
+          "A strong history in philosophy through figures like Heidegger and Husserl",
+          "A strong economics tradition that includes Nobel laureate Friedrich Hayek"
+        ]
+      },
+      {
+        "slug": "goettingen",
+        "name": "University of Göttingen",
+        "city": "Göttingen",
+        "type": "Universität",
+        "founded": "1734",
+        "description": "Associated with 45 Nobel laureates, a research university at the heart of the \"city of science,\" Göttingen.",
+        "history": [
+          "Founded in 1734 by George II, King of Great Britain and Elector of Hanover, the university began lectures that same year, with its official inauguration following in 1737. Established in keeping with Enlightenment ideals, it became one of the pioneering institutions to free scientific research from church censorship.",
+          "In the 19th century, the university counted mathematician Carl Friedrich Gauss and the Brothers Grimm among its faculty. In 1837, seven professors — including the Brothers Grimm — were removed from their posts after protesting the King of Hanover's expansion of his powers; the episode became known in history as the \"Göttingen Seven\" (Göttinger Sieben).",
+          "Göttingen is associated with 45 Nobel laureates, from quantum mechanics pioneer Max Born to mathematician Emmy Noether, 14 of whom were honored for work carried out at Göttingen itself. The oldest university in the state of Lower Saxony, Göttingen today sits at the heart of a city that carries the nickname \"City of Science,\" with around 26,000 students."
+        ],
+        "highlights": [
+          "A strong scientific tradition associated with 45 Nobel laureates",
+          "A mathematical legacy spanning Carl Friedrich Gauss to Emmy Noether",
+          "The oldest university in the state of Lower Saxony",
+          "A campus of around 26,000 students at the heart of the \"City of Science\""
+        ]
+      },
+      {
+        "slug": "bonn",
+        "name": "University of Bonn",
+        "city": "Bonn",
+        "type": "Universität",
+        "founded": "1818",
+        "description": "Founded in 1818, a well-established Rhineland university housed in a former electoral palace.",
+        "history": [
+          "Founded on October 18, 1818, by King Frederick William III of Prussia as the Rhine University, the University of Bonn is the direct successor to the Academy of the Prince-Elector of Cologne, founded in 1777. Inspired by Wilhelm von Humboldt's principles of academic freedom and the unity of research and teaching, it quickly became one of Germany's most respected institutions.",
+          "In the 1930s, the Nazi regime forced many Jewish scholars and dissidents to leave the university; the 1944 bombing of Bonn then destroyed much of the campus. In the postwar period, the university was rebuilt and restored to its former standing.",
+          "The university's main building sits in the former Kurfürstliches Schloss (Electoral Palace), overlooking the Hofgarten park. Associated with figures such as physicist Heinrich Hertz, chemist August Kekulé, and former German Chancellor Konrad Adenauer, Bonn is today one of Germany's leading universities, with around 36,000 students."
+        ],
+        "highlights": [
+          "A historic main building in a former electoral palace, overlooking the Hofgarten park",
+          "A founding philosophy inspired by Humboldt's principles of academic freedom",
+          "Historical ties to figures like Heinrich Hertz and Konrad Adenauer",
+          "One of Germany's leading universities, with around 36,000 students"
+        ]
+      },
+      {
+        "slug": "koeln",
+        "name": "University of Cologne",
+        "city": "Cologne",
+        "type": "Universität",
+        "founded": "1388",
+        "description": "Founded in 1388, one of Germany's largest traditional universities by enrollment.",
+        "history": [
+          "Founded in 1388, the University of Cologne was the fourth university established in the Holy Roman Empire, after Prague (1348), Vienna (1365), and Heidelberg (1386). Its founding charter was signed by Pope Urban VI, and teaching began on January 6, 1389.",
+          "Closed during the French occupation in 1798, the university was re-established in 1919 as the \"Neue Universität\" (New University) — a refounding that laid the groundwork for its modern identity today.",
+          "With more than 44,000 students today, Cologne is Germany's largest traditional university by enrollment. Across six faculties and 137 degree programs, it maintains a strong academic tradition, particularly in law, economics, and the social sciences."
+        ],
+        "highlights": [
+          "The fourth university founded in the Holy Roman Empire (1388)",
+          "Re-established as the \"Neue Universität\" in 1919",
+          "Germany's largest traditional university by enrollment, with 44,000+ students",
+          "A strong academic tradition in law, economics, and social sciences (WiSo)"
+        ]
+      },
+      {
+        "slug": "tuberlin",
+        "name": "Technical University of Berlin",
+        "city": "Berlin",
+        "type": "Universität",
+        "founded": "1946",
+        "description": "A technical university whose roots reach back to 1770, formally re-founded in 1946 to mark its present identity.",
+        "history": [
+          "TU Berlin's roots trace back to the Königliche Bergakademie (Royal Mining Academy), founded in 1770, the Königliche Bauakademie (Royal Building Academy), founded in 1799, and the Königliche Gewerbeakademie (Royal Trade Academy), founded in 1821. These three institutions merged in 1879 to form the Königlich Technische Hochschule zu Berlin, with the Mining Academy incorporated in 1916.",
+          "In 1946, in a deliberate effort to document a clear break from its National Socialist past, the institution was positioned not as a reopening but as a conscious new founding, taking the name Technische Universität Berlin from that point on — the date now recognized as the university's official founding.",
+          "A member of the TU9 alliance, the university is associated with figures such as computer pioneer Konrad Zuse and chemists Carl Bosch and Fritz Haber. Located in Berlin's Charlottenburg district, TU Berlin today maintains a strong research culture in engineering and the natural sciences."
+        ],
+        "highlights": [
+          "A long history reaching back to 1770 and the Royal Mining Academy",
+          "A deliberate 1946 re-founding to mark a break from its Nazi-era past",
+          "Member of the TU9 alliance of technical universities",
+          "Historical ties to figures like Konrad Zuse and Fritz Haber"
+        ]
       }
     ],
     "cta": {
@@ -365,10 +655,22 @@
       ]
     },
     "stats": [
-      { "value": "2026", "label": "Founded" },
-      { "value": "420+", "label": "Higher Education Institutions in Germany" },
-      { "value": "100%", "label": "Admission Guarantee" },
-      { "value": "16", "label": "Federal States" }
+      {
+        "value": "2026",
+        "label": "Founded"
+      },
+      {
+        "value": "420+",
+        "label": "Higher Education Institutions in Germany"
+      },
+      {
+        "value": "100%",
+        "label": "Admission Guarantee"
+      },
+      {
+        "value": "16",
+        "label": "Federal States"
+      }
     ]
   },
   "contact": {
@@ -399,7 +701,12 @@
       "phone": "Phone Number",
       "program": "Program of Interest",
       "programPlaceholder": "Select",
-      "programOptions": ["Bachelor Studium", "Master Studium", "Dual Studium", "Not Sure Yet"],
+      "programOptions": [
+        "Bachelor Studium",
+        "Master Studium",
+        "Dual Studium",
+        "Not Sure Yet"
+      ],
       "message": "Your Message",
       "messagePlaceholder": "Tell us about your target program, university, or any questions you have.",
       "submit": "Submit",

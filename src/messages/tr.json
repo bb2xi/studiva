@@ -31,10 +31,22 @@
       "ctaSecondary": "Programları İncele",
       "guaranteeNote": "Sürecimizi eksiksiz tamamlayan öğrencilerimize kabul garantisi veriyoruz.",
       "stats": [
-        { "value": "%100", "label": "Kabul Garantisi" },
-        { "value": "420+", "label": "Almanya'da Yükseköğretim Kurumu" },
-        { "value": "€0", "label": "Çoğu Eyalette Devlet Üniversite Harcı" },
-        { "value": "16", "label": "Eyalette Kampüs Seçeneği" }
+        {
+          "value": "%100",
+          "label": "Kabul Garantisi"
+        },
+        {
+          "value": "420+",
+          "label": "Almanya'da Yükseköğretim Kurumu"
+        },
+        {
+          "value": "€0",
+          "label": "Çoğu Eyalette Devlet Üniversite Harcı"
+        },
+        {
+          "value": "16",
+          "label": "Eyalette Kampüs Seçeneği"
+        }
       ]
     },
     "services": {
@@ -143,37 +155,61 @@
         "icon": "graduation-cap",
         "title": "Kişiye Özel, Kariyer Odaklı Yol Haritası",
         "description": "Akademik geçmişiniz, bütçeniz ve kariyer hedeflerinize göre bachelor, master ya da dual studium arasında; hazır bir paket değil, size özel kurgulanmış bir yol haritası çıkarıyoruz.",
-        "points": ["Kariyer hedefine göre kişiselleştirilmiş strateji", "Anabin veritabanına göre denklik ön kontrolü", "Kabul şansı analizi"]
+        "points": [
+          "Kariyer hedefine göre kişiselleştirilmiş strateji",
+          "Anabin veritabanına göre denklik ön kontrolü",
+          "Kabul şansı analizi"
+        ]
       },
       {
         "icon": "file-text",
         "title": "Süreç Boyu Danışmanlık",
         "description": "İlk görüşmeden kabul mektubuna kadar; uni-assist başvurunuzdan motivasyon mektubunuza (Motivationsschreiben), referans mektuplarınızdan belge denkliğinize kadar tüm süreçte sürekli yanınızdayız.",
-        "points": ["Sürecin her aşamasında kesintisiz danışmanlık", "Motivasyon mektubu (Motivationsschreiben) düzenleme", "uni-assist başvuru takibi ve belge çevirisi yönlendirmesi"]
+        "points": [
+          "Sürecin her aşamasında kesintisiz danışmanlık",
+          "Motivasyon mektubu (Motivationsschreiben) düzenleme",
+          "uni-assist başvuru takibi ve belge çevirisi yönlendirmesi"
+        ]
       },
       {
         "icon": "briefcase",
         "title": "Dual Studium (Duales Studium) Danışmanlığı",
         "description": "Teori ve uygulamayı 3 aylık dönemlerle birleştiren dual studium modelinde partner şirket araştırması ve başvuru sürecinde uçtan uca destek sağlıyoruz.",
-        "points": ["Partner şirket araştırması ve eşleştirme", "DHBW, IU, FOM gibi kurumlara başvuru rehberliği", "Sözleşme ve staj süreci desteği"]
+        "points": [
+          "Partner şirket araştırması ve eşleştirme",
+          "DHBW, IU, FOM gibi kurumlara başvuru rehberliği",
+          "Sözleşme ve staj süreci desteği"
+        ]
       },
       {
         "icon": "stamp",
         "title": "Vize ve Bloke Hesap Danışmanlığı",
         "description": "Ulusal vize (Type D) başvurunuzu güçlendirmek için evrak kontrolü, bloke hesap (Sperrkonto) açılışı ve randevu planlaması sağlıyoruz.",
-        "points": ["Bloke hesap (Sperrkonto) açılış desteği", "Evrak kontrol listesi ve randevu planlaması", "Sağlık sigortası seçimi"]
+        "points": [
+          "Bloke hesap (Sperrkonto) açılış desteği",
+          "Evrak kontrol listesi ve randevu planlaması",
+          "Sağlık sigortası seçimi"
+        ]
       },
       {
         "icon": "languages",
         "title": "Dil Sınavı ve Studienkolleg Hazırlığı",
         "description": "TestDaF/DSH/Goethe sınav hazırlığı ve doğrudan kabul için yeterli olmayan öğrenciler için Studienkolleg başvurusunda uçtan uca destek veriyoruz.",
-        "points": ["TestDaF/DSH/Goethe sınav hazırlık yönlendirmesi", "Studienkolleg başvuru desteği", "Dil kursu kayıt işlemleri"]
+        "points": [
+          "TestDaF/DSH/Goethe sınav hazırlık yönlendirmesi",
+          "Studienkolleg başvuru desteği",
+          "Dil kursu kayıt işlemleri"
+        ]
       },
       {
         "icon": "plane",
         "title": "Konaklama, Anmeldung ve Oryantasyon",
         "description": "Yurt veya ev başvurunuzdan şehre kayıt (Anmeldung) işlemine, havalimanı karşılamadan varış sonrası oryantasyona kadar pratik detayları organize ediyoruz.",
-        "points": ["Yurt/ev başvuru desteği", "Anmeldung (ikamet kaydı) rehberliği", "Havalimanı karşılama ve oryantasyon"]
+        "points": [
+          "Yurt/ev başvuru desteği",
+          "Anmeldung (ikamet kaydı) rehberliği",
+          "Havalimanı karşılama ve oryantasyon"
+        ]
       }
     ],
     "cta": {
@@ -192,19 +228,31 @@
         "name": "Bachelor Studium",
         "flag": "🎓",
         "description": "Almanya'da 420'den fazla devlet onaylı yükseköğretim kurumunda lisans eğitimi; çoğu eyalette öğrenim harcı yok.",
-        "highlights": ["Çoğu eyalette 0€ öğrenim harcı (Baden-Württemberg'de AB dışı öğrenciler için dönemlik 1.500€)", "YKS puanınıza göre doğrudan ya da kısıtlı kabul, yetersizse Studienkolleg", "Anabin veritabanına göre denklik kontrolü"]
+        "highlights": [
+          "Çoğu eyalette 0€ öğrenim harcı (Baden-Württemberg'de AB dışı öğrenciler için dönemlik 1.500€)",
+          "YKS puanınıza göre doğrudan ya da kısıtlı kabul, yetersizse Studienkolleg",
+          "Anabin veritabanına göre denklik kontrolü"
+        ]
       },
       {
         "name": "Master Studium",
         "flag": "🎯",
         "description": "Lisans diplomanız ve alan yeterliliğinizle Universität ya da Fachhochschule'de İngilizce ya da Almanca yürütülen yüzlerce program.",
-        "highlights": ["İngilizce eğitim veren yüzlerce master programı", "Araştırma ağırlıklı (Universität) ya da uygulamalı (Fachhochschule) seçenekler", "uni-assist üzerinden merkezi başvuru takibi"]
+        "highlights": [
+          "İngilizce eğitim veren yüzlerce master programı",
+          "Araştırma ağırlıklı (Universität) ya da uygulamalı (Fachhochschule) seçenekler",
+          "uni-assist üzerinden merkezi başvuru takibi"
+        ]
       },
       {
         "name": "Dual Studium (Duales Studium)",
         "flag": "💼",
         "description": "Teoride üniversite, uygulamada partner şirket; 3 aylık dönüşümlü model ile çalışarak okuma imkanı.",
-        "highlights": ["Şirketten aylık maaş, çoğu programda öğrenim harcı yok", "DHBW, IU, FOM gibi kurumlarda 24'ten fazla kampüs seçeneği", "Başvurular genellikle doğrudan partner şirkete yapılır"]
+        "highlights": [
+          "Şirketten aylık maaş, çoğu programda öğrenim harcı yok",
+          "DHBW, IU, FOM gibi kurumlarda 24'ten fazla kampüs seçeneği",
+          "Başvurular genellikle doğrudan partner şirkete yapılır"
+        ]
       }
     ],
     "cta": {
@@ -226,8 +274,17 @@
         "type": "Universität",
         "founded": "1868",
         "description": "Mühendislik, bilgisayar bilimleri ve doğa bilimlerinde Almanya'nın en iyi teknik üniversitelerinden biri.",
-        "history": "TUM, 1868 yılında Polytechnische Schule München adıyla kuruldu ve zamanla Almanya'nın önde gelen teknik üniversitelerinden birine dönüştü. Bugün TU9 (Almanya'nın önde gelen teknik üniversiteler birliği) üyesi olan TUM, 'Excellence Üniversite' statüsüne sahip kurumlardan biri.",
-        "highlights": ["Mühendislik, bilgisayar bilimi ve doğa bilimlerinde güçlü araştırma altyapısı", "TU9 teknik üniversiteler birliği üyesi", "Garching ve Weihenstephan gibi büyük araştırma kampüsleri"]
+        "history": [
+          "TUM, 1868 yılında Bavyera Kralı II. Ludwig tarafından Polytechnische Schule München adıyla kuruldu. Zamanla adı birkaç kez değişti; 1901'de Technische Hochschule München, 1970'te ise bugünkü adı olan Technische Universität München'e dönüştü.",
+          "Üniversite, Almanya'nın en güçlü dokuz teknik üniversitesini bir araya getiren TU9 birliğinin üyesi ve federal hükümetin 'Excellence Üniversite' statüsü verdiği kurumlardan biri. Mühendislik, bilgisayar bilimleri, doğa bilimleri ve tıp alanlarında kapsamlı bir araştırma altyapısına sahip.",
+          "TUM'un kampüsleri üç ana bölgeye yayılıyor: şehir merkezindeki tarihi ana kampüs, doğa bilimleri ve mühendisliğin ağırlıkta olduğu Garching kampüsü, ve tarım/yaşam bilimleri odaklı Weihenstephan kampüsü. Üniversite bünyesinden bugüne kadar çok sayıda Nobel ödüllü bilim insanı çıktı."
+        ],
+        "highlights": [
+          "Mühendislik, bilgisayar bilimi ve doğa bilimlerinde güçlü araştırma altyapısı",
+          "TU9 teknik üniversiteler birliği üyesi ve 'Excellence Üniversite' statüsü",
+          "Garching ve Weihenstephan gibi büyük, uzmanlaşmış araştırma kampüsleri",
+          "Almanya'nın en çok tercih edilen mühendislik programlarından bazılarına ev sahipliği"
+        ]
       },
       {
         "slug": "lmu",
@@ -236,8 +293,17 @@
         "type": "Universität",
         "founded": "1472",
         "description": "Tıp, hukuk ve sosyal bilimlerde güçlü, Almanya'nın en köklü üniversitelerinden.",
-        "history": "1472'de Ingolstadt'ta kurulan LMU, 1826'da Münih'e taşındı ve Avrupa'nın en eski üniversitelerinden biri haline geldi. Tıp, hukuk, sosyal bilimler ve doğa bilimleri alanlarındaki güçlü akademik kadrosuyla tanınan LMU, tarih boyunca çok sayıda Nobel ödüllü bilim insanına ev sahipliği yaptı.",
-        "highlights": ["Almanya'nın en köklü ve en prestijli üniversitelerinden biri", "Tıp, hukuk ve doğa bilimlerinde güçlü araştırma geleneği", "Şehir merkezinde, Münih'in kalbinde bir kampüs"]
+        "history": [
+          "LMU, 1472'de Bavyera Dükü IX. Ludwig tarafından Ingolstadt'ta kuruldu. 1800'de Landshut'a, 1826'da ise bugünkü yeri olan Münih'e taşındı; üniversitenin adındaki 'Ludwig-Maximilians' ibaresi bu taşınma sürecindeki iki hükümdara atfen verildi.",
+          "Avrupa'nın en eski üniversitelerinden biri olan LMU, tarih boyunca Wilhelm Röntgen, Max Planck ve Werner Heisenberg gibi çok sayıda Nobel ödüllü bilim insanına ev sahipliği yaptı. İkinci Dünya Savaşı sırasında Nazi rejimine karşı direniş gösteren öğrenci grubu 'Beyaz Gül'ün (Weiße Rose) üyeleri de LMU öğrencileriydi.",
+          "Bugün tıp, hukuk, doğa bilimleri ve sosyal bilimlerde güçlü bir akademik kadroya sahip olan LMU, Münih şehir merkezinde, Ludwigstraße boyunca uzanan tarihi bir kampüste eğitim veriyor."
+        ],
+        "highlights": [
+          "Almanya'nın en köklü ve en prestijli üniversitelerinden biri",
+          "Tıp, hukuk ve doğa bilimlerinde güçlü araştırma geleneği",
+          "Tarihte çok sayıda Nobel ödüllü bilim insanına ev sahipliği yaptı",
+          "Şehir merkezinde, Münih'in kalbinde bir kampüs"
+        ]
       },
       {
         "slug": "huberlin",
@@ -246,8 +312,17 @@
         "type": "Universität",
         "founded": "1810",
         "description": "Beşeri bilimler ve sosyal bilimlerde uluslararası tanınırlığa sahip araştırma üniversitesi.",
-        "history": "1810 yılında Wilhelm von Humboldt tarafından kurulan Humboldt Üniversitesi, öğretim ve araştırmanın bir arada yürütülmesini savunan 'Humboldt modeli'nin doğduğu yer olarak bilinir. Berlin'in en köklü üniversitesi olan kurum, tarihinde Albert Einstein ve Max Planck gibi isimlerin de aralarında bulunduğu çok sayıda Nobel ödüllü akademisyene ev sahipliği yaptı.",
-        "highlights": ["Modern araştırma üniversitesi anlayışının doğduğu kurum", "Beşeri ve sosyal bilimlerde uluslararası tanınırlık", "Berlin şehir merkezinde, Unter den Linden'de tarihi kampüs"]
+        "history": [
+          "1810 yılında dilbilimci ve devlet adamı Wilhelm von Humboldt tarafından kurulan Humboldt Üniversitesi, Berlin'in en köklü üniversitesi. Kuruluşuyla birlikte, öğretim ve araştırmanın bir arada, akademik özgürlük ilkesiyle yürütülmesini savunan 'Humboldt modeli' doğdu; bu model dünya genelinde modern araştırma üniversitesi anlayışının temelini oluşturdu.",
+          "Tarihi boyunca Albert Einstein, Max Planck, Georg Wilhelm Friedrich Hegel ve Karl Marx gibi isimler üniversiteyle ilişkilendirildi; çok sayıda Nobel ödüllü bilim insanı burada ders verdi ya da eğitim aldı.",
+          "Unter den Linden bulvarında, Berlin'in tam merkezinde yer alan üniversite, İkinci Dünya Savaşı'nda ağır hasar gördü ve Almanya'nın bölünmüş döneminde Doğu Berlin sınırları içinde kaldı; savaş sonrası yeniden inşa edilen tarihi ana bina bugün hâlâ üniversitenin kalbi."
+        ],
+        "highlights": [
+          "Modern araştırma üniversitesi anlayışının doğduğu kurum",
+          "Beşeri ve sosyal bilimlerde uluslararası tanınırlık",
+          "Einstein ve Planck gibi isimlerle tarihsel bağlantı",
+          "Berlin şehir merkezinde, Unter den Linden'de tarihi kampüs"
+        ]
       },
       {
         "slug": "rwth",
@@ -256,8 +331,17 @@
         "type": "Universität",
         "founded": "1870",
         "description": "Mühendislik ve bilgisayar bilimlerinde Avrupa'nın önde gelen teknik üniversitelerinden.",
-        "history": "1870'te kurulan RWTH Aachen, bugün TU9 birliğinin üyesi ve Almanya'nın en büyük teknik üniversitelerinden biri. Otomotiv ve makine mühendisliğinde sanayiyle güçlü iş birlikleri kurmasıyla tanınan üniversite, ikonik SuperC binasıyla da öğrenci hizmetlerinde öne çıkıyor.",
-        "highlights": ["Otomotiv ve makine mühendisliğinde güçlü sanayi bağlantıları", "TU9 teknik üniversiteler birliği üyesi", "Uluslararası öğrenci oranı yüksek, İngilizce yürütülen master programları"]
+        "history": [
+          "1870'te Polytechnicum adıyla kurulan RWTH Aachen, bugün TU9 birliğinin üyesi ve Almanya'nın en büyük teknik üniversitelerinden biri. Belçika ve Hollanda sınırına yakın konumu, üniversiteye sanayiyle güçlü ve uluslararası bir işbirliği ağı kazandırdı.",
+          "Otomotiv ve makine mühendisliğinde sanayiyle kurduğu yakın bağlarla tanınan RWTH Aachen, aynı zamanda öğrenci hizmetlerinde de yenilikçi bir yaklaşım sergiliyor; 2009'da açılan ikonik SuperC binası, üniversitenin öğrenci işleri ve danışmanlık hizmetlerinin toplandığı merkezi bir yapı olarak öne çıkıyor.",
+          "Üniversite, yüksek uluslararası öğrenci oranı ve İngilizce yürütülen çok sayıda master programıyla, Almanya'ya mühendislik eğitimi almak isteyen yabancı öğrenciler için en popüler adreslerden biri konumunda."
+        ],
+        "highlights": [
+          "Otomotiv ve makine mühendisliğinde güçlü sanayi bağlantıları",
+          "TU9 teknik üniversiteler birliği üyesi",
+          "İkonik SuperC binasıyla öğrenci hizmetlerinde yenilikçi yaklaşım",
+          "Uluslararası öğrenci oranı yüksek, İngilizce yürütülen master programları"
+        ]
       },
       {
         "slug": "mannheim",
@@ -266,8 +350,17 @@
         "type": "Universität",
         "founded": "1907",
         "description": "İşletme ve ekonomi alanında Almanya'nın en iyi programlarından birine sahip.",
-        "history": "1907'de Handelshochschule Mannheim (Mannheim Ticaret Yüksekokulu) olarak kurulan üniversite, 1967'de tam üniversite statüsü kazandı. Barok mimarisiyle bilinen tarihi Mannheim Sarayı'nda (Schloss Mannheim) eğitim veren üniversite, işletme ve ekonomi alanındaki Almanya sıralamalarında düzenli olarak ilk sıralarda yer alıyor.",
-        "highlights": ["Almanya'nın en iyi işletme ve ekonomi fakültelerinden biri", "Tarihi Mannheim Sarayı içinde eğitim", "Güçlü uluslararası değişim programı ağı"]
+        "history": [
+          "1907'de Handelshochschule Mannheim (Mannheim Ticaret Yüksekokulu) olarak kurulan üniversite, dönemin belediye başkanı Otto Beck ve ekonomist Eberhard Gothein'in girişimiyle hayata geçti. 1933'te Nasyonal Sosyalist rejim döneminde Heidelberg Üniversitesi'ne bağlanan kurum, savaş sonrasında 1946'da yeniden açıldı ve 1967'de tam üniversite statüsü kazandı.",
+          "Üniversite, Avrupa'nın Versay'dan sonraki en büyük ikinci barok sarayı olan tarihi Mannheim Sarayı'nda (Schloss Mannheim) eğitim veriyor; bu benzersiz konum, üniversiteyi Almanya'daki diğer işletme fakültelerinden görsel olarak da ayırıyor.",
+          "Bugün işletme ve ekonomi alanındaki Almanya sıralamalarında düzenli olarak ilk sıralarda yer alan Mannheim, güçlü bir uluslararası değişim programı ağına ve araştırma odaklı bir akademik kültüre sahip."
+        ],
+        "highlights": [
+          "Almanya'nın en iyi işletme ve ekonomi fakültelerinden biri",
+          "Avrupa'nın en büyük ikinci barok sarayı olan tarihi Mannheim Sarayı içinde eğitim",
+          "Güçlü uluslararası değişim programı ağı",
+          "Araştırma odaklı, uluslararası tanınırlığa sahip akademik kültür"
+        ]
       },
       {
         "slug": "hm",
@@ -276,8 +369,17 @@
         "type": "Fachhochschule",
         "founded": "1971",
         "description": "Uygulamalı mühendislik ve işletme programlarıyla güçlü sektör bağlantılarına sahip bir Fachhochschule.",
-        "history": "1971'de yedi farklı teknik ve meslek yüksekokulunun birleşmesiyle kurulan Hochschule München, bugün Bavyera'nın en büyük ikinci uygulamalı bilimler üniversitesi. Mühendislik, tasarım ve işletme alanlarında sanayiyle iç içe bir eğitim modeli sunan üniversite, ikonik 'Roter Würfel' (Kırmızı Küp) binasıyla da tanınıyor.",
-        "highlights": ["Bavyera'nın en büyük ikinci uygulamalı bilimler üniversitesi (Fachhochschule)", "Mühendislik, tasarım ve işletmede güçlü sektör bağlantıları", "Yaklaşık 18.000 öğrenciyle geniş bir kampüs topluluğu"]
+        "history": [
+          "1971'de yedi farklı teknik ve meslek yüksekokulunun birleşmesiyle kurulan Hochschule München, bugün Bavyera'nın en büyük ikinci uygulamalı bilimler üniversitesi (Fachhochschule) konumunda.",
+          "Mühendislik, tasarım ve işletme alanlarında sanayiyle iç içe bir eğitim modeli sunan üniversite, uygulamalı proje çalışmaları ve zorunlu staj dönemleriyle öğrencilerini mezuniyet öncesinde iş dünyasıyla tanıştırıyor.",
+          "Kampüsün simgesi haline gelen 'Roter Würfel' (Kırmızı Küp) binası, tasarım fakültesine ev sahipliği yapıyor ve yaklaşık 18.000 öğrencilik geniş bir kampüs topluluğunun parçası."
+        ],
+        "highlights": [
+          "Bavyera'nın en büyük ikinci uygulamalı bilimler üniversitesi (Fachhochschule)",
+          "Mühendislik, tasarım ve işletmede güçlü sektör bağlantıları",
+          "Zorunlu staj dönemleriyle uygulamaya dayalı eğitim modeli",
+          "Yaklaşık 18.000 öğrenciyle geniş bir kampüs topluluğu"
+        ]
       },
       {
         "slug": "frankfurtuas",
@@ -286,8 +388,17 @@
         "type": "Fachhochschule",
         "founded": "1971",
         "description": "Finans merkezi Frankfurt'ta işletme ve bilgi teknolojileri odaklı uygulamalı programlar.",
-        "history": "1 Ağustos 1971'de kurulan Frankfurt UAS, Almanya'nın en büyük uygulamalı bilimler üniversitelerinden biri. Almanya'nın finans merkezi Frankfurt'ta konumlanan üniversite; işletme, bilgi teknolojileri, mühendislik ve sosyal çalışma alanlarında güçlü, sektöre dönük programlarıyla tanınıyor.",
-        "highlights": ["Almanya'nın finans merkezi Frankfurt'ta merkezi konum", "İşletme, bilgi teknolojileri ve mühendislikte uygulamalı eğitim", "15.000'den fazla öğrenciyle geniş bir kampüs"]
+        "history": [
+          "1 Ağustos 1971'de kurulan Frankfurt UAS, Almanya'nın en büyük uygulamalı bilimler üniversitelerinden biri olarak bugün 15.000'den fazla öğrenciye ev sahipliği yapıyor.",
+          "Almanya'nın finans merkezi Frankfurt'ta konumlanan üniversite, bu avantajlı konumu sayesinde bankacılık, finans ve bilgi teknolojileri sektörleriyle yakın iş birlikleri kuruyor; işletme, bilgi teknolojileri, mühendislik ve sosyal çalışma alanlarında sektöre dönük programlar sunuyor.",
+          "Üniversite, uygulamalı araştırma projeleri ve zorunlu endüstri stajlarıyla öğrencilerinin mezuniyet sonrası iş piyasasına güçlü bağlarla geçiş yapmasını hedefliyor."
+        ],
+        "highlights": [
+          "Almanya'nın finans merkezi Frankfurt'ta merkezi konum",
+          "İşletme, bilgi teknolojileri ve mühendislikte uygulamalı eğitim",
+          "Bankacılık ve finans sektörüyle yakın iş birlikleri",
+          "15.000'den fazla öğrenciyle geniş bir kampüs"
+        ]
       },
       {
         "slug": "dhbw",
@@ -296,8 +407,17 @@
         "type": "Duale Hochschule",
         "founded": "2009",
         "description": "Almanya'da dual studium modelinin öncüsü; teori ve uygulamayı 3 aylık dönemlerle birleştirir.",
-        "history": "DHBW'nin kökleri 1974'te kurulan Berufsakademie Baden-Württemberg'e dayanıyor; 2009'da bu kurum, devlet tarafından tam yükseköğretim statüsü verilerek DHBW'ye dönüştürüldü. Bugün Baden-Württemberg eyaletinde çok sayıda kampüste eğitim veren DHBW, binlerce partner şirketle çalışarak Almanya'daki dual studium modelinin öncüsü kabul ediliyor.",
-        "highlights": ["Almanya'da dual studium modelinin öncüsü kurum", "Binlerce partner şirketle işbirliği ağı", "Baden-Württemberg genelinde çok sayıda kampüs seçeneği"]
+        "history": [
+          "DHBW'nin kökleri, 1974'te kurulan Berufsakademie Baden-Württemberg'e dayanıyor. O dönemde tamamen yeni bir eğitim modeli olarak tasarlanan bu kurum, hızla büyüyerek eyalet genelinde çok sayıda lokasyona yayıldı.",
+          "2009'da Baden-Württemberg eyalet parlamentosu, 35 yıllık bu başarılı modele tam yükseköğretim statüsü tanıyarak Berufsakademie'yi Duale Hochschule Baden-Württemberg'e (DHBW) dönüştürdü. Bu dönüşüm sırasında kurumun kayıtlı öğrenci sayısı 23.000'i, partner şirket sayısı ise 8.000'i aşmış durumdaydı.",
+          "Bugün Baden-Württemberg eyaleti genelinde çok sayıda kampüste eğitim veren DHBW, binlerce partner şirketle çalışarak öğrencilerine teori ve uygulamayı 3 aylık dönemlerle birleştiren bir model sunuyor ve Almanya'daki dual studium sisteminin öncüsü kabul ediliyor."
+        ],
+        "highlights": [
+          "Almanya'da dual studium modelinin öncüsü kurum",
+          "Binlerce partner şirketle işbirliği ağı",
+          "Baden-Württemberg genelinde çok sayıda kampüs seçeneği",
+          "35 yılı aşkın bir eğitim modelinin devlet tarafından tanınmış hali"
+        ]
       },
       {
         "slug": "iu",
@@ -306,8 +426,17 @@
         "type": "Duale Hochschule",
         "founded": "1998",
         "description": "Dual studium ve uzaktan eğitimde Almanya'nın en büyük özel yükseköğretim kurumlarından.",
-        "history": "1998'de Bad Honnef ve Bonn'da Internationale Fachhochschule adıyla kurulan kurum, 2017'de IUBH, 2021'de ise IU Internationale Hochschule adını aldı. Hızlı büyümesiyle bugün Almanya'nın öğrenci sayısı bakımından en büyük üniversitesi konumuna gelen IU, dual studium ve uzaktan eğitim programlarıyla öne çıkıyor.",
-        "highlights": ["Almanya'nın öğrenci sayısı bakımından en büyük üniversitesi", "24'ten fazla kampüs ve güçlü uzaktan eğitim seçenekleri", "Dual studium için geniş partner şirket ağı"]
+        "history": [
+          "1998'de Bad Honnef ve Bonn'da Internationale Fachhochschule adıyla, yalnızca 23 öğrenciyle eğitime başlayan kurum, zamanla hızlı bir büyüme sürecine girdi. 2013'te Adam-Ries-Fachhochschule ile birleşti, 2017'de IUBH Internationale Hochschule, 2021'de ise bugünkü adı olan IU Internationale Hochschule adını aldı.",
+          "Bu hızlı büyümeyle bugün Almanya'nın öğrenci sayısı bakımından en büyük üniversitesi konumuna gelen IU, 2025 itibarıyla 130.000'i aşan öğrenci sayısına ulaştı.",
+          "IU, dual studium ve uzaktan eğitim programlarıyla öne çıkıyor; Almanya genelinde 24'ten fazla kampüste yüz yüze eğitim sunarken, güçlü bir dijital öğrenme altyapısıyla da esnek çalışma saatlerine sahip öğrencilere hitap ediyor."
+        ],
+        "highlights": [
+          "Almanya'nın öğrenci sayısı bakımından en büyük üniversitesi",
+          "24'ten fazla kampüs ve güçlü uzaktan eğitim seçenekleri",
+          "Dual studium için geniş partner şirket ağı",
+          "1998'den bugüne hızlı ve sürekli büyüme"
+        ]
       },
       {
         "slug": "fom",
@@ -316,8 +445,169 @@
         "type": "Duale Hochschule",
         "founded": "1993",
         "description": "Çalışarak okuyan öğrenciler için Almanya'nın en büyük özel yükseköğretim kurumlarından.",
-        "history": "1993'te kurulan ve 1994'te eğitime başlayan FOM, çalışan öğrenciler için akşam ve hafta sonu programları sunmak üzere tasarlandı. Bugün Almanya genelinde 30'dan fazla şehirde eğitim merkezi bulunan FOM, işletme ve ekonomi ağırlıklı programlarıyla Almanya'nın en büyük özel yükseköğretim kurumlarından biri haline geldi.",
-        "highlights": ["Çalışarak okuyan öğrenciler için akşam/hafta sonu programları", "Almanya genelinde 30'dan fazla şehirde eğitim merkezi", "İşletme ve ekonomi ağırlıklı geniş program yelpazesi"]
+        "history": [
+          "1993'te kurulan ve resmi tanınırlığını 18 Eylül 1993'te alan FOM, 1994'te eğitime başladı. Kuruluş amacı, tam zamanlı çalışan öğrencilerin akşam ve hafta sonu programlarıyla üniversite eğitimi almasını sağlamaktı.",
+          "Bu odak sayesinde hızla büyüyen FOM, bugün Almanya genelinde 30'dan fazla şehirde eğitim merkezi bulunan, 47.000'i aşkın öğrenciyle Almanya'nın en büyük özel yükseköğretim kurumlarından biri haline geldi.",
+          "İşletme ve ekonomi ağırlıklı geniş program yelpazesiyle FOM, dual studium modelini de kapsayan esnek eğitim seçenekleri sunarak, çalışma hayatı ile üniversite eğitimini bir arada yürütmek isteyen öğrencilere hitap ediyor."
+        ],
+        "highlights": [
+          "Çalışarak okuyan öğrenciler için akşam/hafta sonu programları",
+          "Almanya genelinde 30'dan fazla şehirde eğitim merkezi",
+          "47.000'i aşkın öğrenciyle Almanya'nın en büyük özel yükseköğretim kurumlarından",
+          "İşletme ve ekonomi ağırlıklı geniş program yelpazesi"
+        ]
+      },
+      {
+        "slug": "heidelberg",
+        "name": "Heidelberg Üniversitesi (Ruprecht-Karls-Universität)",
+        "city": "Heidelberg",
+        "type": "Universität",
+        "founded": "1386",
+        "description": "1386'da kurulan, Almanya'nın en eski ve en prestijli araştırma üniversitesi.",
+        "history": [
+          "18 Ekim 1386'da Kurfürst I. Ruprecht'in Papa'dan aldığı izinle kurulan Heidelberg Üniversitesi, Almanya'nın en eski, Kutsal Roma İmparatorluğu'nun ise üçüncü üniversitesi. Paris Üniversitesi model alınarak kurulan üniversite başlangıçta felsefe, ilahiyat, hukuk ve tıp olmak üzere dört fakülteden oluşuyordu; ilk rektörlüğünü Paris'ten gelen Hollandalı akademisyen Marsilius von Inghen üstlendi.",
+          "'Ruperto Carola' olarak da anılan üniversite, tarihi boyunca Robert Bunsen, Hermann von Helmholtz, Gustav Kirchhoff ve Max Weber gibi önde gelen bilim insanlarını bünyesinde barındırdı; bugüne kadar üniversite profesörlerine 11 Nobel Ödülü verildi.",
+          "Heidelberg Kalesi'nin gölgesinde, tarihi kent merkezinde konumlanan üniversite, günümüzde 12 fakültesi ve yaklaşık 100 farklı disiplinde sunduğu lisans, yüksek lisans ve doktora programlarıyla Avrupa'nın en güçlü araştırma üniversitelerinden biri olarak kabul ediliyor."
+        ],
+        "highlights": [
+          "Almanya'nın en eski, Avrupa'nın en köklü üniversitelerinden biri",
+          "Bugüne kadar üniversite profesörlerine verilen 11 Nobel Ödülü",
+          "12 fakülte ve yaklaşık 100 disiplinde geniş bir akademik yelpaze",
+          "Heidelberg Kalesi'nin gölgesinde, tarihi kent merkezinde bir kampüs"
+        ]
+      },
+      {
+        "slug": "tuebingen",
+        "name": "Eberhard Karls Universität Tübingen",
+        "city": "Tübingen",
+        "type": "Universität",
+        "founded": "1477",
+        "description": "1477'de kurulan, tıp ve doğa bilimlerinde güçlü, klasik bir Alman üniversite kenti üniversitesi.",
+        "history": [
+          "1477'de Kont VI. Eberhard tarafından, Papa IV. Sixtus'un 1476 tarihli fermanıyla kurulan Tübingen Üniversitesi, başlangıçta ilahiyat, hukuk, tıp ve felsefe olmak üzere dört fakülte ve toplam on dört profesörlükten oluşuyordu. Reform hareketinin önde gelen isimlerinden Philipp Melanchthon, üniversitenin akademik yönünün şekillenmesinde önemli rol oynadı.",
+          "Yüzyıllar boyunca Tübingen; astronom Johannes Kepler, şair Friedrich Hölderlin ve filozoflar Friedrich Schelling ile G.W.F. Hegel gibi isimleri öğrenci olarak ağırladı. Papa XVI. Benedikt de gençliğinde bir dönem burada ilahiyat eğitimi aldı.",
+          "Neckar Nehri kıyısındaki tarihi kasabanın tam merkezinde yer alan üniversite, bugün tıp, doğa bilimleri ve beşeri bilimlerdeki güçlü akademik geleneğiyle, özellikle tıp ve kimya alanlarında çok sayıda Nobel ödüllü isim yetiştirmiş durumda."
+        ],
+        "highlights": [
+          "1477'den bu yana kesintisiz akademik gelenek",
+          "Kepler, Hölderlin ve Hegel gibi tarihi isimlerin öğrencilik yaptığı üniversite",
+          "Tıp ve kimya alanlarında güçlü Nobel ödülü geçmişi",
+          "Neckar Nehri kıyısında klasik bir Alman üniversite kenti kampüsü"
+        ]
+      },
+      {
+        "slug": "kit",
+        "name": "Karlsruhe Institute of Technology (KIT)",
+        "city": "Karlsruhe",
+        "type": "Universität",
+        "founded": "2009",
+        "description": "Almanya'nın ilk teknik yükseköğretim kurumunun mirasını taşıyan, araştırma ağırlıklı bir teknoloji üniversitesi.",
+        "history": [
+          "KIT'in kökleri, 1825'te kurulan ve Almanya'nın ilk 'Technische Hochschule'si olan Fridericiana'ya, yani Universität Karlsruhe'ye dayanıyor. Bu tarihi kurumda Heinrich Hertz elektromanyetik dalgaları ilk kez deneysel olarak gösterdi ve otomobilin mucitlerinden Carl Benz burada eğitim aldı.",
+          "2009'da Baden-Württemberg eyalet parlamentosunun kabul ettiği bir yasayla, Universität Karlsruhe ile 1956'da kurulan büyük ölçekli araştırma kurumu Forschungszentrum Karlsruhe birleştirilerek bugünkü Karlsruhe Institute of Technology (KIT) oluşturuldu.",
+          "Bu birleşme sayesinde KIT, hem bir eyalet üniversitesinin eğitim ve araştırma görevlerini, hem de Helmholtz Derneği'ne bağlı büyük ölçekli bir araştırma kurumunun görevlerini bir arada yürütüyor; bu da onu Almanya'daki en kapsamlı teknoloji ve mühendislik araştırma merkezlerinden biri yapıyor."
+        ],
+        "highlights": [
+          "1825'te kurulan Almanya'nın ilk teknik yükseköğretim kurumunun mirası",
+          "2009'da üniversite ve büyük ölçekli araştırma kurumunun birleşmesiyle oluştu",
+          "Helmholtz Derneği bünyesinde büyük ölçekli araştırma görevi de yürütüyor",
+          "Heinrich Hertz ve Carl Benz gibi isimlerle tarihi bağlantı"
+        ]
+      },
+      {
+        "slug": "freiburg",
+        "name": "Albert-Ludwigs-Universität Freiburg",
+        "city": "Freiburg im Breisgau",
+        "type": "Universität",
+        "founded": "1457",
+        "description": "1457'de kurulan, felsefe ve sosyal bilimlerde güçlü bir Habsburg mirası üniversitesi.",
+        "history": [
+          "21 Eylül 1457'de Habsburg Hanedanı'ndan VI. Albert'in verdiği bir fermanla kurulan Freiburg Üniversitesi, döneminde Habsburg topraklarında Viyana Üniversitesi'nden sonra kurulan ikinci üniversite oldu. Kuruluşundan itibaren ilahiyat, hukuk ve tıp okutulan üniversitede, bugünkü beşeri bilimler fakültesinin temelini oluşturan 'Artes Liberales' (özgür sanatlar) da öğretiliyordu.",
+          "Başlangıçta 'Albertina' adını taşıyan üniversite, 1818'de Baden Büyük Dükü Ludwig'in önemli bir bağışı sayesinde varlığını sürdürebildi ve bu vesileyle adı bugünkü hâli olan Albert-Ludwigs-Universität'a dönüştürüldü. Almanya'nın beşinci en eski üniversitesi olan Freiburg, felsefe, filoloji, tarih araştırmaları, ekonomi ve hukuk alanlarında güçlü bir gelenek oluşturdu.",
+          "Martin Heidegger, Edmund Husserl, Max Weber, Walter Eucken ve Nobel ödüllü Friedrich Hayek gibi isimlerin adlarıyla anılan Freiburg, bugün de bu disiplinlerdeki köklü akademik kimliğini sürdürüyor."
+        ],
+        "highlights": [
+          "Almanya'nın beşinci en eski üniversitesi",
+          "Habsburg Hanedanı mirasına sahip, 1457'den bu yana kesintisiz gelenek",
+          "Heidegger ve Husserl gibi isimlerle felsefede güçlü bir tarih",
+          "Nobel ödüllü Friedrich Hayek'in de aralarında olduğu güçlü ekonomi geleneği"
+        ]
+      },
+      {
+        "slug": "goettingen",
+        "name": "Georg-August-Universität Göttingen",
+        "city": "Göttingen",
+        "type": "Universität",
+        "founded": "1734",
+        "description": "45 Nobel ödüllü isimle anılan, 'bilim şehri' Göttingen'in kalbindeki araştırma üniversitesi.",
+        "history": [
+          "1734'te İngiltere Kralı ve Hannover Elektörü II. George tarafından kurulan üniversitede dersler aynı yıl başladı, resmi açılış töreni ise 1737'de yapıldı. Aydınlanma ideallerine uygun olarak kurulan üniversite, bilimsel araştırmayı kilisenin sansüründen bağımsızlaştıran öncü kurumlardan biri oldu.",
+          "19. yüzyılda matematikçi Carl Friedrich Gauss ve Grimm Kardeşler'in de aralarında bulunduğu üniversitede, 1837'de yedi profesör -aralarında Grimm Kardeşler de vardı- Hannover Kralı'nın yetkilerini genişletmesini protesto ettikleri için görevlerinden alındı; bu olay tarihe 'Göttinger Sieben' (Göttingen Yedilisi) olarak geçti.",
+          "Göttingen, kuantum mekaniğinin öncülerinden Max Born'dan matematikçi Emmy Noether'e kadar 45 Nobel ödüllü isimle ilişkilendiriliyor; bunların 14'ü doğrudan Göttingen'de yürüttükleri çalışmalar için ödüllendirildi. Aşağı Saksonya eyaletinin en eski üniversitesi olan Göttingen, bugün yaklaşık 26.000 öğrencisiyle 'bilim şehri' unvanını taşıyan kentin kalbinde yer alıyor."
+        ],
+        "highlights": [
+          "45 Nobel ödüllü isimle ilişkilendirilen güçlü bir bilim geleneği",
+          "Carl Friedrich Gauss'tan Emmy Noether'e uzanan matematik mirası",
+          "Aşağı Saksonya eyaletinin en eski üniversitesi",
+          "'Bilim şehri' Göttingen'in kalbinde, yaklaşık 26.000 öğrencilik bir kampüs"
+        ]
+      },
+      {
+        "slug": "bonn",
+        "name": "Rheinische Friedrich-Wilhelms-Universität Bonn",
+        "city": "Bonn",
+        "type": "Universität",
+        "founded": "1818",
+        "description": "1818'de kurulan, eski bir elektörlük sarayında eğitim veren köklü bir Ren üniversitesi.",
+        "history": [
+          "18 Ekim 1818'de Prusya Kralı III. Friedrich Wilhelm tarafından Rhein Üniversitesi adıyla kurulan Bonn Üniversitesi, 1777'de kurulan Köln Elektörlüğü Akademisi'nin doğrudan devamı niteliğinde. Wilhelm von Humboldt'un akademik özgürlük ve araştırma-öğretim birliği ilkelerinden ilham alan üniversite, kısa sürede Almanya'nın en saygın kurumları arasına girdi.",
+          "1930'larda Nazi rejimi, çok sayıda Yahudi akademisyeni ve muhalif ismi üniversiteden ayrılmaya zorladı; 1944'teki Bonn bombardımanı ise kampüsün büyük bölümünü yıktı. Savaş sonrası dönemde üniversite yeniden inşa edildi ve eski saygınlığına kavuştu.",
+          "Üniversitenin ana binası, Hofgarten parkına bakan eski Kurfürstlik Sarayı'nda (Kurfürstliches Schloss) yer alıyor. Fizikçi Heinrich Hertz, kimyager August Kekulé ve eski Almanya Başbakanı Konrad Adenauer gibi isimlerle anılan Bonn, bugün yaklaşık 36.000 öğrencisiyle Almanya'nın önde gelen üniversitelerinden biri."
+        ],
+        "highlights": [
+          "Eski bir elektörlük sarayında, Hofgarten parkına bakan tarihi bir ana bina",
+          "Humboldt'un akademik özgürlük ilkelerinden ilham alan kuruluş felsefesi",
+          "Heinrich Hertz ve Konrad Adenauer gibi isimlerle tarihi bağlantı",
+          "Yaklaşık 36.000 öğrenciyle Almanya'nın önde gelen üniversitelerinden"
+        ]
+      },
+      {
+        "slug": "koeln",
+        "name": "Universität zu Köln",
+        "city": "Köln",
+        "type": "Universität",
+        "founded": "1388",
+        "description": "1388'de kurulan, kayıtlı öğrenci sayısıyla Almanya'nın en büyük geleneksel üniversitelerinden.",
+        "history": [
+          "1388'de kurulan Köln Üniversitesi, Kutsal Roma İmparatorluğu'nda Prag (1348), Viyana (1365) ve Heidelberg'den (1386) sonra kurulan dördüncü üniversite oldu. Kuruluş fermanı Papa VI. Urban tarafından imzalandı ve eğitime 6 Ocak 1389'da başlandı.",
+          "1798'de Fransız işgali sırasında kapatılan üniversite, ancak 1919'da 'Neue Universität' (Yeni Üniversite) adıyla yeniden kuruldu. Bu yeniden kuruluş, üniversitenin bugünkü modern kimliğinin temelini oluşturdu.",
+          "Bugün 44.000'i aşkın öğrencisiyle Almanya'nın kayıtlı öğrenci sayısı bakımından en büyük geleneksel üniversitesi olan Köln, altı fakültesi ve 137 lisans/yüksek lisans programıyla özellikle hukuk, ekonomi ve sosyal bilimler alanında güçlü bir akademik gelenek sürdürüyor."
+        ],
+        "highlights": [
+          "Kutsal Roma İmparatorluğu'nun dördüncü üniversitesi (1388)",
+          "1919'da 'Neue Universität' olarak yeniden kuruldu",
+          "44.000'i aşkın öğrenciyle Almanya'nın en büyük geleneksel üniversitesi",
+          "Hukuk, ekonomi ve sosyal bilimlerde (WiSo) güçlü akademik gelenek"
+        ]
+      },
+      {
+        "slug": "tuberlin",
+        "name": "Technische Universität Berlin",
+        "city": "Berlin",
+        "type": "Universität",
+        "founded": "1946",
+        "description": "Kökleri 1770'e uzanan, 1946'da bilinçli bir yeniden kuruluşla bugünkü kimliğine kavuşan teknik üniversite.",
+        "history": [
+          "TU Berlin'in kökleri, 1770'de kurulan Königliche Bergakademie (Kraliyet Maden Akademisi), 1799'da kurulan Königliche Bauakademie (Kraliyet İnşaat Akademisi) ve 1821'de kurulan Königliche Gewerbeakademie'ye (Kraliyet Sanayi Akademisi) kadar uzanıyor. Bu üç kurum 1879'da birleşerek Königlich Technische Hochschule zu Berlin'i oluşturdu; Maden Akademisi ise 1916'da bu yapıya dahil edildi.",
+          "1946'da, Nasyonal Sosyalist geçmişten net bir kopuşu belgelemek amacıyla, kurum yeniden açılış değil bilinçli bir yeni kuruluş olarak konumlandırıldı ve o tarihten itibaren Technische Universität Berlin adını aldı. Bu, üniversitenin bugün kabul edilen resmi kuruluş tarihi.",
+          "TU9 birliğinin üyesi olan üniversite, bilgisayarın mucitlerinden Konrad Zuse, kimyager Carl Bosch ve Fritz Haber gibi isimlerle anılıyor. Berlin'in Charlottenburg semtinde konumlanan TU Berlin, bugün mühendislik ve doğa bilimlerinde güçlü bir araştırma kültürünü sürdürüyor."
+        ],
+        "highlights": [
+          "Kökleri 1770'e, Kraliyet Maden Akademisi'ne uzanan uzun bir tarih",
+          "1946'da Nazi geçmişinden kopuşu simgeleyen bilinçli bir yeniden kuruluş",
+          "TU9 teknik üniversiteler birliği üyesi",
+          "Konrad Zuse ve Fritz Haber gibi isimlerle tarihi bağlantı"
+        ]
       }
     ],
     "cta": {
@@ -365,10 +655,22 @@
       ]
     },
     "stats": [
-      { "value": "2026", "label": "Kuruluş Yılı" },
-      { "value": "420+", "label": "Almanya'da Yükseköğretim Kurumu" },
-      { "value": "%100", "label": "Kabul Garantisi" },
-      { "value": "16", "label": "Eyalet" }
+      {
+        "value": "2026",
+        "label": "Kuruluş Yılı"
+      },
+      {
+        "value": "420+",
+        "label": "Almanya'da Yükseköğretim Kurumu"
+      },
+      {
+        "value": "%100",
+        "label": "Kabul Garantisi"
+      },
+      {
+        "value": "16",
+        "label": "Eyalet"
+      }
     ]
   },
   "contact": {
@@ -399,7 +701,12 @@
       "phone": "Telefon Numarası",
       "program": "İlgilendiğiniz Program",
       "programPlaceholder": "Seçiniz",
-      "programOptions": ["Bachelor Studium", "Master Studium", "Dual Studium (Duales Studium)", "Henüz Emin Değilim"],
+      "programOptions": [
+        "Bachelor Studium",
+        "Master Studium",
+        "Dual Studium (Duales Studium)",
+        "Henüz Emin Değilim"
+      ],
       "message": "Mesajınız",
       "messagePlaceholder": "Hedeflediğiniz bölüm, üniversite ya da sorularınızı yazabilirsiniz.",
       "submit": "Gönder",

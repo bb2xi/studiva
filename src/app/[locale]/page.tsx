@@ -5,7 +5,7 @@ import { Link } from "@/i18n/navigation";
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
 import { serviceIcons } from "@/lib/icons";
-import { universityMedia } from "@/lib/universityMedia";
+import { universityMedia, universityLogos } from "@/lib/universityMedia";
 
 type ServiceItem = { icon: string; title: string; description: string };
 type ProcessStep = { title: string; description: string };
@@ -174,18 +174,32 @@ export default async function HomePage({
           />
           <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {universityItems.map((uni) => {
-              const cover = universityMedia[uni.slug]?.[0];
+              const logo = universityLogos[uni.slug];
+              const fallbackCover = universityMedia[uni.slug]?.[0];
               return (
                 <Link
                   key={uni.name}
                   href={`/universities/${uni.slug}`}
                   className="group flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
                 >
-                  {cover && (
+                  {logo ? (
+                    <div className="relative flex aspect-[16/10] w-full items-center justify-center overflow-hidden bg-slate-50 p-8">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={logo.url}
+                        alt={uni.name}
+                        loading="lazy"
+                        className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
+                        {uni.type}
+                      </span>
+                    </div>
+                  ) : fallbackCover ? (
                     <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
-                        src={cover.url}
+                        src={fallbackCover.url}
                         alt={uni.name}
                         loading="lazy"
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -194,7 +208,7 @@ export default async function HomePage({
                         {uni.type}
                       </span>
                     </div>
-                  )}
+                  ) : null}
                   <div className="p-5">
                     <h3 className="text-base font-semibold text-slate-900 transition-colors group-hover:text-brand">
                       {uni.name}
