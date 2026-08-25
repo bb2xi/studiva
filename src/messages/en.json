@@ -226,7 +226,7 @@
     "items": [
       {
         "name": "Bachelor Studium",
-        "flag": "🎓",
+        "icon": "graduation-cap",
         "description": "Undergraduate study at one of Germany's 420+ state-recognized higher education institutions; tuition-free in most federal states.",
         "highlights": [
           "€0 tuition in most states (€1,500/semester for non-EU students in Baden-Württemberg)",
@@ -236,7 +236,7 @@
       },
       {
         "name": "Master Studium",
-        "flag": "🎯",
+        "icon": "target",
         "description": "With your bachelor's degree and relevant qualifications, hundreds of English- or German-taught programs at a Universität or Fachhochschule.",
         "highlights": [
           "Hundreds of English-taught master's programs",
@@ -246,7 +246,7 @@
       },
       {
         "name": "Dual Studium",
-        "flag": "💼",
+        "icon": "briefcase",
         "description": "University in theory, a partner company in practice; a three-month rotating model that lets you study while working.",
         "highlights": [
           "Monthly salary from your partner company, tuition-free in most programs",
@@ -284,6 +284,16 @@
           "Member of the TU9 alliance and holder of \"University of Excellence\" status",
           "Large, specialized research campuses in Garching and Weihenstephan",
           "Home to some of Germany's most sought-after engineering programs"
+        ],
+        "pros": [
+          "A globally top-ranked name in engineering and technology",
+          "Close proximity and strong internship ties to major industry players like BMW and Siemens",
+          "Strong research infrastructure and funding opportunities"
+        ],
+        "cons": [
+          "Very high admission competition, especially in programs like computer science",
+          "Munich is one of Germany's most expensive cities",
+          "Crowded lecture halls in popular courses"
         ]
       },
       {
@@ -303,6 +313,16 @@
           "Strong research tradition in medicine, law, and natural sciences",
           "Home to numerous Nobel laureates throughout its history",
           "A city-center campus in the heart of Munich"
+        ],
+        "pros": [
+          "An extremely broad program range from the humanities to medicine",
+          "Strong international reputation for research",
+          "A vibrant student life in Munich"
+        ],
+        "cons": [
+          "High grade requirements (Numerus Clausus) and competition for popular subjects",
+          "Munich's high cost of living",
+          "Large student body can mean less individual attention in big introductory lectures"
         ]
       },
       {
@@ -322,6 +342,16 @@
           "International recognition in the humanities and social sciences",
           "Historical ties to figures like Einstein and Planck",
           "A historic campus in central Berlin, on Unter den Linden"
+        ],
+        "pros": [
+          "A central Berlin location close to cultural and career opportunities",
+          "A strong academic reputation in the humanities and social sciences",
+          "A historic, internationally recognized name"
+        ],
+        "cons": [
+          "Berlin's fast-rising rents put pressure on student budgets",
+          "High admission competition for popular subjects",
+          "A large, bureaucratic university structure can feel impersonal at first"
         ]
       },
       {
@@ -341,6 +371,16 @@
           "Member of the TU9 alliance of technical universities",
           "An innovative approach to student services via the iconic SuperC building",
           "High share of international students, with English-taught master's programs"
+        ],
+        "pros": [
+          "Strong industry-university ties in engineering and a high post-graduation employment rate",
+          "A lower cost of living compared to Munich or Berlin",
+          "A large, active international student community"
+        ],
+        "cons": [
+          "Aachen is a smaller city compared to Berlin or Munich",
+          "Engineering programs are demanding and intensive",
+          "Limited spots and high competition in some master's programs"
         ]
       },
       {
@@ -360,6 +400,16 @@
           "Housed in the historic Mannheim Palace, Europe's second-largest Baroque palace",
           "A strong international exchange program network",
           "A research-driven academic culture with international recognition"
+        ],
+        "pros": [
+          "One of Germany's top-ranked business and economics faculties",
+          "Proximity to major companies like SAP and BASF, with strong corporate ties",
+          "A unique learning environment in a historic palace campus"
+        ],
+        "cons": [
+          "Academic focus is largely limited to business, economics, and social sciences, with few STEM options",
+          "Mannheim is a quieter city compared to Berlin or Munich",
+          "An intense, competitive grading culture in the business faculty"
         ]
       },
       {
@@ -379,6 +429,16 @@
           "Strong industry ties in engineering, design, and business",
           "An applied, internship-driven education model",
           "A community of around 18,000 students"
+        ],
+        "pros": [
+          "A practice-oriented curriculum backed by mandatory internships",
+          "Strong regional industry connections in Bavaria",
+          "A more direct, career-focused path than a theory-heavy Universität"
+        ],
+        "cons": [
+          "A Fachhochschule degree can carry somewhat less prestige than a Universität degree for academic/research careers",
+          "Limited option to pursue a doctorate directly",
+          "Munich's high cost of living"
         ]
       },
       {
@@ -398,6 +458,16 @@
           "Applied programs in business, IT, and engineering",
           "Close partnerships with the banking and finance sector",
           "A campus community of more than 15,000 students"
+        ],
+        "pros": [
+          "Direct access to Germany's banking and finance job market",
+          "An applied curriculum backed by a strong internship culture",
+          "A relatively diverse student body"
+        ],
+        "cons": [
+          "A less internationally famous name than research universities",
+          "No direct route to a doctorate",
+          "Frankfurt has a high cost of living relative to smaller German cities"
         ]
       },
       {
@@ -417,6 +487,16 @@
           "A network of thousands of partner companies",
           "Numerous campus locations across Baden-Württemberg",
           "A state-recognized evolution of a model with more than 35 years of history"
+        ],
+        "pros": [
+          "Earning a regular salary from a partner company while studying removes tuition pressure",
+          "Guaranteed practical work experience, often leading to a job offer at graduation",
+          "Theory and practice are tightly integrated"
+        ],
+        "cons": [
+          "You need to secure a partner-company contract before applying, an extra step in the process",
+          "The program is highly structured, leaving little flexibility for electives or exchange semesters",
+          "An intensive pace with almost no long breaks between theory and practice blocks"
         ]
       },
       {
@@ -436,6 +516,16 @@
           "24+ campuses plus strong distance-learning options",
           "A wide partner-company network for dual studium",
           "Rapid, continuous growth since its founding in 1998"
+        ],
+        "pros": [
+          "Flexible study formats across dual studium, distance learning, and on-campus study",
+          "A wide network of locations across Germany",
+          "A modern digital learning infrastructure"
+        ],
+        "cons": [
+          "As a young, fast-growing private institution, it carries less traditional academic prestige than public universities",
+          "Tuition fees apply, unlike most public universities",
+          "Rapid growth has drawn some scrutiny over teaching quality consistency"
         ]
       },
       {
@@ -455,6 +545,16 @@
           "Study centers in more than 30 German cities",
           "One of Germany's largest private higher education institutions, with 47,000+ students",
           "A broad range of business and economics programs"
+        ],
+        "pros": [
+          "Purpose-built for students who want to keep working full-time",
+          "A large network of local study centers close to home",
+          "Strong ties to regional employers"
+        ],
+        "cons": [
+          "Tuition fees apply",
+          "The evening/weekend schedule can be demanding alongside a full-time job",
+          "Less of a traditional campus/student-life experience than a full-time university"
         ]
       },
       {
@@ -474,6 +574,16 @@
           "11 Nobel Prizes awarded to its professors to date",
           "A broad academic range across 12 faculties and around 100 disciplines",
           "A campus in the historic city center, in the shadow of Heidelberg Castle"
+        ],
+        "pros": [
+          "Germany's oldest and one of Europe's most prestigious research universities",
+          "An exceptionally strong faculty in medicine and the natural sciences",
+          "A beautiful, historic town with a strong student culture"
+        ],
+        "cons": [
+          "Very high admission competition for medicine and top programs",
+          "Heidelberg is a small city with a limited job market outside academia and pharma",
+          "High demand pushes up student housing prices despite the city's small size"
         ]
       },
       {
@@ -493,6 +603,16 @@
           "Alma mater of historic figures like Kepler, Hölderlin, and Hegel",
           "A strong Nobel Prize track record in medicine and chemistry",
           "A classic German university-town campus on the Neckar River"
+        ],
+        "pros": [
+          "A strong reputation in medicine and the natural sciences",
+          "A classic, tight-knit university town where student life is central",
+          "High research output relative to its size"
+        ],
+        "cons": [
+          "The small-town setting means fewer big-city career and internship opportunities nearby",
+          "Competitive admission for programs like medicine and psychology",
+          "Limited English-taught bachelor's options; most programs are German-taught"
         ]
       },
       {
@@ -512,6 +632,16 @@
           "Formed in 2009 through the merger of a university and a large-scale research institution",
           "Also carries out large-scale research duties within the Helmholtz Association",
           "Historical ties to figures like Heinrich Hertz and Carl Benz"
+        ],
+        "pros": [
+          "Combines university teaching with large-scale Helmholtz research facilities",
+          "A strong reputation in engineering, computer science, and energy research",
+          "Karlsruhe has a lower cost of living than Munich or Stuttgart"
+        ],
+        "cons": [
+          "Karlsruhe has less international name recognition abroad than Munich or Berlin",
+          "The engineering course load is demanding",
+          "The dual university/research-center structure can feel bureaucratically complex"
         ]
       },
       {
@@ -531,6 +661,16 @@
           "An unbroken tradition since 1457, rooted in Habsburg heritage",
           "A strong history in philosophy through figures like Heidegger and Husserl",
           "A strong economics tradition that includes Nobel laureate Friedrich Hayek"
+        ],
+        "pros": [
+          "A strong reputation in philosophy, law, and environmental/natural sciences",
+          "Freiburg is consistently rated among Germany's most livable, sunniest cities",
+          "Proximity to the Black Forest and the French/Swiss border offers exchange opportunities"
+        ],
+        "cons": [
+          "A smaller job market than Berlin or Munich for graduates who want to stay locally",
+          "Competitive admission for popular humanities and law programs",
+          "Fewer large-scale industry partnerships than technical universities"
         ]
       },
       {
@@ -550,6 +690,16 @@
           "A mathematical legacy spanning Carl Friedrich Gauss to Emmy Noether",
           "The oldest university in the state of Lower Saxony",
           "A campus of around 26,000 students at the heart of the \"City of Science\""
+        ],
+        "pros": [
+          "An outstanding Nobel Prize legacy and a strong reputation in natural sciences and mathematics",
+          "A close-knit \"city of science\" atmosphere built around the university",
+          "A relatively affordable cost of living for a university town"
+        ],
+        "cons": [
+          "Göttingen is a small city with limited big-city amenities and job market",
+          "Some programs are strongly German-taught and require solid German proficiency",
+          "Fewer international corporate employers nearby compared to major cities"
         ]
       },
       {
@@ -569,6 +719,16 @@
           "A founding philosophy inspired by Humboldt's principles of academic freedom",
           "Historical ties to figures like Heinrich Hertz and Konrad Adenauer",
           "One of Germany's leading universities, with around 36,000 students"
+        ],
+        "pros": [
+          "A strong program in law, economics, mathematics, and natural sciences",
+          "Benefits from the presence of UN institutions and international organizations in the city",
+          "A historic palace campus with a strong academic tradition"
+        ],
+        "cons": [
+          "Bonn's job market is smaller than Berlin's, despite the international organizations present",
+          "Competitive admission for law and medicine",
+          "A large student body can mean crowded introductory lectures"
         ]
       },
       {
@@ -588,6 +748,16 @@
           "Re-established as the \"Neue Universität\" in 1919",
           "Germany's largest traditional university by enrollment, with 44,000+ students",
           "A strong academic tradition in law, economics, and social sciences (WiSo)"
+        ],
+        "pros": [
+          "A very broad program offering across six faculties",
+          "A strong reputation in law, economics, and social sciences (WiSo)",
+          "Cologne is a large, lively city with a strong job market and cultural scene"
+        ],
+        "cons": [
+          "A very large student body can mean less individual attention and crowded lecture halls",
+          "Administrative processes can feel bureaucratic given the university's size",
+          "Competitive admission for popular subjects like medicine, law, and psychology"
         ]
       },
       {
@@ -607,6 +777,16 @@
           "A deliberate 1946 re-founding to mark a break from its Nazi-era past",
           "Member of the TU9 alliance of technical universities",
           "Historical ties to figures like Konrad Zuse and Fritz Haber"
+        ],
+        "pros": [
+          "Combines a top technical education with all of Berlin's career and cultural opportunities",
+          "Strong ties to Berlin's growing tech and startup scene",
+          "A TU9 member with a strong engineering and computer science reputation"
+        ],
+        "cons": [
+          "Berlin's sharply rising rents make student housing competitive to find",
+          "Large classes in popular engineering and computer science programs",
+          "Administrative processes can be slow given the university's size"
         ]
       }
     ],

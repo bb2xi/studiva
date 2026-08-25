@@ -6,6 +6,7 @@ import {
   Languages,
   Plane,
   Briefcase,
+  Target,
   type LucideIcon,
 } from "lucide-react";
 
@@ -17,4 +18,5 @@ export const serviceIcons: Record<string, LucideIcon> = {
   languages: Languages,
   plane: Plane,
   briefcase: Briefcase,
+  target: Target,
 };

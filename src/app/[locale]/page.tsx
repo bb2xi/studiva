@@ -10,7 +10,7 @@ import { universityMedia, universityLogos } from "@/lib/universityMedia";
 type ServiceItem = { icon: string; title: string; description: string };
 type ProcessStep = { title: string; description: string };
 type WhyUsItem = { title: string; description: string };
-type ProgramItem = { name: string; flag: string };
+type ProgramItem = { name: string; icon: string };
 type UniversityItem = { slug: string; name: string; city: string; type: string };
 type Stat = { value: string; label: string };
 
@@ -141,17 +141,22 @@ export default async function HomePage({
             subtitle={home("programs.subtitle")}
           />
           <div className="mt-12 flex flex-wrap justify-center gap-4">
-            {programItems.map((program) => (
-              <div
-                key={program.name}
-                className="flex items-center gap-3 rounded-full border border-slate-200 bg-white px-5 py-3 shadow-sm"
-              >
-                <span className="text-2xl">{program.flag}</span>
-                <span className="text-sm font-medium text-slate-700">
-                  {program.name}
-                </span>
-              </div>
-            ))}
+            {programItems.map((program) => {
+              const Icon = serviceIcons[program.icon] ?? Check;
+              return (
+                <div
+                  key={program.name}
+                  className="flex items-center gap-3 rounded-full border border-slate-200 bg-white px-5 py-3 shadow-sm"
+                >
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand-light text-brand">
+                    <Icon size={15} />
+                  </span>
+                  <span className="text-sm font-medium text-slate-700">
+                    {program.name}
+                  </span>
+                </div>
+              );
+            })}
           </div>
           <div className="mt-10 text-center">
             <Link
@@ -189,7 +194,7 @@ export default async function HomePage({
                         src={logo.url}
                         alt={uni.name}
                         loading="lazy"
-                        className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        className="max-h-full max-w-full object-contain grayscale opacity-80 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0"
                       />
                       <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
                         {uni.type}
@@ -202,7 +207,7 @@ export default async function HomePage({
                         src={fallbackCover.url}
                         alt={uni.name}
                         loading="lazy"
-                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="h-full w-full object-cover grayscale opacity-90 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0"
                       />
                       <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
                         {uni.type}

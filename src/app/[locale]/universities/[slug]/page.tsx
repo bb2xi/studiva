@@ -1,6 +1,6 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, MapPin, CalendarDays, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, MapPin, CalendarDays, Sparkles, CheckCircle2, AlertTriangle } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import Container from "@/components/Container";
@@ -16,6 +16,8 @@ type UniversityItem = {
   description: string;
   history: string[];
   highlights: string[];
+  pros: string[];
+  cons: string[];
 };
 
 export function generateStaticParams() {
@@ -109,6 +111,37 @@ export default async function UniversityDetailPage({
                   ))}
                 </ul>
               </div>
+            </div>
+          </div>
+
+          <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <div className="rounded-2xl border border-emerald-100 bg-emerald-50/50 p-6">
+              <h2 className="flex items-center gap-2 text-base font-semibold text-slate-900">
+                <CheckCircle2 size={18} className="text-emerald-600" />
+                {locale === "tr" ? "Artıları" : "Pros"}
+              </h2>
+              <ul className="mt-4 space-y-3">
+                {university.pros.map((point) => (
+                  <li key={point} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-700">
+                    <CheckCircle2 size={16} className="mt-0.5 shrink-0 text-emerald-600" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-2xl border border-amber-100 bg-amber-50/50 p-6">
+              <h2 className="flex items-center gap-2 text-base font-semibold text-slate-900">
+                <AlertTriangle size={18} className="text-amber-600" />
+                {locale === "tr" ? "Dikkat Edilmesi Gerekenler" : "Things to Consider"}
+              </h2>
+              <ul className="mt-4 space-y-3">
+                {university.cons.map((point) => (
+                  <li key={point} className="flex items-start gap-2.5 text-sm leading-relaxed text-slate-700">
+                    <AlertTriangle size={16} className="mt-0.5 shrink-0 text-amber-600" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 

@@ -226,7 +226,7 @@
     "items": [
       {
         "name": "Bachelor Studium",
-        "flag": "🎓",
+        "icon": "graduation-cap",
         "description": "Almanya'da 420'den fazla devlet onaylı yükseköğretim kurumunda lisans eğitimi; çoğu eyalette öğrenim harcı yok.",
         "highlights": [
           "Çoğu eyalette 0€ öğrenim harcı (Baden-Württemberg'de AB dışı öğrenciler için dönemlik 1.500€)",
@@ -236,7 +236,7 @@
       },
       {
         "name": "Master Studium",
-        "flag": "🎯",
+        "icon": "target",
         "description": "Lisans diplomanız ve alan yeterliliğinizle Universität ya da Fachhochschule'de İngilizce ya da Almanca yürütülen yüzlerce program.",
         "highlights": [
           "İngilizce eğitim veren yüzlerce master programı",
@@ -246,7 +246,7 @@
       },
       {
         "name": "Dual Studium (Duales Studium)",
-        "flag": "💼",
+        "icon": "briefcase",
         "description": "Teoride üniversite, uygulamada partner şirket; 3 aylık dönüşümlü model ile çalışarak okuma imkanı.",
         "highlights": [
           "Şirketten aylık maaş, çoğu programda öğrenim harcı yok",
@@ -284,6 +284,16 @@
           "TU9 teknik üniversiteler birliği üyesi ve 'Excellence Üniversite' statüsü",
           "Garching ve Weihenstephan gibi büyük, uzmanlaşmış araştırma kampüsleri",
           "Almanya'nın en çok tercih edilen mühendislik programlarından bazılarına ev sahipliği"
+        ],
+        "pros": [
+          "Mühendislik ve teknolojide dünya çapında üst sıralarda bir isim",
+          "BMW, Siemens gibi büyük sanayi kuruluşlarına yakınlık ve güçlü staj/iş bağlantıları",
+          "Güçlü araştırma altyapısı ve fonlama imkanları"
+        ],
+        "cons": [
+          "Özellikle bilgisayar mühendisliği gibi bölümlerde çok yüksek başvuru rekabeti",
+          "Münih, Almanya'nın en pahalı şehirlerinden biri",
+          "Popüler derslerde kalabalık amfiler"
         ]
       },
       {
@@ -303,6 +313,16 @@
           "Tıp, hukuk ve doğa bilimlerinde güçlü araştırma geleneği",
           "Tarihte çok sayıda Nobel ödüllü bilim insanına ev sahipliği yaptı",
           "Şehir merkezinde, Münih'in kalbinde bir kampüs"
+        ],
+        "pros": [
+          "Beşeri bilimlerden tıbba kadar son derece geniş bir program yelpazesi",
+          "Araştırmada güçlü uluslararası tanınırlık",
+          "Münih'te canlı bir öğrenci yaşamı"
+        ],
+        "cons": [
+          "Popüler bölümlerde yüksek not ortalaması (NC) şartı ve rekabet",
+          "Münih'in yüksek yaşam maliyeti",
+          "Büyük öğrenci sayısı nedeniyle kalabalık giriş derslerinde bireysel ilginin sınırlı kalması"
         ]
       },
       {
@@ -322,6 +342,16 @@
           "Beşeri ve sosyal bilimlerde uluslararası tanınırlık",
           "Einstein ve Planck gibi isimlerle tarihsel bağlantı",
           "Berlin şehir merkezinde, Unter den Linden'de tarihi kampüs"
+        ],
+        "pros": [
+          "Berlin'in tam merkezinde, kültürel ve kariyer fırsatlarına yakın konum",
+          "Beşeri ve sosyal bilimlerde güçlü akademik itibar",
+          "Tarihi ve uluslararası tanınırlığa sahip bir isim"
+        ],
+        "cons": [
+          "Berlin'de hızla artan kira fiyatları öğrenci bütçesini zorluyor",
+          "Popüler bölümlerde yüksek başvuru rekabeti",
+          "Büyük ve bürokratik bir üniversite yapısı, ilk dönemlerde biraz kişiliksiz hissettirebilir"
         ]
       },
       {
@@ -341,6 +371,16 @@
           "TU9 teknik üniversiteler birliği üyesi",
           "İkonik SuperC binasıyla öğrenci hizmetlerinde yenilikçi yaklaşım",
           "Uluslararası öğrenci oranı yüksek, İngilizce yürütülen master programları"
+        ],
+        "pros": [
+          "Mühendislik alanında güçlü sanayi-üniversite iş birliği ve mezuniyet sonrası iş bulma oranı",
+          "Münih ve Berlin'e kıyasla daha düşük yaşam maliyeti",
+          "Büyük ve aktif bir uluslararası öğrenci topluluğu"
+        ],
+        "cons": [
+          "Aachen, Berlin ya da Münih'e kıyasla daha küçük bir şehir",
+          "Mühendislik programlarının yoğun ve zorlayıcı olması",
+          "Bazı yüksek lisans programlarında sınırlı kontenjan ve yüksek rekabet"
         ]
       },
       {
@@ -360,6 +400,16 @@
           "Avrupa'nın en büyük ikinci barok sarayı olan tarihi Mannheim Sarayı içinde eğitim",
           "Güçlü uluslararası değişim programı ağı",
           "Araştırma odaklı, uluslararası tanınırlığa sahip akademik kültür"
+        ],
+        "pros": [
+          "İşletme ve ekonomide Almanya'nın en iyi sıralamalarından birine sahip",
+          "SAP, BASF gibi büyük şirketlere yakınlık ve güçlü kurumsal bağlantılar",
+          "Tarihi saray kampüsünde benzersiz bir eğitim ortamı"
+        ],
+        "cons": [
+          "Akademik odak büyük ölçüde işletme/ekonomi/sosyal bilimlerle sınırlı, fen bilimleri seçeneği az",
+          "Mannheim, Berlin ya da Münih'e kıyasla daha sakin bir şehir",
+          "İşletme fakültesinde yoğun ve rekabetçi bir notlandırma kültürü"
         ]
       },
       {
@@ -379,6 +429,16 @@
           "Mühendislik, tasarım ve işletmede güçlü sektör bağlantıları",
           "Zorunlu staj dönemleriyle uygulamaya dayalı eğitim modeli",
           "Yaklaşık 18.000 öğrenciyle geniş bir kampüs topluluğu"
+        ],
+        "pros": [
+          "Zorunlu stajlarla desteklenen, uygulamaya dönük bir müfredat",
+          "Bavyera bölgesinde güçlü sanayi bağlantıları",
+          "Teoriden çok pratiğe odaklı, kariyere daha doğrudan giden bir yol"
+        ],
+        "cons": [
+          "Fachhochschule diploması, akademik/araştırma kariyerlerinde bazı Universität diplomalarına göre daha az prestijli görülebiliyor",
+          "Doğrudan doktora yapma imkanı sınırlı",
+          "Münih'in yüksek yaşam maliyeti"
         ]
       },
       {
@@ -398,6 +458,16 @@
           "İşletme, bilgi teknolojileri ve mühendislikte uygulamalı eğitim",
           "Bankacılık ve finans sektörüyle yakın iş birlikleri",
           "15.000'den fazla öğrenciyle geniş bir kampüs"
+        ],
+        "pros": [
+          "Almanya'nın bankacılık ve finans merkezine doğrudan erişim",
+          "Güçlü staj kültürüyle desteklenen uygulamalı müfredat",
+          "Görece çeşitli bir öğrenci topluluğu"
+        ],
+        "cons": [
+          "Araştırma üniversitelerine kıyasla daha az uluslararası tanınırlığa sahip bir isim",
+          "Doğrudan doktora imkanı yok",
+          "Frankfurt, küçük Alman şehirlerine göre yüksek yaşam maliyetine sahip"
         ]
       },
       {
@@ -417,6 +487,16 @@
           "Binlerce partner şirketle işbirliği ağı",
           "Baden-Württemberg genelinde çok sayıda kampüs seçeneği",
           "35 yılı aşkın bir eğitim modelinin devlet tarafından tanınmış hali"
+        ],
+        "pros": [
+          "Okurken partner şirketten düzenli maaş almak, öğrenim harcı baskısını ortadan kaldırıyor",
+          "Garantili uygulamalı iş deneyimi ve çoğu zaman mezuniyette iş teklifi",
+          "Teori ve uygulamanın sıkı bir şekilde iç içe geçmesi"
+        ],
+        "cons": [
+          "Başvurudan önce bir partner şirketle sözleşme bulmanız gerekiyor, bu ekstra bir adım",
+          "Program çok yapılandırılmış; seçmeli ders veya değişim dönemi için az esneklik var",
+          "Teori-uygulama blokları arasında neredeyse hiç uzun ara olmayan yoğun bir tempo"
         ]
       },
       {
@@ -436,6 +516,16 @@
           "24'ten fazla kampüs ve güçlü uzaktan eğitim seçenekleri",
           "Dual studium için geniş partner şirket ağı",
           "1998'den bugüne hızlı ve sürekli büyüme"
+        ],
+        "pros": [
+          "Dual studium, uzaktan eğitim ve kampüs eğitimi arasında esnek format seçenekleri",
+          "Almanya genelinde geniş bir lokasyon ağı",
+          "Modern bir dijital öğrenme altyapısı"
+        ],
+        "cons": [
+          "Genç ve hızlı büyüyen özel bir kurum olarak, devlet üniversitelerine kıyasla daha az geleneksel akademik prestije sahip",
+          "Çoğu devlet üniversitesinin aksine öğrenim harcı uygulanıyor",
+          "Hızlı büyüme, bazı çevrelerde eğitim kalitesinin tutarlılığı konusunda tartışmalara yol açtı"
         ]
       },
       {
@@ -455,6 +545,16 @@
           "Almanya genelinde 30'dan fazla şehirde eğitim merkezi",
           "47.000'i aşkın öğrenciyle Almanya'nın en büyük özel yükseköğretim kurumlarından",
           "İşletme ve ekonomi ağırlıklı geniş program yelpazesi"
+        ],
+        "pros": [
+          "Tam zamanlı çalışmaya devam etmek isteyen öğrenciler için özel olarak tasarlanmış",
+          "Eve yakın, geniş bir yerel eğitim merkezi ağı",
+          "Bölgesel işverenlerle güçlü bağlantılar"
+        ],
+        "cons": [
+          "Öğrenim harcı uygulanıyor",
+          "Akşam/hafta sonu programı, tam zamanlı bir işle birlikte yürütülmesi zorlayıcı olabiliyor",
+          "Tam zamanlı bir üniversiteye kıyasla daha az geleneksel kampüs/öğrenci yaşamı deneyimi"
         ]
       },
       {
@@ -474,6 +574,16 @@
           "Bugüne kadar üniversite profesörlerine verilen 11 Nobel Ödülü",
           "12 fakülte ve yaklaşık 100 disiplinde geniş bir akademik yelpaze",
           "Heidelberg Kalesi'nin gölgesinde, tarihi kent merkezinde bir kampüs"
+        ],
+        "pros": [
+          "Almanya'nın en eski, Avrupa'nın en prestijli araştırma üniversitelerinden biri",
+          "Tıp ve doğa bilimlerinde olağanüstü güçlü bir akademik kadro",
+          "Güçlü bir öğrenci kültürüne sahip, tarihi ve güzel bir kent"
+        ],
+        "cons": [
+          "Tıp ve popüler programlarda çok yüksek başvuru rekabeti",
+          "Heidelberg, akademi/ilaç sektörü dışında sınırlı bir iş piyasasına sahip küçük bir şehir",
+          "Şehir küçük olmasına rağmen yüksek talep, öğrenci konutu fiyatlarını artırıyor"
         ]
       },
       {
@@ -493,6 +603,16 @@
           "Kepler, Hölderlin ve Hegel gibi tarihi isimlerin öğrencilik yaptığı üniversite",
           "Tıp ve kimya alanlarında güçlü Nobel ödülü geçmişi",
           "Neckar Nehri kıyısında klasik bir Alman üniversite kenti kampüsü"
+        ],
+        "pros": [
+          "Tıp ve doğa bilimlerinde güçlü bir üne sahip",
+          "Öğrenci yaşamının merkezde olduğu, klasik ve sıkı dokulu bir üniversite kenti",
+          "Büyüklüğüne oranla yüksek araştırma çıktısı"
+        ],
+        "cons": [
+          "Küçük kasaba ortamı, yakın çevrede daha az büyük şehir kariyer/staj fırsatı anlamına geliyor",
+          "Tıp ve psikoloji gibi bölümlerde rekabetçi başvuru süreci",
+          "İngilizce yürütülen lisans seçenekleri sınırlı, çoğu program Almanca"
         ]
       },
       {
@@ -512,6 +632,16 @@
           "2009'da üniversite ve büyük ölçekli araştırma kurumunun birleşmesiyle oluştu",
           "Helmholtz Derneği bünyesinde büyük ölçekli araştırma görevi de yürütüyor",
           "Heinrich Hertz ve Carl Benz gibi isimlerle tarihi bağlantı"
+        ],
+        "pros": [
+          "Üniversite eğitimini büyük ölçekli Helmholtz araştırma altyapısıyla birleştiriyor",
+          "Mühendislik, bilgisayar bilimi ve enerji araştırmalarında güçlü bir itibar",
+          "Karlsruhe, Münih ya da Stuttgart'a göre daha düşük yaşam maliyetine sahip"
+        ],
+        "cons": [
+          "Karlsruhe, yurt dışında Münih ya da Berlin kadar tanınan bir şehir değil",
+          "Mühendislik ders yükü yoğun ve zorlayıcı",
+          "Üniversite/araştırma merkezi ikili yapısı bazen bürokratik karmaşıklık yaratabiliyor"
         ]
       },
       {
@@ -531,6 +661,16 @@
           "Habsburg Hanedanı mirasına sahip, 1457'den bu yana kesintisiz gelenek",
           "Heidegger ve Husserl gibi isimlerle felsefede güçlü bir tarih",
           "Nobel ödüllü Friedrich Hayek'in de aralarında olduğu güçlü ekonomi geleneği"
+        ],
+        "pros": [
+          "Felsefe, hukuk ve çevre/doğa bilimlerinde güçlü bir itibar",
+          "Freiburg, Almanya'nın en yaşanabilir ve güneşli şehirleri arasında düzenli olarak yer alıyor",
+          "Karaormana ve Fransa/İsviçre sınırına yakınlık, değişim fırsatları sunuyor"
+        ],
+        "cons": [
+          "Mezun olduktan sonra şehirde kalmak isteyenler için Berlin/Münih'e kıyasla daha küçük bir iş piyasası",
+          "Popüler beşeri bilimler ve hukuk programlarında rekabetçi başvuru süreci",
+          "Teknik üniversitelere kıyasla daha az büyük ölçekli sanayi ortaklığı"
         ]
       },
       {
@@ -550,6 +690,16 @@
           "Carl Friedrich Gauss'tan Emmy Noether'e uzanan matematik mirası",
           "Aşağı Saksonya eyaletinin en eski üniversitesi",
           "'Bilim şehri' Göttingen'in kalbinde, yaklaşık 26.000 öğrencilik bir kampüs"
+        ],
+        "pros": [
+          "Olağanüstü bir Nobel Ödülü mirası ve doğa bilimleri/matematikte güçlü bir itibar",
+          "Üniversite etrafında kurulmuş, sıkı dokulu bir 'bilim şehri' atmosferi",
+          "Bir üniversite kenti için görece uygun yaşam maliyeti"
+        ],
+        "cons": [
+          "Göttingen, sınırlı büyük şehir olanakları ve iş piyasasına sahip küçük bir kent",
+          "Bazı programlar ağırlıklı olarak Almanca yürütülüyor ve iyi bir Almanca seviyesi gerektiriyor",
+          "Büyük şehirlere kıyasla yakında daha az uluslararası kurumsal işveren bulunuyor"
         ]
       },
       {
@@ -569,6 +719,16 @@
           "Humboldt'un akademik özgürlük ilkelerinden ilham alan kuruluş felsefesi",
           "Heinrich Hertz ve Konrad Adenauer gibi isimlerle tarihi bağlantı",
           "Yaklaşık 36.000 öğrenciyle Almanya'nın önde gelen üniversitelerinden"
+        ],
+        "pros": [
+          "Hukuk, ekonomi, matematik ve doğa bilimlerinde güçlü bir program",
+          "Şehirdeki BM kurumları ve uluslararası organizasyonların varlığından faydalanıyor",
+          "Güçlü bir akademik geleneğe sahip tarihi saray kampüsü"
+        ],
+        "cons": [
+          "Şehirdeki uluslararası kurumlara rağmen Bonn'un iş piyasası Berlin'e göre daha küçük",
+          "Hukuk ve tıp bölümlerinde rekabetçi başvuru süreci",
+          "Büyük öğrenci sayısı, giriş derslerinde kalabalık anlamına gelebiliyor"
         ]
       },
       {
@@ -588,6 +748,16 @@
           "1919'da 'Neue Universität' olarak yeniden kuruldu",
           "44.000'i aşkın öğrenciyle Almanya'nın en büyük geleneksel üniversitesi",
           "Hukuk, ekonomi ve sosyal bilimlerde (WiSo) güçlü akademik gelenek"
+        ],
+        "pros": [
+          "Altı fakülte boyunca son derece geniş bir program yelpazesi",
+          "Hukuk, ekonomi ve sosyal bilimlerde (WiSo) güçlü bir itibar",
+          "Köln, güçlü bir iş piyasasına ve kültürel sahneye sahip büyük, hareketli bir şehir"
+        ],
+        "cons": [
+          "Çok büyük öğrenci sayısı, daha az bireysel ilgi ve kalabalık amfiler anlamına gelebiliyor",
+          "Üniversitenin büyüklüğü nedeniyle idari süreçler bazen bürokratik hissettirebiliyor",
+          "Tıp, hukuk ve psikoloji gibi popüler bölümlerde rekabetçi başvuru süreci"
         ]
       },
       {
@@ -607,6 +777,16 @@
           "1946'da Nazi geçmişinden kopuşu simgeleyen bilinçli bir yeniden kuruluş",
           "TU9 teknik üniversiteler birliği üyesi",
           "Konrad Zuse ve Fritz Haber gibi isimlerle tarihi bağlantı"
+        ],
+        "pros": [
+          "Üst düzey teknik eğitimi Berlin'in tüm kariyer ve kültürel fırsatlarıyla birleştiriyor",
+          "Berlin'in büyüyen teknoloji/girişim sahnesiyle güçlü bağlantılar",
+          "TU9 üyesi, güçlü mühendislik ve bilgisayar bilimi itibarı"
+        ],
+        "cons": [
+          "Berlin'de hızla artan kira fiyatları öğrenci konutu bulmayı zorlaştırıyor",
+          "Popüler mühendislik/bilgisayar bilimi programlarında kalabalık dersler",
+          "Üniversitenin büyüklüğü nedeniyle idari süreçler yavaş işleyebiliyor"
         ]
       }
     ],

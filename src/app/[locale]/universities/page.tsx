@@ -57,7 +57,7 @@ export default async function UniversitiesPage({
                         src={logo.url}
                         alt={uni.name}
                         loading="lazy"
-                        className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
+                        className="max-h-full max-w-full object-contain grayscale opacity-80 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0"
                       />
                       <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
                         {uni.type}
@@ -70,7 +70,7 @@ export default async function UniversitiesPage({
                         src={fallbackCover.url}
                         alt={uni.name}
                         loading="lazy"
-                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="h-full w-full object-cover grayscale opacity-90 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0"
                       />
                       <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
                         {uni.type}

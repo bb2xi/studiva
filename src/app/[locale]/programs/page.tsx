@@ -3,10 +3,11 @@ import { ArrowRight, Check } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
+import { serviceIcons } from "@/lib/icons";
 
 type ProgramItem = {
   name: string;
-  flag: string;
+  icon: string;
   description: string;
   highlights: string[];
 };
@@ -39,17 +40,19 @@ export default async function ProgramsPage({
       <section className="py-20 sm:py-24">
         <Container>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {items.map((program) => (
+            {items.map((program) => {
+              const Icon = serviceIcons[program.icon] ?? Check;
+              return (
               <div
                 key={program.name}
                 className="flex flex-col rounded-2xl border border-slate-100 bg-white p-7 shadow-sm"
               >
-                <div className="flex items-center gap-3">
-                  <span className="text-3xl">{program.flag}</span>
-                  <h3 className="text-lg font-semibold text-slate-900">
-                    {program.name}
-                  </h3>
-                </div>
+                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light text-brand">
+                  <Icon size={24} />
+                </span>
+                <h3 className="mt-4 text-lg font-semibold text-slate-900">
+                  {program.name}
+                </h3>
                 <p className="mt-4 text-sm leading-relaxed text-slate-600">
                   {program.description}
                 </p>
@@ -65,7 +68,8 @@ export default async function ProgramsPage({
                   ))}
                 </ul>
               </div>
-            ))}
+              );
+            })}
           </div>
         </Container>
       </section>
