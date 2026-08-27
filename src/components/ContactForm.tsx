@@ -63,16 +63,16 @@ export default function ContactForm() {
         </div>
         <div>
           <label className="text-sm font-medium text-slate-700">
-            {t("program")}
+            {t("country")}
           </label>
           <select
             defaultValue=""
             className="mt-2 w-full rounded-lg border border-slate-200 px-4 py-2.5 text-sm outline-none focus:border-brand focus:ring-2 focus:ring-brand/20"
           >
             <option value="" disabled>
-              {t("programPlaceholder")}
+              {t("countryPlaceholder")}
             </option>
-            {(t.raw("programOptions") as string[]).map((option) => (
+            {(t.raw("countryOptions") as string[]).map((option) => (
               <option key={option}>{option}</option>
             ))}
           </select>

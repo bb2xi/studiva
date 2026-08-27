@@ -11,11 +11,13 @@ type ServiceItem = { icon: string; title: string; description: string };
 type ProcessStep = { title: string; description: string };
 type WhyUsItem = { title: string; description: string };
 type ProgramItem = { name: string; icon: string };
-type UniversityItem = { slug: string; name: string; city: string; type: string };
+type UniversityItem = { slug: string; name: string; city: string; type: string; country: string };
+type CountryMeta = { name: string; flag: string };
 type Stat = { value: string; label: string };
 
 const whyUsIcons = [Target, ShieldCheck, Sparkles, HeartHandshake];
-const UNIVERSITY_PREVIEW_COUNT = 6;
+// A curated, diverse spread across countries for the homepage teaser.
+const UNIVERSITY_PREVIEW_SLUGS = ["tum", "oxford", "uva", "sorbonne", "ethz", "kth"];
 
 export default async function HomePage({
   params,
@@ -34,9 +36,11 @@ export default async function HomePage({
   const steps = home.raw("process.steps") as ProcessStep[];
   const whyUsItems = home.raw("whyUs.items") as WhyUsItem[];
   const programItems = programsT.raw("items") as ProgramItem[];
-  const universityItems = (
-    universitiesT.raw("items") as UniversityItem[]
-  ).slice(0, UNIVERSITY_PREVIEW_COUNT);
+  const allUniversityItems = universitiesT.raw("items") as UniversityItem[];
+  const universityItems = UNIVERSITY_PREVIEW_SLUGS.map((slug) =>
+    allUniversityItems.find((u) => u.slug === slug)
+  ).filter((u): u is UniversityItem => Boolean(u));
+  const countries = universitiesT.raw("countries") as Record<string, CountryMeta>;
 
   return (
     <>
@@ -181,6 +185,7 @@ export default async function HomePage({
             {universityItems.map((uni) => {
               const logo = universityLogos[uni.slug];
               const fallbackCover = universityMedia[uni.slug]?.[0];
+              const countryMeta = countries[uni.country];
               return (
                 <Link
                   key={uni.name}
@@ -199,6 +204,11 @@ export default async function HomePage({
                       <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
                         {uni.type}
                       </span>
+                      {countryMeta && (
+                        <span className="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/95 text-base shadow-sm backdrop-blur">
+                          {countryMeta.flag}
+                        </span>
+                      )}
                     </div>
                   ) : fallbackCover ? (
                     <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
@@ -212,6 +222,11 @@ export default async function HomePage({
                       <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
                         {uni.type}
                       </span>
+                      {countryMeta && (
+                        <span className="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/95 text-base shadow-sm backdrop-blur">
+                          {countryMeta.flag}
+                        </span>
+                      )}
                     </div>
                   ) : null}
                   <div className="p-5">
@@ -221,6 +236,7 @@ export default async function HomePage({
                     <div className="mt-1 flex items-center gap-1.5 text-xs text-slate-500">
                       <MapPin size={13} />
                       {uni.city}
+                      {countryMeta && `, ${countryMeta.name}`}
                     </div>
                     <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-brand">
                       {locale === "tr" ? "Detayları Gör" : "View Details"}

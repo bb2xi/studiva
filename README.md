@@ -1,6 +1,6 @@
 # Studiva
 
-Studiva is a Germany-focused study-abroad consultancy site (Next.js App Router + `next-intl`), covering Bachelor Studium, Master Studium, and Dual Studium (duales Studium) advising for students applying to German universities.
+Studiva is a study-abroad consultancy site (Next.js App Router + `next-intl`) covering Bachelor's and Master's admissions advising across 9 European countries: Germany, the UK, the Netherlands, France, Switzerland, Sweden, Belgium, Denmark, and Estonia.
 
 Available in Turkish (default) and English.
 
@@ -15,8 +15,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Structure
 
-- `src/app/[locale]/` — routed pages: home, services, programs, about, contact
-- `src/messages/{tr,en}.json` — all site copy, per locale
+- `src/app/[locale]/` — routed pages: home, services, programs, universities (list + `[slug]` detail), about, contact
+- `src/messages/{tr,en}.json` — all site copy, per locale, including `universities.items` (61 universities with history/highlights/pros/cons) and `universities.countries` (country metadata)
+- `src/lib/universityMedia.ts` — campus photos and logos per university, sourced from Wikimedia Commons under free licenses
+- `src/components/UniversitiesBrowser.tsx` — client-side country filter + grid for the universities list page
 - `src/i18n/` — `next-intl` routing/navigation config
 - `src/components/` — shared UI (Navbar, Footer, ContactForm, etc.)
 

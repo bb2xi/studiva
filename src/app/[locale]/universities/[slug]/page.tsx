@@ -9,6 +9,7 @@ import { universityMedia } from "@/lib/universityMedia";
 
 type UniversityItem = {
   slug: string;
+  country: string;
   name: string;
   city: string;
   type: string;
@@ -19,6 +20,8 @@ type UniversityItem = {
   pros: string[];
   cons: string[];
 };
+
+type CountryMeta = { name: string; flag: string };
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -56,6 +59,8 @@ export default async function UniversityDetailPage({
 
   const t = await getTranslations({ locale, namespace: "universities" });
   const images = universityMedia[slug] ?? [];
+  const countries = t.raw("countries") as Record<string, CountryMeta>;
+  const countryMeta = countries[university.country];
 
   return (
     <>
@@ -75,9 +80,17 @@ export default async function UniversityDetailPage({
             </div>
 
             <div className="lg:col-span-2">
-              <span className="inline-flex w-fit items-center rounded-full bg-brand-light px-3 py-1 text-xs font-semibold text-brand">
-                {university.type}
-              </span>
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="inline-flex w-fit items-center rounded-full bg-brand-light px-3 py-1 text-xs font-semibold text-brand">
+                  {university.type}
+                </span>
+                {countryMeta && (
+                  <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">
+                    <span>{countryMeta.flag}</span>
+                    {countryMeta.name}
+                  </span>
+                )}
+              </div>
               <h1 className="mt-3 text-3xl font-bold tracking-tight text-slate-900">
                 {university.name}
               </h1>
