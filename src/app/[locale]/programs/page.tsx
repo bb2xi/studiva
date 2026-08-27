@@ -3,6 +3,7 @@ import { ArrowRight, Check } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
+import Reveal from "@/components/Reveal";
 import { serviceIcons } from "@/lib/icons";
 
 type ProgramItem = {
@@ -40,34 +41,33 @@ export default async function ProgramsPage({
       <section className="py-20 sm:py-24">
         <Container>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {items.map((program) => {
+            {items.map((program, index) => {
               const Icon = serviceIcons[program.icon] ?? Check;
               return (
-              <div
-                key={program.name}
-                className="flex flex-col rounded-2xl border border-slate-100 bg-white p-7 shadow-sm"
-              >
-                <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light text-brand">
-                  <Icon size={24} />
-                </span>
-                <h3 className="mt-4 text-lg font-semibold text-slate-900">
-                  {program.name}
-                </h3>
-                <p className="mt-4 text-sm leading-relaxed text-slate-600">
-                  {program.description}
-                </p>
-                <ul className="mt-5 space-y-2">
-                  {program.highlights.map((point) => (
-                    <li
-                      key={point}
-                      className="flex items-start gap-2 text-sm text-slate-700"
-                    >
-                      <Check size={16} className="mt-0.5 shrink-0 text-brand" />
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+                <Reveal key={program.name} delay={index * 80}>
+                  <div className="flex h-full flex-col rounded-2xl border border-border bg-surface p-7 shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light text-brand">
+                      <Icon size={24} />
+                    </span>
+                    <h3 className="mt-4 text-lg font-semibold text-foreground">
+                      {program.name}
+                    </h3>
+                    <p className="mt-4 text-sm leading-relaxed text-foreground-secondary">
+                      {program.description}
+                    </p>
+                    <ul className="mt-5 space-y-2">
+                      {program.highlights.map((point) => (
+                        <li
+                          key={point}
+                          className="flex items-start gap-2 text-sm text-foreground-secondary"
+                        >
+                          <Check size={16} className="mt-0.5 shrink-0 text-brand" />
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </Reveal>
               );
             })}
           </div>
@@ -82,7 +82,7 @@ export default async function ProgramsPage({
           <p className="max-w-xl text-blue-100">{t("cta.subtitle")}</p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand transition-transform hover:scale-105"
+            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand transition-all duration-200 ease-out hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"
           >
             {t("cta.button")}
             <ArrowRight size={16} />

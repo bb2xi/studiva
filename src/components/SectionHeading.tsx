@@ -16,10 +16,10 @@ export default function SectionHeading({
           {eyebrow}
         </span>
       )}
-      <h2 className="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+      <h2 className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
         {title}
       </h2>
-      {subtitle && <p className="mt-4 text-lg text-slate-600">{subtitle}</p>}
+      {subtitle && <p className="mt-4 text-lg text-foreground-secondary">{subtitle}</p>}
     </div>
   );
 }

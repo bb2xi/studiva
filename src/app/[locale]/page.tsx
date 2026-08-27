@@ -4,6 +4,8 @@ import { ArrowRight, ArrowUpRight, Check, ShieldCheck, Sparkles, HeartHandshake,
 import { Link } from "@/i18n/navigation";
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
+import HeroBackground from "@/components/HeroBackground";
+import Reveal from "@/components/Reveal";
 import { serviceIcons } from "@/lib/icons";
 import { universityMedia, universityLogos } from "@/lib/universityMedia";
 
@@ -18,6 +20,8 @@ type Stat = { value: string; label: string };
 const whyUsIcons = [Target, ShieldCheck, Sparkles, HeartHandshake];
 // A curated, diverse spread across countries for the homepage teaser.
 const UNIVERSITY_PREVIEW_SLUGS = ["tum", "oxford", "uva", "sorbonne", "ethz", "kth"];
+// Real campus photos for the showcase band, same diverse spread.
+const SHOWCASE_SLUGS = ["oxford", "sorbonne", "tum", "kth", "uva", "ethz"];
 
 export default async function HomePage({
   params,
@@ -41,21 +45,20 @@ export default async function HomePage({
     allUniversityItems.find((u) => u.slug === slug)
   ).filter((u): u is UniversityItem => Boolean(u));
   const countries = universitiesT.raw("countries") as Record<string, CountryMeta>;
+  const showcasePhotos = SHOWCASE_SLUGS.map((slug) => ({
+    slug,
+    name: allUniversityItems.find((u) => u.slug === slug)?.name ?? slug,
+    image: universityMedia[slug]?.[0],
+  })).filter((p) => Boolean(p.image));
 
   return (
     <>
       {/* Hero */}
       <section className="relative overflow-hidden bg-slate-950">
-        <div
-          className="pointer-events-none absolute inset-0 opacity-20"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 20% 20%, #1d4ed8 0, transparent 45%), radial-gradient(circle at 80% 0%, #1e3a8a 0, transparent 40%)",
-          }}
-        />
+        <HeroBackground />
         <Container className="relative py-24 sm:py-28">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm font-medium text-blue-200">
+            <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm font-medium text-blue-200 backdrop-blur-sm">
               {home("hero.badge")}
             </span>
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
@@ -67,28 +70,30 @@ export default async function HomePage({
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+                className="inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition-all duration-200 ease-out hover:scale-105 hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
               >
                 {home("hero.ctaPrimary")}
                 <ArrowRight size={16} />
               </Link>
               <Link
                 href="/programs"
-                className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+                className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-all duration-200 ease-out hover:scale-105 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
               >
                 {home("hero.ctaSecondary")}
               </Link>
             </div>
-            <p className="mt-6 flex items-center justify-center gap-2 text-sm font-medium text-blue-200">
+            <p className="mt-6 flex items-center justify-center gap-2 text-sm font-medium text-accent">
               <ShieldCheck size={16} className="shrink-0" />
               {home("hero.guaranteeNote")}
             </p>
           </div>
 
           <div className="mx-auto mt-16 grid max-w-4xl grid-cols-2 gap-6 sm:grid-cols-4">
-            {stats.map((stat) => (
+            {stats.map((stat, index) => (
               <div key={stat.label} className="text-center">
-                <div className="text-3xl font-bold text-white">{stat.value}</div>
+                <div className={`text-3xl font-bold ${index === 0 ? "text-accent" : "text-white"}`}>
+                  {stat.value}
+                </div>
                 <div className="mt-1 text-sm text-slate-400">{stat.label}</div>
               </div>
             ))}
@@ -99,76 +104,81 @@ export default async function HomePage({
       {/* Services preview */}
       <section className="py-20 sm:py-24">
         <Container>
-          <SectionHeading
-            eyebrow="Studiva"
-            title={home("services.title")}
-            subtitle={home("services.subtitle")}
-          />
+          <Reveal>
+            <SectionHeading
+              eyebrow="Studiva"
+              title={home("services.title")}
+              subtitle={home("services.subtitle")}
+            />
+          </Reveal>
           <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {services.map((service) => {
+            {services.map((service, index) => {
               const Icon = serviceIcons[service.icon] ?? Check;
               return (
-                <div
-                  key={service.title}
-                  className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
-                >
-                  <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-light text-brand">
-                    <Icon size={22} />
-                  </span>
-                  <h3 className="mt-4 text-lg font-semibold text-slate-900">
-                    {service.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                    {service.description}
-                  </p>
-                </div>
+                <Reveal key={service.title} delay={index * 60}>
+                  <div className="h-full rounded-2xl border border-border bg-surface p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:border-border-strong hover:shadow-lg">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-light text-brand">
+                      <Icon size={22} />
+                    </span>
+                    <h3 className="mt-4 text-lg font-semibold text-foreground">
+                      {service.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-foreground-secondary">
+                      {service.description}
+                    </p>
+                  </div>
+                </Reveal>
               );
             })}
           </div>
           <div className="mt-10 text-center">
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-brand-dark"
+              className="group inline-flex items-center gap-2 text-sm font-semibold text-brand transition-colors hover:text-brand-dark"
             >
               {home("services.linkText")}
-              <ArrowRight size={16} />
+              <ArrowRight size={16} className="transition-transform duration-200 ease-out group-hover:translate-x-1" />
             </Link>
           </div>
         </Container>
       </section>
 
       {/* Programs strip */}
-      <section className="border-y border-slate-100 bg-slate-50 py-20">
+      <section className="border-y border-border bg-background-secondary py-20">
         <Container>
-          <SectionHeading
-            title={home("programs.title")}
-            subtitle={home("programs.subtitle")}
-          />
-          <div className="mt-12 flex flex-wrap justify-center gap-4">
-            {programItems.map((program) => {
-              const Icon = serviceIcons[program.icon] ?? Check;
-              return (
-                <div
-                  key={program.name}
-                  className="flex items-center gap-3 rounded-full border border-slate-200 bg-white px-5 py-3 shadow-sm"
-                >
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand-light text-brand">
-                    <Icon size={15} />
-                  </span>
-                  <span className="text-sm font-medium text-slate-700">
-                    {program.name}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
+          <Reveal>
+            <SectionHeading
+              title={home("programs.title")}
+              subtitle={home("programs.subtitle")}
+            />
+          </Reveal>
+          <Reveal delay={100}>
+            <div className="mt-12 flex flex-wrap justify-center gap-4">
+              {programItems.map((program) => {
+                const Icon = serviceIcons[program.icon] ?? Check;
+                return (
+                  <div
+                    key={program.name}
+                    className="flex items-center gap-3 rounded-full border border-border-strong bg-surface px-5 py-3 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md"
+                  >
+                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand-light text-brand">
+                      <Icon size={15} />
+                    </span>
+                    <span className="text-sm font-medium text-foreground-secondary">
+                      {program.name}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </Reveal>
           <div className="mt-10 text-center">
             <Link
               href="/programs"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-brand-dark"
+              className="group inline-flex items-center gap-2 text-sm font-semibold text-brand transition-colors hover:text-brand-dark"
             >
               {home("programs.linkText")}
-              <ArrowRight size={16} />
+              <ArrowRight size={16} className="transition-transform duration-200 ease-out group-hover:translate-x-1" />
             </Link>
           </div>
         </Container>
@@ -177,138 +187,178 @@ export default async function HomePage({
       {/* Universities preview */}
       <section className="py-20 sm:py-24">
         <Container>
-          <SectionHeading
-            title={home("universities.title")}
-            subtitle={home("universities.subtitle")}
-          />
+          <Reveal>
+            <SectionHeading
+              title={home("universities.title")}
+              subtitle={home("universities.subtitle")}
+            />
+          </Reveal>
           <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {universityItems.map((uni) => {
+            {universityItems.map((uni, index) => {
               const logo = universityLogos[uni.slug];
               const fallbackCover = universityMedia[uni.slug]?.[0];
               const countryMeta = countries[uni.country];
               return (
-                <Link
-                  key={uni.name}
-                  href={`/universities/${uni.slug}`}
-                  className="group flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
-                >
-                  {logo ? (
-                    <div className="relative flex aspect-[16/10] w-full items-center justify-center overflow-hidden bg-slate-50 p-8">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={logo.url}
-                        alt={uni.name}
-                        loading="lazy"
-                        className="max-h-full max-w-full object-contain grayscale opacity-80 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0"
-                      />
-                      <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
-                        {uni.type}
-                      </span>
-                      {countryMeta && (
-                        <span className="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/95 text-base shadow-sm backdrop-blur">
-                          {countryMeta.flag}
+                <Reveal key={uni.name} delay={index * 60}>
+                  <Link
+                    href={`/universities/${uni.slug}`}
+                    className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    {logo ? (
+                      <div className="relative flex aspect-[16/10] w-full items-center justify-center overflow-hidden bg-background-secondary p-8">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={logo.url}
+                          alt={uni.name}
+                          loading="lazy"
+                          className="max-h-full max-w-full object-contain grayscale opacity-80 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0"
+                        />
+                        <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
+                          {uni.type}
                         </span>
-                      )}
-                    </div>
-                  ) : fallbackCover ? (
-                    <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={fallbackCover.url}
-                        alt={uni.name}
-                        loading="lazy"
-                        className="h-full w-full object-cover grayscale opacity-90 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0"
-                      />
-                      <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
-                        {uni.type}
-                      </span>
-                      {countryMeta && (
-                        <span className="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/95 text-base shadow-sm backdrop-blur">
-                          {countryMeta.flag}
+                        {countryMeta && (
+                          <span className="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/95 text-base shadow-sm backdrop-blur">
+                            {countryMeta.flag}
+                          </span>
+                        )}
+                      </div>
+                    ) : fallbackCover ? (
+                      <div className="relative aspect-[16/10] w-full overflow-hidden bg-background-secondary">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={fallbackCover.url}
+                          alt={uni.name}
+                          loading="lazy"
+                          className="h-full w-full object-cover grayscale opacity-90 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0"
+                        />
+                        <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
+                          {uni.type}
                         </span>
-                      )}
+                        {countryMeta && (
+                          <span className="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/95 text-base shadow-sm backdrop-blur">
+                            {countryMeta.flag}
+                          </span>
+                        )}
+                      </div>
+                    ) : null}
+                    <div className="flex flex-1 flex-col p-5">
+                      <h3 className="text-base font-semibold text-foreground transition-colors group-hover:text-brand">
+                        {uni.name}
+                      </h3>
+                      <div className="mt-1 flex items-center gap-1.5 text-xs text-foreground-muted">
+                        <MapPin size={13} />
+                        {uni.city}
+                        {countryMeta && `, ${countryMeta.name}`}
+                      </div>
+                      <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-brand">
+                        {locale === "tr" ? "Detayları Gör" : "View Details"}
+                        <ArrowUpRight
+                          size={13}
+                          className="transition-transform duration-200 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                        />
+                      </span>
                     </div>
-                  ) : null}
-                  <div className="p-5">
-                    <h3 className="text-base font-semibold text-slate-900 transition-colors group-hover:text-brand">
-                      {uni.name}
-                    </h3>
-                    <div className="mt-1 flex items-center gap-1.5 text-xs text-slate-500">
-                      <MapPin size={13} />
-                      {uni.city}
-                      {countryMeta && `, ${countryMeta.name}`}
-                    </div>
-                    <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-brand">
-                      {locale === "tr" ? "Detayları Gör" : "View Details"}
-                      <ArrowUpRight
-                        size={13}
-                        className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                      />
-                    </span>
-                  </div>
-                </Link>
+                  </Link>
+                </Reveal>
               );
             })}
           </div>
           <div className="mt-10 text-center">
             <Link
               href="/universities"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-brand hover:text-brand-dark"
+              className="group inline-flex items-center gap-2 text-sm font-semibold text-brand transition-colors hover:text-brand-dark"
             >
               {home("universities.linkText")}
-              <ArrowRight size={16} />
+              <ArrowRight size={16} className="transition-transform duration-200 ease-out group-hover:translate-x-1" />
             </Link>
           </div>
         </Container>
       </section>
 
+      {/* Campus showcase — real, licensed campus photography, unified with a brand-blue duotone treatment */}
+      {showcasePhotos.length > 0 && (
+        <section className="relative overflow-hidden bg-slate-950 py-4">
+          <div className="grid grid-cols-2 gap-1 sm:grid-cols-3 lg:grid-cols-6">
+            {showcasePhotos.map((photo) => (
+              <div key={photo.slug} className="group relative aspect-square overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={photo.image!.url}
+                  alt={photo.name}
+                  loading="lazy"
+                  className="h-full w-full scale-105 object-cover opacity-70 saturate-0 transition-all duration-500 ease-out group-hover:scale-100 group-hover:opacity-100 group-hover:saturate-100"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent" />
+                <span className="absolute bottom-2 left-2 right-2 truncate text-xs font-medium text-white/90">
+                  {photo.name}
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Process */}
       <section className="py-20 sm:py-24">
         <Container>
-          <SectionHeading
-            title={home("process.title")}
-            subtitle={home("process.subtitle")}
-          />
+          <Reveal>
+            <SectionHeading
+              title={home("process.title")}
+              subtitle={home("process.subtitle")}
+            />
+          </Reveal>
           <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((step, index) => (
-              <div key={step.title} className="relative">
-                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-brand text-lg font-bold text-white">
-                  {index + 1}
+              <Reveal key={step.title} delay={index * 80}>
+                <div className="relative">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-brand text-lg font-bold text-white">
+                    {index + 1}
+                  </div>
+                  <h3 className="mt-4 text-base font-semibold text-foreground">
+                    {step.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-foreground-secondary">
+                    {step.description}
+                  </p>
                 </div>
-                <h3 className="mt-4 text-base font-semibold text-slate-900">
-                  {step.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                  {step.description}
-                </p>
-              </div>
+              </Reveal>
             ))}
           </div>
         </Container>
       </section>
 
       {/* Why us */}
-      <section className="bg-slate-50 py-20 sm:py-24">
+      <section className="bg-background-secondary py-20 sm:py-24">
         <Container>
-          <SectionHeading title={home("whyUs.title")} />
+          <Reveal>
+            <SectionHeading title={home("whyUs.title")} />
+          </Reveal>
           <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {whyUsItems.map((item, index) => {
               const Icon = whyUsIcons[index % whyUsIcons.length];
+              const isGuarantee = index === 1;
               return (
-                <div
-                  key={item.title}
-                  className="rounded-2xl border border-slate-100 bg-white p-6 text-center shadow-sm"
-                >
-                  <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light text-brand">
-                    <Icon size={22} />
-                  </span>
-                  <h3 className="mt-4 text-base font-semibold text-slate-900">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                    {item.description}
-                  </p>
-                </div>
+                <Reveal key={item.title} delay={index * 70}>
+                  <div
+                    className={`h-full rounded-2xl border p-6 text-center shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg ${
+                      isGuarantee ? "border-accent/30 bg-accent-light" : "border-border bg-surface"
+                    }`}
+                  >
+                    <span
+                      className={`mx-auto flex h-12 w-12 items-center justify-center rounded-xl ${
+                        isGuarantee ? "bg-accent/15 text-accent-dark" : "bg-brand-light text-brand"
+                      }`}
+                    >
+                      <Icon size={22} />
+                    </span>
+                    <h3 className="mt-4 text-base font-semibold text-foreground">
+                      {item.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-foreground-secondary">
+                      {item.description}
+                    </p>
+                  </div>
+                </Reveal>
               );
             })}
           </div>
@@ -324,7 +374,7 @@ export default async function HomePage({
           <p className="max-w-xl text-blue-100">{home("cta.subtitle")}</p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand transition-transform hover:scale-105"
+            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand transition-all duration-200 ease-out hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"
           >
             {home("cta.button")}
             <ArrowRight size={16} />

@@ -3,6 +3,7 @@ import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
 import ContactForm from "@/components/ContactForm";
+import Reveal from "@/components/Reveal";
 
 const WHATSAPP_NUMBER = "905325550101";
 
@@ -40,8 +41,8 @@ export default async function ContactPage({
       <section className="py-20 sm:py-24">
         <Container>
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-5">
-            <div className="lg:col-span-2">
-              <h3 className="text-lg font-semibold text-slate-900">
+            <Reveal className="lg:col-span-2">
+              <h3 className="text-lg font-semibold text-foreground">
                 {t("info.title")}
               </h3>
               <div className="mt-6 space-y-6">
@@ -51,10 +52,10 @@ export default async function ContactPage({
                       <row.icon size={18} />
                     </span>
                     <div>
-                      <div className="text-xs font-medium uppercase tracking-wide text-slate-400">
+                      <div className="text-xs font-medium uppercase tracking-wide text-foreground-muted">
                         {row.label}
                       </div>
-                      <div className="mt-1 text-sm font-medium text-slate-800">
+                      <div className="mt-1 text-sm font-medium text-foreground">
                         {row.value}
                       </div>
                     </div>
@@ -67,28 +68,28 @@ export default async function ContactPage({
                   <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand text-white">
                     <MessageCircle size={18} />
                   </span>
-                  <h3 className="text-base font-semibold text-slate-900">
+                  <h3 className="text-base font-semibold text-foreground">
                     {t("scheduling.title")}
                   </h3>
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-slate-700">
+                <p className="mt-3 text-sm leading-relaxed text-foreground-secondary">
                   {t("scheduling.description")}
                 </p>
                 <a
                   href={`https://wa.me/${WHATSAPP_NUMBER}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+                  className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 ease-out hover:scale-105 hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
                 >
                   <MessageCircle size={16} />
                   {t("scheduling.button")}
                 </a>
               </div>
-            </div>
+            </Reveal>
 
-            <div className="lg:col-span-3">
+            <Reveal delay={120} className="lg:col-span-3">
               <ContactForm />
-            </div>
+            </Reveal>
           </div>
         </Container>
       </section>

@@ -18,7 +18,7 @@ export default function UniversityGallery({
 
   return (
     <div>
-      <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-slate-100 shadow-sm">
+      <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-background-secondary shadow-sm">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           key={current.url}
@@ -37,7 +37,7 @@ export default function UniversityGallery({
               type="button"
               onClick={() => setActive(index)}
               aria-label={`Fotoğraf ${index + 1}`}
-              className={`relative h-16 w-24 shrink-0 overflow-hidden rounded-lg ring-2 transition-all cursor-pointer ${
+              className={`relative h-16 w-24 shrink-0 cursor-pointer overflow-hidden rounded-lg ring-2 transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-brand ${
                 index === active
                   ? "ring-brand"
                   : "opacity-70 ring-transparent hover:opacity-100"
@@ -55,7 +55,7 @@ export default function UniversityGallery({
         </div>
       )}
 
-      <p className="mt-3 text-xs text-slate-400">
+      <p className="mt-3 text-xs text-foreground-muted">
         Fotoğraf: {current.artist} · Wikimedia Commons ({current.license})
       </p>
     </div>

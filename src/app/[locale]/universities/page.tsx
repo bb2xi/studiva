@@ -61,7 +61,7 @@ export default async function UniversitiesPage({
           <p className="max-w-xl text-blue-100">{t("cta.subtitle")}</p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand transition-transform hover:scale-105"
+            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand transition-all duration-200 ease-out hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"
           >
             {t("cta.button")}
             <ArrowRight size={16} />

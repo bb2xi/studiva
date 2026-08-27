@@ -21,9 +21,12 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-border bg-surface/90 backdrop-blur">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-2 font-bold text-slate-900">
+        <Link
+          href="/"
+          className="flex items-center gap-2 rounded-md font-bold text-foreground transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
+        >
           <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand text-white">
             <GraduationCap size={20} />
           </span>
@@ -38,11 +41,16 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors ${
-                  active ? "text-brand" : "text-slate-600 hover:text-brand"
+                className={`relative text-sm font-medium transition-colors duration-200 ease-out focus-visible:outline-none ${
+                  active ? "text-brand" : "text-foreground-secondary hover:text-brand"
                 }`}
               >
                 {link.label}
+                <span
+                  className={`absolute -bottom-1 left-0 h-0.5 rounded-full bg-brand transition-all duration-200 ease-out ${
+                    active ? "w-full" : "w-0"
+                  }`}
+                />
               </Link>
             );
           })}
@@ -52,14 +60,14 @@ export default function Navbar() {
           <LanguageSwitcher />
           <Link
             href="/contact"
-            className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
+            className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-all duration-200 ease-out hover:scale-105 hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
           >
             {t("cta")}
           </Link>
         </div>
 
         <button
-          className="flex items-center justify-center rounded-md p-2 text-slate-700 md:hidden"
+          className="flex items-center justify-center rounded-md p-2 text-foreground-secondary transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 md:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
         >
@@ -68,14 +76,14 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-slate-100 bg-white px-4 pb-6 pt-2 md:hidden">
+        <div className="border-t border-border bg-surface px-4 pb-6 pt-2 md:hidden">
           <div className="flex flex-col gap-1">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-brand"
+                className="rounded-md px-3 py-2 text-sm font-medium text-foreground-secondary transition-colors hover:bg-background-secondary hover:text-brand"
               >
                 {link.label}
               </Link>
@@ -86,7 +94,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white"
+              className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand-dark"
             >
               {t("cta")}
             </Link>

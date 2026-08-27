@@ -42,7 +42,10 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             {quickLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="text-slate-400 hover:text-white">
+                <Link
+                  href={link.href}
+                  className="text-slate-400 transition-colors duration-200 hover:text-white"
+                >
                   {link.label}
                 </Link>
               </li>
