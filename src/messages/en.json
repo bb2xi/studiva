@@ -41,7 +41,7 @@
           "label": "TU9 Universities"
         },
         {
-          "value": "48+",
+          "value": "82+",
           "label": "University Options"
         },
         {
@@ -2241,6 +2241,1332 @@
           "Logistics",
           "Mechanical Engineering"
         ]
+      },
+      {
+        "slug": "duesseldorf",
+        "name": "Heinrich-Heine-Universität Düsseldorf (HHU)",
+        "city": "Düsseldorf",
+        "type": "Universität",
+        "founded": "1965",
+        "description": "Named after Düsseldorf-born poet Heinrich Heine, a university strong in medicine and life sciences.",
+        "history": [
+          "Traces its roots to a medical academy founded in 1907; gained full university status in 1965 and took the name of Düsseldorf-born poet Heinrich Heine.",
+          "Strong faculties in medicine, life sciences (especially plant and microbiology), law and economics."
+        ],
+        "highlights": [
+          "Named after poet Heinrich Heine",
+          "Strong medicine and life sciences faculty",
+          "Close to Düsseldorf's economic center"
+        ],
+        "pros": [
+          "Access to Düsseldorf's strong job market",
+          "Solid research infrastructure in medicine and life sciences",
+          "Compact, modern campus"
+        ],
+        "cons": [
+          "High application competition for the popular medicine program",
+          "Limited program range outside the sciences",
+          "High cost of living in a major city"
+        ],
+        "badges": [],
+        "mapCity": "duesseldorf",
+        "quickFacts": {
+          "students": "~34,000",
+          "language": "Mostly German",
+          "tuition": "~€310 semester contribution"
+        },
+        "popularPrograms": [
+          "Medicine",
+          "Biology/Life Sciences",
+          "Law"
+        ]
+      },
+      {
+        "slug": "ude",
+        "name": "Universität Duisburg-Essen (UDE)",
+        "city": "Duisburg/Essen",
+        "type": "Universität",
+        "founded": "2003",
+        "description": "Formed from the merger of the Duisburg and Essen universities, one of the Ruhr region's largest universities.",
+        "history": [
+          "Founded in 2003 through the merger of the universities of Duisburg and Essen; a member of the University Alliance Ruhr alongside TU Dortmund.",
+          "Strong in engineering, medicine (Essen campus), social sciences and economics, with one of Germany's most internationally diverse student bodies."
+        ],
+        "highlights": [
+          "University Alliance Ruhr member",
+          "Broad faculty range across two campuses (Duisburg and Essen)",
+          "One of Germany's most diverse student communities"
+        ],
+        "pros": [
+          "Access to the Ruhr region's large job market",
+          "Strong research in engineering and medicine",
+          "Relatively affordable region"
+        ],
+        "cons": [
+          "Split across two campuses (Duisburg/Essen) can mean more commuting",
+          "Large student body means crowded courses",
+          "The Ruhr region may lack a classic university-town feel"
+        ],
+        "badges": [],
+        "mapCity": "essen",
+        "quickFacts": {
+          "students": "~42,000",
+          "language": "Mostly German, some English programs in engineering",
+          "tuition": "~€320 semester contribution"
+        },
+        "popularPrograms": [
+          "Engineering",
+          "Medicine",
+          "Social Sciences"
+        ]
+      },
+      {
+        "slug": "tudortmund",
+        "name": "Technische Universität Dortmund",
+        "city": "Dortmund",
+        "type": "Universität",
+        "founded": "1968",
+        "description": "A Ruhr-region technical university strong in statistics and physics.",
+        "history": [
+          "Founded in 1968, TU Dortmund is known for a dedicated Statistics faculty, rare among German universities.",
+          "Home to the DELTA particle accelerator in physics; also strong in engineering, computer science and education."
+        ],
+        "highlights": [
+          "A rare, dedicated Statistics faculty in Germany",
+          "Home to the DELTA particle accelerator",
+          "One of the Ruhr region's engineering education hubs"
+        ],
+        "pros": [
+          "A strong, niche specialization in statistics and data science",
+          "Access to the Ruhr region's industrial job market",
+          "A large, modern campus"
+        ],
+        "cons": [
+          "Dortmund has limited big-city cultural amenities",
+          "Crowded cohorts in popular engineering programs",
+          "More limited humanities options"
+        ],
+        "badges": [],
+        "mapCity": "dortmund",
+        "quickFacts": {
+          "students": "~32,000",
+          "language": "Mostly German, some English in statistics/engineering",
+          "tuition": "~€310 semester contribution"
+        },
+        "popularPrograms": [
+          "Statistics",
+          "Physics",
+          "Mechanical Engineering"
+        ]
+      },
+      {
+        "slug": "bielefeld",
+        "name": "Universität Bielefeld",
+        "city": "Bielefeld",
+        "type": "Universität",
+        "founded": "1969",
+        "description": "A globally influential center for sociology, with all its faculties housed in one unusual, interconnected building.",
+        "history": [
+          "Founded in 1969 as an interdisciplinary 'reform university' similar to Konstanz and Bremen, known for housing all its faculties in a single, vast interconnected building.",
+          "Sociologist Niklas Luhmann taught here for decades; the university also has a globally recognized research culture in history, biology and physics."
+        ],
+        "highlights": [
+          "A globally influential sociology tradition (Niklas Luhmann)",
+          "An unusual campus uniting all faculties in one vast building",
+          "Strong history, biology and physics research"
+        ],
+        "pros": [
+          "An elite, internationally recognized research culture in the social sciences",
+          "A compact, efficient campus with everything under one roof",
+          "A mid-sized, affordable city"
+        ],
+        "cons": [
+          "The single-building campus can feel claustrophobic to some",
+          "Bielefeld has limited big-city amenities",
+          "No programs in fields such as engineering"
+        ],
+        "badges": [],
+        "mapCity": "bielefeld",
+        "quickFacts": {
+          "students": "~24,000",
+          "language": "Mostly German, some English master's in social sciences",
+          "tuition": "~€300 semester contribution"
+        },
+        "popularPrograms": [
+          "Sociology",
+          "History",
+          "Biology"
+        ]
+      },
+      {
+        "slug": "paderborn",
+        "name": "Universität Paderborn",
+        "city": "Paderborn",
+        "type": "Universität",
+        "founded": "1972",
+        "description": "Known as the 'University of the Information Society', strong in computer science and information technology.",
+        "history": [
+          "Founded in 1972, the university hosts the Heinz Nixdorf Institute and is known as the 'University of the Information Society' for its strong IT focus.",
+          "Offers strong programs in computer science, mechanical engineering and business; a significant IT research hub in Germany."
+        ],
+        "highlights": [
+          "Home to the Heinz Nixdorf Institute",
+          "A strong national reputation in information technology",
+          "Solid mechanical engineering and business programs"
+        ],
+        "pros": [
+          "Strong research and industry links in computer science and IT",
+          "A mid-sized, affordable university city",
+          "A compact, student-friendly campus"
+        ],
+        "cons": [
+          "Paderborn is a smaller city with limited big-city amenities",
+          "No programs in fields such as medicine",
+          "Less international name recognition"
+        ],
+        "badges": [],
+        "mapCity": "paderborn",
+        "quickFacts": {
+          "students": "~20,000",
+          "language": "Mostly German, some English master's in computer science",
+          "tuition": "~€280 semester contribution"
+        },
+        "popularPrograms": [
+          "Computer Science",
+          "Mechanical Engineering",
+          "Business Administration"
+        ]
+      },
+      {
+        "slug": "siegen",
+        "name": "Universität Siegen",
+        "city": "Siegen",
+        "type": "Universität",
+        "founded": "1972",
+        "description": "In the Siegerland industrial region, strong in social sciences, media studies and engineering.",
+        "history": [
+          "Founded in 1972, the university has an unusual campus (Unteres Schloss/Paul-Bonatz-Campus) built over a former town square in the heart of the city.",
+          "Offers strong programs in social sciences, humanities, media studies and mechanical engineering."
+        ],
+        "highlights": [
+          "An unusual campus built over a historic square in the city center",
+          "Strong media studies and social sciences",
+          "Engineering programs tied to the Siegerland industrial region"
+        ],
+        "pros": [
+          "An easily accessible campus right in the city center",
+          "Strong research in social sciences and media studies",
+          "An affordable university city"
+        ],
+        "cons": [
+          "Siegen is a smaller-to-mid-sized city",
+          "Limited big-city amenities",
+          "Fewer English-taught programs"
+        ],
+        "badges": [],
+        "mapCity": "siegen",
+        "quickFacts": {
+          "students": "~16,000",
+          "language": "Mostly German",
+          "tuition": "~€290 semester contribution"
+        },
+        "popularPrograms": [
+          "Social Sciences",
+          "Media Studies",
+          "Mechanical Engineering"
+        ]
+      },
+      {
+        "slug": "wuppertal",
+        "name": "Bergische Universität Wuppertal",
+        "city": "Wuppertal",
+        "type": "Universität",
+        "founded": "1972",
+        "description": "In the Bergisches Land region, strong in architecture, safety engineering and physics.",
+        "history": [
+          "Founded in 1972 as 'Gesamthochschule Wuppertal', taking its current name in 2003.",
+          "Offers strong programs in architecture, safety engineering (a rare specialization in Germany), particle physics and economics."
+        ],
+        "highlights": [
+          "A rare safety engineering program in Germany",
+          "A strong architecture faculty",
+          "Recognized research in particle physics"
+        ],
+        "pros": [
+          "Strong, niche programs in architecture and safety engineering",
+          "Close to the Rhine-Ruhr job market",
+          "An affordable city"
+        ],
+        "cons": [
+          "Wuppertal has limited big-city amenities",
+          "Crowded cohorts in some programs",
+          "Less international name recognition"
+        ],
+        "badges": [],
+        "mapCity": "wuppertal",
+        "quickFacts": {
+          "students": "~24,000",
+          "language": "Mostly German",
+          "tuition": "~€300 semester contribution"
+        },
+        "popularPrograms": [
+          "Architecture",
+          "Safety Engineering",
+          "Physics"
+        ]
+      },
+      {
+        "slug": "luebeck",
+        "name": "Universität zu Lübeck",
+        "city": "Lübeck",
+        "type": "Universität",
+        "founded": "1964",
+        "description": "A small but highly focused university combining medicine and medical informatics.",
+        "history": [
+          "Founded in 1964 as a medical academy, gaining full university status in 1985.",
+          "Known for programs combining medicine and computer science ('Medizinische Informatik'); also strong in molecular life sciences."
+        ],
+        "highlights": [
+          "Unique programs combining medicine and computer science",
+          "A small, research-intensive university",
+          "A historic city on the Baltic coast"
+        ],
+        "pros": [
+          "Highly focused, high-quality education in medicine and medical informatics",
+          "Close academic support thanks to a small student body",
+          "A beautiful, historic Hanseatic city"
+        ],
+        "cons": [
+          "A very narrow program range (mainly medicine/life sciences)",
+          "Lübeck is a small city",
+          "Very high competition for medicine places"
+        ],
+        "badges": [],
+        "mapCity": "luebeck",
+        "quickFacts": {
+          "students": "~5,000",
+          "language": "Mostly German",
+          "tuition": "~€220 semester contribution"
+        },
+        "popularPrograms": [
+          "Medicine",
+          "Medical Informatics",
+          "Molecular Life Sciences"
+        ]
+      },
+      {
+        "slug": "rostock",
+        "name": "Universität Rostock",
+        "city": "Rostock",
+        "type": "Universität",
+        "founded": "1419",
+        "description": "Founded in 1419, one of the oldest universities in Northern Europe and the Baltic region.",
+        "history": [
+          "Founded in 1419, Universität Rostock is the oldest university in the Baltic region and in the continuously German-speaking area.",
+          "Strong in maritime and ship engineering (thanks to the nearby port of Warnemünde), medicine and agricultural sciences."
+        ],
+        "highlights": [
+          "The region's oldest university, teaching continuously since 1419",
+          "Strong maritime engineering thanks to proximity to the port of Warnemünde",
+          "Strong medicine and agricultural sciences faculties"
+        ],
+        "pros": [
+          "A strong, niche specialization in maritime engineering",
+          "High quality of life on the Baltic coast",
+          "An affordable university city"
+        ],
+        "cons": [
+          "A smaller international community than western German cities",
+          "Limited big-city amenities",
+          "Fewer English-taught programs"
+        ],
+        "badges": [],
+        "mapCity": "rostock",
+        "quickFacts": {
+          "students": "~13,000",
+          "language": "Mostly German",
+          "tuition": "~€230 semester contribution"
+        },
+        "popularPrograms": [
+          "Maritime Engineering",
+          "Medicine",
+          "Agricultural Sciences"
+        ]
+      },
+      {
+        "slug": "greifswald",
+        "name": "Universität Greifswald",
+        "city": "Greifswald",
+        "type": "Universität",
+        "founded": "1456",
+        "description": "Founded in 1456, one of Germany's oldest universities, in a small historic town on the Baltic coast.",
+        "history": [
+          "Founded in 1456, Universität Greifswald is one of Germany's oldest universities and deeply intertwined with the town's identity.",
+          "Maintains a strong academic tradition in medicine (particularly functional genomics research) and theology."
+        ],
+        "highlights": [
+          "One of Germany's oldest universities (1456)",
+          "Recognized medical research in functional genomics",
+          "A small, historic campus town on the Baltic coast"
+        ],
+        "pros": [
+          "Strong opportunities in medicine and genomics research",
+          "A very affordable, quiet university town",
+          "A historic, walkable campus"
+        ],
+        "cons": [
+          "A very small town with almost no big-city amenities",
+          "A limited international student community",
+          "Fewer English-taught programs"
+        ],
+        "badges": [],
+        "mapCity": "greifswald",
+        "quickFacts": {
+          "students": "~10,000",
+          "language": "Mostly German",
+          "tuition": "~€220 semester contribution"
+        },
+        "popularPrograms": [
+          "Medicine",
+          "Theology",
+          "Biology"
+        ]
+      },
+      {
+        "slug": "magdeburg",
+        "name": "Otto-von-Guericke-Universität Magdeburg",
+        "city": "Magdeburg",
+        "type": "Universität",
+        "founded": "1993",
+        "description": "Named after physicist Otto von Guericke, inventor of the vacuum pump, strong in engineering and neuroscience.",
+        "history": [
+          "Founded in 1993 through the merger of several technical and medical institutions after German reunification; named after physicist and Magdeburg mayor Otto von Guericke.",
+          "Strong and growing research profile in engineering, neuroscience (particularly brain research) and medicine."
+        ],
+        "highlights": [
+          "Named after vacuum-pump inventor Otto von Guericke",
+          "Strong neuroscience and brain research",
+          "Growing engineering and medicine faculties"
+        ],
+        "pros": [
+          "Growing research opportunities in neuroscience and engineering",
+          "An affordable, mid-sized city",
+          "Modern campus facilities"
+        ],
+        "cons": [
+          "A smaller international student community in eastern Germany",
+          "Limited big-city cultural amenities",
+          "Fewer English-taught bachelor's options"
+        ],
+        "badges": [],
+        "mapCity": "magdeburg",
+        "quickFacts": {
+          "students": "~14,000",
+          "language": "Mostly German, some English master's in neuroscience",
+          "tuition": "~€230 semester contribution"
+        },
+        "popularPrograms": [
+          "Engineering",
+          "Neuroscience",
+          "Medicine"
+        ]
+      },
+      {
+        "slug": "halle",
+        "name": "Martin-Luther-Universität Halle-Wittenberg (MLU)",
+        "city": "Halle (Saale)",
+        "type": "Universität",
+        "founded": "1502",
+        "description": "Founded in the birthplace of the Reformation, Wittenberg, strong in the humanities and agricultural sciences.",
+        "history": [
+          "Founded in Wittenberg in 1502 — the city where Martin Luther taught — and merged in 1817 with the University of Halle, founded in 1694.",
+          "Strong in the humanities, natural sciences and agricultural sciences; Germany's oldest academy of sciences, the Leopoldina, is based in Halle."
+        ],
+        "highlights": [
+          "Historic roots in Wittenberg, the birthplace of the Reformation",
+          "Home to Germany's oldest academy of sciences, the Leopoldina",
+          "Strong agricultural sciences and humanities"
+        ],
+        "pros": [
+          "A university with a rich historic and academic tradition",
+          "An affordable university city",
+          "A niche strength in agricultural sciences"
+        ],
+        "cons": [
+          "A smaller international community in eastern Germany",
+          "Limited big-city amenities",
+          "Fewer English-taught programs"
+        ],
+        "badges": [],
+        "mapCity": "halle",
+        "quickFacts": {
+          "students": "~18,000",
+          "language": "Mostly German",
+          "tuition": "~€230 semester contribution"
+        },
+        "popularPrograms": [
+          "Humanities",
+          "Agricultural Sciences",
+          "Natural Sciences"
+        ]
+      },
+      {
+        "slug": "leipzig",
+        "name": "Universität Leipzig",
+        "city": "Leipzig",
+        "type": "Universität",
+        "founded": "1409",
+        "description": "Founded in 1409, one of the world's oldest continuously operating universities, alma mater of Goethe and Nietzsche.",
+        "history": [
+          "Founded in 1409, Universität Leipzig is one of the world's oldest continuously operating universities; Goethe, Nietzsche and Leibniz studied or taught here.",
+          "Strong in law, medicine, the humanities and sports science, home to one of Germany's leading sports science institutes."
+        ],
+        "highlights": [
+          "One of the world's oldest continuously operating universities since 1409",
+          "Historic ties to Goethe and Nietzsche",
+          "Home to one of Germany's leading sports science institutes"
+        ],
+        "pros": [
+          "A prestigious university with a rich historic legacy",
+          "Leipzig's vibrant, affordable city life",
+          "A strong reputation in law and sports science"
+        ],
+        "cons": [
+          "High application competition in popular subjects",
+          "Large student numbers mean crowded courses",
+          "Relatively fewer English-taught programs in eastern Germany"
+        ],
+        "badges": [],
+        "mapCity": "leipzig",
+        "quickFacts": {
+          "students": "~30,000",
+          "language": "Mostly German, some English master's programs",
+          "tuition": "~€200 semester contribution"
+        },
+        "popularPrograms": [
+          "Law",
+          "Medicine",
+          "Sports Science"
+        ]
+      },
+      {
+        "slug": "tuchemnitz",
+        "name": "Technische Universität Chemnitz",
+        "city": "Chemnitz",
+        "type": "Universität",
+        "founded": "1836",
+        "description": "In Saxony's industrial tradition, strong in production engineering and lightweight materials.",
+        "history": [
+          "Founded in 1836 as a trade school, gaining university status in 1986 and the name 'Technische Universität' in 1993.",
+          "Strong research profile in production engineering, lightweight materials (the MERGE research cluster) and micro/nanotechnology."
+        ],
+        "highlights": [
+          "The recognized MERGE research cluster in lightweight materials",
+          "A strong production engineering tradition",
+          "Close to Saxony's industrial region"
+        ],
+        "pros": [
+          "Strong, niche research in production engineering and materials science",
+          "A very affordable university city",
+          "Close cooperation with industry"
+        ],
+        "cons": [
+          "Chemnitz is a relatively small, lesser-known city",
+          "A limited international student community",
+          "Fewer English-taught bachelor's options"
+        ],
+        "badges": [],
+        "mapCity": "chemnitz",
+        "quickFacts": {
+          "students": "~10,000",
+          "language": "Mostly German, some English master's in engineering",
+          "tuition": "~€200 semester contribution"
+        },
+        "popularPrograms": [
+          "Production Engineering",
+          "Materials Science",
+          "Computer Science"
+        ]
+      },
+      {
+        "slug": "potsdam",
+        "name": "Universität Potsdam",
+        "city": "Potsdam",
+        "type": "Universität",
+        "founded": "1991",
+        "description": "Near Berlin, with a campus on the grounds of Sanssouci Palace, strong in political science and linguistics.",
+        "history": [
+          "Founded in 1991, shortly after German reunification; one of its campuses is located at the historic Neues Palais in Sanssouci Park.",
+          "Its proximity to the federal and state governments makes it strong in political/public administration science, and it is also known for cognitive science and linguistics."
+        ],
+        "highlights": [
+          "A campus at the historic Neues Palais in Sanssouci Park",
+          "A strong reputation in political science and public administration",
+          "Recognized research in cognitive science and linguistics"
+        ],
+        "pros": [
+          "Internship opportunities in government/policy thanks to proximity to Berlin",
+          "Studying on a historic, beautiful palace campus",
+          "A lower cost of living than Berlin"
+        ],
+        "cons": [
+          "Competition in popular political science programs",
+          "Potsdam can be overshadowed by Berlin",
+          "Limited engineering/natural sciences options"
+        ],
+        "badges": [],
+        "mapCity": "potsdam",
+        "quickFacts": {
+          "students": "~21,000",
+          "language": "Mostly German, some English master's programs",
+          "tuition": "~€300 semester contribution"
+        },
+        "popularPrograms": [
+          "Political Science",
+          "Linguistics",
+          "Public Administration"
+        ]
+      },
+      {
+        "slug": "viadrina",
+        "name": "Europa-Universität Viadrina Frankfurt (Oder)",
+        "city": "Frankfurt (Oder)",
+        "type": "Universität",
+        "founded": "1506",
+        "description": "On the Polish border, a small university dedicated to European integration, strong in law and cultural studies.",
+        "history": [
+          "Founded in 1506, closed in 1811, and reopened in 1991 in the border town of Frankfurt (Oder) with a profile explicitly focused on European/German-Polish integration.",
+          "Strong in law (especially European and comparative law), economics and cultural studies; a large share of its students come from Central and Eastern Europe."
+        ],
+        "highlights": [
+          "A unique profile dedicated to European integration on the Polish border",
+          "A strong European and comparative law program",
+          "Strong student ties to Central and Eastern Europe"
+        ],
+        "pros": [
+          "A strong, niche specialization in European law and cross-cultural studies",
+          "A highly international, multicultural campus",
+          "A small, close-knit academic community"
+        ],
+        "cons": [
+          "A very small town with limited big-city amenities",
+          "A narrow program range (mainly law/economics/cultural studies)",
+          "Less name recognition than Berlin"
+        ],
+        "badges": [],
+        "mapCity": "frankfurtoder",
+        "quickFacts": {
+          "students": "~5,000",
+          "language": "Mix of German, English and Polish",
+          "tuition": "~€150 semester contribution"
+        },
+        "popularPrograms": [
+          "European Law",
+          "Economics",
+          "Cultural Studies"
+        ]
+      },
+      {
+        "slug": "btucottbus",
+        "name": "Brandenburgische Technische Universität Cottbus-Senftenberg (BTU)",
+        "city": "Cottbus",
+        "type": "Universität",
+        "founded": "1991",
+        "description": "In the Lusatia coal region's energy transition, strong in environmental and energy engineering.",
+        "history": [
+          "Founded in Cottbus in 1991; merged with the Hochschule Lausitz in Senftenberg in 2013 to form its current shape.",
+          "At the center of Lusatia's transition from coal to renewable energy, strong in environmental engineering, energy technology and architecture."
+        ],
+        "highlights": [
+          "Environmental/energy engineering at the center of Lusatia's energy transition",
+          "Two campuses in Cottbus and Senftenberg",
+          "A strong architecture program"
+        ],
+        "pros": [
+          "A current, niche specialization in energy transition and environmental engineering",
+          "A very affordable region",
+          "Close academic support in small classes"
+        ],
+        "cons": [
+          "Cottbus is a small, lesser-known city",
+          "A limited international student community",
+          "Split across two campuses (Cottbus/Senftenberg)"
+        ],
+        "badges": [],
+        "mapCity": "cottbus",
+        "quickFacts": {
+          "students": "~7,000",
+          "language": "Mostly German, some English master's programs",
+          "tuition": "~€200 semester contribution"
+        },
+        "popularPrograms": [
+          "Environmental Engineering",
+          "Energy Technology",
+          "Architecture"
+        ]
+      },
+      {
+        "slug": "wuerzburg",
+        "name": "Julius-Maximilians-Universität Würzburg (JMU)",
+        "city": "Würzburg",
+        "type": "Universität",
+        "founded": "1402",
+        "description": "Where X-ray discoverer Wilhelm Röntgen won a Nobel Prize, a university with a deep tradition in medicine and physics.",
+        "history": [
+          "Founded in 1402 and reopened in 1582, JMU is one of Germany's oldest universities.",
+          "Home to Wilhelm Röntgen, discoverer of X-rays who won the Nobel Prize in Physics while working here; strong research tradition in medicine, physics and psychology."
+        ],
+        "highlights": [
+          "Where X-ray discoverer Röntgen won a Nobel Prize",
+          "Strong medicine and physics faculties",
+          "A recognized psychology research program"
+        ],
+        "pros": [
+          "A deep, prestigious research tradition in medicine and physics",
+          "A historic, beautiful university town in wine country",
+          "An affordable Franconian cost of living"
+        ],
+        "cons": [
+          "High competition for medicine places",
+          "A mid-sized city with limited big-city amenities",
+          "Fewer English-taught bachelor's options"
+        ],
+        "badges": [],
+        "mapCity": "wuerzburg",
+        "quickFacts": {
+          "students": "~28,000",
+          "language": "Mostly German, some English master's in medicine/physics",
+          "tuition": "~€130 semester contribution"
+        },
+        "popularPrograms": [
+          "Medicine",
+          "Physics",
+          "Psychology"
+        ]
+      },
+      {
+        "slug": "regensburg",
+        "name": "Universität Regensburg",
+        "city": "Regensburg",
+        "type": "Universität",
+        "founded": "1962",
+        "description": "On the Danube, with a compact single campus, a Bavarian 'reform university' strong in chemistry and law.",
+        "history": [
+          "Founded in 1962 as one of Bavaria's post-war 'reform universities', Regensburg unites all its faculties on a single compact campus.",
+          "Strong in chemistry, law and Eastern/Southeastern European studies, reflecting the region's historic trade ties along the Danube."
+        ],
+        "highlights": [
+          "All faculties united on a single, compact campus",
+          "Strong chemistry and law programs",
+          "A special expertise in Eastern/Southeastern European studies"
+        ],
+        "pros": [
+          "Strong, well-equipped research opportunities in chemistry and law",
+          "Living in a UNESCO World Heritage old town",
+          "A compact, easily accessible campus"
+        ],
+        "cons": [
+          "Regensburg is a mid-sized Bavarian city",
+          "Limited big-city nightlife",
+          "Fewer English-taught bachelor's options"
+        ],
+        "badges": [],
+        "mapCity": "regensburg",
+        "quickFacts": {
+          "students": "~20,000",
+          "language": "Mostly German, some English master's programs",
+          "tuition": "~€150 semester contribution"
+        },
+        "popularPrograms": [
+          "Chemistry",
+          "Law",
+          "Eastern European Studies"
+        ]
+      },
+      {
+        "slug": "passau",
+        "name": "Universität Passau",
+        "city": "Passau",
+        "type": "Universität",
+        "founded": "1978",
+        "description": "In a historic city where three rivers meet, a small, internationally oriented university strong in law, economics and computer science.",
+        "history": [
+          "Founded in 1978 and housed in a former monastery (Nikolakloster), Universität Passau sits in a historic city where the Danube, Inn and Ilz rivers converge.",
+          "Strong in law, economics and computer science; particularly known for its international exchange programs and English-taught options."
+        ],
+        "highlights": [
+          "A campus in a former monastery in a historic city where three rivers meet",
+          "Strong law, economics and computer science programs",
+          "A special emphasis on international exchange programs"
+        ],
+        "pros": [
+          "Strong, internationally oriented education in law and computer science",
+          "A striking, historic river-town campus",
+          "Close academic support thanks to a small student body"
+        ],
+        "cons": [
+          "Passau is a small city with limited big-city amenities",
+          "Competition in popular law/economics programs",
+          "A somewhat remote location near the Austrian border"
+        ],
+        "badges": [],
+        "mapCity": "passau",
+        "quickFacts": {
+          "students": "~11,000",
+          "language": "Mostly German, some English master's in law/economics",
+          "tuition": "~€130 semester contribution"
+        },
+        "popularPrograms": [
+          "Law",
+          "Economics",
+          "Computer Science"
+        ]
+      },
+      {
+        "slug": "bayreuth",
+        "name": "Universität Bayreuth",
+        "city": "Bayreuth",
+        "type": "Universität",
+        "founded": "1975",
+        "description": "A Bavarian university in Franconia, globally recognized for sports science and African studies.",
+        "history": [
+          "Founded in 1975, Universität Bayreuth has a strong program in sports science and biomedical research.",
+          "Its Bayreuth African Studies institute is recognized worldwide; also known for interdisciplinary programs combining law and business."
+        ],
+        "highlights": [
+          "The globally recognized Bayreuth African Studies institute",
+          "Strong sports science and biomedical research",
+          "Interdisciplinary programs combining law and business"
+        ],
+        "pros": [
+          "A niche, world-renowned specialization in African studies and sports science",
+          "A compact, green campus",
+          "An affordable Franconian city"
+        ],
+        "cons": [
+          "Bayreuth is a mid-sized city with limited big-city amenities",
+          "Limited engineering/natural sciences options",
+          "Fewer English-taught bachelor's options"
+        ],
+        "badges": [],
+        "mapCity": "bayreuth",
+        "quickFacts": {
+          "students": "~13,000",
+          "language": "Mostly German, some English in African studies",
+          "tuition": "~€140 semester contribution"
+        },
+        "popularPrograms": [
+          "Sports Science",
+          "African Studies",
+          "Law and Business"
+        ]
+      },
+      {
+        "slug": "augsburg",
+        "name": "Universität Augsburg",
+        "city": "Augsburg",
+        "type": "Universität",
+        "founded": "1970",
+        "description": "Near Munich, strong in law and economics, with a growing computer science campus.",
+        "history": [
+          "Founded in 1970, Universität Augsburg maintains a strong tradition in law, economics and teacher education.",
+          "In recent years it has rapidly built a growing research profile in computer science and AI through its new 'Digitalcampus'."
+        ],
+        "highlights": [
+          "A well-established tradition in law and economics",
+          "A growing computer science/AI focus through the new 'Digitalcampus'",
+          "Strong teacher education programs"
+        ],
+        "pros": [
+          "Solid, well-established education in law and economics",
+          "Job market access thanks to proximity to Munich",
+          "Growing, modern computer science facilities"
+        ],
+        "cons": [
+          "Competition in popular law/economics programs",
+          "Augsburg can be overshadowed by Munich",
+          "Fewer English-taught bachelor's options"
+        ],
+        "badges": [],
+        "mapCity": "augsburg",
+        "quickFacts": {
+          "students": "~20,000",
+          "language": "Mostly German, some English in computer science",
+          "tuition": "~€140 semester contribution"
+        },
+        "popularPrograms": [
+          "Law",
+          "Economics",
+          "Computer Science"
+        ]
+      },
+      {
+        "slug": "bamberg",
+        "name": "Otto-Friedrich-Universität Bamberg",
+        "city": "Bamberg",
+        "type": "Universität",
+        "founded": "1647",
+        "description": "In a UNESCO World Heritage old town, strong in the humanities and sociological research.",
+        "history": [
+          "Founded in 1647 and reorganized as a modern university in 1972, Bamberg's campus is spread across its UNESCO World Heritage-listed old town.",
+          "Strong in the humanities, sociology (close to Germany's major survey/labor-market research institutions) and heritage conservation."
+        ],
+        "highlights": [
+          "A campus in a UNESCO World Heritage old town",
+          "A strong reputation in sociology and labor-market research",
+          "A leader in heritage conservation (Denkmalpflege)"
+        ],
+        "pros": [
+          "Studying in a historic, exceptionally beautiful city",
+          "Strong research in sociology and the humanities",
+          "A small, close-knit university community"
+        ],
+        "cons": [
+          "Bamberg is a small city with limited big-city amenities",
+          "No programs in fields such as engineering/natural sciences",
+          "Fewer English-taught programs"
+        ],
+        "badges": [],
+        "mapCity": "bamberg",
+        "quickFacts": {
+          "students": "~13,000",
+          "language": "Mostly German",
+          "tuition": "~€140 semester contribution"
+        },
+        "popularPrograms": [
+          "Sociology",
+          "Humanities",
+          "Heritage Conservation"
+        ]
+      },
+      {
+        "slug": "kueichstaett",
+        "name": "Katholische Universität Eichstätt-Ingolstadt (KU)",
+        "city": "Eichstätt/Ingolstadt",
+        "type": "Universität",
+        "founded": "1980",
+        "description": "Germany's only fully state-recognized Catholic university, strong in theology, education and (via its Ingolstadt campus) business.",
+        "history": [
+          "Founded in 1980, KU is Germany's only fully state-recognized Catholic university.",
+          "Its main campus is in the historic town of Eichstätt, while its business faculty (WFI) is based in Ingolstadt; strong in theology, education and business."
+        ],
+        "highlights": [
+          "Germany's only fully state-recognized Catholic university",
+          "A historic main campus in Eichstätt and a business faculty (WFI) in Ingolstadt",
+          "Strong theology and education programs"
+        ],
+        "pros": [
+          "A small, values-driven academic community",
+          "Access to Ingolstadt's automotive job market through the WFI business faculty",
+          "Close student-faculty relationships"
+        ],
+        "cons": [
+          "Split across two campuses (Eichstätt/Ingolstadt)",
+          "A limited program range (no engineering/medicine)",
+          "Small-town amenities"
+        ],
+        "badges": [],
+        "mapCity": "ingolstadt",
+        "quickFacts": {
+          "students": "~5,000",
+          "language": "Mostly German, some English programs in business",
+          "tuition": "~€120 semester contribution"
+        },
+        "popularPrograms": [
+          "Business (WFI)",
+          "Theology",
+          "Education"
+        ]
+      },
+      {
+        "slug": "hohenheim",
+        "name": "Universität Hohenheim",
+        "city": "Stuttgart (Hohenheim)",
+        "type": "Universität",
+        "founded": "1818",
+        "description": "Housed in a baroque palace, Germany's leading specialist university in agricultural and nutritional sciences.",
+        "history": [
+          "Founded in 1818 as an agricultural academy, Universität Hohenheim is located at the baroque Schloss Hohenheim in Stuttgart's Hohenheim district.",
+          "One of Germany's leading specialist universities in agricultural sciences, nutritional sciences and business/economics."
+        ],
+        "highlights": [
+          "A striking campus at the baroque Schloss Hohenheim",
+          "One of Germany's leading specialists in agricultural and nutritional sciences",
+          "A strong business and economics faculty"
+        ],
+        "pros": [
+          "A niche, world-renowned specialization in agricultural/nutritional sciences",
+          "Access to Stuttgart's strong job market",
+          "A historic, beautiful palace campus"
+        ],
+        "cons": [
+          "Non-EU students may face Baden-Württemberg's additional tuition fee",
+          "A limited program range (no engineering/medicine)",
+          "Sometimes confused with Universität Stuttgart"
+        ],
+        "badges": [],
+        "mapCity": "stuttgart",
+        "quickFacts": {
+          "students": "~10,000",
+          "language": "Mostly German, some English master's programs",
+          "tuition": "~€170 semester contribution; non-EU students may face an additional ~€1,500/semester fee (confirm with our advisors)"
+        },
+        "popularPrograms": [
+          "Agricultural Sciences",
+          "Nutritional Sciences",
+          "Business Administration"
+        ]
+      },
+      {
+        "slug": "ulm",
+        "name": "Universität Ulm",
+        "city": "Ulm",
+        "type": "Universität",
+        "founded": "1967",
+        "description": "On the Danube, a compact university strong in medicine, mathematics/actuarial science and engineering.",
+        "history": [
+          "Founded in 1967, Universität Ulm teaches on a single, compact campus known as 'Oberer Eselsberg'.",
+          "Strong in medicine, mathematics (especially actuarial/insurance mathematics, given the city's major insurance industry) and engineering."
+        ],
+        "highlights": [
+          "One of Germany's leading actuarial mathematics programs",
+          "All faculties united on a single, compact campus",
+          "Strong medicine and engineering programs"
+        ],
+        "pros": [
+          "A niche, world-renowned specialization in actuarial mathematics",
+          "A compact, easily accessible campus",
+          "A strong job market in insurance and technology"
+        ],
+        "cons": [
+          "Non-EU students may face Baden-Württemberg's additional tuition fee",
+          "Ulm is a mid-sized city",
+          "High competition for medicine places"
+        ],
+        "badges": [],
+        "mapCity": "ulm",
+        "quickFacts": {
+          "students": "~10,000",
+          "language": "Mostly German, some English master's in math/engineering",
+          "tuition": "~€170 semester contribution; non-EU students may face an additional ~€1,500/semester fee (confirm with our advisors)"
+        },
+        "popularPrograms": [
+          "Medicine",
+          "Mathematics/Actuarial Science",
+          "Engineering"
+        ]
+      },
+      {
+        "slug": "saarland",
+        "name": "Universität des Saarlandes",
+        "city": "Saarbrücken",
+        "type": "Universität",
+        "founded": "1948",
+        "description": "On the French border, a university renowned across Europe for computer science and artificial intelligence.",
+        "history": [
+          "Founded in 1948 in the then French-administered Saarland, with a deliberate emphasis on German-French academic cooperation.",
+          "Home to the Saarland Informatics Campus (hosting the Max Planck Institute for Informatics and DFKI, the German Research Center for AI), one of Europe's leading centers for computer science and AI; also strong in law and medicine."
+        ],
+        "highlights": [
+          "The Saarland Informatics Campus, home to the Max Planck Institute for Informatics and DFKI",
+          "A top-ranked European center for computer science and AI",
+          "Strong German-French academic ties thanks to proximity to France"
+        ],
+        "pros": [
+          "World-renowned research opportunities in computer science and AI",
+          "A bilingual/bicultural advantage thanks to proximity to France",
+          "An affordable university city"
+        ],
+        "cons": [
+          "Saarbrücken has less name recognition than major German cities",
+          "High competition in popular computer science programs",
+          "A somewhat isolated location in Germany's smallest state"
+        ],
+        "badges": [],
+        "mapCity": "saarbruecken",
+        "quickFacts": {
+          "students": "~17,000",
+          "language": "Mostly German, many English-taught programs in computer science",
+          "tuition": "~€285 semester contribution"
+        },
+        "popularPrograms": [
+          "Computer Science",
+          "Artificial Intelligence",
+          "Law"
+        ]
+      },
+      {
+        "slug": "rptu",
+        "name": "RPTU Kaiserslautern-Landau",
+        "city": "Kaiserslautern/Landau",
+        "type": "Universität",
+        "founded": "1970",
+        "description": "Formed in 2023, a two-city university specializing in technology in Kaiserslautern and education/humanities in Landau.",
+        "history": [
+          "Formed in 2023 through the merger of TU Kaiserslautern (founded in 1970) and the Landau campus of the University of Koblenz-Landau.",
+          "The Kaiserslautern campus is strong in computer science and engineering (home to a DFKI branch and several Fraunhofer institutes), while the Landau campus specializes in education, psychology and the humanities."
+        ],
+        "highlights": [
+          "A unique two-city, dual-specialization structure (technology + education/humanities)",
+          "Proximity to DFKI and Fraunhofer institutes in Kaiserslautern",
+          "Strong education and psychology programs in Landau"
+        ],
+        "pros": [
+          "A strong research infrastructure in computer science and engineering (Kaiserslautern)",
+          "Strong, people-focused programs in education/psychology (Landau)",
+          "Two affordable university towns"
+        ],
+        "cons": [
+          "A somewhat confusing structure split across two cities (Kaiserslautern/Landau)",
+          "Both cities are small-to-mid-sized",
+          "Institutional identity still settling after the recent merger"
+        ],
+        "badges": [],
+        "mapCity": "kaiserslautern",
+        "quickFacts": {
+          "students": "~17,000",
+          "language": "Mostly German, many English-taught programs in computer science",
+          "tuition": "~€270 semester contribution"
+        },
+        "popularPrograms": [
+          "Computer Science",
+          "Education",
+          "Engineering"
+        ]
+      },
+      {
+        "slug": "fernunihagen",
+        "name": "FernUniversität in Hagen",
+        "city": "Hagen",
+        "type": "Universität",
+        "founded": "1974",
+        "description": "Germany's only public distance-learning university, flexible for working professionals and the country's largest by enrollment.",
+        "history": [
+          "Founded in 1974, FernUniversität is Germany's only publicly funded distance-learning university and the country's largest university by enrollment.",
+          "Designed for students who work or have family responsibilities alongside their studies; offers flexible, distance-learning programs in law, business, computer science and psychology."
+        ],
+        "highlights": [
+          "Germany's only public distance-learning university",
+          "Germany's largest university by enrollment",
+          "A flexible, part-time structure designed for working professionals"
+        ],
+        "pros": [
+          "Unique flexibility to study while working or from abroad",
+          "A low-cost, flexible education model",
+          "Strong, recognized programs in law and business"
+        ],
+        "cons": [
+          "No traditional campus experience or social life",
+          "Requires strong self-discipline and time management",
+          "German proficiency is required for most programs"
+        ],
+        "badges": [],
+        "mapCity": "hagen",
+        "quickFacts": {
+          "students": "~60,000 (distance learning)",
+          "language": "Mostly German",
+          "tuition": "~€130 per semester (plus per-course fees)"
+        },
+        "popularPrograms": [
+          "Law",
+          "Business Administration",
+          "Psychology"
+        ]
+      },
+      {
+        "slug": "oldenburg",
+        "name": "Carl von Ossietzky Universität Oldenburg",
+        "city": "Oldenburg",
+        "type": "Universität",
+        "founded": "1974",
+        "description": "Close to the North Sea, one of Germany's leading centers for wind energy research.",
+        "history": [
+          "Founded in 1974, the university is named after Nobel Peace Prize-winning journalist Carl von Ossietzky.",
+          "Its proximity to the North Sea makes it one of Germany's leading centers for wind energy research (the ForWind institute); also strong in education and musicology."
+        ],
+        "highlights": [
+          "One of Germany's leading wind energy research centers (ForWind)",
+          "Named after Nobel Peace Prize laureate Carl von Ossietzky",
+          "Strong education and musicology programs"
+        ],
+        "pros": [
+          "A current, niche specialization in renewable energy research",
+          "An affordable, green city in northern Germany",
+          "A compact, student-friendly campus"
+        ],
+        "cons": [
+          "Oldenburg is a mid-sized city with limited big-city amenities",
+          "A limited medicine/engineering program range",
+          "Less international name recognition"
+        ],
+        "badges": [],
+        "mapCity": "oldenburg",
+        "quickFacts": {
+          "students": "~15,000",
+          "language": "Mostly German, some English in energy research",
+          "tuition": "~€280 semester contribution"
+        },
+        "popularPrograms": [
+          "Wind/Renewable Energy",
+          "Education",
+          "Musicology"
+        ]
+      },
+      {
+        "slug": "hildesheim",
+        "name": "Universität Hildesheim",
+        "city": "Hildesheim",
+        "type": "Universität",
+        "founded": "1978",
+        "description": "A small but focused university specializing in the humanities, cultural studies and translation studies.",
+        "history": [
+          "Founded in 1978, Universität Hildesheim specializes in the humanities, cultural/media studies and psychology.",
+          "Home to one of Germany's leading Institutes of Translation Studies; also strong in international cultural studies."
+        ],
+        "highlights": [
+          "Home to one of Germany's leading Institutes of Translation Studies",
+          "Strong cultural/media studies programs",
+          "A small, focused humanities community"
+        ],
+        "pros": [
+          "A strong, niche specialization in translation studies and cultural studies",
+          "Close academic support thanks to a small student body",
+          "An affordable, historic town"
+        ],
+        "cons": [
+          "A very narrow program range (mainly humanities/social sciences)",
+          "Hildesheim is a small town",
+          "No engineering/natural sciences programs"
+        ],
+        "badges": [],
+        "mapCity": "hildesheim",
+        "quickFacts": {
+          "students": "~8,000",
+          "language": "Mostly German, some English in translation studies",
+          "tuition": "~€280 semester contribution"
+        },
+        "popularPrograms": [
+          "Translation Studies",
+          "Cultural/Media Studies",
+          "Psychology"
+        ]
+      },
+      {
+        "slug": "leuphana",
+        "name": "Leuphana Universität Lüneburg",
+        "city": "Lüneburg",
+        "type": "Universität",
+        "founded": "1946",
+        "description": "Known for its striking Daniel Libeskind-designed main building, an innovative university in sustainability science and business.",
+        "history": [
+          "Traces its roots to a teacher training college founded in 1946; rebranded as 'Leuphana' in 2007 and launched the interdisciplinary 'Leuphana Semester' shared by all first-year students.",
+          "Its striking central building, designed by renowned architect Daniel Libeskind, is the campus's landmark; strong in sustainability science, business and education."
+        ],
+        "highlights": [
+          "A striking central building designed by Daniel Libeskind",
+          "An innovative, interdisciplinary 'Leuphana Semester' model",
+          "Strong sustainability science and business programs"
+        ],
+        "pros": [
+          "Innovative, current programs in sustainability science and business",
+          "An architecturally striking, modern campus",
+          "A historic Hanseatic city close to Hamburg"
+        ],
+        "cons": [
+          "The innovative 'Leuphana Semester' model may not suit everyone",
+          "Lüneburg is a mid-sized city",
+          "Limited engineering/medicine options"
+        ],
+        "badges": [],
+        "mapCity": "lueneburg",
+        "quickFacts": {
+          "students": "~10,000",
+          "language": "Mostly German, some English in sustainability/business",
+          "tuition": "~€280 semester contribution"
+        },
+        "popularPrograms": [
+          "Sustainability Science",
+          "Business Administration",
+          "Education"
+        ]
+      },
+      {
+        "slug": "tuclausthal",
+        "name": "Technische Universität Clausthal",
+        "city": "Clausthal-Zellerfeld",
+        "type": "Universität",
+        "founded": "1775",
+        "description": "In the Harz mountains, one of Germany's oldest technical universities, specializing in raw materials and mining engineering.",
+        "history": [
+          "Founded in 1775 as a mining academy (Bergakademie), TU Clausthal is one of Germany's oldest technical institutions of higher education.",
+          "Located in a small Harz mountain town, the university has a highly specialized profile in raw materials/mining engineering, materials science and energy technology."
+        ],
+        "highlights": [
+          "One of Germany's oldest technical universities, founded in 1775",
+          "A unique specialization in raw materials and mining engineering",
+          "A small, close-knit student community"
+        ],
+        "pros": [
+          "A globally rare specialization in raw materials/mining engineering",
+          "A very low cost of living",
+          "Very close student-faculty relationships"
+        ],
+        "cons": [
+          "A very small mountain town with no big-city amenities",
+          "A very narrow program range",
+          "Cold winters and difficult access at times"
+        ],
+        "badges": [],
+        "mapCity": "clausthal",
+        "quickFacts": {
+          "students": "~3,500",
+          "language": "Mostly German, some English master's programs",
+          "tuition": "~€250 semester contribution"
+        },
+        "popularPrograms": [
+          "Mining Engineering",
+          "Materials Science",
+          "Energy Technology"
+        ]
+      },
+      {
+        "slug": "vechta",
+        "name": "Universität Vechta",
+        "city": "Vechta",
+        "type": "Universität",
+        "founded": "1830",
+        "description": "One of Germany's smallest public universities, specializing in education, social work and gerontology.",
+        "history": [
+          "Tracing its roots to a teacher-training institution founded in 1830, Universität Vechta gained university status in 1995.",
+          "One of Germany's smallest public universities, specializing in education, social work, sports science and gerontology (aging studies)."
+        ],
+        "highlights": [
+          "One of Germany's smallest public universities",
+          "A niche specialization in gerontology (aging studies)",
+          "Strong education and social work programs"
+        ],
+        "pros": [
+          "Extremely close academic support thanks to a very small student body",
+          "A niche specialization in gerontology and social work",
+          "A very affordable, quiet town"
+        ],
+        "cons": [
+          "A very narrow program range",
+          "Vechta is a very small town with no big-city amenities",
+          "A limited international student community"
+        ],
+        "badges": [],
+        "mapCity": "vechta",
+        "quickFacts": {
+          "students": "~5,500",
+          "language": "Mostly German",
+          "tuition": "~€280 semester contribution"
+        },
+        "popularPrograms": [
+          "Education",
+          "Social Work",
+          "Gerontology"
+        ]
       }
     ],
     "cta": {
@@ -2260,7 +3586,8 @@
       "title": "Our Universities on the Map of Germany",
       "subtitle": "Explore where the universities we advise on are located.",
       "hint": "Click a city marker to see the universities there.",
-      "emptyState": "Select a city on the map to see its universities."
+      "emptyState": "Select a city on the map to see its universities.",
+      "zoomOut": "Back to Map"
     }
   },
   "about": {
@@ -2272,7 +3599,7 @@
       "title": "Our Story",
       "paragraphs": [
         "Studiva was founded in Istanbul in 2026 with the goal of helping students reach Europe's leading universities through a transparent, trustworthy process.",
-        "We're a team with up-to-date knowledge of 45+ universities across Germany — from Excellence Universities to TU9 technical institutes, Hochschulen to Dual Studium programs — closely following each institution's application system, visa requirements, and academic calendar.",
+        "We're a team with up-to-date knowledge of 80+ universities across Germany — from Excellence Universities to TU9 technical institutes, Hochschulen to Dual Studium programs — closely following each institution's application system, visa requirements, and academic calendar.",
         "Every student's academic background, budget, and goals are different — that's why we help you choose the right country and university instead of forcing you into one template. As a newly founded company, we offer a concrete commitment instead of inflated numbers: an admission guarantee when you complete our process in full."
       ]
     },
@@ -2315,7 +3642,7 @@
         "label": "Admission Guarantee"
       },
       {
-        "value": "48+",
+        "value": "82+",
         "label": "Universities"
       }
     ]

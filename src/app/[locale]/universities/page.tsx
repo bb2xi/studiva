@@ -39,7 +39,7 @@ export default async function UniversitiesPage({
   const t = await getTranslations({ locale, namespace: "universities" });
   const items = t.raw("items") as UniversityItem[];
   const filters = t.raw("filters") as Record<string, string>;
-  const map = t.raw("map") as { title: string; subtitle: string; hint: string; emptyState: string };
+  const map = t.raw("map") as { title: string; subtitle: string; hint: string; emptyState: string; zoomOut: string };
 
   return (
     <>
@@ -61,6 +61,7 @@ export default async function UniversitiesPage({
                 hochschule: filters.hochschule,
                 hint: map.hint,
                 emptyState: map.emptyState,
+                zoomOut: map.zoomOut,
               }}
             />
           </div>

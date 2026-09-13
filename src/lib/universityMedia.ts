@@ -212,6 +212,142 @@ export const universityMedia: Record<string, UniversityImage[]> = {
   jade: [
     { url: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Jade-Hochschule%2C_Wilhelmshaven.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
   ],
+  duesseldorf: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/3/37/Heinrich-Heine-Denkmal%2C_Universitaets-_und_Landesbibliothek_Duesseldorf.jpg", artist: "Wikimedia Commons contributor", license: "CC BY 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Heine-Statue_Uni-D%C3%BCsseldorf.2023-09-06.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  ude: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/1/10/Universit%C3%A4t_Duisburg-Essen_Geb%C3%A4ude_SG.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/6/66/Universit%C3%A4t_Duisburg_Essen.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+  ],
+  tudortmund: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Technische_Universit%C3%A4t_Dortmund%2C_Campus_Nord.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/4/45/Technische_Universit%C3%A4t_Dortmund%2C_Campus_Winter_2009.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+  ],
+  bielefeld: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/b/b7/Bielefeld_Uni_Hauptgeb%C3%A4ude_2012.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/c/c2/2011-08-17-Universitaet-Bielefeld-Hauptgebaeude-3.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  paderborn: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/9/90/Luftbild_der_Universit%C3%A4t_Paderborn_Juli_2019.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/5/56/Haupteingang_Geb%C3%A4ude_Q_2017_Fr%C3%BChling.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  siegen: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/9/97/Paul-Bonatz-Campus-Universit%C3%A4t-Siegen.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0 de" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Paul-Bonatz-Campus-Universit%C3%A4t-Siegen-2.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0 de" },
+  ],
+  wuppertal: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Wuppertal%2C_Campus_Grifflenberg_der_Bergischen_Universit%C3%A4t_vom_N%C3%BCtzenberg_aus%2C_Bild_1.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/0/07/Wuppertal%2C_Campus_Grifflenberg_der_Bergischen_Universit%C3%A4t_vom_N%C3%BCtzenberg_aus%2C_Bild_2.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  luebeck: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/7/77/Uni_Geb%C3%A4ude_35.jpg", artist: "Wikimedia Commons contributor", license: "CC BY 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/6/66/Ratzeburger_Alle_148_150.jpg", artist: "Wikimedia Commons contributor", license: "CC BY 4.0" },
+  ],
+  rostock: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/3/39/Rostock%2C_Universit%C3%A4t%2C_Hauptgeb%C3%A4ude_--_2024_--_5310.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/b/be/Rostock%2C_Universit%C3%A4t%2C_Hauptgeb%C3%A4ude_--_2024_--_5478.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  greifswald: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/2/26/Universit%C3%A4t_Greifswald_Hauptgeb%C3%A4ude_Nordseite_Preu%C3%9Fisches_Wappen.JPG", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Universit%C3%A4t_Greifswald_Hauptgeb%C3%A4ude_S%C3%BCdseite_Pommersches_Wappen.JPG", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+  ],
+  magdeburg: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/0/09/Magdeburg_Universit%C3%A4tsviertel_aerial_view_01.jpg", artist: "Wikimedia Commons contributor", license: "CC BY 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/1/15/Campus_Tower_und_Fakult%C3%A4t_f%C3%BCr_Elektro-_und_Informationstechnik.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  halle: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/c/cc/MLU_-_Martin-Luther-Universit%C3%A4t_Halle-Wittenberg_-_Universit%C3%A4tsplatz_-_panoramio.jpg", artist: "Wikimedia Commons contributor", license: "CC BY 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/5/59/Kustodie_-_Martin-Luther-Universit%C3%A4t_Halle-Wittenberg_-_Altstadt_Halle_-_Saale_-_panoramio.jpg", artist: "Wikimedia Commons contributor", license: "CC BY 3.0" },
+  ],
+  leipzig: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Leipzig_Neues_Augusteum_%282802%29.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Leipzig_Universit%C3%A4t_lub_2025-03-22_img01_Neues_Augusteum.jpg", artist: "Wikimedia Commons contributor", license: "CC BY 4.0" },
+  ],
+  tuchemnitz: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/5/5b/Smart_Systems_Campus_der_TU_Chemnitz%2C_2015.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/9/94/Panorama_Campus_Reichenhainer_Stra%C3%9Fe.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  potsdam: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Neues_Palais%2C_Park_Sanssouci%2C_Potsdam%2C_Campus_Neues_Palais%2C_Universit%C3%A4t_Potsdam%2C_aus_Vogelperspektive%2C_Luftaufnahme_1.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/1/19/Neues_Palais%2C_Park_Sanssouci%2C_Potsdam%2C_Campus_Neues_Palais%2C_Universit%C3%A4t_Potsdam%2C_aus_Vogelperspektive%2C_Luftaufnahme_2.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  viadrina: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Universitas_Viadrina_Frankfurt_%28Oder%29.JPG", artist: "Wikimedia Commons contributor", license: "CC BY 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Europa_Universit%C3%A4t_Frankfurt_Oder_Auditorium_Maximum.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 2.0" },
+  ],
+  btucottbus: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/f/f7/Fr%C3%BChling_im_Brandenburgische_Technische_Universit%C3%A4t.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/7/78/Brandenburgische_Technische_Universit%C3%A4t_-_Die_Bibliothek_in_Cottbus_-_Sideview.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  wuerzburg: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Campus_path_-_Julius-Maximilians-Universit%C3%A4t_W%C3%BCrzburg_-_DSC02873.JPG", artist: "Wikimedia Commons contributor", license: "CC0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Geographiegeb%C3%A4ude_-_Julius-Maximilians-Universit%C3%A4t_W%C3%BCrzburg_-_DSC02872.JPG", artist: "Wikimedia Commons contributor", license: "CC0" },
+  ],
+  regensburg: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Uni-r_Campus_und_Bibliothek_2.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 2.5" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Sammelgebaeude_uni_regensburg.jpg", artist: "Wikimedia Commons contributor", license: "Public domain" },
+  ],
+  passau: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/9/9d/Universitaet_Passau_01.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Universitaet_Passau_02.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+  ],
+  bayreuth: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/1/16/Bayreuth%2C_Uni-Campus%2C_Audimax.jpg", artist: "Wikimedia Commons contributor", license: "CC BY 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Campus-bayreuth-1.jpg", artist: "Wikimedia Commons contributor", license: "Public domain" },
+  ],
+  augsburg: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Campus_Cat_Augsburg.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/8/82/Kunst_am_campus_helm.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+  ],
+  bamberg: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Universitaet_Bamberg_01.JPG", artist: "Wikimedia Commons contributor", license: "Public domain" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/c/c1/Universitaet_Bamberg_03.JPG", artist: "Wikimedia Commons contributor", license: "Public domain" },
+  ],
+  kueichstaett: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/4/4c/GER_Ingolstadt_Katholische_Universit%C3%A4t_004.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/9/91/GER_Ingolstadt%2C_Katholische_Universit%C3%A4t%2C_Campus_WFI_029.jpg", artist: "Wikimedia Commons contributor", license: "CC BY 4.0" },
+  ],
+  hohenheim: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/5/51/Schloss_Hohenheim%2C_S%C3%BCdseite.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/f/f2/1Konzert_Universit%C3%A4t_Hohenheim_2019_%288%29.JPG", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  ulm: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/c/c3/DE_BW_Ulm-Uni-West.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Ulm_Kunstpfad_%E2%80%9EGrosse_blaue_Konstruktion_II%E2%80%9C_von_Gerold_Miller_2019_03_08.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  saarland: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/c/cf/20200414Universit%C3%A4t_des_Saarlandes_08.jpg", artist: "Wikimedia Commons contributor", license: "CC BY 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Universit%C3%A4t_des_Saarlandes_%28Panorama%29%2C_August_2017.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  rptu: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/a/a3/TU_Kaiserslautern_-_Campus_und_Audimax.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/f/fe/CampusLandau_H_C.jpg", artist: "Wikimedia Commons contributor", license: "CC0" },
+  ],
+  fernunihagen: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/9/94/Fernuni_Hagen_U_47_von_Osten.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Fernuni_Hagen_7.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  oldenburg: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/d/da/University_of_Oldenburg%2C_Main_Campus.JPG", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/a/a0/UniOLWechloy.JPG", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+  ],
+  hildesheim: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/d/db/Hauptcampus_Universit%C3%A4t_Hildesheim.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Campus_Herbst_1b.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  leuphana: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/0/06/L%C3%BCneburg_-_Leuphana_Universit%C3%A4t_%2801%29.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/f/f5/University_Lueneburg_Libeskind_2017FEB04.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  tuclausthal: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/4/4f/WLM2018_Clausthal_Zellerfeld_Technische_Universit%C3%A4t.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/3/34/Aula_academica_clausthal.jpg", artist: "Wikimedia Commons contributor", license: "CC BY 3.0" },
+  ],
+  vechta: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/0/03/Zentraler_Campus.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Kirche_am_Campus_an_der_Universit%C3%A4t_Vechta.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
 };
 
 // Official university logos, used on list/preview cards.
@@ -257,5 +393,13 @@ export const universityLogos: Record<string, UniversityImage> = {
   bht: { url: "https://upload.wikimedia.org/wikipedia/commons/6/65/Beuth_Hochschule_f%C3%BCr_Technik_Berlin_logo.svg", artist: "Berliner Hochschule für Technik", license: "Public domain" },
   hsmannheim: { url: "https://upload.wikimedia.org/wikipedia/commons/f/f7/Hochschule_Mannheim_logo.svg", artist: "Hochschule Mannheim", license: "Public domain" },
   jade: { url: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Logo_Jade_Hochschule.jpg", artist: "Jade Hochschule", license: "Public domain" },
+  leipzig: { url: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Universit%C3%A4t_Leipzig_logo.svg", artist: "Universität Leipzig", license: "Public domain" },
+  potsdam: { url: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Universit%C3%A4t_Potsdam_logo.svg", artist: "Universität Potsdam", license: "Public domain" },
+  wuerzburg: { url: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Universit%C3%A4t_W%C3%BCrzburg_Logo.svg", artist: "Universität Würzburg", license: "Public domain" },
+  ude: { url: "https://upload.wikimedia.org/wikipedia/commons/9/95/Universit%C3%A4t_Duisburg-Essen.svg", artist: "Universität Duisburg-Essen", license: "Public domain" },
+  tudortmund: { url: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Technische_Universit%C3%A4t_Dortmund_Logo.svg", artist: "TU Dortmund", license: "Public domain" },
+  magdeburg: { url: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Otto_von_Guericke_Universit%C3%A4t_Magdeburg_logo.svg", artist: "Otto-von-Guericke-Universität Magdeburg", license: "Public domain" },
+  btucottbus: { url: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Brandenburgische_Technische_Universit%C3%A4t_Cottbus-Senftenberg_2013_logo.svg", artist: "BTU Cottbus-Senftenberg", license: "Public domain" },
+  kueichstaett: { url: "https://upload.wikimedia.org/wikipedia/commons/6/61/KU_Eichst%C3%A4tt-Ingolstadt_Logo.svg", artist: "KU Eichstätt-Ingolstadt", license: "Public domain" },
 };
 

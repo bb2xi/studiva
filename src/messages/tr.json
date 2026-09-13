@@ -41,7 +41,7 @@
           "label": "TU9 Üniversitesi"
         },
         {
-          "value": "48+",
+          "value": "82+",
           "label": "Üniversite Seçeneği"
         },
         {
@@ -2241,6 +2241,1332 @@
           "Lojistik",
           "Makine Mühendisliği"
         ]
+      },
+      {
+        "slug": "duesseldorf",
+        "name": "Heinrich-Heine-Universität Düsseldorf (HHU)",
+        "city": "Düsseldorf",
+        "type": "Universität",
+        "founded": "1965",
+        "description": "Düsseldorflu şair Heinrich Heine'nin adını taşıyan, tıp ve yaşam bilimlerinde güçlü bir üniversite.",
+        "history": [
+          "Kökleri 1907'de kurulan bir tıp akademisine uzanır; 1965'te tam bir üniversite statüsü kazandı ve adını Düsseldorf doğumlu şair Heinrich Heine'den aldı.",
+          "Tıp, yaşam bilimleri (özellikle bitki ve mikrobiyoloji), hukuk ve ekonomide güçlü fakültelere sahiptir."
+        ],
+        "highlights": [
+          "Şair Heinrich Heine'nin adını taşıyor",
+          "Güçlü tıp ve yaşam bilimleri fakültesi",
+          "Düsseldorf'un ekonomi merkezine yakınlık"
+        ],
+        "pros": [
+          "Düsseldorf'un güçlü iş piyasasına erişim",
+          "Tıp ve yaşam bilimlerinde sağlam araştırma altyapısı",
+          "Kompakt, modern kampüs"
+        ],
+        "cons": [
+          "Popüler tıp programında yüksek başvuru rekabeti",
+          "Beşeri bilimler dışında sınırlı program çeşitliliği",
+          "Büyük şehirde yüksek yaşam maliyeti"
+        ],
+        "badges": [],
+        "mapCity": "duesseldorf",
+        "quickFacts": {
+          "students": "~34.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~310 € katkı payı"
+        },
+        "popularPrograms": [
+          "Tıp",
+          "Biyoloji/Yaşam Bilimleri",
+          "Hukuk"
+        ]
+      },
+      {
+        "slug": "ude",
+        "name": "Universität Duisburg-Essen (UDE)",
+        "city": "Duisburg/Essen",
+        "type": "Universität",
+        "founded": "2003",
+        "description": "Duisburg ve Essen üniversitelerinin birleşmesiyle oluşan, Ruhr bölgesinin en büyük üniversitelerinden biri.",
+        "history": [
+          "2003'te Duisburg ve Essen üniversitelerinin birleşmesiyle kuruldu; TU Dortmund ile birlikte 'University Alliance Ruhr' ittifakının üyesidir.",
+          "Mühendislik, tıp (Essen kampüsü), sosyal bilimler ve ekonomide güçlü, Almanya'nın en çok uluslararası öğrenciye sahip üniversitelerinden biridir."
+        ],
+        "highlights": [
+          "University Alliance Ruhr üyesi",
+          "İki kampüslü (Duisburg ve Essen) geniş fakülte yelpazesi",
+          "Almanya'nın en çeşitli öğrenci topluluklarından birine sahip"
+        ],
+        "pros": [
+          "Ruhr bölgesinin büyük iş piyasasına erişim",
+          "Mühendislik ve tıpta güçlü araştırma",
+          "Nispeten uygun maliyetli bir bölge"
+        ],
+        "cons": [
+          "İki kampüse (Duisburg/Essen) bölünmüş olması ulaşımı zorlaştırabilir",
+          "Büyük öğrenci sayısı kalabalık dersler anlamına gelebilir",
+          "Ruhr bölgesi klasik üniversite şehri hissi vermeyebilir"
+        ],
+        "badges": [],
+        "mapCity": "essen",
+        "quickFacts": {
+          "students": "~42.000",
+          "language": "Ağırlıklı Almanca, mühendislikte bazı İngilizce programlar",
+          "tuition": "Dönemlik ~320 € katkı payı"
+        },
+        "popularPrograms": [
+          "Mühendislik",
+          "Tıp",
+          "Sosyal Bilimler"
+        ]
+      },
+      {
+        "slug": "tudortmund",
+        "name": "Technische Universität Dortmund",
+        "city": "Dortmund",
+        "type": "Universität",
+        "founded": "1968",
+        "description": "Ruhr bölgesinde, istatistik ve fizikte güçlü, mühendislik odaklı bir teknik üniversite.",
+        "history": [
+          "1968'de kurulan TU Dortmund, Almanya'da nadir bulunan bağımsız bir İstatistik fakültesine sahip olmasıyla tanınır.",
+          "Fizikte parçacık hızlandırıcısı DELTA'ya ev sahipliği yapar; mühendislik, bilgisayar bilimi ve eğitim bilimlerinde de güçlü programlar sunar."
+        ],
+        "highlights": [
+          "Almanya'da nadir bulunan bağımsız bir İstatistik fakültesi",
+          "DELTA parçacık hızlandırıcısına ev sahipliği",
+          "Ruhr bölgesinin mühendislik eğitim merkezlerinden biri"
+        ],
+        "pros": [
+          "İstatistik ve veri bilimi alanında güçlü, niş bir uzmanlık",
+          "Ruhr bölgesinin sanayi iş piyasasına erişim",
+          "Modern, geniş bir kampüs"
+        ],
+        "cons": [
+          "Dortmund, büyük şehir kültürel imkanları bakımından sınırlı",
+          "Popüler mühendislik programlarında kalabalık gruplar",
+          "Beşeri bilimlerde daha sınırlı seçenek"
+        ],
+        "badges": [],
+        "mapCity": "dortmund",
+        "quickFacts": {
+          "students": "~32.000",
+          "language": "Ağırlıklı Almanca, istatistik/mühendislikte bazı İngilizce",
+          "tuition": "Dönemlik ~310 € katkı payı"
+        },
+        "popularPrograms": [
+          "İstatistik",
+          "Fizik",
+          "Makine Mühendisliği"
+        ]
+      },
+      {
+        "slug": "bielefeld",
+        "name": "Universität Bielefeld",
+        "city": "Bielefeld",
+        "type": "Universität",
+        "founded": "1969",
+        "description": "Sosyolojide dünya çapında etkili, tek bir dev bina içinde birleşik alışılmadık bir kampüse sahip bir reform üniversitesi.",
+        "history": [
+          "1969'da, Konstanz ve Bremen'e benzer disiplinler arası bir 'reform üniversitesi' olarak kuruldu; tüm fakülteleri tek bir dev, birbirine bağlı bina içinde barındırmasıyla tanınır.",
+          "Sosyolog Niklas Luhmann'ın uzun yıllar ders verdiği üniversite, sosyoloji, tarih, biyoloji ve fizikte dünya çapında tanınan bir araştırma kültürüne sahiptir."
+        ],
+        "highlights": [
+          "Dünya çapında etkili bir sosyoloji geleneği (Niklas Luhmann)",
+          "Tüm fakülteleri tek bir dev binada birleştiren alışılmadık kampüs",
+          "Güçlü tarih, biyoloji ve fizik araştırmaları"
+        ],
+        "pros": [
+          "Sosyal bilimlerde seçkin, uluslararası tanınırlığa sahip bir araştırma kültürü",
+          "Her şeyin tek bir çatı altında olduğu kompakt, verimli bir kampüs",
+          "Orta ölçekli, uygun maliyetli bir şehir"
+        ],
+        "cons": [
+          "Tek bina kampüs yapısı bazı öğrencilere klostrofobik gelebilir",
+          "Bielefeld büyük şehir imkanları bakımından sınırlı",
+          "Mühendislik gibi bazı alanlarda program bulunmuyor"
+        ],
+        "badges": [],
+        "mapCity": "bielefeld",
+        "quickFacts": {
+          "students": "~24.000",
+          "language": "Ağırlıklı Almanca, sosyal bilimlerde bazı İngilizce yüksek lisans",
+          "tuition": "Dönemlik ~300 € katkı payı"
+        },
+        "popularPrograms": [
+          "Sosyoloji",
+          "Tarih",
+          "Biyoloji"
+        ]
+      },
+      {
+        "slug": "paderborn",
+        "name": "Universität Paderborn",
+        "city": "Paderborn",
+        "type": "Universität",
+        "founded": "1972",
+        "description": "'Bilgi Toplumu Üniversitesi' olarak anılan, bilgisayar bilimi ve bilgi teknolojilerinde güçlü bir üniversite.",
+        "history": [
+          "1972'de kurulan üniversite, Heinz Nixdorf Enstitüsü'ne ev sahipliği yapar ve bilgi teknolojileri alanındaki güçlü odağı nedeniyle 'Bilgi Toplumu Üniversitesi' olarak anılır.",
+          "Bilgisayar bilimi, makine mühendisliği ve işletmede güçlü programlar sunar; Almanya'nın önemli bilgi teknolojisi araştırma merkezlerinden biridir."
+        ],
+        "highlights": [
+          "Heinz Nixdorf Enstitüsü'ne ev sahipliği",
+          "Bilgi teknolojilerinde güçlü ulusal itibar",
+          "Makine mühendisliği ve işletmede sağlam programlar"
+        ],
+        "pros": [
+          "Bilgisayar bilimi ve IT'de güçlü araştırma ve sanayi bağlantıları",
+          "Orta ölçekli, uygun maliyetli bir üniversite şehri",
+          "Kompakt, öğrenci dostu kampüs"
+        ],
+        "cons": [
+          "Paderborn küçük-orta ölçekli bir şehir, büyük şehir imkanları sınırlı",
+          "Tıp gibi bazı alanlarda program bulunmuyor",
+          "Daha az uluslararası tanınırlık"
+        ],
+        "badges": [],
+        "mapCity": "paderborn",
+        "quickFacts": {
+          "students": "~20.000",
+          "language": "Ağırlıklı Almanca, bilgisayar biliminde bazı İngilizce yüksek lisans",
+          "tuition": "Dönemlik ~280 € katkı payı"
+        },
+        "popularPrograms": [
+          "Bilgisayar Bilimi",
+          "Makine Mühendisliği",
+          "İşletme"
+        ]
+      },
+      {
+        "slug": "siegen",
+        "name": "Universität Siegen",
+        "city": "Siegen",
+        "type": "Universität",
+        "founded": "1972",
+        "description": "Siegerland sanayi bölgesinde, sosyal bilimler, medya çalışmaları ve mühendislikte güçlü bir üniversite.",
+        "history": [
+          "1972'de kurulan üniversite, eski bir şehir meydanının üzerine inşa edilen ve şehrin kalbinde yer alan alışılmadık bir kampüse (Unteres Schloss/Paul-Bonatz-Campus) sahiptir.",
+          "Sosyal bilimler, beşeri bilimler, medya çalışmaları ve makine mühendisliğinde güçlü programlar sunar."
+        ],
+        "highlights": [
+          "Şehrin kalbinde, tarihi bir meydanın üzerine inşa edilmiş alışılmadık kampüs",
+          "Güçlü medya çalışmaları ve sosyal bilimler",
+          "Siegerland sanayi bölgesine yakın mühendislik programları"
+        ],
+        "pros": [
+          "Şehir merkezinde, ulaşımı kolay bir kampüs",
+          "Sosyal bilimler ve medya çalışmalarında güçlü araştırma",
+          "Uygun maliyetli bir üniversite şehri"
+        ],
+        "cons": [
+          "Siegen küçük-orta ölçekli bir şehir",
+          "Sınırlı büyük şehir imkanları",
+          "Daha az İngilizce program seçeneği"
+        ],
+        "badges": [],
+        "mapCity": "siegen",
+        "quickFacts": {
+          "students": "~16.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~290 € katkı payı"
+        },
+        "popularPrograms": [
+          "Sosyal Bilimler",
+          "Medya Çalışmaları",
+          "Makine Mühendisliği"
+        ]
+      },
+      {
+        "slug": "wuppertal",
+        "name": "Bergische Universität Wuppertal",
+        "city": "Wuppertal",
+        "type": "Universität",
+        "founded": "1972",
+        "description": "Bergisches Land bölgesinde, mimarlık, güvenlik mühendisliği ve fizikte güçlü bir üniversite.",
+        "history": [
+          "1972'de 'Gesamthochschule Wuppertal' olarak kuruldu, 2003'te bugünkü adını aldı.",
+          "Mimarlık, güvenlik mühendisliği (Almanya'da nadir bir uzmanlık alanı), parçacık fiziği ve ekonomide güçlü programlar sunar."
+        ],
+        "highlights": [
+          "Almanya'da nadir bulunan bir güvenlik mühendisliği programı",
+          "Güçlü mimarlık fakültesi",
+          "Parçacık fiziğinde tanınan araştırma"
+        ],
+        "pros": [
+          "Mimarlık ve güvenlik mühendisliğinde niş, güçlü programlar",
+          "Rhein-Ruhr bölgesinin iş piyasasına yakınlık",
+          "Uygun maliyetli bir şehir"
+        ],
+        "cons": [
+          "Wuppertal büyük şehir imkanları bakımından sınırlı",
+          "Bazı programlarda kalabalık gruplar",
+          "Daha az uluslararası tanınırlık"
+        ],
+        "badges": [],
+        "mapCity": "wuppertal",
+        "quickFacts": {
+          "students": "~24.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~300 € katkı payı"
+        },
+        "popularPrograms": [
+          "Mimarlık",
+          "Güvenlik Mühendisliği",
+          "Fizik"
+        ]
+      },
+      {
+        "slug": "luebeck",
+        "name": "Universität zu Lübeck",
+        "city": "Lübeck",
+        "type": "Universität",
+        "founded": "1964",
+        "description": "Tıp ve tıbbi bilişimi bir araya getiren, küçük ama son derece odaklanmış bir üniversite.",
+        "history": [
+          "1964'te bir tıp akademisi olarak kuruldu, 1985'te tam üniversite statüsü kazandı.",
+          "Tıp ve bilgisayar bilimini birleştiren programlarıyla (Medizinische Informatik) tanınır; moleküler yaşam bilimlerinde de güçlüdür."
+        ],
+        "highlights": [
+          "Tıp ve bilgisayar bilimini birleştiren benzersiz programlar",
+          "Küçük, yoğun araştırma odaklı bir üniversite",
+          "Baltık Denizi kıyısında tarihi bir şehir"
+        ],
+        "pros": [
+          "Tıp ve tıbbi bilişimde son derece odaklanmış, kaliteli eğitim",
+          "Küçük öğrenci sayısı sayesinde yakın akademik takip",
+          "Tarihi, güzel bir Hanseatic şehir"
+        ],
+        "cons": [
+          "Çok sınırlı program yelpazesi (esas olarak tıp/yaşam bilimleri)",
+          "Lübeck küçük bir şehir",
+          "Tıp bölümünde çok yüksek başvuru rekabeti"
+        ],
+        "badges": [],
+        "mapCity": "luebeck",
+        "quickFacts": {
+          "students": "~5.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~220 € katkı payı"
+        },
+        "popularPrograms": [
+          "Tıp",
+          "Tıbbi Bilişim",
+          "Moleküler Yaşam Bilimleri"
+        ]
+      },
+      {
+        "slug": "rostock",
+        "name": "Universität Rostock",
+        "city": "Rostock",
+        "type": "Universität",
+        "founded": "1419",
+        "description": "1419'da kurulan, Kuzey Avrupa ve Baltık bölgesinin en eski üniversitelerinden biri.",
+        "history": [
+          "1419'da kurulan Universität Rostock, Baltık bölgesinin ve kesintisiz Almanca konuşulan bölgenin en eski üniversitesidir.",
+          "Denizcilik ve gemi mühendisliği (yakındaki Warnemünde liman bölgesi sayesinde), tıp ve tarım bilimlerinde güçlüdür."
+        ],
+        "highlights": [
+          "1419'dan beri kesintisiz eğitim veren, bölgenin en eski üniversitesi",
+          "Warnemünde liman bölgesine yakınlıkla denizcilik mühendisliğinde güç",
+          "Güçlü tıp ve tarım bilimleri fakülteleri"
+        ],
+        "pros": [
+          "Denizcilik mühendisliğinde niş, güçlü bir uzmanlık",
+          "Baltık kıyısında yüksek yaşam kalitesi",
+          "Uygun maliyetli bir üniversite şehri"
+        ],
+        "cons": [
+          "Doğu Almanya'da, batı şehirlerine kıyasla daha küçük uluslararası topluluk",
+          "Sınırlı büyük şehir imkanları",
+          "Daha az İngilizce program"
+        ],
+        "badges": [],
+        "mapCity": "rostock",
+        "quickFacts": {
+          "students": "~13.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~230 € katkı payı"
+        },
+        "popularPrograms": [
+          "Denizcilik Mühendisliği",
+          "Tıp",
+          "Tarım Bilimleri"
+        ]
+      },
+      {
+        "slug": "greifswald",
+        "name": "Universität Greifswald",
+        "city": "Greifswald",
+        "type": "Universität",
+        "founded": "1456",
+        "description": "1456'da kurulan, Almanya'nın en eski üniversitelerinden biri; Baltık kıyısında küçük, tarihi bir üniversite şehri.",
+        "history": [
+          "1456'da kurulan Universität Greifswald, Almanya'nın en eski üniversitelerinden biridir ve şehrin kimliğiyle iç içe geçmiştir.",
+          "Tıp (özellikle fonksiyonel genomik araştırmaları) ve teoloji alanlarında güçlü bir akademik gelenek sürdürür."
+        ],
+        "highlights": [
+          "Almanya'nın en eski üniversitelerinden biri (1456)",
+          "Fonksiyonel genomik alanında tanınan tıp araştırmaları",
+          "Baltık kıyısında küçük, tarihi bir kampüs şehri"
+        ],
+        "pros": [
+          "Tıp ve genomik araştırmalarında güçlü fırsatlar",
+          "Çok uygun maliyetli, sakin bir üniversite şehri",
+          "Tarihi, yürünebilir bir kampüs"
+        ],
+        "cons": [
+          "Çok küçük bir şehir, büyük şehir imkanları yok denecek kadar az",
+          "Sınırlı uluslararası öğrenci topluluğu",
+          "Daha az İngilizce program"
+        ],
+        "badges": [],
+        "mapCity": "greifswald",
+        "quickFacts": {
+          "students": "~10.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~220 € katkı payı"
+        },
+        "popularPrograms": [
+          "Tıp",
+          "Teoloji",
+          "Biyoloji"
+        ]
+      },
+      {
+        "slug": "magdeburg",
+        "name": "Otto-von-Guericke-Universität Magdeburg",
+        "city": "Magdeburg",
+        "type": "Universität",
+        "founded": "1993",
+        "description": "Vakum pompasının mucidi fizikçi Otto von Guericke'nin adını taşıyan, mühendislik ve nörobilimde güçlü bir üniversite.",
+        "history": [
+          "1993'te, Almanya'nın birleşmesi sonrası birkaç teknik ve tıbbi kurumun birleşmesiyle kuruldu; adını Magdeburg'da yaşamış fizikçi ve belediye başkanı Otto von Guericke'den alır.",
+          "Mühendislik, nörobilim (özellikle beyin araştırmaları) ve tıpta güçlü, büyüyen bir araştırma profiline sahiptir."
+        ],
+        "highlights": [
+          "Vakum pompasının mucidi Otto von Guericke'nin adını taşıyor",
+          "Güçlü nörobilim ve beyin araştırmaları",
+          "Büyüyen mühendislik ve tıp fakülteleri"
+        ],
+        "pros": [
+          "Nörobilim ve mühendislikte büyüyen araştırma fırsatları",
+          "Uygun maliyetli, orta ölçekli bir şehir",
+          "Modern kampüs tesisleri"
+        ],
+        "cons": [
+          "Doğu Almanya'da, daha küçük uluslararası öğrenci topluluğu",
+          "Sınırlı büyük şehir kültürel imkanları",
+          "Daha az İngilizce lisans seçeneği"
+        ],
+        "badges": [],
+        "mapCity": "magdeburg",
+        "quickFacts": {
+          "students": "~14.000",
+          "language": "Ağırlıklı Almanca, nörobilimde bazı İngilizce yüksek lisans",
+          "tuition": "Dönemlik ~230 € katkı payı"
+        },
+        "popularPrograms": [
+          "Mühendislik",
+          "Nörobilim",
+          "Tıp"
+        ]
+      },
+      {
+        "slug": "halle",
+        "name": "Martin-Luther-Universität Halle-Wittenberg (MLU)",
+        "city": "Halle (Saale)",
+        "type": "Universität",
+        "founded": "1502",
+        "description": "Reform hareketinin merkezi Wittenberg'de kurulan, beşeri bilimler ve tarım bilimlerinde güçlü tarihi bir üniversite.",
+        "history": [
+          "1502'de Wittenberg'de kuruldu — Martin Luther'in ders verdiği şehir — ve 1817'de 1694'te kurulan Halle Üniversitesi ile birleşti.",
+          "Beşeri bilimler, doğa bilimleri ve tarım bilimlerinde güçlüdür; Almanya'nın en eski bilim akademisi Leopoldina, Halle'de bulunur."
+        ],
+        "highlights": [
+          "Reform hareketinin merkezi Wittenberg'de kurulan tarihi köken",
+          "Almanya'nın en eski bilim akademisi Leopoldina'ya ev sahipliği",
+          "Güçlü tarım bilimleri ve beşeri bilimler"
+        ],
+        "pros": [
+          "Zengin tarihi ve akademik geleneğe sahip bir üniversite",
+          "Uygun maliyetli bir üniversite şehri",
+          "Tarım bilimlerinde niş bir uzmanlık"
+        ],
+        "cons": [
+          "Doğu Almanya'da daha küçük uluslararası topluluk",
+          "Sınırlı büyük şehir imkanları",
+          "Daha az İngilizce program"
+        ],
+        "badges": [],
+        "mapCity": "halle",
+        "quickFacts": {
+          "students": "~18.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~230 € katkı payı"
+        },
+        "popularPrograms": [
+          "Beşeri Bilimler",
+          "Tarım Bilimleri",
+          "Doğa Bilimleri"
+        ]
+      },
+      {
+        "slug": "leipzig",
+        "name": "Universität Leipzig",
+        "city": "Leipzig",
+        "type": "Universität",
+        "founded": "1409",
+        "description": "1409'da kurulan, dünyanın kesintisiz eğitim veren en eski üniversitelerinden biri; Goethe ve Nietzsche gibi isimlerin okuduğu köklü bir kurum.",
+        "history": [
+          "1409'da kurulan Universität Leipzig, dünyanın en eski, kesintisiz eğitim veren üniversitelerinden biridir; Goethe, Nietzsche ve Leibniz gibi isimler burada okudu ya da ders verdi.",
+          "Hukuk, tıp, beşeri bilimler ve spor bilimlerinde (Almanya'nın önde gelen spor bilimi enstitülerinden birine ev sahipliği yapar) güçlüdür."
+        ],
+        "highlights": [
+          "1409'dan beri kesintisiz eğitim veren dünyanın en eski üniversitelerinden biri",
+          "Goethe ve Nietzsche gibi tarihi isimlerle bağlantılı",
+          "Almanya'nın önde gelen spor bilimi enstitülerinden birine ev sahipliği"
+        ],
+        "pros": [
+          "Zengin tarihi mirasa sahip, prestijli bir üniversite",
+          "Leipzig'in canlı, uygun maliyetli şehir hayatı",
+          "Hukuk ve spor bilimlerinde güçlü itibar"
+        ],
+        "cons": [
+          "Popüler bölümlerde yüksek başvuru rekabeti",
+          "Büyük öğrenci sayısı kalabalık dersler anlamına gelebilir",
+          "Doğu Almanya'da nispeten daha az İngilizce program"
+        ],
+        "badges": [],
+        "mapCity": "leipzig",
+        "quickFacts": {
+          "students": "~30.000",
+          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları",
+          "tuition": "Dönemlik ~200 € katkı payı"
+        },
+        "popularPrograms": [
+          "Hukuk",
+          "Tıp",
+          "Spor Bilimleri"
+        ]
+      },
+      {
+        "slug": "tuchemnitz",
+        "name": "Technische Universität Chemnitz",
+        "city": "Chemnitz",
+        "type": "Universität",
+        "founded": "1836",
+        "description": "Sakson sanayi geleneğinde, üretim mühendisliği ve hafif yapı malzemelerinde güçlü bir teknik üniversite.",
+        "history": [
+          "1836'da bir ticaret okulu olarak kurulan kurum, 1986'da üniversite statüsü, 1993'te ise 'Technische Universität' adını aldı.",
+          "Üretim mühendisliği, hafif yapı malzemeleri (MERGE araştırma kümelenmesi) ve mikro/nanoteknolojide güçlü bir araştırma profiline sahiptir."
+        ],
+        "highlights": [
+          "Hafif yapı malzemelerinde tanınan MERGE araştırma kümelenmesi",
+          "Güçlü üretim mühendisliği geleneği",
+          "Sakson sanayi bölgesine yakın konum"
+        ],
+        "pros": [
+          "Üretim mühendisliği ve malzeme biliminde niş, güçlü araştırma",
+          "Çok uygun maliyetli bir üniversite şehri",
+          "Sanayiyle yakın işbirliği"
+        ],
+        "cons": [
+          "Chemnitz nispeten küçük ve az tanınan bir şehir",
+          "Sınırlı uluslararası öğrenci topluluğu",
+          "Daha az İngilizce lisans seçeneği"
+        ],
+        "badges": [],
+        "mapCity": "chemnitz",
+        "quickFacts": {
+          "students": "~10.000",
+          "language": "Ağırlıklı Almanca, mühendislikte bazı İngilizce yüksek lisans",
+          "tuition": "Dönemlik ~200 € katkı payı"
+        },
+        "popularPrograms": [
+          "Üretim Mühendisliği",
+          "Malzeme Bilimi",
+          "Bilgisayar Bilimi"
+        ]
+      },
+      {
+        "slug": "potsdam",
+        "name": "Universität Potsdam",
+        "city": "Potsdam",
+        "type": "Universität",
+        "founded": "1991",
+        "description": "Berlin yakınında, Sanssouci Sarayı arazisindeki kampüsüyle, siyaset bilimi ve dilbilimde güçlü bir üniversite.",
+        "history": [
+          "1991'de, Almanya'nın birleşmesinden kısa süre sonra kuruldu; kampüslerinden biri tarihi Sanssouci Parkı'ndaki Neues Palais'de (Yeni Saray) yer alır.",
+          "Federal ve eyalet hükümetlerine yakınlığı sayesinde siyaset/kamu yönetimi biliminde, ayrıca bilişsel bilim ve dilbilimde güçlüdür."
+        ],
+        "highlights": [
+          "Sanssouci Parkı'ndaki tarihi Neues Palais'de bir kampüs",
+          "Siyaset bilimi ve kamu yönetiminde güçlü itibar",
+          "Bilişsel bilim ve dilbilimde tanınan araştırma"
+        ],
+        "pros": [
+          "Berlin'e yakınlık sayesinde hükümet/politika alanında staj imkanları",
+          "Tarihi, güzel bir saray kampüsünde eğitim",
+          "Berlin'e kıyasla daha uygun yaşam maliyeti"
+        ],
+        "cons": [
+          "Popüler siyaset bilimi programlarında rekabet",
+          "Potsdam, Berlin'in gölgesinde kalabiliyor",
+          "Sınırlı mühendislik/doğa bilimleri seçeneği"
+        ],
+        "badges": [],
+        "mapCity": "potsdam",
+        "quickFacts": {
+          "students": "~21.000",
+          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları",
+          "tuition": "Dönemlik ~300 € katkı payı"
+        },
+        "popularPrograms": [
+          "Siyaset Bilimi",
+          "Dilbilim",
+          "Kamu Yönetimi"
+        ]
+      },
+      {
+        "slug": "viadrina",
+        "name": "Europa-Universität Viadrina Frankfurt (Oder)",
+        "city": "Frankfurt (Oder)",
+        "type": "Universität",
+        "founded": "1506",
+        "description": "Polonya sınırında, Avrupa entegrasyonuna adanmış, hukuk ve kültürel çalışmalarda güçlü küçük bir üniversite.",
+        "history": [
+          "1506'da kurulan üniversite 1811'de kapatıldı; 1991'de, Polonya sınırındaki Frankfurt (Oder) şehrinde, açıkça Avrupa/Alman-Polonya entegrasyonuna odaklanan bir profille yeniden açıldı.",
+          "Hukuk (özellikle Avrupa ve karşılaştırmalı hukuk), ekonomi ve kültürel çalışmalarda güçlüdür; öğrencilerinin büyük bölümü Orta ve Doğu Avrupa'dan gelir."
+        ],
+        "highlights": [
+          "Polonya sınırında, Avrupa entegrasyonuna adanmış benzersiz bir profil",
+          "Güçlü Avrupa ve karşılaştırmalı hukuk programı",
+          "Orta ve Doğu Avrupa'dan güçlü öğrenci bağlantıları"
+        ],
+        "pros": [
+          "Avrupa hukuku ve kültürlerarası çalışmalarda niş, güçlü bir uzmanlık",
+          "Çok uluslararası, çok kültürlü bir kampüs ortamı",
+          "Küçük, yakın bir akademik topluluk"
+        ],
+        "cons": [
+          "Çok küçük bir şehir, sınırlı büyük şehir imkanları",
+          "Dar bir program yelpazesi (esas olarak hukuk/ekonomi/kültürel çalışmalar)",
+          "Berlin'e kıyasla daha az tanınırlık"
+        ],
+        "badges": [],
+        "mapCity": "frankfurtoder",
+        "quickFacts": {
+          "students": "~5.000",
+          "language": "Almanca, İngilizce ve Lehçe karışık",
+          "tuition": "Dönemlik ~150 € katkı payı"
+        },
+        "popularPrograms": [
+          "Avrupa Hukuku",
+          "Ekonomi",
+          "Kültürel Çalışmalar"
+        ]
+      },
+      {
+        "slug": "btucottbus",
+        "name": "Brandenburgische Technische Universität Cottbus-Senftenberg (BTU)",
+        "city": "Cottbus",
+        "type": "Universität",
+        "founded": "1991",
+        "description": "Lusatia kömür bölgesinin enerji dönüşümünde, çevre ve enerji mühendisliğinde güçlü bir teknik üniversite.",
+        "history": [
+          "1991'de Cottbus'ta kuruldu; 2013'te Senftenberg'deki Hochschule Lausitz ile birleşerek bugünkü halini aldı.",
+          "Lusatia bölgesinin kömürden yenilenebilir enerjiye geçiş sürecinin merkezinde, çevre mühendisliği, enerji teknolojileri ve mimarlıkta güçlüdür."
+        ],
+        "highlights": [
+          "Lusatia'nın enerji dönüşümünün merkezinde çevre/enerji mühendisliği",
+          "Cottbus ve Senftenberg'de iki kampüs",
+          "Güçlü mimarlık programı"
+        ],
+        "pros": [
+          "Enerji dönüşümü ve çevre mühendisliğinde güncel, niş bir uzmanlık",
+          "Çok uygun maliyetli bir bölge",
+          "Küçük sınıflarda yakın akademik takip"
+        ],
+        "cons": [
+          "Cottbus küçük, az tanınan bir şehir",
+          "Sınırlı uluslararası öğrenci topluluğu",
+          "İki kampüse (Cottbus/Senftenberg) bölünmüş yapı"
+        ],
+        "badges": [],
+        "mapCity": "cottbus",
+        "quickFacts": {
+          "students": "~7.000",
+          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları",
+          "tuition": "Dönemlik ~200 € katkı payı"
+        },
+        "popularPrograms": [
+          "Çevre Mühendisliği",
+          "Enerji Teknolojileri",
+          "Mimarlık"
+        ]
+      },
+      {
+        "slug": "wuerzburg",
+        "name": "Julius-Maximilians-Universität Würzburg (JMU)",
+        "city": "Würzburg",
+        "type": "Universität",
+        "founded": "1402",
+        "description": "X ışınlarının kaşifi Wilhelm Röntgen'in Nobel ödülü kazandığı, tıp ve fizikte köklü bir üniversite.",
+        "history": [
+          "1402'de kurulan, 1582'de yeniden açılan JMU, Almanya'nın en eski üniversitelerinden biridir.",
+          "X ışınlarını keşfeden ve burada Nobel Fizik Ödülü'nü kazanan Wilhelm Röntgen'in çalıştığı üniversite; tıp, fizik ve psikolojide güçlü bir araştırma geleneğine sahiptir."
+        ],
+        "highlights": [
+          "X ışınlarının kaşifi Röntgen'in Nobel ödülü kazandığı üniversite",
+          "Güçlü tıp ve fizik fakülteleri",
+          "Tanınan psikoloji araştırma programı"
+        ],
+        "pros": [
+          "Tıp ve fizikte köklü, prestijli bir araştırma geleneği",
+          "Şarap bölgesinde tarihi, güzel bir üniversite şehri",
+          "Uygun maliyetli Franken yaşam standardı"
+        ],
+        "cons": [
+          "Tıp bölümünde yüksek başvuru rekabeti",
+          "Büyük şehir imkanları bakımından orta ölçekli bir şehir",
+          "Daha az İngilizce lisans seçeneği"
+        ],
+        "badges": [],
+        "mapCity": "wuerzburg",
+        "quickFacts": {
+          "students": "~28.000",
+          "language": "Ağırlıklı Almanca, tıp/fizikte bazı İngilizce yüksek lisans",
+          "tuition": "Dönemlik ~130 € katkı payı"
+        },
+        "popularPrograms": [
+          "Tıp",
+          "Fizik",
+          "Psikoloji"
+        ]
+      },
+      {
+        "slug": "regensburg",
+        "name": "Universität Regensburg",
+        "city": "Regensburg",
+        "type": "Universität",
+        "founded": "1962",
+        "description": "Tuna kıyısında, kompakt tek kampüsüyle, kimya ve hukukta güçlü bir Bavyera 'reform üniversitesi'.",
+        "history": [
+          "1962'de kurulan, Bavyera'nın savaş sonrası kurulan 'reform üniversitelerinden' biri olan Regensburg, tüm fakültelerini tek bir kompakt kampüste birleştirir.",
+          "Kimya, hukuk ve Doğu/Güneydoğu Avrupa çalışmalarında güçlüdür; Tuna üzerinden tarihi ticaret bağları nedeniyle bu bölgeye özel bir akademik ilgisi vardır."
+        ],
+        "highlights": [
+          "Tek, kompakt bir kampüste birleşen tüm fakülteler",
+          "Güçlü kimya ve hukuk programları",
+          "Doğu/Güneydoğu Avrupa çalışmalarında özel uzmanlık"
+        ],
+        "pros": [
+          "Kimya ve hukukta güçlü, iyi donanımlı araştırma imkanları",
+          "UNESCO Dünya Mirası eski şehir merkezinde yaşam",
+          "Kompakt, ulaşımı kolay bir kampüs"
+        ],
+        "cons": [
+          "Regensburg orta ölçekli bir Bavyera şehri",
+          "Sınırlı büyük şehir gece hayatı",
+          "Daha az İngilizce lisans seçeneği"
+        ],
+        "badges": [],
+        "mapCity": "regensburg",
+        "quickFacts": {
+          "students": "~20.000",
+          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları",
+          "tuition": "Dönemlik ~150 € katkı payı"
+        },
+        "popularPrograms": [
+          "Kimya",
+          "Hukuk",
+          "Doğu Avrupa Çalışmaları"
+        ]
+      },
+      {
+        "slug": "passau",
+        "name": "Universität Passau",
+        "city": "Passau",
+        "type": "Universität",
+        "founded": "1978",
+        "description": "Üç nehrin birleştiği tarihi bir şehirde, hukuk, ekonomi ve bilgisayar bilimde güçlü, uluslararası odaklı küçük bir üniversite.",
+        "history": [
+          "1978'de kurulan, eski bir manastır binasında (Nikolakloster) yer alan Universität Passau, Tuna, Inn ve Ilz nehirlerinin birleştiği tarihi bir şehirde bulunur.",
+          "Hukuk, ekonomi ve bilgisayar bilimde güçlüdür; özellikle uluslararası değişim programları ve İngilizce eğitim seçenekleriyle tanınır."
+        ],
+        "highlights": [
+          "Üç nehrin birleştiği tarihi bir şehirde, eski bir manastırda kampüs",
+          "Güçlü hukuk, ekonomi ve bilgisayar bilimi programları",
+          "Uluslararası değişim programlarına özel önem"
+        ],
+        "pros": [
+          "Hukuk ve bilgisayar biliminde güçlü, uluslararası odaklı eğitim",
+          "Etkileyici, tarihi bir nehir kenti kampüsü",
+          "Küçük öğrenci sayısı sayesinde yakın akademik takip"
+        ],
+        "cons": [
+          "Passau küçük bir şehir, sınırlı büyük şehir imkanları",
+          "Popüler hukuk/ekonomi programlarında rekabet",
+          "Avusturya sınırına yakın, biraz uzak bir konum"
+        ],
+        "badges": [],
+        "mapCity": "passau",
+        "quickFacts": {
+          "students": "~11.000",
+          "language": "Ağırlıklı Almanca, hukuk/ekonomide bazı İngilizce yüksek lisans",
+          "tuition": "Dönemlik ~130 € katkı payı"
+        },
+        "popularPrograms": [
+          "Hukuk",
+          "Ekonomi",
+          "Bilgisayar Bilimi"
+        ]
+      },
+      {
+        "slug": "bayreuth",
+        "name": "Universität Bayreuth",
+        "city": "Bayreuth",
+        "type": "Universität",
+        "founded": "1975",
+        "description": "Spor bilimi ve Afrika çalışmalarında dünya çapında tanınan, Franken bölgesinde bir Bavyera üniversitesi.",
+        "history": [
+          "1975'te kurulan Universität Bayreuth, spor bilimi ve biyomedikal araştırmalarda güçlü bir programa sahiptir.",
+          "Bayreuth Afrika Çalışmaları enstitüsü dünya çapında tanınır; hukuk ve işletmeyi birleştiren disiplinler arası programlarıyla da bilinir."
+        ],
+        "highlights": [
+          "Dünya çapında tanınan Bayreuth Afrika Çalışmaları enstitüsü",
+          "Güçlü spor bilimi ve biyomedikal araştırma",
+          "Hukuk ve işletmeyi birleştiren disiplinler arası programlar"
+        ],
+        "pros": [
+          "Afrika çalışmaları ve spor biliminde niş, dünya çapında tanınan uzmanlık",
+          "Kompakt, yeşil bir kampüs",
+          "Uygun maliyetli bir Franken şehri"
+        ],
+        "cons": [
+          "Bayreuth orta ölçekli bir şehir, büyük şehir imkanları sınırlı",
+          "Sınırlı mühendislik/doğa bilimleri seçeneği",
+          "Daha az İngilizce lisans seçeneği"
+        ],
+        "badges": [],
+        "mapCity": "bayreuth",
+        "quickFacts": {
+          "students": "~13.000",
+          "language": "Ağırlıklı Almanca, Afrika çalışmalarında bazı İngilizce",
+          "tuition": "Dönemlik ~140 € katkı payı"
+        },
+        "popularPrograms": [
+          "Spor Bilimi",
+          "Afrika Çalışmaları",
+          "Hukuk ve İşletme"
+        ]
+      },
+      {
+        "slug": "augsburg",
+        "name": "Universität Augsburg",
+        "city": "Augsburg",
+        "type": "Universität",
+        "founded": "1970",
+        "description": "Münih yakınında, hukuk, ekonomi ve büyüyen bir dijital kampüsle bilgisayar bilimde güçlü bir üniversite.",
+        "history": [
+          "1970'te kurulan Universität Augsburg, hukuk, ekonomi ve öğretmen eğitiminde güçlü bir gelenek sürdürür.",
+          "Son yıllarda 'Digitalcampus' ile bilgisayar bilimi ve yapay zeka alanlarında hızla büyüyen bir araştırma profili geliştirmiştir."
+        ],
+        "highlights": [
+          "Hukuk ve ekonomide köklü bir gelenek",
+          "Yeni 'Digitalcampus' ile büyüyen bilgisayar bilimi/AI odağı",
+          "Güçlü öğretmen eğitimi programları"
+        ],
+        "pros": [
+          "Hukuk ve ekonomide sağlam, köklü bir eğitim",
+          "Münih'e yakınlık sayesinde iş piyasası erişimi",
+          "Büyüyen, modern bilgisayar bilimi tesisleri"
+        ],
+        "cons": [
+          "Popüler hukuk/ekonomi programlarında rekabet",
+          "Augsburg, Münih'in gölgesinde kalabiliyor",
+          "Daha az İngilizce lisans seçeneği"
+        ],
+        "badges": [],
+        "mapCity": "augsburg",
+        "quickFacts": {
+          "students": "~20.000",
+          "language": "Ağırlıklı Almanca, bilgisayar biliminde bazı İngilizce",
+          "tuition": "Dönemlik ~140 € katkı payı"
+        },
+        "popularPrograms": [
+          "Hukuk",
+          "Ekonomi",
+          "Bilgisayar Bilimi"
+        ]
+      },
+      {
+        "slug": "bamberg",
+        "name": "Otto-Friedrich-Universität Bamberg",
+        "city": "Bamberg",
+        "type": "Universität",
+        "founded": "1647",
+        "description": "UNESCO Dünya Mirası eski şehir merkezinde, beşeri bilimler ve sosyoloji araştırmalarında güçlü bir üniversite.",
+        "history": [
+          "1647'de kurulan, 1972'de modern bir üniversite olarak yeniden yapılanan Bamberg, UNESCO Dünya Mirası listesindeki tarihi şehir merkezine yayılmış bir kampüse sahiptir.",
+          "Beşeri bilimler, sosyoloji (Almanya'nın önemli anket/işgücü piyasası araştırma kurumlarına yakınlık) ve kültürel miras korumada güçlüdür."
+        ],
+        "highlights": [
+          "UNESCO Dünya Mirası eski şehir merkezinde bir kampüs",
+          "Sosyoloji ve işgücü piyasası araştırmalarında güçlü itibar",
+          "Kültürel miras koruma (Denkmalpflege) alanında öncü"
+        ],
+        "pros": [
+          "Tarihi, olağanüstü güzel bir şehirde eğitim",
+          "Sosyoloji ve beşeri bilimlerde güçlü araştırma",
+          "Küçük, samimi bir üniversite topluluğu"
+        ],
+        "cons": [
+          "Bamberg küçük bir şehir, sınırlı büyük şehir imkanları",
+          "Mühendislik/doğa bilimleri gibi alanlarda program bulunmuyor",
+          "Daha az İngilizce program"
+        ],
+        "badges": [],
+        "mapCity": "bamberg",
+        "quickFacts": {
+          "students": "~13.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~140 € katkı payı"
+        },
+        "popularPrograms": [
+          "Sosyoloji",
+          "Beşeri Bilimler",
+          "Kültürel Miras Koruma"
+        ]
+      },
+      {
+        "slug": "kueichstaett",
+        "name": "Katholische Universität Eichstätt-Ingolstadt (KU)",
+        "city": "Eichstätt/Ingolstadt",
+        "type": "Universität",
+        "founded": "1980",
+        "description": "Almanya'nın tek tam teşekküllü devlet onaylı Katolik üniversitesi; teoloji, eğitim ve (Ingolstadt kampüsünde) işletmede güçlü.",
+        "history": [
+          "1980'de kurulan KU, Almanya'da devlet tarafından tam olarak tanınan tek Katolik üniversitedir.",
+          "Ana kampüsü tarihi Eichstätt şehrinde, işletme fakültesi (WFI) ise Ingolstadt'ta yer alır; teoloji, eğitim bilimleri ve işletmede güçlüdür."
+        ],
+        "highlights": [
+          "Almanya'nın tek tam teşekküllü devlet onaylı Katolik üniversitesi",
+          "Eichstätt'te tarihi ana kampüs, Ingolstadt'ta işletme fakültesi (WFI)",
+          "Güçlü teoloji ve eğitim bilimleri programları"
+        ],
+        "pros": [
+          "Küçük, değer odaklı bir akademik topluluk",
+          "İşletme fakültesi (WFI) aracılığıyla Ingolstadt'ın otomotiv iş piyasasına erişim",
+          "Yakın öğrenci-akademisyen ilişkisi"
+        ],
+        "cons": [
+          "İki kampüse (Eichstätt/Ingolstadt) bölünmüş yapı",
+          "Sınırlı program yelpazesi (mühendislik/tıp yok)",
+          "Küçük şehir imkanları"
+        ],
+        "badges": [],
+        "mapCity": "ingolstadt",
+        "quickFacts": {
+          "students": "~5.000",
+          "language": "Ağırlıklı Almanca, işletmede bazı İngilizce programlar",
+          "tuition": "Dönemlik ~120 € katkı payı"
+        },
+        "popularPrograms": [
+          "İşletme (WFI)",
+          "Teoloji",
+          "Eğitim Bilimleri"
+        ]
+      },
+      {
+        "slug": "hohenheim",
+        "name": "Universität Hohenheim",
+        "city": "Stuttgart (Hohenheim)",
+        "type": "Universität",
+        "founded": "1818",
+        "description": "Barok bir sarayda konumlanan, tarım bilimleri ve beslenme bilimlerinde Almanya'nın önde gelen uzman üniversitesi.",
+        "history": [
+          "1818'de bir tarım akademisi olarak kurulan Universität Hohenheim, Stuttgart'ın Hohenheim semtindeki barok Schloss Hohenheim sarayında yer alır.",
+          "Tarım bilimleri, beslenme bilimleri ve işletme/ekonomide Almanya'nın önde gelen uzman üniversitelerinden biridir."
+        ],
+        "highlights": [
+          "Barok Schloss Hohenheim sarayında etkileyici bir kampüs",
+          "Tarım ve beslenme bilimlerinde Almanya'nın önde gelen uzmanlarından biri",
+          "Güçlü işletme ve ekonomi fakültesi"
+        ],
+        "pros": [
+          "Tarım/beslenme bilimlerinde niş, dünya çapında tanınan uzmanlık",
+          "Stuttgart'ın güçlü iş piyasasına erişim",
+          "Tarihi, güzel bir saray kampüsü"
+        ],
+        "cons": [
+          "AB dışı öğrenciler için Baden-Württemberg'in ek okul ücreti uygulanabilir",
+          "Sınırlı program yelpazesi (mühendislik/tıp yok)",
+          "Stuttgart Üniversitesi ile bazen karıştırılabiliyor"
+        ],
+        "badges": [],
+        "mapCity": "stuttgart",
+        "quickFacts": {
+          "students": "~10.000",
+          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları",
+          "tuition": "Dönemlik ~170 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+        },
+        "popularPrograms": [
+          "Tarım Bilimleri",
+          "Beslenme Bilimleri",
+          "İşletme"
+        ]
+      },
+      {
+        "slug": "ulm",
+        "name": "Universität Ulm",
+        "city": "Ulm",
+        "type": "Universität",
+        "founded": "1967",
+        "description": "Tuna kıyısında, tıp, matematik/aktüerya bilimi ve mühendislikte güçlü, kompakt bir üniversite.",
+        "history": [
+          "1967'de kurulan Universität Ulm, 'Oberer Eselsberg' adlı tek, kompakt bir kampüste eğitim verir.",
+          "Tıp, matematik (özellikle sigortacılık/aktüerya matematiğinde, şehirdeki büyük sigorta şirketleri sayesinde) ve mühendislikte güçlüdür."
+        ],
+        "highlights": [
+          "Sigortacılık matematiğinde (aktüerya) Almanya'nın önde gelen programlarından biri",
+          "Tek, kompakt bir kampüste birleşen fakülteler",
+          "Güçlü tıp ve mühendislik programları"
+        ],
+        "pros": [
+          "Aktüerya matematiğinde niş, dünya çapında tanınan bir uzmanlık",
+          "Kompakt, ulaşımı kolay bir kampüs",
+          "Sigorta ve teknoloji sektöründe güçlü iş piyasası"
+        ],
+        "cons": [
+          "AB dışı öğrenciler için Baden-Württemberg'in ek okul ücreti uygulanabilir",
+          "Ulm orta ölçekli bir şehir",
+          "Tıp bölümünde yüksek başvuru rekabeti"
+        ],
+        "badges": [],
+        "mapCity": "ulm",
+        "quickFacts": {
+          "students": "~10.000",
+          "language": "Ağırlıklı Almanca, matematik/mühendislikte bazı İngilizce yüksek lisans",
+          "tuition": "Dönemlik ~170 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+        },
+        "popularPrograms": [
+          "Tıp",
+          "Matematik/Aktüerya Bilimi",
+          "Mühendislik"
+        ]
+      },
+      {
+        "slug": "saarland",
+        "name": "Universität des Saarlandes",
+        "city": "Saarbrücken",
+        "type": "Universität",
+        "founded": "1948",
+        "description": "Fransız sınırında, bilgisayar bilimi ve yapay zekada Avrupa çapında tanınan güçlü bir üniversite.",
+        "history": [
+          "1948'de, o dönem Fransız yönetimindeki Saarland'da, Alman-Fransız akademik işbirliğine özel önem vererek kuruldu.",
+          "Saarland Informatics Campus'a (Max Planck Bilişim Enstitüsü ve DFKI - Alman Yapay Zeka Araştırma Merkezi'ne ev sahipliği yapar) ev sahipliği yapması sayesinde bilgisayar bilimi ve yapay zekada Avrupa'nın önde gelen merkezlerinden biridir; hukuk ve tıpta da güçlüdür."
+        ],
+        "highlights": [
+          "Max Planck Bilişim Enstitüsü ve DFKI'ye ev sahipliği yapan Saarland Informatics Campus",
+          "Bilgisayar bilimi ve yapay zekada Avrupa çapında üst sıralarda",
+          "Fransa sınırına yakınlıkla güçlü Alman-Fransız akademik bağlar"
+        ],
+        "pros": [
+          "Bilgisayar bilimi ve yapay zekada dünya çapında tanınan araştırma fırsatları",
+          "Fransa'ya yakınlık sayesinde ikili dil/kültür avantajı",
+          "Uygun maliyetli bir üniversite şehri"
+        ],
+        "cons": [
+          "Saarbrücken, büyük Alman şehirlerine kıyasla daha az tanınıyor",
+          "Popüler bilgisayar bilimi programlarında yüksek rekabet",
+          "Almanya'nın en küçük eyaletinde, biraz izole bir konum"
+        ],
+        "badges": [],
+        "mapCity": "saarbruecken",
+        "quickFacts": {
+          "students": "~17.000",
+          "language": "Ağırlıklı Almanca, bilgisayar biliminde çok sayıda İngilizce program",
+          "tuition": "Dönemlik ~285 € katkı payı"
+        },
+        "popularPrograms": [
+          "Bilgisayar Bilimi",
+          "Yapay Zeka",
+          "Hukuk"
+        ]
+      },
+      {
+        "slug": "rptu",
+        "name": "RPTU Kaiserslautern-Landau",
+        "city": "Kaiserslautern/Landau",
+        "type": "Universität",
+        "founded": "1970",
+        "description": "2023'te birleşen, Kaiserslautern'de teknoloji ve Landau'da eğitim/beşeri bilimlerde uzmanlaşmış iki şehirli bir üniversite.",
+        "history": [
+          "2023'te, 1970'te kurulan TU Kaiserslautern ile Koblenz-Landau Üniversitesi'nin Landau kampüsünün birleşmesiyle oluşturuldu.",
+          "Kaiserslautern kampüsü bilgisayar bilimi ve mühendislikte güçlüdür (DFKI'nin bir şubesine ve çeşitli Fraunhofer enstitülerine ev sahipliği yapar); Landau kampüsü ise eğitim bilimleri, psikoloji ve beşeri bilimlerde uzmanlaşmıştır."
+        ],
+        "highlights": [
+          "İki şehirli, iki uzmanlıklı benzersiz bir yapı (teknoloji + eğitim/beşeri bilimler)",
+          "Kaiserslautern'de DFKI ve Fraunhofer enstitülerine yakınlık",
+          "Landau'da güçlü eğitim bilimleri ve psikoloji programları"
+        ],
+        "pros": [
+          "Bilgisayar bilimi ve mühendislikte güçlü araştırma altyapısı (Kaiserslautern)",
+          "Eğitim/psikolojide güçlü, insan odaklı programlar (Landau)",
+          "Uygun maliyetli iki üniversite şehri"
+        ],
+        "cons": [
+          "İki şehre (Kaiserslautern/Landau) bölünmüş, biraz kafa karıştırıcı yapı",
+          "Her iki şehir de küçük-orta ölçekli",
+          "Yeni birleşme nedeniyle kurumsal kimlik hâlâ oturuyor"
+        ],
+        "badges": [],
+        "mapCity": "kaiserslautern",
+        "quickFacts": {
+          "students": "~17.000",
+          "language": "Ağırlıklı Almanca, bilgisayar biliminde çok sayıda İngilizce program",
+          "tuition": "Dönemlik ~270 € katkı payı"
+        },
+        "popularPrograms": [
+          "Bilgisayar Bilimi",
+          "Eğitim Bilimleri",
+          "Mühendislik"
+        ]
+      },
+      {
+        "slug": "fernunihagen",
+        "name": "FernUniversität in Hagen",
+        "city": "Hagen",
+        "type": "Universität",
+        "founded": "1974",
+        "description": "Almanya'nın tek devlet uzaktan eğitim üniversitesi; çalışan profesyoneller için esnek, öğrenci sayısı bakımından ülkenin en büyük üniversitesi.",
+        "history": [
+          "1974'te kurulan FernUniversität, Almanya'nın tek devlet destekli uzaktan eğitim üniversitesidir ve öğrenci sayısı bakımından ülkenin en büyük üniversitesidir.",
+          "Çalışırken veya ailevi sorumluluklarıyla eş zamanlı okumak isteyen öğrenciler için tasarlanmıştır; hukuk, işletme, bilgisayar bilimi ve psikolojide esnek, uzaktan programlar sunar."
+        ],
+        "highlights": [
+          "Almanya'nın tek devlet uzaktan eğitim üniversitesi",
+          "Öğrenci sayısı bakımından Almanya'nın en büyük üniversitesi",
+          "Çalışan profesyoneller için tasarlanmış esnek, part-time program yapısı"
+        ],
+        "pros": [
+          "Çalışırken veya yurt dışından okuma imkanı sunan benzersiz esneklik",
+          "Düşük maliyetli, esnek bir eğitim modeli",
+          "Hukuk ve işletmede güçlü, tanınan programlar"
+        ],
+        "cons": [
+          "Geleneksel kampüs deneyimi veya sosyal hayat sunmuyor",
+          "Öz disiplin ve zaman yönetimi gerektiriyor",
+          "Almanca dil yeterliliği çoğu program için şart"
+        ],
+        "badges": [],
+        "mapCity": "hagen",
+        "quickFacts": {
+          "students": "~60.000 (uzaktan eğitim)",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~130 € (ders başına ek ücretlerle)"
+        },
+        "popularPrograms": [
+          "Hukuk",
+          "İşletme",
+          "Psikoloji"
+        ]
+      },
+      {
+        "slug": "oldenburg",
+        "name": "Carl von Ossietzky Universität Oldenburg",
+        "city": "Oldenburg",
+        "type": "Universität",
+        "founded": "1974",
+        "description": "Kuzey Denizi'ne yakınlığıyla, rüzgar enerjisi araştırmalarında Almanya'nın önde gelen merkezlerinden biri.",
+        "history": [
+          "1974'te kurulan üniversite, adını Nobel Barış Ödülü sahibi gazeteci Carl von Ossietzky'den alır.",
+          "Kuzey Denizi'ne yakınlığı sayesinde rüzgar enerjisi araştırmalarında (ForWind enstitüsü) Almanya'nın önde gelen merkezlerinden biridir; eğitim bilimleri ve müzikolojide de güçlüdür."
+        ],
+        "highlights": [
+          "Rüzgar enerjisi araştırmalarında Almanya'nın önde gelen merkezlerinden biri (ForWind)",
+          "Nobel Barış Ödülü sahibi Carl von Ossietzky'nin adını taşıyor",
+          "Güçlü eğitim bilimleri ve müzikoloji programları"
+        ],
+        "pros": [
+          "Yenilenebilir enerji araştırmalarında niş, güncel bir uzmanlık",
+          "Kuzey Almanya'da uygun maliyetli, yeşil bir şehir",
+          "Kompakt, öğrenci dostu kampüs"
+        ],
+        "cons": [
+          "Oldenburg orta ölçekli bir şehir, büyük şehir imkanları sınırlı",
+          "Sınırlı tıp/mühendislik program yelpazesi",
+          "Daha az uluslararası tanınırlık"
+        ],
+        "badges": [],
+        "mapCity": "oldenburg",
+        "quickFacts": {
+          "students": "~15.000",
+          "language": "Ağırlıklı Almanca, enerji araştırmalarında bazı İngilizce",
+          "tuition": "Dönemlik ~280 € katkı payı"
+        },
+        "popularPrograms": [
+          "Rüzgar Enerjisi/Yenilenebilir Enerji",
+          "Eğitim Bilimleri",
+          "Müzikoloji"
+        ]
+      },
+      {
+        "slug": "hildesheim",
+        "name": "Universität Hildesheim",
+        "city": "Hildesheim",
+        "type": "Universität",
+        "founded": "1978",
+        "description": "Beşeri bilimler, kültürel çalışmalar ve çeviribilimde uzmanlaşmış, küçük ama odaklanmış bir üniversite.",
+        "history": [
+          "1978'de kurulan Universität Hildesheim, beşeri bilimler, kültürel/medya çalışmaları ve psikolojide uzmanlaşmıştır.",
+          "Almanya'nın önde gelen Çeviribilim Enstitülerinden birine ev sahipliği yapar; uluslararası kültürel çalışmalarda da güçlüdür."
+        ],
+        "highlights": [
+          "Almanya'nın önde gelen Çeviribilim Enstitülerinden birine ev sahipliği",
+          "Güçlü kültürel/medya çalışmaları programları",
+          "Küçük, odaklanmış beşeri bilimler topluluğu"
+        ],
+        "pros": [
+          "Çeviribilim ve kültürel çalışmalarda niş, güçlü bir uzmanlık",
+          "Küçük öğrenci sayısı sayesinde yakın akademik takip",
+          "Uygun maliyetli, tarihi bir şehir"
+        ],
+        "cons": [
+          "Çok sınırlı program yelpazesi (esas olarak beşeri/sosyal bilimler)",
+          "Hildesheim küçük bir şehir",
+          "Mühendislik/doğa bilimleri programı bulunmuyor"
+        ],
+        "badges": [],
+        "mapCity": "hildesheim",
+        "quickFacts": {
+          "students": "~8.000",
+          "language": "Ağırlıklı Almanca, çeviribilimde bazı İngilizce",
+          "tuition": "Dönemlik ~280 € katkı payı"
+        },
+        "popularPrograms": [
+          "Çeviribilim",
+          "Kültürel/Medya Çalışmaları",
+          "Psikoloji"
+        ]
+      },
+      {
+        "slug": "leuphana",
+        "name": "Leuphana Universität Lüneburg",
+        "city": "Lüneburg",
+        "type": "Universität",
+        "founded": "1946",
+        "description": "Daniel Libeskind tasarımı çarpıcı ana binasıyla tanınan, sürdürülebilirlik bilimi ve işletmede yenilikçi bir üniversite.",
+        "history": [
+          "Kökleri 1946'daki bir öğretmen okuluna uzanır; 2007'de 'Leuphana' adıyla yeniden markalandı ve tüm birinci sınıf öğrencilerinin katıldığı disiplinler arası 'Leuphana Semester' modelini başlattı.",
+          "Ünlü mimar Daniel Libeskind tarafından tasarlanan çarpıcı merkezi bina kampüsün simgesidir; sürdürülebilirlik bilimi, işletme ve eğitimde güçlüdür."
+        ],
+        "highlights": [
+          "Daniel Libeskind tarafından tasarlanan çarpıcı merkezi bina",
+          "Yenilikçi, disiplinler arası 'Leuphana Semester' modeli",
+          "Güçlü sürdürülebilirlik bilimi ve işletme programları"
+        ],
+        "pros": [
+          "Sürdürülebilirlik bilimi ve işletmede yenilikçi, güncel programlar",
+          "Mimari olarak etkileyici, modern bir kampüs",
+          "Hamburg'a yakın, tarihi bir Hanseatic şehir"
+        ],
+        "cons": [
+          "Yenilikçi 'Leuphana Semester' modeli herkese uygun olmayabilir",
+          "Lüneburg orta ölçekli bir şehir",
+          "Sınırlı mühendislik/tıp seçeneği"
+        ],
+        "badges": [],
+        "mapCity": "lueneburg",
+        "quickFacts": {
+          "students": "~10.000",
+          "language": "Ağırlıklı Almanca, sürdürülebilirlik/işletmede bazı İngilizce",
+          "tuition": "Dönemlik ~280 € katkı payı"
+        },
+        "popularPrograms": [
+          "Sürdürülebilirlik Bilimi",
+          "İşletme",
+          "Eğitim Bilimleri"
+        ]
+      },
+      {
+        "slug": "tuclausthal",
+        "name": "Technische Universität Clausthal",
+        "city": "Clausthal-Zellerfeld",
+        "type": "Universität",
+        "founded": "1775",
+        "description": "Harz Dağları'nda, hammadde ve maden mühendisliğinde uzmanlaşmış, Almanya'nın en eski teknik üniversitelerinden biri.",
+        "history": [
+          "1775'te bir maden akademisi (Bergakademie) olarak kurulan TU Clausthal, Almanya'nın en eski teknik yükseköğretim kurumlarından biridir.",
+          "Küçük Harz Dağları kasabasında yer alan üniversite, hammadde/maden mühendisliği, malzeme bilimi ve enerji teknolojilerinde son derece uzmanlaşmış bir profile sahiptir."
+        ],
+        "highlights": [
+          "1775'te kurulan, Almanya'nın en eski teknik üniversitelerinden biri",
+          "Hammadde ve maden mühendisliğinde benzersiz bir uzmanlık",
+          "Küçük, sıkı bağlı bir öğrenci topluluğu"
+        ],
+        "pros": [
+          "Hammadde/maden mühendisliğinde dünya çapında nadir bulunan bir uzmanlık",
+          "Çok düşük yaşam maliyeti",
+          "Çok yakın öğrenci-akademisyen ilişkisi"
+        ],
+        "cons": [
+          "Çok küçük bir dağ kasabasında, büyük şehir imkanları yok",
+          "Çok dar bir program yelpazesi",
+          "Kış ayları soğuk ve ulaşım zor olabilir"
+        ],
+        "badges": [],
+        "mapCity": "clausthal",
+        "quickFacts": {
+          "students": "~3.500",
+          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları",
+          "tuition": "Dönemlik ~250 € katkı payı"
+        },
+        "popularPrograms": [
+          "Maden Mühendisliği",
+          "Malzeme Bilimi",
+          "Enerji Teknolojileri"
+        ]
+      },
+      {
+        "slug": "vechta",
+        "name": "Universität Vechta",
+        "city": "Vechta",
+        "type": "Universität",
+        "founded": "1830",
+        "description": "Almanya'nın en küçük devlet üniversitelerinden biri; eğitim bilimleri, sosyal çalışma ve gerontolojide uzmanlaşmış.",
+        "history": [
+          "Kökleri 1830'daki bir öğretmen eğitimi kurumuna uzanan Universität Vechta, 1995'te üniversite statüsü kazandı.",
+          "Eğitim bilimleri, sosyal çalışma, spor bilimi ve gerontolojide (yaşlanma araştırmaları) uzmanlaşmış, Almanya'nın en küçük devlet üniversitelerinden biridir."
+        ],
+        "highlights": [
+          "Almanya'nın en küçük devlet üniversitelerinden biri",
+          "Gerontoloji (yaşlanma araştırmaları) alanında niş bir uzmanlık",
+          "Güçlü eğitim bilimleri ve sosyal çalışma programları"
+        ],
+        "pros": [
+          "Çok küçük öğrenci sayısı sayesinde son derece yakın akademik takip",
+          "Gerontoloji ve sosyal çalışmada niş bir uzmanlık",
+          "Çok uygun maliyetli, sakin bir kasaba"
+        ],
+        "cons": [
+          "Çok sınırlı program yelpazesi",
+          "Vechta çok küçük bir kasaba, büyük şehir imkanları yok",
+          "Sınırlı uluslararası öğrenci topluluğu"
+        ],
+        "badges": [],
+        "mapCity": "vechta",
+        "quickFacts": {
+          "students": "~5.500",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~280 € katkı payı"
+        },
+        "popularPrograms": [
+          "Eğitim Bilimleri",
+          "Sosyal Çalışma",
+          "Gerontoloji"
+        ]
       }
     ],
     "cta": {
@@ -2260,7 +3586,8 @@
       "title": "Almanya Haritasında Üniversitelerimiz",
       "subtitle": "Danışmanlık verdiğimiz üniversitelerin şehirlere göre dağılımını inceleyin.",
       "hint": "Bir şehir işaretine tıklayarak o şehirdeki üniversiteleri görün.",
-      "emptyState": "Üniversiteleri görmek için haritadan bir şehir seçin."
+      "emptyState": "Üniversiteleri görmek için haritadan bir şehir seçin.",
+      "zoomOut": "Haritaya Dön"
     }
   },
   "about": {
@@ -2272,7 +3599,7 @@
       "title": "Hikayemiz",
       "paragraphs": [
         "Studiva, 2026 yılında İstanbul'da, öğrencilerin Avrupa'nın önde gelen üniversitelerine şeffaf ve güvenilir bir süreçle ulaşmasını sağlamak amacıyla kuruldu.",
-        "Almanya genelinde 45'ten fazla üniversite hakkında güncel bilgiye sahip bir ekibiz; Exzellenzuniversität'lerden TU9 teknik üniversitelerine, Hochschule'lerden Dual Studium programlarına kadar her kurumun başvuru sistemini, vize gereksinimlerini ve akademik takvimini yakından takip ediyoruz.",
+        "Almanya genelinde 80'den fazla üniversite hakkında güncel bilgiye sahip bir ekibiz; Exzellenzuniversität'lerden TU9 teknik üniversitelerine, Hochschule'lerden Dual Studium programlarına kadar her kurumun başvuru sistemini, vize gereksinimlerini ve akademik takvimini yakından takip ediyoruz.",
         "Her öğrencinin akademik geçmişi, bütçesi ve hedefleri farklıdır; bu yüzden tek bir şablona sıkışmadan, size en uygun ülke ve üniversiteyi birlikte belirliyoruz. Yeni kurulan bir firma olarak şişirilmiş rakamlar yerine somut bir taahhüt sunuyoruz: sürecinizi eksiksiz tamamladığınızda kabul garantisi."
       ]
     },
@@ -2315,7 +3642,7 @@
         "label": "Kabul Garantisi"
       },
       {
-        "value": "48+",
+        "value": "82+",
         "label": "Üniversite Seçeneği"
       }
     ]

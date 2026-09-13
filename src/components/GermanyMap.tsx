@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, X } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { GERMANY_MAP_PATHS, GERMANY_MAP_VIEWBOX } from "@/lib/germanyMapPaths";
 
@@ -52,7 +52,49 @@ const CITY_COORDS: Record<string, [number, number]> = {
   reutlingen: [34, 77],
   osnabrueck: [25, 34],
   wilhelmshaven: [25, 21],
+  duesseldorf: [14, 47],
+  dortmund: [21, 42],
+  bielefeld: [28, 38],
+  paderborn: [30, 41],
+  siegen: [24, 48],
+  wuppertal: [18, 46],
+  luebeck: [41, 15],
+  rostock: [48, 12],
+  greifswald: [56, 12],
+  magdeburg: [54, 33],
+  halle: [54, 45],
+  leipzig: [58, 46],
+  chemnitz: [63, 51],
+  potsdam: [65, 32],
+  frankfurtoder: [78, 31],
+  cottbus: [76, 40],
+  wuerzburg: [47, 62],
+  regensburg: [66, 76],
+  passau: [73, 84],
+  bayreuth: [60, 63],
+  augsburg: [52, 80],
+  bamberg: [55, 64],
+  ulm: [43, 78],
+  saarbruecken: [13, 70],
+  kaiserslautern: [20, 65],
+  hagen: [20, 44],
+  oldenburg: [24, 27],
+  hildesheim: [39, 39],
+  lueneburg: [42, 23],
+  clausthal: [43, 39],
+  vechta: [26, 30],
 };
+
+const ZOOM_SCALE = 4.5;
+const SPIDERFY_RADIUS = 1.8;
+
+function spiderfyOffsets(count: number): Array<[number, number]> {
+  if (count <= 1) return [[0, 0]];
+  return Array.from({ length: count }, (_, i) => {
+    const angle = (2 * Math.PI * i) / count - Math.PI / 2;
+    return [Math.cos(angle) * SPIDERFY_RADIUS, Math.sin(angle) * SPIDERFY_RADIUS];
+  });
+}
 
 export default function GermanyMap({
   items,
@@ -68,10 +110,12 @@ export default function GermanyMap({
     hochschule: string;
     hint: string;
     emptyState: string;
+    zoomOut: string;
   };
 }) {
   const [filter, setFilter] = useState<FilterKey>("all");
   const [selected, setSelected] = useState<string | null>(null);
+  const [zoomedCity, setZoomedCity] = useState<string | null>(null);
 
   const cityGroups = useMemo(() => {
     const groups: Record<string, UniversityItem[]> = {};
@@ -90,6 +134,12 @@ export default function GermanyMap({
   };
 
   const selectedItems = selected ? (cityGroups[selected] ?? []) : [];
+  const zoomOrigin = zoomedCity ? CITY_COORDS[zoomedCity] : null;
+
+  function handleCityClick(city: string) {
+    setSelected(city === selected ? null : city);
+    setZoomedCity(city);
+  }
 
   return (
     <div>
@@ -113,45 +163,93 @@ export default function GermanyMap({
       <p className="mt-4 text-center text-xs text-foreground-muted">{labels.hint}</p>
 
       <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-5">
-        <div className="relative mx-auto w-full max-w-md lg:col-span-3 lg:max-w-none" style={{ aspectRatio: "2480 / 3324" }}>
-          <svg viewBox={GERMANY_MAP_VIEWBOX} className="absolute inset-0 h-full w-full" aria-hidden>
-            {GERMANY_MAP_PATHS.map((d, i) => (
-              <path key={i} d={d} className="fill-brand-light stroke-brand/40" strokeWidth={7} />
-            ))}
-          </svg>
+        <div
+          className="relative mx-auto w-full max-w-md overflow-hidden rounded-2xl lg:col-span-3 lg:max-w-none"
+          style={{ aspectRatio: "2480 / 3324" }}
+        >
+          <div
+            className="absolute inset-0 transition-transform duration-500 ease-out"
+            style={{
+              transform: zoomOrigin ? `scale(${ZOOM_SCALE})` : "scale(1)",
+              transformOrigin: zoomOrigin ? `${zoomOrigin[0]}% ${zoomOrigin[1]}%` : "50% 50%",
+            }}
+          >
+            <svg viewBox={GERMANY_MAP_VIEWBOX} className="absolute inset-0 h-full w-full" aria-hidden>
+              {GERMANY_MAP_PATHS.map((d, i) => (
+                <path key={i} d={d} className="fill-brand-light stroke-brand/40" strokeWidth={7} />
+              ))}
+            </svg>
 
-          {Object.entries(cityGroups).map(([city, unis]) => {
-            const coords = CITY_COORDS[city];
-            if (!coords) return null;
-            const [x, y] = coords;
-            const active = unis.some(matchesFilter);
-            const hasExcellence = unis.some((u) => u.badges.includes("excellence"));
-            const size = 16 + Math.min(unis.length, 4) * 6;
-            const isSelected = selected === city;
-            return (
-              <button
-                key={city}
-                type="button"
-                onClick={() => setSelected(isSelected ? null : city)}
-                title={unis.map((u) => u.name).join(", ")}
-                className={`group absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 ${
-                  active ? "opacity-100" : "opacity-30 grayscale"
-                } ${isSelected ? "scale-125" : "hover:scale-125"}`}
-                style={{ left: `${x}%`, top: `${y}%`, width: size, height: size }}
-              >
-                <span
-                  className={`absolute inset-0 rounded-full bg-brand shadow-sm ${
-                    isSelected ? "ring-4 ring-brand/30" : ""
-                  } ${hasExcellence ? "ring-2 ring-accent" : ""}`}
-                />
-                {unis.length > 1 && (
-                  <span className="absolute inset-0 flex items-center justify-center text-[9px] font-bold text-white">
-                    {unis.length}
-                  </span>
-                )}
-              </button>
-            );
-          })}
+            {Object.entries(cityGroups).map(([city, unis]) => {
+              const coords = CITY_COORDS[city];
+              if (!coords) return null;
+              const [x, y] = coords;
+              const active = unis.some(matchesFilter);
+              const hasExcellence = unis.some((u) => u.badges.includes("excellence"));
+              const isSelected = selected === city;
+              const isExploded = zoomedCity === city && unis.length > 1;
+
+              if (isExploded) {
+                const offsets = spiderfyOffsets(unis.length);
+                return unis.map((uni, i) => {
+                  const [dx, dy] = offsets[i];
+                  return (
+                    <Link
+                      key={uni.slug}
+                      href={`/universities/${uni.slug}`}
+                      title={uni.name}
+                      className={`group absolute flex -translate-x-1/2 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full transition-all duration-300 ease-out hover:scale-125 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 ${
+                        matchesFilter(uni) ? "opacity-100" : "opacity-30 grayscale"
+                      }`}
+                      style={{ left: `${x + dx}%`, top: `${y + dy}%`, width: 9, height: 9 }}
+                    >
+                      <span
+                        className={`absolute inset-0 rounded-full bg-brand shadow-sm ${
+                          uni.badges.includes("excellence") ? "ring-2 ring-accent" : ""
+                        }`}
+                      />
+                    </Link>
+                  );
+                });
+              }
+
+              const size = 16 + Math.min(unis.length, 4) * 6;
+              return (
+                <button
+                  key={city}
+                  type="button"
+                  onClick={() => handleCityClick(city)}
+                  title={unis.map((u) => u.name).join(", ")}
+                  className={`group absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 ${
+                    active ? "opacity-100" : "opacity-30 grayscale"
+                  } ${isSelected ? "scale-125" : "hover:scale-125"}`}
+                  style={{ left: `${x}%`, top: `${y}%`, width: size, height: size }}
+                >
+                  <span
+                    className={`absolute inset-0 rounded-full bg-brand shadow-sm ${
+                      isSelected ? "ring-4 ring-brand/30" : ""
+                    } ${hasExcellence ? "ring-2 ring-accent" : ""}`}
+                  />
+                  {unis.length > 1 && (
+                    <span className="absolute inset-0 flex items-center justify-center text-[9px] font-bold text-white">
+                      {unis.length}
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+
+          {zoomedCity && (
+            <button
+              type="button"
+              onClick={() => setZoomedCity(null)}
+              className="absolute right-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-surface/95 px-3 py-1.5 text-xs font-semibold text-foreground shadow-sm backdrop-blur transition-all duration-200 ease-out hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
+            >
+              <X size={13} />
+              {labels.zoomOut}
+            </button>
+          )}
         </div>
 
         <div className="lg:col-span-2">
