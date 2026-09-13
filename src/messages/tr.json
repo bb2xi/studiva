@@ -3667,7 +3667,8 @@
     "map": {
       "title": "Almanya Haritasında Üniversitelerimiz",
       "subtitle": "Danışmanlık verdiğimiz üniversitelerin şehirlere göre dağılımını inceleyin.",
-      "hint": "Bir işarete tıklayarak üniversite detaylarını görün; haritayı yakınlaştırıp kaydırabilirsiniz."
+      "hint": "Bir işarete tıklayarak üniversite detaylarını görün; haritayı yakınlaştırıp kaydırabilirsiniz.",
+      "zoomHint": "Yakınlaştırmak için haritaya tıklayın"
     },
     "search": {
       "placeholder": "Üniversite adı veya şehir ara...",

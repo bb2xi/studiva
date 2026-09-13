@@ -6,7 +6,9 @@ import "leaflet.markercluster/dist/MarkerCluster.css";
 import "leaflet.markercluster/dist/MarkerCluster.Default.css";
 import L from "leaflet";
 import "leaflet.markercluster";
+import { MousePointerClick } from "lucide-react";
 import { universityLogos } from "@/lib/universityMedia";
+import { GERMANY_BORDER_PARTS, GERMANY_BBOX } from "@/lib/germanyBorder";
 
 type UniversityItem = {
   slug: string;
@@ -17,15 +19,6 @@ type UniversityItem = {
   lat: number;
   lng: number;
 };
-
-type FilterKey = "all" | "tu9" | "excellence" | "hochschule";
-
-function matchesFilter(item: UniversityItem, filter: FilterKey) {
-  if (filter === "all") return true;
-  if (filter === "tu9") return item.badges.includes("tu9");
-  if (filter === "excellence") return item.badges.includes("excellence");
-  return item.type !== "Universität";
-}
 
 function markerHtml(item: UniversityItem) {
   const logo = universityLogos[item.slug];
@@ -59,37 +52,51 @@ function popupHtml(item: UniversityItem, locale: string) {
   </div>`;
 }
 
+// A generous rectangle far outside Germany's bbox, used as the mask's outer ring.
+const WORLD_RING: [number, number][] = [
+  [70, -40],
+  [70, 60],
+  [30, 60],
+  [30, -40],
+];
+
 export default function GermanyMap({
   items,
   locale,
-  labels,
+  hint,
+  zoomHint,
 }: {
   items: UniversityItem[];
   locale: string;
-  labels: {
-    all: string;
-    tu9: string;
-    excellence: string;
-    hochschule: string;
-    hint: string;
-  };
+  hint: string;
+  zoomHint: string;
 }) {
-  const [filter, setFilter] = useState<FilterKey>("all");
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<L.Map | null>(null);
   const clusterRef = useRef<L.MarkerClusterGroup | null>(null);
+  const [scrollZoomActive, setScrollZoomActive] = useState(false);
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;
 
+    const bgColor =
+      getComputedStyle(document.documentElement).getPropertyValue("--background").trim() || "#ffffff";
+    const bounds = L.latLngBounds(
+      [GERMANY_BBOX.minLat - 1.2, GERMANY_BBOX.minLng - 1.8],
+      [GERMANY_BBOX.maxLat + 1.2, GERMANY_BBOX.maxLng + 1.8]
+    );
+
     const map = L.map(containerRef.current, {
       center: [51.1657, 10.4515],
       zoom: 6,
-      minZoom: 5,
+      minZoom: 6,
       maxZoom: 17,
       scrollWheelZoom: false,
+      maxBounds: bounds.pad(0.15),
+      maxBoundsViscosity: 1,
     });
     mapRef.current = map;
+    map.fitBounds(bounds, { animate: false });
 
     L.tileLayer(
       "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
@@ -98,6 +105,27 @@ export default function GermanyMap({
         maxZoom: 17,
       }
     ).addTo(map);
+
+    // Mask everything outside Germany's real border with the page background,
+    // so only Germany's own territory shows satellite imagery.
+    const holes = GERMANY_BORDER_PARTS.flatMap((part) => part);
+    L.polygon([WORLD_RING, ...holes], {
+      stroke: false,
+      fillColor: bgColor,
+      fillOpacity: 1,
+      interactive: false,
+    }).addTo(map);
+
+    // A crisp coastline/border outline on top, for a proper cartographic look.
+    for (const part of GERMANY_BORDER_PARTS) {
+      L.polygon(part, {
+        fill: false,
+        color: "#0068ff",
+        weight: 1.5,
+        opacity: 0.85,
+        interactive: false,
+      }).addTo(map);
+    }
 
     const cluster = L.markerClusterGroup({
       maxClusterRadius: 45,
@@ -115,6 +143,13 @@ export default function GermanyMap({
     clusterRef.current = cluster;
     map.addLayer(cluster);
 
+    const activateScrollZoom = () => {
+      map.scrollWheelZoom.enable();
+      setScrollZoomActive(true);
+    };
+    map.once("click", activateScrollZoom);
+    map.once("dragstart", activateScrollZoom);
+
     return () => {
       map.remove();
       mapRef.current = null;
@@ -126,43 +161,34 @@ export default function GermanyMap({
     const cluster = clusterRef.current;
     if (!cluster) return;
     cluster.clearLayers();
-    const markers = items
-      .filter((item) => matchesFilter(item, filter))
-      .map((item) => {
-        const marker = L.marker([item.lat, item.lng], {
-          icon: L.divIcon({ html: markerHtml(item), className: "", iconSize: L.point(34, 34) }),
-        });
-        marker.bindPopup(popupHtml(item, locale));
-        return marker;
+    const markers = items.map((item) => {
+      const marker = L.marker([item.lat, item.lng], {
+        icon: L.divIcon({ html: markerHtml(item), className: "", iconSize: L.point(34, 34) }),
       });
+      marker.bindPopup(popupHtml(item, locale));
+      return marker;
+    });
     cluster.addLayers(markers);
-  }, [items, filter, locale]);
+  }, [items, locale]);
 
   return (
     <div>
-      <div className="flex flex-wrap justify-center gap-2">
-        {(["all", "tu9", "excellence", "hochschule"] as FilterKey[]).map((key) => (
-          <button
-            key={key}
-            type="button"
-            onClick={() => setFilter(key)}
-            className={`inline-flex cursor-pointer items-center gap-1.5 rounded-full border px-4 py-2 text-sm font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 ${
-              filter === key
-                ? "border-brand bg-brand text-white"
-                : "border-border-strong bg-surface text-foreground-secondary hover:-translate-y-0.5 hover:border-brand hover:text-brand"
-            }`}
-          >
-            {labels[key]}
-          </button>
-        ))}
+      <p className="text-center text-xs text-foreground-muted">{hint}</p>
+
+      <div className="relative mt-6">
+        <div
+          ref={containerRef}
+          className="h-[480px] w-full overflow-hidden rounded-2xl border border-border shadow-sm sm:h-[560px] lg:h-[640px]"
+        />
+        {!scrollZoomActive && (
+          <div className="pointer-events-none absolute bottom-3 left-1/2 z-[400] -translate-x-1/2 rounded-full bg-slate-950/80 px-3.5 py-1.5 text-xs font-medium text-white shadow-sm backdrop-blur">
+            <span className="flex items-center gap-1.5">
+              <MousePointerClick size={13} />
+              {zoomHint}
+            </span>
+          </div>
+        )}
       </div>
-
-      <p className="mt-4 text-center text-xs text-foreground-muted">{labels.hint}</p>
-
-      <div
-        ref={containerRef}
-        className="mt-6 h-[480px] w-full overflow-hidden rounded-2xl border border-border shadow-sm sm:h-[560px] lg:h-[640px]"
-      />
     </div>
   );
 }

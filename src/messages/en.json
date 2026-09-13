@@ -3667,7 +3667,8 @@
     "map": {
       "title": "Our Universities on the Map of Germany",
       "subtitle": "Explore where the universities we advise on are located.",
-      "hint": "Click a marker to see university details; you can zoom and pan the map."
+      "hint": "Click a marker to see university details; you can zoom and pan the map.",
+      "zoomHint": "Click the map to enable zoom"
     },
     "search": {
       "placeholder": "Search by university name or city...",

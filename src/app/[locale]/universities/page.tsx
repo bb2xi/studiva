@@ -37,7 +37,7 @@ export default async function UniversitiesPage({
   const t = await getTranslations({ locale, namespace: "universities" });
   const items = t.raw("items") as UniversityItem[];
   const filters = t.raw("filters") as Record<string, string>;
-  const map = t.raw("map") as { title: string; subtitle: string; hint: string };
+  const map = t.raw("map") as { title: string; subtitle: string; hint: string; zoomHint: string };
   const search = t.raw("search") as { placeholder: string; noResults: string };
 
   return (
@@ -49,14 +49,9 @@ export default async function UniversitiesPage({
         locale={locale}
         mapTitle={map.title}
         mapSubtitle={map.subtitle}
-        mapLabels={{
-          all: filters.all,
-          tu9: filters.tu9,
-          excellence: filters.excellence,
-          hochschule: filters.hochschule,
-          hint: map.hint,
-        }}
-        browserLabels={{
+        mapHint={map.hint}
+        mapZoomHint={map.zoomHint}
+        filterLabels={{
           all: filters.all,
           universitat: filters.universitat,
           hochschule: filters.hochschule,
