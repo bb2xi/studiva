@@ -16,9 +16,9 @@
   --border-color-strong: #e2e8f0;
 
   /* Primary (brand) */
-  --brand: #1d4ed8;
-  --brand-dark: #1e3a8a;
-  --brand-light: #eff6ff;
+  --brand: #15803d;
+  --brand-dark: #14532d;
+  --brand-light: #f0fdf4;
 
   /* Accent (guarantee badges, highlights, secondary CTAs) */
   --accent: #f59e0b;
@@ -39,9 +39,9 @@
     --border-color: #1e293b;
     --border-color-strong: #29394f;
 
-    --brand: #3b82f6;
-    --brand-dark: #60a5fa;
-    --brand-light: #17233a;
+    --brand: #34d399;
+    --brand-dark: #6ee7b7;
+    --brand-light: #0f2a1e;
 
     --accent: #fbbf24;
     --accent-dark: #f59e0b;

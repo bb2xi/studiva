@@ -13,15 +13,14 @@ type ServiceItem = { icon: string; title: string; description: string };
 type ProcessStep = { title: string; description: string };
 type WhyUsItem = { title: string; description: string };
 type ProgramItem = { name: string; icon: string };
-type UniversityItem = { slug: string; name: string; city: string; type: string; country: string };
-type CountryMeta = { name: string; flag: string };
+type UniversityItem = { slug: string; name: string; city: string; type: string; badges: string[] };
 type Stat = { value: string; label: string };
 
 const whyUsIcons = [Target, ShieldCheck, Sparkles, HeartHandshake];
-// A curated, diverse spread across countries for the homepage teaser.
-const UNIVERSITY_PREVIEW_SLUGS = ["tum", "oxford", "uva", "sorbonne", "ethz", "kth"];
+// A curated spread across Exzellenzuniversität, TU9 and Hochschule institutions for the homepage teaser.
+const UNIVERSITY_PREVIEW_SLUGS = ["tum", "heidelberg", "rwth", "tuebingen", "tudresden", "htwberlin"];
 // Real campus photos for the showcase band, same diverse spread.
-const SHOWCASE_SLUGS = ["oxford", "sorbonne", "tum", "kth", "uva", "ethz"];
+const SHOWCASE_SLUGS = ["tum", "heidelberg", "tuebingen", "bonn", "freiburg", "tudresden"];
 
 export default async function HomePage({
   params,
@@ -44,7 +43,6 @@ export default async function HomePage({
   const universityItems = UNIVERSITY_PREVIEW_SLUGS.map((slug) =>
     allUniversityItems.find((u) => u.slug === slug)
   ).filter((u): u is UniversityItem => Boolean(u));
-  const countries = universitiesT.raw("countries") as Record<string, CountryMeta>;
   const showcasePhotos = SHOWCASE_SLUGS.map((slug) => ({
     slug,
     name: allUniversityItems.find((u) => u.slug === slug)?.name ?? slug,
@@ -58,7 +56,7 @@ export default async function HomePage({
         <HeroBackground />
         <Container className="relative py-24 sm:py-28">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm font-medium text-blue-200 backdrop-blur-sm">
+            <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm font-medium text-emerald-200 backdrop-blur-sm">
               {home("hero.badge")}
             </span>
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
@@ -197,7 +195,6 @@ export default async function HomePage({
             {universityItems.map((uni, index) => {
               const logo = universityLogos[uni.slug];
               const fallbackCover = universityMedia[uni.slug]?.[0];
-              const countryMeta = countries[uni.country];
               return (
                 <Reveal key={uni.name} delay={index * 60}>
                   <Link
@@ -216,9 +213,9 @@ export default async function HomePage({
                         <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
                           {uni.type}
                         </span>
-                        {countryMeta && (
-                          <span className="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/95 text-base shadow-sm backdrop-blur">
-                            {countryMeta.flag}
+                        {uni.badges.includes("excellence") && (
+                          <span className="absolute right-3 top-3 inline-flex items-center rounded-full bg-accent px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
+                            {locale === "tr" ? "Exzellenz" : "Excellence"}
                           </span>
                         )}
                       </div>
@@ -234,9 +231,9 @@ export default async function HomePage({
                         <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
                           {uni.type}
                         </span>
-                        {countryMeta && (
-                          <span className="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/95 text-base shadow-sm backdrop-blur">
-                            {countryMeta.flag}
+                        {uni.badges.includes("excellence") && (
+                          <span className="absolute right-3 top-3 inline-flex items-center rounded-full bg-accent px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
+                            {locale === "tr" ? "Exzellenz" : "Excellence"}
                           </span>
                         )}
                       </div>
@@ -248,7 +245,6 @@ export default async function HomePage({
                       <div className="mt-1 flex items-center gap-1.5 text-xs text-foreground-muted">
                         <MapPin size={13} />
                         {uni.city}
-                        {countryMeta && `, ${countryMeta.name}`}
                       </div>
                       <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-brand">
                         {locale === "tr" ? "Detayları Gör" : "View Details"}
@@ -275,7 +271,7 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* Campus showcase — real, licensed campus photography, unified with a brand-blue duotone treatment */}
+      {/* Campus showcase — real, licensed campus photography, unified with a brand-green duotone treatment */}
       {showcasePhotos.length > 0 && (
         <section className="relative overflow-hidden bg-slate-950 py-4">
           <div className="grid grid-cols-2 gap-1 sm:grid-cols-3 lg:grid-cols-6">
@@ -371,7 +367,7 @@ export default async function HomePage({
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
             {home("cta.title")}
           </h2>
-          <p className="max-w-xl text-blue-100">{home("cta.subtitle")}</p>
+          <p className="max-w-xl text-green-100">{home("cta.subtitle")}</p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand transition-all duration-200 ease-out hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"

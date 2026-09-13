@@ -1,6 +1,17 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, MapPin, CalendarDays, Sparkles, CheckCircle2, AlertTriangle } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  MapPin,
+  CalendarDays,
+  Sparkles,
+  CheckCircle2,
+  AlertTriangle,
+  Users,
+  Languages,
+  Wallet,
+} from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import Container from "@/components/Container";
@@ -8,9 +19,10 @@ import UniversityGallery from "@/components/UniversityGallery";
 import Reveal from "@/components/Reveal";
 import { universityMedia } from "@/lib/universityMedia";
 
+type QuickFacts = { students: string; language: string; tuition: string };
+
 type UniversityItem = {
   slug: string;
-  country: string;
   name: string;
   city: string;
   type: string;
@@ -20,9 +32,9 @@ type UniversityItem = {
   highlights: string[];
   pros: string[];
   cons: string[];
+  badges: string[];
+  quickFacts: QuickFacts;
 };
-
-type CountryMeta = { name: string; flag: string };
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -60,8 +72,12 @@ export default async function UniversityDetailPage({
 
   const t = await getTranslations({ locale, namespace: "universities" });
   const images = universityMedia[slug] ?? [];
-  const countries = t.raw("countries") as Record<string, CountryMeta>;
-  const countryMeta = countries[university.country];
+
+  const factRows = [
+    { icon: Users, label: locale === "tr" ? "Öğrenci Sayısı" : "Students", value: university.quickFacts.students },
+    { icon: Languages, label: locale === "tr" ? "Öğretim Dili" : "Teaching Language", value: university.quickFacts.language },
+    { icon: Wallet, label: locale === "tr" ? "Ücret" : "Tuition", value: university.quickFacts.tuition },
+  ];
 
   return (
     <>
@@ -85,10 +101,14 @@ export default async function UniversityDetailPage({
                 <span className="inline-flex w-fit items-center rounded-full bg-brand-light px-3 py-1 text-xs font-semibold text-brand">
                   {university.type}
                 </span>
-                {countryMeta && (
-                  <span className="inline-flex w-fit items-center gap-1.5 rounded-full bg-background-secondary px-3 py-1 text-xs font-semibold text-foreground-secondary">
-                    <span>{countryMeta.flag}</span>
-                    {countryMeta.name}
+                {university.badges.includes("tu9") && (
+                  <span className="inline-flex w-fit items-center rounded-full bg-background-secondary px-3 py-1 text-xs font-semibold text-foreground-secondary">
+                    TU9
+                  </span>
+                )}
+                {university.badges.includes("excellence") && (
+                  <span className="inline-flex w-fit items-center rounded-full bg-accent-light px-3 py-1 text-xs font-semibold text-accent-dark">
+                    {locale === "tr" ? "Exzellenzuniversität" : "Excellence University"}
                   </span>
                 )}
               </div>
@@ -128,7 +148,25 @@ export default async function UniversityDetailPage({
             </Reveal>
           </div>
 
-          <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <Reveal delay={150}>
+            <div className="mt-10 grid grid-cols-1 gap-4 rounded-2xl border border-border bg-surface p-6 sm:grid-cols-3">
+              {factRows.map((row) => (
+                <div key={row.label} className="flex items-start gap-3">
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-light text-brand">
+                    <row.icon size={16} />
+                  </span>
+                  <div>
+                    <div className="text-xs font-medium uppercase tracking-wide text-foreground-muted">
+                      {row.label}
+                    </div>
+                    <div className="mt-1 text-sm font-medium text-foreground">{row.value}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
             <Reveal>
               <div className="h-full rounded-2xl border border-emerald-200/60 bg-emerald-50/50 p-6 dark:border-emerald-500/20 dark:bg-emerald-500/5">
                 <h2 className="flex items-center gap-2 text-base font-semibold text-foreground">
@@ -183,7 +221,7 @@ export default async function UniversityDetailPage({
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
             {t("cta.title")}
           </h2>
-          <p className="max-w-xl text-blue-100">{t("cta.subtitle")}</p>
+          <p className="max-w-xl text-green-100">{t("cta.subtitle")}</p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand transition-all duration-200 ease-out hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"

@@ -10,10 +10,11 @@
     "universities": "Üniversiteler",
     "about": "Hakkımızda",
     "contact": "İletişim",
-    "cta": "Ücretsiz Danışmanlık"
+    "cta": "Ücretsiz Danışmanlık",
+    "blog": "Blog"
   },
   "footer": {
-    "description": "Studiva olarak öğrencileri Avrupa'nın önde gelen üniversiteleriyle buluşturuyoruz: başvuru sürecinden vizeye, burstan konaklamaya kadar yurt dışı eğitim yolculuğunuzun her adımında yanınızdayız.",
+    "description": "Studiva olarak öğrencileri Almanya'nın önde gelen üniversiteleriyle buluşturuyoruz: başvuru sürecinden vizeye, burstan konaklamaya kadar Almanya'da eğitim yolculuğunuzun her adımında yanınızdayız.",
     "quickLinks": "Hızlı Bağlantılar",
     "servicesTitle": "Hizmetlerimiz",
     "contactTitle": "İletişim",
@@ -24,9 +25,9 @@
   },
   "home": {
     "hero": {
-      "badge": "2026'da kurulan, Avrupa'ya özel eğitim danışmanlığı",
-      "title": "Avrupa'nın En İyi Üniversitelerinde Okuma Hayaliniz Studiva Güvencesiyle Gerçek Olsun",
-      "subtitle": "Üniversite seçiminden başvuruya, vizeden konaklamaya kadar Almanya, İngiltere, Hollanda, Fransa ve daha fazla ülkede uzman danışmanlarımızla yanınızdayız.",
+      "badge": "2026'da kurulan, Almanya'ya özel eğitim danışmanlığı",
+      "title": "Almanya'nın En İyi Üniversitelerinde Okuma Hayaliniz Studiva Güvencesiyle Gerçek Olsun",
+      "subtitle": "Üniversite seçiminden başvuruya, vizeden konaklamaya kadar Exzellenzuniversität'lerden TU9 teknik üniversitelerine, Hochschule'lerden Dual Studium programlarına Almanya'nın tamamında uzman danışmanlarımızla yanınızdayız.",
       "ctaPrimary": "Ücretsiz Ön Görüşme Al",
       "ctaSecondary": "Programları İncele",
       "guaranteeNote": "Sürecimizi eksiksiz tamamlayan öğrencilerimize kabul garantisi veriyoruz.",
@@ -37,10 +38,10 @@
         },
         {
           "value": "9",
-          "label": "Ülke"
+          "label": "TU9 Üniversitesi"
         },
         {
-          "value": "60+",
+          "value": "26+",
           "label": "Üniversite Seçeneği"
         },
         {
@@ -93,7 +94,7 @@
     },
     "universities": {
       "title": "Öne Çıkan Üniversiteler",
-      "subtitle": "9 Avrupa ülkesinde, Studiva'nın danışmanlık verdiği üniversitelerden bir kesit.",
+      "subtitle": "Exzellenzuniversität'lerden TU9 teknik üniversitelerine, Almanya genelinde danışmanlık verdiğimiz üniversitelerden bir kesit.",
       "linkText": "Tüm üniversiteleri gör"
     },
     "process": {
@@ -122,8 +123,8 @@
       "title": "Neden Studiva?",
       "items": [
         {
-          "title": "9 Ülke, Tek Danışmanlık Ekibi",
-          "description": "Almanya'dan İngiltere'ye, Hollanda'dan İskandinavya'ya; her ülkenin başvuru ve vize sürecini yakından takip eden uzman bir ekibiz."
+          "title": "Almanya Odaklı Uzman Ekip",
+          "description": "Exzellenzuniversität'lerden Hochschule'lere, Almanya'nın tüm yükseköğretim sistemini yakından takip eden uzman bir ekibiz."
         },
         {
           "title": "Kabul Garantisi",
@@ -254,7 +255,7 @@
   "universities": {
     "hero": {
       "title": "Üniversitelerimiz",
-      "subtitle": "Almanya, İngiltere, Hollanda, Fransa ve daha fazla ülkede, akademik hedefinize göre değerlendirebileceğiniz üniversitelerden bir kesit."
+      "subtitle": "Exzellenzuniversität'lerden TU9 teknik üniversitelerine, Hochschule'lerden Dual Studium programlarına kadar Almanya'nın akademik yelpazesinden bir kesit."
     },
     "items": [
       {
@@ -285,7 +286,16 @@
           "Münih, Almanya'nın en pahalı şehirlerinden biri",
           "Popüler derslerde kalabalık amfiler"
         ],
-        "country": "de"
+        "badges": [
+          "tu9",
+          "excellence"
+        ],
+        "mapCity": "muenchen",
+        "quickFacts": {
+          "students": "~50.000",
+          "language": "Ağırlıklı İngilizce (yüksek lisansta), lisansta kısmen Almanca",
+          "tuition": "Dönemlik ~150-170 € katkı payı (okul ücreti yok)"
+        }
       },
       {
         "slug": "lmu",
@@ -315,7 +325,15 @@
           "Münih'in yüksek yaşam maliyeti",
           "Büyük öğrenci sayısı nedeniyle kalabalık giriş derslerinde bireysel ilginin sınırlı kalması"
         ],
-        "country": "de"
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "muenchen",
+        "quickFacts": {
+          "students": "~52.000",
+          "language": "Çoğunlukla Almanca, yüksek lisansta İngilizce seçenekler mevcut",
+          "tuition": "Dönemlik ~150 € katkı payı (okul ücreti yok)"
+        }
       },
       {
         "slug": "huberlin",
@@ -345,7 +363,15 @@
           "Popüler bölümlerde yüksek başvuru rekabeti",
           "Büyük ve bürokratik bir üniversite yapısı, ilk dönemlerde biraz kişiliksiz hissettirebilir"
         ],
-        "country": "de"
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "berlin",
+        "quickFacts": {
+          "students": "~32.000",
+          "language": "Ağırlıklı Almanca, bazı yüksek lisans programları İngilizce",
+          "tuition": "Dönemlik ~315 € katkı payı (okul ücreti yok)"
+        }
       },
       {
         "slug": "rwth",
@@ -375,7 +401,16 @@
           "Mühendislik programlarının yoğun ve zorlayıcı olması",
           "Bazı yüksek lisans programlarında sınırlı kontenjan ve yüksek rekabet"
         ],
-        "country": "de"
+        "badges": [
+          "tu9",
+          "excellence"
+        ],
+        "mapCity": "aachen",
+        "quickFacts": {
+          "students": "~47.000 (yaklaşık %25'i uluslararası)",
+          "language": "Lisansta Almanca ağırlıklı, yüksek lisansta çok sayıda İngilizce program",
+          "tuition": "Dönemlik ~300 € katkı payı (okul ücreti yok)"
+        }
       },
       {
         "slug": "mannheim",
@@ -405,7 +440,13 @@
           "Mannheim, Berlin ya da Münih'e kıyasla daha sakin bir şehir",
           "İşletme fakültesinde yoğun ve rekabetçi bir notlandırma kültürü"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "mannheim",
+        "quickFacts": {
+          "students": "~11.000",
+          "language": "İşletme ve ekonomide çok sayıda İngilizce yüksek lisans programı",
+          "tuition": "Dönemlik ~170 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+        }
       },
       {
         "slug": "hm",
@@ -435,7 +476,13 @@
           "Doğrudan doktora yapma imkanı sınırlı",
           "Münih'in yüksek yaşam maliyeti"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "muenchen",
+        "quickFacts": {
+          "students": "~19.000",
+          "language": "Ağırlıklı Almanca, seçili İngilizce programlar",
+          "tuition": "Dönemlik ~150 € katkı payı"
+        }
       },
       {
         "slug": "frankfurtuas",
@@ -465,7 +512,13 @@
           "Doğrudan doktora imkanı yok",
           "Frankfurt, küçük Alman şehirlerine göre yüksek yaşam maliyetine sahip"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "frankfurt",
+        "quickFacts": {
+          "students": "~15.000",
+          "language": "Almanca ve İngilizce karışık, özellikle yüksek lisansta İngilizce seçenekler",
+          "tuition": "Dönemlik ~370 € katkı payı"
+        }
       },
       {
         "slug": "dhbw",
@@ -495,7 +548,13 @@
           "Program çok yapılandırılmış; seçmeli ders veya değişim dönemi için az esneklik var",
           "Teori-uygulama blokları arasında neredeyse hiç uzun ara olmayan yoğun bir tempo"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "stuttgart",
+        "quickFacts": {
+          "students": "~34.000 (çok kampüslü)",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Okul ücreti yok, ancak işletme ortaklığı zorunlu (aylık maaş alınır)"
+        }
       },
       {
         "slug": "iu",
@@ -525,7 +584,13 @@
           "Çoğu devlet üniversitesinin aksine öğrenim harcı uygulanıyor",
           "Hızlı büyüme, bazı çevrelerde eğitim kalitesinin tutarlılığı konusunda tartışmalara yol açtı"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "erfurt",
+        "quickFacts": {
+          "students": "~130.000 (Almanya'nın en büyük özel yükseköğretim kurumu)",
+          "language": "Çoğunlukla İngilizce, çevrimiçi ve yüz yüze seçenekler",
+          "tuition": "Özel üniversite; burs ve indirim seçenekleriyle esnek ücretlendirme"
+        }
       },
       {
         "slug": "fom",
@@ -555,7 +620,13 @@
           "Akşam/hafta sonu programı, tam zamanlı bir işle birlikte yürütülmesi zorlayıcı olabiliyor",
           "Tam zamanlı bir üniversiteye kıyasla daha az geleneksel kampüs/öğrenci yaşamı deneyimi"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "essen",
+        "quickFacts": {
+          "students": "~57.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Özel üniversite; genellikle çalışan öğrenciler için işveren destekli ücretlendirme"
+        }
       },
       {
         "slug": "heidelberg",
@@ -585,7 +656,15 @@
           "Heidelberg, akademi/ilaç sektörü dışında sınırlı bir iş piyasasına sahip küçük bir şehir",
           "Şehir küçük olmasına rağmen yüksek talep, öğrenci konutu fiyatlarını artırıyor"
         ],
-        "country": "de"
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "heidelberg",
+        "quickFacts": {
+          "students": "~30.000",
+          "language": "Lisansta Almanca, yüksek lisans ve doktora düzeyinde çok sayıda İngilizce program",
+          "tuition": "Dönemlik ~170 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+        }
       },
       {
         "slug": "tuebingen",
@@ -615,7 +694,15 @@
           "Tıp ve psikoloji gibi bölümlerde rekabetçi başvuru süreci",
           "İngilizce yürütülen lisans seçenekleri sınırlı, çoğu program Almanca"
         ],
-        "country": "de"
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "tuebingen",
+        "quickFacts": {
+          "students": "~27.000",
+          "language": "Ağırlıklı Almanca, seçili İngilizce yüksek lisans programları",
+          "tuition": "Dönemlik ~160 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+        }
       },
       {
         "slug": "kit",
@@ -645,7 +732,15 @@
           "Mühendislik ders yükü yoğun ve zorlayıcı",
           "Üniversite/araştırma merkezi ikili yapısı bazen bürokratik karmaşıklık yaratabiliyor"
         ],
-        "country": "de"
+        "badges": [
+          "tu9"
+        ],
+        "mapCity": "karlsruhe",
+        "quickFacts": {
+          "students": "~23.000",
+          "language": "Lisansta Almanca, yüksek lisansta çok sayıda İngilizce program",
+          "tuition": "AB dışı öğrenciler için Baden-Württemberg'de dönemlik ~1.500 € ek okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+        }
       },
       {
         "slug": "freiburg",
@@ -675,7 +770,13 @@
           "Popüler beşeri bilimler ve hukuk programlarında rekabetçi başvuru süreci",
           "Teknik üniversitelere kıyasla daha az büyük ölçekli sanayi ortaklığı"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "freiburg",
+        "quickFacts": {
+          "students": "~24.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "AB dışı öğrenciler için Baden-Württemberg'de dönemlik ~1.500 € ek okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+        }
       },
       {
         "slug": "goettingen",
@@ -705,7 +806,13 @@
           "Bazı programlar ağırlıklı olarak Almanca yürütülüyor ve iyi bir Almanca seviyesi gerektiriyor",
           "Büyük şehirlere kıyasla yakında daha az uluslararası kurumsal işveren bulunuyor"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "goettingen",
+        "quickFacts": {
+          "students": "~30.000",
+          "language": "Ağırlıklı Almanca, doğa bilimlerinde İngilizce yüksek lisans seçenekleri",
+          "tuition": "Dönemlik ~390 € katkı payı"
+        }
       },
       {
         "slug": "bonn",
@@ -735,7 +842,15 @@
           "Hukuk ve tıp bölümlerinde rekabetçi başvuru süreci",
           "Büyük öğrenci sayısı, giriş derslerinde kalabalık anlamına gelebiliyor"
         ],
-        "country": "de"
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "bonn",
+        "quickFacts": {
+          "students": "~34.000",
+          "language": "Ağırlıklı Almanca, çok sayıda İngilizce yüksek lisans programı",
+          "tuition": "Dönemlik ~310 € katkı payı"
+        }
       },
       {
         "slug": "koeln",
@@ -765,7 +880,13 @@
           "Üniversitenin büyüklüğü nedeniyle idari süreçler bazen bürokratik hissettirebiliyor",
           "Tıp, hukuk ve psikoloji gibi popüler bölümlerde rekabetçi başvuru süreci"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "koeln",
+        "quickFacts": {
+          "students": "~48.000 (Almanya'nın en büyük üniversitelerinden biri)",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~300 € katkı payı"
+        }
       },
       {
         "slug": "tuberlin",
@@ -795,1211 +916,317 @@
           "Popüler mühendislik/bilgisayar bilimi programlarında kalabalık dersler",
           "Üniversitenin büyüklüğü nedeniyle idari süreçler yavaş işleyebiliyor"
         ],
-        "country": "de"
+        "badges": [
+          "tu9",
+          "excellence"
+        ],
+        "mapCity": "berlin",
+        "quickFacts": {
+          "students": "~33.000",
+          "language": "Mühendislikte çok sayıda İngilizce yüksek lisans programı",
+          "tuition": "Dönemlik ~310 € katkı payı"
+        }
       },
       {
-        "slug": "oxford",
-        "country": "uk",
-        "name": "University of Oxford",
-        "city": "Oxford",
-        "type": "Üniversite",
-        "founded": "1096",
-        "description": "İngilizce konuşulan dünyanın en eski üniversitesi; neredeyse her alanda dünya çapında bir isim.",
+        "slug": "tudresden",
+        "name": "TU Dresden (Technische Universität Dresden)",
+        "city": "Dresden",
+        "type": "Universität",
+        "founded": "1828",
+        "description": "Almanya'nın en büyük teknik üniversitelerinden biri; mikroelektronik, malzeme bilimi ve makine mühendisliğinde güçlü bir araştırma merkezi.",
         "history": [
-          "Oxford'da öğretim faaliyetlerinin 1096 gibi erken bir tarihte başladığı biliniyor; bu da onu İngilizce konuşulan dünyanın en eski üniversitesi yapıyor. 1167'de İngiliz kralı II. Henry'nin öğrencilerin Paris Üniversitesi'ne gitmesini yasaklamasıyla Oxford hızla büyüdü.",
-          "Üniversite, birbirinden bağımsız 39'dan fazla college'ın bir araya gelmesiyle oluşan benzersiz bir yapıya sahip; en eski college'lar 1249-1264 yılları arasında kuruldu. Bugüne kadar aralarında çok sayıda Nobel ödüllü, dünya lideri ve yazarın da bulunduğu isimler Oxford'dan mezun oldu."
+          "TU Dresden'in kökleri 1828'de kurulan Technische Bildungsanstalt Dresden'e dayanır; zaman içinde büyüyerek Almanya'nın en kapsamlı teknik üniversitelerinden birine dönüştü.",
+          "Üniversite, TU9 teknik üniversiteler birliğinin üyesi ve 2012'den bu yana kesintisiz olarak Exzellenzuniversität statüsüne sahip; 'DRESDEN-concept' adlı geniş araştırma ittifakı üzerinden şehirdeki Max Planck, Fraunhofer ve Helmholtz enstitüleriyle yakın işbirliği yürütüyor.",
+          "Dresden bölgesi, Avrupa'nın önemli mikroelektronik ve yarı iletken üretim merkezlerinden biri olan 'Silicon Saxony'ye ev sahipliği yapıyor; bu da üniversiteye sanayiyle güçlü bir bağ sağlıyor."
         ],
         "highlights": [
-          "İngilizce konuşulan dünyanın en eski üniversitesi",
-          "39'dan fazla bağımsız college'dan oluşan benzersiz yapı",
-          "Hemen her akademik alanda dünya çapında tanınırlık"
+          "TU9 üyesi ve 2012'den bu yana Exzellenzuniversität statüsü",
+          "Mikroelektronik, nanoelektronik ve malzeme bilimlerinde Avrupa çapında tanınan araştırma altyapısı",
+          "'Silicon Saxony' teknoloji kümelenmesine yakınlık sayesinde güçlü sanayi bağlantıları",
+          "Almanya'nın en kapsamlı fakülte yelpazesine sahip teknik üniversitelerinden biri"
         ],
         "pros": [
-          "Dünyanın en prestijli akademik markalarından biri, mezuniyet sonrası küresel kariyer kapıları açıyor",
-          "College sistemi sayesinde küçük gruplarla (tutorial) yoğun akademik destek",
-          "Hemen her disiplinde derinlemesine araştırma imkanı"
+          "Mühendislik ve doğa bilimlerinde üst düzey araştırma imkanı",
+          "Dresden, Berlin veya Münih'e kıyasla belirgin şekilde daha düşük yaşam maliyeti",
+          "Mikroelektronik ve yarı iletken sektöründe staj/kariyer fırsatlarına doğrudan erişim"
         ],
         "cons": [
-          "Başvuru süreci son derece rekabetçi, ayrı bir mülakat aşaması var",
-          "Oxford şehri küçük, İngiltere'nin büyük şehirlerine kıyasla sınırlı imkanlara sahip",
-          "Akademik yük ve tempo oldukça yoğun, kısa dönemler (term) yoğun çalışmayı gerektiriyor"
-        ]
+          "Doğu Almanya'da, bazı Batı Almanya şehirlerine kıyasla uluslararası öğrenci topluluğu daha küçük",
+          "Lisans programlarının büyük kısmı Almanca; İngilizce seçenekler daha çok yüksek lisans düzeyinde",
+          "Kış ayları soğuk ve gün ışığı süresi kısa"
+        ],
+        "badges": [
+          "tu9",
+          "excellence"
+        ],
+        "mapCity": "dresden",
+        "quickFacts": {
+          "students": "~30.000",
+          "language": "Lisansta ağırlıklı Almanca, yüksek lisansta çok sayıda İngilizce program",
+          "tuition": "Dönemlik ~260 € katkı payı (okul ücreti yok)"
+        }
       },
       {
-        "slug": "cambridge",
-        "country": "uk",
-        "name": "University of Cambridge",
-        "city": "Cambridge",
-        "type": "Üniversite",
-        "founded": "1209",
-        "description": "Dünyanın dördüncü en eski üniversitesi; bilim ve matematikte olağanüstü bir Nobel Ödülü mirasına sahip.",
+        "slug": "tudarmstadt",
+        "name": "TU Darmstadt (Technische Universität Darmstadt)",
+        "city": "Darmstadt",
+        "type": "Universität",
+        "founded": "1877",
+        "description": "Bilgisayar bilimi, siber güvenlik ve elektrik-elektronik mühendisliğinde Almanya'nın öncü teknik üniversitelerinden biri.",
         "history": [
-          "1209'da Oxford'daki bir anlaşmazlıktan kaçan akademisyenlerin Cambridge kasabasına yerleşmesiyle kurulan üniversite, 1231'de Kral III. Henry'den kraliyet fermanı aldı. Bugün dünyanın dördüncü en eski, kesintisiz eğitim veren üniversitesi kabul ediliyor.",
-          "31 bağımsız college'dan oluşan üniversite, Isaac Newton'dan Charles Darwin'e, Stephen Hawking'den Alan Turing'e kadar bilim tarihinin en önemli isimlerine ev sahipliği yaptı; üniversiteyle ilişkili 120'den fazla Nobel Ödülü bulunuyor."
+          "1877'de kurulan TU Darmstadt, 1972'de Almanya'da ilk kez bağımsız bir 'Informatik' (bilgisayar bilimi) fakültesi açan üniversite oldu ve bu alanda öncü konumunu bugüne kadar korudu.",
+          "2005 yılında Almanya'da özerklik statüsü alan ilk devlet üniversitesi oldu; bu sayede müfredat, personel alımı ve bütçe konularında diğer devlet üniversitelerine göre daha fazla özerkliğe sahip.",
+          "Üniversite, TU9 teknik üniversiteler birliğinin üyesi ve siber güvenlik alanında CRISP/CYSEC gibi Almanya'nın önde gelen araştırma merkezlerinden bazılarına ev sahipliği yapıyor."
         ],
         "highlights": [
-          "Dünyanın dördüncü en eski, kesintisiz eğitim veren üniversitesi",
-          "Newton, Darwin, Hawking gibi isimlerle bilim tarihine damga vurdu",
-          "31 college'dan oluşan, üniversiteyle ilişkili 120'den fazla Nobel Ödülü"
+          "TU9 üyesi ve Almanya'da bağımsız statü kazanan ilk devlet üniversitesi",
+          "Bilgisayar bilimi ve siber güvenlikte Almanya'nın en köklü ve güçlü programlarından biri",
+          "Elektrik-elektronik ve makine mühendisliğinde uzun soluklu sanayi işbirlikleri (Merck, Software AG'nin merkezi Darmstadt'ta)",
+          "Frankfurt'a yakınlığı sayesinde staj ve kariyer fırsatlarına kolay erişim"
         ],
         "pros": [
-          "Fen bilimleri, matematik ve mühendislikte dünya çapında en üst düzey akademik itibar",
-          "College sistemiyle küçük gruplarda (supervision) yoğun akademik destek",
-          "Güçlü araştırma fonlaması ve dünya standartlarında laboratuvar imkanları"
+          "Bilgisayar bilimi ve siber güvenlikte Almanya çapında üst sıralarda bir isim",
+          "Frankfurt'a yakınlık (yaklaşık 30 dakika) sayesinde büyük şehir imkanlarına kolay ulaşım",
+          "Nispeten kompakt kampüs ve yakın öğrenci-akademisyen ilişkisi"
         ],
         "cons": [
-          "Başvuru süreci son derece rekabetçi, ayrı bir mülakat ve bazı bölümlerde ek sınav gerekiyor",
-          "Cambridge, büyük şehirlere kıyasla sakin ve küçük bir üniversite kenti",
-          "Kısa ve yoğun dönemler (term) yüksek bir çalışma temposu gerektiriyor"
-        ]
+          "Darmstadt, Frankfurt'a kıyasla daha küçük bir şehir; sosyal/kültürel imkanlar daha sınırlı",
+          "Mühendislik programlarında iş yükü ve akademik tempo yüksek",
+          "Popüler bilgisayar bilimi programlarında başvuru rekabeti güçlü"
+        ],
+        "badges": [
+          "tu9"
+        ],
+        "mapCity": "darmstadt",
+        "quickFacts": {
+          "students": "~26.000",
+          "language": "Lisansta Almanca, yüksek lisansta özellikle bilgisayar bilimi ve mühendislikte çok sayıda İngilizce program",
+          "tuition": "Dönemlik ~300 € katkı payı (okul ücreti yok)"
+        }
       },
       {
-        "slug": "imperial",
-        "country": "uk",
-        "name": "Imperial College London",
-        "city": "Londra",
-        "type": "Teknik Üniversite",
-        "founded": "1907",
-        "description": "Fen bilimleri, mühendislik, tıp ve işletmeye odaklanan, Londra merkezli dünya çapında bir STEM üniversitesi.",
+        "slug": "tubraunschweig",
+        "name": "TU Braunschweig (Technische Universität Carolo-Wilhelmina zu Braunschweig)",
+        "city": "Braunschweig",
+        "type": "Universität",
+        "founded": "1745",
+        "description": "1745'te kurulan, Almanya'nın en eski teknik üniversitesi; havacılık-uzay ve otomotiv mühendisliğinde güçlü bir araştırma geleneğine sahip.",
         "history": [
-          "1907'de Royal College of Science, Royal School of Mines ve City and Guilds College'ın birleşmesiyle kurulan Imperial College, kökleri 1845'te kurulan Royal College of Chemistry'ye kadar uzanan bir geçmişe sahip. Uzun süre University of London'ın bir parçası olarak faaliyet gösterdi, 2007'de tam bağımsız statü kazandı.",
-          "South Kensington'daki ana kampüsünün yanı sıra Londra genelinde dokuz kampüse yayılan Imperial, fen bilimleri, mühendislik, tıp ve işletmede (STEMB) dünya çapında lider bir kurum olarak tanınıyor."
+          "1745 yılında 'Collegium Carolinum' adıyla kurulan TU Braunschweig, Almanya'nın en eski teknik yükseköğretim kurumu olarak kabul edilir.",
+          "Üniversite, TU9 birliğinin üyesi ve Almanya Havacılık ve Uzay Merkezi (DLR) ile yakın işbirliği içinde havacılık-uzay mühendisliğinde ülkenin önde gelen merkezlerinden biri haline geldi.",
+          "Volkswagen'in merkez üssü Wolfsburg'a yakınlığı, üniversiteye otomotiv mühendisliği ve araç teknolojileri alanında güçlü sanayi bağlantıları sağlıyor."
         ],
         "highlights": [
-          "Fen bilimleri, mühendislik, tıp ve işletmede (STEMB) dünya lideri bir kurum",
-          "Londra genelinde dokuz kampüs",
-          "2007'de University of London'dan bağımsızlığını kazandı"
+          "Almanya'nın en eski teknik üniversitesi ve TU9 birliği üyesi",
+          "Havacılık-uzay mühendisliğinde DLR işbirliğiyle güçlendirilmiş araştırma altyapısı",
+          "Wolfsburg/Volkswagen yakınlığı sayesinde otomotiv mühendisliğinde staj imkanları",
+          "Biyoteknoloji ve malzeme bilimlerinde büyüyen araştırma kapasitesi"
         ],
         "pros": [
-          "Mühendislik, tıp ve doğa bilimlerinde dünya çapında en üst düzey akademik itibar",
-          "Londra'nın finans ve teknoloji sektörlerine doğrudan yakınlık, güçlü staj/iş bağlantıları",
-          "Yoğun araştırma odaklı, sanayiyle iç içe bir akademik kültür"
+          "Havacılık-uzay ve otomotiv mühendisliğinde niş ama güçlü bir uzmanlık alanı",
+          "Küçük-orta ölçekli şehirde uygun yaşam maliyeti",
+          "DLR ve Volkswagen gibi kurumlarla doğrudan araştırma/staj bağlantıları"
         ],
         "cons": [
-          "Başvuru süreci özellikle mühendislik ve tıp bölümlerinde çok yüksek rekabete sahip",
-          "Londra, İngiltere'nin en pahalı şehirlerinden biri",
-          "Program ağırlıklı olarak STEM alanlarına odaklı, beşeri bilimler seçeneği sınırlı"
-        ]
+          "Braunschweig, büyük metropollere kıyasla daha sakin/küçük bir şehir",
+          "Uluslararası tanınırlığı bazı TU9 üyelerine göre daha sınırlı",
+          "Lisans düzeyinde İngilizce program seçeneği azdır"
+        ],
+        "badges": [
+          "tu9"
+        ],
+        "mapCity": "braunschweig",
+        "quickFacts": {
+          "students": "~18.000",
+          "language": "Ağırlıklı Almanca, yüksek lisansta seçili İngilizce programlar",
+          "tuition": "Dönemlik ~300 € katkı payı (okul ücreti yok)"
+        }
       },
       {
-        "slug": "ucl",
-        "country": "uk",
-        "name": "University College London (UCL)",
-        "city": "Londra",
-        "type": "Üniversite",
-        "founded": "1826",
-        "description": "Dini ya da sosyal statü ayrımı gözetmeden kurulan, Londra'nın ilk üniversitesi.",
+        "slug": "hannover",
+        "name": "Leibniz Universität Hannover",
+        "city": "Hannover",
+        "type": "Universität",
+        "founded": "1831",
+        "description": "Filozof ve matematikçi Leibniz'in adını taşıyan, mühendislik, hukuk ve doğa bilimlerinde güçlü bir araştırma üniversitesi.",
         "history": [
-          "11 Şubat 1826'da 'Londra Üniversitesi' adıyla kurulan UCL, dönemin Oxford ve Cambridge'ine alternatif, seküler bir kurum olarak tasarlandı. Öğrencileri dini inançlarına bakılmaksızın kabul eden İngiltere'nin ilk üniversitesi olarak kayda geçti.",
-          "Londra'nın ilk üniversitesi olan UCL, pratik bilimleri müfredata dahil etmesi ve kadınlara erkeklerle eşit şartlarda yükseköğrenim imkanı tanımasıyla da öncü bir rol üstlendi. Bugün hukuk, tıp, mimarlık ve mühendislik gibi alanlarda güçlü bir akademik kadroya sahip."
+          "1831'de kurulan üniversite, adını Hannover'de yaşamış ünlü filozof ve matematikçi Gottfried Wilhelm Leibniz'den alır.",
+          "TU9 teknik üniversiteler birliğinin üyesi olan Leibniz Universität Hannover, lazer teknolojileri ve fotonik alanında Almanya'nın önde gelen merkezlerinden biri olan Laser Zentrum Hannover ile yakın işbirliği içinde çalışır.",
+          "Mühendislik programlarının yanı sıra hukuk fakültesi ve doğa bilimleri alanlarında da güçlü bir akademik gelenek sürdürür."
         ],
         "highlights": [
-          "Dini inanca bakılmaksızın öğrenci kabul eden İngiltere'nin ilk üniversitesi",
-          "Londra'nın ilk üniversitesi",
-          "Hukuk, tıp, mimarlık ve mühendislikte güçlü akademik kadro"
+          "TU9 üyesi, mühendislik ve doğa bilimlerinde geniş bir fakülte yelpazesi",
+          "Lazer teknolojileri ve fotonikte Avrupa çapında tanınan araştırma merkezi",
+          "Hukuk fakültesi sayesinde mühendislik dışı alanlarda da güçlü bir akademik profil",
+          "Hannover'in orta ölçekli, ulaşımı kolay bir şehir olması"
         ],
         "pros": [
-          "Londra merkezinde, kültürel ve kariyer fırsatlarına doğrudan yakın bir kampüs",
-          "Çok geniş bir program yelpazesi ve disiplinler arası çalışma imkanı",
-          "Güçlü uluslararası öğrenci topluluğu ve çeşitlilik"
+          "Mühendislik ve fotonik alanında niş ama derin bir uzmanlık",
+          "Almanya'nın demiryolu ve otoyol ağının merkezinde, ulaşımı kolay bir konum",
+          "Orta ölçekli şehirde uygun yaşam maliyeti"
         ],
         "cons": [
-          "Londra'nın yüksek yaşam maliyeti bütçeyi zorlayabiliyor",
-          "Büyük öğrenci sayısı, bazı derslerde kalabalık anlamına gelebiliyor",
-          "Popüler bölümlerde rekabetçi başvuru süreci"
-        ]
+          "Berlin veya Münih'e kıyasla daha az uluslararası tanınırlık",
+          "Sosyal ve kültürel hayat daha büyük şehirlere göre sınırlı kalabilir",
+          "Lisans düzeyinde İngilizce program seçeneği kısıtlı"
+        ],
+        "badges": [
+          "tu9"
+        ],
+        "mapCity": "hannover",
+        "quickFacts": {
+          "students": "~29.000",
+          "language": "Ağırlıklı Almanca, yüksek lisansta mühendislikte İngilizce seçenekler",
+          "tuition": "Dönemlik ~340 € katkı payı (okul ücreti yok)"
+        }
       },
       {
-        "slug": "lse",
-        "country": "uk",
-        "name": "London School of Economics and Political Science (LSE)",
-        "city": "Londra",
-        "type": "Üniversite",
-        "founded": "1895",
-        "description": "Sosyal bilimler, ekonomi ve siyaset biliminde dünyanın en etkili isimlerinden biri.",
-        "history": [
-          "1895'te Sidney ve Beatrice Webb önderliğinde, işçi sınıfına yönelik bir gece okulu olarak kurulan LSE, kısa sürede sosyal bilimlerde dünyanın önde gelen kurumlarından birine dönüştü. 1900'de University of London'a bağlı bir college oldu.",
-          "Kuruluşundan itibaren kadın ve erkek öğrencilere eşit şartlarda kapılarını açan, yurt dışından öğrencileri de kabul eden LSE, bugüne kadar 21 Nobel Ödülü (Barış, Ekonomi ve Edebiyat) ile ilişkilendirildi ve dünya liderleri yetiştiren bir kurum olarak tanınıyor."
-        ],
-        "highlights": [
-          "Sosyal bilimler, ekonomi ve siyaset biliminde dünya çapında bir isim",
-          "Kuruluşundan bu yana kadın-erkek eşitliğine dayalı bir eğitim anlayışı",
-          "21 Nobel Ödülü ile ilişkilendirilen bir akademik miras"
-        ],
-        "pros": [
-          "Ekonomi, siyaset bilimi ve uluslararası ilişkilerde dünya çapında en üst düzey itibar",
-          "Londra'nın finans ve politika çevrelerine doğrudan yakınlık",
-          "Son derece uluslararası, çok kültürlü bir öğrenci topluluğu"
-        ],
-        "cons": [
-          "Program büyük ölçüde sosyal bilimlerle sınırlı, STEM seçeneği yok",
-          "Londra'nın yüksek yaşam maliyeti",
-          "Yoğun ve akademik olarak talepkar bir eğitim ortamı"
-        ]
-      },
-      {
-        "slug": "kcl",
-        "country": "uk",
-        "name": "King's College London",
-        "city": "Londra",
-        "type": "Üniversite",
+        "slug": "stuttgart",
+        "name": "Universität Stuttgart",
+        "city": "Stuttgart",
+        "type": "Universität",
         "founded": "1829",
-        "description": "Kral IV. George ve Wellington Dükü tarafından kurulan, tıp ve hukukta güçlü bir Londra üniversitesi.",
+        "description": "Otomotiv ve havacılık mühendisliğinin kalbi Stuttgart bölgesinde, mühendislik ve mimarlıkta Almanya'nın en güçlü üniversitelerinden biri.",
         "history": [
-          "1829'da Kral IV. George ve Waterloo Savaşı'nın galibi Wellington Dükü'nün öncülüğünde kurulan King's College London, 1836'da University of London'ın kurucu iki college'ından biri oldu.",
-          "Zaman içinde Chelsea College, Queen Elizabeth College ve Guy's ile St Thomas' Hastaneleri'nin tıp okullarıyla birleşen King's, bugün özellikle tıp, diş hekimliği, hukuk ve uluslararası ilişkiler alanlarında güçlü bir akademik kadroya sahip."
+          "1829'da kurulan Universität Stuttgart, Almanya'nın otomotiv sanayisinin merkezi sayılan Stuttgart bölgesinde, mühendislik eğitiminin köklü kurumlarından biri haline geldi.",
+          "TU9 birliğinin üyesi olan üniversite, mimar Frei Otto'nun mirasını taşıyan Hafif Yapılar Enstitüsü (ILEK) gibi dünya çapında tanınan araştırma birimlerine ev sahipliği yapıyor.",
+          "Mercedes-Benz ve Porsche'nin merkezlerine yakınlığı, üniversiteye otomotiv mühendisliği ve üretim teknolojilerinde eşsiz bir sanayi işbirliği ağı sağlıyor."
         ],
         "highlights": [
-          "Kral IV. George ve Wellington Dükü tarafından kurulan köklü bir Londra üniversitesi",
-          "University of London'ın iki kurucu college'ından biri",
-          "Tıp, diş hekimliği ve hukukta güçlü akademik kadro"
+          "TU9 üyesi, otomotiv ve havacılık mühendisliğinde Almanya'nın en güçlü merkezlerinden biri",
+          "Mercedes-Benz ve Porsche'ye yakınlık sayesinde güçlü staj ve kariyer bağlantıları",
+          "Hafif yapılar ve mimarlıkta dünya çapında tanınan araştırma geleneği (Frei Otto mirası)",
+          "Stuttgart bölgesinin güçlü ekonomisi sayesinde geniş işveren ağı"
         ],
         "pros": [
-          "Tıp, hukuk ve uluslararası ilişkilerde güçlü akademik itibar",
-          "Londra merkezinde, Thames Nehri kıyısında birden fazla kampüs",
-          "Güçlü hastane ve klinik ortaklıklarıyla desteklenen tıp eğitimi"
+          "Otomotiv ve makine mühendisliğinde sanayiyle iç içe bir eğitim deneyimi",
+          "Stuttgart bölgesinde yüksek maaşlı staj ve mezuniyet sonrası iş imkanları",
+          "Mimarlık ve mühendislikte disiplinler arası güçlü araştırma kültürü"
         ],
         "cons": [
-          "Londra'nın yüksek yaşam maliyeti",
-          "Tıp ve hukuk gibi bölümlerde rekabetçi başvuru süreci",
-          "Kampüsler şehre yayılmış durumda, tek bir merkezi yerleşke yok"
-        ]
+          "Baden-Württemberg eyaletinde AB/AEA dışından öğrencilere ek okul ücreti uygulanabilir",
+          "Stuttgart, Almanya'nın nispeten pahalı şehirlerinden biri",
+          "Popüler mühendislik programlarında başvuru rekabeti yüksek"
+        ],
+        "badges": [
+          "tu9"
+        ],
+        "mapCity": "stuttgart",
+        "quickFacts": {
+          "students": "~23.000",
+          "language": "Lisansta Almanca, yüksek lisansta çok sayıda İngilizce program",
+          "tuition": "Dönemlik ~200 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+        }
       },
       {
-        "slug": "edinburgh",
-        "country": "uk",
-        "name": "University of Edinburgh",
-        "city": "Edinburgh",
-        "type": "Üniversite",
-        "founded": "1583",
-        "description": "İskoç Aydınlanması'nın merkezi, İngilizce konuşulan dünyanın en eski sivil kuruluşlu üniversitesi.",
+        "slug": "konstanz",
+        "name": "Universität Konstanz",
+        "city": "Konstanz",
+        "type": "Universität",
+        "founded": "1966",
+        "description": "Bodensee kıyısında, araştırma yoğunluğuyla öne çıkan küçük ama seçkin bir 'reform üniversitesi'.",
         "history": [
-          "1582'de Kral VI. James'in verdiği fermanla ve Edinburgh Belediye Meclisi'nin girişimiyle kurulan üniversite, 1583'te 'The Town's College' adıyla eğitime başladı. İngilizce konuşulan dünyanın kilise ya da hükümdar eliyle değil, bir şehir meclisi tarafından kurulan ilk üniversitesi olma özelliğini taşıyor.",
-          "18. yüzyıl İskoç Aydınlanması'nın merkez üslerinden biri olan Edinburgh, David Hume gibi düşünürleri bünyesinde barındırdı; bugün de tıp, veterinerlik, yapay zeka ve edebiyat alanlarında güçlü bir akademik itibara sahip."
+          "1966'da kurulan Universität Konstanz, kuruluşundan itibaren geleneksel fakülte yapısı yerine disiplinler arası, araştırma odaklı bir 'reform üniversitesi' modeliyle tasarlandı.",
+          "Mühendislik veya tıp fakültesi bulunmayan üniversite, siyaset bilimi, kamu yönetimi, kimya, biyoloji ve bilgisayar bilimlerinde küçük ölçekli ama yoğun araştırma kültürüyle tanınır.",
+          "2007'den bu yana kesintisiz olarak Exzellenzuniversität statüsünü koruyan Konstanz, öğrenci başına düşen araştırma fonlaması açısından Almanya'nın en yüksek performanslı üniversitelerinden biri kabul edilir."
         ],
         "highlights": [
-          "İngilizce konuşulan dünyanın en eski sivil kuruluşlu üniversitesi",
-          "İskoç Aydınlanması'nın merkezlerinden biri",
-          "Tıp, veterinerlik ve yapay zekada güçlü akademik itibar"
+          "2007'den bu yana kesintisiz Exzellenzuniversität statüsü",
+          "Bodensee kıyısında, İsviçre sınırına yakın eşsiz bir kampüs konumu",
+          "Siyaset bilimi, kamu yönetimi ve doğa bilimlerinde küçük gruplarla yoğun araştırma kültürü",
+          "Almanya'nın en genç ama en araştırma-yoğun üniversitelerinden biri"
         ],
         "pros": [
-          "Tıp, veterinerlik ve bilgisayar bilimi/yapay zekada güçlü akademik itibar",
-          "Tarihi ve canlı bir başkent olan Edinburgh'da yaşam kalitesi",
-          "Güçlü araştırma altyapısı ve geniş bir uluslararası öğrenci topluluğu"
+          "Küçük öğrenci sayısı sayesinde akademisyenlerle yakın ve kişisel çalışma imkanı",
+          "Bodensee kıyısında yüksek yaşam kalitesine sahip, sakin bir kampüs şehri",
+          "Seçkin araştırma kültürü ve güçlü uluslararası akademik itibar"
         ],
         "cons": [
-          "İskoçya'nın hava koşulları yıl boyunca değişken ve genellikle serin",
-          "Popüler bölümlerde rekabetçi başvuru süreci",
-          "Edinburgh, Londra'ya kıyasla daha sınırlı bir kurumsal iş piyasasına sahip"
-        ]
+          "Mühendislik, tıp veya işletme gibi bazı popüler alanlarda program bulunmuyor",
+          "Küçük şehir yapısı, büyük şehirlerin sunduğu kültürel/sosyal çeşitliliği sunmuyor",
+          "Sınırlı program seçeneği nedeniyle her akademik profile uygun olmayabilir"
+        ],
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "konstanz",
+        "quickFacts": {
+          "students": "~11.000",
+          "language": "Ağırlıklı Almanca, yüksek lisansta seçili İngilizce programlar",
+          "tuition": "Dönemlik ~150 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+        }
       },
       {
-        "slug": "manchester",
-        "country": "uk",
-        "name": "University of Manchester",
-        "city": "Manchester",
-        "type": "Üniversite",
-        "founded": "1824",
-        "description": "Atomun parçalanması ve grafenin keşfiyle bilim tarihine geçen, endüstriyel bir mirasa sahip üniversite.",
+        "slug": "htwberlin",
+        "name": "HTW Berlin (Hochschule für Technik und Wirtschaft Berlin)",
+        "city": "Berlin",
+        "type": "Fachhochschule",
+        "founded": "1994",
+        "description": "Berlin'in en büyük uygulamalı bilimler üniversitesi; mühendislik, işletme, bilgisayar bilimi ve tasarımda uygulamaya dönük eğitim.",
         "history": [
-          "Kökleri 1824'te kurulan Manchester Mechanics' Institute'a kadar uzanan üniversite, 2004'te Victoria University of Manchester ile UMIST'in (Manchester Bilim ve Teknoloji Enstitüsü) birleşmesiyle bugünkü halini aldı.",
-          "Atomun yapısının keşfedildiği ve 2010'da grafenin ilk kez izole edildiği üniversite olan Manchester, mühendislik, malzeme bilimi ve işletme alanlarında güçlü bir sanayi bağlantısına sahip; üniversiteyle ilişkili 25'ten fazla Nobel ödüllü isim bulunuyor."
+          "1994'te, bazıları 1900'lerin başına uzanan çeşitli teknik ve ticari okulların birleşmesiyle kurulan HTW Berlin, kısa sürede Berlin'in en büyük Hochschule'si (uygulamalı bilimler üniversitesi) haline geldi.",
+          "Üniversite, geleneksel araştırma üniversitelerinden farklı olarak sanayiyle iç içe, uygulamaya dönük müfredatıyla öne çıkar; zorunlu stajlar ve proje tabanlı dersler müfredatın merkezinde yer alır.",
+          "Mühendislik, işletme, bilgisayar bilimi, tasarım ve kültür/medya yönetimi gibi geniş bir yelpazede program sunan HTW Berlin, uluslararası çift diploma programlarıyla da tanınır."
         ],
         "highlights": [
-          "Grafenin ilk kez izole edildiği üniversite",
-          "25'ten fazla Nobel ödüllü isimle ilişkili güçlü bir bilim mirası",
-          "2004'te iki köklü kurumun birleşmesiyle oluşan modern bir üniversite"
+          "Berlin'in en büyük uygulamalı bilimler üniversitesi (Hochschule)",
+          "Mühendislik, işletme, bilgisayar bilimi ve tasarımda güçlü, uygulamaya dönük programlar",
+          "Zorunlu staj dönemleri sayesinde mezuniyet öncesi somut iş deneyimi",
+          "Uluslararası çift diploma ve değişim programı seçenekleri"
         ],
         "pros": [
-          "Mühendislik, malzeme bilimi ve doğa bilimlerinde güçlü araştırma altyapısı",
-          "Londra'ya kıyasla daha uygun bir yaşam maliyeti",
-          "Büyük ve canlı bir şehir olan Manchester'da güçlü öğrenci yaşamı"
+          "Teoriden çok uygulamaya dayalı, sektöre hazırlayan bir eğitim modeli",
+          "Berlin'in dinamik girişim ve teknoloji ekosistemine doğrudan erişim",
+          "Klasik üniversitelere kıyasla genellikle daha düşük başvuru rekabeti"
         ],
         "cons": [
-          "Çok büyük öğrenci sayısı, bazı derslerde kalabalık anlamına gelebiliyor",
-          "İngiltere'nin kuzeyinde, Londra'ya göre daha değişken ve yağışlı bir iklim",
-          "Popüler mühendislik ve tıp bölümlerinde rekabetçi başvuru süreci"
-        ]
+          "Akademik araştırma odaklı bir kariyer (doktora vb.) hedefleyenler için klasik üniversiteler daha uygun olabilir",
+          "Berlin, Almanya'nın orta-yüksek yaşam maliyetine sahip şehirlerinden biri",
+          "Bazı popüler programlarda kontenjan sınırlı"
+        ],
+        "badges": [],
+        "mapCity": "berlin",
+        "quickFacts": {
+          "students": "~15.000",
+          "language": "Ağırlıklı Almanca, işletme ve mühendislikte seçili İngilizce programlar",
+          "tuition": "Dönemlik ~310 € katkı payı (okul ücreti yok)"
+        }
       },
       {
-        "slug": "bristol",
-        "country": "uk",
-        "name": "University of Bristol",
-        "city": "Bristol",
-        "type": "Üniversite",
-        "founded": "1876",
-        "description": "İngiltere'de kadın ve erkek öğrencileri eşit şartlarda kabul eden ilk yükseköğretim kurumu.",
+        "slug": "furtwangen",
+        "name": "Hochschule Furtwangen (HFU)",
+        "city": "Furtwangen im Schwarzwald",
+        "type": "Fachhochschule",
+        "founded": "1850",
+        "description": "Karadeniz Ormanı'nda (Schwarzwald), bilgisayar bilimi ve mühendislikte uluslararası öğrencilere özellikle popüler, küçük ölçekli bir uygulamalı bilimler üniversitesi.",
         "history": [
-          "1876'da University College, Bristol olarak kurulan üniversite, kadın ve erkek öğrencileri eşit şartlarda kabul eden İngiltere'nin ilk yükseköğretim kurumu oldu. 1909'da kraliyet fermanı alarak tam üniversite statüsüne kavuştu.",
-          "Fizikçi Paul Dirac gibi isimlerin yetiştiği Bristol, bugün mühendislik, doğa bilimleri ve robotik alanlarında güçlü bir araştırma kadrosuna sahip; şehrin yaratıcı ve teknoloji odaklı ekonomisiyle yakın bağlantılar kuruyor."
+          "1850 yılında bir saat yapımcılığı okulu olarak kurulan HFU, zamanla teknolojiye odaklanan modern bir Hochschule'ye dönüştü; bugünkü üniversite statüsünü 1971'de kazandı.",
+          "Karadeniz Ormanı (Schwarzwald) bölgesindeki Furtwangen ve Schwenningen/VS kampüslerinde eğitim veren üniversite, bilgisayar bilimi, dijital medya ve mühendislik programlarıyla özellikle uluslararası öğrenciler arasında tanınır.",
+          "Küçük şehir kampüsü ve düşük öğrenci-öğretim üyesi oranı sayesinde HFU, yakın akademik takip isteyen uluslararası öğrenciler için popüler bir tercih haline geldi."
         ],
         "highlights": [
-          "Kadın ve erkek öğrencileri eşit şartlarda kabul eden İngiltere'nin ilk yükseköğretim kurumu",
-          "Fizikçi Paul Dirac'ın da aralarında bulunduğu güçlü bir bilim mirası",
-          "Mühendislik, robotik ve doğa bilimlerinde güçlü araştırma kadrosu"
+          "Bilgisayar bilimi, dijital medya ve mühendislikte güçlü, uluslararası odaklı programlar",
+          "Küçük kampüs yapısı sayesinde düşük öğrenci-öğretim üyesi oranı",
+          "Karadeniz Ormanı'nın merkezinde sakin, doğayla iç içe bir kampüs yaşamı",
+          "Çok sayıda İngilizce yüksek lisans programı"
         ],
         "pros": [
-          "Mühendislik ve doğa bilimlerinde güçlü araştırma itibarı",
-          "Bristol'ün yaratıcı, teknoloji odaklı ekonomisine yakınlık",
-          "Londra'ya kıyasla daha uygun bir yaşam maliyeti"
+          "Bilgisayar bilimi ve mühendislikte uluslararası öğrencilere yönelik güçlü program seçenekleri",
+          "Küçük şehirde düşük yaşam maliyeti",
+          "Yakın akademik takip ve küçük sınıf ortamı"
         ],
         "cons": [
-          "Popüler bölümlerde rekabetçi başvuru süreci",
-          "Kampüs şehre yayılmış durumda, tepeli bir coğrafyada yer alıyor",
-          "İngiltere'nin güneybatısında, büyük şehirlere göre sınırlı ulaşım bağlantıları"
-        ]
-      },
-      {
-        "slug": "uva",
-        "country": "nl",
-        "name": "University of Amsterdam (UvA)",
-        "city": "Amsterdam",
-        "type": "Üniversite",
-        "founded": "1632",
-        "description": "Hollanda'nın en büyük araştırma üniversitelerinden biri, Amsterdam'ın kalbinde.",
-        "history": [
-          "1632'de Gerardus Vossius'un Athenaeum Illustre'yi açmasıyla kurulan UvA, Hollanda'nın hâlâ faaliyette olan dördüncü en eski akademik kurumu. 19. yüzyılda tam üniversite statüsü kazandı.",
-          "Amsterdam şehrinin tam merkezinde ve Science Park kampüsünde eğitim veren UvA, sosyal bilimler, hukuk, beşeri bilimler ve doğa bilimlerinde güçlü bir araştırma kadrosuna sahip; Hollanda'nın en büyük üniversitelerinden biri olarak kabul ediliyor."
-        ],
-        "highlights": [
-          "Hollanda'nın hâlâ faaliyette olan dördüncü en eski akademik kurumu",
-          "Amsterdam şehir merkezinde ve Science Park'ta kampüsler",
-          "Sosyal bilimler ve hukukta güçlü akademik itibar"
-        ],
-        "pros": [
-          "Sosyal bilimler, hukuk ve beşeri bilimlerde güçlü akademik itibar",
-          "Avrupa'nın en canlı ve uluslararası şehirlerinden Amsterdam'da yaşam",
-          "Geniş bir İngilizce program yelpazesi"
-        ],
-        "cons": [
-          "Amsterdam'da öğrenci konutu bulmak zor ve pahalı olabiliyor",
-          "Popüler bölümlerde rekabetçi başvuru süreci",
-          "Büyük öğrenci sayısı bazı derslerde kalabalık anlamına gelebiliyor"
-        ]
-      },
-      {
-        "slug": "vu",
-        "country": "nl",
-        "name": "Vrije Universiteit Amsterdam (VU)",
-        "city": "Amsterdam",
-        "type": "Üniversite",
-        "founded": "1880",
-        "description": "Devletten ve kiliseden bağımsız olma ilkesiyle kurulan Amsterdam'ın ikinci büyük üniversitesi.",
-        "history": [
-          "1880'de teolog ve devlet adamı Abraham Kuyper öncülüğünde, devletten ve kiliseden bağımsız ('vrije' yani 'özgür') bir üniversite olarak kurulan VU, Amsterdam'ın Nieuwe Kerk kilisesinde düzenlenen bir kuruluş toplantısıyla hayata geçti.",
-          "Bugün Amsterdam'ın Zuidas iş bölgesine yakın modern bir kampüste eğitim veren VU, tıp, işletme ve doğa bilimlerinde güçlü bir akademik kadroya sahip."
-        ],
-        "highlights": [
-          "Devletten ve kiliseden bağımsız kurulan bir üniversite",
-          "Amsterdam'ın Zuidas iş bölgesine yakın modern bir kampüs",
-          "Tıp, işletme ve doğa bilimlerinde güçlü akademik kadro"
-        ],
-        "pros": [
-          "Amsterdam'ın Zuidas iş ve finans bölgesine doğrudan yakınlık",
-          "Tıp ve işletmede güçlü, uygulamaya dönük programlar",
-          "UvA'ya kıyasla daha sakin, modern bir kampüs ortamı"
-        ],
-        "cons": [
-          "Amsterdam'da öğrenci konutu bulmak zor ve pahalı olabiliyor",
-          "Bazı programlar ağırlıklı olarak Hollandaca yürütülüyor",
-          "UvA'ya kıyasla daha az uluslararası tanınırlığa sahip"
-        ]
-      },
-      {
-        "slug": "tudelft",
-        "country": "nl",
-        "name": "TU Delft (Delft University of Technology)",
-        "city": "Delft",
-        "type": "Teknik Üniversite",
-        "founded": "1842",
-        "description": "Hollanda'nın en eski ve en büyük teknik üniversitesi.",
-        "history": [
-          "1842'de Kral II. Willem tarafından, başlangıçta Hollanda Doğu Hint Adaları için memur yetiştirmek amacıyla kraliyet akademisi olarak kurulan TU Delft, 1905'te tam bir teknik üniversiteye dönüştü.",
-          "Bugün mühendislik, mimarlık ve bilgisayar bilimlerinde Avrupa'nın önde gelen teknik üniversitelerinden biri olan TU Delft, su yönetimi ve deniz mühendisliğindeki uzmanlığıyla da tanınıyor - Hollanda'nın deniz seviyesiyle mücadele mirasına doğrudan bağlı bir alan."
-        ],
-        "highlights": [
-          "Hollanda'nın en eski ve en büyük teknik üniversitesi",
-          "Mühendislik ve mimarlıkta Avrupa çapında üst sıralarda",
-          "Su yönetimi ve deniz mühendisliğinde özel bir uzmanlık"
-        ],
-        "pros": [
-          "Mühendislik, mimarlık ve bilgisayar bilimlerinde Avrupa'nın en iyi programlarından bazılarına sahip",
-          "Su yönetimi ve sürdürülebilirlikte dünya çapında öncü bir uzmanlık",
-          "Güçlü sanayi bağlantıları ve araştırma fonlaması"
-        ],
-        "cons": [
-          "Program ağırlıklı olarak mühendislik ve teknik alanlarla sınırlı",
-          "Delft, büyük şehirlere kıyasla küçük bir üniversite kenti",
-          "Mühendislik ders yükü yoğun ve zorlayıcı"
-        ]
-      },
-      {
-        "slug": "utrecht",
-        "country": "nl",
-        "name": "Utrecht University",
-        "city": "Utrecht",
-        "type": "Üniversite",
-        "founded": "1636",
-        "description": "Hollanda'nın en büyük araştırma üniversitelerinden biri, geniş bir program yelpazesiyle.",
-        "history": [
-          "1636'da kurulan Utrecht Üniversitesi, 17. ve 18. yüzyıllarda özellikle İngiltere ve İskoçya'dan çok sayıda yabancı öğrenciyi kendine çekti.",
-          "Bugün De Uithof (Utrecht Science Park) kampüsünde eğitim veren üniversite, tıp, hukuk, doğa bilimleri ve sosyal bilimlerde Hollanda'nın en kapsamlı araştırma üniversitelerinden biri olarak tanınıyor."
-        ],
-        "highlights": [
-          "17. yüzyıldan bu yana uluslararası öğrencileri kendine çeken bir gelenek",
-          "De Uithof (Utrecht Science Park) kampüsünde modern bir yerleşke",
-          "Tıp, hukuk ve doğa bilimlerinde kapsamlı bir araştırma üniversitesi"
-        ],
-        "pros": [
-          "Neredeyse her disiplinde güçlü, kapsamlı bir araştırma üniversitesi",
-          "Utrecht, Hollanda'nın en yaşanabilir ve merkezi şehirlerinden biri",
-          "Modern, kompakt bir bilim kampüsü (Utrecht Science Park)"
-        ],
-        "cons": [
-          "Popüler bölümlerde rekabetçi başvuru süreci",
-          "Amsterdam'a kıyasla daha az uluslararası tanınırlığa sahip bir şehir",
-          "Kampüs şehir merkezinden biraz uzakta"
-        ]
-      },
-      {
-        "slug": "leiden",
-        "country": "nl",
-        "name": "Leiden University",
-        "city": "Leiden",
-        "type": "Üniversite",
-        "founded": "1575",
-        "description": "1575'te Oranje Prensi Willem tarafından kurulan Hollanda'nın en eski üniversitesi.",
-        "history": [
-          "İspanya'ya karşı verilen bağımsızlık mücadelesi sırasında, 1575'te Oranje Prensi Willem tarafından kurulan Leiden Üniversitesi, Hollanda'nın en eski üniversitesi olma özelliğini taşıyor.",
-          "Hukuk, uluslararası ilişkiler ve arkeolojide güçlü bir akademik gelenek oluşturan Leiden, tarihi Rapenburg kanalı boyunca uzanan kampüsüyle, Hollanda hükümetinin ve uluslararası kurumların (Lahey) yakınında yer alıyor."
-        ],
-        "highlights": [
-          "Hollanda'nın en eski üniversitesi (1575)",
-          "Hukuk, uluslararası ilişkiler ve arkeolojide güçlü bir gelenek",
-          "Tarihi Rapenburg kanalı boyunca uzanan bir kampüs"
-        ],
-        "pros": [
-          "Hukuk ve uluslararası ilişkilerde güçlü akademik itibar, Lahey'e yakınlık",
-          "Tarihi ve pitoresk bir üniversite kenti olan Leiden'de yaşam kalitesi",
-          "Güçlü bir arkeoloji ve Asya çalışmaları geleneği"
-        ],
-        "cons": [
-          "Leiden, Amsterdam'a kıyasla daha küçük ve sakin bir şehir",
-          "Popüler bölümlerde rekabetçi başvuru süreci",
-          "Bazı programlar ağırlıklı olarak Hollandaca yürütülüyor"
-        ]
-      },
-      {
-        "slug": "erasmus",
-        "country": "nl",
-        "name": "Erasmus University Rotterdam",
-        "city": "Rotterdam",
-        "type": "Üniversite",
-        "founded": "1913",
-        "description": "İşletme ve ekonomide Avrupa'nın en iyi okullarından birine sahip, Rotterdam merkezli üniversite.",
-        "history": [
-          "1913'te Nederlandsche Handels-Hoogeschool (Hollanda Ticaret Yüksekokulu) adıyla kurulan üniversite, 1973'te bugünkü adını, hümanist düşünür Erasmus'tan alarak Erasmus University Rotterdam'a dönüştü.",
-          "Rotterdam School of Management (RSM) ile işletme ve ekonomide Avrupa'nın en iyi okullarından biri kabul edilen üniversite, tıp fakültesi Erasmus MC ile de sağlık bilimlerinde güçlü bir isim."
-        ],
-        "highlights": [
-          "İşletme ve ekonomide Avrupa'nın en iyi okullarından biri (RSM)",
-          "Erasmus MC ile güçlü bir tıp fakültesi",
-          "Hümanist düşünür Erasmus'tan gelen bir isim"
-        ],
-        "pros": [
-          "İşletme, ekonomi ve sağlık bilimlerinde güçlü akademik itibar",
-          "Rotterdam'ın modern, kozmopolit ve limana dayalı iş dünyasına yakınlık",
-          "Amsterdam'a kıyasla daha uygun bir yaşam maliyeti"
-        ],
-        "cons": [
-          "Rotterdam, Amsterdam kadar turistik/tarihi bir şehir değil",
-          "İşletme programlarında rekabetçi ve yoğun bir akademik tempo",
-          "Kampüs şehrin farklı noktalarına yayılmış durumda"
-        ]
-      },
-      {
-        "slug": "maastricht",
-        "country": "nl",
-        "name": "Maastricht University",
-        "city": "Maastricht",
-        "type": "Üniversite",
-        "founded": "1976",
-        "description": "Probleme dayalı öğrenim (PBL) modeliyle tanınan, son derece uluslararası bir üniversite.",
-        "history": [
-          "9 Ocak 1976'da kurulan Maastricht University, Hollanda'nın en genç üniversitelerinden biri. Kuruluşundan itibaren, öğrencilerin küçük gruplar halinde gerçek dünya problemleri üzerinden öğrendiği yenilikçi 'Probleme Dayalı Öğrenim' (Problem-Based Learning) modelini benimsedi.",
-          "Belçika ve Almanya sınırına yakın konumu sayesinde son derece uluslararası bir öğrenci profiline sahip olan Maastricht, Avrupa çalışmaları, işletme ve tıp alanlarında güçlü bir akademik itibara sahip."
-        ],
-        "highlights": [
-          "Yenilikçi 'Probleme Dayalı Öğrenim' (PBL) modeliyle tanınan bir üniversite",
-          "Hollanda'nın en uluslararası öğrenci profiline sahip üniversitelerinden biri",
-          "Avrupa çalışmaları, işletme ve tıpta güçlü akademik itibar"
-        ],
-        "pros": [
-          "Küçük gruplarla, probleme dayalı, etkileşimli bir öğrenim modeli",
-          "Son derece uluslararası bir öğrenci topluluğu ve kampüs kültürü",
-          "Belçika ve Almanya sınırına yakınlık, çok kültürlü bir bölge"
-        ],
-        "cons": [
-          "Maastricht, Hollanda'nın büyük şehirlerinden (Amsterdam, Rotterdam) uzakta, ülkenin güneyinde",
-          "PBL modeli her öğrenme tarzına uygun olmayabilir, yoğun grup çalışması gerektiriyor",
-          "Şehir küçük, büyük şehir hayatı arayanlar için sınırlı"
-        ]
-      },
-      {
-        "slug": "tue",
-        "country": "nl",
-        "name": "Eindhoven University of Technology (TU/e)",
-        "city": "Eindhoven",
-        "type": "Teknik Üniversite",
-        "founded": "1956",
-        "description": "Philips'in teknoloji ihtiyacı için kurulan, Hollanda'nın 'Silikon Vadisi'ndeki teknik üniversitesi.",
-        "history": [
-          "1956'da Hollanda hükümeti tarafından, elektronik devi Philips'in araştırma laboratuvarları için nitelikli mühendis yetiştirmek amacıyla Technische Hogeschool Eindhoven adıyla kurulan üniversite, 1957'de eğitime başladı.",
-          "Bugün Eindhoven'ın 'Brainport' teknoloji bölgesinin kalbinde yer alan TU/e, elektrik mühendisliği, bilgisayar bilimi ve tasarım alanlarında sanayiyle iç içe bir eğitim modeli sunuyor."
-        ],
-        "highlights": [
-          "Philips'in teknoloji ihtiyacı için 1956'da kurulan bir üniversite",
-          "Eindhoven'ın 'Brainport' teknoloji bölgesinin kalbinde bir kampüs",
-          "Elektrik mühendisliği, bilgisayar bilimi ve tasarımda sanayiyle iç içe eğitim"
-        ],
-        "pros": [
-          "Philips, ASML gibi büyük teknoloji şirketlerine doğrudan yakınlık ve staj imkanı",
-          "Elektrik mühendisliği ve tasarımda güçlü, uygulamaya dönük eğitim",
-          "Amsterdam'a kıyasla daha uygun bir yaşam maliyeti"
-        ],
-        "cons": [
-          "Program neredeyse tamamen mühendislik ve teknik alanlarla sınırlı",
-          "Eindhoven, Amsterdam kadar turistik ya da kültürel bir şehir değil",
-          "Mühendislik ders yükü yoğun ve zorlayıcı"
-        ]
-      },
-      {
-        "slug": "sorbonne",
-        "country": "fr",
-        "name": "Sorbonne Université",
-        "city": "Paris",
-        "type": "Üniversite",
-        "founded": "1257",
-        "description": "Kökleri 1257'ye uzanan, Paris'in en tanınmış akademik markası.",
-        "history": [
-          "1257'de Robert de Sorbon'un yoksul öğrenciler için kurduğu bir kolej olarak doğan Sorbonne, zamanla Avrupa'nın önde gelen bilim ve kültür merkezlerinden biri haline geldi. Fransız Devrimi sırasında kapatılan kurum, 1806'da Napolyon tarafından yeniden kuruldu.",
-          "Bugünkü Sorbonne Université, 2018'de Paris-Sorbonne (Paris IV) ve Pierre-et-Marie-Curie (Paris VI) üniversitelerinin birleşmesiyle oluştu; beşeri bilimler, tıp ve doğa bilimlerini bir araya getiren kapsamlı bir yapıya sahip."
-        ],
-        "highlights": [
-          "Kökleri 1257'ye uzanan, Paris'in en tanınmış akademik markası",
-          "2018'de iki büyük Paris üniversitesinin birleşmesiyle oluştu",
-          "Beşeri bilimler, tıp ve doğa bilimlerini bir arada sunan kapsamlı yapı"
-        ],
-        "pros": [
-          "Beşeri bilimler, tıp ve doğa bilimlerinde dünya çapında tanınırlık",
-          "Paris'in tam merkezinde, tarihi Latin Quartier'de bir kampüs",
-          "Fransa'nın en büyük ve en kapsamlı üniversitelerinden biri"
-        ],
-        "cons": [
-          "Paris, Avrupa'nın en pahalı şehirlerinden biri",
-          "Çoğu lisans programı Fransızca yürütülüyor",
-          "Büyük öğrenci sayısı bazı derslerde kalabalık anlamına gelebiliyor"
-        ]
-      },
-      {
-        "slug": "psl",
-        "country": "fr",
-        "name": "Université PSL (Paris Sciences & Lettres)",
-        "city": "Paris",
-        "type": "Üniversite",
-        "founded": "2010",
-        "description": "Collège de France gibi köklü kurumları bir araya getiren, seçkin bir Paris üniversiteler birliği.",
-        "history": [
-          "2010'da kurulan Université PSL, kökleri 1530'da kurulan Collège de France'a kadar uzanan çok sayıda köklü ve seçkin kurumu bir çatı altında topluyor; 2019'da resmi olarak tam bir üniversiteye dönüştü.",
-          "École Normale Supérieure, Paris Dauphine ve Institut Curie gibi 11 kurucu kurumu bünyesinde barındıran PSL, uluslararası sıralamalarda düzenli olarak Fransa'nın en üst sıralardaki üniversitesi olarak yer alıyor."
-        ],
-        "highlights": [
-          "Kökleri 1530'a uzanan seçkin kurumları bir araya getiren bir birlik",
-          "École Normale Supérieure gibi 11 kurucu kurum",
-          "Uluslararası sıralamalarda Fransa'nın en üst sıradaki üniversitesi"
-        ],
-        "pros": [
-          "Fransa'nın en seçkin akademik kurumlarına tek bir çatı altında erişim",
-          "Uluslararası sıralamalarda çok yüksek akademik itibar",
-          "Paris'in kültürel ve kariyer imkanlarına doğrudan yakınlık"
-        ],
-        "cons": [
-          "Kurucu kurumlara kabul son derece rekabetçi ve seçici",
-          "Paris'in yüksek yaşam maliyeti",
-          "Kampüsler Paris genelinde farklı noktalara yayılmış durumda"
-        ]
-      },
-      {
-        "slug": "sciencespo",
-        "country": "fr",
-        "name": "Sciences Po Paris",
-        "city": "Paris",
-        "type": "Üniversite",
-        "founded": "1872",
-        "description": "Siyaset bilimi ve uluslararası ilişkilerde Fransa'nın en etkili okulu; çok sayıda devlet başkanı yetiştirdi.",
-        "history": [
-          "1872'de, Fransa'nın Prusya'ya karşı aldığı yenilginin ardından yeni bir siyasi ve idari elit yetiştirme amacıyla kurulan Sciences Po, kısa sürede Fransız kamu hayatının merkezi kurumlarından biri haline geldi.",
-          "Emmanuel Macron ve Jacques Chirac gibi çok sayıda Fransa Cumhurbaşkanı'nın mezun olduğu Sciences Po, bugün siyaset bilimi, uluslararası ilişkiler ve kamu politikası alanlarında dünya çapında tanınan bir isim."
-        ],
-        "highlights": [
-          "Fransa'nın siyasi ve idari elitini yetiştirmek için 1872'de kurulan bir okul",
-          "Çok sayıda Fransa Cumhurbaşkanı'nın mezun olduğu bir kurum",
-          "Siyaset bilimi ve uluslararası ilişkilerde dünya çapında tanınırlık"
-        ],
-        "pros": [
-          "Siyaset bilimi, uluslararası ilişkiler ve kamu politikasında dünya çapında en üst düzey itibar",
-          "Fransa'nın siyasi ve kurumsal çevrelerine doğrudan erişim",
-          "Çok uluslararası bir öğrenci topluluğu ve çift diploma imkanları"
-        ],
-        "cons": [
-          "Program büyük ölçüde sosyal bilimlerle sınırlı, STEM seçeneği yok",
-          "Başvuru süreci son derece rekabetçi",
-          "Paris'in yüksek yaşam maliyeti"
-        ]
-      },
-      {
-        "slug": "polytechnique",
-        "country": "fr",
-        "name": "École Polytechnique",
-        "city": "Palaiseau",
-        "type": "Teknik Üniversite",
-        "founded": "1794",
-        "description": "Fransız Devrimi sırasında kurulan, mühendislikte Fransa'nın en seçkin 'Grande École'ü.",
-        "history": [
-          "1794'te matematikçi Gaspard Monge tarafından, Fransız Devrimi'nin mühendis ve üst düzey memur ihtiyacına yanıt olarak kurulan École Polytechnique, 1804'te Napolyon döneminde askeri bir akademiye dönüştü.",
-          "'X' takma adıyla da bilinen okul, öğrencilerini son derece seçici bir sınavla Fransa'nın her bölgesinden alıyor; bugün Paris yakınlarındaki Palaiseau kampüsünde mühendislik, matematik ve fizikte dünya çapında bir itibara sahip."
-        ],
-        "highlights": [
-          "Fransız Devrimi sırasında, 1794'te kurulan seçkin bir mühendislik okulu",
-          "Son derece seçici bir giriş sınavıyla öğrenci alıyor",
-          "Mühendislik, matematik ve fizikte dünya çapında itibar"
-        ],
-        "pros": [
-          "Mühendislik ve matematikte Fransa'nın en seçkin ve en prestijli okulu",
-          "Fransız sanayisi ve devlet kurumlarıyla güçlü bağlantılar",
-          "Küçük, yoğun ve kaliteli bir eğitim ortamı"
-        ],
-        "cons": [
-          "Giriş sınavı son derece rekabetçi ve zorlayıcı",
-          "Palaiseau, Paris şehir merkezinden uzakta, kampüs kasabası bir ortam",
-          "Program ağırlıklı olarak mühendislik ve fen bilimleriyle sınırlı"
-        ]
-      },
-      {
-        "slug": "hecparis",
-        "country": "fr",
-        "name": "HEC Paris",
-        "city": "Jouy-en-Josas",
-        "type": "İşletme Okulu",
-        "founded": "1881",
-        "description": "Paris Ticaret Odası tarafından kurulan, Avrupa'nın en iyi işletme okullarından biri.",
-        "history": [
-          "1881'de Paris Ticaret ve Sanayi Odası tarafından kurulan HEC Paris, işletme ve ticaret alanında Fransa'nın en köklü 'Grande École'lerinden biri olmayı hedefledi.",
-          "Bugün Paris yakınlarındaki Jouy-en-Josas'daki şato kampüsünde eğitim veren HEC Paris, MBA ve yüksek lisans programlarıyla düzenli olarak Avrupa'nın en iyi işletme okulları arasında gösteriliyor."
-        ],
-        "highlights": [
-          "Paris Ticaret Odası tarafından 1881'de kurulan bir işletme okulu",
-          "Jouy-en-Josas'daki tarihi bir şato kampüsünde eğitim",
-          "Avrupa'nın en iyi MBA ve işletme programları arasında"
-        ],
-        "pros": [
-          "İşletme ve finansta Avrupa çapında en üst düzey akademik itibar",
-          "Güçlü bir mezunlar ağı ve kurumsal işe alım bağlantıları",
-          "Şato kampüsünde sakin, odaklanmaya elverişli bir öğrenim ortamı"
-        ],
-        "cons": [
-          "Program tamamen işletme ve yönetimle sınırlı",
-          "Öğrenim harçları özel bir işletme okulu olarak yüksek",
-          "Kampüs Paris şehir merkezinden uzakta, kırsal bir ortamda"
-        ]
-      },
-      {
-        "slug": "parissaclay",
-        "country": "fr",
-        "name": "Université Paris-Saclay",
-        "city": "Saclay",
-        "type": "Üniversite",
-        "founded": "2014",
-        "description": "Fransa'nın en büyük araştırma kümelerinden birini bir araya getiren genç ama güçlü bir üniversite.",
-        "history": [
-          "Kökleri 1150'ye, Paris Üniversitesi'nin kuruluşuna kadar uzanan çok sayıda kurumu bünyesinde barındıran Paris-Saclay, resmi olarak 2014'te kuruldu ve 2020'de bugünkü yapısına kavuştu.",
-          "École Normale Supérieure Paris-Saclay ve CEA gibi araştırma kurumlarını bir araya getiren üniversite, matematik, fizik ve bilgisayar bilimlerinde uluslararası sıralamalarda düzenli olarak dünyanın en iyileri arasında yer alıyor."
-        ],
-        "highlights": [
-          "Fransa'nın en büyük bilim ve teknoloji kümelerinden birini bir araya getiriyor",
-          "Matematik ve fizikte uluslararası sıralamalarda dünya çapında bir isim",
-          "CEA gibi büyük araştırma kurumlarıyla doğrudan bağlantı"
-        ],
-        "pros": [
-          "Matematik, fizik ve bilgisayar bilimlerinde dünya çapında en üst düzey araştırma itibarı",
-          "Fransa'nın en büyük araştırma kümelerinden birine doğrudan erişim",
-          "Genç ve dinamik bir akademik yapı, hızla büyüyen bir uluslararası itibar"
-        ],
-        "cons": [
-          "Saclay kampüsü Paris şehir merkezinden uzakta, banliyö bir ortamda",
-          "Genç bir kurum olarak marka tanınırlığı bazı köklü isimlere göre daha düşük",
-          "Çok sayıda kurucu kurumun bir araya gelmesi bazen karmaşık bir yapı yaratıyor"
-        ]
-      },
-      {
-        "slug": "lyon1",
-        "country": "fr",
-        "name": "Université Claude Bernard Lyon 1",
-        "city": "Lyon",
-        "type": "Üniversite",
-        "founded": "1896",
-        "description": "Fransa'nın Paris dışındaki en büyük bilim ve tıp üniversitelerinden biri.",
-        "history": [
-          "Kökleri 1808'de kurulan Fen Fakültesi'ne uzanan Lyon Üniversitesi, 1896'da çeşitli fakültelerin birleşmesiyle resmi olarak kuruldu. 1970'te üç bağımsız üniversiteye ayrıldı; bunlardan biri fizyolog Claude Bernard'ın adını taşıyan Lyon 1 oldu.",
-          "Bugün tıp, fen bilimleri ve spor bilimlerinde Fransa'nın Paris dışındaki en güçlü üniversitelerinden biri olan Lyon 1, Fransa'nın ikinci büyük şehri Lyon'da eğitim veriyor."
-        ],
-        "highlights": [
-          "Kökleri 1808'e uzanan, Fransa'nın Paris dışındaki en büyük bilim üniversitelerinden biri",
-          "Fizyolog Claude Bernard'ın adını taşıyor",
-          "Tıp, fen bilimleri ve spor bilimlerinde güçlü akademik itibar"
-        ],
-        "pros": [
-          "Tıp ve fen bilimlerinde Paris dışında Fransa'nın en güçlü üniversitelerinden biri",
-          "Lyon, Fransa'nın gastronomi başkenti olarak yüksek bir yaşam kalitesi sunuyor",
-          "Paris'e kıyasla belirgin şekilde daha uygun bir yaşam maliyeti"
-        ],
-        "cons": [
-          "Çoğu program Fransızca yürütülüyor, İngilizce seçenek sınırlı",
-          "Paris'e kıyasla daha az uluslararası tanınırlık",
-          "Tıp gibi bölümlerde rekabetçi başvuru süreci"
-        ]
-      },
-      {
-        "slug": "aixmarseille",
-        "country": "fr",
-        "name": "Aix-Marseille Université",
-        "city": "Aix-Marseille",
-        "type": "Üniversite",
-        "founded": "1409",
-        "description": "1409'da kurulan, 2012'de yeniden birleşerek Frankofon dünyanın en büyük üniversitesi haline gelen kurum.",
-        "history": [
-          "1409'da Anjou Kontu II. Louis'nin girişimiyle kurulan üniversite, Fransız Devrimi sırasında kapatıldı ve daha sonra Aix ve Marsilya'da ayrı kurumlar olarak yeniden kuruldu.",
-          "2012'de bu ayrı kurumların yeniden birleşmesiyle oluşan Aix-Marseille Université, yaklaşık 70.000 öğrencisiyle Frankofon dünyanın en büyük üniversitesi konumuna geldi; hukuk, tıp ve Akdeniz çalışmalarında güçlü bir akademik itibara sahip."
-        ],
-        "highlights": [
-          "1409'da kurulan, Fransa'nın en eski üniversitelerinden biri",
-          "2012'de yeniden birleşerek Frankofon dünyanın en büyük üniversitesi oldu",
-          "Hukuk, tıp ve Akdeniz çalışmalarında güçlü akademik itibar"
-        ],
-        "pros": [
-          "Frankofon dünyanın en büyük üniversitesi olarak geniş bir program yelpazesi",
-          "Aix-en-Provence ve Marsilya'nın Akdeniz kültürü ve yaşam kalitesi",
-          "Paris'e kıyasla belirgin şekilde daha uygun bir yaşam maliyeti"
-        ],
-        "cons": [
-          "Çok büyük öğrenci sayısı, bazı derslerde kalabalık anlamına gelebiliyor",
-          "Çoğu program Fransızca yürütülüyor",
-          "Kampüsler Aix-en-Provence ve Marsilya arasında dağınık durumda"
-        ]
-      },
-      {
-        "slug": "ethz",
-        "country": "ch",
-        "name": "ETH Zürich",
-        "city": "Zürih",
-        "type": "Teknik Üniversite",
-        "founded": "1855",
-        "description": "Einstein'ın da mezunu olduğu, Avrupa kıtasının en iyi teknik üniversitesi.",
-        "history": [
-          "1854'te federal bir politeknik okulu olarak kurulan ve 1855'te eğitime başlayan ETH Zürich, Paris'teki École polytechnique modelinden ilham aldı.",
-          "Albert Einstein'ın da mezunları arasında bulunduğu ETH Zürich, üniversiteyle ilişkili 20'den fazla Nobel ödüllü isimle, bugün mühendislik, doğa bilimleri ve bilgisayar bilimlerinde Avrupa kıtasının en iyi teknik üniversitesi kabul ediliyor."
-        ],
-        "highlights": [
-          "Albert Einstein'ın da mezunları arasında bulunduğu bir üniversite",
-          "Üniversiteyle ilişkili 20'den fazla Nobel ödüllü isim",
-          "Avrupa kıtasının en iyi teknik üniversitesi kabul ediliyor"
-        ],
-        "pros": [
-          "Mühendislik, doğa bilimleri ve bilgisayar bilimlerinde dünya çapında en üst düzey itibar",
-          "İsviçre'nin güçlü ekonomisi ve yüksek yaşam standardı",
-          "Güçlü araştırma fonlaması ve dünya standartlarında laboratuvarlar"
-        ],
-        "cons": [
-          "İsviçre, Avrupa'nın en pahalı ülkelerinden biri",
-          "Başvuru ve akademik süreç son derece rekabetçi",
-          "Dersler kısmen Almanca yürütülüyor, özellikle lisans düzeyinde"
-        ]
-      },
-      {
-        "slug": "epfl",
-        "country": "ch",
-        "name": "EPFL (École Polytechnique Fédérale de Lausanne)",
-        "city": "Lozan",
-        "type": "Teknik Üniversite",
-        "founded": "1853",
-        "description": "Cenevre Gölü kıyısında, ikonik mimarisiyle tanınan bir Fransızca konuşulan bölge teknik üniversitesi.",
-        "history": [
-          "1853'te École Spéciale de Lausanne adıyla kurulan okul, 1969'da bugünkü adı olan École Polytechnique Fédérale de Lausanne'a dönüştü ve ETH Zürich ile birlikte İsviçre'nin iki federal teknoloji enstitüsünden biri haline geldi.",
-          "Cenevre Gölü kıyısındaki kampüsü ve ikonik Rolex Learning Center binasıyla tanınan EPFL, bilgisayar bilimi, malzeme mühendisliği ve yaşam bilimlerinde dünya çapında bir araştırma itibarına sahip."
-        ],
-        "highlights": [
-          "İsviçre'nin iki federal teknoloji enstitüsünden biri",
-          "Cenevre Gölü kıyısında, ikonik Rolex Learning Center binasıyla tanınan bir kampüs",
-          "Bilgisayar bilimi ve malzeme mühendisliğinde dünya çapında araştırma itibarı"
-        ],
-        "pros": [
-          "Bilgisayar bilimi ve mühendislikte dünya çapında en üst düzey araştırma itibarı",
-          "Cenevre Gölü kıyısında olağanüstü bir kampüs ortamı",
-          "Fransızca konuşulan bölgede, çok kültürlü bir öğrenci topluluğu"
-        ],
-        "cons": [
-          "İsviçre'nin yüksek yaşam maliyeti",
-          "Dersler kısmen Fransızca yürütülüyor, özellikle lisans düzeyinde",
-          "Program neredeyse tamamen mühendislik ve teknik alanlarla sınırlı"
-        ]
-      },
-      {
-        "slug": "uzh",
-        "country": "ch",
-        "name": "University of Zurich (UZH)",
-        "city": "Zürih",
-        "type": "Üniversite",
-        "founded": "1833",
-        "description": "Kilise ya da hükümdar müdahalesi olmadan kurulan Avrupa'nın ilk üniversitesi.",
-        "history": [
-          "Kökleri 1525'e uzanan teoloji, hukuk ve tıp kolejlerinin bir araya gelmesiyle 1833'te kurulan Zürih Üniversitesi, kilise ya da bir hükümdarın müdahalesi olmadan kurulan Avrupa'nın ilk üniversitesi olma özelliğini taşıyor.",
-          "İsviçre'nin en büyük üniversitesi olan UZH, tıp, hukuk ve ekonomi alanlarında güçlü bir akademik kadroya sahip; üniversiteyle ilişkili çok sayıda Nobel ödüllü isim bulunuyor."
-        ],
-        "highlights": [
-          "Avrupa'nın kilise ya da hükümdar müdahalesi olmadan kurulan ilk üniversitesi",
-          "İsviçre'nin en büyük üniversitesi",
-          "Tıp, hukuk ve ekonomide güçlü akademik kadro"
-        ],
-        "pros": [
-          "Tıp, hukuk ve ekonomide güçlü, kapsamlı bir akademik kadro",
-          "İsviçre'nin en büyük finans merkezi Zürih'te yaşam kalitesi",
-          "Almanca konuşulan bölgede geniş bir program yelpazesi"
-        ],
-        "cons": [
-          "İsviçre'nin yüksek yaşam maliyeti",
-          "Dersler ağırlıklı olarak Almanca yürütülüyor",
-          "Popüler bölümlerde rekabetçi başvuru süreci"
-        ]
-      },
-      {
-        "slug": "unige",
-        "country": "ch",
-        "name": "University of Geneva (UNIGE)",
-        "city": "Cenevre",
-        "type": "Üniversite",
-        "founded": "1559",
-        "description": "Jean Calvin tarafından kurulan, uluslararası kurumların şehri Cenevre'nin üniversitesi.",
-        "history": [
-          "1559'da reformist teolog Jean Calvin tarafından bir ilahiyat okulu olarak kurulan Cenevre Üniversitesi, 1873'te dini bağlarından ayrılarak tam bir üniversite statüsü kazandı.",
-          "Birleşmiş Milletler'in Avrupa merkezine ve çok sayıda uluslararası kuruluşa ev sahipliği yapan Cenevre şehrinde bulunan üniversite, uluslararası ilişkiler, hukuk ve fizikte (CERN ile yakın işbirliği) güçlü bir akademik itibara sahip."
-        ],
-        "highlights": [
-          "Reformist teolog Jean Calvin tarafından 1559'da kurulan bir üniversite",
-          "Birleşmiş Milletler'in Avrupa merkezine ev sahipliği yapan bir şehirde",
-          "Uluslararası ilişkiler, hukuk ve fizikte güçlü akademik itibar"
-        ],
-        "pros": [
-          "Uluslararası ilişkiler ve diplomaside eşsiz bir konum, BM ve çok sayıda STK'ya yakınlık",
-          "CERN ile yakın işbirliği sayesinde fizikte güçlü araştırma imkanı",
-          "Çok dilli ve uluslararası bir kampüs ortamı"
-        ],
-        "cons": [
-          "Cenevre, İsviçre'nin (ve Avrupa'nın) en pahalı şehirlerinden biri",
-          "Dersler ağırlıklı olarak Fransızca yürütülüyor",
-          "Küçük bir şehir olarak sınırlı büyük şehir imkanları"
-        ]
-      },
-      {
-        "slug": "tartu",
-        "country": "ee",
-        "name": "University of Tartu",
-        "city": "Tartu",
-        "type": "Üniversite",
-        "founded": "1632",
-        "description": "İsveç Kralı II. Gustav Adolf tarafından kurulan, Estonya'nın en büyük ve en eski üniversitesi.",
-        "history": [
-          "1632'de İsveç Kralı II. Gustav Adolf tarafından kurulan Tartu Üniversitesi, tarihi boyunca savaşlar ve işgaller nedeniyle birkaç kez kapandı ve yeniden açıldı; 1802'de kalıcı olarak yeniden kuruldu.",
-          "Estonya'nın ulusal üniversitesi olarak kabul edilen Tartu, bugün ülkenin en büyük ve en eski üniversitesi; tıp, hukuk ve doğa bilimlerinde Baltık bölgesinin önde gelen araştırma kurumlarından biri."
-        ],
-        "highlights": [
-          "İsveç Kralı II. Gustav Adolf tarafından 1632'de kurulan bir üniversite",
-          "Estonya'nın ulusal üniversitesi kabul ediliyor",
-          "Baltık bölgesinin önde gelen araştırma kurumlarından biri"
-        ],
-        "pros": [
-          "Baltık bölgesinde tıp, hukuk ve doğa bilimlerinde güçlü akademik itibar",
-          "Diğer Avrupa ülkelerine kıyasla düşük yaşam maliyeti",
-          "Tartu, öğrenci nüfusu yoğun, güvenli ve samimi bir üniversite kenti"
-        ],
-        "cons": [
-          "Estonya, büyük Avrupa ülkelerine kıyasla daha sınırlı bir iş piyasasına sahip",
-          "Bazı programlar Estonca yürütülüyor, İngilizce seçenek daha sınırlı",
-          "Kış ayları uzun ve karanlık"
-        ]
-      },
-      {
-        "slug": "taltech",
-        "country": "ee",
-        "name": "TalTech (Tallinn University of Technology)",
-        "city": "Tallinn",
-        "type": "Teknik Üniversite",
-        "founded": "1918",
-        "description": "Estonya'nın tek teknik üniversitesi; başkent Tallinn'in teknoloji ekosistemine doğrudan bağlı.",
-        "history": [
-          "1918'de Tallinna Tehnikum (Tallinn Mühendislik Koleji) adıyla özel bir okul olarak kurulan kurum, 1920'de devletleştirildi ve zamanla Estonya'nın önde gelen teknik yükseköğretim kurumuna dönüştü.",
-          "Estonya'nın tek teknik üniversitesi olan TalTech, ülkenin güçlü dijital ekonomisi ve teknoloji girişimleri (Skype'ın da doğduğu bir ekosistem) ile yakından bağlantılı; bilgisayar bilimi ve mühendislikte ülkenin lider kurumu."
-        ],
-        "highlights": [
-          "Estonya'nın tek teknik üniversitesi",
-          "Tallinn'in güçlü dijital ekonomisiyle doğrudan bağlantılı",
-          "Bilgisayar bilimi ve mühendislikte ülkenin lider kurumu"
-        ],
-        "pros": [
-          "Estonya'nın güçlü dijital ekonomisi ve girişim ekosistemine doğrudan yakınlık",
-          "Diğer Avrupa ülkelerine kıyasla düşük yaşam maliyeti",
-          "Bilgisayar bilimi ve mühendislikte İngilizce yürütülen programlar"
-        ],
-        "cons": [
-          "Estonya, büyük Avrupa ülkelerine kıyasla daha sınırlı bir iş piyasasına sahip",
-          "Program ağırlıklı olarak mühendislik ve teknik alanlarla sınırlı",
-          "Kış ayları uzun ve karanlık"
-        ]
-      },
-      {
-        "slug": "lund",
-        "country": "se",
-        "name": "Lund University",
-        "city": "Lund",
-        "type": "Üniversite",
-        "founded": "1666",
-        "description": "İsveç'in fethettiği topraklarda kurulan, ülkenin en uluslararası üniversitelerinden biri.",
-        "history": [
-          "1658'deki Roskilde Antlaşması'yla Danimarka'dan İsveç'e geçen Skåne bölgesinde, bölgeyi İsveç'e bağlamak amacıyla 1666'da Kral XI. Karl'ın fermanıyla kurulan Lund Üniversitesi, 1668'de resmi olarak açıldı.",
-          "Bugün İsveç'in en büyük ve en uluslararası üniversitelerinden biri olan Lund, tıp, mühendislik ve fizikte güçlü bir araştırma itibarına sahip; ünlü MAX IV ve ESS araştırma tesislerine de ev sahipliği yapıyor."
-        ],
-        "highlights": [
-          "1666'da Kral XI. Karl'ın fermanıyla kurulan bir üniversite",
-          "İsveç'in en büyük ve en uluslararası üniversitelerinden biri",
-          "MAX IV ve ESS gibi dünya çapında araştırma tesislerine ev sahipliği"
-        ],
-        "pros": [
-          "Tıp, mühendislik ve fizikte güçlü araştırma itibarı",
-          "MAX IV ve ESS gibi büyük ölçekli araştırma tesislerine doğrudan erişim",
-          "İsveç'in en canlı öğrenci şehirlerinden birinde yaşam"
-        ],
-        "cons": [
-          "İskandinavya'nın yüksek yaşam maliyeti",
-          "Kış ayları uzun ve karanlık",
-          "Bazı lisans programları İsveççe yürütülüyor"
-        ]
-      },
-      {
-        "slug": "uppsala",
-        "country": "se",
-        "name": "Uppsala University",
-        "city": "Uppsala",
-        "type": "Üniversite",
-        "founded": "1477",
-        "description": "1477'de kurulan, İskandinavya'nın en eski üniversitesi.",
-        "history": [
-          "27 Şubat 1477'de Papa IV. Sixtus'un verdiği izinle kurulan Uppsala Üniversitesi, İsveç'in ve tüm İskandinavya'nın en eski üniversitesi olma özelliğini taşıyor.",
-          "Botanikçi Carl Linnaeus'un ve fizikçi Anders Celsius'un da aralarında bulunduğu bilim insanlarını yetiştiren Uppsala, bugün tıp, doğa bilimleri ve teoloji alanlarında güçlü bir akademik gelenek sürdürüyor."
-        ],
-        "highlights": [
-          "İskandinavya'nın en eski üniversitesi (1477)",
-          "Carl Linnaeus ve Anders Celsius gibi bilim insanlarını yetiştirdi",
-          "Tıp, doğa bilimleri ve teolojide güçlü bir akademik gelenek"
-        ],
-        "pros": [
-          "İskandinavya'nın en köklü ve en prestijli üniversitelerinden biri",
-          "Tıp ve doğa bilimlerinde güçlü araştırma geleneği",
-          "Stockholm'e yakın, tarihi ve öğrenci dostu bir üniversite kenti"
-        ],
-        "cons": [
-          "İskandinavya'nın yüksek yaşam maliyeti",
-          "Kış ayları uzun ve karanlık",
-          "Bazı lisans programları İsveççe yürütülüyor"
-        ]
-      },
-      {
-        "slug": "kth",
-        "country": "se",
-        "name": "KTH Royal Institute of Technology",
-        "city": "Stockholm",
-        "type": "Teknik Üniversite",
-        "founded": "1827",
-        "description": "İsveç'in en büyük ve en eski teknik üniversitesi; İskandinavya'nın mühendislik merkezi.",
-        "history": [
-          "Kökleri 1697'de kurulan Laboratorium Mechanicum'a uzanan KTH, 1827'de Teknologiska Institutet (Teknoloji Enstitüsü) adıyla kuruldu; 1877'de bugünkü adı olan Kungliga Tekniska Högskolan'a (Kraliyet Teknoloji Enstitüsü) dönüştü.",
-          "İsveç'in en büyük teknik üniversitesi olan KTH, mühendislik, bilgisayar bilimi ve mimarlıkta ülkenin lider kurumu; Stockholm'ün güçlü teknoloji ve girişim ekosistemine (Spotify'ın da doğduğu bir ortam) doğrudan bağlı."
-        ],
-        "highlights": [
-          "İsveç'in en büyük ve en eski teknik üniversitesi",
-          "Kökleri 1697'ye uzanan uzun bir bilim geleneği",
-          "Stockholm'ün güçlü teknoloji ve girişim ekosistemine doğrudan bağlı"
-        ],
-        "pros": [
-          "Mühendislik, bilgisayar bilimi ve mimarlıkta İsveç'in lider kurumu",
-          "Stockholm'ün güçlü teknoloji sektörüne doğrudan yakınlık ve staj imkanı",
-          "Geniş bir İngilizce yüksek lisans program yelpazesi"
-        ],
-        "cons": [
-          "İskandinavya'nın yüksek yaşam maliyeti",
-          "Kış ayları uzun ve karanlık",
-          "Program ağırlıklı olarak mühendislik ve teknik alanlarla sınırlı"
-        ]
-      },
-      {
-        "slug": "stockholmuni",
-        "country": "se",
-        "name": "Stockholm University",
-        "city": "Stockholm",
-        "type": "Üniversite",
-        "founded": "1878",
-        "description": "Dönemin akademik geleneğine radikal bir alternatif olarak kurulan, İsveç'in dördüncü devlet üniversitesi.",
-        "history": [
-          "1878'de dönemin akademik geleneksel kurumlarına radikal bir alternatif olarak Stockholm Üniversite Koleji adıyla kurulan kurum, 1960'ta üniversite statüsüne kavuşarak İsveç'in dördüncü devlet üniversitesi oldu.",
-          "İsveç'in başkentinde, hukuk, sosyal bilimler ve doğa bilimlerinde güçlü bir akademik kadroya sahip olan Stockholm Üniversitesi, Nobel Ödülü törenlerinin de yapıldığı şehirde eğitim veriyor."
-        ],
-        "highlights": [
-          "Dönemin akademik geleneğine radikal bir alternatif olarak kuruldu",
-          "İsveç'in dördüncü devlet üniversitesi",
-          "Hukuk, sosyal bilimler ve doğa bilimlerinde güçlü akademik kadro"
-        ],
-        "pros": [
-          "İsveç'in başkenti Stockholm'de, kariyer ve kültürel fırsatlara doğrudan yakınlık",
-          "Hukuk ve sosyal bilimlerde güçlü akademik itibar",
-          "Geniş bir İngilizce yüksek lisans program yelpazesi"
-        ],
-        "cons": [
-          "İskandinavya'nın yüksek yaşam maliyeti, özellikle Stockholm'de öğrenci konutu zor bulunuyor",
-          "Kış ayları uzun ve karanlık",
-          "Bazı lisans programları İsveççe yürütülüyor"
-        ]
-      },
-      {
-        "slug": "kuleuven",
-        "country": "be",
-        "name": "KU Leuven",
-        "city": "Leuven",
-        "type": "Üniversite",
-        "founded": "1425",
-        "description": "1425'te kurulan, Aşağı Ülkeler'in en eski üniversitesi ve dünyanın en eski Katolik üniversitesi.",
-        "history": [
-          "9 Aralık 1425'te Papa V. Martin'in verdiği fermanla kurulan Leuven Üniversitesi, Aşağı Ülkeler'in (bugünkü Belçika/Hollanda bölgesi) en eski üniversitesi ve hâlâ faaliyette olan dünyanın en eski Katolik üniversitesi.",
-          "Bugün Avrupa'nın en yenilikçi üniversitelerinden biri olarak düzenli olarak gösterilen KU Leuven, mühendislik, tıp ve biyoteknoloji alanlarında güçlü bir araştırma itibarına ve geniş bir sanayi işbirliği ağına sahip."
-        ],
-        "highlights": [
-          "Aşağı Ülkeler'in en eski üniversitesi (1425)",
-          "Dünyanın hâlâ faaliyette olan en eski Katolik üniversitesi",
-          "Avrupa'nın en yenilikçi üniversiteleri arasında düzenli olarak gösteriliyor"
-        ],
-        "pros": [
-          "Mühendislik, tıp ve biyoteknolojide güçlü araştırma itibarı ve sanayi işbirliği",
-          "Avrupa'nın en yenilikçi üniversitelerinden biri olarak düzenli sıralama başarısı",
-          "Leuven, öğrenci nüfusu yoğun, güvenli ve tarihi bir üniversite kenti"
-        ],
-        "cons": [
-          "Bazı lisans programları Felemenkçe (Flamanca) yürütülüyor",
-          "Leuven, büyük şehirlere kıyasla küçük bir kent",
-          "Popüler bölümlerde rekabetçi başvuru süreci"
-        ]
-      },
-      {
-        "slug": "ghent",
-        "country": "be",
-        "name": "Ghent University",
-        "city": "Gent",
-        "type": "Üniversite",
-        "founded": "1817",
-        "description": "Hollanda Kralı I. Willem tarafından kurulan, Belçika'nın en büyük araştırma üniversitelerinden biri.",
-        "history": [
-          "1817'de Hollanda Kralı I. Willem tarafından kurulan Gent Üniversitesi, kuruluşundan bu yana eğitim dilini birkaç kez değiştirdi; bugün ise tamamen Felemenkçe (Flamanca) yürütülen bir kurum.",
-          "Şehrin simgesi haline gelen Boekentoren (Kitap Kulesi) kütüphane binasıyla tanınan Gent Üniversitesi, bugün biyoteknoloji, veterinerlik ve mühendislik alanlarında Belçika'nın en güçlü araştırma üniversitelerinden biri."
-        ],
-        "highlights": [
-          "Hollanda Kralı I. Willem tarafından 1817'de kurulan bir üniversite",
-          "İkonik Boekentoren (Kitap Kulesi) kütüphane binasıyla tanınıyor",
-          "Biyoteknoloji, veterinerlik ve mühendislikte güçlü araştırma itibarı"
-        ],
-        "pros": [
-          "Biyoteknoloji ve veterinerlik bilimlerinde güçlü araştırma itibarı",
-          "Gent, ortaçağ mimarisiyle ünlü, canlı ve öğrenci dostu bir şehir",
-          "Brüksel'e kıyasla daha uygun bir yaşam maliyeti"
-        ],
-        "cons": [
-          "Lisans programlarının büyük çoğunluğu Felemenkçe yürütülüyor",
-          "İngilizce program seçeneği ağırlıklı olarak yüksek lisans düzeyiyle sınırlı",
-          "Belçika'nın değişken, yağışlı iklimi"
-        ]
-      },
-      {
-        "slug": "ulb",
-        "country": "be",
-        "name": "Université libre de Bruxelles (ULB)",
-        "city": "Brüksel",
-        "type": "Üniversite",
-        "founded": "1834",
-        "description": "'Özgür sorgulama' ilkesiyle kurulan, Brüksel'in Fransızca konuşulan büyük üniversitesi.",
-        "history": [
-          "1834'te avukat ve liberal politikacı Pierre-Théodore Verhaegen tarafından, dönemin Katolik kilisesinin eğitim üzerindeki egemenliğine bir tepki olarak 'özgür sorgulama' (libre examen) ilkesiyle kurulan üniversite, 1970'te Felemenkçe konuşan VUB'un ayrılmasıyla bugünkü Fransızca konuşulan yapısına kavuştu.",
-          "Brüksel'in tam merkezinde, Avrupa Birliği kurumlarına yakın bir konumda eğitim veren ULB, sosyal bilimler, hukuk ve tıpta güçlü bir akademik itibara sahip."
-        ],
-        "highlights": [
-          "'Özgür sorgulama' (libre examen) ilkesiyle 1834'te kurulan bir üniversite",
-          "1970'te Felemenkçe konuşan VUB'un ayrılmasıyla bugünkü yapısına kavuştu",
-          "Avrupa Birliği kurumlarına yakın bir konumda"
-        ],
-        "pros": [
-          "Avrupa Birliği kurumlarına doğrudan yakınlık, staj ve kariyer imkanları",
-          "Sosyal bilimler, hukuk ve tıpta güçlü akademik itibar",
-          "Brüksel'in çok kültürlü, uluslararası ortamı"
-        ],
-        "cons": [
-          "Lisans programlarının çoğu Fransızca yürütülüyor",
-          "Brüksel, Belçika'nın en pahalı şehirlerinden biri",
-          "Popüler bölümlerde rekabetçi başvuru süreci"
-        ]
-      },
-      {
-        "slug": "vub",
-        "country": "be",
-        "name": "Vrije Universiteit Brussel (VUB)",
-        "city": "Brüksel",
-        "type": "Üniversite",
-        "founded": "1970",
-        "description": "1834'te kurulan bir üniversitenin dilsel ayrımından doğan, Brüksel'in Felemenkçe konuşulan üniversitesi.",
-        "history": [
-          "Kökleri 1834'te Pierre-Théodore Verhaegen tarafından kurulan Université libre de Bruxelles'e uzanan VUB, 1970'te bu üniversitenin dil hattı boyunca ikiye bölünmesiyle bağımsız bir kurum haline geldi.",
-          "Brüksel'in Etterbeek semtindeki modern kampüsünde eğitim veren VUB, sosyal bilimler, mühendislik ve tıpta güçlü bir akademik kadroya sahip; ULB ile birçok programda yakın işbirliği sürdürüyor."
-        ],
-        "highlights": [
-          "1970'te ULB'nin dilsel ayrımından doğan bağımsız bir üniversite",
-          "Brüksel'in Etterbeek semtinde modern bir kampüs",
-          "ULB ile birçok programda yakın işbirliği"
-        ],
-        "pros": [
-          "Brüksel'in uluslararası, çok kültürlü ortamına doğrudan yakınlık",
-          "ULB ile ortak programlar sayesinde geniş bir akademik ağ",
-          "Sosyal bilimler ve mühendislikte sağlam bir akademik kadro"
-        ],
-        "cons": [
-          "Lisans programlarının çoğu Felemenkçe yürütülüyor",
-          "Brüksel, Belçika'nın en pahalı şehirlerinden biri",
-          "KU Leuven'e kıyasla daha az uluslararası tanınırlık"
-        ]
-      },
-      {
-        "slug": "copenhagen",
-        "country": "dk",
-        "name": "University of Copenhagen",
-        "city": "Kopenhag",
-        "type": "Üniversite",
-        "founded": "1479",
-        "description": "1479'da kurulan, Danimarka'nın ve Kuzey Avrupa'nın en eski üniversitelerinden biri.",
-        "history": [
-          "Kral I. Christian'ın Papa IV. Sixtus'tan aldığı izinle 1 Haziran 1479'da açılan Kopenhag Üniversitesi, Alman üniversite modeli örnek alınarak ilahiyat, hukuk, tıp ve felsefe fakülteleriyle kuruldu.",
-          "Fizikçi Niels Bohr'un da aralarında bulunduğu isimlerin yetiştiği Kopenhag Üniversitesi, bugün Danimarka'nın en büyük üniversitesi ve tıp, hukuk ve doğa bilimlerinde İskandinavya'nın önde gelen araştırma kurumlarından biri."
-        ],
-        "highlights": [
-          "Danimarka'nın en eski üniversitesi (1479)",
-          "Fizikçi Niels Bohr'un da aralarında bulunduğu bir bilim mirası",
-          "Danimarka'nın en büyük üniversitesi ve İskandinavya'nın önde gelen araştırma kurumlarından"
-        ],
-        "pros": [
-          "Tıp, hukuk ve doğa bilimlerinde güçlü, köklü bir akademik itibar",
-          "Kopenhag'ın yüksek yaşam kalitesi ve bisiklet dostu şehir kültürü",
-          "Geniş bir İngilizce yüksek lisans program yelpazesi"
-        ],
-        "cons": [
-          "İskandinavya'nın yüksek yaşam maliyeti",
-          "Kopenhag'da öğrenci konutu bulmak zor olabiliyor",
-          "Bazı lisans programları Danca yürütülüyor"
-        ]
-      },
-      {
-        "slug": "dtu",
-        "country": "dk",
-        "name": "DTU (Technical University of Denmark)",
-        "city": "Kongens Lyngby",
-        "type": "Teknik Üniversite",
-        "founded": "1829",
-        "description": "Fizikçi Hans Christian Ørsted'in girişimiyle kurulan, Danimarka'nın önde gelen mühendislik üniversitesi.",
-        "history": [
-          "1829'da elektromanyetizmanın kâşifi fizikçi Hans Christian Ørsted'in girişimiyle Danimarka'nın ilk politeknik okulu olarak kurulan DTU, zamanla ülkenin lider mühendislik üniversitesine dönüştü.",
-          "Bugün Kopenhag'ın kuzeyindeki Kongens Lyngby'deki kampüsünde eğitim veren DTU, biyoteknoloji, sürdürülebilir enerji ve mühendislikte Avrupa'nın önde gelen teknik üniversiteleri arasında yer alıyor."
-        ],
-        "highlights": [
-          "Fizikçi Hans Christian Ørsted'in girişimiyle 1829'da kurulan Danimarka'nın ilk politeknik okulu",
-          "Danimarka'nın lider mühendislik üniversitesi",
-          "Sürdürülebilir enerji ve biyoteknolojide Avrupa çapında tanınırlık"
-        ],
-        "pros": [
-          "Sürdürülebilir enerji ve biyoteknolojide Avrupa'nın önde gelen araştırma kurumlarından biri",
-          "Danimarka'nın güçlü rüzgar enerjisi ve yeşil teknoloji sektörüne doğrudan yakınlık",
-          "Geniş bir İngilizce yüksek lisans program yelpazesi"
-        ],
-        "cons": [
-          "İskandinavya'nın yüksek yaşam maliyeti",
-          "Program neredeyse tamamen mühendislik ve teknik alanlarla sınırlı",
-          "Kongens Lyngby, Kopenhag şehir merkezinden biraz uzakta"
-        ]
-      },
-      {
-        "slug": "aarhus",
-        "country": "dk",
-        "name": "Aarhus University",
-        "city": "Aarhus",
-        "type": "Üniversite",
-        "founded": "1928",
-        "description": "Danimarka'nın ikinci büyük ve en genç köklü üniversitesi; sarı tuğla mimarisiyle tanınıyor.",
-        "history": [
-          "1928'de kurulan Aarhus Üniversitesi, Danimarka'nın Kopenhag Üniversitesi dışındaki ilk üniversitesi olarak, yerel iş dünyası ve halkın bağışlarıyla hayata geçti.",
-          "İkonik sarı tuğla binalarıyla tanınan, parklarla iç içe bir kampüse sahip Aarhus, bugün Danimarka'nın ikinci büyük üniversitesi; işletme, tıp ve tarım bilimlerinde güçlü bir akademik itibara sahip."
-        ],
-        "highlights": [
-          "Danimarka'nın Kopenhag dışındaki ilk üniversitesi (1928)",
-          "İkonik sarı tuğla mimarisi ve parklarla iç içe bir kampüs",
-          "İşletme, tıp ve tarım bilimlerinde güçlü akademik itibar"
-        ],
-        "pros": [
-          "İşletme ve tıpta güçlü, modern bir akademik itibar",
-          "Parklarla iç içe, yeşil ve öğrenci dostu bir kampüs ortamı",
-          "Kopenhag'a kıyasla daha uygun bir yaşam maliyeti"
-        ],
-        "cons": [
-          "İskandinavya'nın yüksek yaşam maliyeti",
-          "Kopenhag'a kıyasla daha az uluslararası tanınırlık",
-          "Bazı lisans programları Danca yürütülüyor"
-        ]
-      },
-      {
-        "slug": "cbs",
-        "country": "dk",
-        "name": "Copenhagen Business School (CBS)",
-        "city": "Frederiksberg",
-        "type": "İşletme Okulu",
-        "founded": "1917",
-        "description": "Kuzey Avrupa'nın en büyük işletme okullarından biri.",
-        "history": [
-          "1917'de Danimarka İşletme Eğitimini Geliştirme Derneği tarafından kurulan CBS, 1965'te Danimarka'nın resmi yükseköğretim sistemine dahil edildi.",
-          "'Kilen' (Kama) adlı ikonik binasıyla tanınan CBS, bugün Kuzey Avrupa'nın en büyük işletme okullarından biri; işletme, ekonomi ve uluslararası ticarette güçlü bir akademik itibara sahip."
-        ],
-        "highlights": [
-          "1917'de kurulan, Kuzey Avrupa'nın en büyük işletme okullarından biri",
-          "İkonik 'Kilen' (Kama) binasıyla tanınıyor",
-          "İşletme, ekonomi ve uluslararası ticarette güçlü akademik itibar"
-        ],
-        "pros": [
-          "İşletme ve uluslararası ticarette Kuzey Avrupa'nın en güçlü okullarından biri",
-          "Kopenhag'ın yüksek yaşam kalitesi ve uluslararası iş ortamı",
-          "Geniş bir İngilizce yüksek lisans ve MBA program yelpazesi"
-        ],
-        "cons": [
-          "İskandinavya'nın yüksek yaşam maliyeti",
-          "Program tamamen işletme ve ekonomiyle sınırlı",
-          "Kopenhag'da öğrenci konutu bulmak zor olabiliyor"
-        ]
+          "Furtwangen küçük bir kasaba; büyük şehir imkanları ve toplu ulaşım sınırlı",
+          "Sosyal hayat, büyük üniversite şehirlerine kıyasla daha sakin",
+          "Bazı programlarda kampüsler arası (Furtwangen/Schwenningen) geçiş gerekebilir"
+        ],
+        "badges": [],
+        "mapCity": "furtwangen",
+        "quickFacts": {
+          "students": "~2.700",
+          "language": "Bilgisayar bilimi ve mühendislikte çok sayıda İngilizce yüksek lisans programı",
+          "tuition": "Dönemlik ~230 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+        }
       }
     ],
     "cta": {
@@ -2007,66 +1234,31 @@
       "subtitle": "Akademik profilinize ve hedeflediğiniz şehre göre en doğru üniversite ve programı öneriyoruz.",
       "button": "Üniversite Danışmanlığı Al"
     },
-    "countries": {
-      "de": {
-        "name": "Almanya",
-        "flag": "🇩🇪"
-      },
-      "uk": {
-        "name": "İngiltere",
-        "flag": "🇬🇧"
-      },
-      "nl": {
-        "name": "Hollanda",
-        "flag": "🇳🇱"
-      },
-      "fr": {
-        "name": "Fransa",
-        "flag": "🇫🇷"
-      },
-      "ch": {
-        "name": "İsviçre",
-        "flag": "🇨🇭"
-      },
-      "se": {
-        "name": "İsveç",
-        "flag": "🇸🇪"
-      },
-      "be": {
-        "name": "Belçika",
-        "flag": "🇧🇪"
-      },
-      "dk": {
-        "name": "Danimarka",
-        "flag": "🇩🇰"
-      },
-      "ee": {
-        "name": "Estonya",
-        "flag": "🇪🇪"
-      }
+    "filters": {
+      "all": "Tümü",
+      "universitat": "Universität",
+      "hochschule": "Fachhochschule",
+      "dual": "Duale Hochschule",
+      "tu9": "TU9 Üniversiteleri",
+      "excellence": "Exzellenzuniversiteler"
     },
-    "countryOrder": [
-      "de",
-      "uk",
-      "nl",
-      "fr",
-      "ch",
-      "se",
-      "be",
-      "dk",
-      "ee"
-    ]
+    "map": {
+      "title": "Almanya Haritasında Üniversitelerimiz",
+      "subtitle": "Danışmanlık verdiğimiz üniversitelerin şehirlere göre dağılımını inceleyin.",
+      "hint": "Bir şehir işaretine tıklayarak o şehirdeki üniversiteleri görün.",
+      "emptyState": "Üniversiteleri görmek için haritadan bir şehir seçin."
+    }
   },
   "about": {
     "hero": {
       "title": "Studiva Hakkında",
-      "subtitle": "Avrupa'da eğitim almak isteyen öğrenciler için 2026'da kurulan bir danışmanlık firmasıyız."
+      "subtitle": "Almanya'da eğitim almak isteyen öğrenciler için 2026'da kurulan bir danışmanlık firmasıyız."
     },
     "story": {
       "title": "Hikayemiz",
       "paragraphs": [
         "Studiva, 2026 yılında İstanbul'da, öğrencilerin Avrupa'nın önde gelen üniversitelerine şeffaf ve güvenilir bir süreçle ulaşmasını sağlamak amacıyla kuruldu.",
-        "Almanya, İngiltere, Hollanda, Fransa, İsviçre, İskandinavya ve Belçika'da 60'tan fazla üniversite hakkında güncel bilgiye sahip bir ekibiz; her ülkenin başvuru sistemini, vize gereksinimlerini ve akademik takvimini yakından takip ediyoruz.",
+        "Almanya genelinde 25'ten fazla üniversite hakkında güncel bilgiye sahip bir ekibiz; Exzellenzuniversität'lerden TU9 teknik üniversitelerine, Hochschule'lerden Dual Studium programlarına kadar her kurumun başvuru sistemini, vize gereksinimlerini ve akademik takvimini yakından takip ediyoruz.",
         "Her öğrencinin akademik geçmişi, bütçesi ve hedefleri farklıdır; bu yüzden tek bir şablona sıkışmadan, size en uygun ülke ve üniversiteyi birlikte belirliyoruz. Yeni kurulan bir firma olarak şişirilmiş rakamlar yerine somut bir taahhüt sunuyoruz: sürecinizi eksiksiz tamamladığınızda kabul garantisi."
       ]
     },
@@ -2086,8 +1278,8 @@
           "description": "Her öğrenci için ülke ve program arasında ayrı bir strateji kurgularız."
         },
         {
-          "title": "Avrupa Uzmanlığı",
-          "description": "Danışmanlarımız her ülkenin güncel vize mevzuatını ve üniversite kabul kriterlerini yakından takip eder."
+          "title": "Almanya Uzmanlığı",
+          "description": "Danışmanlarımız Almanya'nın güncel vize mevzuatını ve üniversite kabul kriterlerini yakından takip eder."
         },
         {
           "title": "Sürekli Destek",
@@ -2102,14 +1294,14 @@
       },
       {
         "value": "9",
-        "label": "Ülke"
+        "label": "TU9 Üniversitesi"
       },
       {
         "value": "%100",
         "label": "Kabul Garantisi"
       },
       {
-        "value": "60+",
+        "value": "26+",
         "label": "Üniversite Seçeneği"
       }
     ]
@@ -2144,20 +1336,118 @@
       "messagePlaceholder": "Hedeflediğiniz bölüm, üniversite ya da sorularınızı yazabilirsiniz.",
       "submit": "Gönder",
       "disclaimer": "Bu form şu anda demo amaçlıdır; gönderim işlemi bir sunucuya bağlanmamaktadır. Hızlı yanıt için WhatsApp üzerinden yazabilirsiniz.",
-      "country": "İlgilendiğiniz Ülke",
+      "country": "İlgilendiğiniz Program Türü",
       "countryPlaceholder": "Seçiniz",
       "countryOptions": [
-        "Almanya",
-        "İngiltere",
-        "Hollanda",
-        "Fransa",
-        "İsviçre",
-        "İsveç",
-        "Belçika",
-        "Danimarka",
-        "Estonya",
+        "Bachelor",
+        "Master",
+        "Dual Studium",
+        "Studienkolleg / Dil Hazırlık",
         "Henüz Emin Değilim"
       ]
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Almanya'da eğitim, vize, burs ve öğrenci hayatı hakkında rehberler."
+    },
+    "posts": [
+      {
+        "slug": "exzellenzuniversitat-ve-tu9-nedir",
+        "category": "Üniversite Seçimi",
+        "date": "2026-08-10",
+        "readTime": "6 dk",
+        "title": "Exzellenzuniversität ve TU9 Nedir? Almanya'nın Elit Üniversiteleri",
+        "excerpt": "Almanya'da üniversite seçerken sıkça karşılaşacağınız 'Exzellenzuniversität' ve 'TU9' kavramlarını açıklıyoruz.",
+        "body": [
+          "Almanya'da üniversite araştırırken karşınıza sıkça 'Exzellenzuniversität' ve 'TU9' gibi kavramlar çıkar. İkisi de üniversitenin kalitesi hakkında güçlü bir sinyal verir, ancak farklı şeyleri ifade eder.",
+          "'Exzellenzuniversität' (Excellence University), Almanya federal hükümeti ve eyaletlerin ortaklaşa yürüttüğü 'Exzellenzstrategie' (Mükemmeliyet Stratejisi) kapsamında, en güçlü araştırma performansına sahip üniversitelere verilen bir statüdür. Bu statü, ekstra araştırma fonu ve uluslararası prestij anlamına gelir; LMU München, TU München, Heidelberg Üniversitesi ve RWTH Aachen bu unvana sahip kurumlardan bazılarıdır.",
+          "'TU9' ise Almanya'nın en köklü ve en güçlü dokuz teknik üniversitesinin 2006'da kurduğu bir birliktir: RWTH Aachen, TU Berlin, TU Braunschweig, TU Darmstadt, TU Dresden, Leibniz Universität Hannover, KIT (Karlsruhe), TU München ve Universität Stuttgart. TU9 üyeliği, özellikle mühendislik ve doğa bilimlerinde güçlü bir araştırma altyapısının ve sanayiyle yakın işbirliğinin göstergesidir.",
+          "Bir üniversitenin bu unvanlardan birine (veya her ikisine) sahip olması, otomatik olarak sizin için 'en iyi seçim' anlamına gelmez; şehir, program içeriği, dil, yaşam maliyeti ve kişisel hedefleriniz de en az bunlar kadar önemlidir. Ancak araştırma listesi yaparken bu iki etiketi bilmek, Almanya'nın akademik haritasını daha hızlı okumanızı sağlar.",
+          "Studiva olarak danışmanlık sürecimizde, akademik profilinize göre hem Exzellenzuniversität hem de TU9 üyesi kurumları, hem de daha az bilinen ama alanında güçlü üniversiteleri birlikte değerlendiriyoruz."
+        ]
+      },
+      {
+        "slug": "dual-studium-nedir",
+        "category": "Program Türleri",
+        "date": "2026-07-22",
+        "readTime": "7 dk",
+        "title": "Dual Studium Nedir? Çalışarak Okumanın Almanya Modeli",
+        "excerpt": "Okurken aynı zamanda maaş almak mümkün mü? Almanya'ya özgü Dual Studium modelini anlatıyoruz.",
+        "body": [
+          "'Dual Studium', Almanya'ya özgü bir yükseköğretim modelidir: öğrenciler aynı anda hem bir yükseköğretim kurumunda ders alır hem de bir şirkette çalışarak maaş kazanır. Teori ve uygulama, genellikle birkaç aylık dönemler halinde birbirini izler.",
+          "Bu modelin en yaygın uygulayıcısı DHBW (Duale Hochschule Baden-Württemberg) gibi kurumlardır; öğrenciler önce bir şirketle sözleşme imzalar, ardından o şirketin sponsorluğunda okula kayıt olur. Diğer bazı üniversite ve Hochschule'ler de mühendislik, işletme ve bilgi teknolojileri alanlarında benzer dual programlar sunar.",
+          "Dual Studium'un en büyük avantajı, öğrencinin okul boyunca düzenli bir maaş alması ve mezuniyetten önce somut iş deneyimi kazanmasıdır; genellikle okul ücreti de bulunmaz. Mezuniyet sonrası aynı şirkette işe başlama oranı oldukça yüksektir.",
+          "Dezavantajı ise programın yoğun ve değişken bir takvime sahip olması, ve genellikle önce bir şirketle anlaşma sağlamanız gerektiğidir; bu da başvuru sürecini klasik bir üniversite başvurusundan daha uzun ve rekabetçi hale getirebilir.",
+          "Çalışarak okumak, düzenli gelir elde etmek ve mezuniyetten hemen sonra iş garantisine yakın bir başlangıç istiyorsanız, Dual Studium ciddi şekilde değerlendirmeniz gereken bir seçenek. Studiva olarak, profilinize uygun şirket ve program eşleştirmesinde de destek sağlıyoruz."
+        ]
+      },
+      {
+        "slug": "almanya-ogrenci-vizesi-basvuru-sureci",
+        "category": "Vize",
+        "date": "2026-06-15",
+        "readTime": "8 dk",
+        "title": "Almanya'da Öğrenci Vizesi: Adım Adım Başvuru Süreci",
+        "excerpt": "Almanya öğrenci vizesi için gereken belgeler ve başvuru sürecini adım adım anlatıyoruz.",
+        "body": [
+          "Almanya'da bir üniversiteye kabul aldıktan sonraki en kritik adım öğrenci vizesi başvurusudur. Süreç, Almanya'daki büyükelçilik/konsolosluktan randevu almakla başlar; randevu bekleme süreleri şehre ve döneme göre haftalar hatta aylar sürebilir, bu yüzden erken başvuru şarttır.",
+          "Başvuru için temel belgeler arasında geçerli pasaport, üniversite kabul mektubu, APS sertifikası (üniversite mezunları için), dil yeterliliği belgesi (Almanca veya İngilizce, programa göre), sağlık sigortası ve finansal yeterlilik kanıtı yer alır.",
+          "Finansal yeterlilik genellikle bir 'bloke hesap' (Sperrkonto) üzerinden gösterilir; bu hesaba yatırılan tutar, öğrencinin bir yıl boyunca aylık belirli bir miktarı çekebileceği şekilde bloke edilir. Güncel tutar yıllık olarak güncellenir; başvuru döneminizdeki güncel rakamı danışmanlarımızdan teyit edebilirsiniz.",
+          "Vize mülakatında genellikle çalışma planınız, Almanya'yı ve programı neden seçtiğiniz ve finansal durumunuz hakkında sorular sorulur; hazırlıklı ve tutarlı cevaplar süreci hızlandırır.",
+          "Vize onaylandıktan sonra Almanya'ya giriş yapıp belirli bir süre içinde ikamet izni (Aufenthaltserlaubnis) için yerel Yabancılar Dairesi'ne (Ausländerbehörde) başvurmanız gerekir. Studiva olarak bu sürecin her adımında -randevu planlamasından evrak kontrolüne kadar- yanınızdayız."
+        ]
+      },
+      {
+        "slug": "aps-belgesi-nedir",
+        "category": "Başvuru",
+        "date": "2026-05-28",
+        "readTime": "5 dk",
+        "title": "APS Belgesi Nedir, Nasıl Alınır?",
+        "excerpt": "Türk öğrencilerin Almanya'da üniversiteye başvurabilmesi için gereken APS sürecini açıklıyoruz.",
+        "body": [
+          "APS (Akademische Prüfstelle / Examination Board), Türkiye'de lisans veya lisansüstü eğitim almış öğrencilerin, Almanya'daki bir üniversiteye başvurabilmeleri için gerekli bir doğrulama sürecidir. Amaç, öğrencinin diploma ve akademik geçmişinin gerçekliğini teyit etmektir.",
+          "Süreç, gerekli belgelerin (diploma, transkript, lise diploması, kimlik vb.) çevrimiçi olarak APS'ye yüklenmesiyle başlar; ardından belgeler incelenir ve genellikle bir online ya da yüz yüze görüşme yapılır.",
+          "Başvurunuz onaylandığında bir APS sertifikası alırsınız; bu sertifika, üniversite başvurunuzun ve öğrenci vizesi sürecinizin zorunlu bir parçasıdır - sertifika olmadan çoğu Alman üniversitesi başvurunuzu değerlendirmez.",
+          "Süreç genellikle birkaç haftadan birkaç aya kadar sürebilir; bu yüzden Almanya'da okumayı planlıyorsanız APS başvurunuzu mümkün olduğunca erken başlatmanız önemlidir.",
+          "Studiva olarak APS için gerekli belgelerin hazırlanmasından başvuru takibine kadar tüm süreci sizinle birlikte yönetiyoruz."
+        ]
+      },
+      {
+        "slug": "almanyada-yasam-maliyeti-ve-bloke-hesap",
+        "category": "Yaşam",
+        "date": "2026-04-30",
+        "readTime": "6 dk",
+        "title": "Almanya'da Yaşam Maliyeti ve Bloke Hesap (Sperrkonto)",
+        "excerpt": "Almanya'da aylık bütçenizi nasıl planlamalısınız ve bloke hesap (Sperrkonto) tam olarak nedir?",
+        "body": [
+          "Almanya'da öğrenci olarak aylık bütçeniz şehre göre önemli ölçüde değişir; Münih, Frankfurt veya Stuttgart gibi şehirler, Dresden, Braunschweig veya Furtwangen gibi şehirlere kıyasla belirgin şekilde daha pahalıdır.",
+          "Genel bir yaklaşım olarak, konaklama, yemek, ulaşım, sigorta ve diğer giderler dahil aylık bütçe genellikle orta ölçekli bir şehirde daha düşük, büyük metropollerde daha yüksektir; öğrenci yurdu bulabilmek de bütçenizi ciddi şekilde etkiler.",
+          "Öğrenci vizesi başvurusunun zorunlu bir parçası olan 'bloke hesap' (Sperrkonto), Almanya'da yaşarken temel giderlerinizi karşılayabileceğinizi kanıtlamak için kullanılan bir banka hesabı türüdür; belirlenen tutar hesaba yatırılır ve öğrenci bu hesaptan ayda belirli bir miktarı çekebilir.",
+          "Bloke hesap dışında bazı öğrenciler bir Alman vatandaşından 'Verpflichtungserklärung' (mali yükümlülük beyanı) ya da bir burs onay belgesi ile de finansal yeterliliklerini gösterebilir; hangi yöntemin sizin için daha uygun olduğu duruma göre değişir.",
+          "Studiva olarak, hedeflediğiniz şehre göre gerçekçi bir bütçe planı çıkarıyor ve bloke hesap açılışından güncel tutarların takibine kadar süreci sizinle birlikte yönetiyoruz."
+        ]
+      },
+      {
+        "slug": "almanyada-burs-imkanlari-daad",
+        "category": "Burs",
+        "date": "2026-03-18",
+        "readTime": "6 dk",
+        "title": "DAAD Bursu ve Almanya'da Diğer Burs İmkanları",
+        "excerpt": "Almanya'da eğitim bursu almak mümkün mü? DAAD başta olmak üzere burs seçeneklerini derledik.",
+        "body": [
+          "Almanya'da eğitim görmek, birçok Avrupa ülkesine kıyasla zaten daha düşük maliyetlidir (devlet üniversitelerinde genellikle okul ücreti yoktur); buna ek olarak çeşitli burs imkanlarından da yararlanmak mümkündür.",
+          "DAAD (Deutscher Akademischer Austauschdienst / Alman Akademik Değişim Servisi), Almanya'nın en büyük ve en tanınmış burs kuruluşudur; özellikle yüksek lisans ve doktora düzeyinde, çeşitli ülkelerden öğrencilere yönelik çok sayıda burs programı sunar.",
+          "DAAD dışında, Almanya'daki üniversitelerin kendi burs programları, Konrad-Adenauer-Stiftung veya Heinrich-Böll-Stiftung gibi siyasi vakıfların bursları, ve Erasmus+ gibi Avrupa çapındaki değişim/burs programları da değerlendirilebilecek seçenekler arasındadır.",
+          "Burs başvuruları genellikle akademik başarı, motivasyon mektubu, referans mektupları ve bazen dil yeterliliği belgesi ister; başvuru takvimleri üniversite başvuru takviminden bağımsız ve genellikle daha erken olabilir, bu yüzden araştırmaya erken başlamak önemlidir.",
+          "Studiva olarak, akademik profilinize uygun burs programlarını araştırıyor ve başvuru belgelerinizin hazırlanmasında destek sağlıyoruz."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Sorularınız mı var? Ücretsiz görüşelim.",
+      "subtitle": "Akademik profilinize özel bir yol haritası çıkaralım.",
+      "button": "Ücretsiz Görüşme Al"
     }
   }
 }

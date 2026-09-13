@@ -10,10 +10,11 @@
     "universities": "Universities",
     "about": "About",
     "contact": "Contact",
-    "cta": "Free Consultation"
+    "cta": "Free Consultation",
+    "blog": "Blog"
   },
   "footer": {
-    "description": "At Studiva, we connect students with leading universities across Europe: from your application to your visa, scholarships to housing, we're with you at every step of your study abroad journey.",
+    "description": "At Studiva, we connect students with Germany's leading universities: from your application to your visa, scholarships to housing, we're with you at every step of your journey to study in Germany.",
     "quickLinks": "Quick Links",
     "servicesTitle": "Our Services",
     "contactTitle": "Contact",
@@ -24,9 +25,9 @@
   },
   "home": {
     "hero": {
-      "badge": "Founded in 2026, focused on studying in Europe",
-      "title": "Your Dream of Studying at Europe's Best Universities, Backed by Studiva",
-      "subtitle": "From choosing a university to your application, visa to housing, our expert advisors are with you every step of the way across Germany, the UK, the Netherlands, France, and more.",
+      "badge": "Founded in 2026, focused exclusively on studying in Germany",
+      "title": "Your Dream of Studying at Germany's Best Universities, Backed by Studiva",
+      "subtitle": "From choosing a university to your application, visa and housing — our expert advisors are with you every step of the way, across Germany's Excellence Universities, TU9 institutes, Hochschulen and Dual Studium programs.",
       "ctaPrimary": "Get a Free Consultation",
       "ctaSecondary": "Explore Programs",
       "guaranteeNote": "We offer an admission guarantee to students who complete our process in full.",
@@ -37,11 +38,11 @@
         },
         {
           "value": "9",
-          "label": "Countries"
+          "label": "TU9 Universities"
         },
         {
-          "value": "60+",
-          "label": "Universities"
+          "value": "26+",
+          "label": "University Options"
         },
         {
           "value": "Hundreds",
@@ -93,7 +94,7 @@
     },
     "universities": {
       "title": "Leading Universities",
-      "subtitle": "A cross-section of the universities Studiva advises on, across 9 European countries.",
+      "subtitle": "A cross-section of the universities Studiva advises on across Germany — from Excellence Universities to TU9 technical institutes.",
       "linkText": "View all universities"
     },
     "process": {
@@ -122,8 +123,8 @@
       "title": "Why Studiva?",
       "items": [
         {
-          "title": "9 Countries, One Advisory Team",
-          "description": "From Germany to the UK, the Netherlands to Scandinavia; a team that closely follows every country's application and visa process."
+          "title": "A Germany-Focused Expert Team",
+          "description": "From Excellence Universities to Hochschulen, a team that closely follows every corner of Germany's higher education system."
         },
         {
           "title": "Admission Guarantee",
@@ -254,7 +255,7 @@
   "universities": {
     "hero": {
       "title": "Our Universities",
-      "subtitle": "A cross-section of universities across Germany, the UK, the Netherlands, France, and more that you can consider based on your academic goals."
+      "subtitle": "A cross-section of Germany's academic landscape — from Excellence Universities and TU9 technical institutes to Hochschulen and Dual Studium programs."
     },
     "items": [
       {
@@ -285,7 +286,16 @@
           "Munich is one of Germany's most expensive cities",
           "Crowded lecture halls in popular courses"
         ],
-        "country": "de"
+        "badges": [
+          "tu9",
+          "excellence"
+        ],
+        "mapCity": "muenchen",
+        "quickFacts": {
+          "students": "~50,000",
+          "language": "Mostly English at master's level, partly German at bachelor's",
+          "tuition": "~€150-170 semester contribution (no tuition fees)"
+        }
       },
       {
         "slug": "lmu",
@@ -315,7 +325,15 @@
           "Munich's high cost of living",
           "Large student body can mean less individual attention in big introductory lectures"
         ],
-        "country": "de"
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "muenchen",
+        "quickFacts": {
+          "students": "~52,000",
+          "language": "Mostly German, English options at master's level",
+          "tuition": "~€150 semester contribution (no tuition fees)"
+        }
       },
       {
         "slug": "huberlin",
@@ -345,7 +363,15 @@
           "High admission competition for popular subjects",
           "A large, bureaucratic university structure can feel impersonal at first"
         ],
-        "country": "de"
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "berlin",
+        "quickFacts": {
+          "students": "~32,000",
+          "language": "Mostly German, some English-taught master's programs",
+          "tuition": "~€315 semester contribution (no tuition fees)"
+        }
       },
       {
         "slug": "rwth",
@@ -375,7 +401,16 @@
           "Engineering programs are demanding and intensive",
           "Limited spots and high competition in some master's programs"
         ],
-        "country": "de"
+        "badges": [
+          "tu9",
+          "excellence"
+        ],
+        "mapCity": "aachen",
+        "quickFacts": {
+          "students": "~47,000 (about 25% international)",
+          "language": "Mostly German at bachelor's, many English programs at master's",
+          "tuition": "~€300 semester contribution (no tuition fees)"
+        }
       },
       {
         "slug": "mannheim",
@@ -405,7 +440,13 @@
           "Mannheim is a quieter city compared to Berlin or Munich",
           "An intense, competitive grading culture in the business faculty"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "mannheim",
+        "quickFacts": {
+          "students": "~11,000",
+          "language": "Many English-taught master's programs in business and economics",
+          "tuition": "~€170 semester contribution; non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+        }
       },
       {
         "slug": "hm",
@@ -435,7 +476,13 @@
           "Limited option to pursue a doctorate directly",
           "Munich's high cost of living"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "muenchen",
+        "quickFacts": {
+          "students": "~19,000",
+          "language": "Mostly German, a few English-taught programs",
+          "tuition": "~€150 semester contribution"
+        }
       },
       {
         "slug": "frankfurtuas",
@@ -465,7 +512,13 @@
           "No direct route to a doctorate",
           "Frankfurt has a high cost of living relative to smaller German cities"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "frankfurt",
+        "quickFacts": {
+          "students": "~15,000",
+          "language": "Mix of German and English, especially at master's level",
+          "tuition": "~€370 semester contribution"
+        }
       },
       {
         "slug": "dhbw",
@@ -495,7 +548,13 @@
           "The program is highly structured, leaving little flexibility for electives or exchange semesters",
           "An intensive pace with almost no long breaks between theory and practice blocks"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "stuttgart",
+        "quickFacts": {
+          "students": "~34,000 (multi-campus)",
+          "language": "Mostly German",
+          "tuition": "No tuition fees, but a company placement is mandatory (students earn a salary)"
+        }
       },
       {
         "slug": "iu",
@@ -525,7 +584,13 @@
           "Tuition fees apply, unlike most public universities",
           "Rapid growth has drawn some scrutiny over teaching quality consistency"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "erfurt",
+        "quickFacts": {
+          "students": "~130,000 (Germany's largest private higher-education institution)",
+          "language": "Mostly English, online and on-campus options",
+          "tuition": "Private institution; flexible pricing with scholarships and discounts available"
+        }
       },
       {
         "slug": "fom",
@@ -555,7 +620,13 @@
           "The evening/weekend schedule can be demanding alongside a full-time job",
           "Less of a traditional campus/student-life experience than a full-time university"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "essen",
+        "quickFacts": {
+          "students": "~57,000",
+          "language": "Mostly German",
+          "tuition": "Private institution; typically employer-sponsored for working students"
+        }
       },
       {
         "slug": "heidelberg",
@@ -585,7 +656,15 @@
           "Heidelberg is a small city with a limited job market outside academia and pharma",
           "High demand pushes up student housing prices despite the city's small size"
         ],
-        "country": "de"
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "heidelberg",
+        "quickFacts": {
+          "students": "~30,000",
+          "language": "German at bachelor's, many English-taught master's and PhD programs",
+          "tuition": "~€170 semester contribution; non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+        }
       },
       {
         "slug": "tuebingen",
@@ -615,7 +694,15 @@
           "Competitive admission for programs like medicine and psychology",
           "Limited English-taught bachelor's options; most programs are German-taught"
         ],
-        "country": "de"
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "tuebingen",
+        "quickFacts": {
+          "students": "~27,000",
+          "language": "Mostly German, select English-taught master's programs",
+          "tuition": "~€160 semester contribution; non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+        }
       },
       {
         "slug": "kit",
@@ -645,7 +732,15 @@
           "The engineering course load is demanding",
           "The dual university/research-center structure can feel bureaucratically complex"
         ],
-        "country": "de"
+        "badges": [
+          "tu9"
+        ],
+        "mapCity": "karlsruhe",
+        "quickFacts": {
+          "students": "~23,000",
+          "language": "German at bachelor's, many English programs at master's",
+          "tuition": "Non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+        }
       },
       {
         "slug": "freiburg",
@@ -675,7 +770,13 @@
           "Competitive admission for popular humanities and law programs",
           "Fewer large-scale industry partnerships than technical universities"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "freiburg",
+        "quickFacts": {
+          "students": "~24,000",
+          "language": "Mostly German",
+          "tuition": "Non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+        }
       },
       {
         "slug": "goettingen",
@@ -705,7 +806,13 @@
           "Some programs are strongly German-taught and require solid German proficiency",
           "Fewer international corporate employers nearby compared to major cities"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "goettingen",
+        "quickFacts": {
+          "students": "~30,000",
+          "language": "Mostly German, English master's options in the sciences",
+          "tuition": "~€390 semester contribution"
+        }
       },
       {
         "slug": "bonn",
@@ -735,7 +842,15 @@
           "Competitive admission for law and medicine",
           "A large student body can mean crowded introductory lectures"
         ],
-        "country": "de"
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "bonn",
+        "quickFacts": {
+          "students": "~34,000",
+          "language": "Mostly German, many English-taught master's programs",
+          "tuition": "~€310 semester contribution"
+        }
       },
       {
         "slug": "koeln",
@@ -765,7 +880,13 @@
           "Administrative processes can feel bureaucratic given the university's size",
           "Competitive admission for popular subjects like medicine, law, and psychology"
         ],
-        "country": "de"
+        "badges": [],
+        "mapCity": "koeln",
+        "quickFacts": {
+          "students": "~48,000 (one of Germany's largest universities)",
+          "language": "Mostly German",
+          "tuition": "~€300 semester contribution"
+        }
       },
       {
         "slug": "tuberlin",
@@ -795,1211 +916,317 @@
           "Large classes in popular engineering and computer science programs",
           "Administrative processes can be slow given the university's size"
         ],
-        "country": "de"
+        "badges": [
+          "tu9",
+          "excellence"
+        ],
+        "mapCity": "berlin",
+        "quickFacts": {
+          "students": "~33,000",
+          "language": "Many English-taught master's programs in engineering",
+          "tuition": "~€310 semester contribution"
+        }
       },
       {
-        "slug": "oxford",
-        "country": "uk",
-        "name": "University of Oxford",
-        "city": "Oxford",
-        "type": "Üniversite",
-        "founded": "1096",
-        "description": "The oldest university in the English-speaking world; a globally recognized name in nearly every field.",
+        "slug": "tudresden",
+        "name": "TU Dresden (Technische Universität Dresden)",
+        "city": "Dresden",
+        "type": "Universität",
+        "founded": "1828",
+        "description": "One of Germany's largest technical universities, with a strong research profile in microelectronics, materials science and mechanical engineering.",
         "history": [
-          "Teaching is known to have existed at Oxford as early as 1096, making it the oldest university in the English-speaking world. Oxford grew rapidly after 1167, when King Henry II of England banned English students from attending the University of Paris.",
-          "The university has a unique structure made up of more than 39 independent colleges, the oldest of which were founded between 1249 and 1264. Oxford's alumni include numerous Nobel laureates, world leaders, and authors."
+          "TU Dresden traces its roots to the Technische Bildungsanstalt Dresden, founded in 1828, and has grown into one of Germany's most comprehensive technical universities.",
+          "A member of the TU9 alliance, TU Dresden has held Excellence University status continuously since 2012, coordinating close cooperation with the city's Max Planck, Fraunhofer and Helmholtz institutes through the 'DRESDEN-concept' research alliance.",
+          "The Dresden region is home to 'Silicon Saxony', one of Europe's leading microelectronics and semiconductor manufacturing clusters, giving the university strong ties to industry."
         ],
         "highlights": [
-          "The oldest university in the English-speaking world",
-          "A unique structure of 39+ independent colleges",
-          "Global recognition in nearly every academic field"
+          "TU9 member and Excellence University since 2012",
+          "Europe-renowned research infrastructure in microelectronics, nanoelectronics and materials science",
+          "Strong industry links through the 'Silicon Saxony' technology cluster",
+          "One of Germany's broadest faculty ranges among technical universities"
         ],
         "pros": [
-          "One of the world's most prestigious academic brands, opening global career doors after graduation",
-          "Intensive academic support through small-group tutorials via the college system",
-          "In-depth research opportunities across nearly every discipline"
+          "Top-tier research opportunities in engineering and the natural sciences",
+          "Significantly lower cost of living than Berlin or Munich",
+          "Direct access to internships and careers in the microelectronics and semiconductor sector"
         ],
         "cons": [
-          "Admission is extremely competitive, with a separate interview stage",
-          "Oxford is a small city with more limited amenities than the UK's larger cities",
-          "The academic workload and pace are intense, with short terms requiring heavy study loads"
-        ]
+          "Smaller international student community than some western German cities",
+          "Most bachelor's programs are taught in German; English options are mainly at master's level",
+          "Cold winters with short daylight hours"
+        ],
+        "badges": [
+          "tu9",
+          "excellence"
+        ],
+        "mapCity": "dresden",
+        "quickFacts": {
+          "students": "~30,000",
+          "language": "Mostly German at bachelor's, many English programs at master's",
+          "tuition": "~€260 semester contribution (no tuition fees)"
+        }
       },
       {
-        "slug": "cambridge",
-        "country": "uk",
-        "name": "University of Cambridge",
-        "city": "Cambridge",
-        "type": "Üniversite",
-        "founded": "1209",
-        "description": "The world's fourth-oldest university, with an outstanding Nobel Prize legacy in science and mathematics.",
+        "slug": "tudarmstadt",
+        "name": "TU Darmstadt (Technische Universität Darmstadt)",
+        "city": "Darmstadt",
+        "type": "Universität",
+        "founded": "1877",
+        "description": "One of Germany's leading technical universities in computer science, cybersecurity and electrical engineering.",
         "history": [
-          "Founded in 1209 when scholars fleeing a dispute in Oxford settled in the town of Cambridge, the university received a royal charter from King Henry III in 1231. It is today recognized as the fourth-oldest university in the world in continuous operation.",
-          "Made up of 31 independent colleges, Cambridge has been home to some of the most important names in the history of science, from Isaac Newton to Charles Darwin, Stephen Hawking to Alan Turing; more than 120 Nobel Prizes are associated with the university."
+          "Founded in 1877, TU Darmstadt became the first German university to establish an independent computer science ('Informatik') faculty in 1972, a leading position it has held ever since.",
+          "In 2005 it became the first German state university to gain autonomous status, giving it more independence over curricula, staffing and budget than most public universities.",
+          "A TU9 member, TU Darmstadt hosts some of Germany's leading cybersecurity research centers, including CRISP and CYSEC."
         ],
         "highlights": [
-          "The world's fourth-oldest university in continuous operation",
-          "Shaped the history of science through figures like Newton, Darwin, and Hawking",
-          "31 colleges and 120+ Nobel Prizes associated with the university"
+          "TU9 member and Germany's first autonomous state university",
+          "One of Germany's most established and strongest programs in computer science and cybersecurity",
+          "Long-standing industry ties in electrical and mechanical engineering (Merck and Software AG are headquartered in Darmstadt)",
+          "Easy access to internships and careers thanks to proximity to Frankfurt"
         ],
         "pros": [
-          "World-leading academic reputation in the sciences, mathematics, and engineering",
-          "Intensive academic support through small-group supervisions via the college system",
-          "Strong research funding and world-class laboratory facilities"
+          "A leading name in computer science and cybersecurity nationwide",
+          "Close to Frankfurt (about 30 minutes away) for big-city amenities",
+          "A relatively compact campus with close student-faculty interaction"
         ],
         "cons": [
-          "Admission is extremely competitive, requiring an interview and additional exams for some subjects",
-          "Cambridge is a quiet, small university town compared to larger cities",
-          "Short, intensive terms require a demanding pace of study"
-        ]
+          "Darmstadt is a smaller city than Frankfurt, with more limited social and cultural life",
+          "Workload and academic pace in engineering programs are demanding",
+          "Strong competition for places in popular computer science programs"
+        ],
+        "badges": [
+          "tu9"
+        ],
+        "mapCity": "darmstadt",
+        "quickFacts": {
+          "students": "~26,000",
+          "language": "German at bachelor's; many English programs at master's, especially in computer science and engineering",
+          "tuition": "~€300 semester contribution (no tuition fees)"
+        }
       },
       {
-        "slug": "imperial",
-        "country": "uk",
-        "name": "Imperial College London",
-        "city": "Londra",
-        "type": "Teknik Üniversite",
-        "founded": "1907",
-        "description": "A London-based, globally ranked STEM university focused on science, engineering, medicine, and business.",
+        "slug": "tubraunschweig",
+        "name": "TU Braunschweig (Technische Universität Carolo-Wilhelmina zu Braunschweig)",
+        "city": "Braunschweig",
+        "type": "Universität",
+        "founded": "1745",
+        "description": "Founded in 1745, Germany's oldest technical university, with a strong research tradition in aerospace and automotive engineering.",
         "history": [
-          "Imperial College was founded in 1907 through the merger of the Royal College of Science, the Royal School of Mines, and the City and Guilds College, with roots reaching back to the Royal College of Chemistry founded in 1845. It operated as part of the University of London for most of its history, becoming fully independent in 2007.",
-          "Alongside its main campus in South Kensington, Imperial spans nine campuses across London and is recognized as a world-leading institution in science, engineering, medicine, and business (STEMB)."
+          "Founded in 1745 as the 'Collegium Carolinum', TU Braunschweig is regarded as Germany's oldest technical institution of higher education.",
+          "A TU9 member, the university works closely with the German Aerospace Center (DLR) and has become one of the country's leading centers for aerospace engineering.",
+          "Its proximity to Volkswagen's headquarters in Wolfsburg gives the university strong industry ties in automotive engineering and vehicle technology."
         ],
         "highlights": [
-          "A world-leading institution in science, engineering, medicine, and business (STEMB)",
-          "Nine campuses across London",
-          "Gained independence from the University of London in 2007"
+          "Germany's oldest technical university and a TU9 member",
+          "Aerospace engineering research strengthened by cooperation with DLR",
+          "Internship opportunities in automotive engineering through proximity to Wolfsburg/Volkswagen",
+          "Growing research capacity in biotechnology and materials science"
         ],
         "pros": [
-          "World-leading academic reputation in engineering, medicine, and the natural sciences",
-          "Direct proximity to London's finance and tech sectors, with strong internship ties",
-          "An intensely research-focused academic culture closely tied to industry"
+          "A strong, focused specialization in aerospace and automotive engineering",
+          "Affordable cost of living in a small-to-mid-sized city",
+          "Direct research and internship links with DLR and Volkswagen"
         ],
         "cons": [
-          "Admission is highly competitive, especially in engineering and medicine",
-          "London is one of the UK's most expensive cities",
-          "The program offering is heavily STEM-focused, with limited humanities options"
-        ]
+          "Braunschweig is a quieter, smaller city compared to major metropolitan areas",
+          "Less international name recognition than some other TU9 members",
+          "Few English-taught options at bachelor's level"
+        ],
+        "badges": [
+          "tu9"
+        ],
+        "mapCity": "braunschweig",
+        "quickFacts": {
+          "students": "~18,000",
+          "language": "Mostly German, select English programs at master's level",
+          "tuition": "~€300 semester contribution (no tuition fees)"
+        }
       },
       {
-        "slug": "ucl",
-        "country": "uk",
-        "name": "University College London (UCL)",
-        "city": "Londra",
-        "type": "Üniversite",
-        "founded": "1826",
-        "description": "London's first university, founded without regard to religion or social status.",
+        "slug": "hannover",
+        "name": "Leibniz Universität Hannover",
+        "city": "Hannover",
+        "type": "Universität",
+        "founded": "1831",
+        "description": "Named after the philosopher and mathematician Leibniz, a strong research university in engineering, law and the natural sciences.",
         "history": [
-          "Founded on 11 February 1826 as \"London University,\" UCL was designed as a secular alternative to Oxford and Cambridge at the time. It became England's first university to admit students regardless of their religious beliefs.",
-          "As London's first university, UCL also took a pioneering role by including practical sciences in its curriculum and offering women higher education on equal terms with men. Today it has a strong faculty in law, medicine, architecture, and engineering."
+          "Founded in 1831, the university takes its name from Gottfried Wilhelm Leibniz, the renowned philosopher and mathematician who lived in Hannover.",
+          "A TU9 member, Leibniz Universität Hannover works closely with the Laser Zentrum Hannover, one of Germany's leading centers for laser technology and photonics.",
+          "Alongside its engineering programs, the university maintains a strong tradition in law and the natural sciences."
         ],
         "highlights": [
-          "England's first university to admit students regardless of religion",
-          "London's first university",
-          "A strong faculty in law, medicine, architecture, and engineering"
+          "TU9 member with a broad range of faculties in engineering and the natural sciences",
+          "Europe-renowned research center in laser technology and photonics",
+          "A strong law faculty alongside its engineering programs",
+          "A mid-sized, easily accessible city"
         ],
         "pros": [
-          "A central London campus with direct access to cultural and career opportunities",
-          "A very broad program range with strong interdisciplinary options",
-          "A strong, diverse international student community"
+          "Deep, focused expertise in engineering and photonics",
+          "Located at the center of Germany's rail and highway network, making travel easy",
+          "Affordable cost of living in a mid-sized city"
         ],
         "cons": [
-          "London's high cost of living can strain a student budget",
-          "A large student body can mean crowded classes in some courses",
-          "Competitive admission for popular subjects"
-        ]
+          "Less international name recognition than Berlin or Munich",
+          "Social and cultural life is more limited than in larger cities",
+          "Few English-taught options at bachelor's level"
+        ],
+        "badges": [
+          "tu9"
+        ],
+        "mapCity": "hannover",
+        "quickFacts": {
+          "students": "~29,000",
+          "language": "Mostly German, English options in engineering at master's level",
+          "tuition": "~€340 semester contribution (no tuition fees)"
+        }
       },
       {
-        "slug": "lse",
-        "country": "uk",
-        "name": "London School of Economics and Political Science (LSE)",
-        "city": "Londra",
-        "type": "Üniversite",
-        "founded": "1895",
-        "description": "One of the world's most influential names in social sciences, economics, and political science.",
-        "history": [
-          "Founded in 1895 by Sidney and Beatrice Webb as a night school for the working class, LSE quickly grew into one of the world's leading institutions in the social sciences. It became a college of the University of London in 1900.",
-          "Open to women and men on equal terms from its founding and welcoming students from abroad, LSE has been associated with 21 Nobel Prizes (in Peace, Economics, and Literature) and is recognized as an institution that has produced world leaders."
-        ],
-        "highlights": [
-          "A world-renowned name in social sciences, economics, and political science",
-          "An education built on gender equality since its founding",
-          "An academic legacy associated with 21 Nobel Prizes"
-        ],
-        "pros": [
-          "World-leading reputation in economics, political science, and international relations",
-          "Direct proximity to London's finance and policy circles",
-          "A highly international, multicultural student community"
-        ],
-        "cons": [
-          "The program offering is largely limited to social sciences, with no STEM options",
-          "London's high cost of living",
-          "An intense, academically demanding environment"
-        ]
-      },
-      {
-        "slug": "kcl",
-        "country": "uk",
-        "name": "King's College London",
-        "city": "Londra",
-        "type": "Üniversite",
+        "slug": "stuttgart",
+        "name": "Universität Stuttgart",
+        "city": "Stuttgart",
+        "type": "Universität",
         "founded": "1829",
-        "description": "Founded by King George IV and the Duke of Wellington, a London university strong in medicine and law.",
+        "description": "In the heart of Germany's automotive and aerospace engineering region, one of the country's strongest universities in engineering and architecture.",
         "history": [
-          "Founded in 1829 under the leadership of King George IV and the Duke of Wellington, victor of the Battle of Waterloo, King's College London became one of the two founding colleges of the University of London in 1836.",
-          "Having merged over time with Chelsea College, Queen Elizabeth College, and the medical schools of Guy's and St Thomas' Hospitals, King's today has a strong faculty particularly in medicine, dentistry, law, and international relations."
+          "Founded in 1829, Universität Stuttgart became one of Germany's leading engineering institutions in the region regarded as the heart of the German automotive industry.",
+          "A TU9 member, the university hosts globally recognized research units such as the Institute for Lightweight Structures (ILEK), building on the legacy of architect Frei Otto.",
+          "Its proximity to the headquarters of Mercedes-Benz and Porsche gives the university an unmatched network of industry cooperation in automotive engineering and manufacturing technology."
         ],
         "highlights": [
-          "A well-established London university founded by King George IV and the Duke of Wellington",
-          "One of the two founding colleges of the University of London",
-          "A strong faculty in medicine, dentistry, and law"
+          "TU9 member and one of Germany's strongest centers for automotive and aerospace engineering",
+          "Strong internship and career links through proximity to Mercedes-Benz and Porsche",
+          "World-renowned research tradition in lightweight structures and architecture (Frei Otto's legacy)",
+          "A large employer network thanks to the strong regional economy"
         ],
         "pros": [
-          "A strong academic reputation in medicine, law, and international relations",
-          "Multiple campuses in central London along the River Thames",
-          "Medical education backed by strong hospital and clinical partnerships"
+          "An education deeply integrated with industry in automotive and mechanical engineering",
+          "High-paying internship and post-graduation job opportunities in the Stuttgart region",
+          "Strong interdisciplinary research culture in architecture and engineering"
         ],
         "cons": [
-          "London's high cost of living",
-          "Competitive admission for subjects like medicine and law",
-          "Campuses are spread across the city rather than a single central site"
-        ]
+          "Non-EU students may face an additional tuition fee in Baden-Württemberg",
+          "Stuttgart is one of Germany's relatively expensive cities",
+          "Strong competition for places in popular engineering programs"
+        ],
+        "badges": [
+          "tu9"
+        ],
+        "mapCity": "stuttgart",
+        "quickFacts": {
+          "students": "~23,000",
+          "language": "German at bachelor's, many English programs at master's",
+          "tuition": "~€200 semester contribution; non-EU students may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+        }
       },
       {
-        "slug": "edinburgh",
-        "country": "uk",
-        "name": "University of Edinburgh",
-        "city": "Edinburgh",
-        "type": "Üniversite",
-        "founded": "1583",
-        "description": "A center of the Scottish Enlightenment and the oldest civic-founded university in the English-speaking world.",
+        "slug": "konstanz",
+        "name": "Universität Konstanz",
+        "city": "Konstanz",
+        "type": "Universität",
+        "founded": "1966",
+        "description": "A small but elite 'reform university' on Lake Constance, known for its research intensity.",
         "history": [
-          "Founded by a charter from King James VI in 1582 at the initiative of the Edinburgh Town Council, the university opened its doors in 1583 as \"The Town's College.\" It is the oldest university in the English-speaking world founded by a city council rather than a church or monarch.",
-          "A hub of the 18th-century Scottish Enlightenment, Edinburgh counted thinkers like David Hume among its ranks; today it carries a strong academic reputation in medicine, veterinary medicine, artificial intelligence, and literature."
+          "Founded in 1966, Universität Konstanz was designed from the outset as an interdisciplinary, research-focused 'reform university' rather than following the traditional faculty model.",
+          "With no engineering or medical faculty, Konstanz is known for its small-scale but intensive research culture in political science, public administration, chemistry, biology and computer science.",
+          "Holding Excellence University status continuously since 2007, Konstanz is considered one of Germany's highest-performing universities in terms of research funding per student."
         ],
         "highlights": [
-          "The oldest civic-founded university in the English-speaking world",
-          "A center of the Scottish Enlightenment",
-          "A strong academic reputation in medicine, veterinary medicine, and AI"
+          "Excellence University status continuously since 2007",
+          "A unique campus location on Lake Constance, close to the Swiss border",
+          "An intensive research culture with small groups in political science, public administration and the natural sciences",
+          "One of Germany's youngest yet most research-intensive universities"
         ],
         "pros": [
-          "A strong academic reputation in medicine, veterinary medicine, and computer science/AI",
-          "A high quality of life in Edinburgh, a historic and lively capital city",
-          "Strong research infrastructure and a large international student community"
+          "Close, personal interaction with faculty thanks to a small student body",
+          "A quiet, high quality of life campus town on Lake Constance",
+          "An elite research culture with strong international academic standing"
         ],
         "cons": [
-          "Scotland's weather is variable and generally cool year-round",
-          "Competitive admission for popular subjects",
-          "Edinburgh has a more limited corporate job market than London"
-        ]
+          "No programs in popular fields such as engineering, medicine or business",
+          "The small-town setting lacks the cultural diversity of a big city",
+          "Limited program range may not suit every academic profile"
+        ],
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "konstanz",
+        "quickFacts": {
+          "students": "~11,000",
+          "language": "Mostly German, select English programs at master's level",
+          "tuition": "~€150 semester contribution; non-EU students may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+        }
       },
       {
-        "slug": "manchester",
-        "country": "uk",
-        "name": "University of Manchester",
-        "city": "Manchester",
-        "type": "Üniversite",
-        "founded": "1824",
-        "description": "A university with an industrial legacy, known for splitting the atom and discovering graphene.",
+        "slug": "htwberlin",
+        "name": "HTW Berlin (Hochschule für Technik und Wirtschaft Berlin)",
+        "city": "Berlin",
+        "type": "Fachhochschule",
+        "founded": "1994",
+        "description": "Berlin's largest university of applied sciences, offering practice-oriented education in engineering, business, computer science and design.",
         "history": [
-          "With roots tracing back to the Manchester Mechanics' Institute, founded in 1824, the university took its current form in 2004 through the merger of the Victoria University of Manchester and UMIST (the University of Manchester Institute of Science and Technology).",
-          "The university where the structure of the atom was discovered and where graphene was first isolated in 2010, Manchester has strong industry ties in engineering, materials science, and business; more than 25 Nobel laureates are associated with the university."
+          "Founded in 1994 through the merger of several technical and commercial schools, some dating back to the early 1900s, HTW Berlin quickly grew into Berlin's largest Hochschule (university of applied sciences).",
+          "Unlike traditional research universities, HTW Berlin emphasizes practice-oriented education closely tied to industry, with mandatory internships and project-based coursework at the core of its curriculum.",
+          "Offering a broad range of programs in engineering, business, computer science, design and culture/media management, HTW Berlin is also known for its international double-degree programs."
         ],
         "highlights": [
-          "The university where graphene was first isolated",
-          "A strong scientific legacy associated with 25+ Nobel laureates",
-          "A modern university formed by the 2004 merger of two established institutions"
+          "Berlin's largest university of applied sciences (Hochschule)",
+          "Strong, practice-oriented programs in engineering, business, computer science and design",
+          "Mandatory internship periods provide real work experience before graduation",
+          "International double-degree and exchange program options"
         ],
         "pros": [
-          "Strong research infrastructure in engineering, materials science, and natural sciences",
-          "A more affordable cost of living compared to London",
-          "A vibrant student life in Manchester, a large and lively city"
+          "A practice-based education model geared toward the job market",
+          "Direct access to Berlin's dynamic startup and tech ecosystem",
+          "Generally lower application competition than traditional universities"
         ],
         "cons": [
-          "A very large student body can mean crowded classes in some courses",
-          "Northern England's climate is more variable and rainy than London's",
-          "Competitive admission for popular engineering and medicine programs"
-        ]
+          "Traditional universities may be a better fit for those aiming at an academic research career (e.g. a PhD)",
+          "Berlin is a mid-to-high cost-of-living city by German standards",
+          "Limited spots in some popular programs"
+        ],
+        "badges": [],
+        "mapCity": "berlin",
+        "quickFacts": {
+          "students": "~15,000",
+          "language": "Mostly German, select English programs in business and engineering",
+          "tuition": "~€310 semester contribution (no tuition fees)"
+        }
       },
       {
-        "slug": "bristol",
-        "country": "uk",
-        "name": "University of Bristol",
-        "city": "Bristol",
-        "type": "Üniversite",
-        "founded": "1876",
-        "description": "The first higher education institution in England to admit men and women on equal terms.",
+        "slug": "furtwangen",
+        "name": "Hochschule Furtwangen (HFU)",
+        "city": "Furtwangen im Schwarzwald",
+        "type": "Fachhochschule",
+        "founded": "1850",
+        "description": "A small university of applied sciences in the Black Forest, especially popular with international students in computer science and engineering.",
         "history": [
-          "Founded in 1876 as University College, Bristol, the institution became the first higher education institution in England to admit men and women on equal terms. It gained full university status with a royal charter in 1909.",
-          "Home to figures like physicist Paul Dirac, Bristol today has a strong research faculty in engineering, natural sciences, and robotics, with close ties to the city's creative and tech-driven economy."
+          "Founded in 1850 as a clockmaking school, HFU gradually evolved into a modern, technology-focused Hochschule, gaining full university status in 1971.",
+          "Teaching across campuses in Furtwangen and Schwenningen/VS in the Black Forest region, the university is particularly well known among international students for its computer science, digital media and engineering programs.",
+          "A small-town campus and a low student-to-faculty ratio have made HFU a popular choice for international students seeking close academic support."
         ],
         "highlights": [
-          "The first higher education institution in England to admit men and women equally",
-          "A strong scientific legacy including physicist Paul Dirac",
-          "A strong research faculty in engineering, robotics, and natural sciences"
+          "Strong, internationally oriented programs in computer science, digital media and engineering",
+          "A small campus structure with a low student-to-faculty ratio",
+          "A quiet campus life in the heart of the Black Forest",
+          "Numerous English-taught master's programs"
         ],
         "pros": [
-          "A strong research reputation in engineering and natural sciences",
-          "Proximity to Bristol's creative, tech-driven economy",
-          "A more affordable cost of living compared to London"
+          "Strong program options in computer science and engineering geared toward international students",
+          "Low cost of living in a small town",
+          "Close academic support and small class sizes"
         ],
         "cons": [
-          "Competitive admission for popular subjects",
-          "The campus is spread across a hilly part of the city",
-          "Located in southwest England, with more limited transport links than major cities"
-        ]
-      },
-      {
-        "slug": "uva",
-        "country": "nl",
-        "name": "University of Amsterdam (UvA)",
-        "city": "Amsterdam",
-        "type": "Üniversite",
-        "founded": "1632",
-        "description": "One of the Netherlands' largest research universities, in the heart of Amsterdam.",
-        "history": [
-          "Founded in 1632 when Gerardus Vossius opened the Athenaeum Illustre, UvA is the fourth-oldest academic institution still in operation in the Netherlands. It gained full university status in the 19th century.",
-          "Teaching in the very center of Amsterdam and at the Science Park campus, UvA has a strong research faculty in social sciences, law, humanities, and natural sciences, and is regarded as one of the Netherlands' largest universities."
-        ],
-        "highlights": [
-          "The fourth-oldest academic institution still operating in the Netherlands",
-          "Campuses in central Amsterdam and at Science Park",
-          "A strong academic reputation in social sciences and law"
-        ],
-        "pros": [
-          "A strong academic reputation in social sciences, law, and humanities",
-          "Life in Amsterdam, one of Europe's most vibrant and international cities",
-          "A wide range of English-taught programs"
-        ],
-        "cons": [
-          "Student housing in Amsterdam can be scarce and expensive",
-          "Competitive admission for popular subjects",
-          "A large student body can mean crowded classes in some courses"
-        ]
-      },
-      {
-        "slug": "vu",
-        "country": "nl",
-        "name": "Vrije Universiteit Amsterdam (VU)",
-        "city": "Amsterdam",
-        "type": "Üniversite",
-        "founded": "1880",
-        "description": "Amsterdam's second major university, founded on the principle of independence from the state and church.",
-        "history": [
-          "Founded in 1880 under the leadership of theologian and statesman Abraham Kuyper as a university independent (\"vrije,\" or \"free\") from the state and church, VU was launched at a founding assembly held in Amsterdam's Nieuwe Kerk.",
-          "Today VU teaches on a modern campus near Amsterdam's Zuidas business district and has a strong faculty in medicine, business, and natural sciences."
-        ],
-        "highlights": [
-          "A university founded to be independent of the state and church",
-          "A modern campus near Amsterdam's Zuidas business district",
-          "A strong faculty in medicine, business, and natural sciences"
-        ],
-        "pros": [
-          "Direct proximity to Amsterdam's Zuidas business and finance district",
-          "Strong, applied programs in medicine and business",
-          "A calmer, more modern campus setting compared to UvA"
-        ],
-        "cons": [
-          "Student housing in Amsterdam can be scarce and expensive",
-          "Some programs are predominantly Dutch-taught",
-          "Less international name recognition than UvA"
-        ]
-      },
-      {
-        "slug": "tudelft",
-        "country": "nl",
-        "name": "TU Delft (Delft University of Technology)",
-        "city": "Delft",
-        "type": "Teknik Üniversite",
-        "founded": "1842",
-        "description": "The Netherlands' oldest and largest technical university.",
-        "history": [
-          "Founded in 1842 by King William II as a royal academy originally meant to train civil servants for the Dutch East Indies, TU Delft became a full technical university in 1905.",
-          "Today one of Europe's leading technical universities in engineering, architecture, and computer science, TU Delft is also known for its expertise in water management and marine engineering — a field directly tied to the Netherlands' long fight against the sea."
-        ],
-        "highlights": [
-          "The Netherlands' oldest and largest technical university",
-          "Consistently top-ranked across Europe in engineering and architecture",
-          "Specialized expertise in water management and marine engineering"
-        ],
-        "pros": [
-          "Among Europe's best programs in engineering, architecture, and computer science",
-          "World-leading expertise in water management and sustainability",
-          "Strong industry ties and research funding"
-        ],
-        "cons": [
-          "The program offering is heavily focused on engineering and technical fields",
-          "Delft is a small university town compared to major cities",
-          "The engineering course load is demanding"
-        ]
-      },
-      {
-        "slug": "utrecht",
-        "country": "nl",
-        "name": "Utrecht University",
-        "city": "Utrecht",
-        "type": "Üniversite",
-        "founded": "1636",
-        "description": "One of the Netherlands' largest research universities, with a broad program range.",
-        "history": [
-          "Founded in 1636, Utrecht University attracted large numbers of foreign students in the 17th and 18th centuries, particularly from England and Scotland.",
-          "Today teaching at the De Uithof (Utrecht Science Park) campus, the university is recognized as one of the Netherlands' most comprehensive research universities in medicine, law, natural sciences, and social sciences."
-        ],
-        "highlights": [
-          "A tradition of attracting international students since the 17th century",
-          "A modern campus at De Uithof (Utrecht Science Park)",
-          "A comprehensive research university in medicine, law, and natural sciences"
-        ],
-        "pros": [
-          "A strong, comprehensive research university across nearly every discipline",
-          "Utrecht is one of the Netherlands' most livable, centrally located cities",
-          "A modern, compact science campus (Utrecht Science Park)"
-        ],
-        "cons": [
-          "Competitive admission for popular subjects",
-          "Less international name recognition than Amsterdam",
-          "The campus is somewhat removed from the city center"
-        ]
-      },
-      {
-        "slug": "leiden",
-        "country": "nl",
-        "name": "Leiden University",
-        "city": "Leiden",
-        "type": "Üniversite",
-        "founded": "1575",
-        "description": "The Netherlands' oldest university, founded in 1575 by William of Orange.",
-        "history": [
-          "Founded in 1575 by William of Orange during the struggle for independence from Spain, Leiden University is the oldest university in the Netherlands.",
-          "Building a strong academic tradition in law, international relations, and archaeology, Leiden's campus stretches along the historic Rapenburg canal and sits close to the Dutch government and international institutions in The Hague."
-        ],
-        "highlights": [
-          "The Netherlands' oldest university, founded in 1575",
-          "A strong tradition in law, international relations, and archaeology",
-          "A campus stretching along the historic Rapenburg canal"
-        ],
-        "pros": [
-          "A strong academic reputation in law and international relations, close to The Hague",
-          "A high quality of life in Leiden, a historic and picturesque university town",
-          "A strong tradition in archaeology and Asian studies"
-        ],
-        "cons": [
-          "Leiden is a smaller, quieter city compared to Amsterdam",
-          "Competitive admission for popular subjects",
-          "Some programs are predominantly Dutch-taught"
-        ]
-      },
-      {
-        "slug": "erasmus",
-        "country": "nl",
-        "name": "Erasmus University Rotterdam",
-        "city": "Rotterdam",
-        "type": "Üniversite",
-        "founded": "1913",
-        "description": "A Rotterdam-based university with one of Europe's top schools of business and economics.",
-        "history": [
-          "Founded in 1913 as the Nederlandsche Handels-Hoogeschool (Netherlands School of Commerce), the university took its current name in 1973, honoring the humanist thinker Erasmus.",
-          "Home to the Rotterdam School of Management (RSM), regarded as one of Europe's top business and economics schools, the university is also a strong name in health sciences through its medical faculty, Erasmus MC."
-        ],
-        "highlights": [
-          "One of Europe's top business and economics schools (RSM)",
-          "A strong medical faculty through Erasmus MC",
-          "Named after the humanist thinker Erasmus"
-        ],
-        "pros": [
-          "A strong academic reputation in business, economics, and health sciences",
-          "Proximity to Rotterdam's modern, cosmopolitan, port-driven business world",
-          "A more affordable cost of living compared to Amsterdam"
-        ],
-        "cons": [
-          "Rotterdam is less historic/touristic than Amsterdam",
-          "An intense, competitive academic pace in the business programs",
-          "The campus is spread across different parts of the city"
-        ]
-      },
-      {
-        "slug": "maastricht",
-        "country": "nl",
-        "name": "Maastricht University",
-        "city": "Maastricht",
-        "type": "Üniversite",
-        "founded": "1976",
-        "description": "A highly international university known for its Problem-Based Learning (PBL) model.",
-        "history": [
-          "Founded on January 9, 1976, Maastricht University is one of the Netherlands' youngest universities. From its founding, it adopted the innovative Problem-Based Learning model, in which students learn in small groups through real-world problems.",
-          "Thanks to its location near the Belgian and German borders, Maastricht has an exceptionally international student profile and carries a strong academic reputation in European studies, business, and medicine."
-        ],
-        "highlights": [
-          "Known for its innovative Problem-Based Learning (PBL) model",
-          "One of the Netherlands' most international student populations",
-          "A strong academic reputation in European studies, business, and medicine"
-        ],
-        "pros": [
-          "An interactive, problem-based learning model in small groups",
-          "An exceptionally international student community and campus culture",
-          "Proximity to the Belgian and German borders, in a multicultural region"
-        ],
-        "cons": [
-          "Maastricht is far from the Netherlands' larger cities (Amsterdam, Rotterdam), in the country's south",
-          "The PBL model may not suit every learning style and demands heavy group work",
-          "The city is small, offering limited big-city life"
-        ]
-      },
-      {
-        "slug": "tue",
-        "country": "nl",
-        "name": "Eindhoven University of Technology (TU/e)",
-        "city": "Eindhoven",
-        "type": "Teknik Üniversite",
-        "founded": "1956",
-        "description": "A technical university founded to supply Philips with engineers, at the heart of the Netherlands' \"Silicon Valley.\"",
-        "history": [
-          "Founded in 1956 by the Dutch government as the Technische Hogeschool Eindhoven, with the goal of training the qualified engineers needed by electronics giant Philips' research laboratories, the university opened its doors in 1957.",
-          "Today at the heart of Eindhoven's \"Brainport\" tech region, TU/e offers an industry-integrated education in electrical engineering, computer science, and design."
-        ],
-        "highlights": [
-          "Founded in 1956 to supply Philips with engineers",
-          "A campus at the heart of Eindhoven's \"Brainport\" tech region",
-          "Industry-integrated education in electrical engineering, computer science, and design"
-        ],
-        "pros": [
-          "Direct proximity to major tech companies like Philips and ASML, with internship access",
-          "Strong, applied education in electrical engineering and design",
-          "A more affordable cost of living compared to Amsterdam"
-        ],
-        "cons": [
-          "The program offering is almost entirely limited to engineering and technical fields",
-          "Eindhoven is less touristic or cultural than Amsterdam",
-          "The engineering course load is demanding"
-        ]
-      },
-      {
-        "slug": "sorbonne",
-        "country": "fr",
-        "name": "Sorbonne Université",
-        "city": "Paris",
-        "type": "Üniversite",
-        "founded": "1257",
-        "description": "Paris's most recognized academic brand, with roots reaching back to 1257.",
-        "history": [
-          "Born in 1257 as a college founded by Robert de Sorbon for poor students, the Sorbonne grew over time into one of Europe's leading centers of science and culture. Closed during the French Revolution, it was re-established by Napoleon in 1806.",
-          "Today's Sorbonne Université was formed in 2018 through the merger of Paris-Sorbonne University (Paris IV) and Pierre-and-Marie-Curie University (Paris VI), bringing together the humanities, medicine, and natural sciences under one comprehensive structure."
-        ],
-        "highlights": [
-          "Paris's most recognized academic brand, with roots reaching back to 1257",
-          "Formed in 2018 through the merger of two major Paris universities",
-          "A comprehensive structure spanning humanities, medicine, and natural sciences"
-        ],
-        "pros": [
-          "Global recognition in the humanities, medicine, and natural sciences",
-          "A campus in the heart of Paris, in the historic Latin Quarter",
-          "One of France's largest and most comprehensive universities"
-        ],
-        "cons": [
-          "Paris is one of Europe's most expensive cities",
-          "Most bachelor's programs are taught in French",
-          "A large student body can mean crowded classes in some courses"
-        ]
-      },
-      {
-        "slug": "psl",
-        "country": "fr",
-        "name": "Université PSL (Paris Sciences & Lettres)",
-        "city": "Paris",
-        "type": "Üniversite",
-        "founded": "2010",
-        "description": "A select alliance of Paris institutions bringing together storied names like the Collège de France.",
-        "history": [
-          "Founded in 2010, Université PSL brings together numerous established, elite institutions under one roof, with roots reaching back to the Collège de France, founded in 1530; it formally became a full university in 2019.",
-          "Home to 11 founding institutions including the École Normale Supérieure, Paris Dauphine, and the Institut Curie, PSL consistently ranks as France's top university in international rankings."
-        ],
-        "highlights": [
-          "An alliance of elite institutions with roots reaching back to 1530",
-          "11 founding institutions including the École Normale Supérieure",
-          "Consistently France's top-ranked university internationally"
-        ],
-        "pros": [
-          "Access to France's most elite academic institutions under one umbrella",
-          "Very high academic standing in international rankings",
-          "Direct proximity to Paris's cultural and career opportunities"
-        ],
-        "cons": [
-          "Admission to the founding institutions is extremely competitive and selective",
-          "Paris's high cost of living",
-          "Campuses are spread across different locations throughout Paris"
-        ]
-      },
-      {
-        "slug": "sciencespo",
-        "country": "fr",
-        "name": "Sciences Po Paris",
-        "city": "Paris",
-        "type": "Üniversite",
-        "founded": "1872",
-        "description": "France's most influential school of political science and international relations, alma mater to numerous heads of state.",
-        "history": [
-          "Founded in 1872 in the aftermath of France's defeat by Prussia, with the goal of training a new political and administrative elite, Sciences Po quickly became one of the central institutions of French public life.",
-          "Alma mater to numerous French presidents including Emmanuel Macron and Jacques Chirac, Sciences Po is today a globally recognized name in political science, international relations, and public policy."
-        ],
-        "highlights": [
-          "Founded in 1872 to train France's political and administrative elite",
-          "Alma mater to numerous French presidents",
-          "Global recognition in political science and international relations"
-        ],
-        "pros": [
-          "World-leading reputation in political science, international relations, and public policy",
-          "Direct access to France's political and institutional circles",
-          "A highly international student community and dual-degree opportunities"
-        ],
-        "cons": [
-          "The program offering is largely limited to social sciences, with no STEM options",
-          "Admission is extremely competitive",
-          "Paris's high cost of living"
-        ]
-      },
-      {
-        "slug": "polytechnique",
-        "country": "fr",
-        "name": "École Polytechnique",
-        "city": "Palaiseau",
-        "type": "Teknik Üniversite",
-        "founded": "1794",
-        "description": "Founded during the French Revolution, France's most elite \"Grande École\" for engineering.",
-        "history": [
-          "Founded in 1794 by mathematician Gaspard Monge in response to the French Revolution's need for engineers and high-level officials, École Polytechnique became a military academy under Napoleon in 1804.",
-          "Also known by its nickname \"X,\" the school admits students from across France through an extremely selective entrance exam; today, at its campus in Palaiseau near Paris, it carries a world-class reputation in engineering, mathematics, and physics."
-        ],
-        "highlights": [
-          "An elite engineering school founded in 1794 during the French Revolution",
-          "Admits students through an extremely selective entrance exam",
-          "A world-class reputation in engineering, mathematics, and physics"
-        ],
-        "pros": [
-          "France's most elite and prestigious school for engineering and mathematics",
-          "Strong ties to French industry and government institutions",
-          "A small, intensive, high-quality learning environment"
-        ],
-        "cons": [
-          "The entrance exam is extremely competitive and demanding",
-          "Palaiseau is removed from central Paris, a campus-town setting",
-          "The program offering is largely limited to engineering and the sciences"
-        ]
-      },
-      {
-        "slug": "hecparis",
-        "country": "fr",
-        "name": "HEC Paris",
-        "city": "Jouy-en-Josas",
-        "type": "İşletme Okulu",
-        "founded": "1881",
-        "description": "Founded by the Paris Chamber of Commerce, one of Europe's top business schools.",
-        "history": [
-          "Founded in 1881 by the Paris Chamber of Commerce and Industry, HEC Paris set out to become one of France's most established \"Grandes Écoles\" for business and commerce.",
-          "Today teaching at its château campus in Jouy-en-Josas near Paris, HEC Paris is consistently ranked among Europe's top business schools for its MBA and master's programs."
-        ],
-        "highlights": [
-          "A business school founded by the Paris Chamber of Commerce in 1881",
-          "Teaching at a historic château campus in Jouy-en-Josas",
-          "Consistently ranked among Europe's top MBA and business programs"
-        ],
-        "pros": [
-          "Top-tier academic reputation in business and finance across Europe",
-          "A strong alumni network and corporate recruiting ties",
-          "A calm, focused learning environment on the château campus"
-        ],
-        "cons": [
-          "The program is entirely limited to business and management",
-          "Tuition is high, as with any private business school",
-          "The campus is removed from central Paris, in a rural setting"
-        ]
-      },
-      {
-        "slug": "parissaclay",
-        "country": "fr",
-        "name": "Université Paris-Saclay",
-        "city": "Saclay",
-        "type": "Üniversite",
-        "founded": "2014",
-        "description": "A young but powerful university bringing together one of France's largest research clusters.",
-        "history": [
-          "Home to numerous institutions with roots reaching back to 1150 and the founding of the University of Paris, Paris-Saclay was formally founded in 2014 and took its current structure in 2020.",
-          "Bringing together institutions like the École Normale Supérieure Paris-Saclay and the CEA research center, the university consistently ranks among the world's best in international rankings for mathematics, physics, and computer science."
-        ],
-        "highlights": [
-          "Brings together one of France's largest science and technology clusters",
-          "A globally recognized name in mathematics and physics rankings",
-          "Direct ties to major research institutions like the CEA"
-        ],
-        "pros": [
-          "World-leading research reputation in mathematics, physics, and computer science",
-          "Direct access to one of France's largest research clusters",
-          "A young, dynamic academic structure with rapidly growing international standing"
-        ],
-        "cons": [
-          "The Saclay campus is removed from central Paris, in a suburban setting",
-          "As a young institution, brand recognition lags some more established names",
-          "Bringing together so many founding institutions can create a complex structure"
-        ]
-      },
-      {
-        "slug": "lyon1",
-        "country": "fr",
-        "name": "Université Claude Bernard Lyon 1",
-        "city": "Lyon",
-        "type": "Üniversite",
-        "founded": "1896",
-        "description": "One of France's largest science and medicine universities outside Paris.",
-        "history": [
-          "With roots reaching back to a Faculty of Sciences founded in 1808, the University of Lyon was formally established in 1896 through the merger of several faculties. It split into three independent universities in 1970, one of which became Lyon 1, named after physiologist Claude Bernard.",
-          "Today one of France's strongest universities outside Paris in medicine, natural sciences, and sports science, Lyon 1 teaches in France's second-largest city, Lyon."
-        ],
-        "highlights": [
-          "One of France's largest science universities outside Paris, with roots to 1808",
-          "Named after physiologist Claude Bernard",
-          "A strong academic reputation in medicine, natural sciences, and sports science"
-        ],
-        "pros": [
-          "One of France's strongest universities outside Paris in medicine and natural sciences",
-          "Lyon offers a high quality of life as France's gastronomic capital",
-          "A significantly more affordable cost of living than Paris"
-        ],
-        "cons": [
-          "Most programs are taught in French, with limited English options",
-          "Less international name recognition than Paris",
-          "Competitive admission for subjects like medicine"
-        ]
-      },
-      {
-        "slug": "aixmarseille",
-        "country": "fr",
-        "name": "Aix-Marseille Université",
-        "city": "Aix-Marseille",
-        "type": "Üniversite",
-        "founded": "1409",
-        "description": "Founded in 1409, reunified in 2012 to become the largest university in the French-speaking world.",
-        "history": [
-          "Founded in 1409 at the initiative of Louis II of Anjou, Count of Provence, the university was closed during the French Revolution and later re-established as separate institutions in Aix and Marseille.",
-          "Reunified in 2012, Aix-Marseille Université became the largest university in the French-speaking world with around 70,000 students, carrying a strong academic reputation in law, medicine, and Mediterranean studies."
-        ],
-        "highlights": [
-          "Founded in 1409, one of France's oldest universities",
-          "Reunified in 2012 to become the largest university in the French-speaking world",
-          "A strong academic reputation in law, medicine, and Mediterranean studies"
-        ],
-        "pros": [
-          "A broad program range as the largest university in the French-speaking world",
-          "The Mediterranean culture and quality of life of Aix-en-Provence and Marseille",
-          "A significantly more affordable cost of living than Paris"
-        ],
-        "cons": [
-          "A very large student body can mean crowded classes in some courses",
-          "Most programs are taught in French",
-          "Campuses are spread out between Aix-en-Provence and Marseille"
-        ]
-      },
-      {
-        "slug": "ethz",
-        "country": "ch",
-        "name": "ETH Zurich",
-        "city": "Zürih",
-        "type": "Teknik Üniversite",
-        "founded": "1855",
-        "description": "Continental Europe's top technical university, alma mater to Albert Einstein.",
-        "history": [
-          "Founded in 1854 as a federal polytechnic school and opening its doors in 1855, ETH Zurich was inspired by the model of the École polytechnique in Paris.",
-          "Counting Albert Einstein among its alumni, ETH Zurich is associated with more than 20 Nobel laureates and is today regarded as continental Europe's top technical university in engineering, natural sciences, and computer science."
-        ],
-        "highlights": [
-          "Alma mater to Albert Einstein",
-          "Associated with more than 20 Nobel laureates",
-          "Regarded as continental Europe's top technical university"
-        ],
-        "pros": [
-          "World-leading reputation in engineering, natural sciences, and computer science",
-          "Switzerland's strong economy and high standard of living",
-          "Strong research funding and world-class laboratories"
-        ],
-        "cons": [
-          "Switzerland is one of Europe's most expensive countries",
-          "Admission and academic requirements are extremely competitive",
-          "Some courses are taught in German, particularly at the bachelor's level"
-        ]
-      },
-      {
-        "slug": "epfl",
-        "country": "ch",
-        "name": "EPFL (École Polytechnique Fédérale de Lausanne)",
-        "city": "Lozan",
-        "type": "Teknik Üniversite",
-        "founded": "1853",
-        "description": "A French-speaking regional technical university on Lake Geneva, known for its iconic architecture.",
-        "history": [
-          "Founded in 1853 as the École Spéciale de Lausanne, the school took its current name, École Polytechnique Fédérale de Lausanne, in 1969, becoming one of Switzerland's two federal institutes of technology alongside ETH Zurich.",
-          "Known for its campus on Lake Geneva and its iconic Rolex Learning Center building, EPFL carries a world-class research reputation in computer science, materials engineering, and life sciences."
-        ],
-        "highlights": [
-          "One of Switzerland's two federal institutes of technology",
-          "A campus on Lake Geneva, known for the iconic Rolex Learning Center",
-          "World-class research reputation in computer science and materials engineering"
-        ],
-        "pros": [
-          "World-leading research reputation in computer science and engineering",
-          "An exceptional campus setting on Lake Geneva",
-          "A multicultural student community in the French-speaking region"
-        ],
-        "cons": [
-          "Switzerland's high cost of living",
-          "Some courses are taught in French, particularly at the bachelor's level",
-          "The program offering is almost entirely limited to engineering and technical fields"
-        ]
-      },
-      {
-        "slug": "uzh",
-        "country": "ch",
-        "name": "University of Zurich (UZH)",
-        "city": "Zürih",
-        "type": "Üniversite",
-        "founded": "1833",
-        "description": "Europe's first university founded independently of a church or sovereign.",
-        "history": [
-          "Formed in 1833 from the merger of colleges of theology, law, and medicine with roots reaching back to 1525, the University of Zurich was the first university in Europe founded independently of a church or a sovereign.",
-          "Switzerland's largest university, UZH has a strong faculty in medicine, law, and economics, and is associated with numerous Nobel laureates."
-        ],
-        "highlights": [
-          "Europe's first university founded independently of a church or sovereign",
-          "Switzerland's largest university",
-          "A strong faculty in medicine, law, and economics"
-        ],
-        "pros": [
-          "A strong, comprehensive faculty in medicine, law, and economics",
-          "Quality of life in Zurich, Switzerland's largest financial center",
-          "A broad program range in the German-speaking region"
-        ],
-        "cons": [
-          "Switzerland's high cost of living",
-          "Courses are predominantly taught in German",
-          "Competitive admission for popular subjects"
-        ]
-      },
-      {
-        "slug": "unige",
-        "country": "ch",
-        "name": "University of Geneva (UNIGE)",
-        "city": "Cenevre",
-        "type": "Üniversite",
-        "founded": "1559",
-        "description": "Founded by John Calvin, the university of Geneva, the city of international institutions.",
-        "history": [
-          "Founded in 1559 by reformist theologian John Calvin as a school of theology, the University of Geneva shed its religious ties and gained full university status in 1873.",
-          "Located in Geneva, home to the United Nations' European headquarters and numerous international organizations, the university carries a strong academic reputation in international relations, law, and physics through its close collaboration with CERN."
-        ],
-        "highlights": [
-          "Founded by reformist theologian John Calvin in 1559",
-          "Located in a city home to the UN's European headquarters",
-          "A strong academic reputation in international relations, law, and physics"
-        ],
-        "pros": [
-          "A unique position in international relations and diplomacy, close to the UN and numerous NGOs",
-          "Strong research opportunities in physics through close collaboration with CERN",
-          "A multilingual, international campus environment"
-        ],
-        "cons": [
-          "Geneva is one of Switzerland's (and Europe's) most expensive cities",
-          "Courses are predominantly taught in French",
-          "A small city with limited big-city amenities"
-        ]
-      },
-      {
-        "slug": "tartu",
-        "country": "ee",
-        "name": "University of Tartu",
-        "city": "Tartu",
-        "type": "Üniversite",
-        "founded": "1632",
-        "description": "Founded by King Gustavus Adolphus of Sweden, Estonia's largest and oldest university.",
-        "history": [
-          "Founded in 1632 by King Gustavus Adolphus of Sweden, the University of Tartu closed and reopened several times throughout its history due to wars and occupations, being permanently re-established in 1802.",
-          "Regarded as Estonia's national university, Tartu is today the country's largest and oldest university, and one of the Baltic region's leading research institutions in medicine, law, and natural sciences."
-        ],
-        "highlights": [
-          "Founded by King Gustavus Adolphus of Sweden in 1632",
-          "Regarded as Estonia's national university",
-          "One of the Baltic region's leading research institutions"
-        ],
-        "pros": [
-          "A strong academic reputation in medicine, law, and natural sciences in the Baltic region",
-          "A lower cost of living compared to other European countries",
-          "Tartu is a safe, close-knit university town with a large student population"
-        ],
-        "cons": [
-          "Estonia has a more limited job market than larger European countries",
-          "Some programs are taught in Estonian, with more limited English options",
-          "Winters are long and dark"
-        ]
-      },
-      {
-        "slug": "taltech",
-        "country": "ee",
-        "name": "TalTech (Tallinn University of Technology)",
-        "city": "Tallinn",
-        "type": "Teknik Üniversite",
-        "founded": "1918",
-        "description": "Estonia's sole technical university, directly tied to the tech ecosystem of the capital, Tallinn.",
-        "history": [
-          "Founded in 1918 as a private school called Tallinna Tehnikum (Tallinn College of Engineering), the institution was nationalized in 1920 and grew over time into Estonia's leading technical higher education institution.",
-          "Estonia's sole technical university, TalTech is closely tied to the country's strong digital economy and tech startups (the ecosystem that also produced Skype), and is the country's leading institution in computer science and engineering."
-        ],
-        "highlights": [
-          "Estonia's sole technical university",
-          "Directly tied to Tallinn's strong digital economy",
-          "The country's leading institution in computer science and engineering"
-        ],
-        "pros": [
-          "Direct proximity to Estonia's strong digital economy and startup ecosystem",
-          "A lower cost of living compared to other European countries",
-          "English-taught programs in computer science and engineering"
-        ],
-        "cons": [
-          "Estonia has a more limited job market than larger European countries",
-          "The program offering is largely limited to engineering and technical fields",
-          "Winters are long and dark"
-        ]
-      },
-      {
-        "slug": "lund",
-        "country": "se",
-        "name": "Lund University",
-        "city": "Lund",
-        "type": "Üniversite",
-        "founded": "1666",
-        "description": "Founded on territory Sweden had just conquered, one of the country's most international universities.",
-        "history": [
-          "Founded by a charter from King Karl XI in 1666 in the Skåne region, which passed from Denmark to Sweden under the 1658 Treaty of Roskilde, with the aim of tying the region to Sweden, Lund University formally opened in 1668.",
-          "Today one of Sweden's largest and most international universities, Lund carries a strong research reputation in medicine, engineering, and physics, and is home to the renowned MAX IV and ESS research facilities."
-        ],
-        "highlights": [
-          "Founded by a charter from King Karl XI in 1666",
-          "One of Sweden's largest and most international universities",
-          "Home to world-class research facilities like MAX IV and ESS"
-        ],
-        "pros": [
-          "A strong research reputation in medicine, engineering, and physics",
-          "Direct access to large-scale research facilities like MAX IV and ESS",
-          "Life in one of Sweden's most vibrant student cities"
-        ],
-        "cons": [
-          "Scandinavia's high cost of living",
-          "Winters are long and dark",
-          "Some bachelor's programs are taught in Swedish"
-        ]
-      },
-      {
-        "slug": "uppsala",
-        "country": "se",
-        "name": "Uppsala University",
-        "city": "Uppsala",
-        "type": "Üniversite",
-        "founded": "1477",
-        "description": "Founded in 1477, the oldest university in Scandinavia.",
-        "history": [
-          "Founded with permission granted by Pope Sixtus IV on February 27, 1477, Uppsala University is the oldest university in Sweden and all of Scandinavia.",
-          "Having educated scientists such as botanist Carl Linnaeus and physicist Anders Celsius, Uppsala today maintains a strong academic tradition in medicine, natural sciences, and theology."
-        ],
-        "highlights": [
-          "Scandinavia's oldest university, founded in 1477",
-          "Educated scientists like Carl Linnaeus and Anders Celsius",
-          "A strong academic tradition in medicine, natural sciences, and theology"
-        ],
-        "pros": [
-          "One of Scandinavia's most established and prestigious universities",
-          "A strong research tradition in medicine and natural sciences",
-          "A historic, student-friendly university town near Stockholm"
-        ],
-        "cons": [
-          "Scandinavia's high cost of living",
-          "Winters are long and dark",
-          "Some bachelor's programs are taught in Swedish"
-        ]
-      },
-      {
-        "slug": "kth",
-        "country": "se",
-        "name": "KTH Royal Institute of Technology",
-        "city": "Stockholm",
-        "type": "Teknik Üniversite",
-        "founded": "1827",
-        "description": "Sweden's largest and oldest technical university, at the heart of Scandinavia's engineering scene.",
-        "history": [
-          "With roots reaching back to the Laboratorium Mechanicum, founded in 1697, KTH was established in 1827 as the Teknologiska Institutet (Institute of Technology), taking its current name, Kungliga Tekniska Högskolan (Royal Institute of Technology), in 1877.",
-          "Sweden's largest technical university, KTH is the country's leading institution in engineering, computer science, and architecture, directly tied to Stockholm's strong tech and startup ecosystem — the environment that also produced Spotify."
-        ],
-        "highlights": [
-          "Sweden's largest and oldest technical university",
-          "A long scientific tradition with roots reaching back to 1697",
-          "Directly tied to Stockholm's strong tech and startup ecosystem"
-        ],
-        "pros": [
-          "Sweden's leading institution in engineering, computer science, and architecture",
-          "Direct proximity to Stockholm's strong tech sector, with internship access",
-          "A wide range of English-taught master's programs"
-        ],
-        "cons": [
-          "Scandinavia's high cost of living",
-          "Winters are long and dark",
-          "The program offering is largely limited to engineering and technical fields"
-        ]
-      },
-      {
-        "slug": "stockholmuni",
-        "country": "se",
-        "name": "Stockholm University",
-        "city": "Stockholm",
-        "type": "Üniversite",
-        "founded": "1878",
-        "description": "Founded as a radical alternative to the academic establishment, Sweden's fourth state university.",
-        "history": [
-          "Founded in 1878 as Stockholm University College, conceived as a radical alternative to the traditional academic establishment of the time, the institution gained university status in 1960, becoming Sweden's fourth state university.",
-          "With a strong faculty in law, social sciences, and natural sciences, Stockholm University teaches in the Swedish capital, the same city that hosts the Nobel Prize ceremonies."
-        ],
-        "highlights": [
-          "Founded as a radical alternative to the traditional academic establishment",
-          "Sweden's fourth state university",
-          "A strong faculty in law, social sciences, and natural sciences"
-        ],
-        "pros": [
-          "Direct proximity to career and cultural opportunities in Stockholm, Sweden's capital",
-          "A strong academic reputation in law and social sciences",
-          "A wide range of English-taught master's programs"
-        ],
-        "cons": [
-          "Scandinavia's high cost of living, with student housing especially scarce in Stockholm",
-          "Winters are long and dark",
-          "Some bachelor's programs are taught in Swedish"
-        ]
-      },
-      {
-        "slug": "kuleuven",
-        "country": "be",
-        "name": "KU Leuven",
-        "city": "Leuven",
-        "type": "Üniversite",
-        "founded": "1425",
-        "description": "Founded in 1425, the oldest university in the Low Countries and the world's oldest Catholic university.",
-        "history": [
-          "Founded by a papal bull issued by Pope Martin V on December 9, 1425, the University of Leuven is the oldest university in the Low Countries (today's Belgium/Netherlands region) and the oldest Catholic university still in operation in the world.",
-          "Consistently ranked among Europe's most innovative universities, KU Leuven today has a strong research reputation and a wide network of industry collaborations in engineering, medicine, and biotechnology."
-        ],
-        "highlights": [
-          "The oldest university in the Low Countries, founded in 1425",
-          "The world's oldest Catholic university still in operation",
-          "Consistently ranked among Europe's most innovative universities"
-        ],
-        "pros": [
-          "A strong research reputation and industry collaboration in engineering, medicine, and biotechnology",
-          "Consistent ranking success as one of Europe's most innovative universities",
-          "Leuven is a safe, historic university town with a large student population"
-        ],
-        "cons": [
-          "Some bachelor's programs are taught in Dutch (Flemish)",
-          "Leuven is a small city compared to major urban centers",
-          "Competitive admission for popular subjects"
-        ]
-      },
-      {
-        "slug": "ghent",
-        "country": "be",
-        "name": "Ghent University",
-        "city": "Gent",
-        "type": "Üniversite",
-        "founded": "1817",
-        "description": "Founded by King William I of the Netherlands, one of Belgium's largest research universities.",
-        "history": [
-          "Founded in 1817 by King William I of the Netherlands, Ghent University has changed its language of instruction several times since its founding; today it is a fully Dutch (Flemish)-taught institution.",
-          "Known for its iconic Boekentoren (Book Tower) library building, a landmark of the city, Ghent University is today one of Belgium's strongest research universities in biotechnology, veterinary science, and engineering."
-        ],
-        "highlights": [
-          "Founded by King William I of the Netherlands in 1817",
-          "Known for its iconic Boekentoren (Book Tower) library building",
-          "A strong research reputation in biotechnology, veterinary science, and engineering"
-        ],
-        "pros": [
-          "A strong research reputation in biotechnology and veterinary sciences",
-          "Ghent is a lively, student-friendly city famous for its medieval architecture",
-          "A more affordable cost of living compared to Brussels"
-        ],
-        "cons": [
-          "The large majority of bachelor's programs are taught in Dutch",
-          "English program options are largely limited to the master's level",
-          "Belgium's variable, rainy climate"
-        ]
-      },
-      {
-        "slug": "ulb",
-        "country": "be",
-        "name": "Université libre de Bruxelles (ULB)",
-        "city": "Brüksel",
-        "type": "Üniversite",
-        "founded": "1834",
-        "description": "Founded on the principle of \"free inquiry,\" Brussels' major French-speaking university.",
-        "history": [
-          "Founded in 1834 by lawyer and liberal politician Pierre-Théodore Verhaegen on the principle of \"free inquiry\" (libre examen), as a reaction to the Catholic Church's dominance over education at the time, the university took its current French-speaking structure in 1970 when the Dutch-speaking VUB split off.",
-          "Teaching in the heart of Brussels, close to the European Union institutions, ULB carries a strong academic reputation in social sciences, law, and medicine."
-        ],
-        "highlights": [
-          "Founded in 1834 on the principle of \"free inquiry\" (libre examen)",
-          "Took its current structure in 1970 when the Dutch-speaking VUB split off",
-          "Located close to the European Union institutions"
-        ],
-        "pros": [
-          "Direct proximity to the European Union institutions, with internship and career opportunities",
-          "A strong academic reputation in social sciences, law, and medicine",
-          "Brussels' multicultural, international environment"
-        ],
-        "cons": [
-          "Most bachelor's programs are taught in French",
-          "Brussels is one of Belgium's more expensive cities",
-          "Competitive admission for popular subjects"
-        ]
-      },
-      {
-        "slug": "vub",
-        "country": "be",
-        "name": "Vrije Universiteit Brussel (VUB)",
-        "city": "Brüksel",
-        "type": "Üniversite",
-        "founded": "1970",
-        "description": "Brussels' Dutch-speaking university, born from the linguistic split of a university founded in 1834.",
-        "history": [
-          "With roots reaching back to the Université libre de Bruxelles, founded by Pierre-Théodore Verhaegen in 1834, VUB became an independent institution in 1970 when that university split along linguistic lines.",
-          "Teaching on a modern campus in Brussels' Etterbeek district, VUB has a strong faculty in social sciences, engineering, and medicine, and maintains close collaboration with ULB across many programs."
-        ],
-        "highlights": [
-          "An independent university born from ULB's 1970 linguistic split",
-          "A modern campus in Brussels' Etterbeek district",
-          "Close collaboration with ULB across many programs"
-        ],
-        "pros": [
-          "Direct proximity to Brussels' international, multicultural environment",
-          "A broad academic network through joint programs with ULB",
-          "A solid faculty in social sciences and engineering"
-        ],
-        "cons": [
-          "Most bachelor's programs are taught in Dutch",
-          "Brussels is one of Belgium's more expensive cities",
-          "Less international name recognition than KU Leuven"
-        ]
-      },
-      {
-        "slug": "copenhagen",
-        "country": "dk",
-        "name": "University of Copenhagen",
-        "city": "Kopenhag",
-        "type": "Üniversite",
-        "founded": "1479",
-        "description": "Founded in 1479, one of the oldest universities in Denmark and Northern Europe.",
-        "history": [
-          "Opening on June 1, 1479, after King Christian I received permission from Pope Sixtus IV, the University of Copenhagen was founded on the German university model with faculties of theology, law, medicine, and philosophy.",
-          "Having educated figures including physicist Niels Bohr, the University of Copenhagen is today Denmark's largest university and one of Scandinavia's leading research institutions in medicine, law, and natural sciences."
-        ],
-        "highlights": [
-          "Denmark's oldest university, founded in 1479",
-          "A scientific legacy that includes physicist Niels Bohr",
-          "Denmark's largest university and one of Scandinavia's leading research institutions"
-        ],
-        "pros": [
-          "A strong, established academic reputation in medicine, law, and natural sciences",
-          "Copenhagen's high quality of life and bike-friendly city culture",
-          "A wide range of English-taught master's programs"
-        ],
-        "cons": [
-          "Scandinavia's high cost of living",
-          "Student housing can be difficult to find in Copenhagen",
-          "Some bachelor's programs are taught in Danish"
-        ]
-      },
-      {
-        "slug": "dtu",
-        "country": "dk",
-        "name": "DTU (Technical University of Denmark)",
-        "city": "Kongens Lyngby",
-        "type": "Teknik Üniversite",
-        "founded": "1829",
-        "description": "Founded at the initiative of physicist Hans Christian Ørsted, Denmark's leading engineering university.",
-        "history": [
-          "Founded in 1829 at the initiative of physicist Hans Christian Ørsted, the discoverer of electromagnetism, as Denmark's first polytechnic school, DTU grew over time into the country's leading engineering university.",
-          "Today teaching at its campus in Kongens Lyngby north of Copenhagen, DTU ranks among Europe's leading technical universities in biotechnology, sustainable energy, and engineering."
-        ],
-        "highlights": [
-          "Denmark's first polytechnic school, founded in 1829 at the initiative of Hans Christian Ørsted",
-          "Denmark's leading engineering university",
-          "Europe-wide recognition in sustainable energy and biotechnology"
-        ],
-        "pros": [
-          "One of Europe's leading research institutions in sustainable energy and biotechnology",
-          "Direct proximity to Denmark's strong wind energy and green tech sector",
-          "A wide range of English-taught master's programs"
-        ],
-        "cons": [
-          "Scandinavia's high cost of living",
-          "The program offering is almost entirely limited to engineering and technical fields",
-          "Kongens Lyngby is somewhat removed from central Copenhagen"
-        ]
-      },
-      {
-        "slug": "aarhus",
-        "country": "dk",
-        "name": "Aarhus University",
-        "city": "Aarhus",
-        "type": "Üniversite",
-        "founded": "1928",
-        "description": "Denmark's second-largest and youngest established university, known for its yellow-brick architecture.",
-        "history": [
-          "Founded in 1928, Aarhus University became Denmark's first university outside Copenhagen, launched through donations from the local business community and public.",
-          "Known for its iconic yellow-brick buildings and a campus set among parkland, Aarhus is today Denmark's second-largest university, with a strong academic reputation in business, medicine, and agricultural sciences."
-        ],
-        "highlights": [
-          "Denmark's first university outside Copenhagen (1928)",
-          "Iconic yellow-brick architecture on a park-like campus",
-          "A strong academic reputation in business, medicine, and agricultural sciences"
-        ],
-        "pros": [
-          "A strong, modern academic reputation in business and medicine",
-          "A green, student-friendly campus set among parkland",
-          "A more affordable cost of living compared to Copenhagen"
-        ],
-        "cons": [
-          "Scandinavia's high cost of living",
-          "Less international name recognition than Copenhagen",
-          "Some bachelor's programs are taught in Danish"
-        ]
-      },
-      {
-        "slug": "cbs",
-        "country": "dk",
-        "name": "Copenhagen Business School (CBS)",
-        "city": "Frederiksberg",
-        "type": "İşletme Okulu",
-        "founded": "1917",
-        "description": "One of Northern Europe's largest business schools.",
-        "history": [
-          "Founded in 1917 by the Danish Society for the Advancement of Business Education, CBS was integrated into Denmark's official higher education system in 1965.",
-          "Known for its iconic \"Kilen\" (The Wedge) building, CBS is today one of Northern Europe's largest business schools, with a strong academic reputation in business, economics, and international trade."
-        ],
-        "highlights": [
-          "Founded in 1917, one of Northern Europe's largest business schools",
-          "Known for its iconic \"Kilen\" (The Wedge) building",
-          "A strong academic reputation in business, economics, and international trade"
-        ],
-        "pros": [
-          "One of Northern Europe's strongest schools in business and international trade",
-          "Copenhagen's high quality of life and international business environment",
-          "A wide range of English-taught master's and MBA programs"
-        ],
-        "cons": [
-          "Scandinavia's high cost of living",
-          "The program is entirely limited to business and economics",
-          "Student housing can be difficult to find in Copenhagen"
-        ]
+          "Furtwangen is a small town with limited big-city amenities and public transport",
+          "Social life is quieter than in major university cities",
+          "Some programs may require moving between the Furtwangen and Schwenningen campuses"
+        ],
+        "badges": [],
+        "mapCity": "furtwangen",
+        "quickFacts": {
+          "students": "~2,700",
+          "language": "Many English-taught master's programs in computer science and engineering",
+          "tuition": "~€230 semester contribution; non-EU students may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+        }
       }
     ],
     "cta": {
@@ -2007,66 +1234,31 @@
       "subtitle": "We recommend the right university and program based on your academic profile and target city.",
       "button": "Get University Guidance"
     },
-    "countries": {
-      "de": {
-        "name": "Germany",
-        "flag": "🇩🇪"
-      },
-      "uk": {
-        "name": "United Kingdom",
-        "flag": "🇬🇧"
-      },
-      "nl": {
-        "name": "Netherlands",
-        "flag": "🇳🇱"
-      },
-      "fr": {
-        "name": "France",
-        "flag": "🇫🇷"
-      },
-      "ch": {
-        "name": "Switzerland",
-        "flag": "🇨🇭"
-      },
-      "se": {
-        "name": "Sweden",
-        "flag": "🇸🇪"
-      },
-      "be": {
-        "name": "Belgium",
-        "flag": "🇧🇪"
-      },
-      "dk": {
-        "name": "Denmark",
-        "flag": "🇩🇰"
-      },
-      "ee": {
-        "name": "Estonia",
-        "flag": "🇪🇪"
-      }
+    "filters": {
+      "all": "All",
+      "universitat": "Universität",
+      "hochschule": "Hochschule / Applied Sciences",
+      "dual": "Duale Hochschule",
+      "tu9": "TU9 Universities",
+      "excellence": "Excellence Universities"
     },
-    "countryOrder": [
-      "de",
-      "uk",
-      "nl",
-      "fr",
-      "ch",
-      "se",
-      "be",
-      "dk",
-      "ee"
-    ]
+    "map": {
+      "title": "Our Universities on the Map of Germany",
+      "subtitle": "Explore where the universities we advise on are located.",
+      "hint": "Click a city marker to see the universities there.",
+      "emptyState": "Select a city on the map to see its universities."
+    }
   },
   "about": {
     "hero": {
       "title": "About Studiva",
-      "subtitle": "Founded in 2026 for students who want to study in Europe, we're a consultancy focused on studying abroad."
+      "subtitle": "Founded in 2026 for students who want to study in Germany, we're a consultancy focused on German higher education."
     },
     "story": {
       "title": "Our Story",
       "paragraphs": [
         "Studiva was founded in Istanbul in 2026 with the goal of helping students reach Europe's leading universities through a transparent, trustworthy process.",
-        "We're a team with up-to-date knowledge of 60+ universities across Germany, the UK, the Netherlands, France, Switzerland, Scandinavia, and Belgium, closely following each country's application system, visa requirements, and academic calendar.",
+        "We're a team with up-to-date knowledge of 25+ universities across Germany — from Excellence Universities to TU9 technical institutes, Hochschulen to Dual Studium programs — closely following each institution's application system, visa requirements, and academic calendar.",
         "Every student's academic background, budget, and goals are different — that's why we help you choose the right country and university instead of forcing you into one template. As a newly founded company, we offer a concrete commitment instead of inflated numbers: an admission guarantee when you complete our process in full."
       ]
     },
@@ -2086,8 +1278,8 @@
           "description": "We build a distinct strategy for every student across countries and programs."
         },
         {
-          "title": "European Expertise",
-          "description": "Our advisors closely follow each country's current visa regulations and university admission criteria."
+          "title": "Germany Expertise",
+          "description": "Our advisors closely follow Germany's current visa regulations and university admission criteria."
         },
         {
           "title": "Ongoing Support",
@@ -2102,14 +1294,14 @@
       },
       {
         "value": "9",
-        "label": "Countries"
+        "label": "TU9 Universities"
       },
       {
         "value": "100%",
         "label": "Admission Guarantee"
       },
       {
-        "value": "60+",
+        "value": "26+",
         "label": "Universities"
       }
     ]
@@ -2144,20 +1336,118 @@
       "messagePlaceholder": "Tell us about your target program, university, or any questions you have.",
       "submit": "Submit",
       "disclaimer": "This form is currently for demo purposes only; submission is not connected to a server. For a fast reply, message us on WhatsApp.",
-      "country": "Country of Interest",
+      "country": "Program Type of Interest",
       "countryPlaceholder": "Select",
       "countryOptions": [
-        "Germany",
-        "United Kingdom",
-        "Netherlands",
-        "France",
-        "Switzerland",
-        "Sweden",
-        "Belgium",
-        "Denmark",
-        "Estonia",
+        "Bachelor's",
+        "Master's",
+        "Dual Studium",
+        "Studienkolleg / Language Prep",
         "Not Sure Yet"
       ]
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog",
+      "subtitle": "Guides on studying, visas, scholarships and student life in Germany."
+    },
+    "posts": [
+      {
+        "slug": "exzellenzuniversitat-ve-tu9-nedir",
+        "category": "University Selection",
+        "date": "2026-08-10",
+        "readTime": "6 min",
+        "title": "What Are Excellence Universities and TU9? Germany's Elite Institutions",
+        "excerpt": "We explain 'Excellence University' (Exzellenzuniversität) and 'TU9' — two terms you'll run into often when researching universities in Germany.",
+        "body": [
+          "When researching universities in Germany, you'll frequently come across terms like 'Excellence University' (Exzellenzuniversität) and 'TU9'. Both signal strong quality, but they mean different things.",
+          "'Excellence University' status is awarded under Germany's joint federal-state 'Excellence Strategy' to universities with the strongest research performance. It comes with extra research funding and international prestige — LMU Munich, TU Munich, Heidelberg University and RWTH Aachen are among the institutions holding this status.",
+          "'TU9', on the other hand, is an alliance founded in 2006 by Germany's nine most established and strongest technical universities: RWTH Aachen, TU Berlin, TU Braunschweig, TU Darmstadt, TU Dresden, Leibniz Universität Hannover, KIT (Karlsruhe), TU Munich and Universität Stuttgart. TU9 membership signals a strong research infrastructure and close industry cooperation, especially in engineering and the natural sciences.",
+          "Holding either title doesn't automatically make a university the 'best choice' for you — city, program content, language, cost of living and your personal goals matter just as much. But knowing these two labels helps you read Germany's academic landscape faster.",
+          "At Studiva, we weigh both Excellence Universities and TU9 members alongside lesser-known but strong institutions, based on your academic profile."
+        ]
+      },
+      {
+        "slug": "dual-studium-nedir",
+        "category": "Program Types",
+        "date": "2026-07-22",
+        "readTime": "7 min",
+        "title": "What Is Dual Studium? Germany's Model for Studying While You Work",
+        "excerpt": "Can you earn a salary while studying? We explain Dual Studium, a higher-education model unique to Germany.",
+        "body": [
+          "'Dual Studium' is a higher-education model unique to Germany: students study at a higher-education institution while simultaneously working — and earning a salary — at a company. Theory and practice typically alternate in blocks of a few months each.",
+          "The most common provider of this model is DHBW (Duale Hochschule Baden-Württemberg); students first sign a contract with a company, then enroll at the university under that company's sponsorship. Several other universities and Hochschulen offer similar dual programs in engineering, business and IT.",
+          "The biggest advantage of Dual Studium is a regular salary throughout your studies and real work experience before graduation — tuition fees are usually waived entirely. The rate of being hired by the same company after graduation is quite high.",
+          "The trade-off is a demanding, tightly scheduled program, and you typically need to secure a company placement before enrolling — which can make the application process longer and more competitive than a standard university application.",
+          "If you want to study while earning an income, with a head start toward a guaranteed job after graduation, Dual Studium is well worth considering. At Studiva, we also help match you with a company and program that fit your profile."
+        ]
+      },
+      {
+        "slug": "almanya-ogrenci-vizesi-basvuru-sureci",
+        "category": "Visa",
+        "date": "2026-06-15",
+        "readTime": "8 min",
+        "title": "Germany Student Visa: A Step-by-Step Application Guide",
+        "excerpt": "We walk through the documents and steps required for a German student visa application.",
+        "body": [
+          "Once you've been admitted to a German university, the most critical next step is your student visa application. The process starts with booking an appointment at the German embassy or consulate — wait times can range from weeks to months depending on the city and season, so applying early is essential.",
+          "Core documents typically include a valid passport, your university admission letter, an APS certificate (for university graduates), proof of language proficiency (German or English, depending on the program), health insurance, and proof of financial resources.",
+          "Financial resources are usually demonstrated through a blocked account (Sperrkonto): a set amount is deposited and locked, allowing the student to withdraw a fixed monthly sum over the course of a year. The required amount is updated annually — our advisors can confirm the current figure for your application period.",
+          "The visa interview usually covers your study plan, why you chose Germany and this particular program, and your financial situation; being prepared and consistent in your answers speeds up the process.",
+          "After entering Germany with your visa, you'll need to register and apply for a residence permit (Aufenthaltserlaubnis) at the local immigration office (Ausländerbehörde) within a set period. At Studiva, we support you through every step of this process, from scheduling appointments to checking your documents."
+        ]
+      },
+      {
+        "slug": "aps-belgesi-nedir",
+        "category": "Application",
+        "date": "2026-05-28",
+        "readTime": "5 min",
+        "title": "What Is the APS Certificate and How Do You Get One?",
+        "excerpt": "We explain the APS process required for students to apply to a German university.",
+        "body": [
+          "The APS (Akademische Prüfstelle / Examination Board) certificate is a mandatory verification process for students who completed their bachelor's or master's studies in certain countries, including Turkey, before applying to a German university. Its purpose is to confirm the authenticity of your diploma and academic record.",
+          "The process begins with uploading required documents (diploma, transcripts, high school diploma, ID, etc.) online; the documents are then reviewed, usually followed by an online or in-person interview.",
+          "Once approved, you receive an APS certificate — a mandatory part of both your university application and your student visa process; most German universities won't evaluate your application without it.",
+          "The process can take anywhere from a few weeks to a few months, so if you're planning to study in Germany, it's important to start your APS application as early as possible.",
+          "At Studiva, we manage the entire process with you, from preparing the required documents for APS to tracking your application."
+        ]
+      },
+      {
+        "slug": "almanyada-yasam-maliyeti-ve-bloke-hesap",
+        "category": "Life in Germany",
+        "date": "2026-04-30",
+        "readTime": "6 min",
+        "title": "Cost of Living in Germany and the Blocked Account (Sperrkonto)",
+        "excerpt": "How should you plan your monthly budget in Germany, and what exactly is a blocked account (Sperrkonto)?",
+        "body": [
+          "As a student in Germany, your monthly budget varies significantly by city; cities like Munich, Frankfurt or Stuttgart are notably more expensive than cities like Dresden, Braunschweig or Furtwangen.",
+          "As a general rule, a monthly budget covering accommodation, food, transport, insurance and other expenses tends to be lower in mid-sized cities and higher in major metropolitan areas; finding student housing also has a significant impact on your budget.",
+          "The 'blocked account' (Sperrkonto), a mandatory part of the student visa application, is a special bank account used to prove you can cover your basic living expenses in Germany; a set amount is deposited and locked, and the student can withdraw a fixed monthly sum from it.",
+          "Besides a blocked account, some students demonstrate financial resources through a formal declaration of commitment ('Verpflichtungserklärung') from a German resident, or a scholarship confirmation letter; which method suits you depends on your situation.",
+          "At Studiva, we build a realistic budget plan for your target city and manage the process with you — from opening a blocked account to tracking the current required amounts."
+        ]
+      },
+      {
+        "slug": "almanyada-burs-imkanlari-daad",
+        "category": "Scholarships",
+        "date": "2026-03-18",
+        "readTime": "6 min",
+        "title": "DAAD Scholarships and Other Funding Options in Germany",
+        "excerpt": "Is it possible to get a scholarship to study in Germany? We round up DAAD and other funding options.",
+        "body": [
+          "Studying in Germany is already more affordable than in many European countries — public universities generally charge no tuition fees — and a range of scholarship options are also available.",
+          "DAAD (Deutscher Akademischer Austauschdienst / German Academic Exchange Service) is Germany's largest and most recognized scholarship organization, offering numerous programs for students from various countries, particularly at master's and PhD level.",
+          "Beyond DAAD, options worth exploring include universities' own scholarship programs, scholarships from political foundations such as the Konrad-Adenauer-Stiftung or Heinrich-Böll-Stiftung, and Europe-wide exchange/funding programs like Erasmus+.",
+          "Scholarship applications typically require academic achievement, a motivation letter, reference letters, and sometimes proof of language proficiency; application deadlines are often independent of — and earlier than — university application deadlines, so it pays to start researching early.",
+          "At Studiva, we research scholarship programs that match your academic profile and help you prepare your application materials."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Have questions? Let's talk, free of charge.",
+      "subtitle": "Let's map out a plan tailored to your academic profile.",
+      "button": "Get a Free Consultation"
     }
   }
 }

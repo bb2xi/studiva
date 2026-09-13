@@ -8,70 +8,71 @@ import Reveal from "./Reveal";
 
 type UniversityItem = {
   slug: string;
-  country: string;
   name: string;
   city: string;
   type: string;
+  badges: string[];
   description: string;
 };
 
-type CountryMeta = { name: string; flag: string };
+type FilterKey = "all" | "universitat" | "hochschule" | "dual" | "tu9" | "excellence";
+
+const FILTER_KEYS: FilterKey[] = ["all", "universitat", "hochschule", "dual", "tu9", "excellence"];
+
+function matches(item: UniversityItem, key: FilterKey) {
+  switch (key) {
+    case "all":
+      return true;
+    case "universitat":
+      return item.type === "Universität";
+    case "hochschule":
+      return item.type === "Fachhochschule";
+    case "dual":
+      return item.type === "Duale Hochschule";
+    case "tu9":
+      return item.badges.includes("tu9");
+    case "excellence":
+      return item.badges.includes("excellence");
+  }
+}
 
 export default function UniversitiesBrowser({
   items,
-  countries,
-  countryOrder,
   locale,
-  allLabel,
+  labels,
 }: {
   items: UniversityItem[];
-  countries: Record<string, CountryMeta>;
-  countryOrder: string[];
   locale: string;
-  allLabel: string;
+  labels: Record<FilterKey, string>;
 }) {
-  const [active, setActive] = useState<string>("all");
+  const [active, setActive] = useState<FilterKey>("all");
 
   const counts = useMemo(() => {
     const c: Record<string, number> = {};
-    for (const item of items) c[item.country] = (c[item.country] ?? 0) + 1;
+    for (const key of FILTER_KEYS) c[key] = items.filter((i) => matches(i, key)).length;
     return c;
   }, [items]);
 
-  const filtered = active === "all" ? items : items.filter((i) => i.country === active);
+  const filtered = items.filter((i) => matches(i, active));
 
   return (
     <div>
       <div className="flex flex-wrap justify-center gap-2">
-        <button
-          type="button"
-          onClick={() => setActive("all")}
-          className={`inline-flex cursor-pointer items-center gap-1.5 rounded-full border px-4 py-2 text-sm font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 ${
-            active === "all"
-              ? "border-brand bg-brand text-white"
-              : "border-border-strong bg-surface text-foreground-secondary hover:-translate-y-0.5 hover:border-brand hover:text-brand"
-          }`}
-        >
-          {allLabel}
-          <span className={active === "all" ? "text-blue-100" : "text-foreground-muted"}>({items.length})</span>
-        </button>
-        {countryOrder.map((code) => {
-          const meta = countries[code];
-          if (!meta || !counts[code]) return null;
+        {FILTER_KEYS.map((key) => {
+          if (key !== "all" && counts[key] === 0) return null;
           return (
             <button
-              key={code}
+              key={key}
               type="button"
-              onClick={() => setActive(code)}
+              onClick={() => setActive(key)}
               className={`inline-flex cursor-pointer items-center gap-1.5 rounded-full border px-4 py-2 text-sm font-medium transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 ${
-                active === code
+                active === key
                   ? "border-brand bg-brand text-white"
                   : "border-border-strong bg-surface text-foreground-secondary hover:-translate-y-0.5 hover:border-brand hover:text-brand"
               }`}
             >
-              <span>{meta.flag}</span>
-              {meta.name}
-              <span className={active === code ? "text-blue-100" : "text-foreground-muted"}>({counts[code]})</span>
+              {labels[key]}
+              <span className={active === key ? "text-green-100" : "text-foreground-muted"}>({counts[key]})</span>
             </button>
           );
         })}
@@ -81,7 +82,6 @@ export default function UniversitiesBrowser({
         {filtered.map((uni, index) => {
           const logo = universityLogos[uni.slug];
           const fallbackCover = universityMedia[uni.slug]?.[0];
-          const countryMeta = countries[uni.country];
           return (
             <Reveal key={uni.slug} delay={(index % 6) * 60}>
               <Link
@@ -100,9 +100,9 @@ export default function UniversitiesBrowser({
                     <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
                       {uni.type}
                     </span>
-                    {countryMeta && (
-                      <span className="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/95 text-base shadow-sm backdrop-blur">
-                        {countryMeta.flag}
+                    {uni.badges.includes("excellence") && (
+                      <span className="absolute right-3 top-3 inline-flex items-center rounded-full bg-accent px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
+                        {locale === "tr" ? "Exzellenz" : "Excellence"}
                       </span>
                     )}
                   </div>
@@ -118,9 +118,9 @@ export default function UniversitiesBrowser({
                     <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
                       {uni.type}
                     </span>
-                    {countryMeta && (
-                      <span className="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/95 text-base shadow-sm backdrop-blur">
-                        {countryMeta.flag}
+                    {uni.badges.includes("excellence") && (
+                      <span className="absolute right-3 top-3 inline-flex items-center rounded-full bg-accent px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
+                        {locale === "tr" ? "Exzellenz" : "Excellence"}
                       </span>
                     )}
                   </div>
@@ -132,8 +132,12 @@ export default function UniversitiesBrowser({
                   <div className="mt-1 flex items-center gap-1.5 text-xs text-foreground-muted">
                     <MapPin size={13} />
                     {uni.city}
-                    {countryMeta && `, ${countryMeta.name}`}
                   </div>
+                  {uni.badges.includes("tu9") && (
+                    <span className="mt-2 inline-flex w-fit items-center rounded-full bg-brand-light px-2.5 py-0.5 text-[11px] font-semibold text-brand">
+                      TU9
+                    </span>
+                  )}
                   <p className="mt-4 flex-1 text-sm leading-relaxed text-foreground-secondary">
                     {uni.description}
                   </p>

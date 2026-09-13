@@ -50,7 +50,7 @@ export default function HeroBackground() {
       <div
         className="absolute -left-1/4 -top-1/4 h-[60vw] w-[60vw] max-h-[560px] max-w-[560px] rounded-full opacity-40 blur-[90px] will-change-transform"
         style={{
-          background: "radial-gradient(circle, #2563eb 0%, transparent 70%)",
+          background: "radial-gradient(circle, #15803d 0%, transparent 70%)",
           animation: "blob-float-1 22s ease-in-out infinite",
           transform: "translate3d(calc(var(--mx) * 40px), calc(var(--my) * 40px), 0)",
         }}
@@ -58,7 +58,7 @@ export default function HeroBackground() {
       <div
         className="absolute -right-1/4 top-0 h-[55vw] w-[55vw] max-h-[520px] max-w-[520px] rounded-full opacity-30 blur-[100px] will-change-transform"
         style={{
-          background: "radial-gradient(circle, #1e3a8a 0%, transparent 70%)",
+          background: "radial-gradient(circle, #14532d 0%, transparent 70%)",
           animation: "blob-float-2 28s ease-in-out infinite",
           transform: "translate3d(calc(var(--mx) * -30px), calc(var(--my) * 30px), 0)",
         }}

@@ -14,6 +14,7 @@ export default function Footer() {
     { href: "/services", label: nav("services") },
     { href: "/programs", label: nav("programs") },
     { href: "/universities", label: nav("universities") },
+    { href: "/blog", label: nav("blog") },
     { href: "/about", label: nav("about") },
     { href: "/contact", label: nav("contact") },
   ];
