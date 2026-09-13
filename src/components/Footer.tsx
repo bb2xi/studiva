@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { GraduationCap, MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 
 export default function Footer() {
@@ -26,9 +26,8 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-14 sm:px-6 md:grid-cols-4 lg:px-8">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2 font-bold text-white">
-            <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand text-white">
-              <GraduationCap size={20} />
-            </span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo-icon.png" alt="" className="h-9 w-9" />
             <span className="text-lg tracking-tight">Studiva</span>
           </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">

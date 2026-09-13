@@ -56,7 +56,7 @@ export default async function HomePage({
         <HeroBackground />
         <Container className="relative py-24 sm:py-28">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm font-medium text-emerald-200 backdrop-blur-sm">
+            <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm font-medium text-blue-200 backdrop-blur-sm">
               {home("hero.badge")}
             </span>
             <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
@@ -271,7 +271,7 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* Campus showcase — real, licensed campus photography, unified with a brand-green duotone treatment */}
+      {/* Campus showcase — real, licensed campus photography, unified with a brand-blue duotone treatment */}
       {showcasePhotos.length > 0 && (
         <section className="relative overflow-hidden bg-slate-950 py-4">
           <div className="grid grid-cols-2 gap-1 sm:grid-cols-3 lg:grid-cols-6">
@@ -367,7 +367,7 @@ export default async function HomePage({
           <h2 className="text-3xl font-bold text-white sm:text-4xl">
             {home("cta.title")}
           </h2>
-          <p className="max-w-xl text-green-100">{home("cta.subtitle")}</p>
+          <p className="max-w-xl text-blue-100">{home("cta.subtitle")}</p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand transition-all duration-200 ease-out hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"

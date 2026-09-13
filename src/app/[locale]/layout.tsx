@@ -56,6 +56,7 @@ export default async function LocaleLayout({
     name: meta("siteName"),
     description: footer("description"),
     url: "https://studivadanismanlik.com",
+    logo: "https://studivadanismanlik.com/logo-full.png",
     email: footer("email"),
     telephone: footer("phone"),
     address: {

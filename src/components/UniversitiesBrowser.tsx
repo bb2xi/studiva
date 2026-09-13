@@ -72,7 +72,7 @@ export default function UniversitiesBrowser({
               }`}
             >
               {labels[key]}
-              <span className={active === key ? "text-green-100" : "text-foreground-muted"}>({counts[key]})</span>
+              <span className={active === key ? "text-blue-100" : "text-foreground-muted"}>({counts[key]})</span>
             </button>
           );
         })}

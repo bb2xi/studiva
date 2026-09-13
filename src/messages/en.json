@@ -290,7 +290,6 @@
           "tu9",
           "excellence"
         ],
-        "mapCity": "muenchen",
         "quickFacts": {
           "students": "~50,000",
           "language": "Mostly English at master's level, partly German at bachelor's",
@@ -300,7 +299,9 @@
           "Mechanical/Electrical Engineering",
           "Computer Science",
           "Medicine"
-        ]
+        ],
+        "lat": 48.1497,
+        "lng": 11.5678
       },
       {
         "slug": "lmu",
@@ -333,7 +334,6 @@
         "badges": [
           "excellence"
         ],
-        "mapCity": "muenchen",
         "quickFacts": {
           "students": "~52,000",
           "language": "Mostly German, English options at master's level",
@@ -343,7 +343,9 @@
           "Medicine",
           "Law",
           "Natural Sciences"
-        ]
+        ],
+        "lat": 48.1512,
+        "lng": 11.5806
       },
       {
         "slug": "huberlin",
@@ -376,7 +378,6 @@
         "badges": [
           "excellence"
         ],
-        "mapCity": "berlin",
         "quickFacts": {
           "students": "~32,000",
           "language": "Mostly German, some English-taught master's programs",
@@ -386,7 +387,9 @@
           "Social Sciences",
           "Humanities",
           "Natural Sciences"
-        ]
+        ],
+        "lat": 52.517,
+        "lng": 13.3936
       },
       {
         "slug": "rwth",
@@ -420,7 +423,6 @@
           "tu9",
           "excellence"
         ],
-        "mapCity": "aachen",
         "quickFacts": {
           "students": "~47,000 (about 25% international)",
           "language": "Mostly German at bachelor's, many English programs at master's",
@@ -430,7 +432,9 @@
           "Mechanical Engineering",
           "Electrical Engineering",
           "Computer Science"
-        ]
+        ],
+        "lat": 50.7782,
+        "lng": 6.0817
       },
       {
         "slug": "mannheim",
@@ -461,7 +465,6 @@
           "An intense, competitive grading culture in the business faculty"
         ],
         "badges": [],
-        "mapCity": "mannheim",
         "quickFacts": {
           "students": "~11,000",
           "language": "Many English-taught master's programs in business and economics",
@@ -471,7 +474,9 @@
           "Business Administration",
           "Economics",
           "Psychology"
-        ]
+        ],
+        "lat": 49.4794,
+        "lng": 8.4622
       },
       {
         "slug": "hm",
@@ -502,7 +507,6 @@
           "Munich's high cost of living"
         ],
         "badges": [],
-        "mapCity": "muenchen",
         "quickFacts": {
           "students": "~19,000",
           "language": "Mostly German, a few English-taught programs",
@@ -512,7 +516,9 @@
           "Mechanical Engineering",
           "Business Administration",
           "Computer Science"
-        ]
+        ],
+        "lat": 48.1611,
+        "lng": 11.5486
       },
       {
         "slug": "frankfurtuas",
@@ -543,7 +549,6 @@
           "Frankfurt has a high cost of living relative to smaller German cities"
         ],
         "badges": [],
-        "mapCity": "frankfurt",
         "quickFacts": {
           "students": "~15,000",
           "language": "Mix of German and English, especially at master's level",
@@ -553,7 +558,9 @@
           "Social Work",
           "Business Administration",
           "Computer Science"
-        ]
+        ],
+        "lat": 50.1289,
+        "lng": 8.6858
       },
       {
         "slug": "dhbw",
@@ -584,7 +591,6 @@
           "An intensive pace with almost no long breaks between theory and practice blocks"
         ],
         "badges": [],
-        "mapCity": "stuttgart",
         "quickFacts": {
           "students": "~34,000 (multi-campus)",
           "language": "Mostly German",
@@ -594,7 +600,9 @@
           "Business Administration (Dual)",
           "Engineering (Dual)",
           "Computer Science (Dual)"
-        ]
+        ],
+        "lat": 48.7784,
+        "lng": 9.1733
       },
       {
         "slug": "iu",
@@ -625,7 +633,6 @@
           "Rapid growth has drawn some scrutiny over teaching quality consistency"
         ],
         "badges": [],
-        "mapCity": "erfurt",
         "quickFacts": {
           "students": "~130,000 (Germany's largest private higher-education institution)",
           "language": "Mostly English, online and on-campus options",
@@ -635,7 +642,9 @@
           "Business Administration",
           "Computer Science",
           "Psychology"
-        ]
+        ],
+        "lat": 50.967,
+        "lng": 11.043
       },
       {
         "slug": "fom",
@@ -666,7 +675,6 @@
           "Less of a traditional campus/student-life experience than a full-time university"
         ],
         "badges": [],
-        "mapCity": "essen",
         "quickFacts": {
           "students": "~57,000",
           "language": "Mostly German",
@@ -676,7 +684,9 @@
           "Business Administration",
           "Economics",
           "Management"
-        ]
+        ],
+        "lat": 51.4508,
+        "lng": 7.0131
       },
       {
         "slug": "heidelberg",
@@ -709,7 +719,6 @@
         "badges": [
           "excellence"
         ],
-        "mapCity": "heidelberg",
         "quickFacts": {
           "students": "~30,000",
           "language": "German at bachelor's, many English-taught master's and PhD programs",
@@ -719,7 +728,9 @@
           "Medicine",
           "Natural Sciences",
           "Law"
-        ]
+        ],
+        "lat": 49.4097,
+        "lng": 8.7057
       },
       {
         "slug": "tuebingen",
@@ -752,7 +763,6 @@
         "badges": [
           "excellence"
         ],
-        "mapCity": "tuebingen",
         "quickFacts": {
           "students": "~27,000",
           "language": "Mostly German, select English-taught master's programs",
@@ -762,7 +772,9 @@
           "Medicine",
           "Natural Sciences",
           "Theology"
-        ]
+        ],
+        "lat": 48.5225,
+        "lng": 9.0561
       },
       {
         "slug": "kit",
@@ -795,7 +807,6 @@
         "badges": [
           "tu9"
         ],
-        "mapCity": "karlsruhe",
         "quickFacts": {
           "students": "~23,000",
           "language": "German at bachelor's, many English programs at master's",
@@ -805,7 +816,9 @@
           "Mechanical Engineering",
           "Computer Science",
           "Physics"
-        ]
+        ],
+        "lat": 49.0117,
+        "lng": 8.4149
       },
       {
         "slug": "freiburg",
@@ -836,7 +849,6 @@
           "Fewer large-scale industry partnerships than technical universities"
         ],
         "badges": [],
-        "mapCity": "freiburg",
         "quickFacts": {
           "students": "~24,000",
           "language": "Mostly German",
@@ -846,7 +858,9 @@
           "Medicine",
           "Natural Sciences",
           "Forestry Sciences"
-        ]
+        ],
+        "lat": 47.9955,
+        "lng": 7.846
       },
       {
         "slug": "goettingen",
@@ -877,7 +891,6 @@
           "Fewer international corporate employers nearby compared to major cities"
         ],
         "badges": [],
-        "mapCity": "goettingen",
         "quickFacts": {
           "students": "~30,000",
           "language": "Mostly German, English master's options in the sciences",
@@ -887,7 +900,9 @@
           "Natural Sciences",
           "Agricultural Sciences",
           "Law"
-        ]
+        ],
+        "lat": 51.5346,
+        "lng": 9.9349
       },
       {
         "slug": "bonn",
@@ -920,7 +935,6 @@
         "badges": [
           "excellence"
         ],
-        "mapCity": "bonn",
         "quickFacts": {
           "students": "~34,000",
           "language": "Mostly German, many English-taught master's programs",
@@ -930,7 +944,9 @@
           "Law",
           "Economics",
           "Mathematics"
-        ]
+        ],
+        "lat": 50.734,
+        "lng": 7.0956
       },
       {
         "slug": "koeln",
@@ -961,7 +977,6 @@
           "Competitive admission for popular subjects like medicine, law, and psychology"
         ],
         "badges": [],
-        "mapCity": "koeln",
         "quickFacts": {
           "students": "~48,000 (one of Germany's largest universities)",
           "language": "Mostly German",
@@ -971,7 +986,9 @@
           "Law",
           "Economics",
           "Medicine"
-        ]
+        ],
+        "lat": 50.9279,
+        "lng": 6.9271
       },
       {
         "slug": "tuberlin",
@@ -1005,7 +1022,6 @@
           "tu9",
           "excellence"
         ],
-        "mapCity": "berlin",
         "quickFacts": {
           "students": "~33,000",
           "language": "Many English-taught master's programs in engineering",
@@ -1015,7 +1031,9 @@
           "Mechanical Engineering",
           "Electrical Engineering",
           "Computer Science"
-        ]
+        ],
+        "lat": 52.5125,
+        "lng": 13.3269
       },
       {
         "slug": "tudresden",
@@ -1049,7 +1067,6 @@
           "tu9",
           "excellence"
         ],
-        "mapCity": "dresden",
         "quickFacts": {
           "students": "~30,000",
           "language": "Mostly German at bachelor's, many English programs at master's",
@@ -1059,7 +1076,9 @@
           "Microelectronics",
           "Mechanical Engineering",
           "Materials Science"
-        ]
+        ],
+        "lat": 51.0272,
+        "lng": 13.7231
       },
       {
         "slug": "tudarmstadt",
@@ -1092,7 +1111,6 @@
         "badges": [
           "tu9"
         ],
-        "mapCity": "darmstadt",
         "quickFacts": {
           "students": "~26,000",
           "language": "German at bachelor's; many English programs at master's, especially in computer science and engineering",
@@ -1102,7 +1120,9 @@
           "Computer Science",
           "Cybersecurity",
           "Electrical Engineering"
-        ]
+        ],
+        "lat": 49.8728,
+        "lng": 8.6512
       },
       {
         "slug": "tubraunschweig",
@@ -1135,7 +1155,6 @@
         "badges": [
           "tu9"
         ],
-        "mapCity": "braunschweig",
         "quickFacts": {
           "students": "~18,000",
           "language": "Mostly German, select English programs at master's level",
@@ -1145,7 +1164,9 @@
           "Aerospace Engineering",
           "Automotive Engineering",
           "Biotechnology"
-        ]
+        ],
+        "lat": 52.2733,
+        "lng": 10.5261
       },
       {
         "slug": "hannover",
@@ -1178,7 +1199,6 @@
         "badges": [
           "tu9"
         ],
-        "mapCity": "hannover",
         "quickFacts": {
           "students": "~29,000",
           "language": "Mostly German, English options in engineering at master's level",
@@ -1188,7 +1208,9 @@
           "Mechanical Engineering",
           "Photonics",
           "Law"
-        ]
+        ],
+        "lat": 52.3841,
+        "lng": 9.7161
       },
       {
         "slug": "stuttgart",
@@ -1221,7 +1243,6 @@
         "badges": [
           "tu9"
         ],
-        "mapCity": "stuttgart",
         "quickFacts": {
           "students": "~23,000",
           "language": "German at bachelor's, many English programs at master's",
@@ -1231,7 +1252,9 @@
           "Automotive Engineering",
           "Aerospace Engineering",
           "Architecture"
-        ]
+        ],
+        "lat": 48.7801,
+        "lng": 9.1774
       },
       {
         "slug": "konstanz",
@@ -1264,7 +1287,6 @@
         "badges": [
           "excellence"
         ],
-        "mapCity": "konstanz",
         "quickFacts": {
           "students": "~11,000",
           "language": "Mostly German, select English programs at master's level",
@@ -1274,7 +1296,9 @@
           "Political Science",
           "Chemistry",
           "Computer Science"
-        ]
+        ],
+        "lat": 47.693,
+        "lng": 9.1859
       },
       {
         "slug": "htwberlin",
@@ -1305,7 +1329,6 @@
           "Limited spots in some popular programs"
         ],
         "badges": [],
-        "mapCity": "berlin",
         "quickFacts": {
           "students": "~15,000",
           "language": "Mostly German, select English programs in business and engineering",
@@ -1315,7 +1338,9 @@
           "Engineering",
           "Business Administration",
           "Design"
-        ]
+        ],
+        "lat": 52.4809,
+        "lng": 13.5246
       },
       {
         "slug": "furtwangen",
@@ -1346,7 +1371,6 @@
           "Some programs may require moving between the Furtwangen and Schwenningen campuses"
         ],
         "badges": [],
-        "mapCity": "furtwangen",
         "quickFacts": {
           "students": "~2,700",
           "language": "Many English-taught master's programs in computer science and engineering",
@@ -1356,7 +1380,9 @@
           "Computer Science",
           "Digital Media",
           "Engineering"
-        ]
+        ],
+        "lat": 48.0511,
+        "lng": 8.2076
       },
       {
         "slug": "hamburg",
@@ -1389,7 +1415,6 @@
         "badges": [
           "excellence"
         ],
-        "mapCity": "hamburg",
         "quickFacts": {
           "students": "~44,000",
           "language": "Mostly German, English options in some master's programs",
@@ -1399,7 +1424,9 @@
           "Medicine (UKE)",
           "Climate/Earth Sciences",
           "Law"
-        ]
+        ],
+        "lat": 53.5657,
+        "lng": 9.9847
       },
       {
         "slug": "fuberlin",
@@ -1431,7 +1458,6 @@
         "badges": [
           "excellence"
         ],
-        "mapCity": "berlin",
         "quickFacts": {
           "students": "~34,000",
           "language": "Mostly German, growing English master's offering",
@@ -1441,7 +1467,9 @@
           "Political Science",
           "Area Studies",
           "Biology/Life Sciences"
-        ]
+        ],
+        "lat": 52.4536,
+        "lng": 13.2878
       },
       {
         "slug": "erlangen",
@@ -1471,7 +1499,6 @@
           "Less international name recognition than Munich institutions"
         ],
         "badges": [],
-        "mapCity": "erlangen",
         "quickFacts": {
           "students": "~39,000",
           "language": "Mostly German, English options in engineering/medicine master's",
@@ -1481,7 +1508,9 @@
           "Electrical Engineering",
           "Medicine",
           "Medical Technology"
-        ]
+        ],
+        "lat": 49.5985,
+        "lng": 11.0036
       },
       {
         "slug": "bochum",
@@ -1511,7 +1540,6 @@
           "Industrial urban surroundings"
         ],
         "badges": [],
-        "mapCity": "bochum",
         "quickFacts": {
           "students": "~43,000",
           "language": "Mostly German, English options in IT security/engineering",
@@ -1521,7 +1549,9 @@
           "IT Security",
           "Mechanical Engineering",
           "East Asian Studies"
-        ]
+        ],
+        "lat": 51.4487,
+        "lng": 7.2609
       },
       {
         "slug": "mainz",
@@ -1551,7 +1581,6 @@
           "Competitive medicine admissions"
         ],
         "badges": [],
-        "mapCity": "mainz",
         "quickFacts": {
           "students": "~31,000",
           "language": "Mostly German, some English master's",
@@ -1561,7 +1590,9 @@
           "Medicine",
           "Biology/Life Sciences",
           "Communication Studies"
-        ]
+        ],
+        "lat": 49.9931,
+        "lng": 8.238
       },
       {
         "slug": "muenster",
@@ -1591,7 +1622,6 @@
           "Competitive law admissions"
         ],
         "badges": [],
-        "mapCity": "muenster",
         "quickFacts": {
           "students": "~43,000",
           "language": "Mostly German",
@@ -1601,7 +1631,9 @@
           "Law",
           "Business Administration",
           "Theology"
-        ]
+        ],
+        "lat": 51.9616,
+        "lng": 7.6151
       },
       {
         "slug": "bremen",
@@ -1631,7 +1663,6 @@
           "Limited program range in some fields like medicine"
         ],
         "badges": [],
-        "mapCity": "bremen",
         "quickFacts": {
           "students": "~19,000",
           "language": "Mostly German, growing English offering in the sciences",
@@ -1641,7 +1672,9 @@
           "Marine Sciences",
           "Space/Systems Engineering",
           "Computer Science"
-        ]
+        ],
+        "lat": 53.1079,
+        "lng": 8.8514
       },
       {
         "slug": "kiel",
@@ -1671,7 +1704,6 @@
           "Northern location means a longer trip from most international hubs"
         ],
         "badges": [],
-        "mapCity": "kiel",
         "quickFacts": {
           "students": "~24,000",
           "language": "Mostly German, English options in marine sciences master's",
@@ -1681,7 +1713,9 @@
           "Marine/Ocean Sciences",
           "Law",
           "Agricultural & Nutrition Sciences"
-        ]
+        ],
+        "lat": 54.3401,
+        "lng": 10.1225
       },
       {
         "slug": "marburg",
@@ -1711,7 +1745,6 @@
           "More remote location relative to major airports"
         ],
         "badges": [],
-        "mapCity": "marburg",
         "quickFacts": {
           "students": "~22,000",
           "language": "Mostly German",
@@ -1721,7 +1754,9 @@
           "Medicine",
           "Pharmacy",
           "Humanities"
-        ]
+        ],
+        "lat": 50.809,
+        "lng": 8.771
       },
       {
         "slug": "jena",
@@ -1750,7 +1785,6 @@
           "Fewer English-taught bachelor's options"
         ],
         "badges": [],
-        "mapCity": "jena",
         "quickFacts": {
           "students": "~18,000",
           "language": "Mostly German, English options in photonics/physics master's",
@@ -1760,7 +1794,9 @@
           "Physics/Optics & Photonics",
           "Chemistry",
           "Biology"
-        ]
+        ],
+        "lat": 50.928,
+        "lng": 11.588
       },
       {
         "slug": "thkoeln",
@@ -1790,7 +1826,6 @@
           "Less research-university prestige than a Universität"
         ],
         "badges": [],
-        "mapCity": "koeln",
         "quickFacts": {
           "students": "~27,000",
           "language": "Mostly German, select English programs in engineering/business",
@@ -1800,7 +1835,9 @@
           "Mechanical Engineering",
           "Social Work",
           "Media Technology"
-        ]
+        ],
+        "lat": 50.935,
+        "lng": 6.955
       },
       {
         "slug": "hsmannheim",
@@ -1830,7 +1867,6 @@
           "Competitive spots in popular engineering programs"
         ],
         "badges": [],
-        "mapCity": "mannheim",
         "quickFacts": {
           "students": "~5,500",
           "language": "Mostly German",
@@ -1840,7 +1876,9 @@
           "Mechanical Engineering",
           "Information Technology",
           "Biotechnology"
-        ]
+        ],
+        "lat": 49.4913,
+        "lng": 8.4676
       },
       {
         "slug": "hskarlsruhe",
@@ -1870,7 +1908,6 @@
           "Large engineering cohorts in early semesters"
         ],
         "badges": [],
-        "mapCity": "karlsruhe",
         "quickFacts": {
           "students": "~8,000",
           "language": "Mostly German",
@@ -1880,7 +1917,9 @@
           "Mechanical Engineering",
           "Architecture",
           "Information Technology"
-        ]
+        ],
+        "lat": 49.0089,
+        "lng": 8.3975
       },
       {
         "slug": "htwgkonstanz",
@@ -1910,7 +1949,6 @@
           "Distinct from (and sometimes confused with) the research-focused Universität Konstanz"
         ],
         "badges": [],
-        "mapCity": "konstanz",
         "quickFacts": {
           "students": "~4,700",
           "language": "Mostly German, some English design/business programs",
@@ -1920,7 +1958,9 @@
           "Mechanical Engineering",
           "Business Administration",
           "Communication Design"
-        ]
+        ],
+        "lat": 47.6743,
+        "lng": 9.1682
       },
       {
         "slug": "thingolstadt",
@@ -1950,7 +1990,6 @@
           "Limited program range outside engineering/business/AI"
         ],
         "badges": [],
-        "mapCity": "ingolstadt",
         "quickFacts": {
           "students": "~7,000",
           "language": "Mostly German, several English-taught master's in AI/engineering",
@@ -1960,7 +1999,9 @@
           "Automotive Engineering",
           "Artificial Intelligence",
           "Business Informatics"
-        ]
+        ],
+        "lat": 48.765,
+        "lng": 11.424
       },
       {
         "slug": "hbrs",
@@ -1990,7 +2031,6 @@
           "Limited humanities/social science range"
         ],
         "badges": [],
-        "mapCity": "sanktaugustin",
         "quickFacts": {
           "students": "~9,000",
           "language": "Mix of German and English, several fully English master's",
@@ -2000,7 +2040,9 @@
           "Computer Science",
           "Electrical Engineering",
           "Business Administration"
-        ]
+        ],
+        "lat": 50.7714,
+        "lng": 7.165
       },
       {
         "slug": "hda",
@@ -2030,7 +2072,6 @@
           "Limited natural sciences/humanities range"
         ],
         "badges": [],
-        "mapCity": "darmstadt",
         "quickFacts": {
           "students": "~14,000",
           "language": "Mostly German, some English in media/IT master's",
@@ -2040,7 +2081,9 @@
           "Computer Science",
           "Media/Communication",
           "Electrical Engineering"
-        ]
+        ],
+        "lat": 49.8646,
+        "lng": 8.6321
       },
       {
         "slug": "reutlingen",
@@ -2070,7 +2113,6 @@
           "Business programs can be competitive to enter"
         ],
         "badges": [],
-        "mapCity": "reutlingen",
         "quickFacts": {
           "students": "~6,000",
           "language": "Mix of German and English, ESB Business School largely English-taught",
@@ -2080,7 +2122,9 @@
           "International Business (ESB)",
           "Textile Engineering",
           "Mechatronics"
-        ]
+        ],
+        "lat": 48.488,
+        "lng": 9.216
       },
       {
         "slug": "fhmuenster",
@@ -2110,7 +2154,6 @@
           "Limited postgraduate research opportunities"
         ],
         "badges": [],
-        "mapCity": "muenster",
         "quickFacts": {
           "students": "~14,000",
           "language": "Mostly German",
@@ -2120,7 +2163,9 @@
           "Mechanical Engineering",
           "Design",
           "Social Work"
-        ]
+        ],
+        "lat": 51.9506,
+        "lng": 7.6198
       },
       {
         "slug": "osnabrueck",
@@ -2150,7 +2195,6 @@
           "Fewer English-taught programs"
         ],
         "badges": [],
-        "mapCity": "osnabrueck",
         "quickFacts": {
           "students": "~13,000",
           "language": "Mostly German",
@@ -2160,7 +2204,9 @@
           "Agricultural Sciences",
           "Mechanical Engineering",
           "Business Administration"
-        ]
+        ],
+        "lat": 52.276,
+        "lng": 8.0442
       },
       {
         "slug": "bht",
@@ -2190,7 +2236,6 @@
           "Less research-university prestige than TU Berlin in the same city"
         ],
         "badges": [],
-        "mapCity": "berlin",
         "quickFacts": {
           "students": "~12,000",
           "language": "Mostly German, some English in computer science master's",
@@ -2200,7 +2245,9 @@
           "Computer Science",
           "Electrical Engineering",
           "Mathematics"
-        ]
+        ],
+        "lat": 52.5476,
+        "lng": 13.3572
       },
       {
         "slug": "jade",
@@ -2230,7 +2277,6 @@
           "Smaller international student community"
         ],
         "badges": [],
-        "mapCity": "wilhelmshaven",
         "quickFacts": {
           "students": "~5,700",
           "language": "Mostly German",
@@ -2240,7 +2286,9 @@
           "Maritime/Nautical Engineering",
           "Logistics",
           "Mechanical Engineering"
-        ]
+        ],
+        "lat": 53.5286,
+        "lng": 8.1058
       },
       {
         "slug": "duesseldorf",
@@ -2269,7 +2317,6 @@
           "High cost of living in a major city"
         ],
         "badges": [],
-        "mapCity": "duesseldorf",
         "quickFacts": {
           "students": "~34,000",
           "language": "Mostly German",
@@ -2279,7 +2326,9 @@
           "Medicine",
           "Biology/Life Sciences",
           "Law"
-        ]
+        ],
+        "lat": 51.19,
+        "lng": 6.7947
       },
       {
         "slug": "ude",
@@ -2308,7 +2357,6 @@
           "The Ruhr region may lack a classic university-town feel"
         ],
         "badges": [],
-        "mapCity": "essen",
         "quickFacts": {
           "students": "~42,000",
           "language": "Mostly German, some English programs in engineering",
@@ -2318,7 +2366,9 @@
           "Engineering",
           "Medicine",
           "Social Sciences"
-        ]
+        ],
+        "lat": 51.4587,
+        "lng": 7.0122
       },
       {
         "slug": "tudortmund",
@@ -2347,7 +2397,6 @@
           "More limited humanities options"
         ],
         "badges": [],
-        "mapCity": "dortmund",
         "quickFacts": {
           "students": "~32,000",
           "language": "Mostly German, some English in statistics/engineering",
@@ -2357,7 +2406,9 @@
           "Statistics",
           "Physics",
           "Mechanical Engineering"
-        ]
+        ],
+        "lat": 51.4925,
+        "lng": 7.416
       },
       {
         "slug": "bielefeld",
@@ -2386,7 +2437,6 @@
           "No programs in fields such as engineering"
         ],
         "badges": [],
-        "mapCity": "bielefeld",
         "quickFacts": {
           "students": "~24,000",
           "language": "Mostly German, some English master's in social sciences",
@@ -2396,7 +2446,9 @@
           "Sociology",
           "History",
           "Biology"
-        ]
+        ],
+        "lat": 52.0389,
+        "lng": 8.4951
       },
       {
         "slug": "paderborn",
@@ -2425,7 +2477,6 @@
           "Less international name recognition"
         ],
         "badges": [],
-        "mapCity": "paderborn",
         "quickFacts": {
           "students": "~20,000",
           "language": "Mostly German, some English master's in computer science",
@@ -2435,7 +2486,9 @@
           "Computer Science",
           "Mechanical Engineering",
           "Business Administration"
-        ]
+        ],
+        "lat": 51.7189,
+        "lng": 8.7719
       },
       {
         "slug": "siegen",
@@ -2464,7 +2517,6 @@
           "Fewer English-taught programs"
         ],
         "badges": [],
-        "mapCity": "siegen",
         "quickFacts": {
           "students": "~16,000",
           "language": "Mostly German",
@@ -2474,7 +2526,9 @@
           "Social Sciences",
           "Media Studies",
           "Mechanical Engineering"
-        ]
+        ],
+        "lat": 50.8747,
+        "lng": 8.0247
       },
       {
         "slug": "wuppertal",
@@ -2503,7 +2557,6 @@
           "Less international name recognition"
         ],
         "badges": [],
-        "mapCity": "wuppertal",
         "quickFacts": {
           "students": "~24,000",
           "language": "Mostly German",
@@ -2513,7 +2566,9 @@
           "Architecture",
           "Safety Engineering",
           "Physics"
-        ]
+        ],
+        "lat": 51.2447,
+        "lng": 7.1519
       },
       {
         "slug": "luebeck",
@@ -2542,7 +2597,6 @@
           "Very high competition for medicine places"
         ],
         "badges": [],
-        "mapCity": "luebeck",
         "quickFacts": {
           "students": "~5,000",
           "language": "Mostly German",
@@ -2552,7 +2606,9 @@
           "Medicine",
           "Medical Informatics",
           "Molecular Life Sciences"
-        ]
+        ],
+        "lat": 53.8655,
+        "lng": 10.7085
       },
       {
         "slug": "rostock",
@@ -2581,7 +2637,6 @@
           "Fewer English-taught programs"
         ],
         "badges": [],
-        "mapCity": "rostock",
         "quickFacts": {
           "students": "~13,000",
           "language": "Mostly German",
@@ -2591,7 +2646,9 @@
           "Maritime Engineering",
           "Medicine",
           "Agricultural Sciences"
-        ]
+        ],
+        "lat": 54.0865,
+        "lng": 12.1345
       },
       {
         "slug": "greifswald",
@@ -2620,7 +2677,6 @@
           "Fewer English-taught programs"
         ],
         "badges": [],
-        "mapCity": "greifswald",
         "quickFacts": {
           "students": "~10,000",
           "language": "Mostly German",
@@ -2630,7 +2686,9 @@
           "Medicine",
           "Theology",
           "Biology"
-        ]
+        ],
+        "lat": 54.0947,
+        "lng": 13.3877
       },
       {
         "slug": "magdeburg",
@@ -2659,7 +2717,6 @@
           "Fewer English-taught bachelor's options"
         ],
         "badges": [],
-        "mapCity": "magdeburg",
         "quickFacts": {
           "students": "~14,000",
           "language": "Mostly German, some English master's in neuroscience",
@@ -2669,7 +2726,9 @@
           "Engineering",
           "Neuroscience",
           "Medicine"
-        ]
+        ],
+        "lat": 52.1397,
+        "lng": 11.6461
       },
       {
         "slug": "halle",
@@ -2698,7 +2757,6 @@
           "Fewer English-taught programs"
         ],
         "badges": [],
-        "mapCity": "halle",
         "quickFacts": {
           "students": "~18,000",
           "language": "Mostly German",
@@ -2708,7 +2766,9 @@
           "Humanities",
           "Agricultural Sciences",
           "Natural Sciences"
-        ]
+        ],
+        "lat": 51.4832,
+        "lng": 11.9694
       },
       {
         "slug": "leipzig",
@@ -2737,7 +2797,6 @@
           "Relatively fewer English-taught programs in eastern Germany"
         ],
         "badges": [],
-        "mapCity": "leipzig",
         "quickFacts": {
           "students": "~30,000",
           "language": "Mostly German, some English master's programs",
@@ -2747,7 +2806,9 @@
           "Law",
           "Medicine",
           "Sports Science"
-        ]
+        ],
+        "lat": 51.3397,
+        "lng": 12.3776
       },
       {
         "slug": "tuchemnitz",
@@ -2776,7 +2837,6 @@
           "Fewer English-taught bachelor's options"
         ],
         "badges": [],
-        "mapCity": "chemnitz",
         "quickFacts": {
           "students": "~10,000",
           "language": "Mostly German, some English master's in engineering",
@@ -2786,7 +2846,9 @@
           "Production Engineering",
           "Materials Science",
           "Computer Science"
-        ]
+        ],
+        "lat": 50.8113,
+        "lng": 12.9226
       },
       {
         "slug": "potsdam",
@@ -2815,7 +2877,6 @@
           "Limited engineering/natural sciences options"
         ],
         "badges": [],
-        "mapCity": "potsdam",
         "quickFacts": {
           "students": "~21,000",
           "language": "Mostly German, some English master's programs",
@@ -2825,7 +2886,9 @@
           "Political Science",
           "Linguistics",
           "Public Administration"
-        ]
+        ],
+        "lat": 52.4009,
+        "lng": 13.0089
       },
       {
         "slug": "viadrina",
@@ -2854,7 +2917,6 @@
           "Less name recognition than Berlin"
         ],
         "badges": [],
-        "mapCity": "frankfurtoder",
         "quickFacts": {
           "students": "~5,000",
           "language": "Mix of German, English and Polish",
@@ -2864,7 +2926,9 @@
           "European Law",
           "Economics",
           "Cultural Studies"
-        ]
+        ],
+        "lat": 52.3436,
+        "lng": 14.5507
       },
       {
         "slug": "btucottbus",
@@ -2893,7 +2957,6 @@
           "Split across two campuses (Cottbus/Senftenberg)"
         ],
         "badges": [],
-        "mapCity": "cottbus",
         "quickFacts": {
           "students": "~7,000",
           "language": "Mostly German, some English master's programs",
@@ -2903,7 +2966,9 @@
           "Environmental Engineering",
           "Energy Technology",
           "Architecture"
-        ]
+        ],
+        "lat": 51.7626,
+        "lng": 14.3289
       },
       {
         "slug": "wuerzburg",
@@ -2932,7 +2997,6 @@
           "Fewer English-taught bachelor's options"
         ],
         "badges": [],
-        "mapCity": "wuerzburg",
         "quickFacts": {
           "students": "~28,000",
           "language": "Mostly German, some English master's in medicine/physics",
@@ -2942,7 +3006,9 @@
           "Medicine",
           "Physics",
           "Psychology"
-        ]
+        ],
+        "lat": 49.7896,
+        "lng": 9.9331
       },
       {
         "slug": "regensburg",
@@ -2971,7 +3037,6 @@
           "Fewer English-taught bachelor's options"
         ],
         "badges": [],
-        "mapCity": "regensburg",
         "quickFacts": {
           "students": "~20,000",
           "language": "Mostly German, some English master's programs",
@@ -2981,7 +3046,9 @@
           "Chemistry",
           "Law",
           "Eastern European Studies"
-        ]
+        ],
+        "lat": 49.0177,
+        "lng": 12.0966
       },
       {
         "slug": "passau",
@@ -3010,7 +3077,6 @@
           "A somewhat remote location near the Austrian border"
         ],
         "badges": [],
-        "mapCity": "passau",
         "quickFacts": {
           "students": "~11,000",
           "language": "Mostly German, some English master's in law/economics",
@@ -3020,7 +3086,9 @@
           "Law",
           "Economics",
           "Computer Science"
-        ]
+        ],
+        "lat": 48.5733,
+        "lng": 13.461
       },
       {
         "slug": "bayreuth",
@@ -3049,7 +3117,6 @@
           "Fewer English-taught bachelor's options"
         ],
         "badges": [],
-        "mapCity": "bayreuth",
         "quickFacts": {
           "students": "~13,000",
           "language": "Mostly German, some English in African studies",
@@ -3059,7 +3126,9 @@
           "Sports Science",
           "African Studies",
           "Law and Business"
-        ]
+        ],
+        "lat": 49.9291,
+        "lng": 11.5888
       },
       {
         "slug": "augsburg",
@@ -3088,7 +3157,6 @@
           "Fewer English-taught bachelor's options"
         ],
         "badges": [],
-        "mapCity": "augsburg",
         "quickFacts": {
           "students": "~20,000",
           "language": "Mostly German, some English in computer science",
@@ -3098,7 +3166,9 @@
           "Law",
           "Economics",
           "Computer Science"
-        ]
+        ],
+        "lat": 48.3348,
+        "lng": 10.8979
       },
       {
         "slug": "bamberg",
@@ -3127,7 +3197,6 @@
           "Fewer English-taught programs"
         ],
         "badges": [],
-        "mapCity": "bamberg",
         "quickFacts": {
           "students": "~13,000",
           "language": "Mostly German",
@@ -3137,7 +3206,9 @@
           "Sociology",
           "Humanities",
           "Heritage Conservation"
-        ]
+        ],
+        "lat": 49.8971,
+        "lng": 10.8909
       },
       {
         "slug": "kueichstaett",
@@ -3166,7 +3237,6 @@
           "Small-town amenities"
         ],
         "badges": [],
-        "mapCity": "ingolstadt",
         "quickFacts": {
           "students": "~5,000",
           "language": "Mostly German, some English programs in business",
@@ -3176,7 +3246,9 @@
           "Business (WFI)",
           "Theology",
           "Education"
-        ]
+        ],
+        "lat": 48.8965,
+        "lng": 11.1858
       },
       {
         "slug": "hohenheim",
@@ -3205,7 +3277,6 @@
           "Sometimes confused with Universität Stuttgart"
         ],
         "badges": [],
-        "mapCity": "stuttgart",
         "quickFacts": {
           "students": "~10,000",
           "language": "Mostly German, some English master's programs",
@@ -3215,7 +3286,9 @@
           "Agricultural Sciences",
           "Nutritional Sciences",
           "Business Administration"
-        ]
+        ],
+        "lat": 48.7136,
+        "lng": 9.2117
       },
       {
         "slug": "ulm",
@@ -3244,7 +3317,6 @@
           "High competition for medicine places"
         ],
         "badges": [],
-        "mapCity": "ulm",
         "quickFacts": {
           "students": "~10,000",
           "language": "Mostly German, some English master's in math/engineering",
@@ -3254,7 +3326,9 @@
           "Medicine",
           "Mathematics/Actuarial Science",
           "Engineering"
-        ]
+        ],
+        "lat": 48.4225,
+        "lng": 9.9575
       },
       {
         "slug": "saarland",
@@ -3283,7 +3357,6 @@
           "A somewhat isolated location in Germany's smallest state"
         ],
         "badges": [],
-        "mapCity": "saarbruecken",
         "quickFacts": {
           "students": "~17,000",
           "language": "Mostly German, many English-taught programs in computer science",
@@ -3293,7 +3366,9 @@
           "Computer Science",
           "Artificial Intelligence",
           "Law"
-        ]
+        ],
+        "lat": 49.2542,
+        "lng": 7.0428
       },
       {
         "slug": "rptu",
@@ -3322,7 +3397,6 @@
           "Institutional identity still settling after the recent merger"
         ],
         "badges": [],
-        "mapCity": "kaiserslautern",
         "quickFacts": {
           "students": "~17,000",
           "language": "Mostly German, many English-taught programs in computer science",
@@ -3332,7 +3406,9 @@
           "Computer Science",
           "Education",
           "Engineering"
-        ]
+        ],
+        "lat": 49.4278,
+        "lng": 7.7611
       },
       {
         "slug": "fernunihagen",
@@ -3361,7 +3437,6 @@
           "German proficiency is required for most programs"
         ],
         "badges": [],
-        "mapCity": "hagen",
         "quickFacts": {
           "students": "~60,000 (distance learning)",
           "language": "Mostly German",
@@ -3371,7 +3446,9 @@
           "Law",
           "Business Administration",
           "Psychology"
-        ]
+        ],
+        "lat": 51.3742,
+        "lng": 7.4886
       },
       {
         "slug": "oldenburg",
@@ -3400,7 +3477,6 @@
           "Less international name recognition"
         ],
         "badges": [],
-        "mapCity": "oldenburg",
         "quickFacts": {
           "students": "~15,000",
           "language": "Mostly German, some English in energy research",
@@ -3410,7 +3486,9 @@
           "Wind/Renewable Energy",
           "Education",
           "Musicology"
-        ]
+        ],
+        "lat": 53.1435,
+        "lng": 8.1657
       },
       {
         "slug": "hildesheim",
@@ -3439,7 +3517,6 @@
           "No engineering/natural sciences programs"
         ],
         "badges": [],
-        "mapCity": "hildesheim",
         "quickFacts": {
           "students": "~8,000",
           "language": "Mostly German, some English in translation studies",
@@ -3449,7 +3526,9 @@
           "Translation Studies",
           "Cultural/Media Studies",
           "Psychology"
-        ]
+        ],
+        "lat": 52.1495,
+        "lng": 9.9563
       },
       {
         "slug": "leuphana",
@@ -3478,7 +3557,6 @@
           "Limited engineering/medicine options"
         ],
         "badges": [],
-        "mapCity": "lueneburg",
         "quickFacts": {
           "students": "~10,000",
           "language": "Mostly German, some English in sustainability/business",
@@ -3488,7 +3566,9 @@
           "Sustainability Science",
           "Business Administration",
           "Education"
-        ]
+        ],
+        "lat": 53.2405,
+        "lng": 10.4057
       },
       {
         "slug": "tuclausthal",
@@ -3517,7 +3597,6 @@
           "Cold winters and difficult access at times"
         ],
         "badges": [],
-        "mapCity": "clausthal",
         "quickFacts": {
           "students": "~3,500",
           "language": "Mostly German, some English master's programs",
@@ -3527,7 +3606,9 @@
           "Mining Engineering",
           "Materials Science",
           "Energy Technology"
-        ]
+        ],
+        "lat": 51.8047,
+        "lng": 10.3358
       },
       {
         "slug": "vechta",
@@ -3556,7 +3637,6 @@
           "A limited international student community"
         ],
         "badges": [],
-        "mapCity": "vechta",
         "quickFacts": {
           "students": "~5,500",
           "language": "Mostly German",
@@ -3566,7 +3646,9 @@
           "Education",
           "Social Work",
           "Gerontology"
-        ]
+        ],
+        "lat": 52.728,
+        "lng": 8.283
       }
     ],
     "cta": {
@@ -3585,9 +3667,11 @@
     "map": {
       "title": "Our Universities on the Map of Germany",
       "subtitle": "Explore where the universities we advise on are located.",
-      "hint": "Click a city marker to see the universities there.",
-      "emptyState": "Select a city on the map to see its universities.",
-      "zoomOut": "Back to Map"
+      "hint": "Click a marker to see university details; you can zoom and pan the map."
+    },
+    "search": {
+      "placeholder": "Search by university name or city...",
+      "noResults": "No universities match your search."
     }
   },
   "about": {

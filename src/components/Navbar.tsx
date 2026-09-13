@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Menu, X, GraduationCap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -28,9 +28,8 @@ export default function Navbar() {
           href="/"
           className="flex items-center gap-2 rounded-md font-bold text-foreground transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand text-white">
-            <GraduationCap size={20} />
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo-icon.png" alt="" className="h-9 w-9" />
           <span className="text-lg tracking-tight">Studiva</span>
         </Link>
 

@@ -15,10 +15,10 @@
   --border-color: #f1f5f9;
   --border-color-strong: #e2e8f0;
 
-  /* Primary (brand) */
-  --brand: #15803d;
-  --brand-dark: #14532d;
-  --brand-light: #f0fdf4;
+  /* Primary (brand) — matches the Studiva logo's exact blue (#0068ff) */
+  --brand: #0068ff;
+  --brand-dark: #0052cc;
+  --brand-light: #eaf2ff;
 
   /* Accent (guarantee badges, highlights, secondary CTAs) */
   --accent: #f59e0b;
@@ -39,9 +39,9 @@
     --border-color: #1e293b;
     --border-color-strong: #29394f;
 
-    --brand: #34d399;
-    --brand-dark: #6ee7b7;
-    --brand-light: #0f2a1e;
+    --brand: #4d93ff;
+    --brand-dark: #a3c9ff;
+    --brand-light: #0e1f3d;
 
     --accent: #fbbf24;
     --accent-dark: #f59e0b;
