@@ -39,6 +39,19 @@ const CITY_COORDS: Record<string, [number, number]> = {
   dresden: [71, 55],
   erfurt: [47, 52],
   essen: [15, 44],
+  erlangen: [56, 68],
+  bochum: [18, 43],
+  mainz: [30, 58],
+  muenster: [22, 37],
+  bremen: [29, 25],
+  kiel: [37, 10],
+  marburg: [33, 50],
+  jena: [50, 52],
+  ingolstadt: [57, 75],
+  sanktaugustin: [19, 52],
+  reutlingen: [34, 77],
+  osnabrueck: [25, 34],
+  wilhelmshaven: [25, 21],
 };
 
 export default function GermanyMap({

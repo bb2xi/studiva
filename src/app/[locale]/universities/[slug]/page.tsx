@@ -11,6 +11,7 @@ import {
   Users,
   Languages,
   Wallet,
+  GraduationCap,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
@@ -34,6 +35,7 @@ type UniversityItem = {
   cons: string[];
   badges: string[];
   quickFacts: QuickFacts;
+  popularPrograms: string[];
 };
 
 export function generateStaticParams() {
@@ -77,6 +79,7 @@ export default async function UniversityDetailPage({
     { icon: Users, label: locale === "tr" ? "Öğrenci Sayısı" : "Students", value: university.quickFacts.students },
     { icon: Languages, label: locale === "tr" ? "Öğretim Dili" : "Teaching Language", value: university.quickFacts.language },
     { icon: Wallet, label: locale === "tr" ? "Ücret" : "Tuition", value: university.quickFacts.tuition },
+    { icon: GraduationCap, label: locale === "tr" ? "Popüler Bölümler" : "Popular Programs", value: university.popularPrograms.join(", ") },
   ];
 
   return (
@@ -149,7 +152,7 @@ export default async function UniversityDetailPage({
           </div>
 
           <Reveal delay={150}>
-            <div className="mt-10 grid grid-cols-1 gap-4 rounded-2xl border border-border bg-surface p-6 sm:grid-cols-3">
+            <div className="mt-10 grid grid-cols-1 gap-4 rounded-2xl border border-border bg-surface p-6 sm:grid-cols-2 lg:grid-cols-4">
               {factRows.map((row) => (
                 <div key={row.label} className="flex items-start gap-3">
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-brand-light text-brand">

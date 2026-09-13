@@ -126,6 +126,92 @@ export const universityMedia: Record<string, UniversityImage[]> = {
     { url: "https://upload.wikimedia.org/wikipedia/commons/7/71/HFU_Main_Building.JPG", artist: "Divakar246448", license: "CC BY-SA 3.0" },
     { url: "https://upload.wikimedia.org/wikipedia/commons/0/02/HFU_Main_Campus.jpg", artist: "Divakar246448", license: "CC BY-SA 3.0" },
   ],
+  hamburg: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/f/f8/Universit%C3%A4t_Hamburg_Hauptgeb%C3%A4ude_Edmund-Siemers-Allee_1_in_Rotherbaum_%281%29.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Universit%C3%A4t_Hamburg_Hauptgeb%C3%A4ude_Edmund-Siemers-Allee_1_in_Rotherbaum_%282%29.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  fuberlin: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/4/43/Freie_Universitaet_Berlin_-_Gebaeudekomplex_Rost-_und_Silberlaube.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/d/d3/Freie_Universitaet_Berlin_-_Campus_-_Blick_zur_EWI-Bibliothek.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+  ],
+  erlangen: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Schlo%C3%9Fplatz%2C_Friedrich-Alexander-Universit%C3%A4t_Erlangen_-_panoramio.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/1/15/Kollegienhaus_Universitaet_Erlangen_001.jpg", artist: "Wikimedia Commons contributor", license: "CC BY 3.0" },
+  ],
+  bochum: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/0/07/Bochum_RUB_TZR_GB.JPG", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Ruhr-Universit%C3%A4t%2C_Stelen.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  mainz: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Uni-Mainz-Forum-Januar_2006.jpg", artist: "Wikimedia Commons contributor", license: "CC BY 2.5" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/5/51/Gutenberg-statue-uni-mainz.jpg", artist: "Wikimedia Commons contributor", license: "Public domain" },
+  ],
+  muenster: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Westf%C3%A4lische_Wilhelms-Universit%C3%A4t_M%C3%BCnster.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/c/c8/NRW%2C_Munster_-_Westfalische_Wilhelms-Universitat%2C_Schloss_01.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+  ],
+  bremen: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Bremen_Universit%C3%A4t_%28exterior%29.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Fallturm_Bremen_%282016%29_-_Haupteingang_und_Fallturm.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  kiel: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Christian-Albrechts-Universit%C3%A4t_zu_Kiel_main_building_%281893%29.jpg", artist: "Wikimedia Commons contributor", license: "Public domain" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Luftaufnahme_Christian-Albrechts-Universit%C3%A4t_%28CAU%29_%28Kiel_46.937%29.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0 de" },
+  ],
+  marburg: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/7/79/Alte_Universit%C3%A4t_und_Universit%C3%A4tskirche_Marburg.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/1/13/Lahn_an_Weidenh%C3%A4user_Br%C3%BCcke_Marburg_und_Alte_Universit%C3%A4t_im_Abendlicht_2016-04-30.JPG", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  jena: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Friedrich-Schiller-Universit%C3%A4t_Hauptgeb%C3%A4ude%2C_Jena.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Jena_universitaet.png", artist: "Wikimedia Commons contributor", license: "Public domain" },
+  ],
+  thkoeln: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/4/4f/2019-05-12-Technische_Hochschule_K%C3%B6ln-0241.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/0/05/2019-05-12-Technische_Hochschule_K%C3%B6ln-0242.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  hsmannheim: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Mannheim_Hochschule_Geb%C3%A4ude11_20100917.jpg", artist: "Rudolf Stricker", license: "Attribution" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/1/16/Hochschule_Mannheim_Neubau.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 2.0" },
+  ],
+  hskarlsruhe: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/3/30/Hochschule_Karlsruhe.JPG", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/9/9a/HsKA_StudierendeCampus.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  htwgkonstanz: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/d/df/HTWG_Konstanz_-_Geb%C3%A4ude_C_%26_A_%282021%29.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/6/62/HTWG_Konstanz_-_Geb%C3%A4ude_K_%28Bibliothek%29.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  thingolstadt: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/1/18/GER_Ingolstadt_Technische_Hochschule_010.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  hbrs: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Sankt-Augustin-Hochschule_Bonn_Rhein-Sieg.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/3/3b/FH_Sankt_Augustin1.jpg", artist: "Wikimedia Commons contributor", license: "Public domain" },
+  ],
+  hda: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/3/33/H-da_High-rise_28112007477.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/2/20/Hochschulstra%C3%9Fe_1_%28Darmstadt%29_Treppenhaus_11.JPG", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  reutlingen: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/7/76/Reutlingen_Hochschule_3.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Reutlingen_Hochschule_Fahnen.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  fhmuenster: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/6/64/MuensterLeonardoCampusHaupteingangArchitektur.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/3/33/MuensterLeonardoCampusArchitekturWestseite.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+  ],
+  osnabrueck: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Osnabrueck-FH-SH-lul-Labore.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Geb%C3%A4ude_Fakult%C3%A4t_IuI%2C_Albrechtstra%C3%9Fe.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+  ],
+  bht: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Berlin%2C_Schoeneberg%2C_Kurfuerstenstrasse_141%2C_Beuth-Hochschule_fuer_Technik.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+    { url: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Beuth_Hochschule_f%C3%BCr_Technik_Berlin%2C_Ansicht_Amrumer_Stra%C3%9Fe.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 4.0" },
+  ],
+  jade: [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Jade-Hochschule%2C_Wilhelmshaven.jpg", artist: "Wikimedia Commons contributor", license: "CC BY-SA 3.0" },
+  ],
 };
 
 // Official university logos, used on list/preview cards.
@@ -153,5 +239,23 @@ export const universityLogos: Record<string, UniversityImage> = {
   konstanz: { url: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Logo_Universit%C3%A4t_Konstanz.png", artist: "Universität Konstanz", license: "Public domain" },
   htwberlin: { url: "https://upload.wikimedia.org/wikipedia/commons/b/bc/HTW_Berlin_logo.svg", artist: "HTW Berlin", license: "Public domain" },
   furtwangen: { url: "https://upload.wikimedia.org/wikipedia/commons/1/11/Furtwangen_University_Logo.jpg", artist: "Divakar246448", license: "CC BY-SA 3.0" },
+  hamburg: { url: "https://upload.wikimedia.org/wikipedia/commons/7/7c/UHH_Universit%C3%A4t_Hamburg_Logo_mit_Schrift_2010_Farbe_CMYK.svg", artist: "Universität Hamburg", license: "Public domain" },
+  fuberlin: { url: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Freie_Universit%C3%A4t_Berlin_Logo_05.2024.svg", artist: "Freie Universität Berlin", license: "Public domain" },
+  erlangen: { url: "https://upload.wikimedia.org/wikipedia/commons/7/70/Friedrich-Alexander-Universit%C3%A4t_Erlangen-N%C3%BCrnberg_logo.svg", artist: "FAU Erlangen-Nürnberg", license: "Public domain" },
+  bochum: { url: "https://upload.wikimedia.org/wikipedia/commons/6/65/Ruhr-Universit%C3%A4t_Bochum_logo.svg", artist: "Ruhr-Universität Bochum", license: "Public domain" },
+  mainz: { url: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Johannes_Gutenberg-Universit%C3%A4t_Mainz_logo.svg", artist: "Johannes Gutenberg-Universität Mainz", license: "Public domain" },
+  muenster: { url: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Logo_WWU_M%C3%BCnster.svg", artist: "WWU Münster", license: "Public domain" },
+  bremen: { url: "https://upload.wikimedia.org/wikipedia/commons/7/70/Universit%C3%A4t_Bremen.svg", artist: "Universität Bremen", license: "Public domain" },
+  kiel: { url: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Logo_Kiel_University.svg", artist: "Christian-Albrechts-Universität zu Kiel", license: "Public domain" },
+  marburg: { url: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Universit%C3%A4t_Marburg_Logo_Querformat.svg", artist: "Philipps-Universität Marburg", license: "Public domain" },
+  jena: { url: "https://upload.wikimedia.org/wikipedia/commons/c/cd/Logo_UniJena.svg", artist: "Friedrich-Schiller-Universität Jena", license: "Public domain" },
+  hskarlsruhe: { url: "https://upload.wikimedia.org/wikipedia/commons/9/9f/HKA_Logo_Gesamt-v_RGB.png", artist: "Hochschule Karlsruhe", license: "Public domain" },
+  htwgkonstanz: { url: "https://upload.wikimedia.org/wikipedia/commons/5/58/Hs_konstanz_logo.svg", artist: "HTWG Konstanz", license: "Public domain" },
+  hda: { url: "https://upload.wikimedia.org/wikipedia/commons/1/18/Hda_logo.svg", artist: "Hochschule Darmstadt", license: "Public domain" },
+  fhmuenster: { url: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Logo_FH_Muenster_cmyk.svg", artist: "FH Münster", license: "Public domain" },
+  osnabrueck: { url: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Hochschule_Osnabr%C3%BCck_logo.svg", artist: "Hochschule Osnabrück", license: "Public domain" },
+  bht: { url: "https://upload.wikimedia.org/wikipedia/commons/6/65/Beuth_Hochschule_f%C3%BCr_Technik_Berlin_logo.svg", artist: "Berliner Hochschule für Technik", license: "Public domain" },
+  hsmannheim: { url: "https://upload.wikimedia.org/wikipedia/commons/f/f7/Hochschule_Mannheim_logo.svg", artist: "Hochschule Mannheim", license: "Public domain" },
+  jade: { url: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Logo_Jade_Hochschule.jpg", artist: "Jade Hochschule", license: "Public domain" },
 };
 

@@ -41,7 +41,7 @@
           "label": "TU9 Üniversitesi"
         },
         {
-          "value": "26+",
+          "value": "48+",
           "label": "Üniversite Seçeneği"
         },
         {
@@ -295,7 +295,12 @@
           "students": "~50.000",
           "language": "Ağırlıklı İngilizce (yüksek lisansta), lisansta kısmen Almanca",
           "tuition": "Dönemlik ~150-170 € katkı payı (okul ücreti yok)"
-        }
+        },
+        "popularPrograms": [
+          "Makine/Elektrik Mühendisliği",
+          "Bilgisayar Bilimi",
+          "Tıp"
+        ]
       },
       {
         "slug": "lmu",
@@ -333,7 +338,12 @@
           "students": "~52.000",
           "language": "Çoğunlukla Almanca, yüksek lisansta İngilizce seçenekler mevcut",
           "tuition": "Dönemlik ~150 € katkı payı (okul ücreti yok)"
-        }
+        },
+        "popularPrograms": [
+          "Tıp",
+          "Hukuk",
+          "Doğa Bilimleri"
+        ]
       },
       {
         "slug": "huberlin",
@@ -371,7 +381,12 @@
           "students": "~32.000",
           "language": "Ağırlıklı Almanca, bazı yüksek lisans programları İngilizce",
           "tuition": "Dönemlik ~315 € katkı payı (okul ücreti yok)"
-        }
+        },
+        "popularPrograms": [
+          "Sosyal Bilimler",
+          "Beşeri Bilimler",
+          "Doğa Bilimleri"
+        ]
       },
       {
         "slug": "rwth",
@@ -410,7 +425,12 @@
           "students": "~47.000 (yaklaşık %25'i uluslararası)",
           "language": "Lisansta Almanca ağırlıklı, yüksek lisansta çok sayıda İngilizce program",
           "tuition": "Dönemlik ~300 € katkı payı (okul ücreti yok)"
-        }
+        },
+        "popularPrograms": [
+          "Makine Mühendisliği",
+          "Elektrik-Elektronik Mühendisliği",
+          "Bilgisayar Bilimi"
+        ]
       },
       {
         "slug": "mannheim",
@@ -446,7 +466,12 @@
           "students": "~11.000",
           "language": "İşletme ve ekonomide çok sayıda İngilizce yüksek lisans programı",
           "tuition": "Dönemlik ~170 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
-        }
+        },
+        "popularPrograms": [
+          "İşletme",
+          "Ekonomi",
+          "Psikoloji"
+        ]
       },
       {
         "slug": "hm",
@@ -482,7 +507,12 @@
           "students": "~19.000",
           "language": "Ağırlıklı Almanca, seçili İngilizce programlar",
           "tuition": "Dönemlik ~150 € katkı payı"
-        }
+        },
+        "popularPrograms": [
+          "Makine Mühendisliği",
+          "İşletme",
+          "Bilgisayar Bilimi"
+        ]
       },
       {
         "slug": "frankfurtuas",
@@ -518,7 +548,12 @@
           "students": "~15.000",
           "language": "Almanca ve İngilizce karışık, özellikle yüksek lisansta İngilizce seçenekler",
           "tuition": "Dönemlik ~370 € katkı payı"
-        }
+        },
+        "popularPrograms": [
+          "Sosyal Çalışma",
+          "İşletme",
+          "Bilgisayar Bilimi"
+        ]
       },
       {
         "slug": "dhbw",
@@ -554,7 +589,12 @@
           "students": "~34.000 (çok kampüslü)",
           "language": "Ağırlıklı Almanca",
           "tuition": "Okul ücreti yok, ancak işletme ortaklığı zorunlu (aylık maaş alınır)"
-        }
+        },
+        "popularPrograms": [
+          "İşletme (Dual)",
+          "Mühendislik (Dual)",
+          "Bilgisayar Bilimi (Dual)"
+        ]
       },
       {
         "slug": "iu",
@@ -590,7 +630,12 @@
           "students": "~130.000 (Almanya'nın en büyük özel yükseköğretim kurumu)",
           "language": "Çoğunlukla İngilizce, çevrimiçi ve yüz yüze seçenekler",
           "tuition": "Özel üniversite; burs ve indirim seçenekleriyle esnek ücretlendirme"
-        }
+        },
+        "popularPrograms": [
+          "İşletme",
+          "Bilgisayar Bilimi",
+          "Psikoloji"
+        ]
       },
       {
         "slug": "fom",
@@ -626,7 +671,12 @@
           "students": "~57.000",
           "language": "Ağırlıklı Almanca",
           "tuition": "Özel üniversite; genellikle çalışan öğrenciler için işveren destekli ücretlendirme"
-        }
+        },
+        "popularPrograms": [
+          "İşletme",
+          "Ekonomi",
+          "Yönetim"
+        ]
       },
       {
         "slug": "heidelberg",
@@ -664,7 +714,12 @@
           "students": "~30.000",
           "language": "Lisansta Almanca, yüksek lisans ve doktora düzeyinde çok sayıda İngilizce program",
           "tuition": "Dönemlik ~170 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
-        }
+        },
+        "popularPrograms": [
+          "Tıp",
+          "Doğa Bilimleri",
+          "Hukuk"
+        ]
       },
       {
         "slug": "tuebingen",
@@ -702,7 +757,12 @@
           "students": "~27.000",
           "language": "Ağırlıklı Almanca, seçili İngilizce yüksek lisans programları",
           "tuition": "Dönemlik ~160 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
-        }
+        },
+        "popularPrograms": [
+          "Tıp",
+          "Doğa Bilimleri",
+          "Teoloji"
+        ]
       },
       {
         "slug": "kit",
@@ -740,7 +800,12 @@
           "students": "~23.000",
           "language": "Lisansta Almanca, yüksek lisansta çok sayıda İngilizce program",
           "tuition": "AB dışı öğrenciler için Baden-Württemberg'de dönemlik ~1.500 € ek okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
-        }
+        },
+        "popularPrograms": [
+          "Makine Mühendisliği",
+          "Bilgisayar Bilimi",
+          "Fizik"
+        ]
       },
       {
         "slug": "freiburg",
@@ -776,7 +841,12 @@
           "students": "~24.000",
           "language": "Ağırlıklı Almanca",
           "tuition": "AB dışı öğrenciler için Baden-Württemberg'de dönemlik ~1.500 € ek okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
-        }
+        },
+        "popularPrograms": [
+          "Tıp",
+          "Doğa Bilimleri",
+          "Orman Mühendisliği"
+        ]
       },
       {
         "slug": "goettingen",
@@ -812,7 +882,12 @@
           "students": "~30.000",
           "language": "Ağırlıklı Almanca, doğa bilimlerinde İngilizce yüksek lisans seçenekleri",
           "tuition": "Dönemlik ~390 € katkı payı"
-        }
+        },
+        "popularPrograms": [
+          "Doğa Bilimleri",
+          "Tarım Bilimleri",
+          "Hukuk"
+        ]
       },
       {
         "slug": "bonn",
@@ -850,7 +925,12 @@
           "students": "~34.000",
           "language": "Ağırlıklı Almanca, çok sayıda İngilizce yüksek lisans programı",
           "tuition": "Dönemlik ~310 € katkı payı"
-        }
+        },
+        "popularPrograms": [
+          "Hukuk",
+          "Ekonomi",
+          "Matematik"
+        ]
       },
       {
         "slug": "koeln",
@@ -886,7 +966,12 @@
           "students": "~48.000 (Almanya'nın en büyük üniversitelerinden biri)",
           "language": "Ağırlıklı Almanca",
           "tuition": "Dönemlik ~300 € katkı payı"
-        }
+        },
+        "popularPrograms": [
+          "Hukuk",
+          "Ekonomi",
+          "Tıp"
+        ]
       },
       {
         "slug": "tuberlin",
@@ -925,7 +1010,12 @@
           "students": "~33.000",
           "language": "Mühendislikte çok sayıda İngilizce yüksek lisans programı",
           "tuition": "Dönemlik ~310 € katkı payı"
-        }
+        },
+        "popularPrograms": [
+          "Makine Mühendisliği",
+          "Elektrik-Elektronik Mühendisliği",
+          "Bilgisayar Bilimi"
+        ]
       },
       {
         "slug": "tudresden",
@@ -964,7 +1054,12 @@
           "students": "~30.000",
           "language": "Lisansta ağırlıklı Almanca, yüksek lisansta çok sayıda İngilizce program",
           "tuition": "Dönemlik ~260 € katkı payı (okul ücreti yok)"
-        }
+        },
+        "popularPrograms": [
+          "Mikroelektronik",
+          "Makine Mühendisliği",
+          "Malzeme Bilimi"
+        ]
       },
       {
         "slug": "tudarmstadt",
@@ -1002,7 +1097,12 @@
           "students": "~26.000",
           "language": "Lisansta Almanca, yüksek lisansta özellikle bilgisayar bilimi ve mühendislikte çok sayıda İngilizce program",
           "tuition": "Dönemlik ~300 € katkı payı (okul ücreti yok)"
-        }
+        },
+        "popularPrograms": [
+          "Bilgisayar Bilimi",
+          "Siber Güvenlik",
+          "Elektrik-Elektronik Mühendisliği"
+        ]
       },
       {
         "slug": "tubraunschweig",
@@ -1040,7 +1140,12 @@
           "students": "~18.000",
           "language": "Ağırlıklı Almanca, yüksek lisansta seçili İngilizce programlar",
           "tuition": "Dönemlik ~300 € katkı payı (okul ücreti yok)"
-        }
+        },
+        "popularPrograms": [
+          "Havacılık-Uzay Mühendisliği",
+          "Otomotiv Mühendisliği",
+          "Biyoteknoloji"
+        ]
       },
       {
         "slug": "hannover",
@@ -1078,7 +1183,12 @@
           "students": "~29.000",
           "language": "Ağırlıklı Almanca, yüksek lisansta mühendislikte İngilizce seçenekler",
           "tuition": "Dönemlik ~340 € katkı payı (okul ücreti yok)"
-        }
+        },
+        "popularPrograms": [
+          "Makine Mühendisliği",
+          "Fotonik",
+          "Hukuk"
+        ]
       },
       {
         "slug": "stuttgart",
@@ -1116,7 +1226,12 @@
           "students": "~23.000",
           "language": "Lisansta Almanca, yüksek lisansta çok sayıda İngilizce program",
           "tuition": "Dönemlik ~200 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
-        }
+        },
+        "popularPrograms": [
+          "Otomotiv Mühendisliği",
+          "Havacılık-Uzay Mühendisliği",
+          "Mimarlık"
+        ]
       },
       {
         "slug": "konstanz",
@@ -1154,7 +1269,12 @@
           "students": "~11.000",
           "language": "Ağırlıklı Almanca, yüksek lisansta seçili İngilizce programlar",
           "tuition": "Dönemlik ~150 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
-        }
+        },
+        "popularPrograms": [
+          "Siyaset Bilimi",
+          "Kimya",
+          "Bilgisayar Bilimi"
+        ]
       },
       {
         "slug": "htwberlin",
@@ -1190,7 +1310,12 @@
           "students": "~15.000",
           "language": "Ağırlıklı Almanca, işletme ve mühendislikte seçili İngilizce programlar",
           "tuition": "Dönemlik ~310 € katkı payı (okul ücreti yok)"
-        }
+        },
+        "popularPrograms": [
+          "Mühendislik",
+          "İşletme",
+          "Tasarım"
+        ]
       },
       {
         "slug": "furtwangen",
@@ -1226,7 +1351,896 @@
           "students": "~2.700",
           "language": "Bilgisayar bilimi ve mühendislikte çok sayıda İngilizce yüksek lisans programı",
           "tuition": "Dönemlik ~230 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
-        }
+        },
+        "popularPrograms": [
+          "Bilgisayar Bilimi",
+          "Dijital Medya",
+          "Mühendislik"
+        ]
+      },
+      {
+        "slug": "hamburg",
+        "name": "Universität Hamburg",
+        "city": "Hamburg",
+        "type": "Universität",
+        "founded": "1919",
+        "description": "Kuzey Almanya'nın en büyük üniversitesi; iklim araştırmalarında dünya çapında tanınan bir Exzellenzuniversität.",
+        "history": [
+          "1919'da kurulan Universität Hamburg, büyük Alman üniversiteleri arasında nispeten genç olmasına rağmen kısa sürede ülkenin en büyüklerinden birine dönüştü.",
+          "Üniversite, iklim araştırmalarında dünya çapında öncü kabul edilen CLICCS (İklim, İklim Değişikliği ve Toplum) Mükemmeliyet Kümesi ile tanınır.",
+          "Hukuk, tıp, doğa bilimleri ve beşeri bilimler gibi geniş bir fakülte yelpazesine sahiptir; Avrupa'nın önde gelen üniversite hastanelerinden biri olan Universitätsklinikum Hamburg-Eppendorf (UKE) da üniversiteye bağlıdır."
+        ],
+        "highlights": [
+          "2019'dan bu yana Exzellenzuniversität statüsü",
+          "Dünya çapında tanınan iklim araştırmaları (CLICCS)",
+          "Avrupa'nın en iyi üniversite hastanelerinden UKE",
+          "Geniş ve çeşitli fakülte yelpazesi"
+        ],
+        "pros": [
+          "Hamburg'un medya, lojistik ve ticaret alanlarındaki güçlü iş piyasasına erişim",
+          "Öncü iklim ve deniz bilimleri araştırma imkanları",
+          "Büyük bir uluslararası öğrenci topluluğu"
+        ],
+        "cons": [
+          "Hamburg'da yüksek yaşam maliyeti",
+          "Popüler bölümlerde kalabalık amfiler",
+          "Tıp bölümünde yüksek başvuru rekabeti"
+        ],
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "hamburg",
+        "quickFacts": {
+          "students": "~44.000",
+          "language": "Ağırlıklı Almanca, bazı yüksek lisans programlarında İngilizce",
+          "tuition": "Dönemlik ~330 € katkı payı"
+        },
+        "popularPrograms": [
+          "Tıp (UKE)",
+          "İklim/Yer Bilimleri",
+          "Hukuk"
+        ]
+      },
+      {
+        "slug": "fuberlin",
+        "name": "Freie Universität Berlin (FU Berlin)",
+        "city": "Berlin",
+        "type": "Universität",
+        "founded": "1948",
+        "description": "Soğuk Savaş döneminde 'özgür' bir alternatif olarak kurulan, sosyal bilimler ve beşeri bilimlerde güçlü bir Exzellenzuniversität.",
+        "history": [
+          "1948'de, o dönem Sovyet kontrolündeki Doğu Berlin'de bulunan Humboldt-Universität'tan ayrılan öğrenci ve akademisyenler tarafından, ABD desteğiyle 'özgür' bir alternatif olarak kuruldu; bu yüzden 'Freie Universität' (Özgür Üniversite) adını taşır.",
+          "HU Berlin, TU Berlin ve Charité ile birlikte 2019'dan bu yana ortak Exzellenzuniversität statüsüne sahip Berlin Üniversite İttifakı'nın (Berlin University Alliance) üyesidir.",
+          "Özellikle siyaset bilimi, alan çalışmaları (Latin Amerika, Doğu Asya) ve yaşam bilimlerinde güçlüdür."
+        ],
+        "highlights": [
+          "Berlin Üniversite İttifakı üyesi, Exzellenzuniversität",
+          "Siyaset bilimi ve sosyal bilimlerde güçlü itibar",
+          "Almanya'nın en uluslararası bağlantılı üniversitelerinden biri"
+        ],
+        "pros": [
+          "Güçlü uluslararası ortaklıklar ve değişim programları",
+          "Mükemmel sosyal bilimler itibarı",
+          "Dahlem'deki canlı Berlin kampüs hayatı"
+        ],
+        "cons": [
+          "Popüler bölümlerde başvuru rekabeti yüksek",
+          "Berlin'in kamu üniversitelerine özgü bürokrasi",
+          "Berlin'de artan yaşam maliyeti"
+        ],
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "berlin",
+        "quickFacts": {
+          "students": "~34.000",
+          "language": "Ağırlıklı Almanca, artan İngilizce yüksek lisans seçenekleri",
+          "tuition": "Dönemlik ~320 € katkı payı"
+        },
+        "popularPrograms": [
+          "Siyaset Bilimi",
+          "Alan Çalışmaları",
+          "Biyoloji/Yaşam Bilimleri"
+        ]
+      },
+      {
+        "slug": "erlangen",
+        "name": "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)",
+        "city": "Erlangen/Nürnberg",
+        "type": "Universität",
+        "founded": "1743",
+        "description": "Bavyera'nın Siemens ve teknoloji sanayisiyle iç içe, mühendislik ve tıpta güçlü büyük bir araştırma üniversitesi.",
+        "history": [
+          "1743'te Erlangen'de kurulan FAU, Bavyera'nın en eski üniversitelerinden biridir; 1961'de Nürnberg'deki ekonomi ve sosyal bilimler kurumlarıyla birleşerek bugünkü halini aldı.",
+          "Yakınındaki Siemens'in merkeziyle ve daha geniş Nürnberg-Erlangen teknoloji kümelenmesiyle, özellikle elektrik-elektronik mühendisliği ve tıbbi teknolojide derin bağlara sahiptir.",
+          "Öğrenci sayısı bakımından Almanya'nın en büyük üniversitelerinden biri olan FAU, güçlü mühendislik, tıp ve doğa bilimleri fakültelerine sahiptir."
+        ],
+        "highlights": [
+          "Siemens ve Bavyera teknoloji sektörüyle derin sanayi bağları",
+          "Mühendislik ve tıbbi teknolojide güçlü programlar",
+          "Almanya'nın en büyük üniversitelerinden biri"
+        ],
+        "pros": [
+          "Elektrik-elektronik mühendisliği/tıbbi teknolojide mükemmel iş imkanları",
+          "Güçlü sanayi destekli araştırma",
+          "Nispeten uygun maliyetli bir Bavyera şehri"
+        ],
+        "cons": [
+          "İki şehre (Erlangen ve Nürnberg) bölünmüş olması ulaşımı zorlaştırabilir",
+          "Popüler bölümlerde kalabalık öğrenci grupları",
+          "Münih kurumlarına kıyasla daha az uluslararası tanınırlık"
+        ],
+        "badges": [],
+        "mapCity": "erlangen",
+        "quickFacts": {
+          "students": "~39.000",
+          "language": "Ağırlıklı Almanca, mühendislik/tıp yüksek lisansında İngilizce seçenekler",
+          "tuition": "Dönemlik ~120 € katkı payı"
+        },
+        "popularPrograms": [
+          "Elektrik-Elektronik Mühendisliği",
+          "Tıp",
+          "Tıbbi Teknoloji"
+        ]
+      },
+      {
+        "slug": "bochum",
+        "name": "Ruhr-Universität Bochum (RUB)",
+        "city": "Bochum",
+        "type": "Universität",
+        "founded": "1962",
+        "description": "Almanya'da İkinci Dünya Savaşı sonrası kurulan ilk yeni üniversite; Ruhr bölgesinin kalbinde, IT güvenliği ve mühendislikte güçlü.",
+        "history": [
+          "1962'de kurulan (1965'te açılan) RUB, Batı Almanya'da savaş sonrası kurulan ilk yeni üniversitedir; büyük, modernist bir kampüs olarak inşa edilmiştir.",
+          "Avrupa'nın en büyük IT güvenliği araştırma enstitülerinden biri olan Horst Görtz Institute for IT Security, mühendislik ve Doğu Asya çalışmalarındaki gücüyle tanınır.",
+          "Ruhr bölgesinin sanayi (kömür/çelik) geçmişinden eğitim ve araştırma merkezine dönüşümünün bir parçası olarak, TU Dortmund ve Uni Duisburg-Essen ile 'University Alliance Ruhr' ittifakının üyesidir."
+        ],
+        "highlights": [
+          "Avrupa'nın en büyük IT güvenliği araştırma enstitülerinden biri (Horst Görtz Institute)",
+          "University Alliance Ruhr üyesi",
+          "Güçlü Doğu Asya çalışmaları programı"
+        ],
+        "pros": [
+          "Öncü IT güvenliği araştırması",
+          "Büyük, modern tek kampüs",
+          "Ruhr bölgesinde uygun yaşam maliyeti"
+        ],
+        "cons": [
+          "Bochum, küçük şehirlere kıyasla klasik bir 'üniversite şehri' hissi vermiyor",
+          "İlk yıllarda kalabalık amfi dersleri",
+          "Sanayi bölgesi şehir çevresi"
+        ],
+        "badges": [],
+        "mapCity": "bochum",
+        "quickFacts": {
+          "students": "~43.000",
+          "language": "Ağırlıklı Almanca, IT güvenliği/mühendislikte İngilizce seçenekler",
+          "tuition": "Dönemlik ~310 € katkı payı"
+        },
+        "popularPrograms": [
+          "IT Güvenliği",
+          "Makine Mühendisliği",
+          "Doğu Asya Çalışmaları"
+        ]
+      },
+      {
+        "slug": "mainz",
+        "name": "Johannes Gutenberg-Universität Mainz (JGU)",
+        "city": "Mainz",
+        "type": "Universität",
+        "founded": "1477",
+        "description": "Matbaanın mucidi Gutenberg'in adını taşıyan, tıp ve yaşam bilimlerinde güçlü, BioNTech bağlantısıyla öne çıkan büyük bir üniversite.",
+        "history": [
+          "1477'de kurulan, 1823'te kapatılan ve 1946'da Fransız işgal bölgesinde kurulan ilk yeni üniversitelerden biri olarak yeniden açılan JGU, adını Mainz'da doğan matbaanın mucidi Johannes Gutenberg'den alır.",
+          "Güçlü bir tıp fakültesine ev sahipliği yapar; üniversitenin BioNTech'e yakınlığı, Mainz'ı Covid-19 aşısı geliştirme sürecinde dünya gündemine taşıdı.",
+          "Doğa bilimlerinden beşeri bilimlere geniş bir fakülte yelpazesine sahiptir."
+        ],
+        "highlights": [
+          "Matbaanın mucidi Gutenberg'in adını taşıyor",
+          "Güçlü tıp ve yaşam bilimleri fakültesi",
+          "BioNTech ve Mainz biyoteknoloji kümelenmesine yakın bağlar"
+        ],
+        "pros": [
+          "Mainz çevresinde büyüyen biyoteknoloji/ilaç iş piyasası",
+          "Bilimlerden beşeri bilimlere geniş fakülte yelpazesi",
+          "Frankfurt ve Rhine-Main bölgesine yakınlık"
+        ],
+        "cons": [
+          "Heidelberg veya Münih'e kıyasla uluslararası alanda daha az tanınırlık",
+          "Büyük öğrenci sayısı nedeniyle kalabalık ilk yıl dersleri",
+          "Tıp bölümünde yüksek başvuru rekabeti"
+        ],
+        "badges": [],
+        "mapCity": "mainz",
+        "quickFacts": {
+          "students": "~31.000",
+          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları",
+          "tuition": "Dönemlik ~300 € katkı payı"
+        },
+        "popularPrograms": [
+          "Tıp",
+          "Biyoloji/Yaşam Bilimleri",
+          "İletişim Bilimleri"
+        ]
+      },
+      {
+        "slug": "muenster",
+        "name": "Westfälische Wilhelms-Universität Münster (WWU)",
+        "city": "Münster",
+        "type": "Universität",
+        "founded": "1780",
+        "description": "Almanya'nın en büyük üniversitelerinden biri; hukuk, işletme ve din bilimlerinde güçlü, bisiklet dostu bir üniversite şehri.",
+        "history": [
+          "1780'de kurulan WWU, günümüzde Almanya'nın en eski ve en büyük üniversitelerinden biri olup özellikle güçlü bir hukuk fakültesine sahiptir.",
+          "Münster, öğrenci nüfusunun şehir büyüklüğüne oranla oldukça yüksek olduğu, Almanya'nın en bisiklet dostu şehirlerinden biri olarak bilinir.",
+          "Hukuk, işletme, Katolik ve Protestan teoloji ile doğa bilimlerinde güçlüdür."
+        ],
+        "highlights": [
+          "Öğrenci sayısı bakımından Almanya'nın en büyük üniversitelerinden biri",
+          "Özellikle güçlü bir hukuk fakültesi",
+          "Münster'in bisiklet dostu, öğrenci ağırlıklı şehir hayatı"
+        ],
+        "pros": [
+          "Büyük öğrenci nüfusuyla canlı ve uygun maliyetli bir öğrenci şehri",
+          "Güçlü hukuk/işletme itibarı",
+          "İyi toplu taşıma ve bisiklet altyapısı"
+        ],
+        "cons": [
+          "Çok yüksek öğrenci sayısı kalabalık amfilere yol açabilir",
+          "Münster büyük şehir imkanları bakımından sınırlı orta ölçekli bir şehir",
+          "Hukuk bölümünde yüksek başvuru rekabeti"
+        ],
+        "badges": [],
+        "mapCity": "muenster",
+        "quickFacts": {
+          "students": "~43.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~300 € katkı payı"
+        },
+        "popularPrograms": [
+          "Hukuk",
+          "İşletme",
+          "Teoloji"
+        ]
+      },
+      {
+        "slug": "bremen",
+        "name": "Universität Bremen",
+        "city": "Bremen",
+        "type": "Universität",
+        "founded": "1971",
+        "description": "Kuzey Almanya'da denizcilik, uzay ve malzeme bilimlerinde güçlü, genç ve araştırma odaklı bir üniversite.",
+        "history": [
+          "1971'de, Konstanz ve Bielefeld'e benzer şekilde disiplinler arası bir 'reform üniversitesi' olarak kuruldu.",
+          "Deniz bilimlerinde (MARUM - Deniz Çevre Bilimleri Merkezi), uzay teknolojisinde (ZARM - Uygulamalı Uzay Teknolojisi ve Mikrogravite Merkezi) ve malzeme biliminde güçlüdür.",
+          "Bremen'in havacılık-uzay sanayi kümelenmesinin (Airbus, OHB) bir parçası olarak uzay mühendisliğinde güçlü sanayi bağlarına sahiptir."
+        ],
+        "highlights": [
+          "Güçlü deniz bilimleri araştırması (MARUM)",
+          "Uzay teknolojisi araştırması (ZARM, düşme kulesi)",
+          "Bremen'in havacılık-uzay kümelenmesiyle (Airbus, OHB) sanayi bağları"
+        ],
+        "pros": [
+          "Deniz ve uzay bilimlerinde niş bir uzmanlık",
+          "Bremen'in havacılık-uzay/lojistik sanayisine yakınlık",
+          "Nispeten uygun maliyetli kuzey Almanya şehri"
+        ],
+        "cons": [
+          "Uzmanlık alanları dışında daha az uluslararası tanınırlık",
+          "Bremen, Hamburg'a kıyasla daha küçük bir şehir",
+          "Tıp gibi bazı alanlarda program bulunmuyor"
+        ],
+        "badges": [],
+        "mapCity": "bremen",
+        "quickFacts": {
+          "students": "~19.000",
+          "language": "Ağırlıklı Almanca, bilimlerde artan İngilizce seçenekler",
+          "tuition": "Dönemlik ~330 € katkı payı"
+        },
+        "popularPrograms": [
+          "Deniz Bilimleri",
+          "Uzay/Sistem Mühendisliği",
+          "Bilgisayar Bilimi"
+        ]
+      },
+      {
+        "slug": "kiel",
+        "name": "Christian-Albrechts-Universität zu Kiel (CAU)",
+        "city": "Kiel",
+        "type": "Universität",
+        "founded": "1665",
+        "description": "Baltık Denizi kıyısında, deniz bilimleri ve iklim araştırmalarında güçlü, Almanya'nın en kuzeydeki büyük üniversitelerinden biri.",
+        "history": [
+          "1665'te kurulan CAU, Almanya'nın daha eski üniversitelerinden biri olup Schleswig-Holstein eyaletinin başkenti Kiel'de, Baltık Denizi kıyısında yer alır.",
+          "Avrupa'nın önde gelen deniz ve iklim bilimi merkezlerinden biri olan GEOMAR Helmholtz Okyanus Araştırmaları Merkezi'ne ev sahipliği yapar.",
+          "Ayrıca güçlü bir hukuk fakültesi ve beslenme/gıda bilimi programlarıyla da tanınır."
+        ],
+        "highlights": [
+          "Avrupa'nın önde gelen okyanus araştırma merkezlerinden GEOMAR'a ev sahipliği",
+          "Güçlü deniz ve iklim bilimleri",
+          "Baltık Denizi kıyısında kampüs"
+        ],
+        "pros": [
+          "Öncü deniz/okyanus araştırma imkanları",
+          "Bir üniversite şehri için nispeten düşük yaşam maliyeti",
+          "Manzaralı kıyı konumu"
+        ],
+        "cons": [
+          "Kiel, büyük şehir gece hayatı bakımından sınırlı, sakin bir şehir",
+          "Lisans düzeyinde İngilizce seçenek azlığı",
+          "Kuzey konumu çoğu uluslararası merkeze uzaklık anlamına geliyor"
+        ],
+        "badges": [],
+        "mapCity": "kiel",
+        "quickFacts": {
+          "students": "~24.000",
+          "language": "Ağırlıklı Almanca, deniz bilimleri yüksek lisansında İngilizce seçenekler",
+          "tuition": "Dönemlik ~250 € katkı payı"
+        },
+        "popularPrograms": [
+          "Deniz/Okyanus Bilimleri",
+          "Hukuk",
+          "Tarım ve Beslenme Bilimleri"
+        ]
+      },
+      {
+        "slug": "marburg",
+        "name": "Philipps-Universität Marburg",
+        "city": "Marburg",
+        "type": "Universität",
+        "founded": "1527",
+        "description": "Dünyanın ilk Protestan üniversitesi; tıp ve eczacılıkta güçlü, klasik bir Alman üniversite şehri.",
+        "history": [
+          "1527'de Hessen Landgrafı I. Philip tarafından kuruldu; dünyanın Protestan bir kurum olarak kurulan ilk üniversitesidir.",
+          "Marburg, tarihi şehir merkezi ile öğrenci hayatının iç içe geçtiği, klasik bir küçük 'üniversite şehri' (Universitätsstadt) örneğidir.",
+          "Özellikle tıp, eczacılık ve beşeri bilimlerde güçlüdür; 1967'de şehirde ilk kez tespit edilen Marburg virüsü adını buradan alır."
+        ],
+        "highlights": [
+          "Dünyanın ilk Protestan üniversitesi (1527)",
+          "Güçlü tıp ve eczacılık fakülteleri",
+          "Klasik, tarihi bir üniversite şehri atmosferi"
+        ],
+        "pros": [
+          "Şirin, uygun maliyetli küçük bir üniversite şehri",
+          "Güçlü tıp/eczacılık programları",
+          "Yakın ve samimi bir akademik topluluk"
+        ],
+        "cons": [
+          "Büyük şehir imkanları bakımından sınırlı küçük bir şehir",
+          "Daha az İngilizce program seçeneği",
+          "Büyük havalimanlarına göre daha uzak bir konum"
+        ],
+        "badges": [],
+        "mapCity": "marburg",
+        "quickFacts": {
+          "students": "~22.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~270 € katkı payı"
+        },
+        "popularPrograms": [
+          "Tıp",
+          "Eczacılık",
+          "Beşeri Bilimler"
+        ]
+      },
+      {
+        "slug": "jena",
+        "name": "Friedrich-Schiller-Universität Jena",
+        "city": "Jena",
+        "type": "Universität",
+        "founded": "1558",
+        "description": "Optik ve fotonikte (Carl Zeiss, Schott bağlantısıyla) güçlü, Thüringen'in tarihi üniversite şehrindeki köklü bir kurum.",
+        "history": [
+          "1558'de kurulan bu klasik Alman üniversitesi, tarihsel olarak burada ders veren Schiller, Hegel ve Fichte gibi isimlerle ilişkilendirilir.",
+          "Jena, Carl Zeiss ve Schott'un tarihi merkezi olup üniversiteye optik, fotonik ve hassas mühendislikte derin bağlar kazandırır.",
+          "Güçlü fizik ve optik araştırmaları, Abbe School of Photonics ve Jena'daki Fraunhofer/Leibniz enstitüleriyle işbirliği yoluyla bugün de sürüyor."
+        ],
+        "highlights": [
+          "Optik/fotonikte derin tarihi ve sanayi bağları (Carl Zeiss, Schott, Abbe School of Photonics)",
+          "Zengin entelektüel geçmişe sahip klasik üniversite şehri"
+        ],
+        "pros": [
+          "Dünya çapında optik/fotonik araştırma imkanları",
+          "Uygun maliyetli Thüringen yaşam standardı",
+          "Tarihi, yürünebilir bir üniversite şehri"
+        ],
+        "cons": [
+          "Doğu Almanya konumu, batı şehirlerine kıyasla daha küçük bir uluslararası öğrenci topluluğu demek",
+          "Bazı mesleki alanlarda sınırlı program seçeneği",
+          "Daha az İngilizce lisans seçeneği"
+        ],
+        "badges": [],
+        "mapCity": "jena",
+        "quickFacts": {
+          "students": "~18.000",
+          "language": "Ağırlıklı Almanca, fotonik/fizik yüksek lisansında İngilizce seçenekler",
+          "tuition": "Dönemlik ~155 € katkı payı (Thüringen'de ek ücret yok/düşük)"
+        },
+        "popularPrograms": [
+          "Fizik/Optik ve Fotonik",
+          "Kimya",
+          "Biyoloji"
+        ]
+      },
+      {
+        "slug": "thkoeln",
+        "name": "TH Köln (Technische Hochschule Köln)",
+        "city": "Köln",
+        "type": "Fachhochschule",
+        "founded": "1971",
+        "description": "Almanya'nın öğrenci sayısı bakımından en büyük uygulamalı bilimler üniversitesi; mühendislik, sosyal çalışma ve medyada geniş bir program yelpazesi.",
+        "history": [
+          "1971'de, bazıları daha eskiye uzanan çeşitli teknik ve ticari okulların birleşmesiyle kuruldu; ölçeğini ve araştırma profilini yansıtmak için 2015'te Technische Hochschule Köln adını aldı.",
+          "Bugün Almanya'nın öğrenci sayısı bakımından en büyük uygulamalı bilimler üniversitesi olup Köln'de birden fazla kampüse yayılmıştır.",
+          "Bir Hochschule için alışılmadık derecede geniş bir yelpaze sunar: mühendislik, sosyal çalışma, medya/iletişim ve uygulamalı doğa bilimleri."
+        ],
+        "highlights": [
+          "Öğrenci sayısı bakımından Almanya'nın en büyük Hochschule'si",
+          "Mühendislik, sosyal çalışma ve medyada çok geniş program yelpazesi",
+          "Köln genelinde birden fazla modern kampüs"
+        ],
+        "pros": [
+          "Zorunlu stajlarla uygulamaya dönük güçlü bir eğitim",
+          "Bir Hochschule için geniş program seçeneği",
+          "Köln'ün büyük iş piyasasına erişim"
+        ],
+        "cons": [
+          "Büyük öğrenci sayısı popüler programlarda daha az bireysel ilgi anlamına gelebilir",
+          "Birden fazla kampüs daha fazla ulaşım gerektirebilir",
+          "Klasik bir üniversiteye kıyasla daha az araştırma prestiji"
+        ],
+        "badges": [],
+        "mapCity": "koeln",
+        "quickFacts": {
+          "students": "~27.000",
+          "language": "Ağırlıklı Almanca, mühendislik/işletmede seçili İngilizce programlar",
+          "tuition": "Dönemlik ~290 € katkı payı"
+        },
+        "popularPrograms": [
+          "Makine Mühendisliği",
+          "Sosyal Çalışma",
+          "Medya Teknolojisi"
+        ]
+      },
+      {
+        "slug": "hsmannheim",
+        "name": "Hochschule Mannheim",
+        "city": "Mannheim",
+        "type": "Fachhochschule",
+        "founded": "1963",
+        "description": "Mannheim'ın sanayi bölgesinde, mühendislik ve bilgi teknolojilerinde uygulamaya dönük eğitim veren köklü bir Hochschule.",
+        "history": [
+          "1897'de kurulan bir mühendislik okuluna dayanır; 1963/1971'de tam Hochschule statüsü kazanmıştır.",
+          "Mannheim'ın sanayi ağırlıklı Rhine-Neckar bölgesinde yer alır; BASF, Daimler ve John Deere gibi büyük işverenlerle yakın bağları vardır.",
+          "Mühendislik, bilgi teknolojileri ve biyoteknolojiye odaklanır; müfredatı güçlü şekilde uygulamaya dönüktür."
+        ],
+        "highlights": [
+          "BASF, Daimler ve Rhine-Neckar sanayi bölgesiyle yakın bağlar",
+          "Uygulamaya dönük mühendislik ve IT programları",
+          "Kompakt, modern kampüs"
+        ],
+        "pros": [
+          "Staj ve iş imkanları için güçlü bölgesel sanayi bağlantıları",
+          "Uygulamalı, pratik müfredat",
+          "Universität Mannheim ile aynı şehirde daha büyük bir öğrenci topluluğu"
+        ],
+        "cons": [
+          "Bir araştırma üniversitesine kıyasla daha küçük uluslararası profil",
+          "Sınırlı beşeri bilimler/sosyal bilimler seçeneği",
+          "Popüler mühendislik programlarında rekabetçi kontenjanlar"
+        ],
+        "badges": [],
+        "mapCity": "mannheim",
+        "quickFacts": {
+          "students": "~5.500",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~200 € katkı payı"
+        },
+        "popularPrograms": [
+          "Makine Mühendisliği",
+          "Bilgi Teknolojileri",
+          "Biyoteknoloji"
+        ]
+      },
+      {
+        "slug": "hskarlsruhe",
+        "name": "Hochschule Karlsruhe (HKA)",
+        "city": "Karlsruhe",
+        "type": "Fachhochschule",
+        "founded": "1878",
+        "description": "Almanya'nın en eski uygulamalı bilimler üniversitelerinden biri; mühendislik ve mimarlıkta güçlü, KIT ile aynı şehirde.",
+        "history": [
+          "1878'de bir teknik meslek okulu olarak kuruldu; 1971'de tam bir Hochschule für Technik statüsü kazanan Almanya'nın en eski uygulamalı bilimler üniversitelerinden biridir.",
+          "Karlsruhe'yi KIT ile paylaşır; bu da öğrencilere büyük, birleşik bir akademik ve teknoloji sanayi ekosistemine ('TechnologieRegion Karlsruhe') erişim sağlar.",
+          "Makine/elektrik mühendisliği, mimarlık ve bilgi teknolojilerinde güçlü fakültelere sahiptir."
+        ],
+        "highlights": [
+          "Almanya'nın en eski Hochschule'lerinden biri (1878)",
+          "KIT ile Karlsruhe'nin teknoloji ekosistemini paylaşıyor",
+          "Güçlü mimarlık ve mühendislik fakülteleri"
+        ],
+        "pros": [
+          "Köklü, iyi tanınan uygulamaya dönük mühendislik eğitimi",
+          "Karlsruhe'nin yoğun teknoloji/araştırma ekosisteminden faydalanma",
+          "Nispeten uygun maliyetli öğrenci şehri"
+        ],
+        "cons": [
+          "AB dışı öğrenciler için Baden-Württemberg'in ek okul ücreti uygulanabilir",
+          "KIT'e kıyasla daha az uluslararası tanınırlık",
+          "İlk dönemlerde kalabalık mühendislik grupları"
+        ],
+        "badges": [],
+        "mapCity": "karlsruhe",
+        "quickFacts": {
+          "students": "~8.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~155 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+        },
+        "popularPrograms": [
+          "Makine Mühendisliği",
+          "Mimarlık",
+          "Bilgi Teknolojileri"
+        ]
+      },
+      {
+        "slug": "htwgkonstanz",
+        "name": "HTWG Konstanz (Hochschule Konstanz Technik, Wirtschaft und Gestaltung)",
+        "city": "Konstanz",
+        "type": "Fachhochschule",
+        "founded": "1906",
+        "description": "Bodensee kıyısında, mühendislik, işletme ve tasarımı bir araya getiren uygulamaya dönük bir Hochschule (Universität Konstanz'dan farklı bir kurum).",
+        "history": [
+          "Kökleri 1906'ya uzanır; 1971'de tam bir Hochschule oldu. Yakınındaki araştırma odaklı Universität Konstanz'dan farklı, bağımsız bir kurumdur.",
+          "Mühendislik, işletme ve tasarım (Gestaltung) fakültelerini tek bir kurumda birleştirir; bu, Alman Hochschule'leri arasında alışılmadık bir kombinasyondur.",
+          "Bodensee kıyısındaki konumu ve sınır ötesi programları, İsviçre ve Avusturya'nın Bodensee bölgesi ekonomisiyle güçlü bağlar sağlar."
+        ],
+        "highlights": [
+          "Mühendislik, işletme ve tasarımı tek bir Hochschule'de birleştiriyor",
+          "Bodensee kıyısında manzaralı bir kampüs",
+          "İsviçre ve Avusturya'yla güçlü sınır ötesi bağlar"
+        ],
+        "pros": [
+          "Mühendislik/işletme/tasarımın alışılmadık, uygulamaya dönük karışımı",
+          "Bodensee kıyısında yüksek yaşam kalitesine sahip güzel bir konum",
+          "Güçlü bölgesel ve sınır ötesi iş piyasası"
+        ],
+        "cons": [
+          "AB dışı öğrenciler için Baden-Württemberg'in ek okul ücreti uygulanabilir",
+          "Büyük şehir imkanları bakımından sınırlı küçük bir şehir",
+          "Araştırma odaklı Universität Konstanz ile bazen karıştırılabiliyor"
+        ],
+        "badges": [],
+        "mapCity": "konstanz",
+        "quickFacts": {
+          "students": "~4.700",
+          "language": "Ağırlıklı Almanca, bazı İngilizce tasarım/işletme programları",
+          "tuition": "Dönemlik ~154 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+        },
+        "popularPrograms": [
+          "Makine Mühendisliği",
+          "İşletme",
+          "İletişim Tasarımı"
+        ]
+      },
+      {
+        "slug": "thingolstadt",
+        "name": "Technische Hochschule Ingolstadt (THI)",
+        "city": "Ingolstadt",
+        "type": "Fachhochschule",
+        "founded": "1994",
+        "description": "Audi'nin merkezi Ingolstadt'ta, otomotiv mühendisliği ve yapay zekada uzmanlaşmış genç ve hızlı büyüyen bir Hochschule.",
+        "history": [
+          "1994'te, Ingolstadt'ın hızla büyüyen otomotiv sanayisine hizmet etmek üzere özel olarak kurulan, Almanya'nın daha genç Hochschule'lerinden biridir.",
+          "Audi'nin küresel merkezine ev sahipliği yapan Ingolstadt'ta bulunması, THI'ye otomotiv mühendisliği, otonom sürüş ve yapay zeka araştırmalarında son derece yakın bağlar sağlar.",
+          "Hızla büyüyen üniversite, Almanya'da uygulamalı bilimler üniversiteleri arasında ilk özel yapay zeka lisans programlarından birini başlattı."
+        ],
+        "highlights": [
+          "Ingolstadt'taki Audi ve otomotiv/AI sanayisiyle derin bağlar",
+          "Almanya'daki ilk özel yapay zeka lisans programlarından biri",
+          "Genç, hızla büyüyen, modern kampüs"
+        ],
+        "pros": [
+          "Audi ve tedarikçileri aracılığıyla mükemmel otomotiv mühendisliği ve AI iş imkanları",
+          "Modern tesisler ve müfredat",
+          "Daha küçük, sıkı bağlı bir öğrenci topluluğu"
+        ],
+        "cons": [
+          "Daha genç bir kurum, daha az tarihi prestij",
+          "Ingolstadt, büyük şehir imkanları bakımından daha küçük bir şehir",
+          "Mühendislik/işletme/AI dışında sınırlı program yelpazesi"
+        ],
+        "badges": [],
+        "mapCity": "ingolstadt",
+        "quickFacts": {
+          "students": "~7.000",
+          "language": "Ağırlıklı Almanca, AI/mühendislikte çeşitli İngilizce yüksek lisans programları",
+          "tuition": "Dönemlik ~130 € katkı payı"
+        },
+        "popularPrograms": [
+          "Otomotiv Mühendisliği",
+          "Yapay Zeka",
+          "İşletme Bilişimi"
+        ]
+      },
+      {
+        "slug": "hbrs",
+        "name": "Hochschule Bonn-Rhein-Sieg (H-BRS)",
+        "city": "Sankt Augustin (Bonn yakınında)",
+        "type": "Fachhochschule",
+        "founded": "1995",
+        "description": "Bonn yakınında, bilgi teknolojileri ve mühendislikte güçlü, modern ve uluslararası odaklı bir Hochschule.",
+        "history": [
+          "1995'te kurulan, esas olarak Bonn yakınındaki Sankt Augustin'de bulunan, Rheinbach ve Hennef'te ek kampüsleri olan nispeten genç bir Hochschule'dir.",
+          "Bilgisayar bilimi ve mühendisliğe güçlü vurgu yapar; aynı kampüste bulunan Fraunhofer Akıllı Analiz ve Bilgi Sistemleri Enstitüsü (IAIS) ile yakın işbirliği içindedir.",
+          "Güçlü uluslararası öğrenci topluluğu ve geniş bir İngilizce yüksek lisans program yelpazesiyle tanınır."
+        ],
+        "highlights": [
+          "Fraunhofer IAIS araştırma enstitüsüyle aynı kampüsü paylaşıyor",
+          "Güçlü bilgisayar bilimi ve mühendislik programları",
+          "Alışılmadık derecede uluslararası, İngilizce dostu yüksek lisans seçenekleri"
+        ],
+        "pros": [
+          "Fraunhofer IAIS ile yakın araştırma işbirliği",
+          "Uluslararası öğrencilerin girişini kolaylaştıran çok sayıda İngilizce yüksek lisans programı",
+          "Bonn ve Köln'ün iş piyasalarına yakınlık"
+        ],
+        "cons": [
+          "Daha genç, eski üniversitelere göre daha az uluslararası tanınırlık",
+          "Birden fazla küçük kampüse yayılmış",
+          "Sınırlı beşeri bilimler/sosyal bilimler yelpazesi"
+        ],
+        "badges": [],
+        "mapCity": "sanktaugustin",
+        "quickFacts": {
+          "students": "~9.000",
+          "language": "Almanca ve İngilizce karışık, bazı yüksek lisans programları tamamen İngilizce",
+          "tuition": "Dönemlik ~290 € katkı payı"
+        },
+        "popularPrograms": [
+          "Bilgisayar Bilimi",
+          "Elektrik-Elektronik Mühendisliği",
+          "İşletme"
+        ]
+      },
+      {
+        "slug": "hda",
+        "name": "Hochschule Darmstadt (h_da)",
+        "city": "Darmstadt",
+        "type": "Fachhochschule",
+        "founded": "1971",
+        "description": "TU Darmstadt'ın aynı şehrindeki büyük bir Hochschule; bilgi teknolojileri, medya ve mühendislikte güçlü.",
+        "history": [
+          "Kökleri 1876'da kurulan bir teknik okula uzanır; 1971'de Hessen'in en büyük uygulamalı bilimler üniversitesi statüsünü kazandı.",
+          "Darmstadt'ı TU Darmstadt ile paylaşır; bu da tek bir şehirde Almanya'nın en yoğun mühendislik ve bilgisayar bilimi eğitimi kümelenmelerinden birini oluşturur.",
+          "Özellikle Dieburg'daki Mediencampus dahil, medya ve bilgi teknolojileri programlarıyla tanınır."
+        ],
+        "highlights": [
+          "Hessen'in en büyük Hochschule'si",
+          "TU Darmstadt ile Darmstadt'ın teknoloji ekosistemini paylaşıyor",
+          "Güçlü medya ve bilgi teknolojileri programları"
+        ],
+        "pros": [
+          "Güçlü bölgesel iş piyasasıyla uygulamaya dönük mühendislik/IT/medya eğitimi",
+          "Darmstadt'ın yoğun teknoloji ekosisteminden faydalanma",
+          "Frankfurt'a kıyasla nispeten uygun maliyetli"
+        ],
+        "cons": [
+          "Aynı şehirdeki TU Darmstadt'a kıyasla daha az uluslararası tanınırlık",
+          "Popüler IT programlarında kalabalık gruplar",
+          "Sınırlı doğa bilimleri/beşeri bilimler yelpazesi"
+        ],
+        "badges": [],
+        "mapCity": "darmstadt",
+        "quickFacts": {
+          "students": "~14.000",
+          "language": "Ağırlıklı Almanca, medya/IT yüksek lisansında bazı İngilizce seçenekler",
+          "tuition": "Dönemlik ~290 € katkı payı"
+        },
+        "popularPrograms": [
+          "Bilgisayar Bilimi",
+          "Medya/İletişim",
+          "Elektrik-Elektronik Mühendisliği"
+        ]
+      },
+      {
+        "slug": "reutlingen",
+        "name": "Hochschule Reutlingen",
+        "city": "Reutlingen",
+        "type": "Fachhochschule",
+        "founded": "1855",
+        "description": "Tekstil mühendisliği kökenli, bugün uluslararası işletme ve mühendislikte güçlü, çok uluslu bir öğrenci topluluğuna sahip bir Hochschule.",
+        "history": [
+          "1855'te, bölgenin tarihi tekstil sanayisini yansıtan bir tekstil mühendisliği okulu olarak kuruldu; 1971'de Hochschule statüsü kazandı.",
+          "Bugün Almanya'nın en uluslararası odaklı Hochschule'lerinden biri olup ESB Business School onlarca ülkeden öğrenci çekiyor.",
+          "Stuttgart'ın otomotiv sanayisine yakınlığıyla, ünlü uluslararası işletme fakültesinin yanı sıra güçlü mühendislik programlarını da sürdürüyor."
+        ],
+        "highlights": [
+          "Tarihi tekstil mühendisliği kökenleri, bugün güçlü bir uluslararası işletme ve mühendislik Hochschule'si",
+          "ESB Business School'un alışılmadık derecede uluslararası öğrenci topluluğu",
+          "Stuttgart'ın otomotiv sanayi kümelenmesine yakınlık"
+        ],
+        "pros": [
+          "ESB Business School'da çok uluslararası bir öğrenci topluluğu ve İngilizce programlar",
+          "Stuttgart yakınında güçlü sanayi bağları",
+          "Zorunlu stajlarla uygulamaya dönük müfredat"
+        ],
+        "cons": [
+          "AB dışı öğrenciler için Baden-Württemberg'in ek okul ücreti uygulanabilir",
+          "Büyük şehir imkanları bakımından sınırlı küçük bir şehir",
+          "İşletme programlarına girişte rekabet olabilir"
+        ],
+        "badges": [],
+        "mapCity": "reutlingen",
+        "quickFacts": {
+          "students": "~6.000",
+          "language": "Almanca ve İngilizce karışık, ESB Business School büyük ölçüde İngilizce",
+          "tuition": "Dönemlik ~135 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+        },
+        "popularPrograms": [
+          "Uluslararası İşletme (ESB)",
+          "Tekstil Mühendisliği",
+          "Mekatronik"
+        ]
+      },
+      {
+        "slug": "fhmuenster",
+        "name": "FH Münster (Fachhochschule Münster)",
+        "city": "Münster",
+        "type": "Fachhochschule",
+        "founded": "1971",
+        "description": "Münster'da, mühendislik, tasarım ve sosyal çalışmalarda geniş bir program yelpazesine sahip büyük bir Hochschule.",
+        "history": [
+          "1971'de kurulan, bugün Almanya'nın daha büyük uygulamalı bilimler üniversitelerinden biri olan FH Münster, bisiklet dostu Münster şehrini WWU Münster ile paylaşıyor.",
+          "Bir Hochschule için alışılmadık derecede geniş bir yelpaze sunar: mühendislik, tasarım, sosyal çalışma ve işletme.",
+          "Kuzey Ren-Vestfalya genelinde güçlü bölgesel işveren ortaklıklarıyla uygulamaya dönük öğretimiyle tanınır."
+        ],
+        "highlights": [
+          "Almanya'nın daha büyük Hochschule'lerinden biri",
+          "Mühendislik, tasarım, sosyal çalışma ve işletmede geniş program yelpazesi",
+          "WWU ile Münster'in bisiklet dostu öğrenci şehrini paylaşıyor"
+        ],
+        "pros": [
+          "Güçlü pratik yönelimli geniş program seçeneği",
+          "Uygun maliyetli, öğrenci dostu bir şehir",
+          "Kuzey Ren-Vestfalya genelinde iyi bir bölgesel iş piyasası"
+        ],
+        "cons": [
+          "Aynı şehirdeki WWU Münster'e kıyasla daha az araştırma odaklı",
+          "Popüler programlarda kalabalık gruplar",
+          "Sınırlı lisansüstü araştırma imkanı"
+        ],
+        "badges": [],
+        "mapCity": "muenster",
+        "quickFacts": {
+          "students": "~14.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~290 € katkı payı"
+        },
+        "popularPrograms": [
+          "Makine Mühendisliği",
+          "Tasarım",
+          "Sosyal Çalışma"
+        ]
+      },
+      {
+        "slug": "osnabrueck",
+        "name": "Hochschule Osnabrück",
+        "city": "Osnabrück",
+        "type": "Fachhochschule",
+        "founded": "1971",
+        "description": "Kuzeybatı Almanya'da, mühendislik, tarım bilimleri ve işletmede uygulamaya dönük eğitim veren bir Hochschule.",
+        "history": [
+          "1971'de kurulan, Aşağı Saksonya'nın Osnabrück bölgesine mühendislik, tarım ve işletme alanlarında uygulamaya dönük bir müfredatla hizmet veriyor.",
+          "Bölgenin tarım ekonomisini yansıtacak şekilde, tarım bilimlerinde belirgin bir güce sahiptir.",
+          "Ayrıca sağlam mühendislik ve sosyal çalışma fakültelerini de sürdürür; bölgesel işverenlerle yakın ortaklıkları vardır."
+        ],
+        "highlights": [
+          "Belirgin şekilde güçlü bir tarım bilimleri fakültesi",
+          "Uygulamaya dönük mühendislik ve işletme programları",
+          "Aşağı Saksonya'da güçlü bölgesel işveren ortaklıkları"
+        ],
+        "pros": [
+          "Sağlam mühendislik/işletmenin yanı sıra tarım bilimlerinde niş bir güç",
+          "Uygun maliyetli, daha sakin bir kuzey Almanya şehri",
+          "Güçlü bölgesel iş yerleştirme"
+        ],
+        "cons": [
+          "Daha büyük Hochschule'lere kıyasla daha küçük uluslararası profil",
+          "Osnabrück'te sınırlı büyük şehir imkanları",
+          "Daha az İngilizce program"
+        ],
+        "badges": [],
+        "mapCity": "osnabrueck",
+        "quickFacts": {
+          "students": "~13.000",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~300 € katkı payı"
+        },
+        "popularPrograms": [
+          "Tarım Bilimleri",
+          "Makine Mühendisliği",
+          "İşletme"
+        ]
+      },
+      {
+        "slug": "bht",
+        "name": "Berliner Hochschule für Technik (BHT)",
+        "city": "Berlin",
+        "type": "Fachhochschule",
+        "founded": "1971",
+        "description": "Berlin'in en büyük teknik Hochschule'lerinden biri; mühendislik ve bilgi teknolojilerinde uygulamaya dönük, büyük bir öğrenci topluluğuna sahip.",
+        "history": [
+          "1971'de Technische Fachhochschule Berlin olarak kuruldu, daha sonra Beuth Hochschule für Technik adını aldı ve 2021'de tekrar Berliner Hochschule für Technik (BHT) olarak yeniden adlandırıldı.",
+          "Berlin'in en büyük uygulamalı bilimler üniversitelerinden biri olup mühendislik, bilgisayar bilimi ve matematiğe güçlü şekilde odaklanır.",
+          "Staj ve mezuniyet sonrası istihdam için Berlin'in büyük teknoloji ve girişim ekosisteminden faydalanır."
+        ],
+        "highlights": [
+          "Berlin'in en büyük teknik Hochschule'lerinden biri",
+          "Güçlü mühendislik, bilgisayar bilimi ve matematik fakülteleri",
+          "Berlin'in büyük girişim/teknoloji iş piyasasına doğrudan erişim"
+        ],
+        "pros": [
+          "Berlin iş piyasasına güçlü erişimle uygulamaya dönük teknik eğitim",
+          "Büyük, iyi donanımlı laboratuvarlar ve atölyeler",
+          "Berlin'in üniversitelerine göre genellikle daha düşük başvuru rekabeti"
+        ],
+        "cons": [
+          "Berlin'de artan yaşam maliyeti",
+          "Popüler mühendislik/bilgisayar bilimi programlarında kalabalık gruplar",
+          "Aynı şehirdeki TU Berlin'e kıyasla daha az araştırma prestiji"
+        ],
+        "badges": [],
+        "mapCity": "berlin",
+        "quickFacts": {
+          "students": "~12.000",
+          "language": "Ağırlıklı Almanca, bilgisayar bilimi yüksek lisansında bazı İngilizce",
+          "tuition": "Dönemlik ~310 € katkı payı"
+        },
+        "popularPrograms": [
+          "Bilgisayar Bilimi",
+          "Elektrik-Elektronik Mühendisliği",
+          "Matematik"
+        ]
+      },
+      {
+        "slug": "jade",
+        "name": "Jade Hochschule",
+        "city": "Wilhelmshaven",
+        "type": "Fachhochschule",
+        "founded": "2009",
+        "description": "Kuzey Almanya kıyısında, denizcilik mühendisliği ve lojistikte uzmanlaşmış küçük bir Hochschule.",
+        "history": [
+          "2009'da, her biri 1970'lere uzanan köklere sahip Wilhelmshaven, Oldenburg ve Elsfleth'teki Fachhochschule'lerin birleşmesiyle kuruldu.",
+          "Wilhelmshaven ve Elsfleth kampüsleri, Kuzey Denizi kıyı bölgesinin denizcilik sektörünü yansıtacak şekilde denizcilik mühendisliği, nautik bilimi ve lojistikte uzmanlaşmıştır.",
+          "Uygulamalı denizcilik ve mühendislik eğitimiyle tanınan daha küçük, sıkı bağlı bir Hochschule'dir."
+        ],
+        "highlights": [
+          "Denizcilik mühendisliği, nautik bilimi ve lojistikte uzmanlaşmış",
+          "Wilhelmshaven ve Elsfleth'te Kuzey Denizi kıyı kampüsleri",
+          "Küçük, sıkı bağlı bir akademik topluluk"
+        ],
+        "pros": [
+          "Nadir, odaklanmış bir denizcilik/nautik mühendislik uzmanlığı",
+          "Kuzey Denizi kıyısında çok düşük yaşam maliyeti",
+          "Uygulamalı, küçük sınıf öğretim tarzı"
+        ],
+        "cons": [
+          "Denizcilik/mühendislik/lojistik dışında çok sınırlı program yelpazesi",
+          "Büyük şehirlerden uzak, kıyıda bir konum",
+          "Daha küçük uluslararası öğrenci topluluğu"
+        ],
+        "badges": [],
+        "mapCity": "wilhelmshaven",
+        "quickFacts": {
+          "students": "~5.700",
+          "language": "Ağırlıklı Almanca",
+          "tuition": "Dönemlik ~290 € katkı payı"
+        },
+        "popularPrograms": [
+          "Denizcilik/Nautik Mühendislik",
+          "Lojistik",
+          "Makine Mühendisliği"
+        ]
       }
     ],
     "cta": {
@@ -1258,7 +2272,7 @@
       "title": "Hikayemiz",
       "paragraphs": [
         "Studiva, 2026 yılında İstanbul'da, öğrencilerin Avrupa'nın önde gelen üniversitelerine şeffaf ve güvenilir bir süreçle ulaşmasını sağlamak amacıyla kuruldu.",
-        "Almanya genelinde 25'ten fazla üniversite hakkında güncel bilgiye sahip bir ekibiz; Exzellenzuniversität'lerden TU9 teknik üniversitelerine, Hochschule'lerden Dual Studium programlarına kadar her kurumun başvuru sistemini, vize gereksinimlerini ve akademik takvimini yakından takip ediyoruz.",
+        "Almanya genelinde 45'ten fazla üniversite hakkında güncel bilgiye sahip bir ekibiz; Exzellenzuniversität'lerden TU9 teknik üniversitelerine, Hochschule'lerden Dual Studium programlarına kadar her kurumun başvuru sistemini, vize gereksinimlerini ve akademik takvimini yakından takip ediyoruz.",
         "Her öğrencinin akademik geçmişi, bütçesi ve hedefleri farklıdır; bu yüzden tek bir şablona sıkışmadan, size en uygun ülke ve üniversiteyi birlikte belirliyoruz. Yeni kurulan bir firma olarak şişirilmiş rakamlar yerine somut bir taahhüt sunuyoruz: sürecinizi eksiksiz tamamladığınızda kabul garantisi."
       ]
     },
@@ -1301,7 +2315,7 @@
         "label": "Kabul Garantisi"
       },
       {
-        "value": "26+",
+        "value": "48+",
         "label": "Üniversite Seçeneği"
       }
     ]

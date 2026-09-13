@@ -41,7 +41,7 @@
           "label": "TU9 Universities"
         },
         {
-          "value": "26+",
+          "value": "48+",
           "label": "University Options"
         },
         {
@@ -295,7 +295,12 @@
           "students": "~50,000",
           "language": "Mostly English at master's level, partly German at bachelor's",
           "tuition": "~€150-170 semester contribution (no tuition fees)"
-        }
+        },
+        "popularPrograms": [
+          "Mechanical/Electrical Engineering",
+          "Computer Science",
+          "Medicine"
+        ]
       },
       {
         "slug": "lmu",
@@ -333,7 +338,12 @@
           "students": "~52,000",
           "language": "Mostly German, English options at master's level",
           "tuition": "~€150 semester contribution (no tuition fees)"
-        }
+        },
+        "popularPrograms": [
+          "Medicine",
+          "Law",
+          "Natural Sciences"
+        ]
       },
       {
         "slug": "huberlin",
@@ -371,7 +381,12 @@
           "students": "~32,000",
           "language": "Mostly German, some English-taught master's programs",
           "tuition": "~€315 semester contribution (no tuition fees)"
-        }
+        },
+        "popularPrograms": [
+          "Social Sciences",
+          "Humanities",
+          "Natural Sciences"
+        ]
       },
       {
         "slug": "rwth",
@@ -410,7 +425,12 @@
           "students": "~47,000 (about 25% international)",
           "language": "Mostly German at bachelor's, many English programs at master's",
           "tuition": "~€300 semester contribution (no tuition fees)"
-        }
+        },
+        "popularPrograms": [
+          "Mechanical Engineering",
+          "Electrical Engineering",
+          "Computer Science"
+        ]
       },
       {
         "slug": "mannheim",
@@ -446,7 +466,12 @@
           "students": "~11,000",
           "language": "Many English-taught master's programs in business and economics",
           "tuition": "~€170 semester contribution; non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
-        }
+        },
+        "popularPrograms": [
+          "Business Administration",
+          "Economics",
+          "Psychology"
+        ]
       },
       {
         "slug": "hm",
@@ -482,7 +507,12 @@
           "students": "~19,000",
           "language": "Mostly German, a few English-taught programs",
           "tuition": "~€150 semester contribution"
-        }
+        },
+        "popularPrograms": [
+          "Mechanical Engineering",
+          "Business Administration",
+          "Computer Science"
+        ]
       },
       {
         "slug": "frankfurtuas",
@@ -518,7 +548,12 @@
           "students": "~15,000",
           "language": "Mix of German and English, especially at master's level",
           "tuition": "~€370 semester contribution"
-        }
+        },
+        "popularPrograms": [
+          "Social Work",
+          "Business Administration",
+          "Computer Science"
+        ]
       },
       {
         "slug": "dhbw",
@@ -554,7 +589,12 @@
           "students": "~34,000 (multi-campus)",
           "language": "Mostly German",
           "tuition": "No tuition fees, but a company placement is mandatory (students earn a salary)"
-        }
+        },
+        "popularPrograms": [
+          "Business Administration (Dual)",
+          "Engineering (Dual)",
+          "Computer Science (Dual)"
+        ]
       },
       {
         "slug": "iu",
@@ -590,7 +630,12 @@
           "students": "~130,000 (Germany's largest private higher-education institution)",
           "language": "Mostly English, online and on-campus options",
           "tuition": "Private institution; flexible pricing with scholarships and discounts available"
-        }
+        },
+        "popularPrograms": [
+          "Business Administration",
+          "Computer Science",
+          "Psychology"
+        ]
       },
       {
         "slug": "fom",
@@ -626,7 +671,12 @@
           "students": "~57,000",
           "language": "Mostly German",
           "tuition": "Private institution; typically employer-sponsored for working students"
-        }
+        },
+        "popularPrograms": [
+          "Business Administration",
+          "Economics",
+          "Management"
+        ]
       },
       {
         "slug": "heidelberg",
@@ -664,7 +714,12 @@
           "students": "~30,000",
           "language": "German at bachelor's, many English-taught master's and PhD programs",
           "tuition": "~€170 semester contribution; non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
-        }
+        },
+        "popularPrograms": [
+          "Medicine",
+          "Natural Sciences",
+          "Law"
+        ]
       },
       {
         "slug": "tuebingen",
@@ -702,7 +757,12 @@
           "students": "~27,000",
           "language": "Mostly German, select English-taught master's programs",
           "tuition": "~€160 semester contribution; non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
-        }
+        },
+        "popularPrograms": [
+          "Medicine",
+          "Natural Sciences",
+          "Theology"
+        ]
       },
       {
         "slug": "kit",
@@ -740,7 +800,12 @@
           "students": "~23,000",
           "language": "German at bachelor's, many English programs at master's",
           "tuition": "Non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
-        }
+        },
+        "popularPrograms": [
+          "Mechanical Engineering",
+          "Computer Science",
+          "Physics"
+        ]
       },
       {
         "slug": "freiburg",
@@ -776,7 +841,12 @@
           "students": "~24,000",
           "language": "Mostly German",
           "tuition": "Non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
-        }
+        },
+        "popularPrograms": [
+          "Medicine",
+          "Natural Sciences",
+          "Forestry Sciences"
+        ]
       },
       {
         "slug": "goettingen",
@@ -812,7 +882,12 @@
           "students": "~30,000",
           "language": "Mostly German, English master's options in the sciences",
           "tuition": "~€390 semester contribution"
-        }
+        },
+        "popularPrograms": [
+          "Natural Sciences",
+          "Agricultural Sciences",
+          "Law"
+        ]
       },
       {
         "slug": "bonn",
@@ -850,7 +925,12 @@
           "students": "~34,000",
           "language": "Mostly German, many English-taught master's programs",
           "tuition": "~€310 semester contribution"
-        }
+        },
+        "popularPrograms": [
+          "Law",
+          "Economics",
+          "Mathematics"
+        ]
       },
       {
         "slug": "koeln",
@@ -886,7 +966,12 @@
           "students": "~48,000 (one of Germany's largest universities)",
           "language": "Mostly German",
           "tuition": "~€300 semester contribution"
-        }
+        },
+        "popularPrograms": [
+          "Law",
+          "Economics",
+          "Medicine"
+        ]
       },
       {
         "slug": "tuberlin",
@@ -925,7 +1010,12 @@
           "students": "~33,000",
           "language": "Many English-taught master's programs in engineering",
           "tuition": "~€310 semester contribution"
-        }
+        },
+        "popularPrograms": [
+          "Mechanical Engineering",
+          "Electrical Engineering",
+          "Computer Science"
+        ]
       },
       {
         "slug": "tudresden",
@@ -964,7 +1054,12 @@
           "students": "~30,000",
           "language": "Mostly German at bachelor's, many English programs at master's",
           "tuition": "~€260 semester contribution (no tuition fees)"
-        }
+        },
+        "popularPrograms": [
+          "Microelectronics",
+          "Mechanical Engineering",
+          "Materials Science"
+        ]
       },
       {
         "slug": "tudarmstadt",
@@ -1002,7 +1097,12 @@
           "students": "~26,000",
           "language": "German at bachelor's; many English programs at master's, especially in computer science and engineering",
           "tuition": "~€300 semester contribution (no tuition fees)"
-        }
+        },
+        "popularPrograms": [
+          "Computer Science",
+          "Cybersecurity",
+          "Electrical Engineering"
+        ]
       },
       {
         "slug": "tubraunschweig",
@@ -1040,7 +1140,12 @@
           "students": "~18,000",
           "language": "Mostly German, select English programs at master's level",
           "tuition": "~€300 semester contribution (no tuition fees)"
-        }
+        },
+        "popularPrograms": [
+          "Aerospace Engineering",
+          "Automotive Engineering",
+          "Biotechnology"
+        ]
       },
       {
         "slug": "hannover",
@@ -1078,7 +1183,12 @@
           "students": "~29,000",
           "language": "Mostly German, English options in engineering at master's level",
           "tuition": "~€340 semester contribution (no tuition fees)"
-        }
+        },
+        "popularPrograms": [
+          "Mechanical Engineering",
+          "Photonics",
+          "Law"
+        ]
       },
       {
         "slug": "stuttgart",
@@ -1116,7 +1226,12 @@
           "students": "~23,000",
           "language": "German at bachelor's, many English programs at master's",
           "tuition": "~€200 semester contribution; non-EU students may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
-        }
+        },
+        "popularPrograms": [
+          "Automotive Engineering",
+          "Aerospace Engineering",
+          "Architecture"
+        ]
       },
       {
         "slug": "konstanz",
@@ -1154,7 +1269,12 @@
           "students": "~11,000",
           "language": "Mostly German, select English programs at master's level",
           "tuition": "~€150 semester contribution; non-EU students may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
-        }
+        },
+        "popularPrograms": [
+          "Political Science",
+          "Chemistry",
+          "Computer Science"
+        ]
       },
       {
         "slug": "htwberlin",
@@ -1190,7 +1310,12 @@
           "students": "~15,000",
           "language": "Mostly German, select English programs in business and engineering",
           "tuition": "~€310 semester contribution (no tuition fees)"
-        }
+        },
+        "popularPrograms": [
+          "Engineering",
+          "Business Administration",
+          "Design"
+        ]
       },
       {
         "slug": "furtwangen",
@@ -1226,7 +1351,896 @@
           "students": "~2,700",
           "language": "Many English-taught master's programs in computer science and engineering",
           "tuition": "~€230 semester contribution; non-EU students may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
-        }
+        },
+        "popularPrograms": [
+          "Computer Science",
+          "Digital Media",
+          "Engineering"
+        ]
+      },
+      {
+        "slug": "hamburg",
+        "name": "Universität Hamburg",
+        "city": "Hamburg",
+        "type": "Universität",
+        "founded": "1919",
+        "description": "Northern Germany's largest university, an Excellence University renowned worldwide for its climate research.",
+        "history": [
+          "Founded in 1919, relatively young for a major German university, Universität Hamburg quickly grew into one of the largest in the country.",
+          "Known for CLICCS (Climate, Climatic Change, and Society), a Cluster of Excellence that is world-leading in climate research.",
+          "Home to diverse faculties spanning law, medicine, natural sciences and humanities, including the Universitätsklinikum Hamburg-Eppendorf (UKE), one of Europe's leading university hospitals."
+        ],
+        "highlights": [
+          "Excellence University since 2019",
+          "World-renowned climate research (CLICCS)",
+          "UKE among Europe's top university hospitals",
+          "Large, diverse faculty range"
+        ],
+        "pros": [
+          "Access to Hamburg's strong job market in media, logistics and trade",
+          "Leading climate and marine research opportunities",
+          "Large international student body"
+        ],
+        "cons": [
+          "High cost of living in Hamburg",
+          "Large student body means big lecture halls in popular subjects",
+          "Competitive admission for medicine"
+        ],
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "hamburg",
+        "quickFacts": {
+          "students": "~44,000",
+          "language": "Mostly German, English options in some master's programs",
+          "tuition": "~€330 semester contribution"
+        },
+        "popularPrograms": [
+          "Medicine (UKE)",
+          "Climate/Earth Sciences",
+          "Law"
+        ]
+      },
+      {
+        "slug": "fuberlin",
+        "name": "Freie Universität Berlin (FU Berlin)",
+        "city": "Berlin",
+        "type": "Universität",
+        "founded": "1948",
+        "description": "Founded as a Cold War-era 'free' alternative to Humboldt University, now a research powerhouse in social sciences and humanities.",
+        "history": [
+          "Founded in 1948 by students and academics who left Humboldt University (then in Soviet-controlled East Berlin) with US support, hence 'Free University.'",
+          "Part of the Berlin University Alliance (with HU Berlin, TU Berlin and Charité), which has held joint Excellence University status since 2019.",
+          "Particularly strong in political science, area studies (Latin America, East Asia) and life sciences."
+        ],
+        "highlights": [
+          "Berlin University Alliance member, Excellence University",
+          "Strong in political/social sciences and area studies",
+          "One of Germany's most internationally networked universities"
+        ],
+        "pros": [
+          "Strong international partnerships and exchange programs",
+          "Excellent social sciences reputation",
+          "Vibrant Berlin campus life in Dahlem"
+        ],
+        "cons": [
+          "Competitive admission in popular subjects",
+          "Large bureaucracy typical of Berlin's public universities",
+          "Berlin's rising cost of living"
+        ],
+        "badges": [
+          "excellence"
+        ],
+        "mapCity": "berlin",
+        "quickFacts": {
+          "students": "~34,000",
+          "language": "Mostly German, growing English master's offering",
+          "tuition": "~€320 semester contribution"
+        },
+        "popularPrograms": [
+          "Political Science",
+          "Area Studies",
+          "Biology/Life Sciences"
+        ]
+      },
+      {
+        "slug": "erlangen",
+        "name": "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)",
+        "city": "Erlangen/Nürnberg",
+        "type": "Universität",
+        "founded": "1743",
+        "description": "A large research university deeply embedded in Bavaria's Siemens and technology industry, strong in engineering and medicine.",
+        "history": [
+          "Founded in 1743 in Erlangen, one of Bavaria's oldest universities; merged with Nuremberg's economics and social sciences institutions in 1961 to form FAU.",
+          "Maintains deep ties with Siemens (headquartered nearby) and the wider Nuremberg-Erlangen tech industry cluster, especially in electrical engineering and medical technology.",
+          "One of Germany's largest universities by enrollment, with strong engineering, medicine and natural sciences faculties."
+        ],
+        "highlights": [
+          "Deep industry ties with Siemens and Bavaria's tech sector",
+          "Strong engineering and medical technology programs",
+          "One of Germany's largest universities"
+        ],
+        "pros": [
+          "Excellent job prospects in electrical engineering/medtech",
+          "Strong industry-sponsored research",
+          "Relatively affordable Bavarian city"
+        ],
+        "cons": [
+          "Split across two cities (Erlangen and Nuremberg) can mean more commuting",
+          "Large student body in popular subjects",
+          "Less international name recognition than Munich institutions"
+        ],
+        "badges": [],
+        "mapCity": "erlangen",
+        "quickFacts": {
+          "students": "~39,000",
+          "language": "Mostly German, English options in engineering/medicine master's",
+          "tuition": "~€120 semester contribution"
+        },
+        "popularPrograms": [
+          "Electrical Engineering",
+          "Medicine",
+          "Medical Technology"
+        ]
+      },
+      {
+        "slug": "bochum",
+        "name": "Ruhr-Universität Bochum (RUB)",
+        "city": "Bochum",
+        "type": "Universität",
+        "founded": "1962",
+        "description": "The first new university founded in West Germany after WWII, strong in IT security and engineering in the heart of the Ruhr region.",
+        "history": [
+          "Founded in 1962 (opened 1965), the first new university founded in West Germany after WWII, built as a large modernist campus.",
+          "Known for its strength in IT security (Horst Görtz Institute for IT Security, one of Europe's largest), engineering, and East Asian studies.",
+          "Part of the Ruhr region's transformation from an industrial coal and steel area into an education and research hub, through the University Alliance Ruhr with TU Dortmund and Uni Duisburg-Essen."
+        ],
+        "highlights": [
+          "One of Europe's largest IT security research institutes (Horst Görtz Institute)",
+          "Part of University Alliance Ruhr",
+          "Strong East Asian studies program"
+        ],
+        "pros": [
+          "Leading IT security research",
+          "Large, modern single campus",
+          "Affordable Ruhr-region cost of living"
+        ],
+        "cons": [
+          "Bochum has less of a classic 'university town' feel than smaller cities",
+          "Large lecture-hall classes in first years",
+          "Industrial urban surroundings"
+        ],
+        "badges": [],
+        "mapCity": "bochum",
+        "quickFacts": {
+          "students": "~43,000",
+          "language": "Mostly German, English options in IT security/engineering",
+          "tuition": "~€310 semester contribution"
+        },
+        "popularPrograms": [
+          "IT Security",
+          "Mechanical Engineering",
+          "East Asian Studies"
+        ]
+      },
+      {
+        "slug": "mainz",
+        "name": "Johannes Gutenberg-Universität Mainz (JGU)",
+        "city": "Mainz",
+        "type": "Universität",
+        "founded": "1477",
+        "description": "Named after the inventor of the printing press, a large university with a strong medical/life sciences profile and ties to BioNTech.",
+        "history": [
+          "Originally founded in 1477, closed in 1823, and refounded in 1946 as one of the first new universities in the French occupation zone after WWII.",
+          "Named after Johannes Gutenberg, inventor of the printing press, who was born in Mainz.",
+          "Home to a strong medical faculty; the university's proximity to BioNTech put Mainz on the global map during COVID-19 vaccine development."
+        ],
+        "highlights": [
+          "Named after printing-press inventor Gutenberg",
+          "Strong medical and life sciences faculty",
+          "Close ties to BioNTech and the Mainz biotech cluster"
+        ],
+        "pros": [
+          "Growing biotech/pharma job market around Mainz",
+          "Broad faculty range across sciences and humanities",
+          "Close to Frankfurt and the Rhine-Main region"
+        ],
+        "cons": [
+          "Less internationally famous than Heidelberg or Munich",
+          "Large student body means big first-year courses",
+          "Competitive medicine admissions"
+        ],
+        "badges": [],
+        "mapCity": "mainz",
+        "quickFacts": {
+          "students": "~31,000",
+          "language": "Mostly German, some English master's",
+          "tuition": "~€300 semester contribution"
+        },
+        "popularPrograms": [
+          "Medicine",
+          "Biology/Life Sciences",
+          "Communication Studies"
+        ]
+      },
+      {
+        "slug": "muenster",
+        "name": "Westfälische Wilhelms-Universität Münster (WWU)",
+        "city": "Münster",
+        "type": "Universität",
+        "founded": "1780",
+        "description": "One of Germany's largest universities, strong in law, business and theology, in one of the country's most bicycle-friendly cities.",
+        "history": [
+          "Founded in 1780, one of Germany's oldest and largest universities today, with a particularly strong law faculty.",
+          "Münster is famously one of Germany's most bicycle-friendly cities, with a huge student population relative to the city's size.",
+          "Strong in law, business, Catholic and Protestant theology, and the natural sciences."
+        ],
+        "highlights": [
+          "One of Germany's largest universities by enrollment",
+          "Particularly strong law faculty",
+          "Münster's famously bike-friendly, student-dominated city life"
+        ],
+        "pros": [
+          "Vibrant, affordable student city with a huge student population",
+          "Strong law/business reputation",
+          "Good public transport and cycling infrastructure"
+        ],
+        "cons": [
+          "Very large student numbers can mean crowded lecture halls",
+          "Münster is a mid-sized city with fewer big-city amenities",
+          "Competitive law admissions"
+        ],
+        "badges": [],
+        "mapCity": "muenster",
+        "quickFacts": {
+          "students": "~43,000",
+          "language": "Mostly German",
+          "tuition": "~€300 semester contribution"
+        },
+        "popularPrograms": [
+          "Law",
+          "Business Administration",
+          "Theology"
+        ]
+      },
+      {
+        "slug": "bremen",
+        "name": "Universität Bremen",
+        "city": "Bremen",
+        "type": "Universität",
+        "founded": "1971",
+        "description": "A young, research-focused university in northern Germany, strong in marine sciences, space technology and materials science.",
+        "history": [
+          "Founded in 1971 as a reform university with an interdisciplinary approach, similar in spirit to Konstanz and Bielefeld.",
+          "Strong in marine sciences (MARUM - Center for Marine Environmental Sciences), space technology (ZARM - Center of Applied Space Technology and Microgravity), and materials science.",
+          "Part of Bremen's aerospace industry cluster (Airbus, OHB), giving it strong ties to space engineering."
+        ],
+        "highlights": [
+          "Strong marine sciences research (MARUM)",
+          "Space technology research (ZARM, drop tower)",
+          "Industry ties to Bremen's aerospace cluster (Airbus, OHB)"
+        ],
+        "pros": [
+          "Niche strength in marine and space sciences",
+          "Close to Bremen's aerospace/logistics industry",
+          "Relatively affordable northern German city"
+        ],
+        "cons": [
+          "Smaller international name recognition outside its specialties",
+          "Bremen is a smaller city than Hamburg",
+          "Limited program range in some fields like medicine"
+        ],
+        "badges": [],
+        "mapCity": "bremen",
+        "quickFacts": {
+          "students": "~19,000",
+          "language": "Mostly German, growing English offering in the sciences",
+          "tuition": "~€330 semester contribution"
+        },
+        "popularPrograms": [
+          "Marine Sciences",
+          "Space/Systems Engineering",
+          "Computer Science"
+        ]
+      },
+      {
+        "slug": "kiel",
+        "name": "Christian-Albrechts-Universität zu Kiel (CAU)",
+        "city": "Kiel",
+        "type": "Universität",
+        "founded": "1665",
+        "description": "On the Baltic Sea coast, one of Germany's northernmost major universities, strong in marine sciences and climate research.",
+        "history": [
+          "Founded in 1665, one of Germany's older universities, located on the Baltic Sea coast in Schleswig-Holstein's capital.",
+          "Home to GEOMAR Helmholtz Centre for Ocean Research, making it one of Europe's leading centers for marine and climate science.",
+          "Also known for its law faculty and nutrition/food science programs."
+        ],
+        "highlights": [
+          "Home to GEOMAR, one of Europe's leading ocean research centers",
+          "Strong marine and climate sciences",
+          "Coastal Baltic Sea campus"
+        ],
+        "pros": [
+          "Leading marine/ocean research opportunities",
+          "Relatively low cost of living for a university city",
+          "Scenic coastal location"
+        ],
+        "cons": [
+          "Kiel is a smaller, quieter city with limited big-city nightlife",
+          "Fewer English-taught bachelor's options",
+          "Northern location means a longer trip from most international hubs"
+        ],
+        "badges": [],
+        "mapCity": "kiel",
+        "quickFacts": {
+          "students": "~24,000",
+          "language": "Mostly German, English options in marine sciences master's",
+          "tuition": "~€250 semester contribution"
+        },
+        "popularPrograms": [
+          "Marine/Ocean Sciences",
+          "Law",
+          "Agricultural & Nutrition Sciences"
+        ]
+      },
+      {
+        "slug": "marburg",
+        "name": "Philipps-Universität Marburg",
+        "city": "Marburg",
+        "type": "Universität",
+        "founded": "1527",
+        "description": "The world's first Protestant university, strong in medicine and pharmacy, in a classic German university town.",
+        "history": [
+          "Founded in 1527 by Landgrave Philip I of Hesse, the world's first university founded as a Protestant institution.",
+          "Marburg is a classic small 'university town' (Universitätsstadt) where the historic old town and student life are deeply intertwined.",
+          "Particularly strong in medicine, pharmacy and the humanities; the Marburg virus, first identified in the city in 1967, takes its name from here."
+        ],
+        "highlights": [
+          "World's first Protestant university (1527)",
+          "Strong medicine and pharmacy faculties",
+          "Classic, historic university-town atmosphere"
+        ],
+        "pros": [
+          "Charming, affordable small university town",
+          "Strong medicine/pharmacy programs",
+          "Close-knit academic community"
+        ],
+        "cons": [
+          "Small city with limited big-city amenities",
+          "Fewer English-taught programs",
+          "More remote location relative to major airports"
+        ],
+        "badges": [],
+        "mapCity": "marburg",
+        "quickFacts": {
+          "students": "~22,000",
+          "language": "Mostly German",
+          "tuition": "~€270 semester contribution"
+        },
+        "popularPrograms": [
+          "Medicine",
+          "Pharmacy",
+          "Humanities"
+        ]
+      },
+      {
+        "slug": "jena",
+        "name": "Friedrich-Schiller-Universität Jena",
+        "city": "Jena",
+        "type": "Universität",
+        "founded": "1558",
+        "description": "A historic university with deep ties to optics and photonics through Carl Zeiss and Schott, in Thuringia's classic university town.",
+        "history": [
+          "Founded in 1558, one of Germany's classic universities, historically associated with figures such as Schiller, Hegel and Fichte, who taught there.",
+          "Jena is the historic home of Carl Zeiss and Schott, giving the university deep ties to optics, photonics and precision engineering.",
+          "Strong physics and optics research continues today through the Abbe School of Photonics and cooperation with Fraunhofer and Leibniz institutes in Jena."
+        ],
+        "highlights": [
+          "Deep historic and industrial ties to optics/photonics (Carl Zeiss, Schott, Abbe School of Photonics)",
+          "Classic university town with a rich intellectual history"
+        ],
+        "pros": [
+          "World-class optics/photonics research opportunities",
+          "Affordable Thuringian cost of living",
+          "Historic, walkable university town"
+        ],
+        "cons": [
+          "Eastern German location means a smaller international student community than western cities",
+          "Limited program range in some professional fields",
+          "Fewer English-taught bachelor's options"
+        ],
+        "badges": [],
+        "mapCity": "jena",
+        "quickFacts": {
+          "students": "~18,000",
+          "language": "Mostly German, English options in photonics/physics master's",
+          "tuition": "~€155 semester contribution (Thuringia has low/no extra fees)"
+        },
+        "popularPrograms": [
+          "Physics/Optics & Photonics",
+          "Chemistry",
+          "Biology"
+        ]
+      },
+      {
+        "slug": "thkoeln",
+        "name": "TH Köln (Technische Hochschule Köln)",
+        "city": "Köln",
+        "type": "Fachhochschule",
+        "founded": "1971",
+        "description": "Germany's largest university of applied sciences by enrollment, with a broad program range across engineering, social work and media.",
+        "history": [
+          "Founded in 1971 through the merger of several older technical and commercial schools in Cologne, and renamed Technische Hochschule Köln in 2015 to reflect its scale and research profile.",
+          "Today it is Germany's largest university of applied sciences by student enrollment, spread across multiple campuses in Cologne.",
+          "Offers an unusually broad range for a Hochschule: engineering, social work, media/communication, and applied natural sciences."
+        ],
+        "highlights": [
+          "Germany's largest Hochschule by enrollment",
+          "Very broad program range across engineering, social work and media",
+          "Multiple modern campuses across Cologne"
+        ],
+        "pros": [
+          "Strong practice-oriented education with mandatory internships",
+          "Wide program choice for a Hochschule",
+          "Access to Cologne's large job market"
+        ],
+        "cons": [
+          "Large student body can mean less individual attention in popular programs",
+          "Multiple campuses can mean more commuting",
+          "Less research-university prestige than a Universität"
+        ],
+        "badges": [],
+        "mapCity": "koeln",
+        "quickFacts": {
+          "students": "~27,000",
+          "language": "Mostly German, select English programs in engineering/business",
+          "tuition": "~€290 semester contribution"
+        },
+        "popularPrograms": [
+          "Mechanical Engineering",
+          "Social Work",
+          "Media Technology"
+        ]
+      },
+      {
+        "slug": "hsmannheim",
+        "name": "Hochschule Mannheim",
+        "city": "Mannheim",
+        "type": "Fachhochschule",
+        "founded": "1963",
+        "description": "A well-established university of applied sciences in Mannheim's industrial district, offering practice-oriented engineering and IT education.",
+        "history": [
+          "Traces its roots to an engineering school founded in 1897, gaining full Hochschule status in 1963/1971.",
+          "Located in Mannheim's industrial Rhine-Neckar region, with close ties to major employers like BASF, Daimler and John Deere.",
+          "Focuses on engineering, information technology and biotechnology with a strongly practice-oriented curriculum."
+        ],
+        "highlights": [
+          "Close industry ties to BASF, Daimler and the Rhine-Neckar industrial region",
+          "Practice-oriented engineering and IT programs",
+          "Compact, modern campus"
+        ],
+        "pros": [
+          "Strong regional industry connections for internships and jobs",
+          "Practical, hands-on curriculum",
+          "Shares Mannheim with Universität Mannheim for a larger student community"
+        ],
+        "cons": [
+          "Smaller international profile than a research university",
+          "Limited humanities/social science offerings",
+          "Competitive spots in popular engineering programs"
+        ],
+        "badges": [],
+        "mapCity": "mannheim",
+        "quickFacts": {
+          "students": "~5,500",
+          "language": "Mostly German",
+          "tuition": "~€200 semester contribution"
+        },
+        "popularPrograms": [
+          "Mechanical Engineering",
+          "Information Technology",
+          "Biotechnology"
+        ]
+      },
+      {
+        "slug": "hskarlsruhe",
+        "name": "Hochschule Karlsruhe (HKA)",
+        "city": "Karlsruhe",
+        "type": "Fachhochschule",
+        "founded": "1878",
+        "description": "One of Germany's oldest universities of applied sciences, strong in engineering and architecture, sharing Karlsruhe with KIT.",
+        "history": [
+          "Founded in 1878 as a technical trade school, becoming a full Hochschule für Technik in 1971 — one of Germany's oldest universities of applied sciences.",
+          "Shares Karlsruhe with KIT, giving students access to a large combined academic and tech-industry ecosystem (the 'TechnologieRegion Karlsruhe').",
+          "Strong faculties in mechanical/electrical engineering, architecture, and information technology."
+        ],
+        "highlights": [
+          "One of Germany's oldest Hochschulen (founded 1878)",
+          "Shares Karlsruhe's tech ecosystem with KIT",
+          "Strong architecture and engineering faculties"
+        ],
+        "pros": [
+          "Long-established, well-regarded practice-oriented engineering education",
+          "Benefits from Karlsruhe's dense tech/research ecosystem",
+          "Relatively affordable student city"
+        ],
+        "cons": [
+          "Non-EU students may face Baden-Württemberg's additional tuition fee",
+          "Less internationally known than KIT",
+          "Large engineering cohorts in early semesters"
+        ],
+        "badges": [],
+        "mapCity": "karlsruhe",
+        "quickFacts": {
+          "students": "~8,000",
+          "language": "Mostly German",
+          "tuition": "~€155 semester contribution; non-EU students may face an additional ~€1,500/semester fee (confirm with our advisors)"
+        },
+        "popularPrograms": [
+          "Mechanical Engineering",
+          "Architecture",
+          "Information Technology"
+        ]
+      },
+      {
+        "slug": "htwgkonstanz",
+        "name": "HTWG Konstanz (Hochschule Konstanz Technik, Wirtschaft und Gestaltung)",
+        "city": "Konstanz",
+        "type": "Fachhochschule",
+        "founded": "1906",
+        "description": "A practice-oriented Hochschule on Lake Constance combining engineering, business and design — distinct from the research-focused Universität Konstanz.",
+        "history": [
+          "Traces its roots to 1906, becoming a full Hochschule in 1971; distinct from the nearby, research-focused Universität Konstanz.",
+          "Combines engineering, business, and design (Gestaltung) faculties in one institution — an unusual combination among German Hochschulen.",
+          "Its Lake Constance location and cross-border programs give it strong ties to Switzerland and Austria's Bodensee region economy."
+        ],
+        "highlights": [
+          "Combines engineering, business and design in one Hochschule",
+          "Scenic Lake Constance campus",
+          "Strong cross-border ties to Switzerland and Austria"
+        ],
+        "pros": [
+          "Unusual, practice-oriented mix of engineering/business/design",
+          "Beautiful, high quality-of-life location on Lake Constance",
+          "Strong regional and cross-border job market"
+        ],
+        "cons": [
+          "Non-EU students may face Baden-Württemberg's additional tuition fee",
+          "Small city with limited big-city amenities",
+          "Distinct from (and sometimes confused with) the research-focused Universität Konstanz"
+        ],
+        "badges": [],
+        "mapCity": "konstanz",
+        "quickFacts": {
+          "students": "~4,700",
+          "language": "Mostly German, some English design/business programs",
+          "tuition": "~€154 semester contribution; non-EU students may face an additional ~€1,500/semester fee (confirm with our advisors)"
+        },
+        "popularPrograms": [
+          "Mechanical Engineering",
+          "Business Administration",
+          "Communication Design"
+        ]
+      },
+      {
+        "slug": "thingolstadt",
+        "name": "Technische Hochschule Ingolstadt (THI)",
+        "city": "Ingolstadt",
+        "type": "Fachhochschule",
+        "founded": "1994",
+        "description": "A young, fast-growing Hochschule in Audi's home city, specializing in automotive engineering and artificial intelligence.",
+        "history": [
+          "Founded in 1994, one of Germany's younger Hochschulen, built specifically to serve Ingolstadt's booming automotive industry.",
+          "Home to Audi's global headquarters, giving THI exceptionally close ties to automotive engineering, autonomous driving, and AI research.",
+          "Has grown rapidly, launching one of the first dedicated Artificial Intelligence bachelor's programs among Germany's applied-science universities."
+        ],
+        "highlights": [
+          "Deep ties to Audi and the automotive/AI industry in Ingolstadt",
+          "One of the first dedicated AI bachelor's programs in Germany",
+          "Young, fast-growing, modern campus"
+        ],
+        "pros": [
+          "Excellent automotive engineering and AI job prospects via Audi and suppliers",
+          "Modern facilities and curriculum",
+          "Smaller, closely-knit student community"
+        ],
+        "cons": [
+          "Younger institution with less historical prestige",
+          "Ingolstadt is a smaller city with fewer big-city amenities",
+          "Limited program range outside engineering/business/AI"
+        ],
+        "badges": [],
+        "mapCity": "ingolstadt",
+        "quickFacts": {
+          "students": "~7,000",
+          "language": "Mostly German, several English-taught master's in AI/engineering",
+          "tuition": "~€130 semester contribution"
+        },
+        "popularPrograms": [
+          "Automotive Engineering",
+          "Artificial Intelligence",
+          "Business Informatics"
+        ]
+      },
+      {
+        "slug": "hbrs",
+        "name": "Hochschule Bonn-Rhein-Sieg (H-BRS)",
+        "city": "Sankt Augustin (near Bonn)",
+        "type": "Fachhochschule",
+        "founded": "1995",
+        "description": "A modern, internationally oriented Hochschule near Bonn, strong in computer science and engineering, sharing a campus with Fraunhofer IAIS.",
+        "history": [
+          "Founded in 1995, a relatively young Hochschule based mainly in Sankt Augustin near Bonn, with additional campuses in Rheinbach and Hennef.",
+          "Strong emphasis on computer science and engineering, with close cooperation with the Fraunhofer Institute for Intelligent Analysis and Information Systems (IAIS), located on the same campus.",
+          "Known for a strongly international student body and a wide range of English-taught master's programs."
+        ],
+        "highlights": [
+          "Shares a campus with the Fraunhofer IAIS research institute",
+          "Strong computer science and engineering programs",
+          "Unusually international, English-friendly master's offering"
+        ],
+        "pros": [
+          "Close research cooperation with Fraunhofer IAIS",
+          "Many English-taught master's programs, easing entry for international students",
+          "Near Bonn and Cologne's job markets"
+        ],
+        "cons": [
+          "Younger, less internationally known than older universities",
+          "Spread across multiple smaller campuses",
+          "Limited humanities/social science range"
+        ],
+        "badges": [],
+        "mapCity": "sanktaugustin",
+        "quickFacts": {
+          "students": "~9,000",
+          "language": "Mix of German and English, several fully English master's",
+          "tuition": "~€290 semester contribution"
+        },
+        "popularPrograms": [
+          "Computer Science",
+          "Electrical Engineering",
+          "Business Administration"
+        ]
+      },
+      {
+        "slug": "hda",
+        "name": "Hochschule Darmstadt (h_da)",
+        "city": "Darmstadt",
+        "type": "Fachhochschule",
+        "founded": "1971",
+        "description": "Hesse's largest university of applied sciences, sharing Darmstadt with TU Darmstadt and strong in IT, media and engineering.",
+        "history": [
+          "Traces its roots to a technical school founded in 1876, gaining Hochschule status in 1971 as Hesse's largest university of applied sciences.",
+          "Shares Darmstadt with TU Darmstadt, forming one of Germany's densest concentrations of engineering and computer science education in a single city.",
+          "Particularly known for its media and information technology programs, including the Mediencampus in Dieburg."
+        ],
+        "highlights": [
+          "Hesse's largest Hochschule",
+          "Shares Darmstadt's tech ecosystem with TU Darmstadt",
+          "Strong media and information technology programs"
+        ],
+        "pros": [
+          "Practice-oriented engineering/IT/media education with a strong regional job market",
+          "Benefits from Darmstadt's dense tech ecosystem",
+          "Relatively affordable compared to Frankfurt"
+        ],
+        "cons": [
+          "Less international name recognition than TU Darmstadt in the same city",
+          "Large cohorts in popular IT programs",
+          "Limited natural sciences/humanities range"
+        ],
+        "badges": [],
+        "mapCity": "darmstadt",
+        "quickFacts": {
+          "students": "~14,000",
+          "language": "Mostly German, some English in media/IT master's",
+          "tuition": "~€290 semester contribution"
+        },
+        "popularPrograms": [
+          "Computer Science",
+          "Media/Communication",
+          "Electrical Engineering"
+        ]
+      },
+      {
+        "slug": "reutlingen",
+        "name": "Hochschule Reutlingen",
+        "city": "Reutlingen",
+        "type": "Fachhochschule",
+        "founded": "1855",
+        "description": "A historic textile-engineering school turned internationally oriented Hochschule, known for its ESB Business School.",
+        "history": [
+          "Founded in 1855 as a textile engineering school, reflecting the region's historic textile industry; gained Hochschule status in 1971.",
+          "Today one of Germany's most internationally oriented Hochschulen, with the ESB Business School attracting students from dozens of countries.",
+          "Maintains strong engineering programs alongside its renowned international business faculty, near Stuttgart's automotive industry."
+        ],
+        "highlights": [
+          "Historic textile-engineering roots, now a strong international business and engineering Hochschule",
+          "ESB Business School has an unusually international student body",
+          "Near Stuttgart's automotive industry cluster"
+        ],
+        "pros": [
+          "Very international student community and English-taught programs at ESB Business School",
+          "Strong industry ties near Stuttgart",
+          "Practice-oriented curriculum with mandatory internships"
+        ],
+        "cons": [
+          "Non-EU students may face Baden-Württemberg's additional tuition fee",
+          "Smaller city with limited big-city amenities",
+          "Business programs can be competitive to enter"
+        ],
+        "badges": [],
+        "mapCity": "reutlingen",
+        "quickFacts": {
+          "students": "~6,000",
+          "language": "Mix of German and English, ESB Business School largely English-taught",
+          "tuition": "~€135 semester contribution; non-EU students may face an additional ~€1,500/semester fee (confirm with our advisors)"
+        },
+        "popularPrograms": [
+          "International Business (ESB)",
+          "Textile Engineering",
+          "Mechatronics"
+        ]
+      },
+      {
+        "slug": "fhmuenster",
+        "name": "FH Münster (Münster University of Applied Sciences)",
+        "city": "Münster",
+        "type": "Fachhochschule",
+        "founded": "1971",
+        "description": "A large Hochschule sharing bike-friendly Münster with WWU, offering a broad program range across engineering, design and social work.",
+        "history": [
+          "Founded in 1971, today one of Germany's larger universities of applied sciences, sharing the bicycle-friendly city of Münster with WWU Münster.",
+          "Offers an unusually broad range for a Hochschule, spanning engineering, design, social work, and business.",
+          "Known for practice-oriented teaching with strong regional employer partnerships across North Rhine-Westphalia."
+        ],
+        "highlights": [
+          "One of Germany's larger Hochschulen",
+          "Broad program range across engineering, design, social work and business",
+          "Shares Münster's bike-friendly student city with WWU"
+        ],
+        "pros": [
+          "Wide program choice with strong practical orientation",
+          "Affordable, student-friendly city",
+          "Good regional job market across NRW"
+        ],
+        "cons": [
+          "Less research-focused than WWU Münster in the same city",
+          "Large cohorts in popular programs",
+          "Limited postgraduate research opportunities"
+        ],
+        "badges": [],
+        "mapCity": "muenster",
+        "quickFacts": {
+          "students": "~14,000",
+          "language": "Mostly German",
+          "tuition": "~€290 semester contribution"
+        },
+        "popularPrograms": [
+          "Mechanical Engineering",
+          "Design",
+          "Social Work"
+        ]
+      },
+      {
+        "slug": "osnabrueck",
+        "name": "Hochschule Osnabrück",
+        "city": "Osnabrück",
+        "type": "Fachhochschule",
+        "founded": "1971",
+        "description": "A practice-oriented Hochschule in northwest Germany, distinctively strong in agricultural sciences alongside engineering and business.",
+        "history": [
+          "Founded in 1971, serving Lower Saxony's Osnabrück region with a practice-oriented curriculum across engineering, agriculture and business.",
+          "Distinctively strong in agricultural sciences, reflecting the surrounding region's farming economy.",
+          "Also maintains solid engineering and social work faculties, with close regional employer partnerships."
+        ],
+        "highlights": [
+          "Distinctively strong agricultural sciences faculty",
+          "Practice-oriented engineering and business programs",
+          "Close regional employer partnerships in Lower Saxony"
+        ],
+        "pros": [
+          "Niche strength in agricultural sciences alongside solid engineering/business",
+          "Affordable, quieter northern German city",
+          "Strong regional job placement"
+        ],
+        "cons": [
+          "Smaller international profile than larger Hochschulen",
+          "Limited big-city amenities in Osnabrück",
+          "Fewer English-taught programs"
+        ],
+        "badges": [],
+        "mapCity": "osnabrueck",
+        "quickFacts": {
+          "students": "~13,000",
+          "language": "Mostly German",
+          "tuition": "~€300 semester contribution"
+        },
+        "popularPrograms": [
+          "Agricultural Sciences",
+          "Mechanical Engineering",
+          "Business Administration"
+        ]
+      },
+      {
+        "slug": "bht",
+        "name": "Berliner Hochschule für Technik (BHT)",
+        "city": "Berlin",
+        "type": "Fachhochschule",
+        "founded": "1971",
+        "description": "One of Berlin's largest technical Hochschulen, offering practice-oriented engineering and computer science education.",
+        "history": [
+          "Founded in 1971 as Technische Fachhochschule Berlin, later renamed Beuth Hochschule für Technik, and again to Berliner Hochschule für Technik (BHT) in 2021.",
+          "One of Berlin's largest universities of applied sciences, with a strong focus on engineering, computer science and mathematics.",
+          "Benefits from Berlin's large tech and startup ecosystem for internships and graduate employment."
+        ],
+        "highlights": [
+          "One of Berlin's largest technical Hochschulen",
+          "Strong engineering, computer science and mathematics faculties",
+          "Direct access to Berlin's large startup/tech job market"
+        ],
+        "pros": [
+          "Practice-oriented technical education with strong Berlin job market access",
+          "Large, well-equipped labs and workshops",
+          "Generally lower application competition than Berlin's universities"
+        ],
+        "cons": [
+          "Berlin's rising cost of living",
+          "Large cohorts in popular engineering/CS programs",
+          "Less research-university prestige than TU Berlin in the same city"
+        ],
+        "badges": [],
+        "mapCity": "berlin",
+        "quickFacts": {
+          "students": "~12,000",
+          "language": "Mostly German, some English in computer science master's",
+          "tuition": "~€310 semester contribution"
+        },
+        "popularPrograms": [
+          "Computer Science",
+          "Electrical Engineering",
+          "Mathematics"
+        ]
+      },
+      {
+        "slug": "jade",
+        "name": "Jade Hochschule",
+        "city": "Wilhelmshaven",
+        "type": "Fachhochschule",
+        "founded": "2009",
+        "description": "A small Hochschule on the North Sea coast, specializing in maritime engineering and logistics.",
+        "history": [
+          "Formed in 2009 through the merger of Fachhochschulen in Wilhelmshaven, Oldenburg and Elsfleth, each with roots in the 1970s.",
+          "Its Wilhelmshaven and Elsfleth campuses specialize in maritime engineering, nautical science and logistics, reflecting the North Sea coastal region's shipping industry.",
+          "A smaller, tightly-knit Hochschule known for hands-on maritime and engineering training."
+        ],
+        "highlights": [
+          "Specializes in maritime engineering, nautical science and logistics",
+          "Coastal North Sea campuses in Wilhelmshaven and Elsfleth",
+          "Small, closely-knit academic community"
+        ],
+        "pros": [
+          "Rare, focused maritime/nautical engineering specialization",
+          "Very low cost of living on the North Sea coast",
+          "Hands-on, small-class teaching style"
+        ],
+        "cons": [
+          "Very limited program range outside maritime/engineering/logistics",
+          "Remote coastal location far from major cities",
+          "Smaller international student community"
+        ],
+        "badges": [],
+        "mapCity": "wilhelmshaven",
+        "quickFacts": {
+          "students": "~5,700",
+          "language": "Mostly German",
+          "tuition": "~€290 semester contribution"
+        },
+        "popularPrograms": [
+          "Maritime/Nautical Engineering",
+          "Logistics",
+          "Mechanical Engineering"
+        ]
       }
     ],
     "cta": {
@@ -1258,7 +2272,7 @@
       "title": "Our Story",
       "paragraphs": [
         "Studiva was founded in Istanbul in 2026 with the goal of helping students reach Europe's leading universities through a transparent, trustworthy process.",
-        "We're a team with up-to-date knowledge of 25+ universities across Germany — from Excellence Universities to TU9 technical institutes, Hochschulen to Dual Studium programs — closely following each institution's application system, visa requirements, and academic calendar.",
+        "We're a team with up-to-date knowledge of 45+ universities across Germany — from Excellence Universities to TU9 technical institutes, Hochschulen to Dual Studium programs — closely following each institution's application system, visa requirements, and academic calendar.",
         "Every student's academic background, budget, and goals are different — that's why we help you choose the right country and university instead of forcing you into one template. As a newly founded company, we offer a concrete commitment instead of inflated numbers: an admission guarantee when you complete our process in full."
       ]
     },
@@ -1301,7 +2315,7 @@
         "label": "Admission Guarantee"
       },
       {
-        "value": "26+",
+        "value": "48+",
         "label": "Universities"
       }
     ]
