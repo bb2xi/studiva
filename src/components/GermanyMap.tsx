@@ -90,7 +90,7 @@ export default function GermanyMap({
       center: [51.1657, 10.4515],
       zoom: 6,
       minZoom: 6,
-      maxZoom: 17,
+      maxZoom: 13,
       scrollWheelZoom: false,
       maxBounds: bounds.pad(0.15),
       maxBoundsViscosity: 1,
@@ -102,7 +102,7 @@ export default function GermanyMap({
       "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
       {
         attribution: "Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics",
-        maxZoom: 17,
+        maxZoom: 13,
       }
     ).addTo(map);
 
@@ -121,8 +121,11 @@ export default function GermanyMap({
       L.polygon(part, {
         fill: false,
         color: "#0068ff",
-        weight: 1.5,
+        weight: 1.75,
         opacity: 0.85,
+        lineJoin: "round",
+        lineCap: "round",
+        smoothFactor: 1,
         interactive: false,
       }).addTo(map);
     }
