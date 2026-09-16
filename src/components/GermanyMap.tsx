@@ -52,12 +52,16 @@ function popupHtml(item: UniversityItem, locale: string) {
   </div>`;
 }
 
-// A generous rectangle far outside Germany's bbox, used as the mask's outer ring.
+// The mask's outer ring, padded just past the map's maxBounds (bbox +1.2/+1.8).
+// Kept close to Germany rather than spanning the whole world: at high zoom, a
+// polygon ring with vertices millions of pixels from the viewport can exceed
+// the coordinate precision browsers use for SVG path fills, producing random
+// unmasked gaps near complex borders (observed at the Berchtesgaden panhandle).
 const WORLD_RING: [number, number][] = [
-  [70, -40],
-  [70, 60],
-  [30, 60],
-  [30, -40],
+  [GERMANY_BBOX.maxLat + 4, GERMANY_BBOX.minLng - 4],
+  [GERMANY_BBOX.maxLat + 4, GERMANY_BBOX.maxLng + 4],
+  [GERMANY_BBOX.minLat - 4, GERMANY_BBOX.maxLng + 4],
+  [GERMANY_BBOX.minLat - 4, GERMANY_BBOX.minLng - 4],
 ];
 
 export default function GermanyMap({
@@ -107,28 +111,78 @@ export default function GermanyMap({
     ).addTo(map);
 
     // Mask everything outside Germany's real border with the page background,
-    // so only Germany's own territory shows satellite imagery.
-    const holes = GERMANY_BORDER_PARTS.flatMap((part) => part);
-    L.polygon([WORLD_RING, ...holes], {
-      stroke: false,
-      fillColor: bgColor,
-      fillOpacity: 1,
-      interactive: false,
-    }).addTo(map);
+    // plus a crisp outline on top, drawn on a plain <canvas> we manage
+    // ourselves rather than as a Leaflet vector layer. Germany's border here
+    // is 77 parts / tens of thousands of points, and Leaflet's own Path
+    // renderers (both SVG and Canvas) reliably dropped fill in parts of that
+    // shape at high zoom — e.g. leaving a chunk of Austria unmasked at the
+    // Berchtesgaden Alpine panhandle, reproducible regardless of data
+    // resolution or renderer choice. Drawing directly with the 2D canvas API
+    // using container-relative points (recomputed fresh every redraw, so
+    // there's no persistent internal clip cache to go stale) sidesteps
+    // whatever internal clipping/path-building step was misbehaving.
+    const maskCanvas = document.createElement("canvas");
+    maskCanvas.style.position = "absolute";
+    maskCanvas.style.top = "0";
+    maskCanvas.style.left = "0";
+    // Leaflet's own ".leaflet-map-pane" (holding the tile layer) sits at
+    // z-index 400, so this needs to clear that or the tiles paint over it.
+    maskCanvas.style.zIndex = "450";
+    maskCanvas.style.pointerEvents = "none";
+    map.getContainer().appendChild(maskCanvas);
+    const ctx = maskCanvas.getContext("2d")!;
 
-    // A crisp coastline/border outline on top, for a proper cartographic look.
-    for (const part of GERMANY_BORDER_PARTS) {
-      L.polygon(part, {
-        fill: false,
-        color: "#0068ff",
-        weight: 1.75,
-        opacity: 0.85,
-        lineJoin: "round",
-        lineCap: "round",
-        smoothFactor: 1,
-        interactive: false,
-      }).addTo(map);
-    }
+    const tracePath = (ring: [number, number][]) => {
+      ring.forEach(([lat, lng], i) => {
+        const pt = map.latLngToContainerPoint([lat, lng]);
+        if (i === 0) ctx.moveTo(pt.x, pt.y);
+        else ctx.lineTo(pt.x, pt.y);
+      });
+      ctx.closePath();
+    };
+
+    const redrawMask = () => {
+      const size = map.getSize();
+      const dpr = window.devicePixelRatio || 1;
+      const w = Math.round(size.x * dpr);
+      const h = Math.round(size.y * dpr);
+      if (maskCanvas.width !== w || maskCanvas.height !== h) {
+        maskCanvas.width = w;
+        maskCanvas.height = h;
+        maskCanvas.style.width = `${size.x}px`;
+        maskCanvas.style.height = `${size.y}px`;
+      }
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, size.x, size.y);
+
+      ctx.beginPath();
+      tracePath(WORLD_RING);
+      for (const part of GERMANY_BORDER_PARTS) for (const ring of part) tracePath(ring);
+      ctx.fillStyle = bgColor;
+      ctx.fill("evenodd");
+
+      ctx.beginPath();
+      for (const part of GERMANY_BORDER_PARTS) for (const ring of part) tracePath(ring);
+      ctx.strokeStyle = "#0068ff";
+      ctx.lineWidth = 1.75;
+      ctx.lineJoin = "round";
+      ctx.lineCap = "round";
+      ctx.globalAlpha = 0.85;
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+    };
+
+    let redrawFrame: number | null = null;
+    const scheduleRedraw = () => {
+      if (redrawFrame !== null) return;
+      redrawFrame = requestAnimationFrame(() => {
+        redrawFrame = null;
+        redrawMask();
+      });
+    };
+    redrawMask();
+    map.on("move zoom resize", scheduleRedraw);
+    map.on("moveend zoomend", redrawMask);
 
     const cluster = L.markerClusterGroup({
       maxClusterRadius: 45,
@@ -154,7 +208,9 @@ export default function GermanyMap({
     map.once("dragstart", activateScrollZoom);
 
     return () => {
+      if (redrawFrame !== null) cancelAnimationFrame(redrawFrame);
       map.remove();
+      maskCanvas.remove();
       mapRef.current = null;
       clusterRef.current = null;
     };
