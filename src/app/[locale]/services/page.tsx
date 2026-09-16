@@ -45,8 +45,8 @@ export default async function ServicesPage({
               const Icon = serviceIcons[service.icon] ?? Check;
               return (
                 <Reveal key={service.title} delay={(index % 2) * 80}>
-                  <div className="h-full rounded-2xl border border-border bg-surface p-8 shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light text-brand">
+                  <div className="h-full rounded-2xl border border-border bg-surface p-8 shadow-soft transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-elevated">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light text-brand ring-1 ring-inset ring-brand/10">
                       <Icon size={24} />
                     </span>
                     <h3 className="mt-5 text-xl font-semibold text-foreground">
@@ -74,15 +74,15 @@ export default async function ServicesPage({
         </Container>
       </section>
 
-      <section className="bg-brand">
+      <section className="bg-grain bg-gradient-to-br from-brand to-brand-dark">
         <Container className="flex flex-col items-center gap-6 py-16 text-center">
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">
+          <h2 className="font-display text-3xl font-medium text-white sm:text-4xl">
             {t("cta.title")}
           </h2>
           <p className="max-w-xl text-blue-100">{t("cta.subtitle")}</p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand transition-all duration-200 ease-out hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"
+            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand shadow-soft transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-elevated focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"
           >
             {t("cta.button")}
             <ArrowRight size={16} />

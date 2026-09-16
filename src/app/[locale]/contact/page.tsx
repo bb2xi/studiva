@@ -42,7 +42,7 @@ export default async function ContactPage({
         <Container>
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-5">
             <Reveal className="lg:col-span-2">
-              <h3 className="text-lg font-semibold text-foreground">
+              <h3 className="font-display text-lg font-medium text-foreground">
                 {t("info.title")}
               </h3>
               <div className="mt-6 space-y-6">
@@ -79,7 +79,7 @@ export default async function ContactPage({
                   href={`https://wa.me/${WHATSAPP_NUMBER}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 ease-out hover:scale-105 hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
+                  className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-brand-dark hover:shadow-glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
                 >
                   <MessageCircle size={16} />
                   {t("scheduling.button")}

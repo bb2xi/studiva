@@ -181,7 +181,7 @@ export default function GermanyMap({
       <div className="relative mt-6">
         <div
           ref={containerRef}
-          className="h-[480px] w-full overflow-hidden rounded-2xl border border-border shadow-sm sm:h-[560px] lg:h-[640px]"
+          className="h-[480px] w-full overflow-hidden rounded-2xl border border-border shadow-soft sm:h-[560px] lg:h-[640px]"
         />
         {!scrollZoomActive && (
           <div className="pointer-events-none absolute bottom-3 left-1/2 z-[400] -translate-x-1/2 rounded-full bg-slate-950/80 px-3.5 py-1.5 text-xs font-medium text-white shadow-sm backdrop-blur">

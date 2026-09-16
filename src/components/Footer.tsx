@@ -28,7 +28,7 @@ export default function Footer() {
           <div className="flex items-center gap-2 font-bold text-white">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logo-icon.png" alt="" className="h-9 w-9" />
-            <span className="text-lg tracking-tight">Studiva</span>
+            <span className="font-display text-xl font-medium tracking-tight">Studiva</span>
           </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
             {t("description")}

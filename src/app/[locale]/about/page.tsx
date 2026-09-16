@@ -41,7 +41,7 @@ export default async function AboutPage({
         <Container>
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
             <Reveal className="lg:col-span-2">
-              <h2 className="text-2xl font-bold text-foreground">
+              <h2 className="font-display text-2xl font-medium text-foreground">
                 {t("story.title")}
               </h2>
               <div className="mt-5 space-y-4">
@@ -89,8 +89,8 @@ export default async function AboutPage({
               const Icon = valueIcons[index % valueIcons.length];
               return (
                 <Reveal key={value.title} delay={index * 70}>
-                  <div className="h-full rounded-2xl border border-border bg-surface p-6 text-center shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
-                    <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light text-brand">
+                  <div className="h-full rounded-2xl border border-border bg-surface p-6 text-center shadow-soft transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-elevated">
+                    <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light text-brand ring-1 ring-inset ring-brand/10">
                       <Icon size={22} />
                     </span>
                     <h3 className="mt-4 text-base font-semibold text-foreground">

@@ -18,7 +18,7 @@ export default function UniversityGallery({
 
   return (
     <div>
-      <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-background-secondary shadow-sm">
+      <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-background-secondary shadow-soft">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           key={current.url}

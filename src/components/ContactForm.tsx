@@ -18,7 +18,7 @@ export default function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="flex flex-col items-center justify-center rounded-2xl border border-border bg-surface p-10 text-center shadow-sm">
+      <div className="flex flex-col items-center justify-center rounded-2xl border border-border bg-surface p-10 text-center shadow-soft">
         <CheckCircle2 size={40} className="text-brand" />
         <p className="mt-4 text-base font-medium text-foreground">
           {t("submit")} ✓
@@ -30,9 +30,9 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="rounded-2xl border border-border bg-surface p-8 shadow-sm"
+      className="rounded-2xl border border-border bg-surface p-8 shadow-soft"
     >
-      <h3 className="text-lg font-semibold text-foreground">{t("title")}</h3>
+      <h3 className="font-display text-lg font-medium text-foreground">{t("title")}</h3>
 
       <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div>
@@ -81,7 +81,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className="mt-6 w-full rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition-all duration-200 ease-out hover:scale-[1.02] hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2 sm:w-auto"
+        className="mt-6 w-full rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-soft transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-brand-dark hover:shadow-glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2 sm:w-auto"
       >
         {t("submit")}
       </button>

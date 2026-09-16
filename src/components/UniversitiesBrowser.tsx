@@ -30,7 +30,7 @@ export default function UniversitiesBrowser({
           <Reveal key={uni.slug} delay={(index % 6) * 60}>
             <Link
               href={`/universities/${uni.slug}`}
-              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg"
+              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-soft transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-elevated"
             >
               {logo ? (
                 <div className="relative flex aspect-[16/10] w-full items-center justify-center overflow-hidden bg-background-secondary p-8">

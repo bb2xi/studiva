@@ -52,14 +52,14 @@ export default async function HomePage({
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-slate-950">
+      <section className="bg-grain relative overflow-hidden bg-slate-950">
         <HeroBackground />
         <Container className="relative py-24 sm:py-28">
           <div className="mx-auto max-w-3xl text-center">
             <span className="inline-flex items-center rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm font-medium text-blue-200 backdrop-blur-sm">
               {home("hero.badge")}
             </span>
-            <h1 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 font-display text-4xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
               {home("hero.title")}
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-300">
@@ -68,14 +68,14 @@ export default async function HomePage({
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition-all duration-200 ease-out hover:scale-105 hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+                className="inline-flex items-center gap-2 rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-glow transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
               >
                 {home("hero.ctaPrimary")}
                 <ArrowRight size={16} />
               </Link>
               <Link
                 href="/programs"
-                className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-all duration-200 ease-out hover:scale-105 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+                className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition-all duration-200 ease-out hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
               >
                 {home("hero.ctaSecondary")}
               </Link>
@@ -114,8 +114,8 @@ export default async function HomePage({
               const Icon = serviceIcons[service.icon] ?? Check;
               return (
                 <Reveal key={service.title} delay={index * 60}>
-                  <div className="h-full rounded-2xl border border-border bg-surface p-6 shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:border-border-strong hover:shadow-lg">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-light text-brand">
+                  <div className="h-full rounded-2xl border border-border bg-surface p-6 shadow-soft transition-all duration-300 ease-out hover:-translate-y-1 hover:border-border-strong hover:shadow-elevated">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-light text-brand ring-1 ring-inset ring-brand/10">
                       <Icon size={22} />
                     </span>
                     <h3 className="mt-4 text-lg font-semibold text-foreground">
@@ -157,9 +157,9 @@ export default async function HomePage({
                 return (
                   <div
                     key={program.name}
-                    className="flex items-center gap-3 rounded-full border border-border-strong bg-surface px-5 py-3 shadow-sm transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md"
+                    className="flex items-center gap-3 rounded-full border border-border-strong bg-surface px-5 py-3 shadow-soft transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-elevated"
                   >
-                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand-light text-brand">
+                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand-light text-brand ring-1 ring-inset ring-brand/10">
                       <Icon size={15} />
                     </span>
                     <span className="text-sm font-medium text-foreground-secondary">
@@ -199,7 +199,7 @@ export default async function HomePage({
                 <Reveal key={uni.name} delay={index * 60}>
                   <Link
                     href={`/universities/${uni.slug}`}
-                    className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg"
+                    className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-soft transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-elevated"
                   >
                     {logo ? (
                       <div className="relative flex aspect-[16/10] w-full items-center justify-center overflow-hidden bg-background-secondary p-8">
@@ -307,7 +307,7 @@ export default async function HomePage({
             {steps.map((step, index) => (
               <Reveal key={step.title} delay={index * 80}>
                 <div className="relative">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-brand text-lg font-bold text-white">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-brand to-brand-dark font-display text-lg font-medium text-white shadow-soft">
                     {index + 1}
                   </div>
                   <h3 className="mt-4 text-base font-semibold text-foreground">
@@ -336,13 +336,13 @@ export default async function HomePage({
               return (
                 <Reveal key={item.title} delay={index * 70}>
                   <div
-                    className={`h-full rounded-2xl border p-6 text-center shadow-sm transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg ${
+                    className={`h-full rounded-2xl border p-6 text-center shadow-soft transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-elevated ${
                       isGuarantee ? "border-accent/30 bg-accent-light" : "border-border bg-surface"
                     }`}
                   >
                     <span
-                      className={`mx-auto flex h-12 w-12 items-center justify-center rounded-xl ${
-                        isGuarantee ? "bg-accent/15 text-accent-dark" : "bg-brand-light text-brand"
+                      className={`mx-auto flex h-12 w-12 items-center justify-center rounded-xl ring-1 ring-inset ${
+                        isGuarantee ? "bg-accent/15 text-accent-dark ring-accent/15" : "bg-brand-light text-brand ring-brand/10"
                       }`}
                     >
                       <Icon size={22} />
@@ -362,15 +362,15 @@ export default async function HomePage({
       </section>
 
       {/* CTA */}
-      <section className="bg-brand">
+      <section className="bg-grain bg-gradient-to-br from-brand to-brand-dark">
         <Container className="flex flex-col items-center gap-6 py-16 text-center">
-          <h2 className="text-3xl font-bold text-white sm:text-4xl">
+          <h2 className="font-display text-3xl font-medium text-white sm:text-4xl">
             {home("cta.title")}
           </h2>
           <p className="max-w-xl text-blue-100">{home("cta.subtitle")}</p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand transition-all duration-200 ease-out hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"
+            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand shadow-soft transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-elevated focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"
           >
             {home("cta.button")}
             <ArrowRight size={16} />

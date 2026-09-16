@@ -30,7 +30,7 @@ export default function Navbar() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/logo-icon.png" alt="" className="h-9 w-9" />
-          <span className="text-lg tracking-tight">Studiva</span>
+          <span className="font-display text-xl font-medium tracking-tight">Studiva</span>
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">
@@ -60,7 +60,7 @@ export default function Navbar() {
           <LanguageSwitcher />
           <Link
             href="/contact"
-            className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-all duration-200 ease-out hover:scale-105 hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
+            className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white shadow-soft transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-brand-dark hover:shadow-glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
           >
             {t("cta")}
           </Link>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Geist, Fraunces } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -11,6 +11,14 @@ import "../globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  weight: "variable",
+  style: ["normal"],
+  axes: ["opsz"],
 });
 
 export function generateStaticParams() {
@@ -67,7 +75,10 @@ export default async function LocaleLayout({
   };
 
   return (
-    <html lang={locale} className={`${geistSans.variable} h-full antialiased`}>
+    <html
+      lang={locale}
+      className={`${geistSans.variable} ${fraunces.variable} h-full antialiased`}
+    >
       <body className="flex min-h-full flex-col">
         <script
           type="application/ld+json"
