@@ -52,16 +52,20 @@ function popupHtml(item: UniversityItem, locale: string) {
   </div>`;
 }
 
-// The mask's outer ring, padded just past the map's maxBounds (bbox +1.2/+1.8).
-// Kept close to Germany rather than spanning the whole world: at high zoom, a
-// polygon ring with vertices millions of pixels from the viewport can exceed
-// the coordinate precision browsers use for SVG path fills, producing random
-// unmasked gaps near complex borders (observed at the Berchtesgaden panhandle).
+// The mask's outer ring. Needs to cover whatever the widest real viewport
+// ever shows — at the default zoom, `fitBounds` picks a scale that fits
+// Germany's bbox height into the (usually much wider than tall) map
+// container, which overflows well past the bbox horizontally on wide
+// screens. A margin that only just cleared the bbox left gaps at the
+// edges on wide viewports (raw, unmasked neighboring-country tiles). 20°
+// lat / 28° lng comfortably covers that on any realistic screen while
+// staying far smaller than a world-spanning rectangle, which is what
+// caused a separate, since-fixed precision issue at high zoom.
 const WORLD_RING: [number, number][] = [
-  [GERMANY_BBOX.maxLat + 4, GERMANY_BBOX.minLng - 4],
-  [GERMANY_BBOX.maxLat + 4, GERMANY_BBOX.maxLng + 4],
-  [GERMANY_BBOX.minLat - 4, GERMANY_BBOX.maxLng + 4],
-  [GERMANY_BBOX.minLat - 4, GERMANY_BBOX.minLng - 4],
+  [GERMANY_BBOX.maxLat + 20, GERMANY_BBOX.minLng - 28],
+  [GERMANY_BBOX.maxLat + 20, GERMANY_BBOX.maxLng + 28],
+  [GERMANY_BBOX.minLat - 20, GERMANY_BBOX.maxLng + 28],
+  [GERMANY_BBOX.minLat - 20, GERMANY_BBOX.minLng - 28],
 ];
 
 export default function GermanyMap({
