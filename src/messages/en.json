@@ -29,7 +29,7 @@
   },
   "home": {
     "hero": {
-      "badge": "Founded in 2026, focused exclusively on studying in Germany",
+      "badge": "Germany-Focused Education Consultancy",
       "title": "Your Dream of Studying at Germany's Best Universities, Backed by Studiva",
       "subtitle": "From choosing a university to your application, visa and housing — our expert advisors are with you every step of the way, across Germany's Excellence Universities, TU9 institutes, Hochschulen and Dual Studium programs.",
       "ctaPrimary": "Get a Free Consultation",
@@ -137,8 +137,8 @@
           "highlight": true
         },
         {
-          "title": "A New, Transparent Team",
-          "description": "As a company founded in 2026, we offer a concrete, traceable process instead of inflated numbers."
+          "title": "A Transparent, Step-by-Step Process",
+          "description": "We offer a concrete, trackable process that always shows you exactly where you stand — clear information instead of inflated numbers."
         },
         {
           "title": "End-to-End Support",
@@ -3945,12 +3945,12 @@
   "about": {
     "hero": {
       "title": "About Studiva",
-      "subtitle": "Founded in 2026 for students who want to study in Germany, we're a consultancy focused on German higher education."
+      "subtitle": "We are a transparent, trustworthy consultancy for students who want to study in Germany."
     },
     "story": {
       "title": "Our Story",
       "paragraphs": [
-        "Studiva was founded in Istanbul in 2026 with the goal of helping students reach Europe's leading universities through a transparent, trustworthy process.",
+        "Studiva is an Istanbul-based consultancy founded to help students reach Europe's leading universities through a transparent, trustworthy process.",
         "We're a team with up-to-date knowledge of 80+ universities across Germany — from Excellence Universities to TU9 technical institutes, Hochschulen to Dual Studium programs — closely following each institution's application system, visa requirements, and academic calendar.",
         "We run your process across four stages: profile and goal assessment, university and program matching, application and document tracking, and visa and settlement support. At every stage, you always know exactly where you stand and what comes next."
       ]
@@ -3990,8 +3990,8 @@
         "label": "Countries / Regions Covered"
       },
       {
-        "value": "2026",
-        "label": "Founded"
+        "value": "Hundreds",
+        "label": "English-Taught Programs"
       },
       {
         "value": "4",

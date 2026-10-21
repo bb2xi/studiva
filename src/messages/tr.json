@@ -29,7 +29,7 @@
   },
   "home": {
     "hero": {
-      "badge": "2026'da kurulan, Almanya'ya özel eğitim danışmanlığı",
+      "badge": "Almanya'ya Özel Eğitim Danışmanlığı",
       "title": "Almanya'nın En İyi Üniversitelerinde Okuma Hayaliniz Studiva Güvencesiyle Gerçek Olsun",
       "subtitle": "Üniversite seçiminden başvuruya, vizeden konaklamaya kadar Exzellenzuniversität'lerden TU9 teknik üniversitelerine, Hochschule'lerden Dual Studium programlarına Almanya'nın tamamında uzman danışmanlarımızla yanınızdayız.",
       "ctaPrimary": "Ücretsiz Ön Görüşme Al",
@@ -137,8 +137,8 @@
           "highlight": true
         },
         {
-          "title": "Yeni ve Şeffaf Bir Ekip",
-          "description": "2026'da kurulan bir firma olarak şişirilmiş rakamlar yerine somut, takip edilebilir bir süreç sunuyoruz."
+          "title": "Şeffaf, Adım Adım Süreç",
+          "description": "Her aşamada tam olarak nerede olduğunuzu gösteren somut, takip edilebilir bir süreç sunuyoruz; şişirilmiş rakamlar yerine net bilgi veririz."
         },
         {
           "title": "Uçtan Uca Destek",
@@ -3945,12 +3945,12 @@
   "about": {
     "hero": {
       "title": "Studiva Hakkında",
-      "subtitle": "Almanya'da eğitim almak isteyen öğrenciler için 2026'da kurulan bir danışmanlık firmasıyız."
+      "subtitle": "Almanya'da eğitim almak isteyen öğrenciler için şeffaf ve güvenilir bir danışmanlık firmasıyız."
     },
     "story": {
       "title": "Hikayemiz",
       "paragraphs": [
-        "Studiva, 2026 yılında İstanbul'da, öğrencilerin Avrupa'nın önde gelen üniversitelerine şeffaf ve güvenilir bir süreçle ulaşmasını sağlamak amacıyla kuruldu.",
+        "Studiva, İstanbul merkezli; öğrencilerin Avrupa'nın önde gelen üniversitelerine şeffaf ve güvenilir bir süreçle ulaşmasını sağlamak amacıyla kurulan bir danışmanlık firmasıdır.",
         "Almanya genelinde 80'den fazla üniversite hakkında güncel bilgiye sahip bir ekibiz; Exzellenzuniversität'lerden TU9 teknik üniversitelerine, Hochschule'lerden Dual Studium programlarına kadar her kurumun başvuru sistemini, vize gereksinimlerini ve akademik takvimini yakından takip ediyoruz.",
         "Sürecinizi dört adımda yürütüyoruz: profil ve hedef değerlendirmesi, üniversite ve program eşleştirmesi, başvuru ve belge takibi, vize ve yerleşim desteği. Her adımda tam olarak hangi aşamada olduğunuzu ve sırada ne olduğunu bilmenizi sağlıyoruz."
       ]
@@ -3990,8 +3990,8 @@
         "label": "Kapsadığımız Ülke / Bölge"
       },
       {
-        "value": "2026",
-        "label": "Kuruluş Yılı"
+        "value": "Yüzlerce",
+        "label": "İngilizce Program Seçeneği"
       },
       {
         "value": "4",
