@@ -1,10 +1,12 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
-import { serviceIcons } from "@/lib/icons";
+import CtaBand from "@/components/CtaBand";
+import { Heading, Data } from "@/components/Typography";
+import { heroPhotos } from "@/lib/heroPhotos";
 
 type ProgramItem = {
   name: string;
@@ -36,59 +38,46 @@ export default async function ProgramsPage({
 
   return (
     <>
-      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} />
+      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} photo={heroPhotos.programs} />
 
       <section className="py-20 sm:py-24">
         <Container>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {items.map((program, index) => {
-              const Icon = serviceIcons[program.icon] ?? Check;
-              return (
-                <Reveal key={program.name} delay={index * 80}>
-                  <div className="flex h-full flex-col rounded-2xl border border-border bg-surface p-7 shadow-soft transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-elevated">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light text-brand ring-1 ring-inset ring-brand/10">
-                      <Icon size={24} />
-                    </span>
-                    <h3 className="mt-4 text-lg font-semibold text-foreground">
-                      {program.name}
-                    </h3>
-                    <p className="mt-4 text-sm leading-relaxed text-foreground-secondary">
-                      {program.description}
-                    </p>
-                    <ul className="mt-5 space-y-2">
-                      {program.highlights.map((point) => (
-                        <li
-                          key={point}
-                          className="flex items-start gap-2 text-sm text-foreground-secondary"
-                        >
-                          <Check size={16} className="mt-0.5 shrink-0 text-brand" />
-                          {point}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </Reveal>
-              );
-            })}
+          <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2">
+            {items.map((program, index) => (
+              <Reveal key={program.name} delay={index * 100}>
+                <Link
+                  href={`/universities?level=${index === 0 ? "bachelor" : "master"}`}
+                  className="group flex h-full flex-col rounded-sm border border-border-strong bg-surface p-8"
+                >
+                  <Data as="span" className="font-display text-3xl italic text-accent">
+                    {String(index + 1).padStart(2, "0")}
+                  </Data>
+                  <Heading as="h2" size="lg" className="mt-4 transition-colors group-hover:text-forest">
+                    {program.name}
+                  </Heading>
+                  <p className="mt-3 font-serif text-sm leading-relaxed text-foreground-secondary sm:text-base">
+                    {program.description}
+                  </p>
+                  <ul className="mt-5 space-y-2">
+                    {program.highlights.map((point) => (
+                      <li key={point} className="flex items-start gap-2 font-sans text-sm text-foreground-secondary">
+                        <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-forest" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                  <span className="mt-6 inline-flex items-center gap-1.5 font-sans text-xs font-semibold uppercase tracking-wide text-forest">
+                    {locale === "tr" ? "Üniversiteleri gör" : "See universities"}
+                    <ArrowUpRight size={14} className="transition-transform duration-200 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </span>
+                </Link>
+              </Reveal>
+            ))}
           </div>
         </Container>
       </section>
 
-      <section className="bg-grain bg-gradient-to-br from-brand to-brand-dark">
-        <Container className="flex flex-col items-center gap-6 py-16 text-center">
-          <h2 className="font-display text-3xl font-medium text-white sm:text-4xl">
-            {t("cta.title")}
-          </h2>
-          <p className="max-w-xl text-blue-100">{t("cta.subtitle")}</p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand shadow-soft transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-elevated focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"
-          >
-            {t("cta.button")}
-            <ArrowRight size={16} />
-          </Link>
-        </Container>
-      </section>
+      <CtaBand variant="programs" title={t("cta.title")} subtitle={t("cta.subtitle")} buttonLabel={t("cta.button")} />
     </>
   );
 }

@@ -10,7 +10,7 @@
     "universities": "Universities",
     "about": "About",
     "contact": "Contact",
-    "cta": "Free Consultation",
+    "cta": "Get a Free Consultation",
     "blog": "Blog"
   },
   "footer": {
@@ -21,7 +21,11 @@
     "rights": "All rights reserved.",
     "address": "Levent, Buyukdere St. No:201, 34394 Sisli/Istanbul",
     "phone": "+90 532 555 01 01",
-    "email": "info@studiva.com.tr"
+    "email": "info@studiva.com.tr",
+    "companyTitle": "Company",
+    "faq": "FAQ",
+    "privacy": "Privacy Policy",
+    "contactLink": "Contact"
   },
   "home": {
     "hero": {
@@ -34,7 +38,8 @@
       "stats": [
         {
           "value": "100%",
-          "label": "Admission Guarantee"
+          "label": "Admission Guarantee",
+          "highlight": true
         },
         {
           "value": "9",
@@ -128,7 +133,8 @@
         },
         {
           "title": "Admission Guarantee",
-          "description": "We offer an admission guarantee to students who complete our process in full."
+          "description": "We offer an admission guarantee to students who complete our process in full.",
+          "highlight": true
         },
         {
           "title": "A New, Transparent Team",
@@ -143,7 +149,7 @@
     "cta": {
       "title": "Start Your Study Abroad Journey Today",
       "subtitle": "Let's build your personalized roadmap in a free 15-minute call.",
-      "button": "Book an Appointment"
+      "button": "Get a Free Consultation"
     }
   },
   "services": {
@@ -155,7 +161,7 @@
       {
         "icon": "graduation-cap",
         "title": "A Personalized, Career-Focused Roadmap",
-        "description": "Based on your academic background, budget, and career goals, we build a tailored country and university roadmap — not a one-size-fits-all package.",
+        "description": "Under this service, we first map your academic background and goals together, then prepare a personalized shortlist of 3-5 universities — assessing admission likelihood, curriculum equivalency, and the application calendar for each one individually.",
         "points": [
           "Personalized strategy built around your career goal",
           "Equivalency and curriculum comparison by target country",
@@ -216,7 +222,12 @@
     "cta": {
       "title": "Not Sure Which Service You Need?",
       "subtitle": "Let's determine the right service package for you together in a free consultation.",
-      "button": "Schedule a Free Call"
+      "button": "Get a Free Consultation"
+    },
+    "pricing": {
+      "title": "Pricing",
+      "subtitle": "Being clear about cost is part of the trust we're building.",
+      "note": "The first consultation is always free. Your package fee — whether university/program guidance only, or full end-to-end support including visa and settlement — is finalized and shared in writing at the end of that call. No hidden or later-added fees."
     }
   },
   "programs": {
@@ -249,7 +260,7 @@
     "cta": {
       "title": "Let's Find the Right Program and Country Together",
       "subtitle": "We recommend the best country and university for your bachelor's or master's based on your academic profile.",
-      "button": "Get Program Guidance"
+      "button": "Get a Free Consultation"
     }
   },
   "universities": {
@@ -301,7 +312,10 @@
           "Medicine"
         ],
         "lat": 48.1497,
-        "lng": 11.5678
+        "lng": 11.5678,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "lmu",
@@ -345,7 +359,10 @@
           "Natural Sciences"
         ],
         "lat": 48.1512,
-        "lng": 11.5806
+        "lng": 11.5806,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "huberlin",
@@ -389,7 +406,10 @@
           "Natural Sciences"
         ],
         "lat": 52.517,
-        "lng": 13.3936
+        "lng": 13.3936,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "rwth",
@@ -434,7 +454,10 @@
           "Computer Science"
         ],
         "lat": 50.7782,
-        "lng": 6.0817
+        "lng": 6.0817,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "mannheim",
@@ -476,7 +499,10 @@
           "Psychology"
         ],
         "lat": 49.4794,
-        "lng": 8.4622
+        "lng": 8.4622,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hm",
@@ -518,7 +544,10 @@
           "Computer Science"
         ],
         "lat": 48.1611,
-        "lng": 11.5486
+        "lng": 11.5486,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "frankfurtuas",
@@ -560,7 +589,10 @@
           "Computer Science"
         ],
         "lat": 50.1289,
-        "lng": 8.6858
+        "lng": 8.6858,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "dhbw",
@@ -602,7 +634,10 @@
           "Computer Science (Dual)"
         ],
         "lat": 48.7784,
-        "lng": 9.1733
+        "lng": 9.1733,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "bachelor"
       },
       {
         "slug": "iu",
@@ -644,7 +679,10 @@
           "Psychology"
         ],
         "lat": 50.967,
-        "lng": 11.043
+        "lng": 11.043,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "bachelor"
       },
       {
         "slug": "fom",
@@ -686,7 +724,10 @@
           "Management"
         ],
         "lat": 51.4508,
-        "lng": 7.0131
+        "lng": 7.0131,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "bachelor"
       },
       {
         "slug": "heidelberg",
@@ -730,7 +771,10 @@
           "Law"
         ],
         "lat": 49.4097,
-        "lng": 8.7057
+        "lng": 8.7057,
+        "tuitionFree": false,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "tuebingen",
@@ -774,7 +818,10 @@
           "Theology"
         ],
         "lat": 48.5225,
-        "lng": 9.0561
+        "lng": 9.0561,
+        "tuitionFree": false,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "kit",
@@ -818,7 +865,10 @@
           "Physics"
         ],
         "lat": 49.0117,
-        "lng": 8.4149
+        "lng": 8.4149,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "freiburg",
@@ -860,7 +910,10 @@
           "Forestry Sciences"
         ],
         "lat": 47.9955,
-        "lng": 7.846
+        "lng": 7.846,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "goettingen",
@@ -902,7 +955,10 @@
           "Law"
         ],
         "lat": 51.5346,
-        "lng": 9.9349
+        "lng": 9.9349,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "bonn",
@@ -946,7 +1002,10 @@
           "Mathematics"
         ],
         "lat": 50.734,
-        "lng": 7.0956
+        "lng": 7.0956,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "koeln",
@@ -988,7 +1047,10 @@
           "Medicine"
         ],
         "lat": 50.9279,
-        "lng": 6.9271
+        "lng": 6.9271,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "tuberlin",
@@ -1033,7 +1095,10 @@
           "Computer Science"
         ],
         "lat": 52.5125,
-        "lng": 13.3269
+        "lng": 13.3269,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "tudresden",
@@ -1078,7 +1143,10 @@
           "Materials Science"
         ],
         "lat": 51.0272,
-        "lng": 13.7231
+        "lng": 13.7231,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "tudarmstadt",
@@ -1122,7 +1190,10 @@
           "Electrical Engineering"
         ],
         "lat": 49.8728,
-        "lng": 8.6512
+        "lng": 8.6512,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "tubraunschweig",
@@ -1166,7 +1237,10 @@
           "Biotechnology"
         ],
         "lat": 52.2733,
-        "lng": 10.5261
+        "lng": 10.5261,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hannover",
@@ -1210,7 +1284,10 @@
           "Law"
         ],
         "lat": 52.3841,
-        "lng": 9.7161
+        "lng": 9.7161,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "stuttgart",
@@ -1254,7 +1331,10 @@
           "Architecture"
         ],
         "lat": 48.7801,
-        "lng": 9.1774
+        "lng": 9.1774,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "konstanz",
@@ -1298,7 +1378,10 @@
           "Computer Science"
         ],
         "lat": 47.693,
-        "lng": 9.1859
+        "lng": 9.1859,
+        "tuitionFree": false,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "htwberlin",
@@ -1340,7 +1423,10 @@
           "Design"
         ],
         "lat": 52.4809,
-        "lng": 13.5246
+        "lng": 13.5246,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "furtwangen",
@@ -1382,7 +1468,10 @@
           "Engineering"
         ],
         "lat": 48.0511,
-        "lng": 8.2076
+        "lng": 8.2076,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hamburg",
@@ -1426,7 +1515,10 @@
           "Law"
         ],
         "lat": 53.5657,
-        "lng": 9.9847
+        "lng": 9.9847,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "fuberlin",
@@ -1469,7 +1561,10 @@
           "Biology/Life Sciences"
         ],
         "lat": 52.4536,
-        "lng": 13.2878
+        "lng": 13.2878,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "erlangen",
@@ -1510,7 +1605,10 @@
           "Medical Technology"
         ],
         "lat": 49.5985,
-        "lng": 11.0036
+        "lng": 11.0036,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "bochum",
@@ -1551,7 +1649,10 @@
           "East Asian Studies"
         ],
         "lat": 51.4487,
-        "lng": 7.2609
+        "lng": 7.2609,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "mainz",
@@ -1592,7 +1693,10 @@
           "Communication Studies"
         ],
         "lat": 49.9931,
-        "lng": 8.238
+        "lng": 8.238,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "muenster",
@@ -1633,7 +1737,10 @@
           "Theology"
         ],
         "lat": 51.9616,
-        "lng": 7.6151
+        "lng": 7.6151,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "bremen",
@@ -1674,7 +1781,10 @@
           "Computer Science"
         ],
         "lat": 53.1079,
-        "lng": 8.8514
+        "lng": 8.8514,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "kiel",
@@ -1715,7 +1825,10 @@
           "Agricultural & Nutrition Sciences"
         ],
         "lat": 54.3401,
-        "lng": 10.1225
+        "lng": 10.1225,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "marburg",
@@ -1756,7 +1869,10 @@
           "Humanities"
         ],
         "lat": 50.809,
-        "lng": 8.771
+        "lng": 8.771,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "jena",
@@ -1796,7 +1912,10 @@
           "Biology"
         ],
         "lat": 50.928,
-        "lng": 11.588
+        "lng": 11.588,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "thkoeln",
@@ -1837,7 +1956,10 @@
           "Media Technology"
         ],
         "lat": 50.935,
-        "lng": 6.955
+        "lng": 6.955,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hsmannheim",
@@ -1878,7 +2000,10 @@
           "Biotechnology"
         ],
         "lat": 49.4913,
-        "lng": 8.4676
+        "lng": 8.4676,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hskarlsruhe",
@@ -1919,7 +2044,10 @@
           "Information Technology"
         ],
         "lat": 49.0089,
-        "lng": 8.3975
+        "lng": 8.3975,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "htwgkonstanz",
@@ -1960,7 +2088,10 @@
           "Communication Design"
         ],
         "lat": 47.6743,
-        "lng": 9.1682
+        "lng": 9.1682,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "thingolstadt",
@@ -2001,7 +2132,10 @@
           "Business Informatics"
         ],
         "lat": 48.765,
-        "lng": 11.424
+        "lng": 11.424,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hbrs",
@@ -2042,7 +2176,10 @@
           "Business Administration"
         ],
         "lat": 50.7714,
-        "lng": 7.165
+        "lng": 7.165,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hda",
@@ -2083,7 +2220,10 @@
           "Electrical Engineering"
         ],
         "lat": 49.8646,
-        "lng": 8.6321
+        "lng": 8.6321,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "reutlingen",
@@ -2124,7 +2264,10 @@
           "Mechatronics"
         ],
         "lat": 48.488,
-        "lng": 9.216
+        "lng": 9.216,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "fhmuenster",
@@ -2165,7 +2308,10 @@
           "Social Work"
         ],
         "lat": 51.9506,
-        "lng": 7.6198
+        "lng": 7.6198,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "osnabrueck",
@@ -2206,7 +2352,10 @@
           "Business Administration"
         ],
         "lat": 52.276,
-        "lng": 8.0442
+        "lng": 8.0442,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "bht",
@@ -2247,7 +2396,10 @@
           "Mathematics"
         ],
         "lat": 52.5476,
-        "lng": 13.3572
+        "lng": 13.3572,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "jade",
@@ -2288,7 +2440,10 @@
           "Mechanical Engineering"
         ],
         "lat": 53.5286,
-        "lng": 8.1058
+        "lng": 8.1058,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "duesseldorf",
@@ -2328,7 +2483,10 @@
           "Law"
         ],
         "lat": 51.19,
-        "lng": 6.7947
+        "lng": 6.7947,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "ude",
@@ -2368,7 +2526,10 @@
           "Social Sciences"
         ],
         "lat": 51.4587,
-        "lng": 7.0122
+        "lng": 7.0122,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "tudortmund",
@@ -2408,7 +2569,10 @@
           "Mechanical Engineering"
         ],
         "lat": 51.4925,
-        "lng": 7.416
+        "lng": 7.416,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "bielefeld",
@@ -2448,7 +2612,10 @@
           "Biology"
         ],
         "lat": 52.0389,
-        "lng": 8.4951
+        "lng": 8.4951,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "paderborn",
@@ -2488,7 +2655,10 @@
           "Business Administration"
         ],
         "lat": 51.7189,
-        "lng": 8.7719
+        "lng": 8.7719,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "siegen",
@@ -2528,7 +2698,10 @@
           "Mechanical Engineering"
         ],
         "lat": 50.8747,
-        "lng": 8.0247
+        "lng": 8.0247,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "wuppertal",
@@ -2568,7 +2741,10 @@
           "Physics"
         ],
         "lat": 51.2447,
-        "lng": 7.1519
+        "lng": 7.1519,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "luebeck",
@@ -2608,7 +2784,10 @@
           "Molecular Life Sciences"
         ],
         "lat": 53.8655,
-        "lng": 10.7085
+        "lng": 10.7085,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "rostock",
@@ -2648,7 +2827,10 @@
           "Agricultural Sciences"
         ],
         "lat": 54.0865,
-        "lng": 12.1345
+        "lng": 12.1345,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "greifswald",
@@ -2688,7 +2870,10 @@
           "Biology"
         ],
         "lat": 54.0947,
-        "lng": 13.3877
+        "lng": 13.3877,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "magdeburg",
@@ -2728,7 +2913,10 @@
           "Medicine"
         ],
         "lat": 52.1397,
-        "lng": 11.6461
+        "lng": 11.6461,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "halle",
@@ -2768,7 +2956,10 @@
           "Natural Sciences"
         ],
         "lat": 51.4832,
-        "lng": 11.9694
+        "lng": 11.9694,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "leipzig",
@@ -2808,7 +2999,10 @@
           "Sports Science"
         ],
         "lat": 51.3397,
-        "lng": 12.3776
+        "lng": 12.3776,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "tuchemnitz",
@@ -2848,7 +3042,10 @@
           "Computer Science"
         ],
         "lat": 50.8113,
-        "lng": 12.9226
+        "lng": 12.9226,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "potsdam",
@@ -2888,7 +3085,10 @@
           "Public Administration"
         ],
         "lat": 52.4009,
-        "lng": 13.0089
+        "lng": 13.0089,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "viadrina",
@@ -2928,7 +3128,10 @@
           "Cultural Studies"
         ],
         "lat": 52.3436,
-        "lng": 14.5507
+        "lng": 14.5507,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "btucottbus",
@@ -2968,7 +3171,10 @@
           "Architecture"
         ],
         "lat": 51.7626,
-        "lng": 14.3289
+        "lng": 14.3289,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "wuerzburg",
@@ -3008,7 +3214,10 @@
           "Psychology"
         ],
         "lat": 49.7896,
-        "lng": 9.9331
+        "lng": 9.9331,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "regensburg",
@@ -3048,7 +3257,10 @@
           "Eastern European Studies"
         ],
         "lat": 49.0177,
-        "lng": 12.0966
+        "lng": 12.0966,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "passau",
@@ -3088,7 +3300,10 @@
           "Computer Science"
         ],
         "lat": 48.5733,
-        "lng": 13.461
+        "lng": 13.461,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "bayreuth",
@@ -3128,7 +3343,10 @@
           "Law and Business"
         ],
         "lat": 49.9291,
-        "lng": 11.5888
+        "lng": 11.5888,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "augsburg",
@@ -3168,7 +3386,10 @@
           "Computer Science"
         ],
         "lat": 48.3348,
-        "lng": 10.8979
+        "lng": 10.8979,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "bamberg",
@@ -3208,7 +3429,10 @@
           "Heritage Conservation"
         ],
         "lat": 49.8971,
-        "lng": 10.8909
+        "lng": 10.8909,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "kueichstaett",
@@ -3248,7 +3472,10 @@
           "Education"
         ],
         "lat": 48.8965,
-        "lng": 11.1858
+        "lng": 11.1858,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hohenheim",
@@ -3288,7 +3515,10 @@
           "Business Administration"
         ],
         "lat": 48.7136,
-        "lng": 9.2117
+        "lng": 9.2117,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "ulm",
@@ -3328,7 +3558,10 @@
           "Engineering"
         ],
         "lat": 48.4225,
-        "lng": 9.9575
+        "lng": 9.9575,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "saarland",
@@ -3368,7 +3601,10 @@
           "Law"
         ],
         "lat": 49.2542,
-        "lng": 7.0428
+        "lng": 7.0428,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "rptu",
@@ -3408,7 +3644,10 @@
           "Engineering"
         ],
         "lat": 49.4278,
-        "lng": 7.7611
+        "lng": 7.7611,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "fernunihagen",
@@ -3448,7 +3687,10 @@
           "Psychology"
         ],
         "lat": 51.3742,
-        "lng": 7.4886
+        "lng": 7.4886,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "oldenburg",
@@ -3488,7 +3730,10 @@
           "Musicology"
         ],
         "lat": 53.1435,
-        "lng": 8.1657
+        "lng": 8.1657,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hildesheim",
@@ -3528,7 +3773,10 @@
           "Psychology"
         ],
         "lat": 52.1495,
-        "lng": 9.9563
+        "lng": 9.9563,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "leuphana",
@@ -3568,7 +3816,10 @@
           "Education"
         ],
         "lat": 53.2405,
-        "lng": 10.4057
+        "lng": 10.4057,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "tuclausthal",
@@ -3608,7 +3859,10 @@
           "Energy Technology"
         ],
         "lat": 51.8047,
-        "lng": 10.3358
+        "lng": 10.3358,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "vechta",
@@ -3648,13 +3902,16 @@
           "Gerontology"
         ],
         "lat": 52.728,
-        "lng": 8.283
+        "lng": 8.283,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       }
     ],
     "cta": {
       "title": "Let's Find the Right University Together",
       "subtitle": "We recommend the right university and program based on your academic profile and target city.",
-      "button": "Get University Guidance"
+      "button": "Get a Free Consultation"
     },
     "filters": {
       "all": "All",
@@ -3673,6 +3930,16 @@
     "search": {
       "placeholder": "Search by university name or city...",
       "noResults": "No universities match your search."
+    },
+    "ctaDetail": {
+      "title": "Let's Plan Your Application to {name} Together",
+      "subtitle": "We'll assess your profile and map out your admission chances and application timeline for this university."
+    },
+    "admissionNote": "Most public universities close winter-semester applications on July 15 and summer-semester applications on January 15; capacity-restricted (NC) programs may have earlier deadlines. Applicants from Turkey need an APS certificate — we confirm the current specifics together during your free consultation.",
+    "levelFilters": {
+      "all": "All Levels",
+      "bachelor": "Bachelor",
+      "master": "Master"
     }
   },
   "about": {
@@ -3685,7 +3952,7 @@
       "paragraphs": [
         "Studiva was founded in Istanbul in 2026 with the goal of helping students reach Europe's leading universities through a transparent, trustworthy process.",
         "We're a team with up-to-date knowledge of 80+ universities across Germany — from Excellence Universities to TU9 technical institutes, Hochschulen to Dual Studium programs — closely following each institution's application system, visa requirements, and academic calendar.",
-        "Every student's academic background, budget, and goals are different — that's why we help you choose the right country and university instead of forcing you into one template. As a newly founded company, we offer a concrete commitment instead of inflated numbers: an admission guarantee when you complete our process in full."
+        "We run your process across four stages: profile and goal assessment, university and program matching, application and document tracking, and visa and settlement support. At every stage, you always know exactly where you stand and what comes next."
       ]
     },
     "mission": {
@@ -3715,22 +3982,27 @@
     },
     "stats": [
       {
+        "value": "82+",
+        "label": "Universities We Track"
+      },
+      {
+        "value": "9",
+        "label": "Countries / Regions Covered"
+      },
+      {
         "value": "2026",
         "label": "Founded"
       },
       {
-        "value": "9",
-        "label": "TU9 Universities"
-      },
-      {
-        "value": "100%",
-        "label": "Admission Guarantee"
-      },
-      {
-        "value": "82+",
-        "label": "Universities"
+        "value": "4",
+        "label": "A Transparent, Step-by-Step Process",
+        "highlight": true
       }
-    ]
+    ],
+    "team": {
+      "title": "Our Team",
+      "comingSoonLabel": "Our advisors' profiles and areas of expertise will be featured here soon. In the meantime, you can meet them directly in your free consultation."
+    }
   },
   "contact": {
     "hero": {
@@ -3761,7 +4033,7 @@
       "message": "Your Message",
       "messagePlaceholder": "Tell us about your target program, university, or any questions you have.",
       "submit": "Submit",
-      "disclaimer": "This form is currently for demo purposes only; submission is not connected to a server. For a fast reply, message us on WhatsApp.",
+      "disclaimer": "By submitting this form, you agree that the contact details above may be processed so we can get back to you.",
       "country": "Program Type of Interest",
       "countryPlaceholder": "Select",
       "countryOptions": [
@@ -3770,7 +4042,12 @@
         "Dual Studium",
         "Studienkolleg / Language Prep",
         "Not Sure Yet"
-      ]
+      ],
+      "consentPrefix": "I agree to my personal data being processed per our ",
+      "consentLinkText": "Privacy Policy",
+      "consentSuffix": ".",
+      "consentRequired": "Please check the consent box to continue.",
+      "errorNote": "Something went wrong. Please try again, or message us directly on WhatsApp."
     }
   },
   "blog": {
@@ -3874,6 +4151,79 @@
       "title": "Have questions? Let's talk, free of charge.",
       "subtitle": "Let's map out a plan tailored to your academic profile.",
       "button": "Get a Free Consultation"
+    },
+    "featured": {
+      "title": "Frequently Asked About",
+      "subtitle": "The three topics prospective students ask about most."
     }
+  },
+  "common": {
+    "whatsappMessage": "Hi, I'd like to get information about applying to a German university.",
+    "whatsappAriaLabel": "Send a WhatsApp message"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "The questions we hear most during the application process, answered plainly.",
+    "items": [
+      {
+        "question": "What exactly does the \"100% Admission Guarantee\" mean?",
+        "answer": "Students who complete our recommended process in full — from profile assessment through university selection, application tracking, and visa support — and who meet the actual admission requirements (language certificate, APS, academic equivalency, etc.) receive continued free guidance until they're admitted to at least one university. The guarantee is conditional on completing the process together, in full."
+      },
+      {
+        "question": "What does your consultancy actually cost?",
+        "answer": "The first consultation is always free. Your package fee — whether university/program guidance only, or full end-to-end support including visa and settlement — is finalized and shared in writing at the end of that call."
+      },
+      {
+        "question": "What is an APS certificate, and do I need one?",
+        "answer": "An APS (Academic Evaluation Centre) certificate is an official document confirming that your Turkish secondary/university education is equivalent to German standards, and it's required for the large majority of students applying from Turkey. We clarify exactly which documents you'll need during your application."
+      },
+      {
+        "question": "How much does the blocked account (Sperrkonto) need to hold?",
+        "answer": "The required balance for a student blocked account is updated annually and set by the official figure in effect when you apply; we confirm the current amount and account-opening process together during your free consultation."
+      },
+      {
+        "question": "Should I apply for a Bachelor's or a Master's?",
+        "answer": "A Bachelor's is for your first university degree after secondary school; a Master's is for specializing on top of an existing Bachelor's degree. We assess your academic background and work out the right level and universities with you."
+      },
+      {
+        "question": "When do application deadlines fall?",
+        "answer": "Most public universities close winter-semester applications on July 15 and summer-semester applications on January 15; capacity-restricted (NC) programs may have earlier deadlines. We check the current calendar for your target program together."
+      },
+      {
+        "question": "Do you only cover Germany?",
+        "answer": "Germany is our primary area of expertise, but we also advise on the UK, the Netherlands, France, and other destinations — 9 countries/regions in total."
+      },
+      {
+        "question": "How is my personal data protected?",
+        "answer": "Information you share through our forms is used only to get back to you and is never shared with third parties. See our Privacy Policy page for details."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "How we collect and use your personal data.",
+    "updated": "Last updated: 2026",
+    "sections": [
+      {
+        "heading": "What Data We Collect",
+        "body": "When you fill out our contact form, we collect your name, email address, phone number, and the content of your message; when you message us on WhatsApp, we collect the contact and message content you share."
+      },
+      {
+        "heading": "How We Use Your Data",
+        "body": "We use the information we collect solely to provide your free consultation and advisory service, respond to your questions, and — with your explicit consent — stay in touch with you throughout the process."
+      },
+      {
+        "heading": "Who We Share Your Data With",
+        "body": "Your personal data is never shared with or sold to third parties, except where legally required."
+      },
+      {
+        "heading": "Your Rights",
+        "body": "Under Turkey's Personal Data Protection Law (KVKK, Law No. 6698), you have the right to access, correct, or request deletion of your data. You can reach us at info@studiva.com.tr for any such request."
+      },
+      {
+        "heading": "Data Retention",
+        "body": "Your data is kept securely for as long as our service relationship continues and for any legally required retention period, and is deleted upon your request."
+      }
+    ]
   }
 }

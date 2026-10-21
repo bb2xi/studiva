@@ -1,9 +1,8 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { ArrowRight } from "lucide-react";
-import { Link } from "@/i18n/navigation";
-import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
 import UniversitiesExplorer from "@/components/UniversitiesExplorer";
+import CtaBand from "@/components/CtaBand";
+import { heroPhotos } from "@/lib/heroPhotos";
 
 type UniversityItem = {
   slug: string;
@@ -14,6 +13,10 @@ type UniversityItem = {
   lat: number;
   lng: number;
   description: string;
+  popularPrograms: string[];
+  tuitionFree: boolean;
+  competitiveness: "low" | "medium" | "high";
+  level: "bachelor" | "master" | "both";
 };
 
 export async function generateMetadata({
@@ -28,21 +31,27 @@ export async function generateMetadata({
 
 export default async function UniversitiesPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ level?: string }>;
 }) {
   const { locale } = await params;
+  const { level } = await searchParams;
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "universities" });
   const items = t.raw("items") as UniversityItem[];
   const filters = t.raw("filters") as Record<string, string>;
+  const levelFilters = t.raw("levelFilters") as Record<string, string>;
   const map = t.raw("map") as { title: string; subtitle: string; hint: string; zoomHint: string };
   const search = t.raw("search") as { placeholder: string; noResults: string };
 
+  const initialLevel = level === "bachelor" || level === "master" ? level : "all";
+
   return (
     <>
-      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} />
+      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} photo={heroPhotos.universities} />
 
       <UniversitiesExplorer
         items={items}
@@ -59,25 +68,22 @@ export default async function UniversitiesPage({
           tu9: filters.tu9,
           excellence: filters.excellence,
         }}
+        levelLabels={{
+          all: levelFilters.all,
+          bachelor: levelFilters.bachelor,
+          master: levelFilters.master,
+        }}
         searchPlaceholder={search.placeholder}
         searchNoResults={search.noResults}
+        initialLevel={initialLevel}
       />
 
-      <section className="bg-grain bg-gradient-to-br from-brand to-brand-dark">
-        <Container className="flex flex-col items-center gap-6 py-16 text-center">
-          <h2 className="font-display text-3xl font-medium text-white sm:text-4xl">
-            {t("cta.title")}
-          </h2>
-          <p className="max-w-xl text-blue-100">{t("cta.subtitle")}</p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand shadow-soft transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-elevated focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"
-          >
-            {t("cta.button")}
-            <ArrowRight size={16} />
-          </Link>
-        </Container>
-      </section>
+      <CtaBand
+        variant="universitiesList"
+        title={t("cta.title")}
+        subtitle={t("cta.subtitle")}
+        buttonLabel={t("cta.button")}
+      />
     </>
   );
 }

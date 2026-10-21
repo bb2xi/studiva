@@ -18,14 +18,16 @@ type UniversityItem = {
   badges: string[];
   lat: number;
   lng: number;
+  tuitionFree?: boolean;
+  competitiveness?: "low" | "medium" | "high";
 };
 
 function markerHtml(item: UniversityItem) {
   const logo = universityLogos[item.slug];
-  const ring = item.badges.includes("excellence") ? "#f59e0b" : "#ffffff";
+  const ring = item.badges.includes("excellence") ? "#a6782c" : "#ffffff";
   if (logo) {
     return `<div style="width:34px;height:34px;border-radius:9999px;background:#ffffff;border:2.5px solid ${ring};box-shadow:0 1px 5px rgba(15,23,42,0.4);display:flex;align-items:center;justify-content:center;overflow:hidden;">
-      <img src="${logo.url}" style="width:78%;height:78%;object-fit:contain;" loading="lazy" />
+      <img src="${logo.url}" alt="" style="width:78%;height:78%;object-fit:contain;" loading="lazy" />
     </div>`;
   }
   return `<div style="width:16px;height:16px;border-radius:9999px;background:#0068ff;border:2.5px solid ${ring === "#ffffff" ? "#ffffff" : ring};box-shadow:0 1px 4px rgba(15,23,42,0.4);"></div>`;
@@ -43,11 +45,23 @@ function popupHtml(item: UniversityItem, locale: string) {
   const logoImg = logo
     ? `<img src="${logo.url}" alt="" style="max-width:100%;max-height:56px;object-fit:contain;margin-bottom:8px;" />`
     : "";
+  const tags: string[] = [];
+  if (item.tuitionFree) {
+    tags.push(
+      `<span style="display:inline-flex;align-items:center;border:1px solid rgba(31,71,51,0.35);color:#1f4733;border-radius:2px;padding:2px 6px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;">${locale === "tr" ? "Okul Ücreti Yok" : "No Tuition Fee"}</span>`
+    );
+  }
+  if (item.competitiveness === "high") {
+    tags.push(
+      `<span style="display:inline-flex;align-items:center;border:1px solid rgba(181,80,46,0.35);color:#8c3c21;border-radius:2px;padding:2px 6px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;">${locale === "tr" ? "Yüksek Rekabet" : "High Competition"}</span>`
+    );
+  }
   const viewLabel = locale === "tr" ? "Detayları Gör" : "View Details";
-  return `<div style="min-width:180px;font-family:inherit;">
+  return `<div style="min-width:190px;font-family:inherit;">
     ${logoImg}
-    <div style="font-weight:600;font-size:13px;color:#0f172a;line-height:1.3;">${item.name}</div>
-    <div style="margin-top:2px;font-size:11px;color:#64748b;">${item.city} · ${badgeRow}</div>
+    <div style="font-weight:600;font-size:13px;color:#221e18;line-height:1.3;">${item.name}</div>
+    <div style="margin-top:2px;font-size:11px;color:#726856;">${item.city} · ${badgeRow}</div>
+    ${tags.length ? `<div style="margin-top:6px;display:flex;flex-wrap:wrap;gap:4px;">${tags.join("")}</div>` : ""}
     <a href="/${locale}/universities/${item.slug}" style="display:inline-flex;align-items:center;gap:4px;margin-top:8px;font-size:12px;font-weight:600;color:#0068ff;text-decoration:none;">${viewLabel} →</a>
   </div>`;
 }
@@ -221,17 +235,46 @@ export default function GermanyMap({
   }, []);
 
   useEffect(() => {
+    const map = mapRef.current;
     const cluster = clusterRef.current;
-    if (!cluster) return;
+    if (!map || !cluster) return;
     cluster.clearLayers();
     const markers = items.map((item) => {
+      const ariaLabel = `${item.name}, ${item.city}`;
       const marker = L.marker([item.lat, item.lng], {
         icon: L.divIcon({ html: markerHtml(item), className: "", iconSize: L.point(34, 34) }),
+        keyboard: false,
       });
       marker.bindPopup(popupHtml(item, locale));
+      // Leaflet's divIcon markers aren't keyboard-reachable out of the box.
+      // The focusable, positioned element Leaflet actually manages is the
+      // OUTER wrapper it creates around our divIcon HTML (what getElement()
+      // returns) — role/tabindex/aria-label have to go on that element
+      // itself, not on a div inside our HTML string, or nothing is actually
+      // in the tab order.
+      marker.on("add", () => {
+        const el = marker.getElement();
+        if (!el) return;
+        el.setAttribute("role", "button");
+        el.setAttribute("tabindex", "0");
+        el.setAttribute("aria-label", ariaLabel);
+        el.style.outlineOffset = "2px";
+        el.addEventListener("keydown", (e) => {
+          const ke = e as KeyboardEvent;
+          if (ke.key === "Enter" || ke.key === " ") {
+            ke.preventDefault();
+            marker.openPopup();
+          }
+        });
+      });
       return marker;
     });
     cluster.addLayers(markers);
+
+    if (items.length > 0) {
+      const bounds = L.latLngBounds(items.map((i): [number, number] => [i.lat, i.lng]));
+      map.fitBounds(bounds.pad(0.35), { animate: true, maxZoom: 11 });
+    }
   }, [items, locale]);
 
   return (
@@ -241,7 +284,7 @@ export default function GermanyMap({
       <div className="relative mt-6">
         <div
           ref={containerRef}
-          className="h-[480px] w-full overflow-hidden rounded-2xl border border-border shadow-soft sm:h-[560px] lg:h-[640px]"
+          className="h-[480px] w-full overflow-hidden rounded-sm border border-border shadow-soft sm:h-[560px] lg:h-[640px]"
         />
         {!scrollZoomActive && (
           <div className="pointer-events-none absolute bottom-3 left-1/2 z-[400] -translate-x-1/2 rounded-full bg-slate-950/80 px-3.5 py-1.5 text-xs font-medium text-white shadow-sm backdrop-blur">

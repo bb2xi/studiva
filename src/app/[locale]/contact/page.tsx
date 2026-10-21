@@ -4,8 +4,9 @@ import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
 import ContactForm from "@/components/ContactForm";
 import Reveal from "@/components/Reveal";
-
-const WHATSAPP_NUMBER = "905325550101";
+import { Heading } from "@/components/Typography";
+import { heroPhotos } from "@/lib/heroPhotos";
+import { WHATSAPP_NUMBER } from "@/lib/constants";
 
 export async function generateMetadata({
   params,
@@ -26,6 +27,7 @@ export default async function ContactPage({
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "contact" });
+  const common = await getTranslations({ locale, namespace: "common" });
 
   const infoRows = [
     { icon: MapPin, label: t("info.addressLabel"), value: t("info.address") },
@@ -34,56 +36,52 @@ export default async function ContactPage({
     { icon: Clock, label: t("info.hoursLabel"), value: t("info.hours") },
   ];
 
+  const whatsappHref = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(common("whatsappMessage"))}`;
+
   return (
     <>
-      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} />
+      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} photo={heroPhotos.contact} />
 
       <section className="py-20 sm:py-24">
         <Container>
-          <div className="grid grid-cols-1 gap-10 lg:grid-cols-5">
+          <Reveal className="mx-auto max-w-2xl rounded-sm border border-clay/30 bg-clay-light p-6 text-center">
+            <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-clay text-white">
+              <MessageCircle size={20} />
+            </div>
+            <Heading as="h2" size="sm" className="mt-3">
+              {t("scheduling.title")}
+            </Heading>
+            <p className="mt-2 font-serif text-sm leading-relaxed opacity-80">{t("scheduling.description")}</p>
+            <a
+              href={whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center justify-center gap-2 rounded-sm bg-clay px-6 py-3 font-sans text-sm font-semibold text-white transition-all duration-200 ease-out hover:bg-clay-dark active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-clay/50 focus-visible:ring-offset-2"
+            >
+              <MessageCircle size={16} />
+              {t("scheduling.button")}
+            </a>
+          </Reveal>
+
+          <div className="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-5">
             <Reveal className="lg:col-span-2">
-              <h3 className="font-display text-lg font-medium text-foreground">
+              <Heading as="h3" size="sm">
                 {t("info.title")}
-              </h3>
+              </Heading>
               <div className="mt-6 space-y-6">
                 {infoRows.map((row) => (
                   <div key={row.label} className="flex items-start gap-4">
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-light text-brand">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-sm border border-border-strong text-forest">
                       <row.icon size={18} />
                     </span>
                     <div>
                       <div className="text-xs font-medium uppercase tracking-wide text-foreground-muted">
                         {row.label}
                       </div>
-                      <div className="mt-1 text-sm font-medium text-foreground">
-                        {row.value}
-                      </div>
+                      <div className="mt-1 text-sm font-medium text-foreground">{row.value}</div>
                     </div>
                   </div>
                 ))}
-              </div>
-
-              <div className="mt-8 rounded-2xl border border-brand/20 bg-brand-light p-6">
-                <div className="flex items-center gap-3">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand text-white">
-                    <MessageCircle size={18} />
-                  </span>
-                  <h3 className="text-base font-semibold text-foreground">
-                    {t("scheduling.title")}
-                  </h3>
-                </div>
-                <p className="mt-3 text-sm leading-relaxed text-foreground-secondary">
-                  {t("scheduling.description")}
-                </p>
-                <a
-                  href={`https://wa.me/${WHATSAPP_NUMBER}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition-all duration-200 ease-out hover:-translate-y-0.5 hover:bg-brand-dark hover:shadow-glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
-                >
-                  <MessageCircle size={16} />
-                  {t("scheduling.button")}
-                </a>
               </div>
             </Reveal>
 

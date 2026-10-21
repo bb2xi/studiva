@@ -1,9 +1,14 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { ArrowRight, ArrowUpRight, CalendarDays, Clock } from "lucide-react";
+import { ArrowUpRight, CalendarDays, Clock } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
+import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
+import CtaBand from "@/components/CtaBand";
+import { Heading, Data } from "@/components/Typography";
+import { Tag } from "@/components/Tag";
+import { heroPhotos } from "@/lib/heroPhotos";
 
 type BlogPost = {
   slug: string;
@@ -13,6 +18,8 @@ type BlogPost = {
   date: string;
   readTime: string;
 };
+
+const FAQ_RELEVANT_SLUGS = ["aps-belgesi-nedir", "almanyada-yasam-maliyeti-ve-bloke-hesap", "almanya-ogrenci-vizesi-basvuru-sureci"];
 
 export async function generateMetadata({
   params,
@@ -34,10 +41,39 @@ export default async function BlogPage({
 
   const t = await getTranslations({ locale, namespace: "blog" });
   const posts = t.raw("posts") as BlogPost[];
+  const featured = t.raw("featured") as { title: string; subtitle: string };
+  const featuredPosts = FAQ_RELEVANT_SLUGS.map((slug) => posts.find((p) => p.slug === slug)).filter(
+    (p): p is BlogPost => Boolean(p)
+  );
 
   return (
     <>
-      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} />
+      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} photo={heroPhotos.blog} />
+
+      {featuredPosts.length > 0 && (
+        <section className="border-b border-border bg-background-secondary py-14">
+          <Container>
+            <SectionHeading title={featured.title} subtitle={featured.subtitle} center={false} />
+            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+              {featuredPosts.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`/blog/${post.slug}`}
+                  className="group rounded-sm border border-border-strong bg-surface p-5"
+                >
+                  <Heading as="h3" size="sm" className="transition-colors group-hover:text-forest">
+                    {post.title}
+                  </Heading>
+                  <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-forest">
+                    {locale === "tr" ? "Oku" : "Read"}
+                    <ArrowUpRight size={13} />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </Container>
+        </section>
+      )}
 
       <section className="py-20 sm:py-24">
         <Container>
@@ -46,28 +82,26 @@ export default async function BlogPage({
               <Reveal key={post.slug} delay={(index % 6) * 60}>
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="group flex h-full flex-col rounded-2xl border border-border bg-surface p-6 shadow-soft transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-elevated"
+                  className="group flex h-full flex-col rounded-sm border border-border bg-surface p-6"
                 >
-                  <span className="inline-flex w-fit items-center rounded-full bg-brand-light px-3 py-1 text-xs font-semibold text-brand">
-                    {post.category}
-                  </span>
-                  <h3 className="mt-4 text-lg font-semibold text-foreground transition-colors group-hover:text-brand">
+                  <Tag variant="forest">{post.category}</Tag>
+                  <Heading as="h3" size="sm" className="mt-4 transition-colors group-hover:text-forest">
                     {post.title}
-                  </h3>
-                  <p className="mt-2 flex-1 text-sm leading-relaxed text-foreground-secondary">
+                  </Heading>
+                  <p className="mt-2 flex-1 font-serif text-sm leading-relaxed text-foreground-secondary">
                     {post.excerpt}
                   </p>
-                  <div className="mt-5 flex items-center gap-4 text-xs text-foreground-muted">
+                  <div className="mt-5 flex items-center gap-4 font-sans text-xs text-foreground-muted">
                     <span className="flex items-center gap-1.5">
                       <CalendarDays size={13} />
-                      {post.date}
+                      <Data>{post.date}</Data>
                     </span>
                     <span className="flex items-center gap-1.5">
                       <Clock size={13} />
                       {post.readTime}
                     </span>
                   </div>
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-forest">
                     {locale === "tr" ? "Devamını Oku" : "Read More"}
                     <ArrowUpRight
                       size={15}
@@ -81,19 +115,7 @@ export default async function BlogPage({
         </Container>
       </section>
 
-      <section className="bg-grain bg-gradient-to-br from-brand to-brand-dark">
-        <Container className="flex flex-col items-center gap-6 py-16 text-center">
-          <h2 className="font-display text-3xl font-medium text-white sm:text-4xl">{t("cta.title")}</h2>
-          <p className="max-w-xl text-blue-100">{t("cta.subtitle")}</p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand shadow-soft transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-elevated focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"
-          >
-            {t("cta.button")}
-            <ArrowRight size={16} />
-          </Link>
-        </Container>
-      </section>
+      <CtaBand variant="blog" title={t("cta.title")} subtitle={t("cta.subtitle")} buttonLabel={t("cta.button")} />
     </>
   );
 }

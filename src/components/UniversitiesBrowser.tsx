@@ -3,6 +3,8 @@
 import { ArrowUpRight, MapPin } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { universityMedia, universityLogos } from "@/lib/universityMedia";
+import { Tag } from "./Tag";
+import { Heading } from "./Typography";
 import Reveal from "./Reveal";
 
 type UniversityItem = {
@@ -12,6 +14,8 @@ type UniversityItem = {
   type: string;
   badges: string[];
   description: string;
+  tuitionFree?: boolean;
+  competitiveness?: "low" | "medium" | "high";
 };
 
 export default function UniversitiesBrowser({
@@ -30,62 +34,39 @@ export default function UniversitiesBrowser({
           <Reveal key={uni.slug} delay={(index % 6) * 60}>
             <Link
               href={`/universities/${uni.slug}`}
-              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-soft transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-elevated"
+              className="group flex h-full flex-col overflow-hidden rounded-sm border border-border bg-surface"
             >
               {logo ? (
-                <div className="relative flex aspect-[16/10] w-full items-center justify-center overflow-hidden bg-background-secondary p-8">
+                <div className="relative flex aspect-[16/10] w-full items-center justify-center overflow-hidden border-b border-border bg-background-secondary p-8">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={logo.url}
-                    alt={uni.name}
-                    loading="lazy"
-                    className="max-h-full max-w-full object-contain grayscale opacity-80 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0"
-                  />
-                  <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
-                    {uni.type}
-                  </span>
-                  {uni.badges.includes("excellence") && (
-                    <span className="absolute right-3 top-3 inline-flex items-center rounded-full bg-accent px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
-                      {locale === "tr" ? "Exzellenz" : "Excellence"}
-                    </span>
-                  )}
+                  <img src={logo.url} alt={uni.name} loading="lazy" className="max-h-full max-w-full object-contain" />
                 </div>
               ) : fallbackCover ? (
-                <div className="relative aspect-[16/10] w-full overflow-hidden bg-background-secondary">
+                <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-border bg-background-secondary">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={fallbackCover.url}
-                    alt={uni.name}
-                    loading="lazy"
-                    className="h-full w-full object-cover grayscale opacity-90 transition-all duration-300 group-hover:scale-105 group-hover:opacity-100 group-hover:grayscale-0"
-                  />
-                  <span className="absolute left-3 top-3 inline-flex items-center rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-brand shadow-sm backdrop-blur">
-                    {uni.type}
-                  </span>
-                  {uni.badges.includes("excellence") && (
-                    <span className="absolute right-3 top-3 inline-flex items-center rounded-full bg-accent px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-white shadow-sm">
-                      {locale === "tr" ? "Exzellenz" : "Excellence"}
-                    </span>
-                  )}
+                  <img src={fallbackCover.url} alt={uni.name} loading="lazy" className="h-full w-full object-cover" />
                 </div>
               ) : null}
               <div className="flex flex-1 flex-col p-6">
-                <h3 className="text-lg font-semibold text-foreground transition-colors group-hover:text-brand">
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <Tag variant="neutral">{uni.type}</Tag>
+                  {uni.badges.includes("excellence") && (
+                    <Tag variant="brass">{locale === "tr" ? "Exzellenz" : "Excellence"}</Tag>
+                  )}
+                  {uni.badges.includes("tu9") && <Tag variant="institutional">TU9</Tag>}
+                  {uni.tuitionFree && <Tag variant="forest">{locale === "tr" ? "Ücretsiz" : "No Fee"}</Tag>}
+                </div>
+                <Heading as="h3" size="sm" className="mt-3 transition-colors group-hover:text-forest">
                   {uni.name}
-                </h3>
+                </Heading>
                 <div className="mt-1 flex items-center gap-1.5 text-xs text-foreground-muted">
                   <MapPin size={13} />
                   {uni.city}
                 </div>
-                {uni.badges.includes("tu9") && (
-                  <span className="mt-2 inline-flex w-fit items-center rounded-full bg-brand-light px-2.5 py-0.5 text-[11px] font-semibold text-brand">
-                    TU9
-                  </span>
-                )}
-                <p className="mt-4 flex-1 text-sm leading-relaxed text-foreground-secondary">
+                <p className="mt-4 flex-1 font-serif text-sm leading-relaxed text-foreground-secondary">
                   {uni.description}
                 </p>
-                <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-brand">
+                <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-forest">
                   {locale === "tr" ? "Detayları Gör" : "View Details"}
                   <ArrowUpRight
                     size={15}

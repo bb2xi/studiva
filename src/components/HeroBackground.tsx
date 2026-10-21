@@ -1,68 +1,32 @@
-"use client";
-
-import { useEffect, useRef } from "react";
+export type HeroPhoto = { url: string; artist: string; license: string };
 
 /**
- * Ambient animated background for the hero section: two blurred gradient
- * blobs that drift on their own (pure CSS transform loops) and additionally
- * respond to pointer position via a translate offset written as CSS custom
- * properties. Only ever animates `transform`/`opacity` so it stays on the
- * GPU compositor thread. Pointer tracking is skipped on touch devices and
- * the whole thing is inert under `prefers-reduced-motion`.
+ * Photo-led hero background: a real, licensed campus photograph behind an
+ * ink/forest scrim, with a slow transform-only Ken Burns pan (defined in
+ * globals.css) instead of the old animated gradient blobs — grounds the
+ * first viewport in Studiva's actual differentiated asset (real German
+ * universities) rather than abstract decoration. `prefers-reduced-motion`
+ * is handled by both the `motion-reduce:` variant and the global CSS rule.
  */
-export default function HeroBackground() {
-  const wrapperRef = useRef<HTMLDivElement>(null);
-  const frame = useRef<number | null>(null);
-
-  useEffect(() => {
-    const wrapper = wrapperRef.current;
-    if (!wrapper) return;
-
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const isCoarsePointer = window.matchMedia("(pointer: coarse)").matches;
-    if (reduceMotion || isCoarsePointer) return;
-
-    function handlePointerMove(event: PointerEvent) {
-      if (frame.current !== null) return;
-      frame.current = requestAnimationFrame(() => {
-        frame.current = null;
-        const rect = wrapper!.getBoundingClientRect();
-        const x = (event.clientX - rect.left) / rect.width - 0.5;
-        const y = (event.clientY - rect.top) / rect.height - 0.5;
-        wrapper!.style.setProperty("--mx", x.toFixed(3));
-        wrapper!.style.setProperty("--my", y.toFixed(3));
-      });
-    }
-
-    window.addEventListener("pointermove", handlePointerMove, { passive: true });
-    return () => {
-      window.removeEventListener("pointermove", handlePointerMove);
-      if (frame.current !== null) cancelAnimationFrame(frame.current);
-    };
-  }, []);
-
+export default function HeroBackground({ photo }: { photo?: HeroPhoto }) {
+  if (!photo) {
+    return <div aria-hidden className="bg-grain pointer-events-none absolute inset-0" />;
+  }
   return (
-    <div
-      ref={wrapperRef}
-      aria-hidden
-      className="pointer-events-none absolute inset-0 overflow-hidden [--mx:0] [--my:0]"
-    >
-      <div
-        className="absolute -left-1/4 -top-1/4 h-[60vw] w-[60vw] max-h-[560px] max-w-[560px] rounded-full opacity-[0.28] blur-[110px] will-change-transform"
-        style={{
-          background: "radial-gradient(circle, #0068ff 0%, transparent 70%)",
-          animation: "blob-float-1 22s ease-in-out infinite",
-          transform: "translate3d(calc(var(--mx) * 40px), calc(var(--my) * 40px), 0)",
-        }}
+    <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={photo.url}
+        alt=""
+        loading="eager"
+        className="absolute inset-0 h-full w-full scale-110 object-cover opacity-55 [animation:ken-burns_18s_ease-in-out_infinite_alternate] motion-reduce:animate-none"
       />
-      <div
-        className="absolute -right-1/4 top-0 h-[55vw] w-[55vw] max-h-[520px] max-w-[520px] rounded-full opacity-[0.22] blur-[120px] will-change-transform"
-        style={{
-          background: "radial-gradient(circle, #002a66 0%, transparent 70%)",
-          animation: "blob-float-2 28s ease-in-out infinite",
-          transform: "translate3d(calc(var(--mx) * -30px), calc(var(--my) * 30px), 0)",
-        }}
-      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#15130f] via-[#15130f]/75 to-[#15130f]/35" />
+      <div className="absolute inset-0 bg-forest/20 mix-blend-multiply" />
+      <div className="bg-grain absolute inset-0" />
+      <p className="absolute bottom-2 right-4 font-sans text-[10px] text-white/40">
+        {photo.artist} · {photo.license}
+      </p>
     </div>
   );
 }

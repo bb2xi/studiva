@@ -10,7 +10,7 @@
     "universities": "Üniversiteler",
     "about": "Hakkımızda",
     "contact": "İletişim",
-    "cta": "Ücretsiz Danışmanlık",
+    "cta": "Ücretsiz Ön Görüşme Al",
     "blog": "Blog"
   },
   "footer": {
@@ -21,7 +21,11 @@
     "rights": "Tüm hakları saklıdır.",
     "address": "Levent, Büyükdere Cd. No:201, 34394 Şişli/İstanbul",
     "phone": "+90 532 555 01 01",
-    "email": "info@studiva.com.tr"
+    "email": "info@studiva.com.tr",
+    "companyTitle": "Kurumsal",
+    "faq": "Sık Sorulan Sorular",
+    "privacy": "Gizlilik Politikası",
+    "contactLink": "İletişim"
   },
   "home": {
     "hero": {
@@ -34,7 +38,8 @@
       "stats": [
         {
           "value": "%100",
-          "label": "Kabul Garantisi"
+          "label": "Kabul Garantisi",
+          "highlight": true
         },
         {
           "value": "9",
@@ -128,7 +133,8 @@
         },
         {
           "title": "Kabul Garantisi",
-          "description": "Sürecimizi eksiksiz takip eden öğrencilerimize kabul garantisi sunuyoruz."
+          "description": "Sürecimizi eksiksiz takip eden öğrencilerimize kabul garantisi sunuyoruz.",
+          "highlight": true
         },
         {
           "title": "Yeni ve Şeffaf Bir Ekip",
@@ -143,7 +149,7 @@
     "cta": {
       "title": "Yurt Dışı Eğitim Yolculuğunuza Bugün Başlayın",
       "subtitle": "15 dakikalık ücretsiz görüşmede size özel bir yol haritası çıkaralım.",
-      "button": "Hemen Randevu Al"
+      "button": "Ücretsiz Ön Görüşme Al"
     }
   },
   "services": {
@@ -155,7 +161,7 @@
       {
         "icon": "graduation-cap",
         "title": "Kişiye Özel, Kariyer Odaklı Yol Haritası",
-        "description": "Akademik geçmişiniz, bütçeniz ve kariyer hedeflerinize göre; hazır bir paket değil, size özel kurgulanmış bir ülke ve üniversite yol haritası çıkarıyoruz.",
+        "description": "Bu hizmet kapsamında önce akademik geçmişinizi ve hedeflerinizi birlikte çıkarır, ardından size özel 3-5 üniversitelik bir kısa liste hazırlarız; her biri için kabul şansını, müfredat denkliğini ve başvuru takvimini tek tek değerlendiririz.",
         "points": [
           "Kariyer hedefine göre kişiselleştirilmiş strateji",
           "Hedef ülkeye göre denklik ve müfredat karşılaştırması",
@@ -216,7 +222,12 @@
     "cta": {
       "title": "Hangi Hizmete İhtiyacınız Olduğundan Emin Değil Misiniz?",
       "subtitle": "Ücretsiz ön görüşmede sizin için en uygun hizmet paketini birlikte belirleyelim.",
-      "button": "Ücretsiz Görüşme Planla"
+      "button": "Ücretsiz Ön Görüşme Al"
+    },
+    "pricing": {
+      "title": "Ücretlendirme",
+      "subtitle": "Danışmanlık maliyeti konusunda net olmak, kurduğumuz güvenin bir parçası.",
+      "note": "İlk ön görüşme her zaman ücretsizdir. Paket ücreti, ihtiyacınıza göre (yalnızca üniversite/program danışmanlığı veya uçtan uca vize ve yerleşim desteği dahil tam kapsam) ön görüşme sonunda netleşir ve yazılı olarak paylaşılır — gizli veya sonradan eklenen bir ücret uygulamıyoruz."
     }
   },
   "programs": {
@@ -249,7 +260,7 @@
     "cta": {
       "title": "Size Uygun Programı ve Ülkeyi Birlikte Belirleyelim",
       "subtitle": "Akademik profilinize göre bachelor ya da master için en doğru ülke ve üniversiteyi öneriyoruz.",
-      "button": "Program Danışmanlığı Al"
+      "button": "Ücretsiz Ön Görüşme Al"
     }
   },
   "universities": {
@@ -301,7 +312,10 @@
           "Tıp"
         ],
         "lat": 48.1497,
-        "lng": 11.5678
+        "lng": 11.5678,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "lmu",
@@ -345,7 +359,10 @@
           "Doğa Bilimleri"
         ],
         "lat": 48.1512,
-        "lng": 11.5806
+        "lng": 11.5806,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "huberlin",
@@ -389,7 +406,10 @@
           "Doğa Bilimleri"
         ],
         "lat": 52.517,
-        "lng": 13.3936
+        "lng": 13.3936,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "rwth",
@@ -434,7 +454,10 @@
           "Bilgisayar Bilimi"
         ],
         "lat": 50.7782,
-        "lng": 6.0817
+        "lng": 6.0817,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "mannheim",
@@ -476,7 +499,10 @@
           "Psikoloji"
         ],
         "lat": 49.4794,
-        "lng": 8.4622
+        "lng": 8.4622,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hm",
@@ -518,7 +544,10 @@
           "Bilgisayar Bilimi"
         ],
         "lat": 48.1611,
-        "lng": 11.5486
+        "lng": 11.5486,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "frankfurtuas",
@@ -560,7 +589,10 @@
           "Bilgisayar Bilimi"
         ],
         "lat": 50.1289,
-        "lng": 8.6858
+        "lng": 8.6858,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "dhbw",
@@ -602,7 +634,10 @@
           "Bilgisayar Bilimi (Dual)"
         ],
         "lat": 48.7784,
-        "lng": 9.1733
+        "lng": 9.1733,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "bachelor"
       },
       {
         "slug": "iu",
@@ -644,7 +679,10 @@
           "Psikoloji"
         ],
         "lat": 50.967,
-        "lng": 11.043
+        "lng": 11.043,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "bachelor"
       },
       {
         "slug": "fom",
@@ -686,7 +724,10 @@
           "Yönetim"
         ],
         "lat": 51.4508,
-        "lng": 7.0131
+        "lng": 7.0131,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "bachelor"
       },
       {
         "slug": "heidelberg",
@@ -730,7 +771,10 @@
           "Hukuk"
         ],
         "lat": 49.4097,
-        "lng": 8.7057
+        "lng": 8.7057,
+        "tuitionFree": false,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "tuebingen",
@@ -774,7 +818,10 @@
           "Teoloji"
         ],
         "lat": 48.5225,
-        "lng": 9.0561
+        "lng": 9.0561,
+        "tuitionFree": false,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "kit",
@@ -818,7 +865,10 @@
           "Fizik"
         ],
         "lat": 49.0117,
-        "lng": 8.4149
+        "lng": 8.4149,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "freiburg",
@@ -860,7 +910,10 @@
           "Orman Mühendisliği"
         ],
         "lat": 47.9955,
-        "lng": 7.846
+        "lng": 7.846,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "goettingen",
@@ -902,7 +955,10 @@
           "Hukuk"
         ],
         "lat": 51.5346,
-        "lng": 9.9349
+        "lng": 9.9349,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "bonn",
@@ -946,7 +1002,10 @@
           "Matematik"
         ],
         "lat": 50.734,
-        "lng": 7.0956
+        "lng": 7.0956,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "koeln",
@@ -988,7 +1047,10 @@
           "Tıp"
         ],
         "lat": 50.9279,
-        "lng": 6.9271
+        "lng": 6.9271,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "tuberlin",
@@ -1033,7 +1095,10 @@
           "Bilgisayar Bilimi"
         ],
         "lat": 52.5125,
-        "lng": 13.3269
+        "lng": 13.3269,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "tudresden",
@@ -1078,7 +1143,10 @@
           "Malzeme Bilimi"
         ],
         "lat": 51.0272,
-        "lng": 13.7231
+        "lng": 13.7231,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "tudarmstadt",
@@ -1122,7 +1190,10 @@
           "Elektrik-Elektronik Mühendisliği"
         ],
         "lat": 49.8728,
-        "lng": 8.6512
+        "lng": 8.6512,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "tubraunschweig",
@@ -1166,7 +1237,10 @@
           "Biyoteknoloji"
         ],
         "lat": 52.2733,
-        "lng": 10.5261
+        "lng": 10.5261,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hannover",
@@ -1210,7 +1284,10 @@
           "Hukuk"
         ],
         "lat": 52.3841,
-        "lng": 9.7161
+        "lng": 9.7161,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "stuttgart",
@@ -1254,7 +1331,10 @@
           "Mimarlık"
         ],
         "lat": 48.7801,
-        "lng": 9.1774
+        "lng": 9.1774,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "konstanz",
@@ -1298,7 +1378,10 @@
           "Bilgisayar Bilimi"
         ],
         "lat": 47.693,
-        "lng": 9.1859
+        "lng": 9.1859,
+        "tuitionFree": false,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "htwberlin",
@@ -1340,7 +1423,10 @@
           "Tasarım"
         ],
         "lat": 52.4809,
-        "lng": 13.5246
+        "lng": 13.5246,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "furtwangen",
@@ -1382,7 +1468,10 @@
           "Mühendislik"
         ],
         "lat": 48.0511,
-        "lng": 8.2076
+        "lng": 8.2076,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hamburg",
@@ -1426,7 +1515,10 @@
           "Hukuk"
         ],
         "lat": 53.5657,
-        "lng": 9.9847
+        "lng": 9.9847,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "fuberlin",
@@ -1469,7 +1561,10 @@
           "Biyoloji/Yaşam Bilimleri"
         ],
         "lat": 52.4536,
-        "lng": 13.2878
+        "lng": 13.2878,
+        "tuitionFree": true,
+        "competitiveness": "high",
+        "level": "both"
       },
       {
         "slug": "erlangen",
@@ -1510,7 +1605,10 @@
           "Tıbbi Teknoloji"
         ],
         "lat": 49.5985,
-        "lng": 11.0036
+        "lng": 11.0036,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "bochum",
@@ -1551,7 +1649,10 @@
           "Doğu Asya Çalışmaları"
         ],
         "lat": 51.4487,
-        "lng": 7.2609
+        "lng": 7.2609,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "mainz",
@@ -1592,7 +1693,10 @@
           "İletişim Bilimleri"
         ],
         "lat": 49.9931,
-        "lng": 8.238
+        "lng": 8.238,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "muenster",
@@ -1633,7 +1737,10 @@
           "Teoloji"
         ],
         "lat": 51.9616,
-        "lng": 7.6151
+        "lng": 7.6151,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "bremen",
@@ -1674,7 +1781,10 @@
           "Bilgisayar Bilimi"
         ],
         "lat": 53.1079,
-        "lng": 8.8514
+        "lng": 8.8514,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "kiel",
@@ -1715,7 +1825,10 @@
           "Tarım ve Beslenme Bilimleri"
         ],
         "lat": 54.3401,
-        "lng": 10.1225
+        "lng": 10.1225,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "marburg",
@@ -1756,7 +1869,10 @@
           "Beşeri Bilimler"
         ],
         "lat": 50.809,
-        "lng": 8.771
+        "lng": 8.771,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "jena",
@@ -1796,7 +1912,10 @@
           "Biyoloji"
         ],
         "lat": 50.928,
-        "lng": 11.588
+        "lng": 11.588,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "thkoeln",
@@ -1837,7 +1956,10 @@
           "Medya Teknolojisi"
         ],
         "lat": 50.935,
-        "lng": 6.955
+        "lng": 6.955,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hsmannheim",
@@ -1878,7 +2000,10 @@
           "Biyoteknoloji"
         ],
         "lat": 49.4913,
-        "lng": 8.4676
+        "lng": 8.4676,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hskarlsruhe",
@@ -1919,7 +2044,10 @@
           "Bilgi Teknolojileri"
         ],
         "lat": 49.0089,
-        "lng": 8.3975
+        "lng": 8.3975,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "htwgkonstanz",
@@ -1960,7 +2088,10 @@
           "İletişim Tasarımı"
         ],
         "lat": 47.6743,
-        "lng": 9.1682
+        "lng": 9.1682,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "thingolstadt",
@@ -2001,7 +2132,10 @@
           "İşletme Bilişimi"
         ],
         "lat": 48.765,
-        "lng": 11.424
+        "lng": 11.424,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hbrs",
@@ -2042,7 +2176,10 @@
           "İşletme"
         ],
         "lat": 50.7714,
-        "lng": 7.165
+        "lng": 7.165,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hda",
@@ -2083,7 +2220,10 @@
           "Elektrik-Elektronik Mühendisliği"
         ],
         "lat": 49.8646,
-        "lng": 8.6321
+        "lng": 8.6321,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "reutlingen",
@@ -2124,7 +2264,10 @@
           "Mekatronik"
         ],
         "lat": 48.488,
-        "lng": 9.216
+        "lng": 9.216,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "fhmuenster",
@@ -2165,7 +2308,10 @@
           "Sosyal Çalışma"
         ],
         "lat": 51.9506,
-        "lng": 7.6198
+        "lng": 7.6198,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "osnabrueck",
@@ -2206,7 +2352,10 @@
           "İşletme"
         ],
         "lat": 52.276,
-        "lng": 8.0442
+        "lng": 8.0442,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "bht",
@@ -2247,7 +2396,10 @@
           "Matematik"
         ],
         "lat": 52.5476,
-        "lng": 13.3572
+        "lng": 13.3572,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "jade",
@@ -2288,7 +2440,10 @@
           "Makine Mühendisliği"
         ],
         "lat": 53.5286,
-        "lng": 8.1058
+        "lng": 8.1058,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "duesseldorf",
@@ -2328,7 +2483,10 @@
           "Hukuk"
         ],
         "lat": 51.19,
-        "lng": 6.7947
+        "lng": 6.7947,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "ude",
@@ -2368,7 +2526,10 @@
           "Sosyal Bilimler"
         ],
         "lat": 51.4587,
-        "lng": 7.0122
+        "lng": 7.0122,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "tudortmund",
@@ -2408,7 +2569,10 @@
           "Makine Mühendisliği"
         ],
         "lat": 51.4925,
-        "lng": 7.416
+        "lng": 7.416,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "bielefeld",
@@ -2448,7 +2612,10 @@
           "Biyoloji"
         ],
         "lat": 52.0389,
-        "lng": 8.4951
+        "lng": 8.4951,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "paderborn",
@@ -2488,7 +2655,10 @@
           "İşletme"
         ],
         "lat": 51.7189,
-        "lng": 8.7719
+        "lng": 8.7719,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "siegen",
@@ -2528,7 +2698,10 @@
           "Makine Mühendisliği"
         ],
         "lat": 50.8747,
-        "lng": 8.0247
+        "lng": 8.0247,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "wuppertal",
@@ -2568,7 +2741,10 @@
           "Fizik"
         ],
         "lat": 51.2447,
-        "lng": 7.1519
+        "lng": 7.1519,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "luebeck",
@@ -2608,7 +2784,10 @@
           "Moleküler Yaşam Bilimleri"
         ],
         "lat": 53.8655,
-        "lng": 10.7085
+        "lng": 10.7085,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "rostock",
@@ -2648,7 +2827,10 @@
           "Tarım Bilimleri"
         ],
         "lat": 54.0865,
-        "lng": 12.1345
+        "lng": 12.1345,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "greifswald",
@@ -2688,7 +2870,10 @@
           "Biyoloji"
         ],
         "lat": 54.0947,
-        "lng": 13.3877
+        "lng": 13.3877,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "magdeburg",
@@ -2728,7 +2913,10 @@
           "Tıp"
         ],
         "lat": 52.1397,
-        "lng": 11.6461
+        "lng": 11.6461,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "halle",
@@ -2768,7 +2956,10 @@
           "Doğa Bilimleri"
         ],
         "lat": 51.4832,
-        "lng": 11.9694
+        "lng": 11.9694,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "leipzig",
@@ -2808,7 +2999,10 @@
           "Spor Bilimleri"
         ],
         "lat": 51.3397,
-        "lng": 12.3776
+        "lng": 12.3776,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "tuchemnitz",
@@ -2848,7 +3042,10 @@
           "Bilgisayar Bilimi"
         ],
         "lat": 50.8113,
-        "lng": 12.9226
+        "lng": 12.9226,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "potsdam",
@@ -2888,7 +3085,10 @@
           "Kamu Yönetimi"
         ],
         "lat": 52.4009,
-        "lng": 13.0089
+        "lng": 13.0089,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "viadrina",
@@ -2928,7 +3128,10 @@
           "Kültürel Çalışmalar"
         ],
         "lat": 52.3436,
-        "lng": 14.5507
+        "lng": 14.5507,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "btucottbus",
@@ -2968,7 +3171,10 @@
           "Mimarlık"
         ],
         "lat": 51.7626,
-        "lng": 14.3289
+        "lng": 14.3289,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "wuerzburg",
@@ -3008,7 +3214,10 @@
           "Psikoloji"
         ],
         "lat": 49.7896,
-        "lng": 9.9331
+        "lng": 9.9331,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "regensburg",
@@ -3048,7 +3257,10 @@
           "Doğu Avrupa Çalışmaları"
         ],
         "lat": 49.0177,
-        "lng": 12.0966
+        "lng": 12.0966,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "passau",
@@ -3088,7 +3300,10 @@
           "Bilgisayar Bilimi"
         ],
         "lat": 48.5733,
-        "lng": 13.461
+        "lng": 13.461,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "bayreuth",
@@ -3128,7 +3343,10 @@
           "Hukuk ve İşletme"
         ],
         "lat": 49.9291,
-        "lng": 11.5888
+        "lng": 11.5888,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "augsburg",
@@ -3168,7 +3386,10 @@
           "Bilgisayar Bilimi"
         ],
         "lat": 48.3348,
-        "lng": 10.8979
+        "lng": 10.8979,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "bamberg",
@@ -3208,7 +3429,10 @@
           "Kültürel Miras Koruma"
         ],
         "lat": 49.8971,
-        "lng": 10.8909
+        "lng": 10.8909,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "kueichstaett",
@@ -3248,7 +3472,10 @@
           "Eğitim Bilimleri"
         ],
         "lat": 48.8965,
-        "lng": 11.1858
+        "lng": 11.1858,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hohenheim",
@@ -3288,7 +3515,10 @@
           "İşletme"
         ],
         "lat": 48.7136,
-        "lng": 9.2117
+        "lng": 9.2117,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "ulm",
@@ -3328,7 +3558,10 @@
           "Mühendislik"
         ],
         "lat": 48.4225,
-        "lng": 9.9575
+        "lng": 9.9575,
+        "tuitionFree": false,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "saarland",
@@ -3368,7 +3601,10 @@
           "Hukuk"
         ],
         "lat": 49.2542,
-        "lng": 7.0428
+        "lng": 7.0428,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "rptu",
@@ -3408,7 +3644,10 @@
           "Mühendislik"
         ],
         "lat": 49.4278,
-        "lng": 7.7611
+        "lng": 7.7611,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "fernunihagen",
@@ -3448,7 +3687,10 @@
           "Psikoloji"
         ],
         "lat": 51.3742,
-        "lng": 7.4886
+        "lng": 7.4886,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "oldenburg",
@@ -3488,7 +3730,10 @@
           "Müzikoloji"
         ],
         "lat": 53.1435,
-        "lng": 8.1657
+        "lng": 8.1657,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "hildesheim",
@@ -3528,7 +3773,10 @@
           "Psikoloji"
         ],
         "lat": 52.1495,
-        "lng": 9.9563
+        "lng": 9.9563,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "leuphana",
@@ -3568,7 +3816,10 @@
           "Eğitim Bilimleri"
         ],
         "lat": 53.2405,
-        "lng": 10.4057
+        "lng": 10.4057,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "tuclausthal",
@@ -3608,7 +3859,10 @@
           "Enerji Teknolojileri"
         ],
         "lat": 51.8047,
-        "lng": 10.3358
+        "lng": 10.3358,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       },
       {
         "slug": "vechta",
@@ -3648,13 +3902,16 @@
           "Gerontoloji"
         ],
         "lat": 52.728,
-        "lng": 8.283
+        "lng": 8.283,
+        "tuitionFree": true,
+        "competitiveness": "medium",
+        "level": "both"
       }
     ],
     "cta": {
       "title": "Size Uygun Üniversiteyi Birlikte Bulalım",
       "subtitle": "Akademik profilinize ve hedeflediğiniz şehre göre en doğru üniversite ve programı öneriyoruz.",
-      "button": "Üniversite Danışmanlığı Al"
+      "button": "Ücretsiz Ön Görüşme Al"
     },
     "filters": {
       "all": "Tümü",
@@ -3673,6 +3930,16 @@
     "search": {
       "placeholder": "Üniversite adı veya şehir ara...",
       "noResults": "Aramanızla eşleşen üniversite bulunamadı."
+    },
+    "ctaDetail": {
+      "title": "{name} İçin Başvuru Sürecinizi Birlikte Planlayalım",
+      "subtitle": "Profilinizi değerlendirip bu üniversite için kabul şansınızı ve başvuru takvimini netleştirelim."
+    },
+    "admissionNote": "Çoğu devlet üniversitesinde kış dönemi başvuruları 15 Temmuz, yaz dönemi başvuruları 15 Ocak'ta kapanır; sınırlı kontenjanlı (NC) programlarda tarihler daha erken olabilir. Türkiye'den başvurularda APS şartı geçerlidir — güncel koşulları ücretsiz ön görüşmede birlikte teyit ediyoruz.",
+    "levelFilters": {
+      "all": "Tüm Seviyeler",
+      "bachelor": "Bachelor",
+      "master": "Master"
     }
   },
   "about": {
@@ -3685,7 +3952,7 @@
       "paragraphs": [
         "Studiva, 2026 yılında İstanbul'da, öğrencilerin Avrupa'nın önde gelen üniversitelerine şeffaf ve güvenilir bir süreçle ulaşmasını sağlamak amacıyla kuruldu.",
         "Almanya genelinde 80'den fazla üniversite hakkında güncel bilgiye sahip bir ekibiz; Exzellenzuniversität'lerden TU9 teknik üniversitelerine, Hochschule'lerden Dual Studium programlarına kadar her kurumun başvuru sistemini, vize gereksinimlerini ve akademik takvimini yakından takip ediyoruz.",
-        "Her öğrencinin akademik geçmişi, bütçesi ve hedefleri farklıdır; bu yüzden tek bir şablona sıkışmadan, size en uygun ülke ve üniversiteyi birlikte belirliyoruz. Yeni kurulan bir firma olarak şişirilmiş rakamlar yerine somut bir taahhüt sunuyoruz: sürecinizi eksiksiz tamamladığınızda kabul garantisi."
+        "Sürecinizi dört adımda yürütüyoruz: profil ve hedef değerlendirmesi, üniversite ve program eşleştirmesi, başvuru ve belge takibi, vize ve yerleşim desteği. Her adımda tam olarak hangi aşamada olduğunuzu ve sırada ne olduğunu bilmenizi sağlıyoruz."
       ]
     },
     "mission": {
@@ -3715,22 +3982,27 @@
     },
     "stats": [
       {
+        "value": "82+",
+        "label": "Takip Ettiğimiz Üniversite"
+      },
+      {
+        "value": "9",
+        "label": "Kapsadığımız Ülke / Bölge"
+      },
+      {
         "value": "2026",
         "label": "Kuruluş Yılı"
       },
       {
-        "value": "9",
-        "label": "TU9 Üniversitesi"
-      },
-      {
-        "value": "%100",
-        "label": "Kabul Garantisi"
-      },
-      {
-        "value": "82+",
-        "label": "Üniversite Seçeneği"
+        "value": "4",
+        "label": "Adımlı Şeffaf Süreç",
+        "highlight": true
       }
-    ]
+    ],
+    "team": {
+      "title": "Ekibimiz",
+      "comingSoonLabel": "Danışman ekibimizin tanıtımları ve uzmanlık alanları yakında burada yer alacak. Bu arada ücretsiz ön görüşmede doğrudan tanışabilirsiniz."
+    }
   },
   "contact": {
     "hero": {
@@ -3761,7 +4033,7 @@
       "message": "Mesajınız",
       "messagePlaceholder": "Hedeflediğiniz bölüm, üniversite ya da sorularınızı yazabilirsiniz.",
       "submit": "Gönder",
-      "disclaimer": "Bu form şu anda demo amaçlıdır; gönderim işlemi bir sunucuya bağlanmamaktadır. Hızlı yanıt için WhatsApp üzerinden yazabilirsiniz.",
+      "disclaimer": "Formu göndererek yukarıdaki iletişim bilgilerinizin, size dönüş yapmamız amacıyla işlenmesini kabul etmiş olursunuz.",
       "country": "İlgilendiğiniz Program Türü",
       "countryPlaceholder": "Seçiniz",
       "countryOptions": [
@@ -3770,7 +4042,12 @@
         "Dual Studium",
         "Studienkolleg / Dil Hazırlık",
         "Henüz Emin Değilim"
-      ]
+      ],
+      "consentPrefix": "Kişisel verilerimin ",
+      "consentLinkText": "Gizlilik Politikası",
+      "consentSuffix": " kapsamında işlenmesini kabul ediyorum.",
+      "consentRequired": "Devam etmek için onay kutusunu işaretleyin.",
+      "errorNote": "Bir şeyler ters gitti. Lütfen tekrar deneyin ya da doğrudan WhatsApp üzerinden yazın."
     }
   },
   "blog": {
@@ -3874,6 +4151,79 @@
       "title": "Sorularınız mı var? Ücretsiz görüşelim.",
       "subtitle": "Akademik profilinize özel bir yol haritası çıkaralım.",
       "button": "Ücretsiz Görüşme Al"
+    },
+    "featured": {
+      "title": "Sık Merak Edilenler",
+      "subtitle": "Başvuru sürecinde en çok sorulan üç konu."
     }
+  },
+  "common": {
+    "whatsappMessage": "Merhaba, Almanya'da üniversite başvurusu hakkında bilgi almak istiyorum.",
+    "whatsappAriaLabel": "WhatsApp'tan mesaj gönder"
+  },
+  "faq": {
+    "title": "Sık Sorulan Sorular",
+    "subtitle": "Başvuru sürecinde en çok karşılaştığımız sorular ve net yanıtları.",
+    "items": [
+      {
+        "question": "\"%100 Kabul Garantisi\" tam olarak ne anlama geliyor?",
+        "answer": "Profil değerlendirmesinden üniversite seçimine, başvuru takibinden vize desteğine kadar önerdiğimiz süreci eksiksiz tamamlayan ve başvuru koşullarını (dil belgesi, APS, akademik denklik gibi) karşılayan öğrencilerimize, en az bir üniversiteden kabul alana kadar ücretsiz danışmanlık desteği sağlıyoruz. Garanti, sürecin birlikte ve eksiksiz yürütülmesi şartına bağlıdır."
+      },
+      {
+        "question": "Danışmanlığınızın ücreti nedir?",
+        "answer": "İlk ön görüşme her zaman ücretsizdir. Paket ücreti ihtiyacınıza göre (yalnızca üniversite/program danışmanlığı veya uçtan uca vize ve yerleşim desteği dahil tam kapsam) bu görüşmenin sonunda netleşir ve yazılı olarak paylaşılır."
+      },
+      {
+        "question": "APS belgesi nedir, bana da gerekli mi?",
+        "answer": "APS (Akademik Değerlendirme Merkezi) belgesi, Türkiye'deki lise/üniversite eğitiminizin Almanya'daki eğitimle denkliğini gösteren resmi bir belgedir ve Türkiye'den başvuran öğrencilerin büyük çoğunluğu için gereklidir. Başvuru sürecinde size özel hangi belgelerin gerektiğini birlikte netleştiriyoruz."
+      },
+      {
+        "question": "Bloke hesap (Sperrkonto) ne kadar olmalı?",
+        "answer": "Öğrenci vizesi için blokeli hesabınızda bulunması gereken tutar her yıl güncellenir ve başvuru anındaki resmi rakama göre belirlenir; güncel tutarı ve hesap açılış sürecini ücretsiz ön görüşmede birlikte teyit ediyoruz."
+      },
+      {
+        "question": "Bachelor mı Master mı, hangisi bana uygun?",
+        "answer": "Lise sonrası ilk üniversite eğitiminiz için Bachelor, mevcut bir lisans diplomanız üzerine uzmanlaşmak için Master programları uygundur. Akademik geçmişinizi değerlendirip size uygun seviyeyi ve üniversiteleri birlikte belirliyoruz."
+      },
+      {
+        "question": "Başvuru takvimi ne zaman işliyor?",
+        "answer": "Çoğu devlet üniversitesinde kış dönemi başvuruları 15 Temmuz, yaz dönemi başvuruları 15 Ocak'ta kapanır; sınırlı kontenjanlı (NC) programlarda tarihler daha erken olabilir. Hedeflediğiniz program için güncel takvimi birlikte kontrol ediyoruz."
+      },
+      {
+        "question": "Yalnızca Almanya için mi danışmanlık veriyorsunuz?",
+        "answer": "Birincil uzmanlık alanımız Almanya olsa da İngiltere, Hollanda, Fransa dahil 9 Avrupa ülkesi/bölgesinde danışmanlık sağlıyoruz."
+      },
+      {
+        "question": "Kişisel verilerim nasıl korunuyor?",
+        "answer": "Formlar aracılığıyla paylaştığınız bilgiler yalnızca size dönüş yapmak amacıyla işlenir ve üçüncü taraflarla paylaşılmaz. Ayrıntılar için Gizlilik Politikası sayfamıza bakabilirsiniz."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Gizlilik Politikası",
+    "subtitle": "Kişisel verilerinizi nasıl topladığımız ve kullandığımız hakkında.",
+    "updated": "Son güncelleme: 2026",
+    "sections": [
+      {
+        "heading": "Hangi Verileri Topluyoruz",
+        "body": "İletişim formumuzu doldurduğunuzda ad-soyad, e-posta adresi, telefon numarası ve mesajınızdaki bilgileri; WhatsApp üzerinden yazdığınızda ise paylaştığınız iletişim ve mesaj içeriğini topluyoruz."
+      },
+      {
+        "heading": "Verilerinizi Nasıl Kullanıyoruz",
+        "body": "Topladığımız bilgileri yalnızca size ücretsiz ön görüşme ve danışmanlık hizmeti sunmak, sorularınıza yanıt vermek ve (açık rızanız olması halinde) süreç boyunca sizinle iletişimde kalmak amacıyla kullanırız."
+      },
+      {
+        "heading": "Verilerinizi Kimlerle Paylaşıyoruz",
+        "body": "Kişisel verileriniz, yasal zorunluluklar dışında üçüncü taraflarla paylaşılmaz veya satılmaz."
+      },
+      {
+        "heading": "Haklarınız",
+        "body": "6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında verilerinize erişme, düzeltilmesini veya silinmesini talep etme hakkına sahipsiniz. Bu talepleriniz için info@studiva.com.tr adresinden bize ulaşabilirsiniz."
+      },
+      {
+        "heading": "Veri Saklama",
+        "body": "Verileriniz, hizmet ilişkimiz devam ettiği ve yasal saklama süreleri boyunca güvenli şekilde saklanır; talebiniz üzerine silinir."
+      }
+    ]
   }
 }

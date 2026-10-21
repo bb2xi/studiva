@@ -1,51 +1,77 @@
 @import "tailwindcss";
 
 :root {
-  /* Surfaces */
-  --background: #ffffff;
-  --background-secondary: #f8fafc;
+  /* Surfaces — warm "book paper" ivory, not clinical white */
+  --background: #faf7f0;
+  --background-secondary: #f1ebdc;
   --surface: #ffffff;
 
-  /* Text */
-  --foreground: #0f172a;
-  --foreground-secondary: #475569;
-  --foreground-muted: #94a3b8;
+  /* Text — warm ink, not cool slate */
+  --foreground: #221e18;
+  --foreground-secondary: #52493c;
+  --foreground-muted: #726856;
 
-  /* Borders */
-  --border-color: #f1f5f9;
-  --border-color-strong: #e2e8f0;
+  /* Borders — parchment hairlines */
+  --border-color: #e6dcc6;
+  --border-color-strong: #cbb98e;
 
-  /* Primary (brand) — matches the Studiva logo's exact blue (#0068ff) */
+  /* Primary (brand) — the Studiva logo's exact blue, kept unchanged.
+     Narrowed role: the logo mark, the single primary CTA fill, focus
+     rings, and "official/verified" institutional badges (TU9, Exzellenz) —
+     not washed across every icon and hover state like before. */
   --brand: #0068ff;
   --brand-dark: #0052cc;
-  --brand-light: #eaf2ff;
+  --brand-light: #e8f0ff;
 
-  /* Accent (guarantee badges, highlights, secondary CTAs) — a richer, less "default Tailwind" gold */
-  --accent: #c8850f;
-  --accent-dark: #8a5a09;
-  --accent-light: #fbf1de;
+  /* Institutional secondary — "library green": secondary buttons, active
+     nav state, "good match / tuition-free" signal tags. */
+  --forest: #1f4733;
+  --forest-dark: #15321f;
+  --forest-light: #e7eee6;
+
+  /* Accent — antique brass, not amber. Guarantee/seal badge, the one
+     stat/card per section explicitly flagged highlight:true (never by
+     array index), Excellence-university marker, "medium competition" tag. */
+  --accent: #a6782c;
+  --accent-dark: #7c591f;
+  --accent-light: #f4ecd6;
+
+  /* Human/action color — Studiva's warmth, deliberately distinct from the
+     institutional blue. The WhatsApp button, "talk to a person" CTAs,
+     team/mentor accents, "high competition / reach school" tags. */
+  --clay: #b5502e;
+  --clay-dark: #8c3c21;
+  --clay-light: #f3e2d9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0f1c;
-    --background-secondary: #0e1526;
-    --surface: #121a2c;
+    --background: #15130f;
+    --background-secondary: #1c1912;
+    --surface: #1f1b14;
 
-    --foreground: #f8fafc;
-    --foreground-secondary: #cbd5e1;
-    --foreground-muted: #64748b;
+    --foreground: #f3ede1;
+    --foreground-secondary: #c9bfae;
+    --foreground-muted: #948a76;
 
-    --border-color: #1e293b;
-    --border-color-strong: #29394f;
+    --border-color: #332c1f;
+    --border-color-strong: #4a4028;
 
-    --brand: #4d93ff;
+    --brand: #5b9bff;
     --brand-dark: #a3c9ff;
-    --brand-light: #0e1f3d;
+    --brand-light: #132544;
 
-    --accent: #e3a53f;
-    --accent-dark: #c8850f;
-    --accent-light: #251d0e;
+    --forest: #4a8868;
+    --forest-dark: #8fbba3;
+    --forest-light: #1c2a20;
+
+    --accent: #d1a253;
+    --accent-dark: #e8c988;
+    --accent-light: #2b2214;
+
+    --clay: #e2795a;
+    --clay-dark: #f0a98c;
+    --clay-light: #2e1c14;
   }
 }
 
@@ -65,16 +91,28 @@
   --color-brand-dark: var(--brand-dark);
   --color-brand-light: var(--brand-light);
 
+  --color-forest: var(--forest);
+  --color-forest-dark: var(--forest-dark);
+  --color-forest-light: var(--forest-light);
+
   --color-accent: var(--accent);
   --color-accent-dark: var(--accent-dark);
   --color-accent-light: var(--accent-light);
 
+  --color-clay: var(--clay);
+  --color-clay-dark: var(--clay-dark);
+  --color-clay-light: var(--clay-light);
+
   --font-sans: var(--font-geist-sans);
   --font-display: var(--font-fraunces);
+  --font-serif: var(--font-newsreader);
+  --font-data: var(--font-space-mono);
 
-  /* Soft, layered elevation — replaces Tailwind's flat default shadows with
-     a more deliberate, diffused recipe (two stacked shadows: a tight contact
-     shadow + a broad ambient one). */
+  /* Soft, layered elevation. Role narrowed by the editorial system: never
+     used on static content (cards/list rows get a hairline rule instead)
+     — reserved for genuinely floating/overlay UI (sticky nav on scroll,
+     mobile menu panel, popovers, map popups, toasts). shadow now means
+     "layered above the page," not "this is a card." */
   --shadow-soft: 0 1px 2px rgba(15, 23, 42, 0.04), 0 10px 24px -10px rgba(15, 23, 42, 0.12);
   --shadow-elevated: 0 4px 10px rgba(15, 23, 42, 0.05), 0 24px 48px -16px rgba(15, 23, 42, 0.22);
   --shadow-glow: 0 12px 28px -8px rgba(0, 104, 255, 0.5);
@@ -85,8 +123,9 @@ body {
   color: var(--foreground);
 }
 
-/* Subtle film-grain overlay for large dark/gradient surfaces — keeps flat
-   CSS gradients from reading as flat, glossy "AI-generated" blobs. */
+/* Subtle film-grain overlay — keeps flat gradients/photo scrims from
+   reading as glossy "AI-generated" surfaces. Used on both ivory paper
+   sections and dark photo scrims. */
 .bg-grain {
   position: relative;
 }
@@ -111,38 +150,27 @@ body {
   }
 }
 
-@keyframes blob-float-1 {
-  0%,
+/* Slow, transform-only pan for photo-led heroes (replaces the old
+   animated gradient-blob background — nothing moves on screen now
+   without a user action, except this one deliberate, quiet exception). */
+@keyframes ken-burns {
+  0% {
+    transform: scale(1.08) translate3d(0, 0, 0);
+  }
   100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  33% {
-    transform: translate3d(4%, 6%, 0) scale(1.08);
-  }
-  66% {
-    transform: translate3d(-3%, 3%, 0) scale(0.96);
+    transform: scale(1.18) translate3d(-1.5%, -1%, 0);
   }
 }
 
-@keyframes blob-float-2 {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
+/* Count-up number reveal for ledger/stat figures (Reveal.tsx triggers the
+   visible state; this just governs how the figure settles in). */
+@keyframes figure-settle {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
   }
-  40% {
-    transform: translate3d(-5%, -4%, 0) scale(1.1);
-  }
-  75% {
-    transform: translate3d(3%, -2%, 0) scale(0.94);
-  }
-}
-
-@keyframes blob-float-3 {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(-4%, 5%, 0) scale(1.06);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

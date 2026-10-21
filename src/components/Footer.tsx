@@ -4,63 +4,54 @@ import { Link } from "@/i18n/navigation";
 
 export default function Footer() {
   const t = useTranslations("footer");
-  const nav = useTranslations("nav");
   const services = useTranslations("home.services");
 
   const year = new Date().getFullYear();
 
-  const quickLinks = [
-    { href: "/", label: nav("home") },
-    { href: "/services", label: nav("services") },
-    { href: "/programs", label: nav("programs") },
-    { href: "/universities", label: nav("universities") },
-    { href: "/blog", label: nav("blog") },
-    { href: "/about", label: nav("about") },
-    { href: "/contact", label: nav("contact") },
-  ];
-
   const serviceItems = services.raw("items") as { title: string }[];
 
+  const legalLinks = [
+    { href: "/faq", label: t("faq") },
+    { href: "/privacy", label: t("privacy") },
+    { href: "/contact", label: t("contactLink") },
+  ];
+
   return (
-    <footer className="border-t border-slate-100 bg-slate-950 text-slate-300">
+    // Always-dark footer regardless of site theme (matching the editorial
+    // "ink paper" family from dark mode), so it reads as a fixed colophon
+    // band rather than flipping light when the page itself is in dark mode.
+    <footer className="border-t border-black/20 bg-[#1a160f] text-[#f3ede1]">
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-14 sm:px-6 md:grid-cols-4 lg:px-8">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2 font-bold text-white">
+          <div className="flex items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logo-icon.png" alt="" className="h-9 w-9" />
             <span className="font-display text-xl font-medium tracking-tight">Studiva</span>
           </div>
-          <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate-400">
-            {t("description")}
-          </p>
+          <p className="mt-4 max-w-sm font-serif text-sm leading-relaxed opacity-70">{t("description")}</p>
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-white">
-            {t("quickLinks")}
+          <h3 className="font-sans text-xs font-semibold uppercase tracking-wide opacity-60">
+            {t("servicesTitle")}
           </h3>
-          <ul className="mt-4 space-y-2 text-sm">
-            {quickLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="text-slate-400 transition-colors duration-200 hover:text-white"
-                >
-                  {link.label}
-                </Link>
-              </li>
+          <ul className="mt-4 space-y-2 text-sm opacity-80">
+            {serviceItems.slice(0, 5).map((item) => (
+              <li key={item.title}>{item.title}</li>
             ))}
           </ul>
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-white">
-            {t("servicesTitle")}
+          <h3 className="font-sans text-xs font-semibold uppercase tracking-wide opacity-60">
+            {t("companyTitle")}
           </h3>
           <ul className="mt-4 space-y-2 text-sm">
-            {serviceItems.slice(0, 5).map((item) => (
-              <li key={item.title} className="text-slate-400">
-                {item.title}
+            {legalLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="opacity-80 transition-colors duration-200 hover:text-accent hover:opacity-100">
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -68,7 +59,7 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-6 text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-6 text-sm opacity-70 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <p>
             &copy; {year} Studiva. {t("rights")}
           </p>

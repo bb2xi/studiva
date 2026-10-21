@@ -1,3 +1,5 @@
+import { Heading, Dek, Label } from "./Typography";
+
 export default function SectionHeading({
   eyebrow,
   title,
@@ -11,15 +13,11 @@ export default function SectionHeading({
 }) {
   return (
     <div className={`max-w-2xl ${center ? "mx-auto text-center" : ""}`}>
-      {eyebrow && (
-        <span className="text-sm font-semibold uppercase tracking-wide text-brand">
-          {eyebrow}
-        </span>
-      )}
-      <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-foreground sm:text-4xl">
+      {eyebrow && <Label className="text-brand opacity-100">{eyebrow}</Label>}
+      <Heading size="lg" className="mt-2">
         {title}
-      </h2>
-      {subtitle && <p className="mt-4 text-lg text-foreground-secondary">{subtitle}</p>}
+      </Heading>
+      {subtitle && <Dek className="mt-4">{subtitle}</Dek>}
     </div>
   );
 }

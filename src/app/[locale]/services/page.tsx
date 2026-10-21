@@ -1,10 +1,11 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { ArrowRight, Check } from "lucide-react";
-import { Link } from "@/i18n/navigation";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
-import { serviceIcons } from "@/lib/icons";
+import CtaBand from "@/components/CtaBand";
+import { Heading, Dek, Data } from "@/components/Typography";
+import { FactLedger } from "@/components/FactLedger";
+import { heroPhotos } from "@/lib/heroPhotos";
 
 type ServiceItem = {
   icon: string;
@@ -33,62 +34,67 @@ export default async function ServicesPage({
 
   const t = await getTranslations({ locale, namespace: "services" });
   const items = t.raw("items") as ServiceItem[];
+  const pricing = t.raw("pricing") as { title: string; subtitle: string; note: string };
 
   return (
     <>
-      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} />
+      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} photo={heroPhotos.services} />
 
       <section className="py-20 sm:py-24">
         <Container>
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-            {items.map((service, index) => {
-              const Icon = serviceIcons[service.icon] ?? Check;
-              return (
-                <Reveal key={service.title} delay={(index % 2) * 80}>
-                  <div className="h-full rounded-2xl border border-border bg-surface p-8 shadow-soft transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-elevated">
-                    <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light text-brand ring-1 ring-inset ring-brand/10">
-                      <Icon size={24} />
-                    </span>
-                    <h3 className="mt-5 text-xl font-semibold text-foreground">
+          <div className="mx-auto max-w-3xl divide-y divide-border">
+            {items.map((service, index) => (
+              <Reveal key={service.title} delay={(index % 6) * 60}>
+                <div className="flex gap-5 py-8 first:pt-0 last:pb-0 sm:gap-8">
+                  <Data as="span" className="shrink-0 font-display text-2xl italic text-accent">
+                    {String(index + 1).padStart(2, "0")}
+                  </Data>
+                  <div>
+                    <Heading as="h3" size="sm">
                       {service.title}
-                    </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-foreground-secondary">
+                    </Heading>
+                    <p className="mt-2 font-serif text-sm leading-relaxed text-foreground-secondary sm:text-base">
                       {service.description}
                     </p>
-                    <ul className="mt-5 space-y-2">
+                    <ul className="mt-4 space-y-1.5">
                       {service.points.map((point) => (
-                        <li
-                          key={point}
-                          className="flex items-start gap-2 text-sm text-foreground-secondary"
-                        >
-                          <Check size={16} className="mt-0.5 shrink-0 text-brand" />
+                        <li key={point} className="flex items-start gap-2 font-sans text-sm text-foreground-secondary">
+                          <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-forest" />
                           {point}
                         </li>
                       ))}
                     </ul>
                   </div>
-                </Reveal>
-              );
-            })}
+                </div>
+              </Reveal>
+            ))}
           </div>
         </Container>
       </section>
 
-      <section className="bg-grain bg-gradient-to-br from-brand to-brand-dark">
-        <Container className="flex flex-col items-center gap-6 py-16 text-center">
-          <h2 className="font-display text-3xl font-medium text-white sm:text-4xl">
-            {t("cta.title")}
-          </h2>
-          <p className="max-w-xl text-blue-100">{t("cta.subtitle")}</p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand shadow-soft transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-elevated focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-brand"
-          >
-            {t("cta.button")}
-            <ArrowRight size={16} />
-          </Link>
+      <section className="border-y border-border bg-background-secondary py-20 sm:py-24">
+        <Container>
+          <Reveal className="mx-auto max-w-2xl rounded-sm border border-border bg-surface p-8">
+            <Heading as="h2" size="sm">
+              {pricing.title}
+            </Heading>
+            <Dek className="mt-2">{pricing.subtitle}</Dek>
+            <FactLedger
+              className="mt-6"
+              rows={[
+                {
+                  label: locale === "tr" ? "İlk Ön Görüşme" : "First Consultation",
+                  value: locale === "tr" ? "Ücretsiz" : "Free",
+                  highlight: true,
+                },
+              ]}
+            />
+            <p className="mt-5 font-serif text-sm leading-relaxed text-foreground-secondary">{pricing.note}</p>
+          </Reveal>
         </Container>
       </section>
+
+      <CtaBand variant="services" title={t("cta.title")} subtitle={t("cta.subtitle")} buttonLabel={t("cta.button")} />
     </>
   );
 }

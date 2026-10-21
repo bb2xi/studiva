@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Fraunces } from "next/font/google";
+import { Geist, Fraunces, Newsreader, Space_Mono } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -17,8 +18,22 @@ const fraunces = Fraunces({
   variable: "--font-fraunces",
   subsets: ["latin"],
   weight: "variable",
-  style: ["normal"],
+  style: ["normal", "italic"],
   axes: ["opsz"],
+});
+
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
+  subsets: ["latin"],
+  weight: "variable",
+  style: ["normal", "italic"],
+  axes: ["opsz"],
+});
+
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export function generateStaticParams() {
@@ -57,6 +72,7 @@ export default async function LocaleLayout({
 
   const footer = await getTranslations({ locale, namespace: "footer" });
   const meta = await getTranslations({ locale, namespace: "meta" });
+  const common = await getTranslations({ locale, namespace: "common" });
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -77,7 +93,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${geistSans.variable} ${fraunces.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${fraunces.variable} ${newsreader.variable} ${spaceMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         <script
@@ -88,6 +104,7 @@ export default async function LocaleLayout({
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
+          <WhatsAppButton message={common("whatsappMessage")} label={common("whatsappAriaLabel")} />
         </NextIntlClientProvider>
       </body>
     </html>

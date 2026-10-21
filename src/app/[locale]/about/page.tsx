@@ -1,14 +1,14 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { Compass, Users, ShieldCheck, Award } from "lucide-react";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
 import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
+import { Heading, Data } from "@/components/Typography";
+import { MentorCardComingSoon } from "@/components/MentorCard";
+import { heroPhotos } from "@/lib/heroPhotos";
 
 type ValueItem = { title: string; description: string };
-type Stat = { value: string; label: string };
-
-const valueIcons = [ShieldCheck, Compass, Award, Users];
+type Stat = { value: string; label: string; highlight?: boolean };
 
 export async function generateMetadata({
   params,
@@ -35,29 +35,29 @@ export default async function AboutPage({
 
   return (
     <>
-      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} />
+      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} photo={heroPhotos.about} />
 
       <section className="py-20 sm:py-24">
         <Container>
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
             <Reveal className="lg:col-span-2">
-              <h2 className="font-display text-2xl font-medium text-foreground">
+              <Heading as="h2" size="lg">
                 {t("story.title")}
-              </h2>
+              </Heading>
               <div className="mt-5 space-y-4">
-                {paragraphs.map((p) => (
-                  <p key={p} className="text-sm leading-relaxed text-foreground-secondary">
+                {paragraphs.map((p, i) => (
+                  <p key={i} className="font-serif text-sm leading-relaxed text-foreground-secondary sm:text-base">
                     {p}
                   </p>
                 ))}
               </div>
             </Reveal>
             <Reveal delay={120}>
-              <div className="rounded-2xl border border-border bg-brand-light p-8">
-                <h3 className="text-lg font-semibold text-foreground">
+              <div className="rounded-sm border border-forest/25 bg-forest-light p-8">
+                <Heading as="h3" size="sm">
                   {t("mission.title")}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-foreground-secondary">
+                </Heading>
+                <p className="mt-3 font-serif text-sm leading-relaxed text-foreground-secondary">
                   {t("mission.description")}
                 </p>
               </div>
@@ -65,13 +65,13 @@ export default async function AboutPage({
           </div>
 
           <Reveal delay={150}>
-            <div className="mt-16 grid grid-cols-2 gap-6 border-y border-border py-10 sm:grid-cols-4">
-              {stats.map((stat, index) => (
-                <div key={stat.label} className="text-center">
-                  <div className={`text-3xl font-bold ${index === 2 ? "text-accent-dark" : "text-brand"}`}>
+            <div className="mt-16 grid grid-cols-2 gap-px divide-border border-y border-border sm:grid-cols-4">
+              {stats.map((stat) => (
+                <div key={stat.label} className="px-4 py-6 text-center">
+                  <Data as="div" className={`text-2xl font-bold sm:text-3xl ${stat.highlight ? "text-accent-dark" : "text-forest"}`}>
                     {stat.value}
-                  </div>
-                  <div className="mt-1 text-sm text-foreground-secondary">{stat.label}</div>
+                  </Data>
+                  <div className="mt-1.5 font-sans text-xs uppercase tracking-wide text-foreground-muted">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -84,26 +84,30 @@ export default async function AboutPage({
           <Reveal>
             <SectionHeading title={t("values.title")} />
           </Reveal>
-          <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {values.map((value, index) => {
-              const Icon = valueIcons[index % valueIcons.length];
-              return (
-                <Reveal key={value.title} delay={index * 70}>
-                  <div className="h-full rounded-2xl border border-border bg-surface p-6 text-center shadow-soft transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-elevated">
-                    <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-brand-light text-brand ring-1 ring-inset ring-brand/10">
-                      <Icon size={22} />
-                    </span>
-                    <h3 className="mt-4 text-base font-semibold text-foreground">
-                      {value.title}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-foreground-secondary">
-                      {value.description}
-                    </p>
-                  </div>
-                </Reveal>
-              );
-            })}
+          <div className="mx-auto mt-14 grid max-w-3xl grid-cols-1 gap-x-10 gap-y-8 sm:grid-cols-2">
+            {values.map((value, index) => (
+              <Reveal key={value.title} delay={index * 70}>
+                <Data as="span" className="font-display text-xl italic text-accent">
+                  {String(index + 1).padStart(2, "0")}
+                </Data>
+                <Heading as="h3" size="sm" className="mt-2">
+                  {value.title}
+                </Heading>
+                <p className="mt-2 font-serif text-sm leading-relaxed text-foreground-secondary">{value.description}</p>
+              </Reveal>
+            ))}
           </div>
+        </Container>
+      </section>
+
+      <section className="py-20 sm:py-24">
+        <Container>
+          <Reveal>
+            <SectionHeading title={t("team.title")} />
+          </Reveal>
+          <Reveal delay={100} className="mx-auto mt-10 max-w-xl">
+            <MentorCardComingSoon label={t("team.comingSoonLabel")} />
+          </Reveal>
         </Container>
       </section>
     </>
