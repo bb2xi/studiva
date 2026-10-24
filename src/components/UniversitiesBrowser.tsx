@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, MapPin } from "lucide-react";
+import { ArrowUpRight, MapPin, Compass } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { universityMedia, universityLogos } from "@/lib/universityMedia";
 import { Tag } from "./Tag";
@@ -21,9 +21,15 @@ type UniversityItem = {
 export default function UniversitiesBrowser({
   items,
   locale,
+  onFocusMap,
 }: {
   items: UniversityItem[];
   locale: string;
+  /** Called with a university's slug when its "show on map" button is
+   * pressed — lets a parent scroll to and open that marker on the map
+   * above, without hijacking the card's own click-through to the detail
+   * page (the two are separate controls, not nested interactive elements). */
+  onFocusMap?: (slug: string) => void;
 }) {
   return (
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -32,10 +38,22 @@ export default function UniversitiesBrowser({
         const fallbackCover = universityMedia[uni.slug]?.[0];
         return (
           <Reveal key={uni.slug} delay={(index % 6) * 60}>
-            <Link
-              href={`/universities/${uni.slug}`}
-              className="group flex h-full flex-col overflow-hidden rounded-sm border border-border bg-surface"
-            >
+            <div className="group relative flex h-full flex-col overflow-hidden rounded-sm border border-border bg-surface">
+              <Link
+                href={`/universities/${uni.slug}`}
+                aria-label={uni.name}
+                className="absolute inset-0 z-10 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
+              />
+              {onFocusMap && (
+                <button
+                  type="button"
+                  onClick={() => onFocusMap(uni.slug)}
+                  aria-label={locale === "tr" ? `${uni.name} konumunu haritada göster` : `Show ${uni.name} on the map`}
+                  className="absolute right-3 top-3 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-surface/90 text-foreground-secondary shadow-soft backdrop-blur transition-colors duration-200 ease-out hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
+                >
+                  <Compass size={16} />
+                </button>
+              )}
               {logo ? (
                 <div className="relative flex aspect-[16/10] w-full items-center justify-center overflow-hidden border-b border-border bg-background-secondary p-8">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -74,7 +92,7 @@ export default function UniversitiesBrowser({
                   />
                 </span>
               </div>
-            </Link>
+            </div>
           </Reveal>
         );
       })}

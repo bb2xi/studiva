@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import { Search } from "lucide-react";
 import Container from "./Container";
@@ -84,6 +84,19 @@ export default function UniversitiesExplorer({
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState<FilterKey>("all");
   const [level, setLevel] = useState<LevelKey>(initialLevel ?? "all");
+  const [focusSlug, setFocusSlug] = useState<string | null>(null);
+  const [focusToken, setFocusToken] = useState(0);
+  const mapSectionRef = useRef<HTMLDivElement>(null);
+
+  // Connects the card list below the map back to the map: clicking a
+  // card's "show on map" action scrolls up to the map and opens that
+  // university's marker popup. focusToken always increments so clicking
+  // the same card twice in a row still re-triggers the effect in GermanyMap.
+  function handleFocusOnMap(slug: string) {
+    setFocusSlug(slug);
+    setFocusToken((t) => t + 1);
+    mapSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 
   const searched = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -169,15 +182,23 @@ export default function UniversitiesExplorer({
             <p className="mt-6 text-center text-sm text-foreground-muted">{searchNoResults}</p>
           )}
 
-          <div className="mt-10">
-            <GermanyMap items={filtered} locale={locale} hint={mapHint} zoomHint={mapZoomHint} />
+          <div className="mt-10" ref={mapSectionRef}>
+            <GermanyMap
+              items={filtered}
+              locale={locale}
+              hint={mapHint}
+              zoomHint={mapZoomHint}
+              emptyMessage={searchNoResults}
+              focusSlug={focusSlug}
+              focusToken={focusToken}
+            />
           </div>
         </Container>
       </section>
 
       <section className="bg-background-secondary py-20 sm:py-24">
         <Container>
-          <UniversitiesBrowser items={filtered} locale={locale} />
+          <UniversitiesBrowser items={filtered} locale={locale} onFocusMap={handleFocusOnMap} />
         </Container>
       </section>
     </>

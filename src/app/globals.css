@@ -150,6 +150,41 @@ body {
   }
 }
 
+/* Leaflet's own chrome (zoom buttons, attribution, popups) ships hardcoded
+   white regardless of page theme — themed here to the same tokens the rest
+   of the site uses, so the Germany map doesn't revert to a raw white
+   widget sitting on an otherwise dark page. */
+.leaflet-control-zoom a {
+  background-color: var(--surface) !important;
+  color: var(--foreground) !important;
+  border-color: var(--border-color-strong) !important;
+}
+.leaflet-control-zoom a:hover {
+  background-color: var(--background-secondary) !important;
+}
+.leaflet-control-attribution {
+  background-color: color-mix(in srgb, var(--surface) 80%, transparent) !important;
+  color: var(--foreground-secondary) !important;
+}
+.leaflet-control-attribution a {
+  color: var(--foreground-secondary) !important;
+}
+.leaflet-popup-content-wrapper {
+  background-color: var(--surface) !important;
+  color: var(--foreground) !important;
+  border-radius: 2px !important;
+  box-shadow: var(--shadow-elevated) !important;
+}
+.leaflet-popup-tip {
+  background-color: var(--surface) !important;
+}
+.leaflet-popup-close-button {
+  color: var(--foreground-muted) !important;
+}
+.leaflet-popup-close-button:hover {
+  color: var(--foreground) !important;
+}
+
 /* Slow, transform-only pan for photo-led heroes (replaces the old
    animated gradient-blob background — nothing moves on screen now
    without a user action, except this one deliberate, quiet exception). */
