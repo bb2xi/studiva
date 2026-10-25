@@ -41,7 +41,7 @@ export default async function PrivacyPage({
                   <Heading as="h2" size="sm">
                     {section.heading}
                   </Heading>
-                  <p className="mt-2 font-serif text-sm leading-relaxed text-foreground-secondary sm:text-base">
+                  <p className="mt-2 font-sans text-sm leading-relaxed text-foreground-secondary sm:text-base">
                     {section.body}
                   </p>
                 </Reveal>

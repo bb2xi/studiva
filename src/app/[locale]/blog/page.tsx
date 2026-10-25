@@ -88,13 +88,13 @@ export default async function BlogPage({
                   <Heading as="h3" size="sm" className="mt-4 transition-colors group-hover:text-forest">
                     {post.title}
                   </Heading>
-                  <p className="mt-2 flex-1 font-serif text-sm leading-relaxed text-foreground-secondary">
+                  <p className="mt-2 flex-1 font-sans text-sm leading-relaxed text-foreground-secondary">
                     {post.excerpt}
                   </p>
                   <div className="mt-5 flex items-center gap-4 font-sans text-xs text-foreground-muted">
                     <span className="flex items-center gap-1.5">
                       <CalendarDays size={13} />
-                      <Data>{post.date}</Data>
+                      <Data kind="number">{post.date}</Data>
                     </span>
                     <span className="flex items-center gap-1.5">
                       <Clock size={13} />

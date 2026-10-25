@@ -51,7 +51,7 @@ export default async function ContactPage({
             <Heading as="h2" size="sm" className="mt-3">
               {t("scheduling.title")}
             </Heading>
-            <p className="mt-2 font-serif text-sm leading-relaxed opacity-80">{t("scheduling.description")}</p>
+            <p className="mt-2 font-sans text-sm leading-relaxed opacity-80">{t("scheduling.description")}</p>
             <a
               href={whatsappHref}
               target="_blank"

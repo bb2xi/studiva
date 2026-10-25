@@ -78,7 +78,7 @@ export default async function BlogPostPage({
               <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 font-sans text-sm text-foreground-muted">
                 <span className="flex items-center gap-1.5">
                   <CalendarDays size={15} />
-                  <Data>{post.date}</Data>
+                  <Data kind="number">{post.date}</Data>
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Clock size={15} />
@@ -90,7 +90,7 @@ export default async function BlogPostPage({
             <Reveal delay={140}>
               <div className="mt-8 space-y-5 border-t border-border pt-8">
                 {post.body.map((paragraph, i) => (
-                  <p key={i} className="font-serif text-base leading-relaxed text-foreground-secondary">
+                  <p key={i} className="font-sans text-base leading-relaxed text-foreground-secondary">
                     {paragraph}
                   </p>
                 ))}

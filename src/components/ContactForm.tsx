@@ -55,7 +55,7 @@ export default function ContactForm() {
         className="flex flex-col items-center justify-center rounded-sm border border-border bg-surface p-10 text-center"
       >
         <CheckCircle2 size={40} className="text-forest" />
-        <p className="mt-4 font-serif text-base text-foreground">{t("submit")} ✓</p>
+        <p className="mt-4 font-sans text-base text-foreground">{t("submit")} ✓</p>
       </div>
     );
   }

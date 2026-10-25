@@ -163,7 +163,7 @@ export default async function UniversityDetailPage({
               </Heading>
               <ul className="mt-3 space-y-2">
                 {university.highlights.map((point) => (
-                  <li key={point} className="font-serif text-sm leading-relaxed text-foreground-secondary">
+                  <li key={point} className="font-sans text-sm leading-relaxed text-foreground-secondary">
                     {point}
                   </li>
                 ))}
@@ -180,7 +180,7 @@ export default async function UniversityDetailPage({
                 </Heading>
                 <ul className="mt-4 space-y-3">
                   {university.pros.map((point) => (
-                    <li key={point} className="flex items-start gap-2.5 font-serif text-sm leading-relaxed text-foreground-secondary">
+                    <li key={point} className="flex items-start gap-2.5 font-sans text-sm leading-relaxed text-foreground-secondary">
                       <CheckCircle2 size={16} className="mt-0.5 shrink-0 text-forest" />
                       {point}
                     </li>
@@ -196,7 +196,7 @@ export default async function UniversityDetailPage({
                 </Heading>
                 <ul className="mt-4 space-y-3">
                   {university.cons.map((point) => (
-                    <li key={point} className="flex items-start gap-2.5 font-serif text-sm leading-relaxed text-foreground-secondary">
+                    <li key={point} className="flex items-start gap-2.5 font-sans text-sm leading-relaxed text-foreground-secondary">
                       <AlertTriangle size={16} className="mt-0.5 shrink-0 text-clay" />
                       {point}
                     </li>
@@ -227,7 +227,7 @@ export default async function UniversityDetailPage({
               </summary>
               <div className="space-y-4 px-5 pb-5">
                 {university.history.map((paragraph, i) => (
-                  <p key={i} className="font-serif text-sm leading-relaxed text-foreground-secondary">
+                  <p key={i} className="font-sans text-sm leading-relaxed text-foreground-secondary">
                     {paragraph}
                   </p>
                 ))}

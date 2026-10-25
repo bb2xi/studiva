@@ -48,7 +48,7 @@ export default async function FaqPage({
                       +
                     </span>
                   </summary>
-                  <p className="mt-3 font-serif text-sm leading-relaxed text-foreground-secondary sm:text-base">
+                  <p className="mt-3 font-sans text-sm leading-relaxed text-foreground-secondary sm:text-base">
                     {item.answer}
                   </p>
                 </details>

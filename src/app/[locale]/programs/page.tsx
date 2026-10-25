@@ -55,7 +55,7 @@ export default async function ProgramsPage({
                   <Heading as="h2" size="lg" className="mt-4 transition-colors group-hover:text-forest">
                     {program.name}
                   </Heading>
-                  <p className="mt-3 font-serif text-sm leading-relaxed text-foreground-secondary sm:text-base">
+                  <p className="mt-3 font-sans text-sm leading-relaxed text-foreground-secondary sm:text-base">
                     {program.description}
                   </p>
                   <ul className="mt-5 space-y-2">

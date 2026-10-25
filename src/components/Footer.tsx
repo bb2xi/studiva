@@ -28,7 +28,7 @@ export default function Footer() {
             <img src="/logo-icon.png" alt="" className="h-9 w-9" />
             <span className="font-display text-xl font-medium tracking-tight">Studiva</span>
           </div>
-          <p className="mt-4 max-w-sm font-serif text-sm leading-relaxed opacity-70">{t("description")}</p>
+          <p className="mt-4 max-w-sm font-sans text-sm leading-relaxed opacity-70">{t("description")}</p>
         </div>
 
         <div>

@@ -53,7 +53,7 @@ export default async function ServicesPage({
                     <Heading as="h3" size="sm">
                       {service.title}
                     </Heading>
-                    <p className="mt-2 font-serif text-sm leading-relaxed text-foreground-secondary sm:text-base">
+                    <p className="mt-2 font-sans text-sm leading-relaxed text-foreground-secondary sm:text-base">
                       {service.description}
                     </p>
                     <ul className="mt-4 space-y-1.5">
@@ -89,7 +89,7 @@ export default async function ServicesPage({
                 },
               ]}
             />
-            <p className="mt-5 font-serif text-sm leading-relaxed text-foreground-secondary">{pricing.note}</p>
+            <p className="mt-5 font-sans text-sm leading-relaxed text-foreground-secondary">{pricing.note}</p>
           </Reveal>
         </Container>
       </section>

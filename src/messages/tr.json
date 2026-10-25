@@ -39,19 +39,23 @@
         {
           "value": "%100",
           "label": "Kabul Garantisi",
-          "highlight": true
+          "highlight": true,
+          "kind": "number"
         },
         {
           "value": "9",
-          "label": "TU9 Üniversitesi"
+          "label": "TU9 Üniversitesi",
+          "kind": "number"
         },
         {
           "value": "82+",
-          "label": "Üniversite Seçeneği"
+          "label": "Üniversite Seçeneği",
+          "kind": "number"
         },
         {
           "value": "Yüzlerce",
-          "label": "İngilizce Program"
+          "label": "İngilizce Program",
+          "kind": "text"
         }
       ]
     },
@@ -3983,20 +3987,24 @@
     "stats": [
       {
         "value": "82+",
-        "label": "Takip Ettiğimiz Üniversite"
+        "label": "Takip Ettiğimiz Üniversite",
+        "kind": "number"
       },
       {
         "value": "9",
-        "label": "Kapsadığımız Ülke / Bölge"
+        "label": "Kapsadığımız Ülke / Bölge",
+        "kind": "number"
       },
       {
         "value": "Yüzlerce",
-        "label": "İngilizce Program Seçeneği"
+        "label": "İngilizce Program Seçeneği",
+        "kind": "text"
       },
       {
         "value": "4",
         "label": "Adımlı Şeffaf Süreç",
-        "highlight": true
+        "highlight": true,
+        "kind": "number"
       }
     ],
     "team": {

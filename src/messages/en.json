@@ -39,19 +39,23 @@
         {
           "value": "100%",
           "label": "Admission Guarantee",
-          "highlight": true
+          "highlight": true,
+          "kind": "number"
         },
         {
           "value": "9",
-          "label": "TU9 Universities"
+          "label": "TU9 Universities",
+          "kind": "number"
         },
         {
           "value": "82+",
-          "label": "University Options"
+          "label": "University Options",
+          "kind": "number"
         },
         {
           "value": "Hundreds",
-          "label": "English-Taught Programs"
+          "label": "English-Taught Programs",
+          "kind": "text"
         }
       ]
     },
@@ -3983,20 +3987,24 @@
     "stats": [
       {
         "value": "82+",
-        "label": "Universities We Track"
+        "label": "Universities We Track",
+        "kind": "number"
       },
       {
         "value": "9",
-        "label": "Countries / Regions Covered"
+        "label": "Countries / Regions Covered",
+        "kind": "number"
       },
       {
         "value": "Hundreds",
-        "label": "English-Taught Programs"
+        "label": "English-Taught Programs",
+        "kind": "text"
       },
       {
         "value": "4",
         "label": "A Transparent, Step-by-Step Process",
-        "highlight": true
+        "highlight": true,
+        "kind": "number"
       }
     ],
     "team": {

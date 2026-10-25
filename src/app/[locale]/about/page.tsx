@@ -8,7 +8,7 @@ import { MentorCardComingSoon } from "@/components/MentorCard";
 import { heroPhotos } from "@/lib/heroPhotos";
 
 type ValueItem = { title: string; description: string };
-type Stat = { value: string; label: string; highlight?: boolean };
+type Stat = { value: string; label: string; highlight?: boolean; kind?: "number" | "text" };
 
 export async function generateMetadata({
   params,
@@ -46,7 +46,7 @@ export default async function AboutPage({
               </Heading>
               <div className="mt-5 space-y-4">
                 {paragraphs.map((p, i) => (
-                  <p key={i} className="font-serif text-sm leading-relaxed text-foreground-secondary sm:text-base">
+                  <p key={i} className="font-sans text-sm leading-relaxed text-foreground-secondary sm:text-base">
                     {p}
                   </p>
                 ))}
@@ -57,7 +57,7 @@ export default async function AboutPage({
                 <Heading as="h3" size="sm">
                   {t("mission.title")}
                 </Heading>
-                <p className="mt-3 font-serif text-sm leading-relaxed text-foreground-secondary">
+                <p className="mt-3 font-sans text-sm leading-relaxed text-foreground-secondary">
                   {t("mission.description")}
                 </p>
               </div>
@@ -68,7 +68,11 @@ export default async function AboutPage({
             <div className="mt-16 grid grid-cols-2 gap-px divide-border border-y border-border sm:grid-cols-4">
               {stats.map((stat) => (
                 <div key={stat.label} className="px-4 py-6 text-center">
-                  <Data as="div" className={`text-2xl font-bold sm:text-3xl ${stat.highlight ? "text-accent-dark" : "text-forest"}`}>
+                  <Data
+                    as="div"
+                    kind={stat.kind}
+                    className={`text-2xl font-bold sm:text-3xl ${stat.highlight ? "text-accent-dark" : "text-forest"}`}
+                  >
                     {stat.value}
                   </Data>
                   <div className="mt-1.5 font-sans text-xs uppercase tracking-wide text-foreground-muted">{stat.label}</div>
@@ -93,7 +97,7 @@ export default async function AboutPage({
                 <Heading as="h3" size="sm" className="mt-2">
                   {value.title}
                 </Heading>
-                <p className="mt-2 font-serif text-sm leading-relaxed text-foreground-secondary">{value.description}</p>
+                <p className="mt-2 font-sans text-sm leading-relaxed text-foreground-secondary">{value.description}</p>
               </Reveal>
             ))}
           </div>

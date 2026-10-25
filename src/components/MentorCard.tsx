@@ -32,7 +32,7 @@ export function MentorCardComingSoon({ label }: { label: string }) {
       <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-clay-light text-clay">
         <Users size={22} />
       </div>
-      <p className="font-serif text-sm italic leading-snug text-foreground-secondary">{label}</p>
+      <p className="font-display text-sm italic leading-snug text-foreground-secondary">{label}</p>
     </div>
   );
 }

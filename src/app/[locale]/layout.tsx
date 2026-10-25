@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Fraunces, Newsreader, Space_Mono } from "next/font/google";
+import { Source_Serif_4, Source_Sans_3 } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -9,31 +9,26 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import "../globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
-  subsets: ["latin"],
-  weight: "variable",
-  style: ["normal", "italic"],
-  axes: ["opsz"],
-});
-
-const newsreader = Newsreader({
-  variable: "--font-newsreader",
+// Display face — headings and the editorial "dek" lead-paragraph/pull-quote
+// italic. Adobe-designed for exactly this span (display down to text sizes)
+// via its opsz axis, so headings and their own italic share one set of
+// proportions instead of pairing two unrelated serif families.
+const sourceSerif = Source_Serif_4({
+  variable: "--font-source-serif",
   subsets: ["latin"],
   weight: "variable",
   style: ["normal", "italic"],
   axes: ["opsz"],
 });
 
-const spaceMono = Space_Mono({
-  variable: "--font-space-mono",
+// Body copy and UI chrome (nav, buttons, labels, tags, stat figures) — Adobe's
+// matched sibling to Source Serif 4, sharing its proportions and numeral
+// design, so prose and interface controls read as one coherent system.
+const sourceSans = Source_Sans_3({
+  variable: "--font-source-sans",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: "variable",
+  style: ["normal", "italic"],
 });
 
 export function generateStaticParams() {
@@ -93,7 +88,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${geistSans.variable} ${fraunces.variable} ${newsreader.variable} ${spaceMono.variable} h-full antialiased`}
+      className={`${sourceSerif.variable} ${sourceSans.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         <script

@@ -81,7 +81,7 @@ export default function UniversitiesBrowser({
                   <MapPin size={13} />
                   {uni.city}
                 </div>
-                <p className="mt-4 flex-1 font-serif text-sm leading-relaxed text-foreground-secondary">
+                <p className="mt-4 flex-1 font-sans text-sm leading-relaxed text-foreground-secondary">
                   {uni.description}
                 </p>
                 <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-forest">

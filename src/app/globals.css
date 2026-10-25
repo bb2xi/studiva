@@ -1,19 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  /* Surfaces — warm "book paper" ivory, not clinical white */
-  --background: #faf7f0;
-  --background-secondary: #f1ebdc;
+  /* Surfaces — warm "book paper" ivory, kept deliberately close to the
+     original tone (not cooled toward gray — see the typography redesign's
+     color notes) so brand blue's text contrast doesn't regress; just
+     slightly less honeyed to suit the calmer type voice below. */
+  --background: #f8f6f0;
+  --background-secondary: #efe9db;
   --surface: #ffffff;
 
-  /* Text — warm ink, not cool slate */
-  --foreground: #221e18;
-  --foreground-secondary: #52493c;
-  --foreground-muted: #726856;
+  /* Text — cooler, steadier ink (near-black, not sepia-brown): reads as
+     printed-matter black rather than antique-shop brown, matching the
+     quieter serif/sans system replacing the old wonkier display face. */
+  --foreground: #1d1b17;
+  --foreground-secondary: #4b443a;
+  --foreground-muted: #6c6456;
 
   /* Borders — parchment hairlines */
-  --border-color: #e6dcc6;
-  --border-color-strong: #cbb98e;
+  --border-color: #dfd7c4;
+  --border-color-strong: #bdaf8c;
 
   /* Primary (brand) — the Studiva logo's exact blue, kept unchanged.
      Narrowed role: the logo mark, the single primary CTA fill, focus
@@ -29,28 +34,35 @@
   --forest-dark: #15321f;
   --forest-light: #e7eee6;
 
-  /* Accent — antique brass, not amber. Guarantee/seal badge, the one
-     stat/card per section explicitly flagged highlight:true (never by
-     array index), Excellence-university marker, "medium competition" tag. */
-  --accent: #a6782c;
+  /* Accent — antique brass, deepened slightly for "foil-stamped seal"
+     gravitas against the calmer type. --accent is the decorative/
+     non-text tone (icons, borders, badge fills); --accent-dark is the
+     text-safe tier, verified at 4.5:1+ against --background. Guarantee/
+     seal badge, the one stat/card per section explicitly flagged
+     highlight:true (never by array index), Excellence-university marker,
+     "medium competition" tag. */
+  --accent: #93681f;
   --accent-dark: #7c591f;
   --accent-light: #f4ecd6;
 
   /* Human/action color — Studiva's warmth, deliberately distinct from the
-     institutional blue. The WhatsApp button, "talk to a person" CTAs,
-     team/mentor accents, "high competition / reach school" tags. */
-  --clay: #b5502e;
+     institutional blue. Deepened alongside accent so it reads as brick/
+     terracotta rather than bright candy-orange next to the quieter type.
+     --clay-dark is the verified text-safe tier. The WhatsApp button,
+     "talk to a person" CTAs, team/mentor accents, "high competition /
+     reach school" tag. */
+  --clay: #a04d2c;
   --clay-dark: #8c3c21;
   --clay-light: #f3e2d9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #15130f;
-    --background-secondary: #1c1912;
+    --background: #14130f;
+    --background-secondary: #1b1710;
     --surface: #1f1b14;
 
-    --foreground: #f3ede1;
+    --foreground: #f1ece2;
     --foreground-secondary: #c9bfae;
     --foreground-muted: #948a76;
 
@@ -65,11 +77,11 @@
     --forest-dark: #8fbba3;
     --forest-light: #1c2a20;
 
-    --accent: #d1a253;
+    --accent: #d9ad5c;
     --accent-dark: #e8c988;
     --accent-light: #2b2214;
 
-    --clay: #e2795a;
+    --clay: #d97f52;
     --clay-dark: #f0a98c;
     --clay-light: #2e1c14;
   }
@@ -103,10 +115,8 @@
   --color-clay-dark: var(--clay-dark);
   --color-clay-light: var(--clay-light);
 
-  --font-sans: var(--font-geist-sans);
-  --font-display: var(--font-fraunces);
-  --font-serif: var(--font-newsreader);
-  --font-data: var(--font-space-mono);
+  --font-sans: var(--font-source-sans);
+  --font-display: var(--font-source-serif);
 
   /* Soft, layered elevation. Role narrowed by the editorial system: never
      used on static content (cards/list rows get a hairline rule instead)

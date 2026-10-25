@@ -19,7 +19,7 @@ type ProcessStep = { title: string; description: string };
 type WhyUsItem = { title: string; description: string; highlight?: boolean };
 type ProgramItem = { name: string; icon: string; description: string };
 type UniversityItem = { slug: string; name: string; city: string; type: string; badges: string[] };
-type Stat = { value: string; label: string; highlight?: boolean };
+type Stat = { value: string; label: string; highlight?: boolean; kind?: "number" | "text" };
 
 // A curated spread across Exzellenzuniversität, TU9 and Hochschule institutions for the homepage teaser.
 const UNIVERSITY_PREVIEW_SLUGS = ["tum", "heidelberg", "rwth", "tuebingen", "tudresden", "htwberlin"];
@@ -90,6 +90,7 @@ export default async function HomePage({
               <div key={stat.label} className="px-4 py-5 text-center first:pl-0 last:pr-0">
                 <Data
                   as="div"
+                  kind={stat.kind}
                   className={`text-2xl font-bold sm:text-3xl ${stat.highlight ? "text-accent" : "text-white"}`}
                 >
                   {stat.value}
@@ -141,7 +142,7 @@ export default async function HomePage({
                     <Heading as="h3" size="sm">
                       {service.title}
                     </Heading>
-                    <p className="mt-2 font-serif text-sm leading-relaxed text-foreground-secondary sm:text-base">
+                    <p className="mt-2 font-sans text-sm leading-relaxed text-foreground-secondary sm:text-base">
                       {service.description}
                     </p>
                   </div>
@@ -179,7 +180,7 @@ export default async function HomePage({
                   <Heading as="h3" size="sm" className="mt-3 transition-colors group-hover:text-forest">
                     {program.name}
                   </Heading>
-                  <p className="mt-2 font-serif text-sm leading-relaxed text-foreground-secondary">
+                  <p className="mt-2 font-sans text-sm leading-relaxed text-foreground-secondary">
                     {program.description}
                   </p>
                   <span className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-forest">
@@ -277,6 +278,7 @@ export default async function HomePage({
                 <div className="relative border-l-2 border-accent/30 py-1 pb-10 pl-10 last:pb-0">
                   <Data
                     as="span"
+                    kind="number"
                     className="absolute left-0 top-0 flex h-9 w-9 -translate-x-1/2 items-center justify-center rounded-full border-2 border-accent bg-background text-sm font-bold text-accent-dark"
                   >
                     {index + 1}
@@ -284,7 +286,7 @@ export default async function HomePage({
                   <Heading as="h3" size="sm">
                     {step.title}
                   </Heading>
-                  <p className="mt-2 font-serif text-sm leading-relaxed text-foreground-secondary">
+                  <p className="mt-2 font-sans text-sm leading-relaxed text-foreground-secondary">
                     {step.description}
                   </p>
                 </div>
@@ -308,7 +310,7 @@ export default async function HomePage({
                     <Heading as="h3" size="sm" className={item.highlight ? "text-accent-dark" : undefined}>
                       {item.title}
                     </Heading>
-                    <p className="mt-2 font-serif text-sm leading-relaxed text-foreground-secondary">
+                    <p className="mt-2 font-sans text-sm leading-relaxed text-foreground-secondary">
                       {item.description}
                     </p>
                   </div>

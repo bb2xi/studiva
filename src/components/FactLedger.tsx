@@ -17,8 +17,8 @@ export function FactLedger({ rows, className = "" }: { rows: LedgerRow[]; classN
           <dd
             className={
               row.highlight
-                ? "font-data text-right text-lg font-bold tabular-nums text-accent-dark"
-                : "font-data text-right text-sm font-medium tabular-nums text-foreground"
+                ? "font-sans text-right text-lg font-bold text-accent-dark"
+                : "font-sans text-right text-sm font-medium text-foreground"
             }
           >
             {row.value}
