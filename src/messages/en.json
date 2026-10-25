@@ -57,7 +57,24 @@
           "label": "English-Taught Programs",
           "kind": "text"
         }
-      ]
+      ],
+      "trust": {
+        "linkText": "See all FAQs",
+        "items": [
+          {
+            "title": "Guarantee",
+            "text": "Students who complete our recommended process in full and meet the admission requirements (language certificate, APS, academic equivalency) receive free guidance until they're admitted to at least one university."
+          },
+          {
+            "title": "Cost",
+            "text": "The first consultation is always free. Your package fee is finalized and shared in writing after that call — no hidden or later-added fees."
+          },
+          {
+            "title": "Scope",
+            "text": "Germany is our deepest expertise — Excellence Universities, TU9, Hochschulen, Dual Studium — plus 9 countries/regions in total."
+          }
+        ]
+      }
     },
     "services": {
       "title": "End-to-End Consultancy",
@@ -126,34 +143,41 @@
           "title": "Preparation & Departure",
           "description": "We organize housing and final pre-flight preparations."
         }
+      ],
+      "facts": [
+        {
+          "label": "Application Deadlines",
+          "text": "Most public universities close winter-semester applications July 15, summer-semester January 15."
+        },
+        {
+          "label": "APS Certificate",
+          "text": "Required for the large majority of applicants from Turkey.",
+          "slug": "aps-belgesi-nedir"
+        },
+        {
+          "label": "Blocked Account (Sperrkonto)",
+          "text": "The required balance is updated annually by the German government.",
+          "slug": "almanyada-yasam-maliyeti-ve-bloke-hesap"
+        }
       ]
     },
     "whyUs": {
-      "title": "Why Studiva?",
-      "items": [
-        {
-          "title": "A Germany-Focused Expert Team",
-          "description": "From Excellence Universities to Hochschulen, a team that closely follows every corner of Germany's higher education system."
-        },
-        {
-          "title": "Admission Guarantee",
-          "description": "We offer an admission guarantee to students who complete our process in full.",
-          "highlight": true
-        },
-        {
-          "title": "A Transparent, Step-by-Step Process",
-          "description": "We offer a concrete, trackable process that always shows you exactly where you stand — clear information instead of inflated numbers."
-        },
-        {
-          "title": "End-to-End Support",
-          "description": "We stay with you from the first call until you're settled abroad."
-        }
-      ]
+      "title": "What You Should Know",
+      "subtitle": "We've summarized the topics applicants ask about most.",
+      "guidesLinkText": "See all articles",
+      "guideSlugs": ["exzellenzuniversitat-ve-tu9-nedir", "dual-studium-nedir", "almanya-ogrenci-vizesi-basvuru-sureci"]
+    },
+    "faqTeaser": {
+      "title": "Have questions?",
+      "subtitle": "A few of the questions we hear most during the application process.",
+      "linkText": "See all FAQs",
+      "indices": [4, 7, 1, 5]
     },
     "cta": {
       "title": "Start Your Study Abroad Journey Today",
       "subtitle": "Let's build your personalized roadmap in a free 15-minute call.",
-      "button": "Get a Free Consultation"
+      "button": "Get a Free Consultation",
+      "steps": ["Free 15-minute call", "Package price & plan, in writing", "Your guidance begins"]
     }
   },
   "services": {
@@ -243,6 +267,7 @@
       {
         "icon": "graduation-cap",
         "name": "Bachelor's",
+        "homeNote": "For your first university degree after secondary school.",
         "description": "Undergraduate study at public and endowed universities across Europe, with tuition and admission requirements varying by country.",
         "highlights": [
           "Mostly low/no tuition in Germany and Scandinavia; tuition applies in the UK and Netherlands",
@@ -253,6 +278,7 @@
       {
         "icon": "target",
         "name": "Master's",
+        "homeNote": "For specializing on top of an existing Bachelor's degree.",
         "description": "With your bachelor's degree and relevant qualifications, hundreds of English- or locally-taught programs at Europe's leading universities.",
         "highlights": [
           "Hundreds of English-taught master's programs",

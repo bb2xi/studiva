@@ -57,7 +57,24 @@
           "label": "İngilizce Program",
           "kind": "text"
         }
-      ]
+      ],
+      "trust": {
+        "linkText": "Tüm soruları gör",
+        "items": [
+          {
+            "title": "Garanti",
+            "text": "Önerdiğimiz süreci eksiksiz tamamlayan ve başvuru koşullarını (dil belgesi, APS, akademik denklik) karşılayan öğrencilerimize, en az bir kabul alana kadar ücretsiz danışmanlık devam eder."
+          },
+          {
+            "title": "Ücret",
+            "text": "İlk ön görüşme her zaman ücretsiz. Paket ücreti görüşme sonunda netleşir ve yazılı olarak paylaşılır — gizli veya sonradan eklenen ücret yok."
+          },
+          {
+            "title": "Kapsam",
+            "text": "Birincil uzmanlığımız Almanya — Exzellenzuniversität, TU9, Hochschule, Dual Studium — ayrıca toplam 9 ülke/bölgede danışmanlık veriyoruz."
+          }
+        ]
+      }
     },
     "services": {
       "title": "Uçtan Uca Danışmanlık",
@@ -126,34 +143,41 @@
           "title": "Hazırlık ve Uçuş",
           "description": "Konaklama ve uçuş öncesi son hazırlıkları organize ediyoruz."
         }
+      ],
+      "facts": [
+        {
+          "label": "Başvuru Takvimi",
+          "text": "Çoğu devlet üniversitesinde kış dönemi başvuruları 15 Temmuz, yaz dönemi başvuruları 15 Ocak'ta kapanır."
+        },
+        {
+          "label": "APS Belgesi",
+          "text": "Türkiye'den başvuran öğrencilerin büyük çoğunluğu için gereklidir.",
+          "slug": "aps-belgesi-nedir"
+        },
+        {
+          "label": "Bloke Hesap (Sperrkonto)",
+          "text": "Gerekli tutar her yıl güncellenir ve başvuru anındaki resmi rakama göre belirlenir.",
+          "slug": "almanyada-yasam-maliyeti-ve-bloke-hesap"
+        }
       ]
     },
     "whyUs": {
-      "title": "Neden Studiva?",
-      "items": [
-        {
-          "title": "Almanya Odaklı Uzman Ekip",
-          "description": "Exzellenzuniversität'lerden Hochschule'lere, Almanya'nın tüm yükseköğretim sistemini yakından takip eden uzman bir ekibiz."
-        },
-        {
-          "title": "Kabul Garantisi",
-          "description": "Sürecimizi eksiksiz takip eden öğrencilerimize kabul garantisi sunuyoruz.",
-          "highlight": true
-        },
-        {
-          "title": "Şeffaf, Adım Adım Süreç",
-          "description": "Her aşamada tam olarak nerede olduğunuzu gösteren somut, takip edilebilir bir süreç sunuyoruz; şişirilmiş rakamlar yerine net bilgi veririz."
-        },
-        {
-          "title": "Uçtan Uca Destek",
-          "description": "İlk görüşmeden yurt dışına yerleşene kadar yanınızda oluyoruz."
-        }
-      ]
+      "title": "Bilmeniz Gerekenler",
+      "subtitle": "Başvuru sürecinde en çok sorulan konuları sizin için özetledik.",
+      "guidesLinkText": "Tüm yazıları gör",
+      "guideSlugs": ["exzellenzuniversitat-ve-tu9-nedir", "dual-studium-nedir", "almanya-ogrenci-vizesi-basvuru-sureci"]
+    },
+    "faqTeaser": {
+      "title": "Sorularınız mı var?",
+      "subtitle": "Başvuru sürecinde en çok karşılaştığımız sorulardan birkaçı.",
+      "linkText": "Tüm soruları gör",
+      "indices": [4, 7, 1, 5]
     },
     "cta": {
       "title": "Yurt Dışı Eğitim Yolculuğunuza Bugün Başlayın",
       "subtitle": "15 dakikalık ücretsiz görüşmede size özel bir yol haritası çıkaralım.",
-      "button": "Ücretsiz Ön Görüşme Al"
+      "button": "Ücretsiz Ön Görüşme Al",
+      "steps": ["15 dakikalık ücretsiz görüşme", "Yazılı paket fiyatı ve planı", "Danışmanlık sürecine başlıyoruz"]
     }
   },
   "services": {
@@ -243,6 +267,7 @@
       {
         "icon": "graduation-cap",
         "name": "Bachelor",
+        "homeNote": "Lise sonrası ilk üniversite eğitiminiz için.",
         "description": "Avrupa genelinde devlet ve vakıf üniversitelerinde lisans eğitimi; ülkeye göre değişen harç ve kabul şartlarıyla geniş bir seçenek yelpazesi.",
         "highlights": [
           "Almanya ve İskandinavya'da çoğunlukla düşük/sıfır öğrenim harcı, İngiltere ve Hollanda'da harç uygulanıyor",
@@ -253,6 +278,7 @@
       {
         "icon": "target",
         "name": "Master",
+        "homeNote": "Mevcut bir lisans diplomanız üzerine uzmanlaşmak için.",
         "description": "Lisans diplomanız ve alan yeterliliğinizle Avrupa'nın önde gelen üniversitelerinde İngilizce ya da yerel dilde yürütülen yüzlerce program.",
         "highlights": [
           "İngilizce eğitim veren yüzlerce master programı",

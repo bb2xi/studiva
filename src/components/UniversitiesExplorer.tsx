@@ -68,6 +68,7 @@ export default function UniversitiesExplorer({
   searchPlaceholder,
   searchNoResults,
   initialLevel,
+  initialFilter,
 }: {
   items: UniversityItem[];
   locale: string;
@@ -80,9 +81,10 @@ export default function UniversitiesExplorer({
   searchPlaceholder: string;
   searchNoResults: string;
   initialLevel?: LevelKey;
+  initialFilter?: FilterKey;
 }) {
   const [query, setQuery] = useState("");
-  const [filter, setFilter] = useState<FilterKey>("all");
+  const [filter, setFilter] = useState<FilterKey>(initialFilter ?? "all");
   const [level, setLevel] = useState<LevelKey>(initialLevel ?? "all");
   const [focusSlug, setFocusSlug] = useState<string | null>(null);
   const [focusToken, setFocusToken] = useState(0);

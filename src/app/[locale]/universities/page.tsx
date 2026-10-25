@@ -29,15 +29,18 @@ export async function generateMetadata({
   return { title: `${t("hero.title")} | Studiva` };
 }
 
+const FILTER_KEYS = ["all", "universitat", "hochschule", "dual", "tu9", "excellence"] as const;
+type FilterKey = (typeof FILTER_KEYS)[number];
+
 export default async function UniversitiesPage({
   params,
   searchParams,
 }: {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ level?: string }>;
+  searchParams: Promise<{ level?: string; filter?: string }>;
 }) {
   const { locale } = await params;
-  const { level } = await searchParams;
+  const { level, filter } = await searchParams;
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "universities" });
@@ -48,6 +51,7 @@ export default async function UniversitiesPage({
   const search = t.raw("search") as { placeholder: string; noResults: string };
 
   const initialLevel = level === "bachelor" || level === "master" ? level : "all";
+  const initialFilter: FilterKey = (FILTER_KEYS as readonly string[]).includes(filter ?? "") ? (filter as FilterKey) : "all";
 
   return (
     <>
@@ -76,6 +80,7 @@ export default async function UniversitiesPage({
         searchPlaceholder={search.placeholder}
         searchNoResults={search.noResults}
         initialLevel={initialLevel}
+        initialFilter={initialFilter}
       />
 
       <CtaBand

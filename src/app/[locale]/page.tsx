@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
-import { ArrowRight, ArrowUpRight, MapPin, GraduationCap } from "lucide-react";
+import { ArrowRight, ArrowUpRight, MapPin, GraduationCap, CalendarDays, FileCheck, Wallet } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import Container from "@/components/Container";
 import SectionHeading from "@/components/SectionHeading";
@@ -16,10 +16,15 @@ import { heroPhotos } from "@/lib/heroPhotos";
 
 type ServiceItem = { icon: string; title: string; description: string };
 type ProcessStep = { title: string; description: string };
-type WhyUsItem = { title: string; description: string; highlight?: boolean };
-type ProgramItem = { name: string; icon: string; description: string };
+type ProcessFact = { label: string; text: string; slug?: string };
+type ProgramItem = { name: string; icon: string; description: string; homeNote: string };
 type UniversityItem = { slug: string; name: string; city: string; type: string; badges: string[] };
 type Stat = { value: string; label: string; highlight?: boolean; kind?: "number" | "text" };
+type TrustItem = { title: string; text: string };
+type FaqItem = { question: string; answer: string };
+type BlogPost = { slug: string; title: string; excerpt: string; category: string };
+
+const FILTER_KEYS = ["universitat", "hochschule", "dual", "tu9", "excellence"] as const;
 
 // A curated spread across Exzellenzuniversität, TU9 and Hochschule institutions for the homepage teaser.
 const UNIVERSITY_PREVIEW_SLUGS = ["tum", "heidelberg", "rwth", "tuebingen", "tudresden", "htwberlin"];
@@ -38,13 +43,19 @@ export default async function HomePage({
   const programsT = await getTranslations({ locale, namespace: "programs" });
   const universitiesT = await getTranslations({ locale, namespace: "universities" });
   const aboutT = await getTranslations({ locale, namespace: "about" });
+  const faqT = await getTranslations({ locale, namespace: "faq" });
+  const blogT = await getTranslations({ locale, namespace: "blog" });
 
   const stats = home.raw("hero.stats") as Stat[];
+  const trustItems = home.raw("hero.trust.items") as TrustItem[];
   const services = home.raw("services.items") as ServiceItem[];
   const steps = home.raw("process.steps") as ProcessStep[];
-  const whyUsItems = home.raw("whyUs.items") as WhyUsItem[];
+  const facts = home.raw("process.facts") as ProcessFact[];
+  const guideSlugs = home.raw("whyUs.guideSlugs") as string[];
+  const faqIndices = home.raw("faqTeaser.indices") as number[];
   const programItems = programsT.raw("items") as ProgramItem[];
   const allUniversityItems = universitiesT.raw("items") as UniversityItem[];
+  const universityFilters = universitiesT.raw("filters") as Record<string, string>;
   const universityItems = UNIVERSITY_PREVIEW_SLUGS.map((slug) =>
     allUniversityItems.find((u) => u.slug === slug)
   ).filter((u): u is UniversityItem => Boolean(u));
@@ -53,6 +64,23 @@ export default async function HomePage({
     name: allUniversityItems.find((u) => u.slug === slug)?.name ?? slug,
     image: universityMedia[slug]?.[0],
   })).filter((p) => Boolean(p.image));
+  const faqItems = (faqT.raw("items") as FaqItem[]) ?? [];
+  const featuredFaqItems = faqIndices.map((i) => faqItems[i]).filter((i): i is FaqItem => Boolean(i));
+  const allBlogPosts = blogT.raw("posts") as BlogPost[];
+  const guidePosts = guideSlugs.map((slug) => allBlogPosts.find((p) => p.slug === slug)).filter((p): p is BlogPost => Boolean(p));
+  const expertiseNote = (aboutT.raw("values.items") as { title: string; description: string }[])[2]?.description;
+  const FILTER_TYPE_MATCH: Record<string, (u: UniversityItem) => boolean> = {
+    universitat: (u) => u.type === "Universität",
+    hochschule: (u) => u.type === "Fachhochschule",
+    dual: (u) => u.type === "Duale Hochschule",
+    tu9: (u) => u.badges.includes("tu9"),
+    excellence: (u) => u.badges.includes("excellence"),
+  };
+  const filterChips = FILTER_KEYS.map((key) => ({
+    key,
+    label: universityFilters[key],
+    count: allUniversityItems.filter(FILTER_TYPE_MATCH[key]).length,
+  }));
 
   return (
     <>
@@ -77,12 +105,6 @@ export default async function HomePage({
                 {home("hero.ctaSecondary")}
               </Button>
             </div>
-            <Link
-              href="/faq"
-              className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
-            >
-              {home("hero.guaranteeNote")}
-            </Link>
           </div>
 
           <div className="mx-auto mt-16 grid max-w-4xl grid-cols-2 divide-x divide-white/15 border-y border-white/15 sm:grid-cols-4">
@@ -98,6 +120,26 @@ export default async function HomePage({
                 <div className="mt-1.5 font-sans text-xs uppercase tracking-wide text-white/60">{stat.label}</div>
               </div>
             ))}
+          </div>
+
+          {/* Condenses the 3 highest-friction pre-click questions (guarantee
+              conditions, real cost, geographic scope) straight from the FAQ,
+              so a hesitant visitor never has to leave the hero to find them. */}
+          <div className="mx-auto mt-10 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-3">
+            {trustItems.map((item) => (
+              <div key={item.title} className="text-center sm:text-left">
+                <div className="font-sans text-xs font-semibold uppercase tracking-wide text-accent">{item.title}</div>
+                <p className="mt-1.5 font-sans text-sm leading-relaxed text-white/75">{item.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 text-center">
+            <Link
+              href="/faq"
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+            >
+              {home("hero.trust.linkText")}
+            </Link>
           </div>
         </Container>
       </section>
@@ -180,6 +222,7 @@ export default async function HomePage({
                   <Heading as="h3" size="sm" className="mt-3 transition-colors group-hover:text-forest">
                     {program.name}
                   </Heading>
+                  <p className="mt-1 font-sans text-xs font-medium text-accent-dark">{program.homeNote}</p>
                   <p className="mt-2 font-sans text-sm leading-relaxed text-foreground-secondary">
                     {program.description}
                   </p>
@@ -214,6 +257,15 @@ export default async function HomePage({
               <p className="mt-2 font-sans text-[11px] text-foreground-muted">
                 {heroPhotos.universities.artist} · {heroPhotos.universities.license}
               </p>
+              <Link
+                href="/universities"
+                className="group mt-3 inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-forest transition-colors hover:text-brand"
+              >
+                {locale === "tr"
+                  ? "82 gerçek üniversiteden biri — aranabilir haritayı keşfedin"
+                  : "One of 82 real universities — explore the searchable map"}
+                <ArrowUpRight size={13} className="transition-transform duration-200 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </Link>
             </Reveal>
             <Reveal delay={80} className="lg:col-span-3">
               <div className="divide-y divide-border">
@@ -251,6 +303,18 @@ export default async function HomePage({
                     </Link>
                   );
                 })}
+              </div>
+              <div className="mt-6 flex flex-wrap gap-2">
+                {filterChips.map((chip) => (
+                  <Link
+                    key={chip.key}
+                    href={`/universities?filter=${chip.key}`}
+                    className="inline-flex items-center gap-1.5 rounded-sm border border-border-strong px-3.5 py-1.5 text-xs font-semibold text-foreground-secondary transition-colors hover:border-forest hover:text-forest"
+                  >
+                    {chip.label}
+                    <span className="text-foreground-muted">({chip.count})</span>
+                  </Link>
+                ))}
               </div>
               <div className="mt-6">
                 <Link
@@ -293,42 +357,141 @@ export default async function HomePage({
               </Reveal>
             ))}
           </div>
+
+          {/* Concrete, checkable facts (not marketing language) behind the
+              "Application & Visa Process" step — gives the otherwise-orphaned
+              APS/Sperrkonto guides their first homepage entry point. */}
+          <Reveal delay={140}>
+            <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-4 sm:grid-cols-3">
+              {facts.map((fact, i) => {
+                const Icon = [CalendarDays, FileCheck, Wallet][i] ?? CalendarDays;
+                const content = (
+                  <>
+                    <Icon size={18} className="text-forest" />
+                    <div className="mt-2 font-sans text-xs font-semibold uppercase tracking-wide text-foreground">
+                      {fact.label}
+                    </div>
+                    <p className="mt-1 font-sans text-xs leading-relaxed text-foreground-secondary">{fact.text}</p>
+                  </>
+                );
+                return fact.slug ? (
+                  <Link
+                    key={fact.label}
+                    href={`/blog/${fact.slug}`}
+                    className="group rounded-sm border border-border bg-surface p-4 transition-colors hover:border-forest"
+                  >
+                    {content}
+                    <span className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-forest">
+                      {locale === "tr" ? "Oku" : "Read"}
+                      <ArrowUpRight size={12} className="transition-transform duration-200 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </span>
+                  </Link>
+                ) : (
+                  <div key={fact.label} className="rounded-sm border border-border bg-surface p-4">
+                    {content}
+                  </div>
+                );
+              })}
+            </div>
+          </Reveal>
         </Container>
       </section>
 
-      {/* Why Studiva — manifesto + ledger */}
+      {/* What You Should Know — real published guides, not a restated manifesto.
+          Pairs naturally with the team-placeholder card: "here's the expertise
+          behind the guidance" instead of a dead-end "no team yet" card alone. */}
       <section className="py-24 sm:py-28">
         <Container>
           <Reveal>
-            <SectionHeading title={home("whyUs.title")} />
+            <SectionHeading title={home("whyUs.title")} subtitle={home("whyUs.subtitle")} />
           </Reveal>
-          <div className="mt-14 grid grid-cols-1 gap-12 lg:grid-cols-2">
-            <Reveal>
-              <div className="divide-y divide-border">
-                {whyUsItems.map((item) => (
-                  <div key={item.title} className="py-5 first:pt-0">
-                    <Heading as="h3" size="sm" className={item.highlight ? "text-accent-dark" : undefined}>
-                      {item.title}
+          <div className="mt-14 grid grid-cols-1 gap-12 lg:grid-cols-5">
+            <Reveal className="lg:col-span-3">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+                {guidePosts.map((post) => (
+                  <Link
+                    key={post.slug}
+                    href={`/blog/${post.slug}`}
+                    className="group flex h-full flex-col rounded-sm border border-border bg-surface p-5"
+                  >
+                    <Tag variant="forest">{post.category}</Tag>
+                    <Heading as="h3" size="sm" className="mt-3 transition-colors group-hover:text-forest">
+                      {post.title}
                     </Heading>
-                    <p className="mt-2 font-sans text-sm leading-relaxed text-foreground-secondary">
-                      {item.description}
+                    <p className="mt-2 flex-1 font-sans text-xs leading-relaxed text-foreground-secondary">
+                      {post.excerpt}
                     </p>
-                  </div>
+                    <span className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-forest">
+                      {locale === "tr" ? "Oku" : "Read"}
+                      <ArrowUpRight size={13} className="transition-transform duration-200 ease-out group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </span>
+                  </Link>
                 ))}
               </div>
+              <div className="mt-6">
+                <Link
+                  href="/blog"
+                  className="group inline-flex items-center gap-2 text-sm font-semibold text-forest transition-colors hover:text-brand"
+                >
+                  {home("whyUs.guidesLinkText")}
+                  <ArrowRight size={16} className="transition-transform duration-200 ease-out group-hover:translate-x-1" />
+                </Link>
+              </div>
             </Reveal>
-            <Reveal delay={100}>
+            <Reveal delay={100} className="lg:col-span-2">
+              {expertiseNote && (
+                <p className="mb-4 font-sans text-sm leading-relaxed text-foreground-secondary">{expertiseNote}</p>
+              )}
               <MentorCardComingSoon label={aboutT("team.comingSoonLabel")} />
             </Reveal>
           </div>
         </Container>
       </section>
 
+      {/* FAQ teaser — the last objections resolved right before the final ask,
+          curated to avoid repeating the hero's guarantee/cost/scope strip. */}
+      {featuredFaqItems.length > 0 && (
+        <section className="border-t border-border bg-background-secondary py-20 sm:py-24">
+          <Container>
+            <Reveal>
+              <SectionHeading title={home("faqTeaser.title")} subtitle={home("faqTeaser.subtitle")} />
+            </Reveal>
+            <div className="mx-auto mt-10 max-w-[42rem] divide-y divide-border">
+              {featuredFaqItems.map((item, i) => (
+                <Reveal key={item.question} delay={i * 50}>
+                  <details className="group py-5 first:pt-0 last:pb-0">
+                    <summary className="flex cursor-pointer list-none items-start justify-between gap-4 marker:content-none">
+                      <Heading as="h3" size="sm">
+                        {item.question}
+                      </Heading>
+                      <span className="mt-1 shrink-0 font-sans text-lg text-accent transition-transform duration-200 group-open:rotate-45">
+                        +
+                      </span>
+                    </summary>
+                    <p className="mt-3 font-sans text-sm leading-relaxed text-foreground-secondary">{item.answer}</p>
+                  </details>
+                </Reveal>
+              ))}
+            </div>
+            <div className="mt-8 text-center">
+              <Link
+                href="/faq"
+                className="group inline-flex items-center gap-2 text-sm font-semibold text-forest transition-colors hover:text-brand"
+              >
+                {home("faqTeaser.linkText")}
+                <ArrowRight size={16} className="transition-transform duration-200 ease-out group-hover:translate-x-1" />
+              </Link>
+            </div>
+          </Container>
+        </section>
+      )}
+
       <CtaBand
         variant="home"
         title={home("cta.title")}
         subtitle={home("cta.subtitle")}
         buttonLabel={home("cta.button")}
+        steps={home.raw("cta.steps") as string[]}
       />
     </>
   );
