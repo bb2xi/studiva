@@ -6,7 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { ExternalLink, Link2, X } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { compareStore, setCompareList, MAX_COMPARE } from "@/lib/discovery/store";
-import { formatDate, formatEurRange, hostOf } from "@/lib/discovery/facts";
+import { formatDate, formatEurExact, formatEurRange, formatTerm, hostOf } from "@/lib/discovery/facts";
 import { STATE_BY_CODE, cityName } from "@/data/states";
 import type { UniversitySummary } from "@/lib/discovery/types";
 import { toast } from "./Toaster";
@@ -78,11 +78,29 @@ export default function CompareView({ items }: { items: UniversitySummary[] }) {
     {
       key: "contribution",
       label: t("compare.rows.contribution"),
-      render: (u) => (u.facts?.semesterContribution.amountEur != null ? formatEurRange(u.facts.semesterContribution.amountEur, null, locale) : notVerified),
+      render: (u) => {
+        const c = u.facts?.semesterContribution;
+        if (c?.amountEur == null || !c.term) return notVerified;
+        return (
+          <>
+            <span className="font-semibold">{formatEurExact(c.amountEur, locale)}</span>
+            <span className="block text-xs text-foreground-muted">{formatTerm(c.term, locale)}</span>
+          </>
+        );
+      },
     },
-    { key: "english", label: t("compare.rows.english"), render: (u) => (u.facts?.englishTaught ? t("common.yes") : notVerified) },
+    {
+      key: "english",
+      label: t("compare.rows.english"),
+      note: t("compare.englishNote"),
+      render: (u) => (u.facts?.daad && u.facts.daad.englishProgrammes > 0 ? t("compare.englishCount", { count: u.facts.daad.englishProgrammes }) : notVerified),
+    },
     { key: "programs", label: t("compare.rows.programs"), note: t("compare.programsNote"), render: (u) => u.popularPrograms.join(", ") },
-    { key: "uniAssist", label: t("compare.rows.uniAssist"), render: (u) => (u.facts?.uniAssistMember ? t("compare.uniAssistYes") : notVerified) },
+    {
+      key: "uniAssist",
+      label: t("compare.rows.uniAssist"),
+      render: (u) => (u.facts?.uniAssistMember === true ? t("compare.uniAssistYes") : u.facts?.uniAssistMember === false ? t("compare.uniAssistNo") : notVerified),
+    },
     {
       key: "distinctions",
       label: t("compare.rows.distinctions"),

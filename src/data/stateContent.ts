@@ -42,8 +42,8 @@ export const STATE_CONTENT: Record<StateCode, StateContent> = {
     policy: {
       status: "institution",
       text: {
-        en: "Bavarian law lets each institution decide whether to charge non-EU students. Several now do (for example TUM, HM Munich and TH Ingolstadt; FAU from the summer semester 2027), while others have published no fee — check each university's page in our directory.",
-        tr: "Bavyera yasası, AB dışı öğrencilerden ücret alıp almamaya her kurumun kendisinin karar vermesine izin verir. Bazıları artık ücret alıyor (ör. TUM, HM Münih ve TH Ingolstadt; FAU yaz dönemi 2027'den itibaren), diğerleri ise ücret yayımlamadı — rehberimizdeki her üniversitenin sayfasını kontrol edin.",
+        en: "Bavarian law lets each institution decide whether to charge non-EU students. Several now do (for example TUM, HM Munich and TH Ingolstadt; FAU from the summer semester 2027), while others — such as Würzburg, Regensburg, Passau and Augsburg — state that they charge no tuition. Check each university's page in our directory.",
+        tr: "Bavyera yasası, AB dışı öğrencilerden ücret alıp almamaya her kurumun kendisinin karar vermesine izin verir. Bazıları artık ücret alıyor (ör. TUM, HM Münih ve TH Ingolstadt; FAU yaz dönemi 2027'den itibaren); Würzburg, Regensburg, Passau ve Augsburg gibi diğerleri ise okul ücreti almadığını belirtiyor. Rehberimizdeki her üniversitenin sayfasını kontrol edin.",
       },
       source: DAAD,
     },

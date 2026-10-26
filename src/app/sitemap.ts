@@ -13,6 +13,7 @@ const STATIC_PATHS = [
   "/programs",
   "/universities",
   "/universities/finder",
+  "/universities/programmes",
   "/germany",
   "/cost-calculator",
   "/scholarships",

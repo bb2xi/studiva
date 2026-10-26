@@ -53,7 +53,7 @@ export type Criterion = {
   key: "level" | "subject" | "english" | "states" | "type" | "ownership" | "budget";
   status: CriterionStatus;
   /** Message key under discovery.finder.reasons plus its values. */
-  reason: { key: string; values?: Record<string, string> };
+  reason: { key: string; values?: Record<string, string | number> };
 };
 
 export type FinderResult = { uni: UniversitySummary; criteria: Criterion[]; group: "exact" | "possible" | "partial" | "excluded" };
@@ -86,8 +86,8 @@ export function evaluate(
 
   if (a.english) {
     criteria.push(
-      u.facts?.englishTaught
-        ? { key: "english", status: "met", reason: { key: "englishMet" } }
+      u.facts?.englishTaught && u.facts.daad
+        ? { key: "english", status: "met", reason: { key: "englishMet", values: { count: u.facts.daad.englishProgrammes } } }
         : { key: "english", status: "unknown", reason: { key: "englishUnknown" } }
     );
   }

@@ -68,7 +68,9 @@ export type UniversityFacts = {
   };
   semesterContribution: {
     amountEur: number | null;
+    /** Term the amount was published for, e.g. "WiSe 2026/27", "SoSe 2027", "FSS 2027". */
     term: string | null;
+    /** True/false only when the cited breakdown shows whether a transport ticket is included. */
     includesTicket: boolean | null;
     source: string | null;
   };
@@ -76,6 +78,19 @@ export type UniversityFacts = {
   uniAssistSource: string | null;
   englishTaught: boolean | null;
   englishTaughtSource: string | null;
+  /**
+   * Programme counts from DAAD's International Programmes database. That database
+   * lists international programmes only, so a missing or zero count never means
+   * "no English-taught programmes".
+   */
+  daad: {
+    insId: string;
+    degreeProgrammes: number;
+    englishProgrammes: number;
+    englishBachelor: number;
+    englishMaster: number;
+    fetchedAt: string;
+  } | null;
   subjectAreas: SubjectArea[] | null;
   subjectAreasSource: string | null;
   checkedAt: string;

@@ -9,7 +9,8 @@
       "shortlist": "Kısa listem",
       "planner": "Başvuru planlayıcı",
       "costs": "Maliyet hesaplayıcı",
-      "scholarships": "Burslar"
+      "scholarships": "Burslar",
+      "programmes": "Program arama"
     },
     "common": {
       "notVerified": "Doğrulanmadı",
@@ -50,7 +51,10 @@
       "contributionUnknown": "Doğrulanmadı — tutar kurumun web sitesinde yayımlanır.",
       "explainTuition": "Okul ücreti, bazı öğrencilerden (burada: AB dışı vatandaşlardan) alınan eğitim ücretidir.",
       "explainContribution": "Dönem katkı payını her öğrenci her dönem öder (öğrenci hizmetleri, öğrenci birliği, çoğu zaman ulaşım bileti). Okul ücreti değildir.",
-      "explainLiving": "Yaşam masrafları (kira, yemek, sigorta) bu ikisinden ayrıdır."
+      "explainLiving": "Yaşam masrafları (kira, yemek, sigorta) bu ikisinden ayrıdır.",
+      "includesTicket": "Toplu taşıma dönem biletini içerir.",
+      "excludesTicket": "Bu tutara ulaşım bileti dahil değil.",
+      "explainFirstEnrolment": "İlk kayıtta bazı üniversiteler öğrenci kimlik kartı gibi küçük, tek seferlik ücretler ekler."
     },
     "ownership": {
       "label": "Finansman",
@@ -114,7 +118,7 @@
       "feeAny": "Hepsi",
       "feeNone": "Ücret yok (doğrulandı)",
       "feeCharged": "Ücret alıyor",
-      "english": "İngilizce program var (doğrulandı)",
+      "english": "İngilizce program var (DAAD)",
       "uniAssist": "uni-assist üzerinden başvuru",
       "sort": "Sırala",
       "sortOptions": {
@@ -137,7 +141,7 @@
       "previous": "Önceki",
       "next": "Sonraki",
       "page": "Sayfa {page}",
-      "dataNote": "Ücret ve bağlantı bilgileri {date} tarihinde resmî kaynaklardan kontrol edildi. Doğrulayamadığımız alanlar tahmin edilmek yerine “Doğrulanmadı” olarak gösterilir.",
+      "dataNote": "Ücret, dönem katkı payı ve bağlantı bilgileri {date} tarihinde resmî kaynaklardan kontrol edildi; İngilizce program sayıları DAAD'dan alındı. Doğrulayamadığımız alanlar tahmin edilmek yerine “Doğrulanmadı” olarak gösterilir.",
       "englishNote": "Bir üniversitenin bazı İngilizce programları olması, tüm programlarının İngilizce olduğu anlamına gelmez."
     },
     "card": {
@@ -203,9 +207,16 @@
       "uniAssistYes": "Üye — programınızın kullanıp kullanmadığını kontrol edin",
       "programsNote": "Studiva'nın seçkisi, tam program listesi değildir.",
       "rankingsNote": "Sıralama kuruluşu ve yılıyla doğrulamadığımız sıralamaları göstermiyoruz.",
-      "competition": { "low": "Standart", "medium": "Orta", "high": "Yüksek" },
+      "competition": {
+        "low": "Standart",
+        "medium": "Orta",
+        "high": "Yüksek"
+      },
       "share": "Bu karşılaştırmanın bağlantısını kopyala",
-      "copied": "Bağlantı kopyalandı"
+      "copied": "Bağlantı kopyalandı",
+      "englishNote": "DAAD Uluslararası Programlar veritabanında listelenen sayı.",
+      "englishCount": "{count} program",
+      "uniAssistNo": "Üye değil — doğrudan başvuru"
     },
     "detail": {
       "breadcrumbHome": "Ana Sayfa",
@@ -257,7 +268,17 @@
         "englishTaught": "İngilizce programlar",
         "subjectAreas": "alanlar"
       },
-      "factsVsGuidance": "“Resmî kaynak” etiketli bilgiler kontrol ettiğimiz sayfaya bağlanır. “Studiva rehberliği” etiketli bilgiler genel tavsiyemizdir."
+      "factsVsGuidance": "“Resmî kaynak” etiketli bilgiler kontrol ettiğimiz sayfaya bağlanır. “Studiva rehberliği” etiketli bilgiler genel tavsiyemizdir.",
+      "englishRow": "İngilizce program (DAAD)",
+      "englishRowValue": "{count} program",
+      "daadCount": "DAAD burada {total} derece programı listeliyor; {english} tanesi tamamen veya kısmen İngilizce.",
+      "daadSplit": "İngilizce programlar arasında {bachelor} lisans ve {master} yüksek lisans programı var.",
+      "daadBachelorLink": "DAAD'da İngilizce lisans",
+      "daadMasterLink": "DAAD'da İngilizce yüksek lisans",
+      "daadAllLink": "Listelenen tüm programlar",
+      "daadNote": "Sayılar DAAD Uluslararası Programlar veritabanından {date} tarihinde alındı. Veritabanı yalnızca uluslararası programları listeler; üniversitenin başka programları da olabilir. Bağlantılar DAAD'ın resmî aramasını açar.",
+      "programmeSearchLink": "Almanya genelinde program ara",
+      "uniAssistNonMember": "Bu kurum uni-assist üyesi değil; uluslararası başvurular genellikle doğrudan üniversitenin kendi portalı üzerinden yapılır. Kesin başvuru yolunu program sayfasından kontrol edin."
     },
     "report": {
       "title": "Güncel olmayan bir bilgi veya kırık bağlantı mı gördünüz?",
@@ -337,8 +358,8 @@
         "phdOther": "Uygulamalı bilimler üniversiteleri genellikle tek başına doktora derecesi veremez — kuruma danışın.",
         "subjectMet": "Bu alanda programları var.",
         "subjectUnknown": "Alanlar henüz doğrulanmadı.",
-        "englishMet": "İngilizce programlar doğrulandı.",
-        "englishUnknown": "İngilizce programlar henüz doğrulanmadı.",
+        "englishMet": "DAAD burada {count} İngilizce program listeliyor.",
+        "englishUnknown": "DAAD veritabanında İngilizce program bulunamadı — doğrulanmadı.",
         "stateMet": "{state} eyaletinde.",
         "stateNotMet": "{state} eyaletinde.",
         "stateUnknown": "Konum doğrulanmadı.",
@@ -412,7 +433,8 @@
       "sources": "Kaynaklar",
       "sourceSurvey": "Kalem bazında ortalama öğrenci harcaması: DZHW 22. Sosyal Araştırma, DAAD tarafından yayımlanan ({date} tarihinde kontrol edildi).",
       "sourceVisa": "Mali yeterlilik: DAAD, 1 Ocak 2025 itibarıyla geçerli tutar ({date} tarihinde kontrol edildi).",
-      "currency": "Tüm tutarlar avro (EUR) cinsindendir."
+      "currency": "Tüm tutarlar avro (EUR) cinsindendir.",
+      "contributionFromUni": "{name} için resmî sayfadan dolduruldu ({term}):"
     },
     "scholarships": {
       "title": "Burslar ve finansman",
@@ -483,15 +505,77 @@
       }
     },
     "meta": {
-      "directory": { "title": "Almanya'daki üniversiteler — ara ve karşılaştır", "description": "Almanya'daki 82 üniversiteyi şehir, eyalet, tür ve AB dışı öğrenci ücretine göre arayın; ücret ve resmî bağlantılar resmî kaynaklardan doğrulandı." },
-      "finder": { "title": "Almanya üniversite bulucu", "description": "Derece, konum, bütçe ve dil ihtiyaçlarınıza uyan Alman üniversitelerini bulun — her eşleşmenin nedeni açıkça gösterilir." },
-      "compare": { "title": "Üniversiteleri karşılaştır", "description": "Alman üniversitelerini yan yana karşılaştırın: okul ücreti, finansman, konum, uni-assist ve resmî bağlantılar." },
-      "shortlist": { "title": "Üniversite kısa listeniz", "description": "Gezinirken kaydettiğiniz üniversiteler." },
-      "states": { "title": "Eyaletlere göre Almanya'daki üniversiteler", "description": "Almanya'nın 16 eyaletini, üniversite şehirlerini ve AB dışı öğrencilere yönelik okul ücreti politikalarını keşfedin." },
-      "state": { "title": "{state} eyaletindeki üniversiteler", "description": "{state} eyaletindeki üniversiteler ve üniversite şehirleri; AB dışı öğrenci ücret politikası ve resmî bağlantılarla." },
-      "costs": { "title": "Almanya'da eğitim maliyeti hesaplayıcı", "description": "Almanya'da okumanın aylık ve yıllık maliyetini tahmin edin: kira, yemek, sigorta, okul ücreti ve dönem katkı payı." },
-      "scholarships": { "title": "Almanya'da okumak için burslar", "description": "Türk ve uluslararası öğrencilerin Almanya'da derece eğitimi için başvurabileceği doğrulanmış burs programları." },
-      "planner": { "title": "Başvuru planlayıcı", "description": "Üniversite başvuru son tarihlerini, görevlerini ve notlarını takip edin." }
+      "directory": {
+        "title": "Almanya'daki üniversiteler — ara ve karşılaştır",
+        "description": "Almanya'daki 82 üniversiteyi şehir, eyalet, tür ve AB dışı öğrenci ücretine göre arayın; ücret ve resmî bağlantılar resmî kaynaklardan doğrulandı."
+      },
+      "finder": {
+        "title": "Almanya üniversite bulucu",
+        "description": "Derece, konum, bütçe ve dil ihtiyaçlarınıza uyan Alman üniversitelerini bulun — her eşleşmenin nedeni açıkça gösterilir."
+      },
+      "compare": {
+        "title": "Üniversiteleri karşılaştır",
+        "description": "Alman üniversitelerini yan yana karşılaştırın: okul ücreti, finansman, konum, uni-assist ve resmî bağlantılar."
+      },
+      "shortlist": {
+        "title": "Üniversite kısa listeniz",
+        "description": "Gezinirken kaydettiğiniz üniversiteler."
+      },
+      "states": {
+        "title": "Eyaletlere göre Almanya'daki üniversiteler",
+        "description": "Almanya'nın 16 eyaletini, üniversite şehirlerini ve AB dışı öğrencilere yönelik okul ücreti politikalarını keşfedin."
+      },
+      "state": {
+        "title": "{state} eyaletindeki üniversiteler",
+        "description": "{state} eyaletindeki üniversiteler ve üniversite şehirleri; AB dışı öğrenci ücret politikası ve resmî bağlantılarla."
+      },
+      "costs": {
+        "title": "Almanya'da eğitim maliyeti hesaplayıcı",
+        "description": "Almanya'da okumanın aylık ve yıllık maliyetini tahmin edin: kira, yemek, sigorta, okul ücreti ve dönem katkı payı."
+      },
+      "scholarships": {
+        "title": "Almanya'da okumak için burslar",
+        "description": "Türk ve uluslararası öğrencilerin Almanya'da derece eğitimi için başvurabileceği doğrulanmış burs programları."
+      },
+      "planner": {
+        "title": "Başvuru planlayıcı",
+        "description": "Üniversite başvuru son tarihlerini, görevlerini ve notlarını takip edin."
+      },
+      "programmes": {
+        "title": "Almanya'da program ara",
+        "description": "DAAD'ın Almanya'daki uluslararası programlar için resmî veritabanında alana, dereceye, dile ve üniversiteye göre arama yapın; her üniversitenin kaç İngilizce programı olduğunu görün."
+      }
+    },
+    "programmes": {
+      "title": "Program ara",
+      "subtitle": "DAAD'ın Almanya'daki uluslararası programlar için resmî veritabanında arama yapın. Aramayı Studiva hazırlar, sonuçlar DAAD'da açılır.",
+      "keyword": "Alan veya anahtar kelime",
+      "keywordPlaceholder": "ör. computer science, economics",
+      "keywordHint": "DAAD araması İngilizce anahtar kelimelerle en iyi sonucu verir.",
+      "degree": "Derece",
+      "degreeAny": "Tüm dereceler",
+      "bachelor": "Lisans",
+      "master": "Yüksek lisans",
+      "language": "Eğitim dili",
+      "languageAny": "Tüm diller",
+      "english": "İngilizce (tamamen veya kısmen)",
+      "german": "Almanca (tamamen veya kısmen)",
+      "institution": "Üniversite",
+      "institutionAny": "Almanya'daki tüm kurumlar",
+      "submit": "DAAD'da ara",
+      "opensNote": "DAAD'ın resmî program aramasını yeni sekmede açar.",
+      "howTitle": "Nasıl çalışır?",
+      "howBody": "Alman Akademik Değişim Servisi DAAD, Almanya'daki, çoğu İngilizce olan uluslararası programların resmî veritabanını yönetir; her program için giriş şartları, son başvuru tarihleri ve ücretler burada yer alır.",
+      "whyLink": "DAAD kayıtlarını kopyalamak yerine sizi DAAD'a yönlendiriyoruz: program bilgileri sık değişir ve DAAD bunları kaynağında günceller.",
+      "listTitle": "Üniversitelere göre İngilizce programlar",
+      "listIntro": "Rehberimizdeki her üniversite için DAAD'ın listelediği, tamamen veya kısmen İngilizce derece programı sayısı. DAAD yalnızca uluslararası programları kapsar; üniversitenin başka programları da olabilir.",
+      "colUniversity": "Üniversite",
+      "colEnglish": "İngilizce",
+      "colSplit": "Lisans / yüksek lisans",
+      "split": "{bachelor} lisans · {master} yüksek lisans",
+      "viewOnDaad": "DAAD'da gör",
+      "fetched": "Sayılar {date} tarihinde DAAD'dan alındı.",
+      "notListed": "DAAD veritabanında şu kurumlar için eşleşen program bulamadık: {names}. Kendi web sitelerine bakın."
     }
   }
 }

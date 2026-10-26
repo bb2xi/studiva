@@ -257,10 +257,13 @@ export default function DirectoryExplorer({
               </label>
             )}
             {hasEnglish && (
-              <label className="flex cursor-pointer items-start gap-2 text-sm text-foreground-secondary">
-                <input type="checkbox" checked={state.english} onChange={() => update({ english: !state.english })} className="mt-0.5 h-4 w-4 accent-[var(--brand)]" />
-                {t("directory.english")}
-              </label>
+              <div>
+                <label className="flex cursor-pointer items-start gap-2 text-sm text-foreground-secondary">
+                  <input type="checkbox" checked={state.english} onChange={() => update({ english: !state.english })} className="mt-0.5 h-4 w-4 accent-[var(--brand)]" />
+                  {t("directory.english")}
+                </label>
+                <p className="ml-6 mt-1 text-[11px] leading-relaxed text-foreground-muted">{t("directory.englishNote")}</p>
+              </div>
             )}
           </div>
         </div>

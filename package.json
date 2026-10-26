@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "data:import": "node scripts/import-university-facts.mjs",
-    "data:check": "node scripts/check-university-links.mjs"
+    "data:check": "node scripts/check-university-links.mjs",
+    "data:daad": "node scripts/fetch-daad-programmes.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

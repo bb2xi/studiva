@@ -33,6 +33,32 @@ export function formatEur(amount: number, locale: string) {
   }).format(amount);
 }
 
+/** Exact amount as published, keeping cents when there are any (semester contributions). */
+export function formatEurExact(amount: number, locale: string) {
+  const cents = !Number.isInteger(amount);
+  return new Intl.NumberFormat(locale === "tr" ? "tr-TR" : "en-GB", {
+    style: "currency",
+    currency: "EUR",
+    minimumFractionDigits: cents ? 2 : 0,
+    maximumFractionDigits: 2,
+  }).format(amount);
+}
+
+const TERM_PATTERNS: [RegExp, Record<"en" | "tr", (year: string) => string>][] = [
+  [/^WiSe (\d{4}\/\d{2})$/, { en: (y) => `winter semester ${y}`, tr: (y) => `${y} kış dönemi` }],
+  [/^SoSe (\d{4})$/, { en: (y) => `summer semester ${y}`, tr: (y) => `${y} yaz dönemi` }],
+  [/^FSS (\d{4})$/, { en: (y) => `spring semester ${y}`, tr: (y) => `${y} bahar dönemi` }],
+];
+
+/** "WiSe 2026/27" → "winter semester 2026/27" / "2026/27 kış dönemi"; unknown formats pass through. */
+export function formatTerm(term: string, locale: string) {
+  for (const [pattern, labels] of TERM_PATTERNS) {
+    const match = term.match(pattern);
+    if (match) return labels[locale === "tr" ? "tr" : "en"](match[1]);
+  }
+  return term;
+}
+
 export function formatEurRange(min: number | null, max: number | null, locale: string) {
   if (min === null && max === null) return null;
   if (min !== null && max !== null && min !== max) return `${formatEur(min, locale)}–${formatEur(max, locale)}`;

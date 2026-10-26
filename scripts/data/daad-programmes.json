@@ -1,0 +1,623 @@
+{
+  "source": "https://www2.daad.de/deutschland/studienangebote/international-programmes/en/",
+  "fetchedAt": "2026-10-26",
+  "totalEntries": 2499,
+  "institutions": {
+    "tum": {
+      "daadName": "Technical University of Munich",
+      "insId": "184",
+      "degreeProgrammes": 76,
+      "englishProgrammes": 76,
+      "englishBachelor": 10,
+      "englishMaster": 65
+    },
+    "lmu": {
+      "daadName": "Ludwig-Maximilians-Universität München",
+      "insId": "183",
+      "degreeProgrammes": 35,
+      "englishProgrammes": 34,
+      "englishBachelor": 0,
+      "englishMaster": 20
+    },
+    "huberlin": {
+      "daadName": "Humboldt-Universität zu Berlin",
+      "insId": "12",
+      "degreeProgrammes": 16,
+      "englishProgrammes": 16,
+      "englishBachelor": 0,
+      "englishMaster": 14
+    },
+    "rwth": {
+      "daadName": "RWTH Aachen University",
+      "insId": "1",
+      "degreeProgrammes": 45,
+      "englishProgrammes": 45,
+      "englishBachelor": 0,
+      "englishMaster": 45
+    },
+    "mannheim": {
+      "daadName": "University of Mannheim",
+      "insId": "176",
+      "degreeProgrammes": 8,
+      "englishProgrammes": 8,
+      "englishBachelor": 0,
+      "englishMaster": 7
+    },
+    "hm": {
+      "daadName": "Hochschule München University of Applied Sciences",
+      "insId": "291",
+      "degreeProgrammes": 6,
+      "englishProgrammes": 6,
+      "englishBachelor": 1,
+      "englishMaster": 5
+    },
+    "frankfurtuas": {
+      "daadName": "Frankfurt University of Applied Sciences",
+      "insId": "79",
+      "degreeProgrammes": 4,
+      "englishProgrammes": 4,
+      "englishBachelor": 0,
+      "englishMaster": 4
+    },
+    "dhbw": {
+      "daadName": "Baden-Wuerttemberg Cooperative State University",
+      "insId": "25095",
+      "degreeProgrammes": 2,
+      "englishProgrammes": 2,
+      "englishBachelor": 2,
+      "englishMaster": 0
+    },
+    "heidelberg": {
+      "daadName": "Heidelberg University",
+      "insId": "119",
+      "degreeProgrammes": 17,
+      "englishProgrammes": 13,
+      "englishBachelor": 0,
+      "englishMaster": 12
+    },
+    "tuebingen": {
+      "daadName": "University of Tübingen",
+      "insId": "258",
+      "degreeProgrammes": 44,
+      "englishProgrammes": 41,
+      "englishBachelor": 2,
+      "englishMaster": 34
+    },
+    "kit": {
+      "daadName": "Karlsruhe Institute of Technology",
+      "insId": "136",
+      "degreeProgrammes": 18,
+      "englishProgrammes": 18,
+      "englishBachelor": 1,
+      "englishMaster": 16
+    },
+    "freiburg": {
+      "daadName": "University of Freiburg",
+      "insId": "86",
+      "degreeProgrammes": 21,
+      "englishProgrammes": 21,
+      "englishBachelor": 1,
+      "englishMaster": 19
+    },
+    "goettingen": {
+      "daadName": "University of Göttingen",
+      "insId": "98",
+      "degreeProgrammes": 50,
+      "englishProgrammes": 46,
+      "englishBachelor": 3,
+      "englishMaster": 34
+    },
+    "bonn": {
+      "daadName": "University of Bonn",
+      "insId": "32",
+      "degreeProgrammes": 57,
+      "englishProgrammes": 47,
+      "englishBachelor": 0,
+      "englishMaster": 40
+    },
+    "koeln": {
+      "daadName": "University of Cologne",
+      "insId": "147",
+      "degreeProgrammes": 25,
+      "englishProgrammes": 25,
+      "englishBachelor": 1,
+      "englishMaster": 21
+    },
+    "tuberlin": {
+      "daadName": "Technische Universität Berlin",
+      "insId": "13",
+      "degreeProgrammes": 13,
+      "englishProgrammes": 13,
+      "englishBachelor": 0,
+      "englishMaster": 11
+    },
+    "tudresden": {
+      "daadName": "Dresden University of Technology",
+      "insId": "53",
+      "degreeProgrammes": 38,
+      "englishProgrammes": 36,
+      "englishBachelor": 0,
+      "englishMaster": 34
+    },
+    "tudarmstadt": {
+      "daadName": "Technical University of Darmstadt",
+      "insId": "46",
+      "degreeProgrammes": 14,
+      "englishProgrammes": 14,
+      "englishBachelor": 0,
+      "englishMaster": 14
+    },
+    "tubraunschweig": {
+      "daadName": "Technische Universität Braunschweig",
+      "insId": "35",
+      "degreeProgrammes": 10,
+      "englishProgrammes": 10,
+      "englishBachelor": 1,
+      "englishMaster": 9
+    },
+    "hannover": {
+      "daadName": "Leibniz University Hannover",
+      "insId": "114",
+      "degreeProgrammes": 20,
+      "englishProgrammes": 20,
+      "englishBachelor": 0,
+      "englishMaster": 20
+    },
+    "stuttgart": {
+      "daadName": "University of Stuttgart",
+      "insId": "248",
+      "degreeProgrammes": 19,
+      "englishProgrammes": 18,
+      "englishBachelor": 0,
+      "englishMaster": 16
+    },
+    "konstanz": {
+      "daadName": "University of Konstanz",
+      "insId": "154",
+      "degreeProgrammes": 20,
+      "englishProgrammes": 19,
+      "englishBachelor": 0,
+      "englishMaster": 17
+    },
+    "htwberlin": {
+      "daadName": "HTW Berlin University of Applied Sciences",
+      "insId": "16",
+      "degreeProgrammes": 9,
+      "englishProgrammes": 9,
+      "englishBachelor": 2,
+      "englishMaster": 7
+    },
+    "furtwangen": {
+      "daadName": "Furtwangen University",
+      "insId": "94",
+      "degreeProgrammes": 11,
+      "englishProgrammes": 11,
+      "englishBachelor": 2,
+      "englishMaster": 9
+    },
+    "hamburg": {
+      "daadName": "University of Hamburg",
+      "insId": "104",
+      "degreeProgrammes": 28,
+      "englishProgrammes": 26,
+      "englishBachelor": 1,
+      "englishMaster": 21
+    },
+    "fuberlin": {
+      "daadName": "Freie Universität Berlin",
+      "insId": "11",
+      "degreeProgrammes": 26,
+      "englishProgrammes": 26,
+      "englishBachelor": 0,
+      "englishMaster": 23
+    },
+    "erlangen": {
+      "daadName": "FAU Erlangen-Nürnberg",
+      "insId": "70",
+      "degreeProgrammes": 42,
+      "englishProgrammes": 42,
+      "englishBachelor": 5,
+      "englishMaster": 36
+    },
+    "bochum": {
+      "daadName": "Ruhr-Universität Bochum",
+      "insId": "29",
+      "degreeProgrammes": 31,
+      "englishProgrammes": 30,
+      "englishBachelor": 0,
+      "englishMaster": 28
+    },
+    "mainz": {
+      "daadName": "Johannes Gutenberg University Mainz",
+      "insId": "174",
+      "degreeProgrammes": 24,
+      "englishProgrammes": 22,
+      "englishBachelor": 4,
+      "englishMaster": 17
+    },
+    "muenster": {
+      "daadName": "University of Münster",
+      "insId": "191",
+      "degreeProgrammes": 23,
+      "englishProgrammes": 22,
+      "englishBachelor": 2,
+      "englishMaster": 15
+    },
+    "bremen": {
+      "daadName": "University of Bremen",
+      "insId": "38",
+      "degreeProgrammes": 23,
+      "englishProgrammes": 23,
+      "englishBachelor": 2,
+      "englishMaster": 20
+    },
+    "kiel": {
+      "daadName": "Kiel University",
+      "insId": "144",
+      "degreeProgrammes": 17,
+      "englishProgrammes": 17,
+      "englishBachelor": 0,
+      "englishMaster": 17
+    },
+    "marburg": {
+      "daadName": "Marburg University",
+      "insId": "179",
+      "degreeProgrammes": 18,
+      "englishProgrammes": 15,
+      "englishBachelor": 0,
+      "englishMaster": 15
+    },
+    "jena": {
+      "daadName": "Friedrich Schiller University Jena",
+      "insId": "133",
+      "degreeProgrammes": 26,
+      "englishProgrammes": 26,
+      "englishBachelor": 0,
+      "englishMaster": 17
+    },
+    "thkoeln": {
+      "daadName": "Technische Hochschule Köln - University of Applied Sciences",
+      "insId": "149",
+      "degreeProgrammes": 13,
+      "englishProgrammes": 13,
+      "englishBachelor": 2,
+      "englishMaster": 11
+    },
+    "hsmannheim": {
+      "daadName": "Technische Hochschule Mannheim",
+      "insId": "177",
+      "degreeProgrammes": 5,
+      "englishProgrammes": 5,
+      "englishBachelor": 5,
+      "englishMaster": 0
+    },
+    "hskarlsruhe": {
+      "daadName": "Karlsruhe University of Applied Sciences",
+      "insId": "138",
+      "degreeProgrammes": 3,
+      "englishProgrammes": 3,
+      "englishBachelor": 1,
+      "englishMaster": 2
+    },
+    "htwgkonstanz": {
+      "daadName": "HTWG Konstanz - University of Applied Sciences",
+      "insId": "155",
+      "degreeProgrammes": 5,
+      "englishProgrammes": 5,
+      "englishBachelor": 5,
+      "englishMaster": 0
+    },
+    "thingolstadt": {
+      "daadName": "Technische Hochschule Ingolstadt",
+      "insId": "288",
+      "degreeProgrammes": 26,
+      "englishProgrammes": 26,
+      "englishBachelor": 6,
+      "englishMaster": 20
+    },
+    "hbrs": {
+      "daadName": "Hochschule Bonn-Rhein-Sieg",
+      "insId": "294",
+      "degreeProgrammes": 9,
+      "englishProgrammes": 8,
+      "englishBachelor": 2,
+      "englishMaster": 6
+    },
+    "hda": {
+      "daadName": "Darmstadt University of Applied Sciences",
+      "insId": "47",
+      "degreeProgrammes": 5,
+      "englishProgrammes": 5,
+      "englishBachelor": 2,
+      "englishMaster": 3
+    },
+    "reutlingen": {
+      "daadName": "Reutlingen University",
+      "insId": "227",
+      "degreeProgrammes": 3,
+      "englishProgrammes": 3,
+      "englishBachelor": 1,
+      "englishMaster": 2
+    },
+    "fhmuenster": {
+      "daadName": "FH Münster University of Applied Sciences",
+      "insId": "192",
+      "degreeProgrammes": 6,
+      "englishProgrammes": 6,
+      "englishBachelor": 2,
+      "englishMaster": 4
+    },
+    "osnabrueck": {
+      "daadName": "Osnabrück University of Applied Sciences",
+      "insId": "214",
+      "degreeProgrammes": 9,
+      "englishProgrammes": 7,
+      "englishBachelor": 3,
+      "englishMaster": 4
+    },
+    "bht": {
+      "daadName": "Berliner Hochschule für Technik",
+      "insId": "15",
+      "degreeProgrammes": 1,
+      "englishProgrammes": 1,
+      "englishBachelor": 0,
+      "englishMaster": 1
+    },
+    "jade": {
+      "daadName": "Jade University of Applied Sciences Wilhelmshaven/Oldenburg/Elsfleth",
+      "insId": "25094",
+      "degreeProgrammes": 2,
+      "englishProgrammes": 2,
+      "englishBachelor": 1,
+      "englishMaster": 1
+    },
+    "duesseldorf": {
+      "daadName": "Heinrich Heine University Düsseldorf",
+      "insId": "59",
+      "degreeProgrammes": 10,
+      "englishProgrammes": 9,
+      "englishBachelor": 1,
+      "englishMaster": 8
+    },
+    "ude": {
+      "daadName": "University of Duisburg-Essen",
+      "insId": "71",
+      "degreeProgrammes": 16,
+      "englishProgrammes": 16,
+      "englishBachelor": 4,
+      "englishMaster": 11
+    },
+    "tudortmund": {
+      "daadName": "TU Dortmund University",
+      "insId": "51",
+      "degreeProgrammes": 18,
+      "englishProgrammes": 18,
+      "englishBachelor": 1,
+      "englishMaster": 17
+    },
+    "bielefeld": {
+      "daadName": "Bielefeld University",
+      "insId": "27",
+      "degreeProgrammes": 24,
+      "englishProgrammes": 19,
+      "englishBachelor": 0,
+      "englishMaster": 17
+    },
+    "paderborn": {
+      "daadName": "Paderborn University",
+      "insId": "215",
+      "degreeProgrammes": 13,
+      "englishProgrammes": 10,
+      "englishBachelor": 0,
+      "englishMaster": 10
+    },
+    "siegen": {
+      "daadName": "University of Siegen",
+      "insId": "245",
+      "degreeProgrammes": 15,
+      "englishProgrammes": 15,
+      "englishBachelor": 0,
+      "englishMaster": 15
+    },
+    "wuppertal": {
+      "daadName": "University of Wuppertal",
+      "insId": "279",
+      "degreeProgrammes": 3,
+      "englishProgrammes": 3,
+      "englishBachelor": 1,
+      "englishMaster": 2
+    },
+    "luebeck": {
+      "daadName": "Universität zu Lübeck",
+      "insId": "168",
+      "degreeProgrammes": 1,
+      "englishProgrammes": 1,
+      "englishBachelor": 0,
+      "englishMaster": 1
+    },
+    "rostock": {
+      "daadName": "University of Rostock",
+      "insId": "233",
+      "degreeProgrammes": 5,
+      "englishProgrammes": 5,
+      "englishBachelor": 0,
+      "englishMaster": 5
+    },
+    "greifswald": {
+      "daadName": "University of Greifswald",
+      "insId": "99",
+      "degreeProgrammes": 5,
+      "englishProgrammes": 5,
+      "englishBachelor": 0,
+      "englishMaster": 5
+    },
+    "magdeburg": {
+      "daadName": "Otto von Guericke University Magdeburg",
+      "insId": "172",
+      "degreeProgrammes": 26,
+      "englishProgrammes": 26,
+      "englishBachelor": 5,
+      "englishMaster": 21
+    },
+    "halle": {
+      "daadName": "Martin Luther University Halle-Wittenberg",
+      "insId": "101",
+      "degreeProgrammes": 0,
+      "englishProgrammes": 0,
+      "englishBachelor": 0,
+      "englishMaster": 0
+    },
+    "leipzig": {
+      "daadName": "Leipzig University",
+      "insId": "159",
+      "degreeProgrammes": 21,
+      "englishProgrammes": 21,
+      "englishBachelor": 1,
+      "englishMaster": 17
+    },
+    "tuchemnitz": {
+      "daadName": "Chemnitz University of Technology",
+      "insId": "42",
+      "degreeProgrammes": 15,
+      "englishProgrammes": 15,
+      "englishBachelor": 2,
+      "englishMaster": 13
+    },
+    "potsdam": {
+      "daadName": "University of Potsdam",
+      "insId": "221",
+      "degreeProgrammes": 34,
+      "englishProgrammes": 33,
+      "englishBachelor": 1,
+      "englishMaster": 27
+    },
+    "viadrina": {
+      "daadName": "European University Viadrina",
+      "insId": "84",
+      "degreeProgrammes": 13,
+      "englishProgrammes": 13,
+      "englishBachelor": 2,
+      "englishMaster": 11
+    },
+    "btucottbus": {
+      "daadName": "Brandenburg University of Technology Cottbus-Senftenberg",
+      "insId": "45",
+      "degreeProgrammes": 22,
+      "englishProgrammes": 21,
+      "englishBachelor": 2,
+      "englishMaster": 17
+    },
+    "wuerzburg": {
+      "daadName": "Julius-Maximilians-Universität Würzburg",
+      "insId": "276",
+      "degreeProgrammes": 31,
+      "englishProgrammes": 30,
+      "englishBachelor": 1,
+      "englishMaster": 29
+    },
+    "regensburg": {
+      "daadName": "University of Regensburg",
+      "insId": "225",
+      "degreeProgrammes": 22,
+      "englishProgrammes": 21,
+      "englishBachelor": 1,
+      "englishMaster": 18
+    },
+    "passau": {
+      "daadName": "University of Passau",
+      "insId": "218",
+      "degreeProgrammes": 17,
+      "englishProgrammes": 15,
+      "englishBachelor": 3,
+      "englishMaster": 11
+    },
+    "bayreuth": {
+      "daadName": "University of Bayreuth",
+      "insId": "9",
+      "degreeProgrammes": 27,
+      "englishProgrammes": 25,
+      "englishBachelor": 2,
+      "englishMaster": 23
+    },
+    "augsburg": {
+      "daadName": "University of Augsburg",
+      "insId": "6",
+      "degreeProgrammes": 12,
+      "englishProgrammes": 10,
+      "englishBachelor": 0,
+      "englishMaster": 10
+    },
+    "bamberg": {
+      "daadName": "University of Bamberg",
+      "insId": "8",
+      "degreeProgrammes": 11,
+      "englishProgrammes": 9,
+      "englishBachelor": 1,
+      "englishMaster": 8
+    },
+    "kueichstaett": {
+      "daadName": "Catholic University of Eichstätt-Ingolstadt",
+      "insId": "65",
+      "degreeProgrammes": 9,
+      "englishProgrammes": 9,
+      "englishBachelor": 0,
+      "englishMaster": 9
+    },
+    "hohenheim": {
+      "daadName": "University of Hohenheim",
+      "insId": "129",
+      "degreeProgrammes": 19,
+      "englishProgrammes": 18,
+      "englishBachelor": 1,
+      "englishMaster": 17
+    },
+    "ulm": {
+      "daadName": "Ulm University",
+      "insId": "259",
+      "degreeProgrammes": 17,
+      "englishProgrammes": 17,
+      "englishBachelor": 0,
+      "englishMaster": 16
+    },
+    "saarland": {
+      "daadName": "Saarland University",
+      "insId": "235",
+      "degreeProgrammes": 29,
+      "englishProgrammes": 29,
+      "englishBachelor": 5,
+      "englishMaster": 22
+    },
+    "rptu": {
+      "daadName": "RPTU University Kaiserslautern-Landau",
+      "insId": "135",
+      "degreeProgrammes": 24,
+      "englishProgrammes": 24,
+      "englishBachelor": 0,
+      "englishMaster": 22
+    },
+    "oldenburg": {
+      "daadName": "University of Oldenburg",
+      "insId": "209",
+      "degreeProgrammes": 12,
+      "englishProgrammes": 11,
+      "englishBachelor": 1,
+      "englishMaster": 9
+    },
+    "hildesheim": {
+      "daadName": "University of Hildesheim",
+      "insId": "127",
+      "degreeProgrammes": 5,
+      "englishProgrammes": 4,
+      "englishBachelor": 0,
+      "englishMaster": 4
+    },
+    "leuphana": {
+      "daadName": "Leuphana University Lüneburg",
+      "insId": "171",
+      "degreeProgrammes": 28,
+      "englishProgrammes": 28,
+      "englishBachelor": 8,
+      "englishMaster": 20
+    }
+  }
+}

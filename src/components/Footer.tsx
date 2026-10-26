@@ -20,6 +20,7 @@ export default function Footer() {
   const toolLinks = [
     { href: "/universities", label: tools("directory") },
     { href: "/universities/finder", label: tools("finder") },
+    { href: "/universities/programmes", label: tools("programmes") },
     { href: "/germany", label: tools("states") },
     { href: "/cost-calculator", label: tools("costs") },
     { href: "/scholarships", label: tools("scholarships") },

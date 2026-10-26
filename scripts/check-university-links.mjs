@@ -16,6 +16,7 @@ for (const r of Object.values(records)) {
     ["nonEuTuition.source", r.nonEuTuition.source],
     ["semesterContribution.source", r.semesterContribution.source],
     ["uniAssistSource", r.uniAssistSource],
+    ["englishTaughtSource", r.englishTaughtSource],
   ]) {
     if (!url) continue;
     if (!urls.has(url)) urls.set(url, []);

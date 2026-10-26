@@ -9,7 +9,8 @@
       "shortlist": "Shortlist",
       "planner": "Application planner",
       "costs": "Cost calculator",
-      "scholarships": "Scholarships"
+      "scholarships": "Scholarships",
+      "programmes": "Programme search"
     },
     "common": {
       "notVerified": "Not verified",
@@ -50,7 +51,10 @@
       "contributionUnknown": "Not verified — the amount is published on the institution's website.",
       "explainTuition": "Tuition is a fee for teaching charged to some students (here: non-EU citizens).",
       "explainContribution": "The semester contribution is paid by every student each semester (student services, student union, often a transport ticket). It is not tuition.",
-      "explainLiving": "Living costs (rent, food, insurance) are separate from both."
+      "explainLiving": "Living costs (rent, food, insurance) are separate from both.",
+      "includesTicket": "Includes a public-transport semester ticket.",
+      "excludesTicket": "No transport ticket included in this amount.",
+      "explainFirstEnrolment": "At first enrolment some universities add small one-off charges, such as a student ID card."
     },
     "ownership": {
       "label": "Funding",
@@ -114,7 +118,7 @@
       "feeAny": "Any",
       "feeNone": "No tuition (verified)",
       "feeCharged": "Charges tuition",
-      "english": "Has English-taught programmes (verified)",
+      "english": "Has English-taught programmes (DAAD)",
       "uniAssist": "Applications via uni-assist",
       "sort": "Sort by",
       "sortOptions": {
@@ -137,7 +141,7 @@
       "previous": "Previous",
       "next": "Next",
       "page": "Page {page}",
-      "dataNote": "Fee and link data checked {date} against official sources. Fields we could not verify are marked “Not verified” instead of estimated.",
+      "dataNote": "Fees, semester contributions and links checked {date} against official sources; English-taught programme counts from DAAD. Fields we could not verify are marked “Not verified” instead of estimated.",
       "englishNote": "A university offering some English-taught programmes does not mean all its programmes are in English."
     },
     "card": {
@@ -203,9 +207,16 @@
       "uniAssistYes": "Member — check if your programme uses it",
       "programsNote": "Studiva's selection, not a complete programme list.",
       "rankingsNote": "We don't show rankings we have not verified with the ranking organisation and year.",
-      "competition": { "low": "Standard", "medium": "Medium", "high": "High" },
+      "competition": {
+        "low": "Standard",
+        "medium": "Medium",
+        "high": "High"
+      },
       "share": "Copy link to this comparison",
-      "copied": "Link copied"
+      "copied": "Link copied",
+      "englishNote": "Count listed in DAAD's International Programmes database.",
+      "englishCount": "{count, plural, one {# programme} other {# programmes}}",
+      "uniAssistNo": "Not a member — apply directly"
     },
     "detail": {
       "breadcrumbHome": "Home",
@@ -257,7 +268,17 @@
         "englishTaught": "English-taught programmes",
         "subjectAreas": "subject areas"
       },
-      "factsVsGuidance": "Items marked “Official source” link to the page we checked. Items marked “Studiva guidance” are our general advice."
+      "factsVsGuidance": "Items marked “Official source” link to the page we checked. Items marked “Studiva guidance” are our general advice.",
+      "englishRow": "English-taught (DAAD)",
+      "englishRowValue": "{count, plural, one {# programme} other {# programmes}}",
+      "daadCount": "DAAD lists {total, plural, one {# degree programme} other {# degree programmes}} here — {english} taught fully or partly in English.",
+      "daadSplit": "Including {bachelor} bachelor's and {master} master's programmes in English.",
+      "daadBachelorLink": "English bachelor's on DAAD",
+      "daadMasterLink": "English master's on DAAD",
+      "daadAllLink": "All listed programmes",
+      "daadNote": "Counts from DAAD's International Programmes database, fetched {date}. It lists international programmes only, so the university may offer more. Links open DAAD's official search.",
+      "programmeSearchLink": "Search programmes across Germany",
+      "uniAssistNonMember": "This institution is not a uni-assist member, so international applications usually go directly to the university through its own portal. Check the programme page for the exact route."
     },
     "report": {
       "title": "Spotted outdated information or a broken link?",
@@ -337,8 +358,8 @@
         "phdOther": "Universities of applied sciences generally cannot award doctorates on their own — check with the institution.",
         "subjectMet": "Offers programmes in this area.",
         "subjectUnknown": "Subject areas not verified yet.",
-        "englishMet": "English-taught programmes confirmed.",
-        "englishUnknown": "English-taught programmes not verified yet.",
+        "englishMet": "DAAD lists {count, plural, one {# English-taught programme} other {# English-taught programmes}} here.",
+        "englishUnknown": "No English-taught programmes found in DAAD's database — not verified.",
         "stateMet": "Located in {state}.",
         "stateNotMet": "Located in {state}.",
         "stateUnknown": "Location not verified.",
@@ -412,7 +433,8 @@
       "sources": "Sources",
       "sourceSurvey": "Average student spending by item: DZHW 22nd Social Survey, as published by DAAD (checked {date}).",
       "sourceVisa": "Proof of funds: DAAD, amount valid as of 1 January 2025 (checked {date}).",
-      "currency": "All amounts in euros (EUR)."
+      "currency": "All amounts in euros (EUR).",
+      "contributionFromUni": "Filled in from {name}'s official page ({term}):"
     },
     "scholarships": {
       "title": "Scholarships & funding",
@@ -483,15 +505,77 @@
       }
     },
     "meta": {
-      "directory": { "title": "Universities in Germany — search & compare", "description": "Search 82 German universities by city, state, type and tuition for non-EU students, with fees and official links verified against official sources." },
-      "finder": { "title": "University finder for Germany", "description": "Find German universities that match your degree level, location, budget and language needs — with transparent reasons for every match." },
-      "compare": { "title": "Compare universities", "description": "Compare German universities side by side: tuition, funding, location, uni-assist and official links." },
-      "shortlist": { "title": "Your university shortlist", "description": "Universities you saved while browsing." },
-      "states": { "title": "Universities in Germany by federal state", "description": "Explore Germany's 16 federal states, their university cities and tuition policies for non-EU students." },
-      "state": { "title": "Universities in {state}", "description": "Universities and university cities in {state}, with tuition policy for non-EU students and official links." },
-      "costs": { "title": "Cost of studying in Germany calculator", "description": "Estimate monthly and annual costs of studying in Germany: rent, food, insurance, tuition and semester contribution." },
-      "scholarships": { "title": "Scholarships for studying in Germany", "description": "Verified scholarship programmes open to Turkish and international students for degree study in Germany." },
-      "planner": { "title": "Application planner", "description": "Track university application deadlines, tasks and notes." }
+      "directory": {
+        "title": "Universities in Germany — search & compare",
+        "description": "Search 82 German universities by city, state, type and tuition for non-EU students, with fees and official links verified against official sources."
+      },
+      "finder": {
+        "title": "University finder for Germany",
+        "description": "Find German universities that match your degree level, location, budget and language needs — with transparent reasons for every match."
+      },
+      "compare": {
+        "title": "Compare universities",
+        "description": "Compare German universities side by side: tuition, funding, location, uni-assist and official links."
+      },
+      "shortlist": {
+        "title": "Your university shortlist",
+        "description": "Universities you saved while browsing."
+      },
+      "states": {
+        "title": "Universities in Germany by federal state",
+        "description": "Explore Germany's 16 federal states, their university cities and tuition policies for non-EU students."
+      },
+      "state": {
+        "title": "Universities in {state}",
+        "description": "Universities and university cities in {state}, with tuition policy for non-EU students and official links."
+      },
+      "costs": {
+        "title": "Cost of studying in Germany calculator",
+        "description": "Estimate monthly and annual costs of studying in Germany: rent, food, insurance, tuition and semester contribution."
+      },
+      "scholarships": {
+        "title": "Scholarships for studying in Germany",
+        "description": "Verified scholarship programmes open to Turkish and international students for degree study in Germany."
+      },
+      "planner": {
+        "title": "Application planner",
+        "description": "Track university application deadlines, tasks and notes."
+      },
+      "programmes": {
+        "title": "Find study programmes in Germany",
+        "description": "Search DAAD's official database of international degree programmes in Germany by subject, degree, language and university, and see how many English-taught programmes each university offers."
+      }
+    },
+    "programmes": {
+      "title": "Find study programmes",
+      "subtitle": "Search DAAD's official database of international degree programmes in Germany. Studiva prepares the search; the results open on DAAD.",
+      "keyword": "Subject or keyword",
+      "keywordPlaceholder": "e.g. computer science, economics",
+      "keywordHint": "DAAD's search works best with English keywords.",
+      "degree": "Degree",
+      "degreeAny": "Any degree",
+      "bachelor": "Bachelor's",
+      "master": "Master's",
+      "language": "Language of instruction",
+      "languageAny": "Any language",
+      "english": "English (fully or partly)",
+      "german": "German (fully or partly)",
+      "institution": "University",
+      "institutionAny": "All institutions in Germany",
+      "submit": "Search on DAAD",
+      "opensNote": "Opens DAAD's official programme search in a new tab.",
+      "howTitle": "How this works",
+      "howBody": "DAAD, the German Academic Exchange Service, runs the official database of international programmes in Germany — mostly taught in English — with entry requirements, deadlines and fees for each one.",
+      "whyLink": "We send you to DAAD instead of copying its records: programme details change often, and DAAD updates them at the source.",
+      "listTitle": "English-taught programmes by university",
+      "listIntro": "How many degree programmes taught fully or partly in English DAAD lists for each university in our directory. DAAD covers international programmes only, so a university may offer more.",
+      "colUniversity": "University",
+      "colEnglish": "In English",
+      "colSplit": "Bachelor's / master's",
+      "split": "{bachelor} bachelor's · {master} master's",
+      "viewOnDaad": "View on DAAD",
+      "fetched": "Counts fetched from DAAD on {date}.",
+      "notListed": "No programmes matched in DAAD's database for: {names}. Check their own websites."
     }
   }
 }

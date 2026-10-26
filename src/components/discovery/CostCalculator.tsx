@@ -4,7 +4,7 @@ import { useId, useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { RotateCcw } from "lucide-react";
 import { COST_REFERENCE } from "@/data/references";
-import { formatDate, formatEur, formatEurRange } from "@/lib/discovery/facts";
+import { formatDate, formatEur, formatEurRange, formatTerm, hostOf } from "@/lib/discovery/facts";
 import type { UniversitySummary } from "@/lib/discovery/types";
 
 type MonthlyKey = "rent" | "food" | "transport" | "health" | "personal" | "other";
@@ -29,19 +29,30 @@ export default function CostCalculator({ universities }: { universities: Univers
   const [slug, setSlug] = useState("");
   const [tuition, setTuition] = useState("0");
   const [contribution, setContribution] = useState("");
+  /** Slug whose verified contribution is in the field; null once the visitor types their own value. */
+  const [contributionFrom, setContributionFrom] = useState<string | null>(null);
 
   const uni = universities.find((u) => u.slug === slug) ?? null;
   const uniTuition = uni?.facts?.nonEuTuition;
+  const prefilled = contributionFrom ? universities.find((u) => u.slug === contributionFrom)?.facts?.semesterContribution : null;
 
   function chooseUniversity(next: string) {
     setSlug(next);
     const u = universities.find((x) => x.slug === next);
+    const sc = u?.facts?.semesterContribution;
+    if (sc?.amountEur != null) {
+      const amount = Number.isInteger(sc.amountEur) ? String(sc.amountEur) : sc.amountEur.toFixed(2);
+      setContribution(locale === "tr" ? amount.replace(".", ",") : amount);
+      setContributionFrom(next);
+    } else if (contributionFrom) {
+      // Don't leave the previous university's figure in place.
+      setContribution("");
+      setContributionFrom(null);
+    }
     const tu = u?.facts?.nonEuTuition;
     if (!tu) return;
     if (tu.status === "none") setTuition("0");
     else if (tu.status === "charged" && tu.minEur !== null && tu.minEur === tu.maxEur) setTuition(String(tu.minEur));
-    const amount = u?.facts?.semesterContribution.amountEur;
-    if (amount != null) setContribution(String(amount));
   }
 
   const totals = useMemo(() => {
@@ -152,11 +163,30 @@ export default function CostCalculator({ universities }: { universities: Univers
                   {t("inputs.contribution")}
                 </label>
                 <div className="relative">
-                  <input id={`${id}-contribution`} inputMode="decimal" placeholder="0" value={contribution} onChange={(e) => setContribution(e.target.value.replace(/[^\d.,]/g, ""))} className={fieldClass} />
+                  <input
+                    id={`${id}-contribution`}
+                    inputMode="decimal"
+                    placeholder="0"
+                    value={contribution}
+                    onChange={(e) => {
+                      setContribution(e.target.value.replace(/[^\d.,]/g, ""));
+                      setContributionFrom(null);
+                    }}
+                    className={fieldClass}
+                  />
                   <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-xs text-foreground-muted">€</span>
                 </div>
               </div>
-              <p className="mt-1 text-xs text-foreground-muted">{t("contributionHint")}</p>
+              {prefilled?.term && prefilled.source ? (
+                <p className="mt-1 text-xs leading-relaxed text-foreground-muted">
+                  {t("contributionFromUni", { name: universities.find((u) => u.slug === contributionFrom)?.name ?? "", term: formatTerm(prefilled.term, locale) })}{" "}
+                  <a href={prefilled.source} target="_blank" rel="noopener noreferrer" className="text-forest underline">
+                    {hostOf(prefilled.source)}
+                  </a>
+                </p>
+              ) : (
+                <p className="mt-1 text-xs text-foreground-muted">{t("contributionHint")}</p>
+              )}
             </div>
           </div>
         </fieldset>

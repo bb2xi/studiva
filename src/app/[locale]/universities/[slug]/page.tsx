@@ -16,7 +16,8 @@ import ReportForm from "@/components/discovery/ReportForm";
 import DiscoveryNav from "@/components/discovery/DiscoveryNav";
 import { universityMedia } from "@/lib/universityMedia";
 import { getUniversityDetail, getUniversitySummaries, UNIVERSITY_SLUGS } from "@/lib/universities";
-import { formatDate, formatEurRange, hostOf } from "@/lib/discovery/facts";
+import { formatDate, formatEurExact, formatEurRange, formatTerm, hostOf } from "@/lib/discovery/facts";
+import { daadSearchUrl } from "@/lib/discovery/daad";
 import { STATE_BY_CODE, cityName } from "@/data/states";
 import { pageMetadata, SITE_URL } from "@/lib/seo";
 import type { UniversityDetail } from "@/lib/discovery/types";
@@ -77,6 +78,10 @@ export default async function UniversityDetailPage({ params }: { params: Promise
   const tuition = facts?.nonEuTuition;
   const tuitionRange = tuition ? formatEurRange(tuition.minEur, tuition.maxEur, locale) : null;
   const tuitionNote = tuition ? (lang === "tr" ? tuition.noteTr : tuition.noteEn) : null;
+  const contribution = facts?.semesterContribution;
+  const daad = facts?.daad ?? null;
+  const uniAssistLabel = facts?.uniAssistMember === true ? d("common.yes") : facts?.uniAssistMember === false ? d("common.no") : d("common.notVerified");
+  const daadLinkClass = "inline-flex items-center gap-1 rounded-sm border border-border-strong bg-surface px-3 py-1.5 text-xs font-semibold text-forest hover:border-forest";
 
   const competitionLabel = d(`compare.competition.${university.competitiveness}`);
 
@@ -225,11 +230,25 @@ export default async function UniversityDetailPage({ params }: { params: Promise
                   </dd>
                 </div>
                 <div className="py-3">
-                  <dt className="text-xs font-semibold uppercase tracking-wide text-foreground-secondary">{d("fee.contribution")}</dt>
-                  <dd className="mt-1 text-sm text-foreground-secondary">
-                    {facts?.semesterContribution.amountEur != null
-                      ? `${formatEurRange(facts.semesterContribution.amountEur, null, locale)} (${facts.semesterContribution.term})`
-                      : d("fee.contributionUnknown")}
+                  <dt className="flex items-center justify-between gap-2 text-xs font-semibold uppercase tracking-wide text-foreground-secondary">
+                    {d("fee.contribution")}
+                    {contribution?.source ? <ProvenanceTag kind="official" label={d("common.official")} /> : null}
+                  </dt>
+                  <dd className="mt-1">
+                    {contribution?.amountEur != null && contribution.term && contribution.source ? (
+                      <>
+                        <span className="font-semibold text-foreground">{formatEurExact(contribution.amountEur, locale)}</span>
+                        <span className="text-sm text-foreground-secondary"> · {formatTerm(contribution.term, locale)}</span>
+                        {contribution.includesTicket !== null && (
+                          <p className="mt-1 text-xs leading-relaxed text-foreground-secondary">{d(contribution.includesTicket ? "fee.includesTicket" : "fee.excludesTicket")}</p>
+                        )}
+                        <p className="mt-1">
+                          <SourceLink href={contribution.source} label={d("common.source")} />
+                        </p>
+                      </>
+                    ) : (
+                      <span className="text-sm text-foreground-secondary">{d("fee.contributionUnknown")}</span>
+                    )}
                   </dd>
                 </div>
                 <div className="flex items-baseline justify-between gap-4 py-3">
@@ -238,8 +257,18 @@ export default async function UniversityDetailPage({ params }: { params: Promise
                 </div>
                 <div className="flex items-baseline justify-between gap-4 py-3">
                   <dt className="text-xs font-semibold uppercase tracking-wide text-foreground-secondary">uni-assist</dt>
-                  <dd className="text-right text-sm font-medium text-foreground">{facts?.uniAssistMember ? d("common.yes") : d("common.notVerified")}</dd>
+                  <dd className="text-right text-sm font-medium text-foreground">{uniAssistLabel}</dd>
                 </div>
+                {daad && daad.englishProgrammes > 0 && (
+                  <div className="flex items-baseline justify-between gap-4 py-3">
+                    <dt className="text-xs font-semibold uppercase tracking-wide text-foreground-secondary">{d("detail.englishRow")}</dt>
+                    <dd className="text-right text-sm font-medium text-foreground">
+                      <a href="#programs" className="underline decoration-border-strong underline-offset-2 hover:text-forest">
+                        {d("detail.englishRowValue", { count: daad.englishProgrammes })}
+                      </a>
+                    </dd>
+                  </div>
+                )}
                 {university.students && (
                   <div className="flex items-baseline justify-between gap-4 pt-3">
                     <dt className="text-xs font-semibold uppercase tracking-wide text-foreground-secondary">{lang === "tr" ? "Öğrenci sayısı (yaklaşık)" : "Students (approx.)"}</dt>
@@ -261,11 +290,44 @@ export default async function UniversityDetailPage({ params }: { params: Promise
                     </Tag>
                   ))}
                 </div>
-                <p className="mt-4 text-sm text-foreground-secondary">
-                  {d("detail.programsCatalog")}{" "}
-                  <a href="https://www2.daad.de/deutschland/studienangebote/international-programmes/en/" target="_blank" rel="noopener noreferrer" className="font-semibold text-forest underline underline-offset-2 hover:text-brand">
-                    {d("detail.daadDatabase")}
-                  </a>
+                {daad ? (
+                  <div className="mt-4 rounded-sm border border-border bg-background-secondary p-4">
+                    <div className="flex flex-wrap items-start justify-between gap-2">
+                      <p className="text-sm font-semibold text-foreground">{d("detail.daadCount", { total: daad.degreeProgrammes, english: daad.englishProgrammes })}</p>
+                      <ProvenanceTag kind="official" label={d("common.official")} />
+                    </div>
+                    {daad.englishProgrammes > 0 && (
+                      <p className="mt-1 text-xs text-foreground-secondary">{d("detail.daadSplit", { bachelor: daad.englishBachelor, master: daad.englishMaster })}</p>
+                    )}
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {daad.englishBachelor > 0 && (
+                        <a href={daadSearchUrl({ insId: daad.insId, degree: "bachelor", language: "english" })} target="_blank" rel="noopener noreferrer" className={daadLinkClass}>
+                          {d("detail.daadBachelorLink")} <ExternalLink size={11} />
+                        </a>
+                      )}
+                      {daad.englishMaster > 0 && (
+                        <a href={daadSearchUrl({ insId: daad.insId, degree: "master", language: "english" })} target="_blank" rel="noopener noreferrer" className={daadLinkClass}>
+                          {d("detail.daadMasterLink")} <ExternalLink size={11} />
+                        </a>
+                      )}
+                      <a href={daadSearchUrl({ insId: daad.insId })} target="_blank" rel="noopener noreferrer" className={daadLinkClass}>
+                        {d("detail.daadAllLink")} <ExternalLink size={11} />
+                      </a>
+                    </div>
+                    <p className="mt-3 text-[11px] leading-relaxed text-foreground-muted">{d("detail.daadNote", { date: formatDate(daad.fetchedAt, locale) })}</p>
+                  </div>
+                ) : (
+                  <p className="mt-4 text-sm text-foreground-secondary">
+                    {d("detail.programsCatalog")}{" "}
+                    <a href={daadSearchUrl()} target="_blank" rel="noopener noreferrer" className="font-semibold text-forest underline underline-offset-2 hover:text-brand">
+                      {d("detail.daadDatabase")}
+                    </a>
+                  </p>
+                )}
+                <p className="mt-3 text-sm text-foreground-secondary">
+                  <Link href="/universities/programmes" className="font-semibold text-forest underline underline-offset-2 hover:text-brand">
+                    {d("detail.programmeSearchLink")} →
+                  </Link>
                   {facts?.officialUrl && (
                     <>
                       {" · "}
@@ -292,6 +354,7 @@ export default async function UniversityDetailPage({ params }: { params: Promise
                 <ul className="space-y-2 text-sm leading-relaxed text-foreground-secondary">
                   <li>{d("fee.explainTuition")}</li>
                   <li>{d("fee.explainContribution")}</li>
+                  <li>{d("fee.explainFirstEnrolment")}</li>
                   <li>{d("fee.explainLiving")}</li>
                 </ul>
                 <Link href="/cost-calculator" className="mt-3 inline-block text-sm font-semibold text-forest underline underline-offset-2 hover:text-brand">
@@ -301,12 +364,16 @@ export default async function UniversityDetailPage({ params }: { params: Promise
 
               <Section id="apply" title={d("detail.sections.application")}>
                 <p className="text-sm leading-relaxed text-foreground-secondary">
-                  {facts?.uniAssistMember ? d("detail.uniAssistMember") : d("detail.uniAssistUnknown")}
+                  {facts?.uniAssistMember === true
+                    ? d("detail.uniAssistMember")
+                    : facts?.uniAssistMember === false
+                      ? d("detail.uniAssistNonMember")
+                      : d("detail.uniAssistUnknown")}
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-foreground-secondary">{d("detail.applyChecklist")}</p>
-                <div className="mt-3 flex flex-wrap gap-2">
+                <div className="mt-3 flex flex-wrap items-center gap-3">
                   <AddToPlannerButton slug={slug} name={university.name} label={d("detail.planner")} />
-                  {facts?.uniAssistMember && facts.uniAssistSource && <SourceLink href={facts.uniAssistSource} label={d("common.source")} />}
+                  {facts?.uniAssistMember != null && facts.uniAssistSource && <SourceLink href={facts.uniAssistSource} label={d("common.source")} />}
                 </div>
               </Section>
 
@@ -509,7 +576,9 @@ function DataFreshness({
         [
           [d("common.officialWebsite"), facts.officialUrl],
           [d("fee.label"), facts.nonEuTuition.source],
+          [d("fee.contribution"), facts.semesterContribution.source],
           ["uni-assist", facts.uniAssistSource],
+          [d("detail.fields.englishTaught"), facts.englishTaughtSource],
           [d("common.internationalPage"), facts.internationalUrl],
         ] as const
       ).filter((entry): entry is readonly [string, string] => Boolean(entry[1]))
