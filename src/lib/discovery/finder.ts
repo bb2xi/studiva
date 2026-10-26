@@ -72,6 +72,9 @@ export function evaluate(
           ? { key: "level", status: "met", reason: { key: "phdUniversity" } }
           : { key: "level", status: "unknown", reason: { key: "phdOther" } }
       );
+    } else if (u.facts?.hsk) {
+      const count = a.level === "bachelor" ? u.facts.hsk.undergraduate : u.facts.hsk.graduate;
+      criteria.push({ key: "level", status: count > 0 ? "met" : "notMet", reason: { key: count > 0 ? "levelCompassMet" : "levelCompassNotMet", values: { count } } });
     } else {
       const offers = u.level === "both" || u.level === a.level;
       criteria.push({ key: "level", status: offers ? "met" : "notMet", reason: { key: offers ? "levelMet" : "levelNotMet", values: { level: labels.level(a.level) } } });
@@ -81,7 +84,7 @@ export function evaluate(
   if (a.subject) {
     const areas = u.facts?.subjectAreas;
     if (!areas) criteria.push({ key: "subject", status: "unknown", reason: { key: "subjectUnknown" } });
-    else criteria.push({ key: "subject", status: areas.includes(a.subject) ? "met" : "notMet", reason: { key: areas.includes(a.subject) ? "subjectMet" : "subjectUnknown" } });
+    else criteria.push({ key: "subject", status: areas.includes(a.subject) ? "met" : "notMet", reason: { key: areas.includes(a.subject) ? "subjectMet" : "subjectNotMet" } });
   }
 
   if (a.english) {

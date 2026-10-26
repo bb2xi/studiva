@@ -96,6 +96,7 @@ const DAAD_NAMES = {
   oldenburg: "University of Oldenburg",
   hildesheim: "University of Hildesheim",
   leuphana: "Leuphana University Lüneburg",
+  vechta: "University of Vechta",
 };
 
 async function getJson(params) {

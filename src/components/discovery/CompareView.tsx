@@ -6,7 +6,8 @@ import { useLocale, useTranslations } from "next-intl";
 import { ExternalLink, Link2, X } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { compareStore, setCompareList, MAX_COMPARE } from "@/lib/discovery/store";
-import { formatDate, formatEurExact, formatEurRange, formatTerm, hostOf } from "@/lib/discovery/facts";
+import { formatDate, formatEurExact, formatEurRange, formatTerm, hostOf, levelOf } from "@/lib/discovery/facts";
+import { SUBJECT_AREAS } from "@/lib/discovery/types";
 import { STATE_BY_CODE, cityName } from "@/data/states";
 import type { UniversitySummary } from "@/lib/discovery/types";
 import { toast } from "./Toaster";
@@ -54,7 +55,33 @@ export default function CompareView({ items }: { items: UniversitySummary[] }) {
       ),
     },
     { key: "ownership", label: t("compare.rows.ownership"), render: (u) => (u.facts?.ownership ? t(`ownership.${u.facts.ownership}`) : notVerified) },
-    { key: "levels", label: t("compare.rows.levels"), render: (u) => t(`levels.${u.level}`) },
+    { key: "levels", label: t("compare.rows.levels"), render: (u) => t(`levels.${levelOf(u)}`) },
+    {
+      key: "programmeCount",
+      label: t("compare.rows.programmeCount"),
+      note: t("compare.programmeCountNote"),
+      render: (u) => {
+        const h = u.facts?.hsk;
+        if (!h) return notVerified;
+        return (
+          <>
+            <span className="font-semibold">{h.programmes}</span>
+            <span className="block text-xs text-foreground-muted">{t("compare.programmeSplit", { undergraduate: h.undergraduate, graduate: h.graduate })}</span>
+          </>
+        );
+      },
+    },
+    {
+      key: "subjects",
+      label: t("compare.rows.subjects"),
+      render: (u) => {
+        const areas = u.facts?.subjectAreas;
+        if (!areas) return notVerified;
+        return SUBJECT_AREAS.filter((s) => areas.includes(s))
+          .map((s) => t(`subjects.${s}`))
+          .join(", ");
+      },
+    },
     {
       key: "tuition",
       label: t("compare.rows.tuition"),
@@ -93,7 +120,13 @@ export default function CompareView({ items }: { items: UniversitySummary[] }) {
       key: "english",
       label: t("compare.rows.english"),
       note: t("compare.englishNote"),
-      render: (u) => (u.facts?.daad && u.facts.daad.englishProgrammes > 0 ? t("compare.englishCount", { count: u.facts.daad.englishProgrammes }) : notVerified),
+      render: (u) => {
+        const daad = u.facts?.daad;
+        const hsk = u.facts?.hsk;
+        if (daad && daad.englishProgrammes > 0) return t("compare.englishCount", { count: daad.englishProgrammes });
+        if (hsk && hsk.english > 0) return `${t("compare.englishCount", { count: hsk.english })} (HRK)`;
+        return notVerified;
+      },
     },
     { key: "programs", label: t("compare.rows.programs"), note: t("compare.programsNote"), render: (u) => u.popularPrograms.join(", ") },
     {

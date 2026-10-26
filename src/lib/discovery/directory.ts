@@ -1,4 +1,5 @@
 import { buildIndex, search, type SearchIndex } from "./search";
+import { levelOf } from "./facts";
 import type { StateCode, SubjectArea, UniversitySummary } from "./types";
 import { STATE_CODES, SUBJECT_AREAS } from "./types";
 import { STATES } from "@/data/states";
@@ -132,7 +133,8 @@ export function buildUniversityIndex(items: UniversitySummary[], subjectLabels: 
 }
 
 function matchesLevel(u: UniversitySummary, level: DirectoryState["level"]) {
-  return level === "all" || u.level === "both" || u.level === level;
+  const offered = levelOf(u);
+  return level === "all" || offered === "both" || offered === level;
 }
 
 function matchesOwnership(u: UniversitySummary, ownership: DirectoryState["ownership"]) {

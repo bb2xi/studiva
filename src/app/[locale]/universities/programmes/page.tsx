@@ -7,7 +7,7 @@ import DiscoveryNav from "@/components/discovery/DiscoveryNav";
 import DiscoveryHeader from "@/components/discovery/DiscoveryHeader";
 import ProgrammeSearch from "@/components/discovery/ProgrammeSearch";
 import { getUniversitySummaries } from "@/lib/universities";
-import { daadSearchUrl } from "@/lib/discovery/daad";
+import { daadSearchUrl, hskSearchUrl } from "@/lib/discovery/daad";
 import { formatDate } from "@/lib/discovery/facts";
 import { pageMetadata } from "@/lib/seo";
 
@@ -24,13 +24,16 @@ export default async function ProgrammesPage({ params }: { params: Promise<{ loc
   const universities = await getUniversitySummaries(locale);
   const collator = new Intl.Collator(locale);
 
-  const listed = universities.filter((u) => u.facts?.daad);
-  const institutions = listed.map((u) => ({ insId: u.facts!.daad!.insId, name: u.name })).sort((a, b) => collator.compare(a.name, b.name));
-  const ranked = listed
-    .filter((u) => u.facts!.daad!.englishProgrammes > 0)
-    .sort((a, b) => b.facts!.daad!.englishProgrammes - a.facts!.daad!.englishProgrammes || collator.compare(a.name, b.name));
-  const notListed = universities.filter((u) => !u.facts?.daad).map((u) => u.name);
-  const fetchedAt = listed[0]?.facts?.daad?.fetchedAt;
+  const institutions = universities
+    .map((u) => ({ slug: u.slug, name: u.name, daadId: u.facts?.daad?.insId ?? null, hskId: u.facts?.hsk?.institutionId ?? null }))
+    .sort((a, b) => collator.compare(a.name, b.name));
+  const ranked = universities
+    .filter((u) => u.facts?.hsk)
+    .sort((a, b) => b.facts!.hsk!.programmes - a.facts!.hsk!.programmes || collator.compare(a.name, b.name));
+  const notListed = universities.filter((u) => !u.facts?.hsk).map((u) => u.name);
+  const hskDate = ranked[0]?.facts?.hsk?.fetchedAt;
+  const daadDate = universities.find((u) => u.facts?.daad)?.facts?.daad?.fetchedAt;
+  const linkClass = "inline-flex items-center gap-1 whitespace-nowrap text-xs font-semibold text-forest underline underline-offset-2 hover:text-brand";
 
   return (
     <>
@@ -46,6 +49,7 @@ export default async function ProgrammesPage({ params }: { params: Promise<{ loc
               <Heading as="h2" size="sm">
                 {t("howTitle")}
               </Heading>
+              <p>{t("howAll")}</p>
               <p>{t("howBody")}</p>
               <p>{t("whyLink")}</p>
             </aside>
@@ -58,26 +62,30 @@ export default async function ProgrammesPage({ params }: { params: Promise<{ loc
             <p className="mt-2 max-w-3xl text-sm leading-relaxed text-foreground-secondary">{t("listIntro")}</p>
             {/* relative: keeps the absolutely positioned sr-only labels inside the scroll box on narrow screens */}
             <div className="relative mt-5 overflow-x-auto rounded-sm border border-border">
-              <table className="w-full min-w-[36rem] text-left text-sm">
+              <table className="w-full min-w-[44rem] text-left text-sm">
                 <thead className="bg-background-secondary text-xs uppercase tracking-wide text-foreground-secondary">
                   <tr>
                     <th scope="col" className="px-4 py-3 font-semibold">
                       {t("colUniversity")}
                     </th>
                     <th scope="col" className="px-4 py-3 text-right font-semibold">
+                      {t("colAll")}
+                    </th>
+                    <th scope="col" className="px-4 py-3 font-semibold">
+                      {t("colLevels")}
+                    </th>
+                    <th scope="col" className="px-4 py-3 text-right font-semibold">
                       {t("colEnglish")}
                     </th>
                     <th scope="col" className="px-4 py-3 font-semibold">
-                      {t("colSplit")}
-                    </th>
-                    <th scope="col" className="px-4 py-3 font-semibold">
-                      <span className="sr-only">DAAD</span>
+                      <span className="sr-only">{t("colLinks")}</span>
                     </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-border">
                   {ranked.map((u) => {
-                    const daad = u.facts!.daad!;
+                    const hsk = u.facts!.hsk!;
+                    const daad = u.facts?.daad;
                     return (
                       <tr key={u.slug} className="bg-surface">
                         <td className="px-4 py-3">
@@ -86,18 +94,22 @@ export default async function ProgrammesPage({ params }: { params: Promise<{ loc
                           </Link>
                           <span className="block text-xs text-foreground-muted">{u.cityLabel}</span>
                         </td>
-                        <td className="px-4 py-3 text-right font-semibold tabular-nums text-foreground">{daad.englishProgrammes}</td>
-                        <td className="px-4 py-3 text-xs text-foreground-secondary">{t("split", { bachelor: daad.englishBachelor, master: daad.englishMaster })}</td>
+                        <td className="px-4 py-3 text-right font-semibold tabular-nums text-foreground">{hsk.programmes}</td>
+                        <td className="px-4 py-3 text-xs text-foreground-secondary">{t("levelSplit", { undergraduate: hsk.undergraduate, graduate: hsk.graduate })}</td>
+                        <td className="px-4 py-3 text-right tabular-nums text-foreground">{daad && daad.englishProgrammes > 0 ? daad.englishProgrammes : "—"}</td>
                         <td className="px-4 py-3 text-right">
-                          <a
-                            href={daadSearchUrl({ insId: daad.insId, language: "english" })}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 whitespace-nowrap text-xs font-semibold text-forest underline underline-offset-2 hover:text-brand"
-                          >
-                            {t("viewOnDaad")} <ExternalLink size={11} aria-hidden />
-                            <span className="sr-only">— {u.name}</span>
-                          </a>
+                          <span className="flex justify-end gap-3">
+                            <a href={hskSearchUrl({ institutionId: hsk.institutionId })} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                              {t("viewAll")} <ExternalLink size={11} aria-hidden />
+                              <span className="sr-only">— {u.name}</span>
+                            </a>
+                            {daad && daad.englishProgrammes > 0 && (
+                              <a href={daadSearchUrl({ insId: daad.insId, language: "english" })} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                                {t("viewOnDaad")} <ExternalLink size={11} aria-hidden />
+                                <span className="sr-only">— {u.name}</span>
+                              </a>
+                            )}
+                          </span>
                         </td>
                       </tr>
                     );
@@ -106,7 +118,8 @@ export default async function ProgrammesPage({ params }: { params: Promise<{ loc
               </table>
             </div>
             <p className="mt-3 text-xs leading-relaxed text-foreground-muted">
-              {fetchedAt && t("fetched", { date: formatDate(fetchedAt, locale) })} {notListed.length > 0 && t("notListed", { names: notListed.join(", ") })}
+              {hskDate && daadDate && t("fetched", { hskDate: formatDate(hskDate, locale), daadDate: formatDate(daadDate, locale) })}{" "}
+              {notListed.length > 0 && t("notListed", { names: notListed.join(", ") })}
             </p>
           </div>
         </Container>

@@ -17,10 +17,10 @@ import DiscoveryNav from "@/components/discovery/DiscoveryNav";
 import { universityMedia } from "@/lib/universityMedia";
 import { getUniversityDetail, getUniversitySummaries, UNIVERSITY_SLUGS } from "@/lib/universities";
 import { formatDate, formatEurExact, formatEurRange, formatTerm, hostOf } from "@/lib/discovery/facts";
-import { daadSearchUrl } from "@/lib/discovery/daad";
+import { daadSearchUrl, hskSearchUrl } from "@/lib/discovery/daad";
 import { STATE_BY_CODE, cityName } from "@/data/states";
 import { pageMetadata, SITE_URL } from "@/lib/seo";
-import type { UniversityDetail } from "@/lib/discovery/types";
+import { SUBJECT_AREAS, type UniversityDetail } from "@/lib/discovery/types";
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) => UNIVERSITY_SLUGS.map((slug) => ({ locale, slug })));
@@ -80,6 +80,15 @@ export default async function UniversityDetailPage({ params }: { params: Promise
   const tuitionNote = tuition ? (lang === "tr" ? tuition.noteTr : tuition.noteEn) : null;
   const contribution = facts?.semesterContribution;
   const daad = facts?.daad ?? null;
+  const hsk = facts?.hsk ?? null;
+  const subjectAreas = SUBJECT_AREAS.filter((s) => facts?.subjectAreas?.includes(s));
+  // DAAD's international listing first; the Compass language facet where DAAD lists none.
+  const english =
+    daad && daad.englishProgrammes > 0
+      ? { count: daad.englishProgrammes, label: d("detail.englishRow") }
+      : hsk && hsk.english > 0
+        ? { count: hsk.english, label: d("detail.englishRowHsk") }
+        : null;
   const uniAssistLabel = facts?.uniAssistMember === true ? d("common.yes") : facts?.uniAssistMember === false ? d("common.no") : d("common.notVerified");
   const daadLinkClass = "inline-flex items-center gap-1 rounded-sm border border-border-strong bg-surface px-3 py-1.5 text-xs font-semibold text-forest hover:border-forest";
 
@@ -239,6 +248,9 @@ export default async function UniversityDetailPage({ params }: { params: Promise
                       <>
                         <span className="font-semibold text-foreground">{formatEurExact(contribution.amountEur, locale)}</span>
                         <span className="text-sm text-foreground-secondary"> · {formatTerm(contribution.term, locale)}</span>
+                        {(lang === "tr" ? contribution.noteTr : contribution.noteEn) && (
+                          <p className="mt-1 text-xs leading-relaxed text-foreground-secondary">{lang === "tr" ? contribution.noteTr : contribution.noteEn}</p>
+                        )}
                         {contribution.includesTicket !== null && (
                           <p className="mt-1 text-xs leading-relaxed text-foreground-secondary">{d(contribution.includesTicket ? "fee.includesTicket" : "fee.excludesTicket")}</p>
                         )}
@@ -259,12 +271,22 @@ export default async function UniversityDetailPage({ params }: { params: Promise
                   <dt className="text-xs font-semibold uppercase tracking-wide text-foreground-secondary">uni-assist</dt>
                   <dd className="text-right text-sm font-medium text-foreground">{uniAssistLabel}</dd>
                 </div>
-                {daad && daad.englishProgrammes > 0 && (
+                {hsk && (
                   <div className="flex items-baseline justify-between gap-4 py-3">
-                    <dt className="text-xs font-semibold uppercase tracking-wide text-foreground-secondary">{d("detail.englishRow")}</dt>
+                    <dt className="text-xs font-semibold uppercase tracking-wide text-foreground-secondary">{d("detail.programmesRow")}</dt>
                     <dd className="text-right text-sm font-medium text-foreground">
                       <a href="#programs" className="underline decoration-border-strong underline-offset-2 hover:text-forest">
-                        {d("detail.englishRowValue", { count: daad.englishProgrammes })}
+                        {d("detail.englishRowValue", { count: hsk.programmes })}
+                      </a>
+                    </dd>
+                  </div>
+                )}
+                {english && (
+                  <div className="flex items-baseline justify-between gap-4 py-3">
+                    <dt className="text-xs font-semibold uppercase tracking-wide text-foreground-secondary">{english.label}</dt>
+                    <dd className="text-right text-sm font-medium text-foreground">
+                      <a href="#programs" className="underline decoration-border-strong underline-offset-2 hover:text-forest">
+                        {d("detail.englishRowValue", { count: english.count })}
                       </a>
                     </dd>
                   </div>
@@ -290,6 +312,46 @@ export default async function UniversityDetailPage({ params }: { params: Promise
                     </Tag>
                   ))}
                 </div>
+                {hsk && (
+                  <div className="mt-4 rounded-sm border border-border bg-background-secondary p-4">
+                    <div className="flex flex-wrap items-start justify-between gap-2">
+                      <p className="text-sm font-semibold text-foreground">{d("detail.hskCount", { total: hsk.programmes })}</p>
+                      <ProvenanceTag kind="official" label={d("common.official")} />
+                    </div>
+                    <p className="mt-1 text-xs text-foreground-secondary">
+                      {d("detail.hskSplit", { undergraduate: hsk.undergraduate, graduate: hsk.graduate })}
+                      {!daad && hsk.english > 0 && ` ${d("detail.hskEnglish", { count: hsk.english })}`}
+                    </p>
+                    {subjectAreas.length > 0 && (
+                      <div className="mt-3">
+                        <p className="text-xs font-semibold uppercase tracking-wide text-foreground-secondary">{d("detail.subjectAreasTitle")}</p>
+                        <ul className="mt-2 flex flex-wrap gap-1.5">
+                          {subjectAreas.map((s) => (
+                            <li key={s}>
+                              <Link
+                                href={`/universities?subject=${s}`}
+                                className="inline-block rounded-sm border border-border-strong bg-surface px-2 py-1 text-xs text-foreground-secondary hover:border-forest hover:text-forest"
+                              >
+                                {d(`subjects.${s}`)}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      <a href={hskSearchUrl({ institutionId: hsk.institutionId })} target="_blank" rel="noopener noreferrer" className={daadLinkClass}>
+                        {d("detail.hskAllLink")} <ExternalLink size={11} />
+                      </a>
+                      {!daad && hsk.english > 0 && (
+                        <a href={hskSearchUrl({ institutionId: hsk.institutionId, language: "english" })} target="_blank" rel="noopener noreferrer" className={daadLinkClass}>
+                          {d("detail.hskEnglishLink")} <ExternalLink size={11} />
+                        </a>
+                      )}
+                    </div>
+                    <p className="mt-3 text-[11px] leading-relaxed text-foreground-muted">{d("detail.hskNote", { date: formatDate(hsk.fetchedAt, locale) })}</p>
+                  </div>
+                )}
                 {daad ? (
                   <div className="mt-4 rounded-sm border border-border bg-background-secondary p-4">
                     <div className="flex flex-wrap items-start justify-between gap-2">
@@ -316,7 +378,7 @@ export default async function UniversityDetailPage({ params }: { params: Promise
                     </div>
                     <p className="mt-3 text-[11px] leading-relaxed text-foreground-muted">{d("detail.daadNote", { date: formatDate(daad.fetchedAt, locale) })}</p>
                   </div>
-                ) : (
+                ) : hsk ? null : (
                   <p className="mt-4 text-sm text-foreground-secondary">
                     {d("detail.programsCatalog")}{" "}
                     <a href={daadSearchUrl()} target="_blank" rel="noopener noreferrer" className="font-semibold text-forest underline underline-offset-2 hover:text-brand">
@@ -579,6 +641,7 @@ function DataFreshness({
           [d("fee.contribution"), facts.semesterContribution.source],
           ["uni-assist", facts.uniAssistSource],
           [d("detail.fields.englishTaught"), facts.englishTaughtSource],
+          [d("detail.fields.subjectAreas"), facts.subjectAreasSource],
           [d("common.internationalPage"), facts.internationalUrl],
         ] as const
       ).filter((entry): entry is readonly [string, string] => Boolean(entry[1]))

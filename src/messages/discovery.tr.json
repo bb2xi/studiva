@@ -141,7 +141,7 @@
       "previous": "Önceki",
       "next": "Sonraki",
       "page": "Sayfa {page}",
-      "dataNote": "Ücret, dönem katkı payı ve bağlantı bilgileri {date} tarihinde resmî kaynaklardan kontrol edildi; İngilizce program sayıları DAAD'dan alındı. Doğrulayamadığımız alanlar tahmin edilmek yerine “Doğrulanmadı” olarak gösterilir.",
+      "dataNote": "Ücret, dönem katkı payı ve bağlantı bilgileri {date} tarihinde resmî kaynaklardan kontrol edildi; program sayıları ve çalışma alanları HRK Hochschulkompass ile DAAD'dan alındı. Doğrulayamadığımız bilgiler tahmin edilmek yerine “Doğrulanmadı” olarak gösterilir.",
       "englishNote": "Bir üniversitenin bazı İngilizce programları olması, tüm programlarının İngilizce olduğu anlamına gelmez."
     },
     "card": {
@@ -202,7 +202,9 @@
         "competition": "Rekabet düzeyi",
         "official": "Resmî bağlantılar",
         "rankings": "Sıralamalar",
-        "data": "Veri kontrolü"
+        "data": "Veri kontrolü",
+        "programmeCount": "Derece programları",
+        "subjects": "Çalışma alanları"
       },
       "uniAssistYes": "Üye — programınızın kullanıp kullanmadığını kontrol edin",
       "programsNote": "Studiva'nın seçkisi, tam program listesi değildir.",
@@ -214,9 +216,11 @@
       },
       "share": "Bu karşılaştırmanın bağlantısını kopyala",
       "copied": "Bağlantı kopyalandı",
-      "englishNote": "DAAD Uluslararası Programlar veritabanında listelenen sayı.",
+      "englishNote": "DAAD Uluslararası Programlar sayısı; “(HRK)”, DAAD'da kayıt yoksa Hochschulkompass sayısını gösterir.",
       "englishCount": "{count} program",
-      "uniAssistNo": "Üye değil — doğrudan başvuru"
+      "uniAssistNo": "Üye değil — doğrudan başvuru",
+      "programmeCountNote": "HRK Hochschulkompass",
+      "programmeSplit": "{undergraduate} lisans · {graduate} lisansüstü"
     },
     "detail": {
       "breadcrumbHome": "Ana Sayfa",
@@ -278,7 +282,16 @@
       "daadAllLink": "Listelenen tüm programlar",
       "daadNote": "Sayılar DAAD Uluslararası Programlar veritabanından {date} tarihinde alındı. Veritabanı yalnızca uluslararası programları listeler; üniversitenin başka programları da olabilir. Bağlantılar DAAD'ın resmî aramasını açar.",
       "programmeSearchLink": "Almanya genelinde program ara",
-      "uniAssistNonMember": "Bu kurum uni-assist üyesi değil; uluslararası başvurular genellikle doğrudan üniversitenin kendi portalı üzerinden yapılır. Kesin başvuru yolunu program sayfasından kontrol edin."
+      "uniAssistNonMember": "Bu kurum uni-assist üyesi değil; uluslararası başvurular genellikle doğrudan üniversitenin kendi portalı üzerinden yapılır. Kesin başvuru yolunu program sayfasından kontrol edin.",
+      "programmesRow": "Derece programları (HRK)",
+      "englishRowHsk": "İngilizce program (HRK)",
+      "hskCount": "HRK Hochschulkompass burada {total} derece programı listeliyor.",
+      "hskSplit": "{undergraduate} lisans düzeyi (lisans, devlet sınavı) · {graduate} lisansüstü (yüksek lisans).",
+      "hskEnglish": "{count} tanesi İngilizce.",
+      "subjectAreasTitle": "Çalışma alanları",
+      "hskAllLink": "Tüm programlar (Hochschulkompass)",
+      "hskEnglishLink": "İngilizce programlar",
+      "hskNote": "Sayılar HRK Hochschulkompass'tan (DAAD üzerinden) {date} tarihinde alındı. Yukarıdaki çalışma alanlarını Studiva, Hochschulkompass'ın alanlarından gruplandırdı. Bağlantılar resmî aramayı açar."
     },
     "report": {
       "title": "Güncel olmayan bir bilgi veya kırık bağlantı mı gördünüz?",
@@ -328,7 +341,7 @@
         "budget3000": "3.000 €'ya kadar",
         "budgetAny": "Sınır yok"
       },
-      "subjectNote": "Alanlar verimizde henüz doğrulanmadı; bu kriter “bilinmiyor” olarak görünür ve kimseyi elemez.",
+      "subjectNote": "Çalışma alanları, devletçe tanınan kurumlardaki tüm derece programlarını listeleyen HRK Hochschulkompass'tan alınır.",
       "results": {
         "exact": "Tam eşleşmeler",
         "exactNote": "Tüm kriterler verimizle doğrulandı.",
@@ -356,7 +369,7 @@
         "levelNotMet": "Profilimizde {level} programı görünmüyor.",
         "phdUniversity": "Universität'ler doktora derecesi verebilir.",
         "phdOther": "Uygulamalı bilimler üniversiteleri genellikle tek başına doktora derecesi veremez — kuruma danışın.",
-        "subjectMet": "Bu alanda programları var.",
+        "subjectMet": "Hochschulkompass bu alanda program listeliyor.",
         "subjectUnknown": "Alanlar henüz doğrulanmadı.",
         "englishMet": "DAAD burada {count} İngilizce program listeliyor.",
         "englishUnknown": "DAAD veritabanında İngilizce program bulunamadı — doğrulanmadı.",
@@ -373,7 +386,10 @@
         "budgetSome": "AB dışı okul ücreti dönem başına {range} — yalnızca bazı programlar bütçenize uyuyor.",
         "budgetOver": "AB dışı okul ücreti dönem başına {range} — bütçenizin üzerinde.",
         "budgetChargedUnknown": "Okul ücreti alıyor; tutar doğrulanmadı.",
-        "budgetUnknown": "Okul ücreti doğrulanmadı."
+        "budgetUnknown": "Okul ücreti doğrulanmadı.",
+        "subjectNotMet": "Hochschulkompass burada bu alanda program listelemiyor.",
+        "levelCompassMet": "Hochschulkompass bu düzeyde {count} program listeliyor.",
+        "levelCompassNotMet": "Hochschulkompass bu düzeyde program listelemiyor."
       }
     },
     "states": {
@@ -543,15 +559,15 @@
       },
       "programmes": {
         "title": "Almanya'da program ara",
-        "description": "DAAD'ın Almanya'daki uluslararası programlar için resmî veritabanında alana, dereceye, dile ve üniversiteye göre arama yapın; her üniversitenin kaç İngilizce programı olduğunu görün."
+        "description": "Almanya'daki tüm derece programlarında (HRK Hochschulkompass) ve DAAD Uluslararası Programlar veritabanında alana, dereceye, dile ve üniversiteye göre arama yapın."
       }
     },
     "programmes": {
       "title": "Program ara",
-      "subtitle": "DAAD'ın Almanya'daki uluslararası programlar için resmî veritabanında arama yapın. Aramayı Studiva hazırlar, sonuçlar DAAD'da açılır.",
+      "subtitle": "Almanya'nın iki resmî program veritabanında arama yapın: tüm derece programlarını içeren HRK Hochschulkompass ve DAAD'ın Uluslararası Programlar veritabanı. Aramayı Studiva hazırlar, sonuçlar DAAD'ın sitesinde açılır.",
       "keyword": "Alan veya anahtar kelime",
       "keywordPlaceholder": "ör. computer science, economics",
-      "keywordHint": "DAAD araması İngilizce anahtar kelimelerle en iyi sonucu verir.",
+      "keywordHint": "Her iki veritabanı da İngilizce aranır; İngilizce anahtar kelimeler en iyi sonucu verir.",
       "degree": "Derece",
       "degreeAny": "Tüm dereceler",
       "bachelor": "Lisans",
@@ -566,16 +582,28 @@
       "opensNote": "DAAD'ın resmî program aramasını yeni sekmede açar.",
       "howTitle": "Nasıl çalışır?",
       "howBody": "Alman Akademik Değişim Servisi DAAD, Almanya'daki, çoğu İngilizce olan uluslararası programların resmî veritabanını yönetir; her program için giriş şartları, son başvuru tarihleri ve ücretler burada yer alır.",
-      "whyLink": "DAAD kayıtlarını kopyalamak yerine sizi DAAD'a yönlendiriyoruz: program bilgileri sık değişir ve DAAD bunları kaynağında günceller.",
-      "listTitle": "Üniversitelere göre İngilizce programlar",
-      "listIntro": "Rehberimizdeki her üniversite için DAAD'ın listelediği, tamamen veya kısmen İngilizce derece programı sayısı. DAAD yalnızca uluslararası programları kapsar; üniversitenin başka programları da olabilir.",
+      "whyLink": "Kayıtlarını kopyalamak yerine sizi bu veritabanlarına yönlendiriyoruz: program bilgileri sık değişir ve kaynağında güncellenir.",
+      "listTitle": "Üniversitelere göre programlar",
+      "listIntro": "Rehberimizdeki her üniversite için Hochschulkompass'ın listelediği derece programı sayısı ve DAAD'ın tamamen veya kısmen İngilizce olarak listelediği program sayısı.",
       "colUniversity": "Üniversite",
-      "colEnglish": "İngilizce",
+      "colEnglish": "İngilizce (DAAD)",
       "colSplit": "Lisans / yüksek lisans",
-      "split": "{bachelor} lisans · {master} yüksek lisans",
-      "viewOnDaad": "DAAD'da gör",
-      "fetched": "Sayılar {date} tarihinde DAAD'dan alındı.",
-      "notListed": "DAAD veritabanında şu kurumlar için eşleşen program bulamadık: {names}. Kendi web sitelerine bakın."
+      "viewOnDaad": "DAAD'da İngilizce",
+      "fetched": "Hochschulkompass sayıları {hskDate}, DAAD sayıları {daadDate} tarihinde alındı.",
+      "notListed": "DAAD veritabanında şu kurumlar için eşleşen program bulamadık: {names}. Kendi web sitelerine bakın.",
+      "database": "Veritabanı",
+      "databaseAll": "Tüm derece programları",
+      "databaseAllHint": "HRK Hochschulkompass — devletçe tanınan kurumlardaki tüm programlar.",
+      "databaseInternational": "Uluslararası programlar",
+      "databaseInternationalHint": "DAAD — çoğu İngilizce; uluslararası adaylar için ayrıntılı bilgiler.",
+      "englishMain": "İngilizce",
+      "germanMain": "Almanca",
+      "howAll": "Alman Rektörler Konferansı'nın (HRK) Hochschulkompass'ı devletçe tanınan üniversitelerdeki tüm derece programlarını (yaklaşık 22.500) listeler; Almanca programlar da buna dahildir.",
+      "colAll": "Tüm programlar",
+      "colLevels": "Lisans / lisansüstü",
+      "colLinks": "Bağlantılar",
+      "levelSplit": "{undergraduate} lisans · {graduate} lisansüstü",
+      "viewAll": "Tüm programlar"
     }
   }
 }

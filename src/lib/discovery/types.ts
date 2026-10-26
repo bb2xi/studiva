@@ -72,6 +72,9 @@ export type UniversityFacts = {
     term: string | null;
     /** True/false only when the cited breakdown shows whether a transport ticket is included. */
     includesTicket: boolean | null;
+    /** Which campus or enrolment case the amount is for, when the page distinguishes them. */
+    noteEn: string | null;
+    noteTr: string | null;
     source: string | null;
   };
   uniAssistMember: boolean | null;
@@ -89,6 +92,20 @@ export type UniversityFacts = {
     englishProgrammes: number;
     englishBachelor: number;
     englishMaster: number;
+    fetchedAt: string;
+  } | null;
+  /**
+   * Programme counts from the HRK Higher Education Compass (all degree programmes
+   * at state-recognised institutions). Undergraduate = bachelor's and state
+   * examinations; graduate = master's. English counts programmes whose language
+   * of instruction is English.
+   */
+  hsk: {
+    institutionId: string;
+    programmes: number;
+    undergraduate: number;
+    graduate: number;
+    english: number;
     fetchedAt: string;
   } | null;
   subjectAreas: SubjectArea[] | null;

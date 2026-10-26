@@ -22,6 +22,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": true,
@@ -36,8 +38,28 @@
         "englishMaster": 65,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "184",
+        "programmes": 163,
+        "undergraduate": 52,
+        "graduate": 111,
+        "english": 66,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=184",
       "checkedAt": "2026-10-26"
     },
     "lmu": {
@@ -61,6 +83,8 @@
         "amountEur": 97,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.lmu.de/de/workspace-fuer-studierende/1x1-des-studiums/rueckmeldung/"
       },
       "uniAssistMember": true,
@@ -75,8 +99,28 @@
         "englishMaster": 20,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "183",
+        "programmes": 296,
+        "undergraduate": 178,
+        "graduate": 118,
+        "english": 31,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=183",
       "checkedAt": "2026-10-26"
     },
     "huberlin": {
@@ -100,6 +144,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": true,
@@ -114,8 +160,30 @@
         "englishMaster": 14,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "12",
+        "programmes": 190,
+        "undergraduate": 75,
+        "graduate": 115,
+        "english": 27,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=12",
       "checkedAt": "2026-10-26"
     },
     "rwth": {
@@ -139,6 +207,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
@@ -153,8 +223,28 @@
         "englishMaster": 45,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "1",
+        "programmes": 187,
+        "undergraduate": 80,
+        "graduate": 107,
+        "english": 33,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=1",
       "checkedAt": "2026-10-26"
     },
     "mannheim": {
@@ -178,6 +268,8 @@
         "amountEur": 194,
         "term": "FSS 2027",
         "includesTicket": false,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-mannheim.de/en/academics/during-your-studies/organizing-your-studies/fees/"
       },
       "uniAssistMember": false,
@@ -192,8 +284,24 @@
         "englishMaster": 7,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "176",
+        "programmes": 91,
+        "undergraduate": 33,
+        "graduate": 58,
+        "english": 16,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=176",
       "checkedAt": "2026-10-26"
     },
     "hm": {
@@ -214,10 +322,12 @@
         "noteTr": "WiSe 2026/27'den itibaren yeni kayıt olan AB dışı öğrenciler için lisansta dönem başına 500 €, yüksek lisansta 700 €."
       },
       "semesterContribution": {
-        "amountEur": null,
-        "term": null,
+        "amountEur": 97,
+        "term": "WiSe 2026/27",
         "includesTicket": null,
-        "source": null
+        "noteEn": null,
+        "noteTr": null,
+        "source": "https://mediapool.hm.edu/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Informationen_zur_Immatrikulation.pdf"
       },
       "uniAssistMember": true,
       "uniAssistSource": "https://www.uni-assist.de/en/tools/uni-assist-universities/",
@@ -231,8 +341,29 @@
         "englishMaster": 5,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "291",
+        "programmes": 86,
+        "undergraduate": 48,
+        "graduate": 38,
+        "english": 7,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=291",
       "checkedAt": "2026-10-26"
     },
     "frankfurtuas": {
@@ -256,6 +387,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": true,
@@ -270,8 +403,29 @@
         "englishMaster": 4,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "79",
+        "programmes": 86,
+        "undergraduate": 47,
+        "graduate": 39,
+        "english": 11,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=79",
       "checkedAt": "2026-10-26"
     },
     "dhbw": {
@@ -295,6 +449,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
@@ -309,8 +465,27 @@
         "englishMaster": 0,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "398",
+        "programmes": 162,
+        "undergraduate": 130,
+        "graduate": 32,
+        "english": 1,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "medicine-health",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=398",
       "checkedAt": "2026-10-26"
     },
     "iu": {
@@ -334,15 +509,38 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
       "uniAssistSource": "https://www.uni-assist.de/en/tools/uni-assist-universities/",
-      "englishTaught": null,
-      "englishTaughtSource": null,
+      "englishTaught": true,
+      "englishTaughtSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=329&hec-teachingLanguage=2",
       "daad": null,
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "329",
+        "programmes": 184,
+        "undergraduate": 129,
+        "graduate": 55,
+        "english": 17,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=329",
       "checkedAt": "2026-10-26"
     },
     "fom": {
@@ -366,15 +564,32 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
       "uniAssistSource": "https://www.uni-assist.de/en/tools/uni-assist-universities/",
-      "englishTaught": null,
-      "englishTaughtSource": null,
+      "englishTaught": true,
+      "englishTaughtSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=286&hec-teachingLanguage=2",
       "daad": null,
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "286",
+        "programmes": 62,
+        "undergraduate": 33,
+        "graduate": 29,
+        "english": 1,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "business-economics",
+        "computer-science",
+        "engineering",
+        "law",
+        "medicine-health",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=286",
       "checkedAt": "2026-10-26"
     },
     "heidelberg": {
@@ -398,6 +613,8 @@
         "amountEur": 189.8,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.stura.uni-heidelberg.de/finanzen/semesterbeitrag/"
       },
       "uniAssistMember": false,
@@ -412,8 +629,28 @@
         "englishMaster": 12,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "119",
+        "programmes": 190,
+        "undergraduate": 63,
+        "graduate": 127,
+        "english": 23,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=119",
       "checkedAt": "2026-10-26"
     },
     "tuebingen": {
@@ -437,6 +674,8 @@
         "amountEur": 194.8,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://uni-tuebingen.de/studium/studienorganisation/beitraege-und-gebuehren/semesterbeitraege/"
       },
       "uniAssistMember": false,
@@ -451,8 +690,29 @@
         "englishMaster": 34,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "258",
+        "programmes": 238,
+        "undergraduate": 108,
+        "graduate": 130,
+        "english": 32,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=258",
       "checkedAt": "2026-10-26"
     },
     "kit": {
@@ -476,6 +736,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
@@ -490,8 +752,28 @@
         "englishMaster": 16,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "136",
+        "programmes": 115,
+        "undergraduate": 45,
+        "graduate": 70,
+        "english": 22,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "mathematics",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=136",
       "checkedAt": "2026-10-26"
     },
     "freiburg": {
@@ -515,6 +797,8 @@
         "amountEur": 190,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://uni-freiburg.de/wp-content/uploads/UFR-Info-Rueckmeldung.pdf"
       },
       "uniAssistMember": false,
@@ -529,8 +813,29 @@
         "englishMaster": 19,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "86",
+        "programmes": 185,
+        "undergraduate": 84,
+        "graduate": 101,
+        "english": 25,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=86",
       "checkedAt": "2026-10-26"
     },
     "goettingen": {
@@ -554,6 +859,8 @@
         "amountEur": 484.18,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://uni-goettingen.de/de/40054.html"
       },
       "uniAssistMember": false,
@@ -568,8 +875,29 @@
         "englishMaster": 34,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "98",
+        "programmes": 202,
+        "undergraduate": 98,
+        "graduate": 104,
+        "english": 31,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=98",
       "checkedAt": "2026-10-26"
     },
     "bonn": {
@@ -593,6 +921,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
@@ -607,8 +937,30 @@
         "englishMaster": 40,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "32",
+        "programmes": 224,
+        "undergraduate": 113,
+        "graduate": 111,
+        "english": 40,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=32",
       "checkedAt": "2026-10-26"
     },
     "koeln": {
@@ -632,6 +984,8 @@
         "amountEur": 355.65,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://studsek.uni-koeln.de/studium/rueckmeldung__semesterbeitrag/zahlungsdaten___bankverbindung/index_ger.html"
       },
       "uniAssistMember": true,
@@ -646,8 +1000,29 @@
         "englishMaster": 21,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "147",
+        "programmes": 364,
+        "undergraduate": 148,
+        "graduate": 216,
+        "english": 37,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=147",
       "checkedAt": "2026-10-26"
     },
     "tuberlin": {
@@ -671,6 +1046,8 @@
         "amountEur": 379.06,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.tu.berlin/en/studierendensekretariat/topics-a-z/semester-fees"
       },
       "uniAssistMember": true,
@@ -685,8 +1062,29 @@
         "englishMaster": 11,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "13",
+        "programmes": 134,
+        "undergraduate": 47,
+        "graduate": 87,
+        "english": 18,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=13",
       "checkedAt": "2026-10-26"
     },
     "tudresden": {
@@ -710,6 +1108,8 @@
         "amountEur": 361,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://tu-dresden.de/studium/im-studium/studienorganisation/rueckmeldung"
       },
       "uniAssistMember": true,
@@ -724,8 +1124,30 @@
         "englishMaster": 34,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "53",
+        "programmes": 205,
+        "undergraduate": 134,
+        "graduate": 71,
+        "english": 28,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=53",
       "checkedAt": "2026-10-26"
     },
     "tudarmstadt": {
@@ -749,6 +1171,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
@@ -763,8 +1187,29 @@
         "englishMaster": 14,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "46",
+        "programmes": 108,
+        "undergraduate": 47,
+        "graduate": 61,
+        "english": 21,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=46",
       "checkedAt": "2026-10-26"
     },
     "tubraunschweig": {
@@ -788,6 +1233,8 @@
         "amountEur": 472.5,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.tu-braunschweig.de/i-amt/newsaktuelles/details/semesterbeitrag-wintersemester-2026-27"
       },
       "uniAssistMember": false,
@@ -802,8 +1249,28 @@
         "englishMaster": 9,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "35",
+        "programmes": 118,
+        "undergraduate": 47,
+        "graduate": 71,
+        "english": 7,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "mathematics",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=35",
       "checkedAt": "2026-10-26"
     },
     "hannover": {
@@ -827,6 +1294,8 @@
         "amountEur": 453.16,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-hannover.de/studium/finanzierung-foerderung/studienkosten"
       },
       "uniAssistMember": true,
@@ -841,8 +1310,30 @@
         "englishMaster": 20,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "114",
+        "programmes": 150,
+        "undergraduate": 58,
+        "graduate": 92,
+        "english": 22,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=114",
       "checkedAt": "2026-10-26"
     },
     "stuttgart": {
@@ -866,6 +1357,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
@@ -880,8 +1373,28 @@
         "englishMaster": 16,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "248",
+        "programmes": 159,
+        "undergraduate": 72,
+        "graduate": 87,
+        "english": 17,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "mathematics",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=248",
       "checkedAt": "2026-10-26"
     },
     "konstanz": {
@@ -905,6 +1418,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
@@ -919,8 +1434,28 @@
         "englishMaster": 17,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "154",
+        "programmes": 93,
+        "undergraduate": 41,
+        "graduate": 52,
+        "english": 15,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=154",
       "checkedAt": "2026-10-26"
     },
     "htwberlin": {
@@ -944,6 +1479,8 @@
         "amountEur": 375.3,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.htw-berlin.de/studium/studienorganisation/semesterbeitraege"
       },
       "uniAssistMember": true,
@@ -958,8 +1495,27 @@
         "englishMaster": 7,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "16",
+        "programmes": 75,
+        "undergraduate": 35,
+        "graduate": 40,
+        "english": 8,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=16",
       "checkedAt": "2026-10-26"
     },
     "furtwangen": {
@@ -983,6 +1539,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
@@ -997,8 +1555,28 @@
         "englishMaster": 9,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "94",
+        "programmes": 56,
+        "undergraduate": 30,
+        "graduate": 26,
+        "english": 12,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=94",
       "checkedAt": "2026-10-26"
     },
     "hamburg": {
@@ -1022,6 +1600,8 @@
         "amountEur": 402,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-hamburg.de/en/campuscenter/studienorganisation/studienverlauf/beitraege-gebuehren/semesterbeitrag.html"
       },
       "uniAssistMember": false,
@@ -1036,8 +1616,28 @@
         "englishMaster": 21,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "104",
+        "programmes": 368,
+        "undergraduate": 158,
+        "graduate": 210,
+        "english": 32,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=104",
       "checkedAt": "2026-10-26"
     },
     "fuberlin": {
@@ -1061,6 +1661,8 @@
         "amountEur": 376.8,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": "Amount for first enrolment.",
+        "noteTr": "İlk kayıt tutarı.",
         "source": "https://www.fu-berlin.de/studium/studieren/studienorganisation/gebuehren/index.html"
       },
       "uniAssistMember": true,
@@ -1075,8 +1677,27 @@
         "englishMaster": 23,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "11",
+        "programmes": 185,
+        "undergraduate": 80,
+        "graduate": 105,
+        "english": 23,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=11",
       "checkedAt": "2026-10-26"
     },
     "erlangen": {
@@ -1100,6 +1721,8 @@
         "amountEur": 82,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.fau.de/education/studienorganisation/rueckmeldung/"
       },
       "uniAssistMember": false,
@@ -1114,8 +1737,29 @@
         "englishMaster": 36,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "70",
+        "programmes": 261,
+        "undergraduate": 164,
+        "graduate": 97,
+        "english": 42,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=70",
       "checkedAt": "2026-10-26"
     },
     "bochum": {
@@ -1136,10 +1780,12 @@
         "noteTr": "Devlet kurumlarında ilk lisans ve çoğu yüksek lisans için genel bir okul ücreti yok; bazı yüksek lisans programları ve ikinci diplomalar ek ücretli olabilir."
       },
       "semesterContribution": {
-        "amountEur": null,
-        "term": null,
-        "includesTicket": null,
-        "source": null
+        "amountEur": 380,
+        "term": "WiSe 2026/27",
+        "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
+        "source": "https://studium.ruhr-uni-bochum.de/en/re-registration-and-social-contribution"
       },
       "uniAssistMember": false,
       "uniAssistSource": "https://www.uni-assist.de/en/tools/uni-assist-universities/",
@@ -1153,8 +1799,30 @@
         "englishMaster": 28,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "29",
+        "programmes": 200,
+        "undergraduate": 66,
+        "graduate": 134,
+        "english": 25,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=29",
       "checkedAt": "2026-10-26"
     },
     "mainz": {
@@ -1178,6 +1846,8 @@
         "amountEur": 366.9,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": "Mainz campus; Germersheim €389.80, Trier medical campus €378.80.",
+        "noteTr": "Mainz kampüsü; Germersheim 389,80 €, Trier tıp kampüsü 378,80 €.",
         "source": "https://www.studium.uni-mainz.de/en/during-your-studies/organizing-your-studies/re-registration/"
       },
       "uniAssistMember": false,
@@ -1192,8 +1862,29 @@
         "englishMaster": 17,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "174",
+        "programmes": 258,
+        "undergraduate": 118,
+        "graduate": 140,
+        "english": 32,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=174",
       "checkedAt": "2026-10-26"
     },
     "muenster": {
@@ -1217,6 +1908,8 @@
         "amountEur": 369.5,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-muenster.de/studium/en/kosten/semesterbeitrag.html"
       },
       "uniAssistMember": false,
@@ -1231,8 +1924,29 @@
         "englishMaster": 15,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "191",
+        "programmes": 303,
+        "undergraduate": 133,
+        "graduate": 170,
+        "english": 30,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=191",
       "checkedAt": "2026-10-26"
     },
     "bremen": {
@@ -1256,6 +1970,8 @@
         "amountEur": 443.4,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-bremen.de/en/studies/starting-your-studies/formalitaeten/re-registration-and-semester-fee"
       },
       "uniAssistMember": true,
@@ -1270,8 +1986,30 @@
         "englishMaster": 20,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "38",
+        "programmes": 152,
+        "undergraduate": 65,
+        "graduate": 87,
+        "english": 25,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=38",
       "checkedAt": "2026-10-26"
     },
     "kiel": {
@@ -1295,6 +2033,8 @@
         "amountEur": 403,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.studium.uni-kiel.de/de/studium-organisieren/studienangelegenheiten/rueckmeldung"
       },
       "uniAssistMember": true,
@@ -1309,8 +2049,29 @@
         "englishMaster": 17,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "144",
+        "programmes": 232,
+        "undergraduate": 107,
+        "graduate": 125,
+        "english": 26,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=144",
       "checkedAt": "2026-10-26"
     },
     "marburg": {
@@ -1334,6 +2095,8 @@
         "amountEur": 424.8,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-marburg.de/en/studying/during-studying/formalities-fees/information-about-contributions-and-fees"
       },
       "uniAssistMember": true,
@@ -1348,8 +2111,30 @@
         "englishMaster": 15,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "179",
+        "programmes": 206,
+        "undergraduate": 125,
+        "graduate": 81,
+        "english": 18,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=179",
       "checkedAt": "2026-10-26"
     },
     "jena": {
@@ -1373,6 +2158,8 @@
         "amountEur": 333.05,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": "Plus €20 for the first thoska student card.",
+        "noteTr": "İlk thoska öğrenci kartı için ayrıca 20 €.",
         "source": "https://www.uni-jena.de/en/575/semester-fee"
       },
       "uniAssistMember": false,
@@ -1387,8 +2174,29 @@
         "englishMaster": 17,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "133",
+        "programmes": 211,
+        "undergraduate": 132,
+        "graduate": 79,
+        "english": 17,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=133",
       "checkedAt": "2026-10-26"
     },
     "thkoeln": {
@@ -1412,6 +2220,8 @@
         "amountEur": 352.7,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.th-koeln.de/studium/beitraege-und-gebuehren_5343.php"
       },
       "uniAssistMember": true,
@@ -1426,8 +2236,29 @@
         "englishMaster": 11,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "149",
+        "programmes": 100,
+        "undergraduate": 51,
+        "graduate": 49,
+        "english": 16,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=149",
       "checkedAt": "2026-10-26"
     },
     "hsmannheim": {
@@ -1451,6 +2282,8 @@
         "amountEur": 194.6,
         "term": "WiSe 2026/27",
         "includesTicket": false,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://hs-mannheim.de/studierende/studienorganisation/zulassung-immatrikulation.html"
       },
       "uniAssistMember": false,
@@ -1465,8 +2298,26 @@
         "englishMaster": 0,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "177",
+        "programmes": 40,
+        "undergraduate": 27,
+        "graduate": 13,
+        "english": 6,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=177",
       "checkedAt": "2026-10-26"
     },
     "hskarlsruhe": {
@@ -1490,6 +2341,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
@@ -1504,8 +2357,28 @@
         "englishMaster": 2,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "138",
+        "programmes": 46,
+        "undergraduate": 23,
+        "graduate": 23,
+        "english": 4,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "mathematics",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=138",
       "checkedAt": "2026-10-26"
     },
     "htwgkonstanz": {
@@ -1529,6 +2402,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
@@ -1543,8 +2418,25 @@
         "englishMaster": 0,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "155",
+        "programmes": 38,
+        "undergraduate": 21,
+        "graduate": 17,
+        "english": 4,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "engineering",
+        "humanities-languages",
+        "law"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=155",
       "checkedAt": "2026-10-26"
     },
     "thingolstadt": {
@@ -1565,10 +2457,12 @@
         "noteTr": "Yaz dönemi 2026'dan itibaren AB dışı öğrenciler için lisansta dönem başına 800 €, yüksek lisansta 1.200 €."
       },
       "semesterContribution": {
-        "amountEur": null,
-        "term": null,
+        "amountEur": 82,
+        "term": "WiSe 2026/27",
         "includesTicket": null,
-        "source": null
+        "noteEn": null,
+        "noteTr": null,
+        "source": "https://www.thi.de/studium/studienfinanzierung/"
       },
       "uniAssistMember": true,
       "uniAssistSource": "https://www.uni-assist.de/en/tools/uni-assist-universities/",
@@ -1582,8 +2476,29 @@
         "englishMaster": 20,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "288",
+        "programmes": 92,
+        "undergraduate": 42,
+        "graduate": 50,
+        "english": 28,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=288",
       "checkedAt": "2026-10-26"
     },
     "hbrs": {
@@ -1607,6 +2522,8 @@
         "amountEur": 367,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.h-brs.de/en/d5/fees"
       },
       "uniAssistMember": true,
@@ -1621,8 +2538,25 @@
         "englishMaster": 6,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "294",
+        "programmes": 40,
+        "undergraduate": 21,
+        "graduate": 19,
+        "english": 7,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "business-economics",
+        "computer-science",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=294",
       "checkedAt": "2026-10-26"
     },
     "hda": {
@@ -1646,6 +2580,8 @@
         "amountEur": 401,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://h-da.de/studium/studienorganisation/semesterbeitrag"
       },
       "uniAssistMember": true,
@@ -1660,8 +2596,29 @@
         "englishMaster": 3,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "47",
+        "programmes": 68,
+        "undergraduate": 37,
+        "graduate": 31,
+        "english": 9,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=47",
       "checkedAt": "2026-10-26"
     },
     "reutlingen": {
@@ -1685,6 +2642,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
@@ -1699,8 +2658,24 @@
         "englishMaster": 2,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "227",
+        "programmes": 48,
+        "undergraduate": 29,
+        "graduate": 19,
+        "english": 4,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "engineering",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=227",
       "checkedAt": "2026-10-26"
     },
     "fhmuenster": {
@@ -1724,6 +2699,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
@@ -1738,8 +2715,27 @@
         "englishMaster": 4,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "192",
+        "programmes": 133,
+        "undergraduate": 74,
+        "graduate": 59,
+        "english": 4,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=192",
       "checkedAt": "2026-10-26"
     },
     "osnabrueck": {
@@ -1760,10 +2756,12 @@
         "noteTr": "Devlet kurumlarında ilk lisans ve çoğu yüksek lisans için genel bir okul ücreti yok; bazı yüksek lisans programları ve ikinci diplomalar ek ücretli olabilir."
       },
       "semesterContribution": {
-        "amountEur": null,
-        "term": null,
-        "includesTicket": null,
-        "source": null
+        "amountEur": 442,
+        "term": "SoSe 2027",
+        "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
+        "source": "https://www.hs-osnabrueck.de/en/study/all-about-studying/financing-studies/"
       },
       "uniAssistMember": true,
       "uniAssistSource": "https://www.uni-assist.de/en/tools/uni-assist-universities/",
@@ -1777,8 +2775,29 @@
         "englishMaster": 4,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "214",
+        "programmes": 115,
+        "undergraduate": 77,
+        "graduate": 38,
+        "english": 7,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=214",
       "checkedAt": "2026-10-26"
     },
     "bht": {
@@ -1799,10 +2818,12 @@
         "noteTr": "Devlet kurumlarında ilk lisans ve çoğu yüksek lisans için genel bir okul ücreti yok; bazı yüksek lisans programları ve ikinci diplomalar ek ücretli olabilir."
       },
       "semesterContribution": {
-        "amountEur": null,
-        "term": null,
-        "includesTicket": null,
-        "source": null
+        "amountEur": 376.3,
+        "term": "SoSe 2027",
+        "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
+        "source": "https://www.bht-berlin.de/rueckmeldung"
       },
       "uniAssistMember": true,
       "uniAssistSource": "https://www.uni-assist.de/en/tools/uni-assist-universities/",
@@ -1816,8 +2837,26 @@
         "englishMaster": 1,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "15",
+        "programmes": 74,
+        "undergraduate": 36,
+        "graduate": 38,
+        "english": 4,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "engineering",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=15",
       "checkedAt": "2026-10-26"
     },
     "jade": {
@@ -1841,6 +2880,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": true,
@@ -1855,8 +2896,28 @@
         "englishMaster": 1,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "406",
+        "programmes": 61,
+        "undergraduate": 46,
+        "graduate": 15,
+        "english": 2,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "business-economics",
+        "computer-science",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=406",
       "checkedAt": "2026-10-26"
     },
     "duesseldorf": {
@@ -1880,6 +2941,8 @@
         "amountEur": 371.15,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.hhu.de/en/re-registration"
       },
       "uniAssistMember": true,
@@ -1894,8 +2957,27 @@
         "englishMaster": 8,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "59",
+        "programmes": 85,
+        "undergraduate": 39,
+        "graduate": 46,
+        "english": 11,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=59",
       "checkedAt": "2026-10-26"
     },
     "ude": {
@@ -1919,6 +3001,8 @@
         "amountEur": 367.8,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-due.de/studierendensekretariat/sozial_studierendenschaftsbeitrag.shtml"
       },
       "uniAssistMember": true,
@@ -1933,8 +3017,29 @@
         "englishMaster": 11,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "71",
+        "programmes": 333,
+        "undergraduate": 158,
+        "graduate": 175,
+        "english": 16,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=71",
       "checkedAt": "2026-10-26"
     },
     "tudortmund": {
@@ -1958,6 +3063,8 @@
         "amountEur": 339.7,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.tu-dortmund.de/en/study-program-details/data-science-656/"
       },
       "uniAssistMember": true,
@@ -1972,8 +3079,29 @@
         "englishMaster": 17,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "51",
+        "programmes": 249,
+        "undergraduate": 117,
+        "graduate": 132,
+        "english": 30,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=51",
       "checkedAt": "2026-10-26"
     },
     "bielefeld": {
@@ -1997,6 +3125,8 @@
         "amountEur": 351.65,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-bielefeld.de/studium/studierende/studienorganisation/rueckmeldung/"
       },
       "uniAssistMember": true,
@@ -2011,8 +3141,29 @@
         "englishMaster": 17,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "27",
+        "programmes": 153,
+        "undergraduate": 72,
+        "graduate": 81,
+        "english": 18,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=27",
       "checkedAt": "2026-10-26"
     },
     "paderborn": {
@@ -2036,6 +3187,8 @@
         "amountEur": 351.15,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-paderborn.de/studium/international-office/degree-students/formalitaeten-und-services/immatrikulation"
       },
       "uniAssistMember": true,
@@ -2050,8 +3203,27 @@
         "englishMaster": 10,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "215",
+        "programmes": 255,
+        "undergraduate": 119,
+        "graduate": 136,
+        "english": 8,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=215",
       "checkedAt": "2026-10-26"
     },
     "siegen": {
@@ -2075,6 +3247,8 @@
         "amountEur": 393.8,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-siegen.de/en/semester-fee"
       },
       "uniAssistMember": false,
@@ -2089,8 +3263,29 @@
         "englishMaster": 15,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "245",
+        "programmes": 249,
+        "undergraduate": 123,
+        "graduate": 126,
+        "english": 19,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=245",
       "checkedAt": "2026-10-26"
     },
     "wuppertal": {
@@ -2114,6 +3309,8 @@
         "amountEur": 358.05,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://studierendensekretariat.uni-wuppertal.de/de/beitragszahlung/haupthoerer/"
       },
       "uniAssistMember": true,
@@ -2128,8 +3325,28 @@
         "englishMaster": 2,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "279",
+        "programmes": 278,
+        "undergraduate": 91,
+        "graduate": 187,
+        "english": 6,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=279",
       "checkedAt": "2026-10-26"
     },
     "luebeck": {
@@ -2153,6 +3370,8 @@
         "amountEur": 400.6,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www2.uni-luebeck.de/en/study/study-organization/student-service-center/re-registration/"
       },
       "uniAssistMember": true,
@@ -2167,8 +3386,23 @@
         "englishMaster": 1,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "168",
+        "programmes": 34,
+        "undergraduate": 17,
+        "graduate": 17,
+        "english": 6,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "computer-science",
+        "engineering",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=168",
       "checkedAt": "2026-10-26"
     },
     "rostock": {
@@ -2192,6 +3426,8 @@
         "amountEur": 352,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-rostock.de/studium/studienorganisation/im-studium/rueckmeldung/"
       },
       "uniAssistMember": true,
@@ -2206,8 +3442,29 @@
         "englishMaster": 5,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "233",
+        "programmes": 243,
+        "undergraduate": 143,
+        "graduate": 100,
+        "english": 19,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=233",
       "checkedAt": "2026-10-26"
     },
     "greifswald": {
@@ -2231,6 +3488,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": true,
@@ -2245,8 +3504,30 @@
         "englishMaster": 5,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "99",
+        "programmes": 139,
+        "undergraduate": 92,
+        "graduate": 47,
+        "english": 8,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=99",
       "checkedAt": "2026-10-26"
     },
     "magdeburg": {
@@ -2270,6 +3551,8 @@
         "amountEur": 329.3,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.ovgu.de/unimagdeburg/en/reregistration-p-43700.html"
       },
       "uniAssistMember": true,
@@ -2284,8 +3567,28 @@
         "englishMaster": 21,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "172",
+        "programmes": 132,
+        "undergraduate": 60,
+        "graduate": 72,
+        "english": 23,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=172",
       "checkedAt": "2026-10-26"
     },
     "halle": {
@@ -2309,15 +3612,38 @@
         "amountEur": 333.3,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://immaamt.verwaltung.uni-halle.de/studium/rueckmeldung/"
       },
       "uniAssistMember": true,
       "uniAssistSource": "https://www.uni-assist.de/en/tools/uni-assist-universities/",
-      "englishTaught": null,
-      "englishTaughtSource": null,
+      "englishTaught": true,
+      "englishTaughtSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=101&hec-teachingLanguage=2",
       "daad": null,
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "101",
+        "programmes": 215,
+        "undergraduate": 146,
+        "graduate": 69,
+        "english": 11,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=101",
       "checkedAt": "2026-10-26"
     },
     "leipzig": {
@@ -2341,6 +3667,8 @@
         "amountEur": 332.3,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-leipzig.de/en/studying/current-students/study-affairs/re-enrolment-and-semester-fee"
       },
       "uniAssistMember": true,
@@ -2355,8 +3683,27 @@
         "englishMaster": 17,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "159",
+        "programmes": 231,
+        "undergraduate": 149,
+        "graduate": 82,
+        "english": 30,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=159",
       "checkedAt": "2026-10-26"
     },
     "tuchemnitz": {
@@ -2380,6 +3727,8 @@
         "amountEur": 341.4,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.tu-chemnitz.de/studierendenservice/studserv/sembeitrag.php.en"
       },
       "uniAssistMember": true,
@@ -2394,8 +3743,28 @@
         "englishMaster": 13,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "42",
+        "programmes": 117,
+        "undergraduate": 48,
+        "graduate": 69,
+        "english": 16,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=42",
       "checkedAt": "2026-10-26"
     },
     "potsdam": {
@@ -2419,6 +3788,8 @@
         "amountEur": 372.8,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-potsdam.de/de/studium/konkret/studienorganisation/rueckmeldung"
       },
       "uniAssistMember": true,
@@ -2433,8 +3804,28 @@
         "englishMaster": 27,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "221",
+        "programmes": 190,
+        "undergraduate": 93,
+        "graduate": 97,
+        "english": 29,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=221",
       "checkedAt": "2026-10-26"
     },
     "viadrina": {
@@ -2458,6 +3849,8 @@
         "amountEur": 402.8,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": "Amount for first enrolment; re-registration €396.80.",
+        "noteTr": "İlk kayıt tutarı; kayıt yenileme 396,80 €.",
         "source": "https://www.europa-uni.de/de/studium/im-studium/semesterbeitrag/index.html"
       },
       "uniAssistMember": true,
@@ -2472,8 +3865,25 @@
         "englishMaster": 11,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "84",
+        "programmes": 25,
+        "undergraduate": 11,
+        "graduate": 14,
+        "english": 11,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "humanities-languages",
+        "law",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=84",
       "checkedAt": "2026-10-26"
     },
     "btucottbus": {
@@ -2497,6 +3907,8 @@
         "amountEur": 391.8,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.b-tu.de/studium/im-studium/studienorganisation/formalia/semestergebuehr"
       },
       "uniAssistMember": true,
@@ -2511,8 +3923,30 @@
         "englishMaster": 17,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "45",
+        "programmes": 67,
+        "undergraduate": 30,
+        "graduate": 37,
+        "english": 19,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=45",
       "checkedAt": "2026-10-26"
     },
     "wuerzburg": {
@@ -2536,6 +3970,8 @@
         "amountEur": 182.1,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-wuerzburg.de/en/studying-at-jmu/studienangelegenheiten/beitraegeundgebuehren/"
       },
       "uniAssistMember": true,
@@ -2550,8 +3986,29 @@
         "englishMaster": 29,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "276",
+        "programmes": 249,
+        "undergraduate": 156,
+        "graduate": 93,
+        "english": 19,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=276",
       "checkedAt": "2026-10-26"
     },
     "regensburg": {
@@ -2575,6 +4032,8 @@
         "amountEur": 208,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-regensburg.de/studieren/im-studium/studienorganisation/rueckmeldung"
       },
       "uniAssistMember": true,
@@ -2589,8 +4048,29 @@
         "englishMaster": 18,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "225",
+        "programmes": 190,
+        "undergraduate": 127,
+        "graduate": 63,
+        "english": 26,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=225",
       "checkedAt": "2026-10-26"
     },
     "passau": {
@@ -2614,6 +4094,8 @@
         "amountEur": 134,
         "term": "SoSe 2027",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-passau.de/en/costs-funding/enrolment-fee"
       },
       "uniAssistMember": true,
@@ -2628,8 +4110,26 @@
         "englishMaster": 11,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "218",
+        "programmes": 90,
+        "undergraduate": 72,
+        "graduate": 18,
+        "english": 10,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=218",
       "checkedAt": "2026-10-26"
     },
     "bayreuth": {
@@ -2653,6 +4153,8 @@
         "amountEur": 172,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.studierendenkanzlei.uni-bayreuth.de/de/studierende/semesterbeitrag/index.html"
       },
       "uniAssistMember": true,
@@ -2667,8 +4169,29 @@
         "englishMaster": 23,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "9",
+        "programmes": 174,
+        "undergraduate": 80,
+        "graduate": 94,
+        "english": 32,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=9",
       "checkedAt": "2026-10-26"
     },
     "augsburg": {
@@ -2692,6 +4215,8 @@
         "amountEur": 181.95,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-augsburg.de/en/studium/organisation-beratung/organisation-und-formales/semesterbeitrage/"
       },
       "uniAssistMember": true,
@@ -2706,8 +4231,28 @@
         "englishMaster": 10,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "6",
+        "programmes": 138,
+        "undergraduate": 91,
+        "graduate": 47,
+        "english": 12,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=6",
       "checkedAt": "2026-10-26"
     },
     "bamberg": {
@@ -2731,6 +4276,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
@@ -2745,8 +4292,28 @@
         "englishMaster": 8,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "8",
+        "programmes": 150,
+        "undergraduate": 90,
+        "graduate": 60,
+        "english": 5,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=8",
       "checkedAt": "2026-10-26"
     },
     "kueichstaett": {
@@ -2767,10 +4334,12 @@
         "noteTr": "Üniversite okul ücreti almadığını belirtiyor. Bavyera yasası AB dışı öğrencilere ücret getirilmesine izin verdiğinden başvurmadan önce teyit edin."
       },
       "semesterContribution": {
-        "amountEur": null,
-        "term": null,
+        "amountEur": 88,
+        "term": "WiSe 2026/27",
         "includesTicket": null,
-        "source": null
+        "noteEn": null,
+        "noteTr": null,
+        "source": "https://www.ku.de/en/study-at-the-ku/during-your-studies/organizing-your-studies/academic-progress-administrative-matters/re-registration"
       },
       "uniAssistMember": true,
       "uniAssistSource": "https://www.uni-assist.de/en/tools/uni-assist-universities/",
@@ -2784,8 +4353,28 @@
         "englishMaster": 9,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "65",
+        "programmes": 126,
+        "undergraduate": 91,
+        "graduate": 35,
+        "english": 6,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=65",
       "checkedAt": "2026-10-26"
     },
     "hohenheim": {
@@ -2809,6 +4398,8 @@
         "amountEur": 174.5,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://dein-studium.uni-hohenheim.de/en/applying-and-enrollment/enrolling"
       },
       "uniAssistMember": false,
@@ -2823,8 +4414,25 @@
         "englishMaster": 17,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "129",
+        "programmes": 41,
+        "undergraduate": 14,
+        "graduate": 27,
+        "english": 13,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=129",
       "checkedAt": "2026-10-26"
     },
     "ulm": {
@@ -2848,6 +4456,8 @@
         "amountEur": 192,
         "term": "WiSe 2026/27",
         "includesTicket": false,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-ulm.de/studium/studienorganisation/studiengebuehren/"
       },
       "uniAssistMember": true,
@@ -2862,8 +4472,27 @@
         "englishMaster": 16,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "259",
+        "programmes": 76,
+        "undergraduate": 30,
+        "graduate": 46,
+        "english": 14,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=259",
       "checkedAt": "2026-10-26"
     },
     "saarland": {
@@ -2887,6 +4516,8 @@
         "amountEur": 412.3,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-saarland.de/en/study/organisation/fees/semester-fee.html"
       },
       "uniAssistMember": true,
@@ -2901,8 +4532,30 @@
         "englishMaster": 22,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "235",
+        "programmes": 174,
+        "undergraduate": 104,
+        "graduate": 70,
+        "english": 26,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=235",
       "checkedAt": "2026-10-26"
     },
     "rptu": {
@@ -2923,10 +4576,12 @@
         "noteTr": "Devlet kurumlarında ilk lisans ve çoğu yüksek lisans için genel bir okul ücreti yok; bazı yüksek lisans programları ve ikinci diplomalar ek ücretli olabilir."
       },
       "semesterContribution": {
-        "amountEur": null,
-        "term": null,
-        "includesTicket": null,
-        "source": null
+        "amountEur": 381.8,
+        "term": "WiSe 2026/27",
+        "includesTicket": true,
+        "noteEn": "Kaiserslautern campus; Landau €162.50 (no ticket).",
+        "noteTr": "Kaiserslautern kampüsü; Landau 162,50 € (bilet hariç).",
+        "source": "https://rptu.de/en/studies/during-studies/study-organization/re-registration"
       },
       "uniAssistMember": true,
       "uniAssistSource": "https://www.uni-assist.de/en/tools/uni-assist-universities/",
@@ -2940,8 +4595,30 @@
         "englishMaster": 22,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "135",
+        "programmes": 247,
+        "undergraduate": 97,
+        "graduate": 150,
+        "english": 28,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=135",
       "checkedAt": "2026-10-26"
     },
     "fernunihagen": {
@@ -2965,6 +4642,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
@@ -2972,8 +4651,26 @@
       "englishTaught": null,
       "englishTaughtSource": null,
       "daad": null,
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "100",
+        "programmes": 36,
+        "undergraduate": 11,
+        "graduate": 25,
+        "english": 0,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=100",
       "checkedAt": "2026-10-26"
     },
     "oldenburg": {
@@ -2997,6 +4694,8 @@
         "amountEur": 457.9,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://uol.de/en/students/fees/semester-contribution"
       },
       "uniAssistMember": true,
@@ -3011,8 +4710,30 @@
         "englishMaster": 9,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "209",
+        "programmes": 174,
+        "undergraduate": 45,
+        "graduate": 129,
+        "english": 18,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=209",
       "checkedAt": "2026-10-26"
     },
     "hildesheim": {
@@ -3036,6 +4757,8 @@
         "amountEur": 469.85,
         "term": "WiSe 2026/27",
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-hildesheim.de/dez3/immatrikulationsamt/informationen-zur-rueckmeldung/"
       },
       "uniAssistMember": true,
@@ -3050,8 +4773,27 @@
         "englishMaster": 4,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "127",
+        "programmes": 87,
+        "undergraduate": 37,
+        "graduate": 50,
+        "english": 6,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "mathematics",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=127",
       "checkedAt": "2026-10-26"
     },
     "leuphana": {
@@ -3075,6 +4817,8 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": true,
@@ -3089,8 +4833,29 @@
         "englishMaster": 20,
         "fetchedAt": "2026-10-26"
       },
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "171",
+        "programmes": 100,
+        "undergraduate": 48,
+        "graduate": 52,
+        "english": 34,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "architecture-planning",
+        "arts-design-music",
+        "business-economics",
+        "computer-science",
+        "education-teaching",
+        "engineering",
+        "humanities-languages",
+        "law",
+        "mathematics",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=171",
       "checkedAt": "2026-10-26"
     },
     "tuclausthal": {
@@ -3114,15 +4879,32 @@
         "amountEur": null,
         "term": null,
         "includesTicket": null,
+        "noteEn": null,
+        "noteTr": null,
         "source": null
       },
       "uniAssistMember": false,
       "uniAssistSource": "https://www.uni-assist.de/en/tools/uni-assist-universities/",
-      "englishTaught": null,
-      "englishTaughtSource": null,
+      "englishTaught": true,
+      "englishTaughtSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=43&hec-teachingLanguage=2",
       "daad": null,
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "43",
+        "programmes": 37,
+        "undergraduate": 18,
+        "graduate": 19,
+        "english": 4,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "business-economics",
+        "computer-science",
+        "engineering",
+        "mathematics",
+        "natural-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=43",
       "checkedAt": "2026-10-26"
     },
     "vechta": {
@@ -3146,6 +4928,8 @@
         "amountEur": 456.36,
         "term": "WiSe 2026/27",
         "includesTicket": true,
+        "noteEn": null,
+        "noteTr": null,
         "source": "https://www.uni-vechta.de/studium/studienorganisation/semesterbeitrag-/-beurlaubung"
       },
       "uniAssistMember": false,
@@ -3153,8 +4937,26 @@
       "englishTaught": null,
       "englishTaughtSource": null,
       "daad": null,
-      "subjectAreas": null,
-      "subjectAreasSource": null,
+      "hsk": {
+        "institutionId": "293",
+        "programmes": 43,
+        "undergraduate": 19,
+        "graduate": 24,
+        "english": 0,
+        "fetchedAt": "2026-10-26"
+      },
+      "subjectAreas": [
+        "agriculture-environment",
+        "arts-design-music",
+        "business-economics",
+        "education-teaching",
+        "humanities-languages",
+        "mathematics",
+        "medicine-health",
+        "natural-sciences",
+        "social-sciences"
+      ],
+      "subjectAreasSource": "https://www.daad.de/en/studying-in-germany/universities/all-degree-programmes/?hec-institution=293",
       "checkedAt": "2026-10-26"
     }
   }

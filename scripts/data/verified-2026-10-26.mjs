@@ -191,16 +191,20 @@ export const INTERNATIONAL_URLS = {
 export const OFFICIAL_NAMES = { hsmannheim: "Technische Hochschule Mannheim" };
 
 const W26 = "WiSe 2026/27";
-const sc = (amountEur, term, includesTicket, source) => ({ amountEur, term, includesTicket, source });
+const sc = (amountEur, term, includesTicket, source, note = { en: null, tr: null }) => ({
+  amountEur, term, includesTicket, noteEn: note.en, noteTr: note.tr, source,
+});
 
 /**
  * Semester contribution exactly as the cited page states it for the given term,
  * checked by matching the amount next to the term on the fetched page.
  * includesTicket is true/false only where the page's breakdown shows it.
  * Where a page lists first-enrolment and re-registration amounts, the first-
- * enrolment amount is used (fuberlin, viadrina); Mainz is the Mainz campus.
- * Left out on purpose: pages without a dated total, conflicting figures, or
- * a total that only covers part of the contribution.
+ * enrolment amount is used (fuberlin, viadrina); campus-specific amounts say
+ * which campus they are for. The note repeats only what the same page states.
+ * Left out on purpose: pages without a dated total, conflicting figures (e.g.
+ * bamberg, leuphana, tudarmstadt), a total that only covers part of the
+ * contribution, and frankfurtuas (site offline after a security incident).
  */
 export const SEMESTER_CONTRIBUTIONS = {
   lmu: sc(97, W26, null, "https://www.lmu.de/de/workspace-fuer-studierende/1x1-des-studiums/rueckmeldung/"),
@@ -216,13 +220,22 @@ export const SEMESTER_CONTRIBUTIONS = {
   hannover: sc(453.16, W26, true, "https://www.uni-hannover.de/studium/finanzierung-foerderung/studienkosten"),
   htwberlin: sc(375.3, W26, true, "https://www.htw-berlin.de/studium/studienorganisation/semesterbeitraege"),
   hamburg: sc(402, W26, null, "https://www.uni-hamburg.de/en/campuscenter/studienorganisation/studienverlauf/beitraege-gebuehren/semesterbeitrag.html"),
-  fuberlin: sc(376.8, W26, true, "https://www.fu-berlin.de/studium/studieren/studienorganisation/gebuehren/index.html"),
-  mainz: sc(366.9, W26, null, "https://www.studium.uni-mainz.de/en/during-your-studies/organizing-your-studies/re-registration/"),
+  fuberlin: sc(376.8, W26, true, "https://www.fu-berlin.de/studium/studieren/studienorganisation/gebuehren/index.html", {
+    en: "Amount for first enrolment.",
+    tr: "İlk kayıt tutarı.",
+  }),
+  mainz: sc(366.9, W26, null, "https://www.studium.uni-mainz.de/en/during-your-studies/organizing-your-studies/re-registration/", {
+    en: "Mainz campus; Germersheim €389.80, Trier medical campus €378.80.",
+    tr: "Mainz kampüsü; Germersheim 389,80 €, Trier tıp kampüsü 378,80 €.",
+  }),
   muenster: sc(369.5, W26, true, "https://www.uni-muenster.de/studium/en/kosten/semesterbeitrag.html"),
   bremen: sc(443.4, W26, true, "https://www.uni-bremen.de/en/studies/starting-your-studies/formalitaeten/re-registration-and-semester-fee"),
   kiel: sc(403, W26, null, "https://www.studium.uni-kiel.de/de/studium-organisieren/studienangelegenheiten/rueckmeldung"),
   marburg: sc(424.8, W26, null, "https://www.uni-marburg.de/en/studying/during-studying/formalities-fees/information-about-contributions-and-fees"),
-  jena: sc(333.05, W26, true, "https://www.uni-jena.de/en/575/semester-fee"),
+  jena: sc(333.05, W26, true, "https://www.uni-jena.de/en/575/semester-fee", {
+    en: "Plus €20 for the first thoska student card.",
+    tr: "İlk thoska öğrenci kartı için ayrıca 20 €.",
+  }),
   thkoeln: sc(352.7, W26, true, "https://www.th-koeln.de/studium/beitraege-und-gebuehren_5343.php"),
   hsmannheim: sc(194.6, W26, false, "https://hs-mannheim.de/studierende/studienorganisation/zulassung-immatrikulation.html"),
   hbrs: sc(367, W26, true, "https://www.h-brs.de/en/d5/fees"),
@@ -241,7 +254,10 @@ export const SEMESTER_CONTRIBUTIONS = {
   leipzig: sc(332.3, W26, true, "https://www.uni-leipzig.de/en/studying/current-students/study-affairs/re-enrolment-and-semester-fee"),
   tuchemnitz: sc(341.4, W26, true, "https://www.tu-chemnitz.de/studierendenservice/studserv/sembeitrag.php.en"),
   potsdam: sc(372.8, W26, true, "https://www.uni-potsdam.de/de/studium/konkret/studienorganisation/rueckmeldung"),
-  viadrina: sc(402.8, W26, true, "https://www.europa-uni.de/de/studium/im-studium/semesterbeitrag/index.html"),
+  viadrina: sc(402.8, W26, true, "https://www.europa-uni.de/de/studium/im-studium/semesterbeitrag/index.html", {
+    en: "Amount for first enrolment; re-registration €396.80.",
+    tr: "İlk kayıt tutarı; kayıt yenileme 396,80 €.",
+  }),
   btucottbus: sc(391.8, W26, true, "https://www.b-tu.de/studium/im-studium/studienorganisation/formalia/semestergebuehr"),
   wuerzburg: sc(182.1, W26, true, "https://www.uni-wuerzburg.de/en/studying-at-jmu/studienangelegenheiten/beitraegeundgebuehren/"),
   bayreuth: sc(172, W26, true, "https://www.studierendenkanzlei.uni-bayreuth.de/de/studierende/semesterbeitrag/index.html"),
@@ -255,4 +271,14 @@ export const SEMESTER_CONTRIBUTIONS = {
   vechta: sc(456.36, W26, true, "https://www.uni-vechta.de/studium/studienorganisation/semesterbeitrag-/-beurlaubung"),
   regensburg: sc(208, W26, true, "https://www.uni-regensburg.de/studieren/im-studium/studienorganisation/rueckmeldung"),
   passau: sc(134, "SoSe 2027", true, "https://www.uni-passau.de/en/costs-funding/enrolment-fee"),
+  bochum: sc(380, W26, true, "https://studium.ruhr-uni-bochum.de/en/re-registration-and-social-contribution"),
+  hm: sc(97, W26, null, "https://mediapool.hm.edu/media/dachmarke/dm_lokal/hauptabteilung2/bereichimma_1/pdfsinfoszurbewerbung/Informationen_zur_Immatrikulation.pdf"),
+  thingolstadt: sc(82, W26, null, "https://www.thi.de/studium/studienfinanzierung/"),
+  kueichstaett: sc(88, W26, null, "https://www.ku.de/en/study-at-the-ku/during-your-studies/organizing-your-studies/academic-progress-administrative-matters/re-registration"),
+  rptu: sc(381.8, W26, true, "https://rptu.de/en/studies/during-studies/study-organization/re-registration", {
+    en: "Kaiserslautern campus; Landau €162.50 (no ticket).",
+    tr: "Kaiserslautern kampüsü; Landau 162,50 € (bilet hariç).",
+  }),
+  bht: sc(376.3, "SoSe 2027", true, "https://www.bht-berlin.de/rueckmeldung"),
+  osnabrueck: sc(442, "SoSe 2027", true, "https://www.hs-osnabrueck.de/en/study/all-about-studying/financing-studies/"),
 };

@@ -618,6 +618,14 @@
       "englishProgrammes": 28,
       "englishBachelor": 8,
       "englishMaster": 20
+    },
+    "vechta": {
+      "daadName": "University of Vechta",
+      "insId": "293",
+      "degreeProgrammes": 0,
+      "englishProgrammes": 0,
+      "englishBachelor": 0,
+      "englishMaster": 0
     }
   }
 }

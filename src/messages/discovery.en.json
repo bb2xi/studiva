@@ -141,7 +141,7 @@
       "previous": "Previous",
       "next": "Next",
       "page": "Page {page}",
-      "dataNote": "Fees, semester contributions and links checked {date} against official sources; English-taught programme counts from DAAD. Fields we could not verify are marked “Not verified” instead of estimated.",
+      "dataNote": "Fees, semester contributions and links checked {date} against official sources; programme counts and subject areas from the HRK Higher Education Compass and DAAD. Fields we could not verify are marked “Not verified” instead of estimated.",
       "englishNote": "A university offering some English-taught programmes does not mean all its programmes are in English."
     },
     "card": {
@@ -202,7 +202,9 @@
         "competition": "Competition level",
         "official": "Official links",
         "rankings": "Rankings",
-        "data": "Data checked"
+        "data": "Data checked",
+        "programmeCount": "Degree programmes",
+        "subjects": "Subject areas"
       },
       "uniAssistYes": "Member — check if your programme uses it",
       "programsNote": "Studiva's selection, not a complete programme list.",
@@ -214,9 +216,11 @@
       },
       "share": "Copy link to this comparison",
       "copied": "Link copied",
-      "englishNote": "Count listed in DAAD's International Programmes database.",
+      "englishNote": "DAAD International Programmes count; “(HRK)” marks the Higher Education Compass count where DAAD lists none.",
       "englishCount": "{count, plural, one {# programme} other {# programmes}}",
-      "uniAssistNo": "Not a member — apply directly"
+      "uniAssistNo": "Not a member — apply directly",
+      "programmeCountNote": "HRK Higher Education Compass",
+      "programmeSplit": "{undergraduate} undergraduate · {graduate} graduate"
     },
     "detail": {
       "breadcrumbHome": "Home",
@@ -278,7 +282,16 @@
       "daadAllLink": "All listed programmes",
       "daadNote": "Counts from DAAD's International Programmes database, fetched {date}. It lists international programmes only, so the university may offer more. Links open DAAD's official search.",
       "programmeSearchLink": "Search programmes across Germany",
-      "uniAssistNonMember": "This institution is not a uni-assist member, so international applications usually go directly to the university through its own portal. Check the programme page for the exact route."
+      "uniAssistNonMember": "This institution is not a uni-assist member, so international applications usually go directly to the university through its own portal. Check the programme page for the exact route.",
+      "programmesRow": "Degree programmes (HRK)",
+      "englishRowHsk": "English-taught (HRK)",
+      "hskCount": "The HRK Higher Education Compass lists {total, plural, one {# degree programme} other {# degree programmes}} here.",
+      "hskSplit": "{undergraduate} undergraduate (bachelor's, state examination) · {graduate} graduate (master's).",
+      "hskEnglish": "{count, plural, one {# is} other {# are}} taught in English.",
+      "subjectAreasTitle": "Subject areas",
+      "hskAllLink": "All programmes (Higher Education Compass)",
+      "hskEnglishLink": "English-taught programmes",
+      "hskNote": "Counts from the HRK Higher Education Compass via DAAD, fetched {date}. Studiva groups its fields of study into the subject areas above. Links open the official search."
     },
     "report": {
       "title": "Spotted outdated information or a broken link?",
@@ -328,7 +341,7 @@
         "budget3000": "Up to €3,000",
         "budgetAny": "No limit"
       },
-      "subjectNote": "Subject areas are not yet verified in our data, so this criterion will show as “unknown” and won't exclude anyone.",
+      "subjectNote": "Subject areas come from the HRK Higher Education Compass, which lists every degree programme at state-recognised institutions.",
       "results": {
         "exact": "Exact matches",
         "exactNote": "Every criterion confirmed by our data.",
@@ -356,7 +369,7 @@
         "levelNotMet": "Our profile lists no {level} programmes.",
         "phdUniversity": "Universitäten award doctorates.",
         "phdOther": "Universities of applied sciences generally cannot award doctorates on their own — check with the institution.",
-        "subjectMet": "Offers programmes in this area.",
+        "subjectMet": "The Higher Education Compass lists programmes in this area.",
         "subjectUnknown": "Subject areas not verified yet.",
         "englishMet": "DAAD lists {count, plural, one {# English-taught programme} other {# English-taught programmes}} here.",
         "englishUnknown": "No English-taught programmes found in DAAD's database — not verified.",
@@ -373,7 +386,10 @@
         "budgetSome": "Non-EU tuition {range} per semester — only some programmes fit your budget.",
         "budgetOver": "Non-EU tuition {range} per semester — above your budget.",
         "budgetChargedUnknown": "Charges tuition; amount not verified.",
-        "budgetUnknown": "Tuition not verified."
+        "budgetUnknown": "Tuition not verified.",
+        "subjectNotMet": "The Higher Education Compass lists no programmes in this area here.",
+        "levelCompassMet": "The Higher Education Compass lists {count, plural, one {# programme} other {# programmes}} at this level.",
+        "levelCompassNotMet": "The Higher Education Compass lists no programmes at this level."
       }
     },
     "states": {
@@ -543,15 +559,15 @@
       },
       "programmes": {
         "title": "Find study programmes in Germany",
-        "description": "Search DAAD's official database of international degree programmes in Germany by subject, degree, language and university, and see how many English-taught programmes each university offers."
+        "description": "Search every degree programme in Germany (HRK Higher Education Compass) and DAAD's International Programmes by subject, degree, language and university."
       }
     },
     "programmes": {
       "title": "Find study programmes",
-      "subtitle": "Search DAAD's official database of international degree programmes in Germany. Studiva prepares the search; the results open on DAAD.",
+      "subtitle": "Search Germany's two official programme databases: the HRK Higher Education Compass, with every degree programme, and DAAD's International Programmes. Studiva prepares the search; the results open on DAAD's website.",
       "keyword": "Subject or keyword",
       "keywordPlaceholder": "e.g. computer science, economics",
-      "keywordHint": "DAAD's search works best with English keywords.",
+      "keywordHint": "Both databases are searched in English, so English keywords work best.",
       "degree": "Degree",
       "degreeAny": "Any degree",
       "bachelor": "Bachelor's",
@@ -566,16 +582,28 @@
       "opensNote": "Opens DAAD's official programme search in a new tab.",
       "howTitle": "How this works",
       "howBody": "DAAD, the German Academic Exchange Service, runs the official database of international programmes in Germany — mostly taught in English — with entry requirements, deadlines and fees for each one.",
-      "whyLink": "We send you to DAAD instead of copying its records: programme details change often, and DAAD updates them at the source.",
-      "listTitle": "English-taught programmes by university",
-      "listIntro": "How many degree programmes taught fully or partly in English DAAD lists for each university in our directory. DAAD covers international programmes only, so a university may offer more.",
+      "whyLink": "We send you to these databases instead of copying their records: programme details change often, and they are updated at the source.",
+      "listTitle": "Programmes by university",
+      "listIntro": "How many degree programmes the Higher Education Compass lists for each university in our directory, and how many DAAD lists as taught fully or partly in English.",
       "colUniversity": "University",
-      "colEnglish": "In English",
+      "colEnglish": "English (DAAD)",
       "colSplit": "Bachelor's / master's",
-      "split": "{bachelor} bachelor's · {master} master's",
-      "viewOnDaad": "View on DAAD",
-      "fetched": "Counts fetched from DAAD on {date}.",
-      "notListed": "No programmes matched in DAAD's database for: {names}. Check their own websites."
+      "viewOnDaad": "English on DAAD",
+      "fetched": "Higher Education Compass counts fetched {hskDate}; DAAD counts fetched {daadDate}.",
+      "notListed": "No programmes matched in DAAD's database for: {names}. Check their own websites.",
+      "database": "Database",
+      "databaseAll": "All degree programmes",
+      "databaseAllHint": "HRK Higher Education Compass — every programme at state-recognised institutions.",
+      "databaseInternational": "International programmes",
+      "databaseInternationalHint": "DAAD — mostly English-taught, with details for international applicants.",
+      "englishMain": "English",
+      "germanMain": "German",
+      "howAll": "The Higher Education Compass of the German Rectors' Conference (HRK) lists every degree programme at state-recognised universities — about 22,500 — including those taught in German.",
+      "colAll": "All programmes",
+      "colLevels": "Undergraduate / graduate",
+      "colLinks": "Links",
+      "levelSplit": "{undergraduate} undergraduate · {graduate} graduate",
+      "viewAll": "All programmes"
     }
   }
 }
