@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 export default function Footer() {
   const t = useTranslations("footer");
   const services = useTranslations("home.services");
+  const tools = useTranslations("discovery.nav");
 
   const year = new Date().getFullYear();
 
@@ -16,12 +17,20 @@ export default function Footer() {
     { href: "/contact", label: t("contactLink") },
   ];
 
+  const toolLinks = [
+    { href: "/universities", label: tools("directory") },
+    { href: "/universities/finder", label: tools("finder") },
+    { href: "/germany", label: tools("states") },
+    { href: "/cost-calculator", label: tools("costs") },
+    { href: "/scholarships", label: tools("scholarships") },
+  ];
+
   return (
     // Always-dark footer regardless of site theme (matching the editorial
     // "ink paper" family from dark mode), so it reads as a fixed colophon
     // band rather than flipping light when the page itself is in dark mode.
     <footer className="border-t border-black/20 bg-[#1a160f] text-[#f3ede1]">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-14 sm:px-6 md:grid-cols-4 lg:px-8">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 py-14 sm:px-6 md:grid-cols-5 lg:px-8">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -38,6 +47,19 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-sm opacity-80">
             {serviceItems.slice(0, 5).map((item) => (
               <li key={item.title}>{item.title}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <h3 className="font-sans text-xs font-semibold uppercase tracking-wide opacity-60">{tools("label")}</h3>
+          <ul className="mt-4 space-y-2 text-sm">
+            {toolLinks.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="opacity-80 transition-colors duration-200 hover:text-accent hover:opacity-100">
+                  {link.label}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>

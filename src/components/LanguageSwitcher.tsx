@@ -19,7 +19,8 @@ export default function LanguageSwitcher() {
       {routing.locales.map((loc) => (
         <button
           key={loc}
-          onClick={() => router.replace(pathname, { locale: loc })}
+          // Keep the query string (directory filters, compare ids) so a shared view survives switching language.
+          onClick={() => router.replace(`${pathname}${window.location.search}`, { locale: loc })}
           className={`rounded-full px-2.5 py-1 font-medium transition-colors cursor-pointer ${
             locale === loc
               ? "bg-brand text-white"

@@ -165,19 +165,32 @@
       "title": "What You Should Know",
       "subtitle": "We've summarized the topics applicants ask about most.",
       "guidesLinkText": "See all articles",
-      "guideSlugs": ["exzellenzuniversitat-ve-tu9-nedir", "dual-studium-nedir", "almanya-ogrenci-vizesi-basvuru-sureci"]
+      "guideSlugs": [
+        "exzellenzuniversitat-ve-tu9-nedir",
+        "dual-studium-nedir",
+        "almanya-ogrenci-vizesi-basvuru-sureci"
+      ]
     },
     "faqTeaser": {
       "title": "Have questions?",
       "subtitle": "A few of the questions we hear most during the application process.",
       "linkText": "See all FAQs",
-      "indices": [4, 7, 1, 5]
+      "indices": [
+        4,
+        7,
+        1,
+        5
+      ]
     },
     "cta": {
       "title": "Start Your Study Abroad Journey Today",
       "subtitle": "Let's build your personalized roadmap in a free 15-minute call.",
       "button": "Get a Free Consultation",
-      "steps": ["Free 15-minute call", "Package price & plan, in writing", "Your guidance begins"]
+      "steps": [
+        "Free 15-minute call",
+        "Package price & plan, in writing",
+        "Your guidance begins"
+      ]
     }
   },
   "services": {
@@ -303,8 +316,6 @@
         "slug": "tum",
         "name": "TU Munich (TUM)",
         "city": "Munich",
-        "type": "Universität",
-        "founded": "1868",
         "description": "One of Germany's leading technical universities in engineering, computer science, and natural sciences.",
         "history": [
           "TUM was founded in 1868 by King Ludwig II of Bavaria as the Polytechnische Schule München. Its name changed several times over the decades, becoming the Technische Hochschule München in 1901 and finally the Technische Universität München in 1970.",
@@ -327,32 +338,20 @@
           "Munich is one of Germany's most expensive cities",
           "Crowded lecture halls in popular courses"
         ],
-        "badges": [
-          "tu9",
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~50,000",
-          "language": "Mostly English at master's level, partly German at bachelor's",
-          "tuition": "~€150-170 semester contribution (no tuition fees)"
+          "language": "Mostly English at master's level, partly German at bachelor's"
         },
         "popularPrograms": [
           "Mechanical/Electrical Engineering",
           "Computer Science",
           "Medicine"
-        ],
-        "lat": 48.1497,
-        "lng": 11.5678,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "lmu",
         "name": "LMU Munich",
         "city": "Munich",
-        "type": "Universität",
-        "founded": "1472",
         "description": "One of Germany's oldest and most established universities, strong in medicine, law, and social sciences.",
         "history": [
           "LMU was founded in 1472 in Ingolstadt by Duke Ludwig IX of Bavaria. It moved to Landshut in 1800 and then to its current home in Munich in 1826 — the \"Ludwig-Maximilians\" in its name honors the two rulers associated with that journey.",
@@ -375,31 +374,20 @@
           "Munich's high cost of living",
           "Large student body can mean less individual attention in big introductory lectures"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~52,000",
-          "language": "Mostly German, English options at master's level",
-          "tuition": "~€150 semester contribution (no tuition fees)"
+          "language": "Mostly German, English options at master's level"
         },
         "popularPrograms": [
           "Medicine",
           "Law",
           "Natural Sciences"
-        ],
-        "lat": 48.1512,
-        "lng": 11.5806,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "huberlin",
         "name": "Humboldt University of Berlin",
         "city": "Berlin",
-        "type": "Universität",
-        "founded": "1810",
         "description": "A research university with international recognition in the humanities and social sciences.",
         "history": [
           "Founded in 1810 by the linguist and statesman Wilhelm von Humboldt, Humboldt University is Berlin's oldest university. Its founding gave rise to the \"Humboldtian model,\" which champions the unity of teaching and research under the principle of academic freedom — a model that became the foundation of the modern research university worldwide.",
@@ -422,31 +410,20 @@
           "High admission competition for popular subjects",
           "A large, bureaucratic university structure can feel impersonal at first"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~32,000",
-          "language": "Mostly German, some English-taught master's programs",
-          "tuition": "~€315 semester contribution (no tuition fees)"
+          "language": "Mostly German, some English-taught master's programs"
         },
         "popularPrograms": [
           "Social Sciences",
           "Humanities",
           "Natural Sciences"
-        ],
-        "lat": 52.517,
-        "lng": 13.3936,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "rwth",
         "name": "RWTH Aachen",
         "city": "Aachen",
-        "type": "Universität",
-        "founded": "1870",
         "description": "One of Europe's leading technical universities in engineering and computer science.",
         "history": [
           "Founded in 1870 as the Polytechnicum, RWTH Aachen is today a member of the TU9 alliance and one of Germany's largest technical universities. Its location near the Belgian and Dutch borders has given the university a strong, international network of industry partnerships.",
@@ -469,32 +446,20 @@
           "Engineering programs are demanding and intensive",
           "Limited spots and high competition in some master's programs"
         ],
-        "badges": [
-          "tu9",
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~47,000 (about 25% international)",
-          "language": "Mostly German at bachelor's, many English programs at master's",
-          "tuition": "~€300 semester contribution (no tuition fees)"
+          "language": "Mostly German at bachelor's, many English programs at master's"
         },
         "popularPrograms": [
           "Mechanical Engineering",
           "Electrical Engineering",
           "Computer Science"
-        ],
-        "lat": 50.7782,
-        "lng": 6.0817,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "mannheim",
         "name": "University of Mannheim",
         "city": "Mannheim",
-        "type": "Universität",
-        "founded": "1907",
         "description": "Home to one of Germany's top business and economics programs.",
         "history": [
           "Founded in 1907 as the Handelshochschule Mannheim (Mannheim Commercial College), the institution was established through the efforts of then-mayor Otto Beck and economist Eberhard Gothein. Absorbed into the University of Heidelberg under the National Socialist regime in 1933, it reopened after the war in 1946 and gained full university status in 1967.",
@@ -517,29 +482,20 @@
           "Mannheim is a quieter city compared to Berlin or Munich",
           "An intense, competitive grading culture in the business faculty"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~11,000",
-          "language": "Many English-taught master's programs in business and economics",
-          "tuition": "~€170 semester contribution; non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+          "language": "Many English-taught master's programs in business and economics"
         },
         "popularPrograms": [
           "Business Administration",
           "Economics",
           "Psychology"
-        ],
-        "lat": 49.4794,
-        "lng": 8.4622,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hm",
         "name": "Munich University of Applied Sciences",
         "city": "Munich",
-        "type": "Fachhochschule",
-        "founded": "1971",
         "description": "A Fachhochschule with strong industry ties in applied engineering and business programs.",
         "history": [
           "Formed in 1971 through the merger of seven technical and vocational colleges, Hochschule München is today Bavaria's second-largest university of applied sciences (Fachhochschule).",
@@ -562,29 +518,20 @@
           "Limited option to pursue a doctorate directly",
           "Munich's high cost of living"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~19,000",
-          "language": "Mostly German, a few English-taught programs",
-          "tuition": "~€150 semester contribution"
+          "language": "Mostly German, a few English-taught programs"
         },
         "popularPrograms": [
           "Mechanical Engineering",
           "Business Administration",
           "Computer Science"
-        ],
-        "lat": 48.1611,
-        "lng": 11.5486,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "frankfurtuas",
         "name": "Frankfurt University of Applied Sciences",
         "city": "Frankfurt am Main",
-        "type": "Fachhochschule",
-        "founded": "1971",
         "description": "Applied programs in business and information technology in the financial hub of Frankfurt.",
         "history": [
           "Founded on August 1, 1971, Frankfurt UAS is today one of Germany's largest universities of applied sciences, home to more than 15,000 students.",
@@ -607,29 +554,20 @@
           "No direct route to a doctorate",
           "Frankfurt has a high cost of living relative to smaller German cities"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~15,000",
-          "language": "Mix of German and English, especially at master's level",
-          "tuition": "~€370 semester contribution"
+          "language": "Mix of German and English, especially at master's level"
         },
         "popularPrograms": [
           "Social Work",
           "Business Administration",
           "Computer Science"
-        ],
-        "lat": 50.1289,
-        "lng": 8.6858,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "dhbw",
         "name": "DHBW (Baden-Württemberg Cooperative State University)",
         "city": "Stuttgart, Mannheim, Karlsruhe, and other campuses",
-        "type": "Duale Hochschule",
-        "founded": "2009",
         "description": "The pioneer of the dual studium model in Germany, alternating theory and practice in three-month cycles.",
         "history": [
           "DHBW's roots trace back to the Berufsakademie Baden-Württemberg, founded in 1974. Conceived as an entirely new type of educational institution at the time, it grew quickly to include locations across the state.",
@@ -652,29 +590,20 @@
           "The program is highly structured, leaving little flexibility for electives or exchange semesters",
           "An intensive pace with almost no long breaks between theory and practice blocks"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~34,000 (multi-campus)",
-          "language": "Mostly German",
-          "tuition": "No tuition fees, but a company placement is mandatory (students earn a salary)"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Business Administration (Dual)",
           "Engineering (Dual)",
           "Computer Science (Dual)"
-        ],
-        "lat": 48.7784,
-        "lng": 9.1733,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "bachelor"
+        ]
       },
       {
         "slug": "iu",
         "name": "IU International University of Applied Sciences",
         "city": "24+ campuses across Germany",
-        "type": "Duale Hochschule",
-        "founded": "1998",
         "description": "One of Germany's largest private higher education institutions for dual studium and distance learning.",
         "history": [
           "Founded in 1998 in Bad Honnef and Bonn as the Internationale Fachhochschule with just 23 students in its first year, the institution entered a period of rapid growth. It merged with the Adam-Ries-Fachhochschule in 2013, was renamed IUBH Internationale Hochschule in 2017, and took its current name, IU International University of Applied Sciences, in 2021.",
@@ -697,29 +626,20 @@
           "Tuition fees apply, unlike most public universities",
           "Rapid growth has drawn some scrutiny over teaching quality consistency"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~130,000 (Germany's largest private higher-education institution)",
-          "language": "Mostly English, online and on-campus options",
-          "tuition": "Private institution; flexible pricing with scholarships and discounts available"
+          "language": "Mostly English, online and on-campus options"
         },
         "popularPrograms": [
           "Business Administration",
           "Computer Science",
           "Psychology"
-        ],
-        "lat": 50.967,
-        "lng": 11.043,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "bachelor"
+        ]
       },
       {
         "slug": "fom",
         "name": "FOM University of Applied Sciences",
         "city": "30+ cities across Germany",
-        "type": "Duale Hochschule",
-        "founded": "1993",
         "description": "One of Germany's largest private higher education institutions for students who work while studying.",
         "history": [
           "Founded in 1993 and receiving official state recognition on September 18, 1993, FOM opened its doors in 1994. Its founding purpose was to let full-time working students pursue a university education through evening and weekend programs.",
@@ -742,29 +662,20 @@
           "The evening/weekend schedule can be demanding alongside a full-time job",
           "Less of a traditional campus/student-life experience than a full-time university"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~57,000",
-          "language": "Mostly German",
-          "tuition": "Private institution; typically employer-sponsored for working students"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Business Administration",
           "Economics",
           "Management"
-        ],
-        "lat": 51.4508,
-        "lng": 7.0131,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "bachelor"
+        ]
       },
       {
         "slug": "heidelberg",
         "name": "Heidelberg University (Ruprecht-Karls-Universität)",
         "city": "Heidelberg",
-        "type": "Universität",
-        "founded": "1386",
         "description": "Founded in 1386, Germany's oldest and one of its most prestigious research universities.",
         "history": [
           "Heidelberg University was founded on October 18, 1386, when Elector Ruprecht I received the Pope's permission to establish it. It is Germany's oldest university and the third to be founded in the Holy Roman Empire. Modeled after the University of Paris, it initially comprised four faculties — philosophy, theology, law, and medicine — with the Dutch scholar Marsilius of Inghen, who came from Paris, serving as its first rector.",
@@ -787,31 +698,20 @@
           "Heidelberg is a small city with a limited job market outside academia and pharma",
           "High demand pushes up student housing prices despite the city's small size"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~30,000",
-          "language": "German at bachelor's, many English-taught master's and PhD programs",
-          "tuition": "~€170 semester contribution; non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+          "language": "German at bachelor's, many English-taught master's and PhD programs"
         },
         "popularPrograms": [
           "Medicine",
           "Natural Sciences",
           "Law"
-        ],
-        "lat": 49.4097,
-        "lng": 8.7057,
-        "tuitionFree": false,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "tuebingen",
         "name": "University of Tübingen",
         "city": "Tübingen",
-        "type": "Universität",
-        "founded": "1477",
         "description": "Founded in 1477, a classic German university-town institution strong in medicine and the natural sciences.",
         "history": [
           "The University of Tübingen was founded in 1477 by Count Eberhard VI, following a 1476 bull from Pope Sixtus IV. It initially comprised four faculties — theology, law, medicine, and philosophy — and fourteen professorships in total. Philipp Melanchthon, one of the leading figures of the Reformation, played an important role in shaping the university's academic direction.",
@@ -834,31 +734,20 @@
           "Competitive admission for programs like medicine and psychology",
           "Limited English-taught bachelor's options; most programs are German-taught"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~27,000",
-          "language": "Mostly German, select English-taught master's programs",
-          "tuition": "~€160 semester contribution; non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+          "language": "Mostly German, select English-taught master's programs"
         },
         "popularPrograms": [
           "Medicine",
           "Natural Sciences",
           "Theology"
-        ],
-        "lat": 48.5225,
-        "lng": 9.0561,
-        "tuitionFree": false,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "kit",
         "name": "Karlsruhe Institute of Technology (KIT)",
         "city": "Karlsruhe",
-        "type": "Universität",
-        "founded": "2009",
         "description": "A research-driven technology university carrying the legacy of Germany's first technical higher-education institution.",
         "history": [
           "KIT's roots trace back to the Fridericiana, founded in 1825 as Germany's first \"Technische Hochschule\" — the Universität Karlsruhe. It was here that Heinrich Hertz first experimentally demonstrated electromagnetic waves, and automobile pioneer Carl Benz studied at this historic institution.",
@@ -881,31 +770,20 @@
           "The engineering course load is demanding",
           "The dual university/research-center structure can feel bureaucratically complex"
         ],
-        "badges": [
-          "tu9"
-        ],
         "quickFacts": {
           "students": "~23,000",
-          "language": "German at bachelor's, many English programs at master's",
-          "tuition": "Non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+          "language": "German at bachelor's, many English programs at master's"
         },
         "popularPrograms": [
           "Mechanical Engineering",
           "Computer Science",
           "Physics"
-        ],
-        "lat": 49.0117,
-        "lng": 8.4149,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "freiburg",
         "name": "University of Freiburg",
         "city": "Freiburg im Breisgau",
-        "type": "Universität",
-        "founded": "1457",
         "description": "Founded in 1457, a Habsburg-legacy university strong in philosophy and the social sciences.",
         "history": [
           "The University of Freiburg was established by a charter issued by Albert VI of the House of Habsburg on September 21, 1457, making it the second university founded in Habsburg territory after the University of Vienna. From its founding, the university taught theology, law, and medicine, along with the \"Artes Liberales\" (liberal arts), which formed the basis of today's faculty of humanities.",
@@ -928,29 +806,20 @@
           "Competitive admission for popular humanities and law programs",
           "Fewer large-scale industry partnerships than technical universities"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~24,000",
-          "language": "Mostly German",
-          "tuition": "Non-EU students in Baden-Württemberg may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Medicine",
           "Natural Sciences",
           "Forestry Sciences"
-        ],
-        "lat": 47.9955,
-        "lng": 7.846,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "goettingen",
         "name": "University of Göttingen",
         "city": "Göttingen",
-        "type": "Universität",
-        "founded": "1734",
         "description": "Associated with 45 Nobel laureates, a research university at the heart of the \"city of science,\" Göttingen.",
         "history": [
           "Founded in 1734 by George II, King of Great Britain and Elector of Hanover, the university began lectures that same year, with its official inauguration following in 1737. Established in keeping with Enlightenment ideals, it became one of the pioneering institutions to free scientific research from church censorship.",
@@ -973,29 +842,20 @@
           "Some programs are strongly German-taught and require solid German proficiency",
           "Fewer international corporate employers nearby compared to major cities"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~30,000",
-          "language": "Mostly German, English master's options in the sciences",
-          "tuition": "~€390 semester contribution"
+          "language": "Mostly German, English master's options in the sciences"
         },
         "popularPrograms": [
           "Natural Sciences",
           "Agricultural Sciences",
           "Law"
-        ],
-        "lat": 51.5346,
-        "lng": 9.9349,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "bonn",
         "name": "University of Bonn",
         "city": "Bonn",
-        "type": "Universität",
-        "founded": "1818",
         "description": "Founded in 1818, a well-established Rhineland university housed in a former electoral palace.",
         "history": [
           "Founded on October 18, 1818, by King Frederick William III of Prussia as the Rhine University, the University of Bonn is the direct successor to the Academy of the Prince-Elector of Cologne, founded in 1777. Inspired by Wilhelm von Humboldt's principles of academic freedom and the unity of research and teaching, it quickly became one of Germany's most respected institutions.",
@@ -1018,31 +878,20 @@
           "Competitive admission for law and medicine",
           "A large student body can mean crowded introductory lectures"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~34,000",
-          "language": "Mostly German, many English-taught master's programs",
-          "tuition": "~€310 semester contribution"
+          "language": "Mostly German, many English-taught master's programs"
         },
         "popularPrograms": [
           "Law",
           "Economics",
           "Mathematics"
-        ],
-        "lat": 50.734,
-        "lng": 7.0956,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "koeln",
         "name": "University of Cologne",
         "city": "Cologne",
-        "type": "Universität",
-        "founded": "1388",
         "description": "Founded in 1388, one of Germany's largest traditional universities by enrollment.",
         "history": [
           "Founded in 1388, the University of Cologne was the fourth university established in the Holy Roman Empire, after Prague (1348), Vienna (1365), and Heidelberg (1386). Its founding charter was signed by Pope Urban VI, and teaching began on January 6, 1389.",
@@ -1065,29 +914,20 @@
           "Administrative processes can feel bureaucratic given the university's size",
           "Competitive admission for popular subjects like medicine, law, and psychology"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~48,000 (one of Germany's largest universities)",
-          "language": "Mostly German",
-          "tuition": "~€300 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Law",
           "Economics",
           "Medicine"
-        ],
-        "lat": 50.9279,
-        "lng": 6.9271,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "tuberlin",
         "name": "Technical University of Berlin",
         "city": "Berlin",
-        "type": "Universität",
-        "founded": "1946",
         "description": "A technical university whose roots reach back to 1770, formally re-founded in 1946 to mark its present identity.",
         "history": [
           "TU Berlin's roots trace back to the Königliche Bergakademie (Royal Mining Academy), founded in 1770, the Königliche Bauakademie (Royal Building Academy), founded in 1799, and the Königliche Gewerbeakademie (Royal Trade Academy), founded in 1821. These three institutions merged in 1879 to form the Königlich Technische Hochschule zu Berlin, with the Mining Academy incorporated in 1916.",
@@ -1110,32 +950,20 @@
           "Large classes in popular engineering and computer science programs",
           "Administrative processes can be slow given the university's size"
         ],
-        "badges": [
-          "tu9",
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~33,000",
-          "language": "Many English-taught master's programs in engineering",
-          "tuition": "~€310 semester contribution"
+          "language": "Many English-taught master's programs in engineering"
         },
         "popularPrograms": [
           "Mechanical Engineering",
           "Electrical Engineering",
           "Computer Science"
-        ],
-        "lat": 52.5125,
-        "lng": 13.3269,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "tudresden",
         "name": "TU Dresden (Technische Universität Dresden)",
         "city": "Dresden",
-        "type": "Universität",
-        "founded": "1828",
         "description": "One of Germany's largest technical universities, with a strong research profile in microelectronics, materials science and mechanical engineering.",
         "history": [
           "TU Dresden traces its roots to the Technische Bildungsanstalt Dresden, founded in 1828, and has grown into one of Germany's most comprehensive technical universities.",
@@ -1158,32 +986,20 @@
           "Most bachelor's programs are taught in German; English options are mainly at master's level",
           "Cold winters with short daylight hours"
         ],
-        "badges": [
-          "tu9",
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~30,000",
-          "language": "Mostly German at bachelor's, many English programs at master's",
-          "tuition": "~€260 semester contribution (no tuition fees)"
+          "language": "Mostly German at bachelor's, many English programs at master's"
         },
         "popularPrograms": [
           "Microelectronics",
           "Mechanical Engineering",
           "Materials Science"
-        ],
-        "lat": 51.0272,
-        "lng": 13.7231,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "tudarmstadt",
         "name": "TU Darmstadt (Technische Universität Darmstadt)",
         "city": "Darmstadt",
-        "type": "Universität",
-        "founded": "1877",
         "description": "One of Germany's leading technical universities in computer science, cybersecurity and electrical engineering.",
         "history": [
           "Founded in 1877, TU Darmstadt became the first German university to establish an independent computer science ('Informatik') faculty in 1972, a leading position it has held ever since.",
@@ -1206,31 +1022,20 @@
           "Workload and academic pace in engineering programs are demanding",
           "Strong competition for places in popular computer science programs"
         ],
-        "badges": [
-          "tu9"
-        ],
         "quickFacts": {
           "students": "~26,000",
-          "language": "German at bachelor's; many English programs at master's, especially in computer science and engineering",
-          "tuition": "~€300 semester contribution (no tuition fees)"
+          "language": "German at bachelor's; many English programs at master's, especially in computer science and engineering"
         },
         "popularPrograms": [
           "Computer Science",
           "Cybersecurity",
           "Electrical Engineering"
-        ],
-        "lat": 49.8728,
-        "lng": 8.6512,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "tubraunschweig",
         "name": "TU Braunschweig (Technische Universität Carolo-Wilhelmina zu Braunschweig)",
         "city": "Braunschweig",
-        "type": "Universität",
-        "founded": "1745",
         "description": "Founded in 1745, Germany's oldest technical university, with a strong research tradition in aerospace and automotive engineering.",
         "history": [
           "Founded in 1745 as the 'Collegium Carolinum', TU Braunschweig is regarded as Germany's oldest technical institution of higher education.",
@@ -1253,31 +1058,20 @@
           "Less international name recognition than some other TU9 members",
           "Few English-taught options at bachelor's level"
         ],
-        "badges": [
-          "tu9"
-        ],
         "quickFacts": {
           "students": "~18,000",
-          "language": "Mostly German, select English programs at master's level",
-          "tuition": "~€300 semester contribution (no tuition fees)"
+          "language": "Mostly German, select English programs at master's level"
         },
         "popularPrograms": [
           "Aerospace Engineering",
           "Automotive Engineering",
           "Biotechnology"
-        ],
-        "lat": 52.2733,
-        "lng": 10.5261,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hannover",
         "name": "Leibniz Universität Hannover",
         "city": "Hannover",
-        "type": "Universität",
-        "founded": "1831",
         "description": "Named after the philosopher and mathematician Leibniz, a strong research university in engineering, law and the natural sciences.",
         "history": [
           "Founded in 1831, the university takes its name from Gottfried Wilhelm Leibniz, the renowned philosopher and mathematician who lived in Hannover.",
@@ -1300,31 +1094,20 @@
           "Social and cultural life is more limited than in larger cities",
           "Few English-taught options at bachelor's level"
         ],
-        "badges": [
-          "tu9"
-        ],
         "quickFacts": {
           "students": "~29,000",
-          "language": "Mostly German, English options in engineering at master's level",
-          "tuition": "~€340 semester contribution (no tuition fees)"
+          "language": "Mostly German, English options in engineering at master's level"
         },
         "popularPrograms": [
           "Mechanical Engineering",
           "Photonics",
           "Law"
-        ],
-        "lat": 52.3841,
-        "lng": 9.7161,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "stuttgart",
         "name": "Universität Stuttgart",
         "city": "Stuttgart",
-        "type": "Universität",
-        "founded": "1829",
         "description": "In the heart of Germany's automotive and aerospace engineering region, one of the country's strongest universities in engineering and architecture.",
         "history": [
           "Founded in 1829, Universität Stuttgart became one of Germany's leading engineering institutions in the region regarded as the heart of the German automotive industry.",
@@ -1347,31 +1130,20 @@
           "Stuttgart is one of Germany's relatively expensive cities",
           "Strong competition for places in popular engineering programs"
         ],
-        "badges": [
-          "tu9"
-        ],
         "quickFacts": {
           "students": "~23,000",
-          "language": "German at bachelor's, many English programs at master's",
-          "tuition": "~€200 semester contribution; non-EU students may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+          "language": "German at bachelor's, many English programs at master's"
         },
         "popularPrograms": [
           "Automotive Engineering",
           "Aerospace Engineering",
           "Architecture"
-        ],
-        "lat": 48.7801,
-        "lng": 9.1774,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "konstanz",
         "name": "Universität Konstanz",
         "city": "Konstanz",
-        "type": "Universität",
-        "founded": "1966",
         "description": "A small but elite 'reform university' on Lake Constance, known for its research intensity.",
         "history": [
           "Founded in 1966, Universität Konstanz was designed from the outset as an interdisciplinary, research-focused 'reform university' rather than following the traditional faculty model.",
@@ -1394,31 +1166,20 @@
           "The small-town setting lacks the cultural diversity of a big city",
           "Limited program range may not suit every academic profile"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~11,000",
-          "language": "Mostly German, select English programs at master's level",
-          "tuition": "~€150 semester contribution; non-EU students may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+          "language": "Mostly German, select English programs at master's level"
         },
         "popularPrograms": [
           "Political Science",
           "Chemistry",
           "Computer Science"
-        ],
-        "lat": 47.693,
-        "lng": 9.1859,
-        "tuitionFree": false,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "htwberlin",
         "name": "HTW Berlin (Hochschule für Technik und Wirtschaft Berlin)",
         "city": "Berlin",
-        "type": "Fachhochschule",
-        "founded": "1994",
         "description": "Berlin's largest university of applied sciences, offering practice-oriented education in engineering, business, computer science and design.",
         "history": [
           "Founded in 1994 through the merger of several technical and commercial schools, some dating back to the early 1900s, HTW Berlin quickly grew into Berlin's largest Hochschule (university of applied sciences).",
@@ -1441,29 +1202,20 @@
           "Berlin is a mid-to-high cost-of-living city by German standards",
           "Limited spots in some popular programs"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~15,000",
-          "language": "Mostly German, select English programs in business and engineering",
-          "tuition": "~€310 semester contribution (no tuition fees)"
+          "language": "Mostly German, select English programs in business and engineering"
         },
         "popularPrograms": [
           "Engineering",
           "Business Administration",
           "Design"
-        ],
-        "lat": 52.4809,
-        "lng": 13.5246,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "furtwangen",
         "name": "Hochschule Furtwangen (HFU)",
         "city": "Furtwangen im Schwarzwald",
-        "type": "Fachhochschule",
-        "founded": "1850",
         "description": "A small university of applied sciences in the Black Forest, especially popular with international students in computer science and engineering.",
         "history": [
           "Founded in 1850 as a clockmaking school, HFU gradually evolved into a modern, technology-focused Hochschule, gaining full university status in 1971.",
@@ -1486,29 +1238,20 @@
           "Social life is quieter than in major university cities",
           "Some programs may require moving between the Furtwangen and Schwenningen campuses"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~2,700",
-          "language": "Many English-taught master's programs in computer science and engineering",
-          "tuition": "~€230 semester contribution; non-EU students may face an additional ~€1,500/semester tuition fee (confirm current amount with our advisors)"
+          "language": "Many English-taught master's programs in computer science and engineering"
         },
         "popularPrograms": [
           "Computer Science",
           "Digital Media",
           "Engineering"
-        ],
-        "lat": 48.0511,
-        "lng": 8.2076,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hamburg",
         "name": "Universität Hamburg",
         "city": "Hamburg",
-        "type": "Universität",
-        "founded": "1919",
         "description": "Northern Germany's largest university, an Excellence University renowned worldwide for its climate research.",
         "history": [
           "Founded in 1919, relatively young for a major German university, Universität Hamburg quickly grew into one of the largest in the country.",
@@ -1531,31 +1274,20 @@
           "Large student body means big lecture halls in popular subjects",
           "Competitive admission for medicine"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~44,000",
-          "language": "Mostly German, English options in some master's programs",
-          "tuition": "~€330 semester contribution"
+          "language": "Mostly German, English options in some master's programs"
         },
         "popularPrograms": [
           "Medicine (UKE)",
           "Climate/Earth Sciences",
           "Law"
-        ],
-        "lat": 53.5657,
-        "lng": 9.9847,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "fuberlin",
         "name": "Freie Universität Berlin (FU Berlin)",
         "city": "Berlin",
-        "type": "Universität",
-        "founded": "1948",
         "description": "Founded as a Cold War-era 'free' alternative to Humboldt University, now a research powerhouse in social sciences and humanities.",
         "history": [
           "Founded in 1948 by students and academics who left Humboldt University (then in Soviet-controlled East Berlin) with US support, hence 'Free University.'",
@@ -1577,31 +1309,20 @@
           "Large bureaucracy typical of Berlin's public universities",
           "Berlin's rising cost of living"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~34,000",
-          "language": "Mostly German, growing English master's offering",
-          "tuition": "~€320 semester contribution"
+          "language": "Mostly German, growing English master's offering"
         },
         "popularPrograms": [
           "Political Science",
           "Area Studies",
           "Biology/Life Sciences"
-        ],
-        "lat": 52.4536,
-        "lng": 13.2878,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "erlangen",
         "name": "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)",
         "city": "Erlangen/Nürnberg",
-        "type": "Universität",
-        "founded": "1743",
         "description": "A large research university deeply embedded in Bavaria's Siemens and technology industry, strong in engineering and medicine.",
         "history": [
           "Founded in 1743 in Erlangen, one of Bavaria's oldest universities; merged with Nuremberg's economics and social sciences institutions in 1961 to form FAU.",
@@ -1623,29 +1344,20 @@
           "Large student body in popular subjects",
           "Less international name recognition than Munich institutions"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~39,000",
-          "language": "Mostly German, English options in engineering/medicine master's",
-          "tuition": "~€120 semester contribution"
+          "language": "Mostly German, English options in engineering/medicine master's"
         },
         "popularPrograms": [
           "Electrical Engineering",
           "Medicine",
           "Medical Technology"
-        ],
-        "lat": 49.5985,
-        "lng": 11.0036,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "bochum",
         "name": "Ruhr-Universität Bochum (RUB)",
         "city": "Bochum",
-        "type": "Universität",
-        "founded": "1962",
         "description": "The first new university founded in West Germany after WWII, strong in IT security and engineering in the heart of the Ruhr region.",
         "history": [
           "Founded in 1962 (opened 1965), the first new university founded in West Germany after WWII, built as a large modernist campus.",
@@ -1667,29 +1379,20 @@
           "Large lecture-hall classes in first years",
           "Industrial urban surroundings"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~43,000",
-          "language": "Mostly German, English options in IT security/engineering",
-          "tuition": "~€310 semester contribution"
+          "language": "Mostly German, English options in IT security/engineering"
         },
         "popularPrograms": [
           "IT Security",
           "Mechanical Engineering",
           "East Asian Studies"
-        ],
-        "lat": 51.4487,
-        "lng": 7.2609,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "mainz",
         "name": "Johannes Gutenberg-Universität Mainz (JGU)",
         "city": "Mainz",
-        "type": "Universität",
-        "founded": "1477",
         "description": "Named after the inventor of the printing press, a large university with a strong medical/life sciences profile and ties to BioNTech.",
         "history": [
           "Originally founded in 1477, closed in 1823, and refounded in 1946 as one of the first new universities in the French occupation zone after WWII.",
@@ -1711,29 +1414,20 @@
           "Large student body means big first-year courses",
           "Competitive medicine admissions"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~31,000",
-          "language": "Mostly German, some English master's",
-          "tuition": "~€300 semester contribution"
+          "language": "Mostly German, some English master's"
         },
         "popularPrograms": [
           "Medicine",
           "Biology/Life Sciences",
           "Communication Studies"
-        ],
-        "lat": 49.9931,
-        "lng": 8.238,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "muenster",
         "name": "Westfälische Wilhelms-Universität Münster (WWU)",
         "city": "Münster",
-        "type": "Universität",
-        "founded": "1780",
         "description": "One of Germany's largest universities, strong in law, business and theology, in one of the country's most bicycle-friendly cities.",
         "history": [
           "Founded in 1780, one of Germany's oldest and largest universities today, with a particularly strong law faculty.",
@@ -1755,29 +1449,20 @@
           "Münster is a mid-sized city with fewer big-city amenities",
           "Competitive law admissions"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~43,000",
-          "language": "Mostly German",
-          "tuition": "~€300 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Law",
           "Business Administration",
           "Theology"
-        ],
-        "lat": 51.9616,
-        "lng": 7.6151,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "bremen",
         "name": "Universität Bremen",
         "city": "Bremen",
-        "type": "Universität",
-        "founded": "1971",
         "description": "A young, research-focused university in northern Germany, strong in marine sciences, space technology and materials science.",
         "history": [
           "Founded in 1971 as a reform university with an interdisciplinary approach, similar in spirit to Konstanz and Bielefeld.",
@@ -1799,29 +1484,20 @@
           "Bremen is a smaller city than Hamburg",
           "Limited program range in some fields like medicine"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~19,000",
-          "language": "Mostly German, growing English offering in the sciences",
-          "tuition": "~€330 semester contribution"
+          "language": "Mostly German, growing English offering in the sciences"
         },
         "popularPrograms": [
           "Marine Sciences",
           "Space/Systems Engineering",
           "Computer Science"
-        ],
-        "lat": 53.1079,
-        "lng": 8.8514,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "kiel",
         "name": "Christian-Albrechts-Universität zu Kiel (CAU)",
         "city": "Kiel",
-        "type": "Universität",
-        "founded": "1665",
         "description": "On the Baltic Sea coast, one of Germany's northernmost major universities, strong in marine sciences and climate research.",
         "history": [
           "Founded in 1665, one of Germany's older universities, located on the Baltic Sea coast in Schleswig-Holstein's capital.",
@@ -1843,29 +1519,20 @@
           "Fewer English-taught bachelor's options",
           "Northern location means a longer trip from most international hubs"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~24,000",
-          "language": "Mostly German, English options in marine sciences master's",
-          "tuition": "~€250 semester contribution"
+          "language": "Mostly German, English options in marine sciences master's"
         },
         "popularPrograms": [
           "Marine/Ocean Sciences",
           "Law",
           "Agricultural & Nutrition Sciences"
-        ],
-        "lat": 54.3401,
-        "lng": 10.1225,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "marburg",
         "name": "Philipps-Universität Marburg",
         "city": "Marburg",
-        "type": "Universität",
-        "founded": "1527",
         "description": "The world's first Protestant university, strong in medicine and pharmacy, in a classic German university town.",
         "history": [
           "Founded in 1527 by Landgrave Philip I of Hesse, the world's first university founded as a Protestant institution.",
@@ -1887,29 +1554,20 @@
           "Fewer English-taught programs",
           "More remote location relative to major airports"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~22,000",
-          "language": "Mostly German",
-          "tuition": "~€270 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Medicine",
           "Pharmacy",
           "Humanities"
-        ],
-        "lat": 50.809,
-        "lng": 8.771,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "jena",
         "name": "Friedrich-Schiller-Universität Jena",
         "city": "Jena",
-        "type": "Universität",
-        "founded": "1558",
         "description": "A historic university with deep ties to optics and photonics through Carl Zeiss and Schott, in Thuringia's classic university town.",
         "history": [
           "Founded in 1558, one of Germany's classic universities, historically associated with figures such as Schiller, Hegel and Fichte, who taught there.",
@@ -1930,29 +1588,20 @@
           "Limited program range in some professional fields",
           "Fewer English-taught bachelor's options"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~18,000",
-          "language": "Mostly German, English options in photonics/physics master's",
-          "tuition": "~€155 semester contribution (Thuringia has low/no extra fees)"
+          "language": "Mostly German, English options in photonics/physics master's"
         },
         "popularPrograms": [
           "Physics/Optics & Photonics",
           "Chemistry",
           "Biology"
-        ],
-        "lat": 50.928,
-        "lng": 11.588,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "thkoeln",
         "name": "TH Köln (Technische Hochschule Köln)",
         "city": "Köln",
-        "type": "Fachhochschule",
-        "founded": "1971",
         "description": "Germany's largest university of applied sciences by enrollment, with a broad program range across engineering, social work and media.",
         "history": [
           "Founded in 1971 through the merger of several older technical and commercial schools in Cologne, and renamed Technische Hochschule Köln in 2015 to reflect its scale and research profile.",
@@ -1974,29 +1623,20 @@
           "Multiple campuses can mean more commuting",
           "Less research-university prestige than a Universität"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~27,000",
-          "language": "Mostly German, select English programs in engineering/business",
-          "tuition": "~€290 semester contribution"
+          "language": "Mostly German, select English programs in engineering/business"
         },
         "popularPrograms": [
           "Mechanical Engineering",
           "Social Work",
           "Media Technology"
-        ],
-        "lat": 50.935,
-        "lng": 6.955,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hsmannheim",
         "name": "Hochschule Mannheim",
         "city": "Mannheim",
-        "type": "Fachhochschule",
-        "founded": "1963",
         "description": "A well-established university of applied sciences in Mannheim's industrial district, offering practice-oriented engineering and IT education.",
         "history": [
           "Traces its roots to an engineering school founded in 1897, gaining full Hochschule status in 1963/1971.",
@@ -2018,29 +1658,20 @@
           "Limited humanities/social science offerings",
           "Competitive spots in popular engineering programs"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~5,500",
-          "language": "Mostly German",
-          "tuition": "~€200 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Mechanical Engineering",
           "Information Technology",
           "Biotechnology"
-        ],
-        "lat": 49.4913,
-        "lng": 8.4676,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hskarlsruhe",
         "name": "Hochschule Karlsruhe (HKA)",
         "city": "Karlsruhe",
-        "type": "Fachhochschule",
-        "founded": "1878",
         "description": "One of Germany's oldest universities of applied sciences, strong in engineering and architecture, sharing Karlsruhe with KIT.",
         "history": [
           "Founded in 1878 as a technical trade school, becoming a full Hochschule für Technik in 1971 — one of Germany's oldest universities of applied sciences.",
@@ -2062,29 +1693,20 @@
           "Less internationally known than KIT",
           "Large engineering cohorts in early semesters"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~8,000",
-          "language": "Mostly German",
-          "tuition": "~€155 semester contribution; non-EU students may face an additional ~€1,500/semester fee (confirm with our advisors)"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Mechanical Engineering",
           "Architecture",
           "Information Technology"
-        ],
-        "lat": 49.0089,
-        "lng": 8.3975,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "htwgkonstanz",
         "name": "HTWG Konstanz (Hochschule Konstanz Technik, Wirtschaft und Gestaltung)",
         "city": "Konstanz",
-        "type": "Fachhochschule",
-        "founded": "1906",
         "description": "A practice-oriented Hochschule on Lake Constance combining engineering, business and design — distinct from the research-focused Universität Konstanz.",
         "history": [
           "Traces its roots to 1906, becoming a full Hochschule in 1971; distinct from the nearby, research-focused Universität Konstanz.",
@@ -2106,29 +1728,20 @@
           "Small city with limited big-city amenities",
           "Distinct from (and sometimes confused with) the research-focused Universität Konstanz"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~4,700",
-          "language": "Mostly German, some English design/business programs",
-          "tuition": "~€154 semester contribution; non-EU students may face an additional ~€1,500/semester fee (confirm with our advisors)"
+          "language": "Mostly German, some English design/business programs"
         },
         "popularPrograms": [
           "Mechanical Engineering",
           "Business Administration",
           "Communication Design"
-        ],
-        "lat": 47.6743,
-        "lng": 9.1682,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "thingolstadt",
         "name": "Technische Hochschule Ingolstadt (THI)",
         "city": "Ingolstadt",
-        "type": "Fachhochschule",
-        "founded": "1994",
         "description": "A young, fast-growing Hochschule in Audi's home city, specializing in automotive engineering and artificial intelligence.",
         "history": [
           "Founded in 1994, one of Germany's younger Hochschulen, built specifically to serve Ingolstadt's booming automotive industry.",
@@ -2150,29 +1763,20 @@
           "Ingolstadt is a smaller city with fewer big-city amenities",
           "Limited program range outside engineering/business/AI"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~7,000",
-          "language": "Mostly German, several English-taught master's in AI/engineering",
-          "tuition": "~€130 semester contribution"
+          "language": "Mostly German, several English-taught master's in AI/engineering"
         },
         "popularPrograms": [
           "Automotive Engineering",
           "Artificial Intelligence",
           "Business Informatics"
-        ],
-        "lat": 48.765,
-        "lng": 11.424,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hbrs",
         "name": "Hochschule Bonn-Rhein-Sieg (H-BRS)",
         "city": "Sankt Augustin (near Bonn)",
-        "type": "Fachhochschule",
-        "founded": "1995",
         "description": "A modern, internationally oriented Hochschule near Bonn, strong in computer science and engineering, sharing a campus with Fraunhofer IAIS.",
         "history": [
           "Founded in 1995, a relatively young Hochschule based mainly in Sankt Augustin near Bonn, with additional campuses in Rheinbach and Hennef.",
@@ -2194,29 +1798,20 @@
           "Spread across multiple smaller campuses",
           "Limited humanities/social science range"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~9,000",
-          "language": "Mix of German and English, several fully English master's",
-          "tuition": "~€290 semester contribution"
+          "language": "Mix of German and English, several fully English master's"
         },
         "popularPrograms": [
           "Computer Science",
           "Electrical Engineering",
           "Business Administration"
-        ],
-        "lat": 50.7714,
-        "lng": 7.165,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hda",
         "name": "Hochschule Darmstadt (h_da)",
         "city": "Darmstadt",
-        "type": "Fachhochschule",
-        "founded": "1971",
         "description": "Hesse's largest university of applied sciences, sharing Darmstadt with TU Darmstadt and strong in IT, media and engineering.",
         "history": [
           "Traces its roots to a technical school founded in 1876, gaining Hochschule status in 1971 as Hesse's largest university of applied sciences.",
@@ -2238,29 +1833,20 @@
           "Large cohorts in popular IT programs",
           "Limited natural sciences/humanities range"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~14,000",
-          "language": "Mostly German, some English in media/IT master's",
-          "tuition": "~€290 semester contribution"
+          "language": "Mostly German, some English in media/IT master's"
         },
         "popularPrograms": [
           "Computer Science",
           "Media/Communication",
           "Electrical Engineering"
-        ],
-        "lat": 49.8646,
-        "lng": 8.6321,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "reutlingen",
         "name": "Hochschule Reutlingen",
         "city": "Reutlingen",
-        "type": "Fachhochschule",
-        "founded": "1855",
         "description": "A historic textile-engineering school turned internationally oriented Hochschule, known for its ESB Business School.",
         "history": [
           "Founded in 1855 as a textile engineering school, reflecting the region's historic textile industry; gained Hochschule status in 1971.",
@@ -2282,29 +1868,20 @@
           "Smaller city with limited big-city amenities",
           "Business programs can be competitive to enter"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~6,000",
-          "language": "Mix of German and English, ESB Business School largely English-taught",
-          "tuition": "~€135 semester contribution; non-EU students may face an additional ~€1,500/semester fee (confirm with our advisors)"
+          "language": "Mix of German and English, ESB Business School largely English-taught"
         },
         "popularPrograms": [
           "International Business (ESB)",
           "Textile Engineering",
           "Mechatronics"
-        ],
-        "lat": 48.488,
-        "lng": 9.216,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "fhmuenster",
         "name": "FH Münster (Münster University of Applied Sciences)",
         "city": "Münster",
-        "type": "Fachhochschule",
-        "founded": "1971",
         "description": "A large Hochschule sharing bike-friendly Münster with WWU, offering a broad program range across engineering, design and social work.",
         "history": [
           "Founded in 1971, today one of Germany's larger universities of applied sciences, sharing the bicycle-friendly city of Münster with WWU Münster.",
@@ -2326,29 +1903,20 @@
           "Large cohorts in popular programs",
           "Limited postgraduate research opportunities"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~14,000",
-          "language": "Mostly German",
-          "tuition": "~€290 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Mechanical Engineering",
           "Design",
           "Social Work"
-        ],
-        "lat": 51.9506,
-        "lng": 7.6198,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "osnabrueck",
         "name": "Hochschule Osnabrück",
         "city": "Osnabrück",
-        "type": "Fachhochschule",
-        "founded": "1971",
         "description": "A practice-oriented Hochschule in northwest Germany, distinctively strong in agricultural sciences alongside engineering and business.",
         "history": [
           "Founded in 1971, serving Lower Saxony's Osnabrück region with a practice-oriented curriculum across engineering, agriculture and business.",
@@ -2370,29 +1938,20 @@
           "Limited big-city amenities in Osnabrück",
           "Fewer English-taught programs"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~13,000",
-          "language": "Mostly German",
-          "tuition": "~€300 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Agricultural Sciences",
           "Mechanical Engineering",
           "Business Administration"
-        ],
-        "lat": 52.276,
-        "lng": 8.0442,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "bht",
         "name": "Berliner Hochschule für Technik (BHT)",
         "city": "Berlin",
-        "type": "Fachhochschule",
-        "founded": "1971",
         "description": "One of Berlin's largest technical Hochschulen, offering practice-oriented engineering and computer science education.",
         "history": [
           "Founded in 1971 as Technische Fachhochschule Berlin, later renamed Beuth Hochschule für Technik, and again to Berliner Hochschule für Technik (BHT) in 2021.",
@@ -2414,29 +1973,20 @@
           "Large cohorts in popular engineering/CS programs",
           "Less research-university prestige than TU Berlin in the same city"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~12,000",
-          "language": "Mostly German, some English in computer science master's",
-          "tuition": "~€310 semester contribution"
+          "language": "Mostly German, some English in computer science master's"
         },
         "popularPrograms": [
           "Computer Science",
           "Electrical Engineering",
           "Mathematics"
-        ],
-        "lat": 52.5476,
-        "lng": 13.3572,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "jade",
         "name": "Jade Hochschule",
         "city": "Wilhelmshaven",
-        "type": "Fachhochschule",
-        "founded": "2009",
         "description": "A small Hochschule on the North Sea coast, specializing in maritime engineering and logistics.",
         "history": [
           "Formed in 2009 through the merger of Fachhochschulen in Wilhelmshaven, Oldenburg and Elsfleth, each with roots in the 1970s.",
@@ -2458,29 +2008,20 @@
           "Remote coastal location far from major cities",
           "Smaller international student community"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~5,700",
-          "language": "Mostly German",
-          "tuition": "~€290 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Maritime/Nautical Engineering",
           "Logistics",
           "Mechanical Engineering"
-        ],
-        "lat": 53.5286,
-        "lng": 8.1058,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "duesseldorf",
         "name": "Heinrich-Heine-Universität Düsseldorf (HHU)",
         "city": "Düsseldorf",
-        "type": "Universität",
-        "founded": "1965",
         "description": "Named after Düsseldorf-born poet Heinrich Heine, a university strong in medicine and life sciences.",
         "history": [
           "Traces its roots to a medical academy founded in 1907; gained full university status in 1965 and took the name of Düsseldorf-born poet Heinrich Heine.",
@@ -2501,29 +2042,20 @@
           "Limited program range outside the sciences",
           "High cost of living in a major city"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~34,000",
-          "language": "Mostly German",
-          "tuition": "~€310 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Medicine",
           "Biology/Life Sciences",
           "Law"
-        ],
-        "lat": 51.19,
-        "lng": 6.7947,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "ude",
         "name": "Universität Duisburg-Essen (UDE)",
         "city": "Duisburg/Essen",
-        "type": "Universität",
-        "founded": "2003",
         "description": "Formed from the merger of the Duisburg and Essen universities, one of the Ruhr region's largest universities.",
         "history": [
           "Founded in 2003 through the merger of the universities of Duisburg and Essen; a member of the University Alliance Ruhr alongside TU Dortmund.",
@@ -2544,29 +2076,20 @@
           "Large student body means crowded courses",
           "The Ruhr region may lack a classic university-town feel"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~42,000",
-          "language": "Mostly German, some English programs in engineering",
-          "tuition": "~€320 semester contribution"
+          "language": "Mostly German, some English programs in engineering"
         },
         "popularPrograms": [
           "Engineering",
           "Medicine",
           "Social Sciences"
-        ],
-        "lat": 51.4587,
-        "lng": 7.0122,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "tudortmund",
         "name": "Technische Universität Dortmund",
         "city": "Dortmund",
-        "type": "Universität",
-        "founded": "1968",
         "description": "A Ruhr-region technical university strong in statistics and physics.",
         "history": [
           "Founded in 1968, TU Dortmund is known for a dedicated Statistics faculty, rare among German universities.",
@@ -2587,29 +2110,20 @@
           "Crowded cohorts in popular engineering programs",
           "More limited humanities options"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~32,000",
-          "language": "Mostly German, some English in statistics/engineering",
-          "tuition": "~€310 semester contribution"
+          "language": "Mostly German, some English in statistics/engineering"
         },
         "popularPrograms": [
           "Statistics",
           "Physics",
           "Mechanical Engineering"
-        ],
-        "lat": 51.4925,
-        "lng": 7.416,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "bielefeld",
         "name": "Universität Bielefeld",
         "city": "Bielefeld",
-        "type": "Universität",
-        "founded": "1969",
         "description": "A globally influential center for sociology, with all its faculties housed in one unusual, interconnected building.",
         "history": [
           "Founded in 1969 as an interdisciplinary 'reform university' similar to Konstanz and Bremen, known for housing all its faculties in a single, vast interconnected building.",
@@ -2630,29 +2144,20 @@
           "Bielefeld has limited big-city amenities",
           "No programs in fields such as engineering"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~24,000",
-          "language": "Mostly German, some English master's in social sciences",
-          "tuition": "~€300 semester contribution"
+          "language": "Mostly German, some English master's in social sciences"
         },
         "popularPrograms": [
           "Sociology",
           "History",
           "Biology"
-        ],
-        "lat": 52.0389,
-        "lng": 8.4951,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "paderborn",
         "name": "Universität Paderborn",
         "city": "Paderborn",
-        "type": "Universität",
-        "founded": "1972",
         "description": "Known as the 'University of the Information Society', strong in computer science and information technology.",
         "history": [
           "Founded in 1972, the university hosts the Heinz Nixdorf Institute and is known as the 'University of the Information Society' for its strong IT focus.",
@@ -2673,29 +2178,20 @@
           "No programs in fields such as medicine",
           "Less international name recognition"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~20,000",
-          "language": "Mostly German, some English master's in computer science",
-          "tuition": "~€280 semester contribution"
+          "language": "Mostly German, some English master's in computer science"
         },
         "popularPrograms": [
           "Computer Science",
           "Mechanical Engineering",
           "Business Administration"
-        ],
-        "lat": 51.7189,
-        "lng": 8.7719,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "siegen",
         "name": "Universität Siegen",
         "city": "Siegen",
-        "type": "Universität",
-        "founded": "1972",
         "description": "In the Siegerland industrial region, strong in social sciences, media studies and engineering.",
         "history": [
           "Founded in 1972, the university has an unusual campus (Unteres Schloss/Paul-Bonatz-Campus) built over a former town square in the heart of the city.",
@@ -2716,29 +2212,20 @@
           "Limited big-city amenities",
           "Fewer English-taught programs"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~16,000",
-          "language": "Mostly German",
-          "tuition": "~€290 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Social Sciences",
           "Media Studies",
           "Mechanical Engineering"
-        ],
-        "lat": 50.8747,
-        "lng": 8.0247,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "wuppertal",
         "name": "Bergische Universität Wuppertal",
         "city": "Wuppertal",
-        "type": "Universität",
-        "founded": "1972",
         "description": "In the Bergisches Land region, strong in architecture, safety engineering and physics.",
         "history": [
           "Founded in 1972 as 'Gesamthochschule Wuppertal', taking its current name in 2003.",
@@ -2759,29 +2246,20 @@
           "Crowded cohorts in some programs",
           "Less international name recognition"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~24,000",
-          "language": "Mostly German",
-          "tuition": "~€300 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Architecture",
           "Safety Engineering",
           "Physics"
-        ],
-        "lat": 51.2447,
-        "lng": 7.1519,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "luebeck",
         "name": "Universität zu Lübeck",
         "city": "Lübeck",
-        "type": "Universität",
-        "founded": "1964",
         "description": "A small but highly focused university combining medicine and medical informatics.",
         "history": [
           "Founded in 1964 as a medical academy, gaining full university status in 1985.",
@@ -2802,29 +2280,20 @@
           "Lübeck is a small city",
           "Very high competition for medicine places"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~5,000",
-          "language": "Mostly German",
-          "tuition": "~€220 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Medicine",
           "Medical Informatics",
           "Molecular Life Sciences"
-        ],
-        "lat": 53.8655,
-        "lng": 10.7085,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "rostock",
         "name": "Universität Rostock",
         "city": "Rostock",
-        "type": "Universität",
-        "founded": "1419",
         "description": "Founded in 1419, one of the oldest universities in Northern Europe and the Baltic region.",
         "history": [
           "Founded in 1419, Universität Rostock is the oldest university in the Baltic region and in the continuously German-speaking area.",
@@ -2845,29 +2314,20 @@
           "Limited big-city amenities",
           "Fewer English-taught programs"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~13,000",
-          "language": "Mostly German",
-          "tuition": "~€230 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Maritime Engineering",
           "Medicine",
           "Agricultural Sciences"
-        ],
-        "lat": 54.0865,
-        "lng": 12.1345,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "greifswald",
         "name": "Universität Greifswald",
         "city": "Greifswald",
-        "type": "Universität",
-        "founded": "1456",
         "description": "Founded in 1456, one of Germany's oldest universities, in a small historic town on the Baltic coast.",
         "history": [
           "Founded in 1456, Universität Greifswald is one of Germany's oldest universities and deeply intertwined with the town's identity.",
@@ -2888,29 +2348,20 @@
           "A limited international student community",
           "Fewer English-taught programs"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~10,000",
-          "language": "Mostly German",
-          "tuition": "~€220 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Medicine",
           "Theology",
           "Biology"
-        ],
-        "lat": 54.0947,
-        "lng": 13.3877,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "magdeburg",
         "name": "Otto-von-Guericke-Universität Magdeburg",
         "city": "Magdeburg",
-        "type": "Universität",
-        "founded": "1993",
         "description": "Named after physicist Otto von Guericke, inventor of the vacuum pump, strong in engineering and neuroscience.",
         "history": [
           "Founded in 1993 through the merger of several technical and medical institutions after German reunification; named after physicist and Magdeburg mayor Otto von Guericke.",
@@ -2931,29 +2382,20 @@
           "Limited big-city cultural amenities",
           "Fewer English-taught bachelor's options"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~14,000",
-          "language": "Mostly German, some English master's in neuroscience",
-          "tuition": "~€230 semester contribution"
+          "language": "Mostly German, some English master's in neuroscience"
         },
         "popularPrograms": [
           "Engineering",
           "Neuroscience",
           "Medicine"
-        ],
-        "lat": 52.1397,
-        "lng": 11.6461,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "halle",
         "name": "Martin-Luther-Universität Halle-Wittenberg (MLU)",
         "city": "Halle (Saale)",
-        "type": "Universität",
-        "founded": "1502",
         "description": "Founded in the birthplace of the Reformation, Wittenberg, strong in the humanities and agricultural sciences.",
         "history": [
           "Founded in Wittenberg in 1502 — the city where Martin Luther taught — and merged in 1817 with the University of Halle, founded in 1694.",
@@ -2974,29 +2416,20 @@
           "Limited big-city amenities",
           "Fewer English-taught programs"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~18,000",
-          "language": "Mostly German",
-          "tuition": "~€230 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Humanities",
           "Agricultural Sciences",
           "Natural Sciences"
-        ],
-        "lat": 51.4832,
-        "lng": 11.9694,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "leipzig",
         "name": "Universität Leipzig",
         "city": "Leipzig",
-        "type": "Universität",
-        "founded": "1409",
         "description": "Founded in 1409, one of the world's oldest continuously operating universities, alma mater of Goethe and Nietzsche.",
         "history": [
           "Founded in 1409, Universität Leipzig is one of the world's oldest continuously operating universities; Goethe, Nietzsche and Leibniz studied or taught here.",
@@ -3017,29 +2450,20 @@
           "Large student numbers mean crowded courses",
           "Relatively fewer English-taught programs in eastern Germany"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~30,000",
-          "language": "Mostly German, some English master's programs",
-          "tuition": "~€200 semester contribution"
+          "language": "Mostly German, some English master's programs"
         },
         "popularPrograms": [
           "Law",
           "Medicine",
           "Sports Science"
-        ],
-        "lat": 51.3397,
-        "lng": 12.3776,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "tuchemnitz",
         "name": "Technische Universität Chemnitz",
         "city": "Chemnitz",
-        "type": "Universität",
-        "founded": "1836",
         "description": "In Saxony's industrial tradition, strong in production engineering and lightweight materials.",
         "history": [
           "Founded in 1836 as a trade school, gaining university status in 1986 and the name 'Technische Universität' in 1993.",
@@ -3060,29 +2484,20 @@
           "A limited international student community",
           "Fewer English-taught bachelor's options"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~10,000",
-          "language": "Mostly German, some English master's in engineering",
-          "tuition": "~€200 semester contribution"
+          "language": "Mostly German, some English master's in engineering"
         },
         "popularPrograms": [
           "Production Engineering",
           "Materials Science",
           "Computer Science"
-        ],
-        "lat": 50.8113,
-        "lng": 12.9226,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "potsdam",
         "name": "Universität Potsdam",
         "city": "Potsdam",
-        "type": "Universität",
-        "founded": "1991",
         "description": "Near Berlin, with a campus on the grounds of Sanssouci Palace, strong in political science and linguistics.",
         "history": [
           "Founded in 1991, shortly after German reunification; one of its campuses is located at the historic Neues Palais in Sanssouci Park.",
@@ -3103,29 +2518,20 @@
           "Potsdam can be overshadowed by Berlin",
           "Limited engineering/natural sciences options"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~21,000",
-          "language": "Mostly German, some English master's programs",
-          "tuition": "~€300 semester contribution"
+          "language": "Mostly German, some English master's programs"
         },
         "popularPrograms": [
           "Political Science",
           "Linguistics",
           "Public Administration"
-        ],
-        "lat": 52.4009,
-        "lng": 13.0089,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "viadrina",
         "name": "Europa-Universität Viadrina Frankfurt (Oder)",
         "city": "Frankfurt (Oder)",
-        "type": "Universität",
-        "founded": "1506",
         "description": "On the Polish border, a small university dedicated to European integration, strong in law and cultural studies.",
         "history": [
           "Founded in 1506, closed in 1811, and reopened in 1991 in the border town of Frankfurt (Oder) with a profile explicitly focused on European/German-Polish integration.",
@@ -3146,29 +2552,20 @@
           "A narrow program range (mainly law/economics/cultural studies)",
           "Less name recognition than Berlin"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~5,000",
-          "language": "Mix of German, English and Polish",
-          "tuition": "~€150 semester contribution"
+          "language": "Mix of German, English and Polish"
         },
         "popularPrograms": [
           "European Law",
           "Economics",
           "Cultural Studies"
-        ],
-        "lat": 52.3436,
-        "lng": 14.5507,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "btucottbus",
         "name": "Brandenburgische Technische Universität Cottbus-Senftenberg (BTU)",
         "city": "Cottbus",
-        "type": "Universität",
-        "founded": "1991",
         "description": "In the Lusatia coal region's energy transition, strong in environmental and energy engineering.",
         "history": [
           "Founded in Cottbus in 1991; merged with the Hochschule Lausitz in Senftenberg in 2013 to form its current shape.",
@@ -3189,29 +2586,20 @@
           "A limited international student community",
           "Split across two campuses (Cottbus/Senftenberg)"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~7,000",
-          "language": "Mostly German, some English master's programs",
-          "tuition": "~€200 semester contribution"
+          "language": "Mostly German, some English master's programs"
         },
         "popularPrograms": [
           "Environmental Engineering",
           "Energy Technology",
           "Architecture"
-        ],
-        "lat": 51.7626,
-        "lng": 14.3289,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "wuerzburg",
         "name": "Julius-Maximilians-Universität Würzburg (JMU)",
         "city": "Würzburg",
-        "type": "Universität",
-        "founded": "1402",
         "description": "Where X-ray discoverer Wilhelm Röntgen won a Nobel Prize, a university with a deep tradition in medicine and physics.",
         "history": [
           "Founded in 1402 and reopened in 1582, JMU is one of Germany's oldest universities.",
@@ -3232,29 +2620,20 @@
           "A mid-sized city with limited big-city amenities",
           "Fewer English-taught bachelor's options"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~28,000",
-          "language": "Mostly German, some English master's in medicine/physics",
-          "tuition": "~€130 semester contribution"
+          "language": "Mostly German, some English master's in medicine/physics"
         },
         "popularPrograms": [
           "Medicine",
           "Physics",
           "Psychology"
-        ],
-        "lat": 49.7896,
-        "lng": 9.9331,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "regensburg",
         "name": "Universität Regensburg",
         "city": "Regensburg",
-        "type": "Universität",
-        "founded": "1962",
         "description": "On the Danube, with a compact single campus, a Bavarian 'reform university' strong in chemistry and law.",
         "history": [
           "Founded in 1962 as one of Bavaria's post-war 'reform universities', Regensburg unites all its faculties on a single compact campus.",
@@ -3275,29 +2654,20 @@
           "Limited big-city nightlife",
           "Fewer English-taught bachelor's options"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~20,000",
-          "language": "Mostly German, some English master's programs",
-          "tuition": "~€150 semester contribution"
+          "language": "Mostly German, some English master's programs"
         },
         "popularPrograms": [
           "Chemistry",
           "Law",
           "Eastern European Studies"
-        ],
-        "lat": 49.0177,
-        "lng": 12.0966,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "passau",
         "name": "Universität Passau",
         "city": "Passau",
-        "type": "Universität",
-        "founded": "1978",
         "description": "In a historic city where three rivers meet, a small, internationally oriented university strong in law, economics and computer science.",
         "history": [
           "Founded in 1978 and housed in a former monastery (Nikolakloster), Universität Passau sits in a historic city where the Danube, Inn and Ilz rivers converge.",
@@ -3318,29 +2688,20 @@
           "Competition in popular law/economics programs",
           "A somewhat remote location near the Austrian border"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~11,000",
-          "language": "Mostly German, some English master's in law/economics",
-          "tuition": "~€130 semester contribution"
+          "language": "Mostly German, some English master's in law/economics"
         },
         "popularPrograms": [
           "Law",
           "Economics",
           "Computer Science"
-        ],
-        "lat": 48.5733,
-        "lng": 13.461,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "bayreuth",
         "name": "Universität Bayreuth",
         "city": "Bayreuth",
-        "type": "Universität",
-        "founded": "1975",
         "description": "A Bavarian university in Franconia, globally recognized for sports science and African studies.",
         "history": [
           "Founded in 1975, Universität Bayreuth has a strong program in sports science and biomedical research.",
@@ -3361,29 +2722,20 @@
           "Limited engineering/natural sciences options",
           "Fewer English-taught bachelor's options"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~13,000",
-          "language": "Mostly German, some English in African studies",
-          "tuition": "~€140 semester contribution"
+          "language": "Mostly German, some English in African studies"
         },
         "popularPrograms": [
           "Sports Science",
           "African Studies",
           "Law and Business"
-        ],
-        "lat": 49.9291,
-        "lng": 11.5888,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "augsburg",
         "name": "Universität Augsburg",
         "city": "Augsburg",
-        "type": "Universität",
-        "founded": "1970",
         "description": "Near Munich, strong in law and economics, with a growing computer science campus.",
         "history": [
           "Founded in 1970, Universität Augsburg maintains a strong tradition in law, economics and teacher education.",
@@ -3404,29 +2756,20 @@
           "Augsburg can be overshadowed by Munich",
           "Fewer English-taught bachelor's options"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~20,000",
-          "language": "Mostly German, some English in computer science",
-          "tuition": "~€140 semester contribution"
+          "language": "Mostly German, some English in computer science"
         },
         "popularPrograms": [
           "Law",
           "Economics",
           "Computer Science"
-        ],
-        "lat": 48.3348,
-        "lng": 10.8979,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "bamberg",
         "name": "Otto-Friedrich-Universität Bamberg",
         "city": "Bamberg",
-        "type": "Universität",
-        "founded": "1647",
         "description": "In a UNESCO World Heritage old town, strong in the humanities and sociological research.",
         "history": [
           "Founded in 1647 and reorganized as a modern university in 1972, Bamberg's campus is spread across its UNESCO World Heritage-listed old town.",
@@ -3447,29 +2790,20 @@
           "No programs in fields such as engineering/natural sciences",
           "Fewer English-taught programs"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~13,000",
-          "language": "Mostly German",
-          "tuition": "~€140 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Sociology",
           "Humanities",
           "Heritage Conservation"
-        ],
-        "lat": 49.8971,
-        "lng": 10.8909,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "kueichstaett",
         "name": "Katholische Universität Eichstätt-Ingolstadt (KU)",
         "city": "Eichstätt/Ingolstadt",
-        "type": "Universität",
-        "founded": "1980",
         "description": "Germany's only fully state-recognized Catholic university, strong in theology, education and (via its Ingolstadt campus) business.",
         "history": [
           "Founded in 1980, KU is Germany's only fully state-recognized Catholic university.",
@@ -3490,29 +2824,20 @@
           "A limited program range (no engineering/medicine)",
           "Small-town amenities"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~5,000",
-          "language": "Mostly German, some English programs in business",
-          "tuition": "~€120 semester contribution"
+          "language": "Mostly German, some English programs in business"
         },
         "popularPrograms": [
           "Business (WFI)",
           "Theology",
           "Education"
-        ],
-        "lat": 48.8965,
-        "lng": 11.1858,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hohenheim",
         "name": "Universität Hohenheim",
         "city": "Stuttgart (Hohenheim)",
-        "type": "Universität",
-        "founded": "1818",
         "description": "Housed in a baroque palace, Germany's leading specialist university in agricultural and nutritional sciences.",
         "history": [
           "Founded in 1818 as an agricultural academy, Universität Hohenheim is located at the baroque Schloss Hohenheim in Stuttgart's Hohenheim district.",
@@ -3533,29 +2858,20 @@
           "A limited program range (no engineering/medicine)",
           "Sometimes confused with Universität Stuttgart"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~10,000",
-          "language": "Mostly German, some English master's programs",
-          "tuition": "~€170 semester contribution; non-EU students may face an additional ~€1,500/semester fee (confirm with our advisors)"
+          "language": "Mostly German, some English master's programs"
         },
         "popularPrograms": [
           "Agricultural Sciences",
           "Nutritional Sciences",
           "Business Administration"
-        ],
-        "lat": 48.7136,
-        "lng": 9.2117,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "ulm",
         "name": "Universität Ulm",
         "city": "Ulm",
-        "type": "Universität",
-        "founded": "1967",
         "description": "On the Danube, a compact university strong in medicine, mathematics/actuarial science and engineering.",
         "history": [
           "Founded in 1967, Universität Ulm teaches on a single, compact campus known as 'Oberer Eselsberg'.",
@@ -3576,29 +2892,20 @@
           "Ulm is a mid-sized city",
           "High competition for medicine places"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~10,000",
-          "language": "Mostly German, some English master's in math/engineering",
-          "tuition": "~€170 semester contribution; non-EU students may face an additional ~€1,500/semester fee (confirm with our advisors)"
+          "language": "Mostly German, some English master's in math/engineering"
         },
         "popularPrograms": [
           "Medicine",
           "Mathematics/Actuarial Science",
           "Engineering"
-        ],
-        "lat": 48.4225,
-        "lng": 9.9575,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "saarland",
         "name": "Universität des Saarlandes",
         "city": "Saarbrücken",
-        "type": "Universität",
-        "founded": "1948",
         "description": "On the French border, a university renowned across Europe for computer science and artificial intelligence.",
         "history": [
           "Founded in 1948 in the then French-administered Saarland, with a deliberate emphasis on German-French academic cooperation.",
@@ -3619,29 +2926,20 @@
           "High competition in popular computer science programs",
           "A somewhat isolated location in Germany's smallest state"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~17,000",
-          "language": "Mostly German, many English-taught programs in computer science",
-          "tuition": "~€285 semester contribution"
+          "language": "Mostly German, many English-taught programs in computer science"
         },
         "popularPrograms": [
           "Computer Science",
           "Artificial Intelligence",
           "Law"
-        ],
-        "lat": 49.2542,
-        "lng": 7.0428,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "rptu",
         "name": "RPTU Kaiserslautern-Landau",
         "city": "Kaiserslautern/Landau",
-        "type": "Universität",
-        "founded": "1970",
         "description": "Formed in 2023, a two-city university specializing in technology in Kaiserslautern and education/humanities in Landau.",
         "history": [
           "Formed in 2023 through the merger of TU Kaiserslautern (founded in 1970) and the Landau campus of the University of Koblenz-Landau.",
@@ -3662,29 +2960,20 @@
           "Both cities are small-to-mid-sized",
           "Institutional identity still settling after the recent merger"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~17,000",
-          "language": "Mostly German, many English-taught programs in computer science",
-          "tuition": "~€270 semester contribution"
+          "language": "Mostly German, many English-taught programs in computer science"
         },
         "popularPrograms": [
           "Computer Science",
           "Education",
           "Engineering"
-        ],
-        "lat": 49.4278,
-        "lng": 7.7611,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "fernunihagen",
         "name": "FernUniversität in Hagen",
         "city": "Hagen",
-        "type": "Universität",
-        "founded": "1974",
         "description": "Germany's only public distance-learning university, flexible for working professionals and the country's largest by enrollment.",
         "history": [
           "Founded in 1974, FernUniversität is Germany's only publicly funded distance-learning university and the country's largest university by enrollment.",
@@ -3705,29 +2994,20 @@
           "Requires strong self-discipline and time management",
           "German proficiency is required for most programs"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~60,000 (distance learning)",
-          "language": "Mostly German",
-          "tuition": "~€130 per semester (plus per-course fees)"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Law",
           "Business Administration",
           "Psychology"
-        ],
-        "lat": 51.3742,
-        "lng": 7.4886,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "oldenburg",
         "name": "Carl von Ossietzky Universität Oldenburg",
         "city": "Oldenburg",
-        "type": "Universität",
-        "founded": "1974",
         "description": "Close to the North Sea, one of Germany's leading centers for wind energy research.",
         "history": [
           "Founded in 1974, the university is named after Nobel Peace Prize-winning journalist Carl von Ossietzky.",
@@ -3748,29 +3028,20 @@
           "A limited medicine/engineering program range",
           "Less international name recognition"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~15,000",
-          "language": "Mostly German, some English in energy research",
-          "tuition": "~€280 semester contribution"
+          "language": "Mostly German, some English in energy research"
         },
         "popularPrograms": [
           "Wind/Renewable Energy",
           "Education",
           "Musicology"
-        ],
-        "lat": 53.1435,
-        "lng": 8.1657,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hildesheim",
         "name": "Universität Hildesheim",
         "city": "Hildesheim",
-        "type": "Universität",
-        "founded": "1978",
         "description": "A small but focused university specializing in the humanities, cultural studies and translation studies.",
         "history": [
           "Founded in 1978, Universität Hildesheim specializes in the humanities, cultural/media studies and psychology.",
@@ -3791,29 +3062,20 @@
           "Hildesheim is a small town",
           "No engineering/natural sciences programs"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~8,000",
-          "language": "Mostly German, some English in translation studies",
-          "tuition": "~€280 semester contribution"
+          "language": "Mostly German, some English in translation studies"
         },
         "popularPrograms": [
           "Translation Studies",
           "Cultural/Media Studies",
           "Psychology"
-        ],
-        "lat": 52.1495,
-        "lng": 9.9563,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "leuphana",
         "name": "Leuphana Universität Lüneburg",
         "city": "Lüneburg",
-        "type": "Universität",
-        "founded": "1946",
         "description": "Known for its striking Daniel Libeskind-designed main building, an innovative university in sustainability science and business.",
         "history": [
           "Traces its roots to a teacher training college founded in 1946; rebranded as 'Leuphana' in 2007 and launched the interdisciplinary 'Leuphana Semester' shared by all first-year students.",
@@ -3834,29 +3096,20 @@
           "Lüneburg is a mid-sized city",
           "Limited engineering/medicine options"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~10,000",
-          "language": "Mostly German, some English in sustainability/business",
-          "tuition": "~€280 semester contribution"
+          "language": "Mostly German, some English in sustainability/business"
         },
         "popularPrograms": [
           "Sustainability Science",
           "Business Administration",
           "Education"
-        ],
-        "lat": 53.2405,
-        "lng": 10.4057,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "tuclausthal",
         "name": "Technische Universität Clausthal",
         "city": "Clausthal-Zellerfeld",
-        "type": "Universität",
-        "founded": "1775",
         "description": "In the Harz mountains, one of Germany's oldest technical universities, specializing in raw materials and mining engineering.",
         "history": [
           "Founded in 1775 as a mining academy (Bergakademie), TU Clausthal is one of Germany's oldest technical institutions of higher education.",
@@ -3877,29 +3130,20 @@
           "A very narrow program range",
           "Cold winters and difficult access at times"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~3,500",
-          "language": "Mostly German, some English master's programs",
-          "tuition": "~€250 semester contribution"
+          "language": "Mostly German, some English master's programs"
         },
         "popularPrograms": [
           "Mining Engineering",
           "Materials Science",
           "Energy Technology"
-        ],
-        "lat": 51.8047,
-        "lng": 10.3358,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "vechta",
         "name": "Universität Vechta",
         "city": "Vechta",
-        "type": "Universität",
-        "founded": "1830",
         "description": "One of Germany's smallest public universities, specializing in education, social work and gerontology.",
         "history": [
           "Tracing its roots to a teacher-training institution founded in 1830, Universität Vechta gained university status in 1995.",
@@ -3920,22 +3164,15 @@
           "Vechta is a very small town with no big-city amenities",
           "A limited international student community"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~5,500",
-          "language": "Mostly German",
-          "tuition": "~€280 semester contribution"
+          "language": "Mostly German"
         },
         "popularPrograms": [
           "Education",
           "Social Work",
           "Gerontology"
-        ],
-        "lat": 52.728,
-        "lng": 8.283,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       }
     ],
     "cta": {

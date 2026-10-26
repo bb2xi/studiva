@@ -2,14 +2,36 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Bookmark } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
+import { useFavorites } from "@/lib/discovery/store";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { Button } from "./Button";
 import { Label } from "./Typography";
 
+function ShortlistLink({ label, onClick }: { label: string; onClick?: () => void }) {
+  const count = useFavorites().length;
+  return (
+    <Link
+      href="/shortlist"
+      onClick={onClick}
+      aria-label={count > 0 ? `${label} (${count})` : label}
+      title={label}
+      className="relative flex h-10 w-10 items-center justify-center rounded-sm text-foreground-secondary transition-colors hover:text-forest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
+    >
+      <Bookmark size={20} />
+      {count > 0 && (
+        <span className="absolute -right-0.5 -top-0.5 flex h-5 min-w-5 items-center justify-center rounded-full bg-forest px-1 text-[11px] font-semibold text-white">
+          {count}
+        </span>
+      )}
+    </Link>
+  );
+}
+
 export default function Navbar() {
   const t = useTranslations("nav");
+  const shortlistLabel = useTranslations("discovery.nav")("shortlist");
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const firstMobileLinkRef = useRef<HTMLAnchorElement>(null);
@@ -50,7 +72,7 @@ export default function Navbar() {
           <span className="font-display text-xl font-medium tracking-tight">Studiva</span>
         </Link>
 
-        <div className="hidden items-center gap-7 md:flex">
+        <div className="hidden items-center gap-6 lg:flex">
           {links.map((link) => {
             const active = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
             return (
@@ -75,17 +97,20 @@ export default function Navbar() {
           })}
         </div>
 
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center gap-3 lg:flex">
+          <ShortlistLink label={shortlistLabel} />
           <LanguageSwitcher />
           <Button href="/contact" variant="primary">
             {t("cta")}
           </Button>
         </div>
 
+        <div className="flex items-center gap-1 lg:hidden">
+          <ShortlistLink label={shortlistLabel} />
         <button
           ref={toggleRef}
           type="button"
-          className="flex items-center justify-center rounded-sm p-2.5 text-foreground-secondary transition-colors hover:text-forest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 md:hidden"
+          className="flex items-center justify-center rounded-sm p-2.5 text-foreground-secondary transition-colors hover:text-forest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 lg:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Menüyü kapat" : "Menüyü aç"}
           aria-expanded={open}
@@ -93,10 +118,11 @@ export default function Navbar() {
         >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
+        </div>
       </nav>
 
       {open && (
-        <div id="mobile-menu" className="border-t border-border bg-surface px-4 pb-6 pt-2 md:hidden">
+        <div id="mobile-menu" className="border-t border-border bg-surface px-4 pb-6 pt-2 lg:hidden">
           <div className="flex flex-col gap-1">
             {links.map((link, i) => (
               <Link

@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight, CalendarDays, Clock } from "lucide-react";
@@ -39,7 +40,7 @@ export async function generateMetadata({
   const { locale, slug } = await params;
   const post = await getPost(locale, slug);
   if (!post) return {};
-  return { title: `${post.title} | Studiva Blog`, description: post.excerpt };
+  return pageMetadata({ locale, path: `/blog/${slug}`, title: `${post.title} | Studiva Blog`, description: post.excerpt });
 }
 
 export default async function BlogPostPage({

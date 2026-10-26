@@ -165,19 +165,32 @@
       "title": "Bilmeniz Gerekenler",
       "subtitle": "Başvuru sürecinde en çok sorulan konuları sizin için özetledik.",
       "guidesLinkText": "Tüm yazıları gör",
-      "guideSlugs": ["exzellenzuniversitat-ve-tu9-nedir", "dual-studium-nedir", "almanya-ogrenci-vizesi-basvuru-sureci"]
+      "guideSlugs": [
+        "exzellenzuniversitat-ve-tu9-nedir",
+        "dual-studium-nedir",
+        "almanya-ogrenci-vizesi-basvuru-sureci"
+      ]
     },
     "faqTeaser": {
       "title": "Sorularınız mı var?",
       "subtitle": "Başvuru sürecinde en çok karşılaştığımız sorulardan birkaçı.",
       "linkText": "Tüm soruları gör",
-      "indices": [4, 7, 1, 5]
+      "indices": [
+        4,
+        7,
+        1,
+        5
+      ]
     },
     "cta": {
       "title": "Yurt Dışı Eğitim Yolculuğunuza Bugün Başlayın",
       "subtitle": "15 dakikalık ücretsiz görüşmede size özel bir yol haritası çıkaralım.",
       "button": "Ücretsiz Ön Görüşme Al",
-      "steps": ["15 dakikalık ücretsiz görüşme", "Yazılı paket fiyatı ve planı", "Danışmanlık sürecine başlıyoruz"]
+      "steps": [
+        "15 dakikalık ücretsiz görüşme",
+        "Yazılı paket fiyatı ve planı",
+        "Danışmanlık sürecine başlıyoruz"
+      ]
     }
   },
   "services": {
@@ -303,8 +316,6 @@
         "slug": "tum",
         "name": "TU München (TUM)",
         "city": "München",
-        "type": "Universität",
-        "founded": "1868",
         "description": "Mühendislik, bilgisayar bilimleri ve doğa bilimlerinde Almanya'nın en iyi teknik üniversitelerinden biri.",
         "history": [
           "TUM, 1868 yılında Bavyera Kralı II. Ludwig tarafından Polytechnische Schule München adıyla kuruldu. Zamanla adı birkaç kez değişti; 1901'de Technische Hochschule München, 1970'te ise bugünkü adı olan Technische Universität München'e dönüştü.",
@@ -327,32 +338,20 @@
           "Münih, Almanya'nın en pahalı şehirlerinden biri",
           "Popüler derslerde kalabalık amfiler"
         ],
-        "badges": [
-          "tu9",
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~50.000",
-          "language": "Ağırlıklı İngilizce (yüksek lisansta), lisansta kısmen Almanca",
-          "tuition": "Dönemlik ~150-170 € katkı payı (okul ücreti yok)"
+          "language": "Ağırlıklı İngilizce (yüksek lisansta), lisansta kısmen Almanca"
         },
         "popularPrograms": [
           "Makine/Elektrik Mühendisliği",
           "Bilgisayar Bilimi",
           "Tıp"
-        ],
-        "lat": 48.1497,
-        "lng": 11.5678,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "lmu",
         "name": "LMU München",
         "city": "München",
-        "type": "Universität",
-        "founded": "1472",
         "description": "Tıp, hukuk ve sosyal bilimlerde güçlü, Almanya'nın en köklü üniversitelerinden.",
         "history": [
           "LMU, 1472'de Bavyera Dükü IX. Ludwig tarafından Ingolstadt'ta kuruldu. 1800'de Landshut'a, 1826'da ise bugünkü yeri olan Münih'e taşındı; üniversitenin adındaki 'Ludwig-Maximilians' ibaresi bu taşınma sürecindeki iki hükümdara atfen verildi.",
@@ -375,31 +374,20 @@
           "Münih'in yüksek yaşam maliyeti",
           "Büyük öğrenci sayısı nedeniyle kalabalık giriş derslerinde bireysel ilginin sınırlı kalması"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~52.000",
-          "language": "Çoğunlukla Almanca, yüksek lisansta İngilizce seçenekler mevcut",
-          "tuition": "Dönemlik ~150 € katkı payı (okul ücreti yok)"
+          "language": "Çoğunlukla Almanca, yüksek lisansta İngilizce seçenekler mevcut"
         },
         "popularPrograms": [
           "Tıp",
           "Hukuk",
           "Doğa Bilimleri"
-        ],
-        "lat": 48.1512,
-        "lng": 11.5806,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "huberlin",
         "name": "Humboldt-Universität zu Berlin",
         "city": "Berlin",
-        "type": "Universität",
-        "founded": "1810",
         "description": "Beşeri bilimler ve sosyal bilimlerde uluslararası tanınırlığa sahip araştırma üniversitesi.",
         "history": [
           "1810 yılında dilbilimci ve devlet adamı Wilhelm von Humboldt tarafından kurulan Humboldt Üniversitesi, Berlin'in en köklü üniversitesi. Kuruluşuyla birlikte, öğretim ve araştırmanın bir arada, akademik özgürlük ilkesiyle yürütülmesini savunan 'Humboldt modeli' doğdu; bu model dünya genelinde modern araştırma üniversitesi anlayışının temelini oluşturdu.",
@@ -422,31 +410,20 @@
           "Popüler bölümlerde yüksek başvuru rekabeti",
           "Büyük ve bürokratik bir üniversite yapısı, ilk dönemlerde biraz kişiliksiz hissettirebilir"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~32.000",
-          "language": "Ağırlıklı Almanca, bazı yüksek lisans programları İngilizce",
-          "tuition": "Dönemlik ~315 € katkı payı (okul ücreti yok)"
+          "language": "Ağırlıklı Almanca, bazı yüksek lisans programları İngilizce"
         },
         "popularPrograms": [
           "Sosyal Bilimler",
           "Beşeri Bilimler",
           "Doğa Bilimleri"
-        ],
-        "lat": 52.517,
-        "lng": 13.3936,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "rwth",
         "name": "RWTH Aachen",
         "city": "Aachen",
-        "type": "Universität",
-        "founded": "1870",
         "description": "Mühendislik ve bilgisayar bilimlerinde Avrupa'nın önde gelen teknik üniversitelerinden.",
         "history": [
           "1870'te Polytechnicum adıyla kurulan RWTH Aachen, bugün TU9 birliğinin üyesi ve Almanya'nın en büyük teknik üniversitelerinden biri. Belçika ve Hollanda sınırına yakın konumu, üniversiteye sanayiyle güçlü ve uluslararası bir işbirliği ağı kazandırdı.",
@@ -469,32 +446,20 @@
           "Mühendislik programlarının yoğun ve zorlayıcı olması",
           "Bazı yüksek lisans programlarında sınırlı kontenjan ve yüksek rekabet"
         ],
-        "badges": [
-          "tu9",
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~47.000 (yaklaşık %25'i uluslararası)",
-          "language": "Lisansta Almanca ağırlıklı, yüksek lisansta çok sayıda İngilizce program",
-          "tuition": "Dönemlik ~300 € katkı payı (okul ücreti yok)"
+          "language": "Lisansta Almanca ağırlıklı, yüksek lisansta çok sayıda İngilizce program"
         },
         "popularPrograms": [
           "Makine Mühendisliği",
           "Elektrik-Elektronik Mühendisliği",
           "Bilgisayar Bilimi"
-        ],
-        "lat": 50.7782,
-        "lng": 6.0817,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "mannheim",
         "name": "Universität Mannheim",
         "city": "Mannheim",
-        "type": "Universität",
-        "founded": "1907",
         "description": "İşletme ve ekonomi alanında Almanya'nın en iyi programlarından birine sahip.",
         "history": [
           "1907'de Handelshochschule Mannheim (Mannheim Ticaret Yüksekokulu) olarak kurulan üniversite, dönemin belediye başkanı Otto Beck ve ekonomist Eberhard Gothein'in girişimiyle hayata geçti. 1933'te Nasyonal Sosyalist rejim döneminde Heidelberg Üniversitesi'ne bağlanan kurum, savaş sonrasında 1946'da yeniden açıldı ve 1967'de tam üniversite statüsü kazandı.",
@@ -517,29 +482,20 @@
           "Mannheim, Berlin ya da Münih'e kıyasla daha sakin bir şehir",
           "İşletme fakültesinde yoğun ve rekabetçi bir notlandırma kültürü"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~11.000",
-          "language": "İşletme ve ekonomide çok sayıda İngilizce yüksek lisans programı",
-          "tuition": "Dönemlik ~170 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+          "language": "İşletme ve ekonomide çok sayıda İngilizce yüksek lisans programı"
         },
         "popularPrograms": [
           "İşletme",
           "Ekonomi",
           "Psikoloji"
-        ],
-        "lat": 49.4794,
-        "lng": 8.4622,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hm",
         "name": "Hochschule München",
         "city": "München",
-        "type": "Fachhochschule",
-        "founded": "1971",
         "description": "Uygulamalı mühendislik ve işletme programlarıyla güçlü sektör bağlantılarına sahip bir Fachhochschule.",
         "history": [
           "1971'de yedi farklı teknik ve meslek yüksekokulunun birleşmesiyle kurulan Hochschule München, bugün Bavyera'nın en büyük ikinci uygulamalı bilimler üniversitesi (Fachhochschule) konumunda.",
@@ -562,29 +518,20 @@
           "Doğrudan doktora yapma imkanı sınırlı",
           "Münih'in yüksek yaşam maliyeti"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~19.000",
-          "language": "Ağırlıklı Almanca, seçili İngilizce programlar",
-          "tuition": "Dönemlik ~150 € katkı payı"
+          "language": "Ağırlıklı Almanca, seçili İngilizce programlar"
         },
         "popularPrograms": [
           "Makine Mühendisliği",
           "İşletme",
           "Bilgisayar Bilimi"
-        ],
-        "lat": 48.1611,
-        "lng": 11.5486,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "frankfurtuas",
         "name": "Frankfurt University of Applied Sciences",
         "city": "Frankfurt am Main",
-        "type": "Fachhochschule",
-        "founded": "1971",
         "description": "Finans merkezi Frankfurt'ta işletme ve bilgi teknolojileri odaklı uygulamalı programlar.",
         "history": [
           "1 Ağustos 1971'de kurulan Frankfurt UAS, Almanya'nın en büyük uygulamalı bilimler üniversitelerinden biri olarak bugün 15.000'den fazla öğrenciye ev sahipliği yapıyor.",
@@ -607,29 +554,20 @@
           "Doğrudan doktora imkanı yok",
           "Frankfurt, küçük Alman şehirlerine göre yüksek yaşam maliyetine sahip"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~15.000",
-          "language": "Almanca ve İngilizce karışık, özellikle yüksek lisansta İngilizce seçenekler",
-          "tuition": "Dönemlik ~370 € katkı payı"
+          "language": "Almanca ve İngilizce karışık, özellikle yüksek lisansta İngilizce seçenekler"
         },
         "popularPrograms": [
           "Sosyal Çalışma",
           "İşletme",
           "Bilgisayar Bilimi"
-        ],
-        "lat": 50.1289,
-        "lng": 8.6858,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "dhbw",
         "name": "DHBW (Duale Hochschule Baden-Württemberg)",
         "city": "Stuttgart, Mannheim, Karlsruhe ve diğer kampüsler",
-        "type": "Duale Hochschule",
-        "founded": "2009",
         "description": "Almanya'da dual studium modelinin öncüsü; teori ve uygulamayı 3 aylık dönemlerle birleştirir.",
         "history": [
           "DHBW'nin kökleri, 1974'te kurulan Berufsakademie Baden-Württemberg'e dayanıyor. O dönemde tamamen yeni bir eğitim modeli olarak tasarlanan bu kurum, hızla büyüyerek eyalet genelinde çok sayıda lokasyona yayıldı.",
@@ -652,29 +590,20 @@
           "Program çok yapılandırılmış; seçmeli ders veya değişim dönemi için az esneklik var",
           "Teori-uygulama blokları arasında neredeyse hiç uzun ara olmayan yoğun bir tempo"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~34.000 (çok kampüslü)",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Okul ücreti yok, ancak işletme ortaklığı zorunlu (aylık maaş alınır)"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "İşletme (Dual)",
           "Mühendislik (Dual)",
           "Bilgisayar Bilimi (Dual)"
-        ],
-        "lat": 48.7784,
-        "lng": 9.1733,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "bachelor"
+        ]
       },
       {
         "slug": "iu",
         "name": "IU Internationale Hochschule",
         "city": "Almanya genelinde 24'ten fazla kampüs",
-        "type": "Duale Hochschule",
-        "founded": "1998",
         "description": "Dual studium ve uzaktan eğitimde Almanya'nın en büyük özel yükseköğretim kurumlarından.",
         "history": [
           "1998'de Bad Honnef ve Bonn'da Internationale Fachhochschule adıyla, yalnızca 23 öğrenciyle eğitime başlayan kurum, zamanla hızlı bir büyüme sürecine girdi. 2013'te Adam-Ries-Fachhochschule ile birleşti, 2017'de IUBH Internationale Hochschule, 2021'de ise bugünkü adı olan IU Internationale Hochschule adını aldı.",
@@ -697,29 +626,20 @@
           "Çoğu devlet üniversitesinin aksine öğrenim harcı uygulanıyor",
           "Hızlı büyüme, bazı çevrelerde eğitim kalitesinin tutarlılığı konusunda tartışmalara yol açtı"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~130.000 (Almanya'nın en büyük özel yükseköğretim kurumu)",
-          "language": "Çoğunlukla İngilizce, çevrimiçi ve yüz yüze seçenekler",
-          "tuition": "Özel üniversite; burs ve indirim seçenekleriyle esnek ücretlendirme"
+          "language": "Çoğunlukla İngilizce, çevrimiçi ve yüz yüze seçenekler"
         },
         "popularPrograms": [
           "İşletme",
           "Bilgisayar Bilimi",
           "Psikoloji"
-        ],
-        "lat": 50.967,
-        "lng": 11.043,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "bachelor"
+        ]
       },
       {
         "slug": "fom",
         "name": "FOM Hochschule",
         "city": "Almanya genelinde 30'dan fazla şehir",
-        "type": "Duale Hochschule",
-        "founded": "1993",
         "description": "Çalışarak okuyan öğrenciler için Almanya'nın en büyük özel yükseköğretim kurumlarından.",
         "history": [
           "1993'te kurulan ve resmi tanınırlığını 18 Eylül 1993'te alan FOM, 1994'te eğitime başladı. Kuruluş amacı, tam zamanlı çalışan öğrencilerin akşam ve hafta sonu programlarıyla üniversite eğitimi almasını sağlamaktı.",
@@ -742,29 +662,20 @@
           "Akşam/hafta sonu programı, tam zamanlı bir işle birlikte yürütülmesi zorlayıcı olabiliyor",
           "Tam zamanlı bir üniversiteye kıyasla daha az geleneksel kampüs/öğrenci yaşamı deneyimi"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~57.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Özel üniversite; genellikle çalışan öğrenciler için işveren destekli ücretlendirme"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "İşletme",
           "Ekonomi",
           "Yönetim"
-        ],
-        "lat": 51.4508,
-        "lng": 7.0131,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "bachelor"
+        ]
       },
       {
         "slug": "heidelberg",
         "name": "Heidelberg Üniversitesi (Ruprecht-Karls-Universität)",
         "city": "Heidelberg",
-        "type": "Universität",
-        "founded": "1386",
         "description": "1386'da kurulan, Almanya'nın en eski ve en prestijli araştırma üniversitesi.",
         "history": [
           "18 Ekim 1386'da Kurfürst I. Ruprecht'in Papa'dan aldığı izinle kurulan Heidelberg Üniversitesi, Almanya'nın en eski, Kutsal Roma İmparatorluğu'nun ise üçüncü üniversitesi. Paris Üniversitesi model alınarak kurulan üniversite başlangıçta felsefe, ilahiyat, hukuk ve tıp olmak üzere dört fakülteden oluşuyordu; ilk rektörlüğünü Paris'ten gelen Hollandalı akademisyen Marsilius von Inghen üstlendi.",
@@ -787,31 +698,20 @@
           "Heidelberg, akademi/ilaç sektörü dışında sınırlı bir iş piyasasına sahip küçük bir şehir",
           "Şehir küçük olmasına rağmen yüksek talep, öğrenci konutu fiyatlarını artırıyor"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~30.000",
-          "language": "Lisansta Almanca, yüksek lisans ve doktora düzeyinde çok sayıda İngilizce program",
-          "tuition": "Dönemlik ~170 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+          "language": "Lisansta Almanca, yüksek lisans ve doktora düzeyinde çok sayıda İngilizce program"
         },
         "popularPrograms": [
           "Tıp",
           "Doğa Bilimleri",
           "Hukuk"
-        ],
-        "lat": 49.4097,
-        "lng": 8.7057,
-        "tuitionFree": false,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "tuebingen",
         "name": "Eberhard Karls Universität Tübingen",
         "city": "Tübingen",
-        "type": "Universität",
-        "founded": "1477",
         "description": "1477'de kurulan, tıp ve doğa bilimlerinde güçlü, klasik bir Alman üniversite kenti üniversitesi.",
         "history": [
           "1477'de Kont VI. Eberhard tarafından, Papa IV. Sixtus'un 1476 tarihli fermanıyla kurulan Tübingen Üniversitesi, başlangıçta ilahiyat, hukuk, tıp ve felsefe olmak üzere dört fakülte ve toplam on dört profesörlükten oluşuyordu. Reform hareketinin önde gelen isimlerinden Philipp Melanchthon, üniversitenin akademik yönünün şekillenmesinde önemli rol oynadı.",
@@ -834,31 +734,20 @@
           "Tıp ve psikoloji gibi bölümlerde rekabetçi başvuru süreci",
           "İngilizce yürütülen lisans seçenekleri sınırlı, çoğu program Almanca"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~27.000",
-          "language": "Ağırlıklı Almanca, seçili İngilizce yüksek lisans programları",
-          "tuition": "Dönemlik ~160 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+          "language": "Ağırlıklı Almanca, seçili İngilizce yüksek lisans programları"
         },
         "popularPrograms": [
           "Tıp",
           "Doğa Bilimleri",
           "Teoloji"
-        ],
-        "lat": 48.5225,
-        "lng": 9.0561,
-        "tuitionFree": false,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "kit",
         "name": "Karlsruhe Institute of Technology (KIT)",
         "city": "Karlsruhe",
-        "type": "Universität",
-        "founded": "2009",
         "description": "Almanya'nın ilk teknik yükseköğretim kurumunun mirasını taşıyan, araştırma ağırlıklı bir teknoloji üniversitesi.",
         "history": [
           "KIT'in kökleri, 1825'te kurulan ve Almanya'nın ilk 'Technische Hochschule'si olan Fridericiana'ya, yani Universität Karlsruhe'ye dayanıyor. Bu tarihi kurumda Heinrich Hertz elektromanyetik dalgaları ilk kez deneysel olarak gösterdi ve otomobilin mucitlerinden Carl Benz burada eğitim aldı.",
@@ -881,31 +770,20 @@
           "Mühendislik ders yükü yoğun ve zorlayıcı",
           "Üniversite/araştırma merkezi ikili yapısı bazen bürokratik karmaşıklık yaratabiliyor"
         ],
-        "badges": [
-          "tu9"
-        ],
         "quickFacts": {
           "students": "~23.000",
-          "language": "Lisansta Almanca, yüksek lisansta çok sayıda İngilizce program",
-          "tuition": "AB dışı öğrenciler için Baden-Württemberg'de dönemlik ~1.500 € ek okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+          "language": "Lisansta Almanca, yüksek lisansta çok sayıda İngilizce program"
         },
         "popularPrograms": [
           "Makine Mühendisliği",
           "Bilgisayar Bilimi",
           "Fizik"
-        ],
-        "lat": 49.0117,
-        "lng": 8.4149,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "freiburg",
         "name": "Albert-Ludwigs-Universität Freiburg",
         "city": "Freiburg im Breisgau",
-        "type": "Universität",
-        "founded": "1457",
         "description": "1457'de kurulan, felsefe ve sosyal bilimlerde güçlü bir Habsburg mirası üniversitesi.",
         "history": [
           "21 Eylül 1457'de Habsburg Hanedanı'ndan VI. Albert'in verdiği bir fermanla kurulan Freiburg Üniversitesi, döneminde Habsburg topraklarında Viyana Üniversitesi'nden sonra kurulan ikinci üniversite oldu. Kuruluşundan itibaren ilahiyat, hukuk ve tıp okutulan üniversitede, bugünkü beşeri bilimler fakültesinin temelini oluşturan 'Artes Liberales' (özgür sanatlar) da öğretiliyordu.",
@@ -928,29 +806,20 @@
           "Popüler beşeri bilimler ve hukuk programlarında rekabetçi başvuru süreci",
           "Teknik üniversitelere kıyasla daha az büyük ölçekli sanayi ortaklığı"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~24.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "AB dışı öğrenciler için Baden-Württemberg'de dönemlik ~1.500 € ek okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Tıp",
           "Doğa Bilimleri",
           "Orman Mühendisliği"
-        ],
-        "lat": 47.9955,
-        "lng": 7.846,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "goettingen",
         "name": "Georg-August-Universität Göttingen",
         "city": "Göttingen",
-        "type": "Universität",
-        "founded": "1734",
         "description": "45 Nobel ödüllü isimle anılan, 'bilim şehri' Göttingen'in kalbindeki araştırma üniversitesi.",
         "history": [
           "1734'te İngiltere Kralı ve Hannover Elektörü II. George tarafından kurulan üniversitede dersler aynı yıl başladı, resmi açılış töreni ise 1737'de yapıldı. Aydınlanma ideallerine uygun olarak kurulan üniversite, bilimsel araştırmayı kilisenin sansüründen bağımsızlaştıran öncü kurumlardan biri oldu.",
@@ -973,29 +842,20 @@
           "Bazı programlar ağırlıklı olarak Almanca yürütülüyor ve iyi bir Almanca seviyesi gerektiriyor",
           "Büyük şehirlere kıyasla yakında daha az uluslararası kurumsal işveren bulunuyor"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~30.000",
-          "language": "Ağırlıklı Almanca, doğa bilimlerinde İngilizce yüksek lisans seçenekleri",
-          "tuition": "Dönemlik ~390 € katkı payı"
+          "language": "Ağırlıklı Almanca, doğa bilimlerinde İngilizce yüksek lisans seçenekleri"
         },
         "popularPrograms": [
           "Doğa Bilimleri",
           "Tarım Bilimleri",
           "Hukuk"
-        ],
-        "lat": 51.5346,
-        "lng": 9.9349,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "bonn",
         "name": "Rheinische Friedrich-Wilhelms-Universität Bonn",
         "city": "Bonn",
-        "type": "Universität",
-        "founded": "1818",
         "description": "1818'de kurulan, eski bir elektörlük sarayında eğitim veren köklü bir Ren üniversitesi.",
         "history": [
           "18 Ekim 1818'de Prusya Kralı III. Friedrich Wilhelm tarafından Rhein Üniversitesi adıyla kurulan Bonn Üniversitesi, 1777'de kurulan Köln Elektörlüğü Akademisi'nin doğrudan devamı niteliğinde. Wilhelm von Humboldt'un akademik özgürlük ve araştırma-öğretim birliği ilkelerinden ilham alan üniversite, kısa sürede Almanya'nın en saygın kurumları arasına girdi.",
@@ -1018,31 +878,20 @@
           "Hukuk ve tıp bölümlerinde rekabetçi başvuru süreci",
           "Büyük öğrenci sayısı, giriş derslerinde kalabalık anlamına gelebiliyor"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~34.000",
-          "language": "Ağırlıklı Almanca, çok sayıda İngilizce yüksek lisans programı",
-          "tuition": "Dönemlik ~310 € katkı payı"
+          "language": "Ağırlıklı Almanca, çok sayıda İngilizce yüksek lisans programı"
         },
         "popularPrograms": [
           "Hukuk",
           "Ekonomi",
           "Matematik"
-        ],
-        "lat": 50.734,
-        "lng": 7.0956,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "koeln",
         "name": "Universität zu Köln",
         "city": "Köln",
-        "type": "Universität",
-        "founded": "1388",
         "description": "1388'de kurulan, kayıtlı öğrenci sayısıyla Almanya'nın en büyük geleneksel üniversitelerinden.",
         "history": [
           "1388'de kurulan Köln Üniversitesi, Kutsal Roma İmparatorluğu'nda Prag (1348), Viyana (1365) ve Heidelberg'den (1386) sonra kurulan dördüncü üniversite oldu. Kuruluş fermanı Papa VI. Urban tarafından imzalandı ve eğitime 6 Ocak 1389'da başlandı.",
@@ -1065,29 +914,20 @@
           "Üniversitenin büyüklüğü nedeniyle idari süreçler bazen bürokratik hissettirebiliyor",
           "Tıp, hukuk ve psikoloji gibi popüler bölümlerde rekabetçi başvuru süreci"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~48.000 (Almanya'nın en büyük üniversitelerinden biri)",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~300 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Hukuk",
           "Ekonomi",
           "Tıp"
-        ],
-        "lat": 50.9279,
-        "lng": 6.9271,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "tuberlin",
         "name": "Technische Universität Berlin",
         "city": "Berlin",
-        "type": "Universität",
-        "founded": "1946",
         "description": "Kökleri 1770'e uzanan, 1946'da bilinçli bir yeniden kuruluşla bugünkü kimliğine kavuşan teknik üniversite.",
         "history": [
           "TU Berlin'in kökleri, 1770'de kurulan Königliche Bergakademie (Kraliyet Maden Akademisi), 1799'da kurulan Königliche Bauakademie (Kraliyet İnşaat Akademisi) ve 1821'de kurulan Königliche Gewerbeakademie'ye (Kraliyet Sanayi Akademisi) kadar uzanıyor. Bu üç kurum 1879'da birleşerek Königlich Technische Hochschule zu Berlin'i oluşturdu; Maden Akademisi ise 1916'da bu yapıya dahil edildi.",
@@ -1110,32 +950,20 @@
           "Popüler mühendislik/bilgisayar bilimi programlarında kalabalık dersler",
           "Üniversitenin büyüklüğü nedeniyle idari süreçler yavaş işleyebiliyor"
         ],
-        "badges": [
-          "tu9",
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~33.000",
-          "language": "Mühendislikte çok sayıda İngilizce yüksek lisans programı",
-          "tuition": "Dönemlik ~310 € katkı payı"
+          "language": "Mühendislikte çok sayıda İngilizce yüksek lisans programı"
         },
         "popularPrograms": [
           "Makine Mühendisliği",
           "Elektrik-Elektronik Mühendisliği",
           "Bilgisayar Bilimi"
-        ],
-        "lat": 52.5125,
-        "lng": 13.3269,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "tudresden",
         "name": "TU Dresden (Technische Universität Dresden)",
         "city": "Dresden",
-        "type": "Universität",
-        "founded": "1828",
         "description": "Almanya'nın en büyük teknik üniversitelerinden biri; mikroelektronik, malzeme bilimi ve makine mühendisliğinde güçlü bir araştırma merkezi.",
         "history": [
           "TU Dresden'in kökleri 1828'de kurulan Technische Bildungsanstalt Dresden'e dayanır; zaman içinde büyüyerek Almanya'nın en kapsamlı teknik üniversitelerinden birine dönüştü.",
@@ -1158,32 +986,20 @@
           "Lisans programlarının büyük kısmı Almanca; İngilizce seçenekler daha çok yüksek lisans düzeyinde",
           "Kış ayları soğuk ve gün ışığı süresi kısa"
         ],
-        "badges": [
-          "tu9",
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~30.000",
-          "language": "Lisansta ağırlıklı Almanca, yüksek lisansta çok sayıda İngilizce program",
-          "tuition": "Dönemlik ~260 € katkı payı (okul ücreti yok)"
+          "language": "Lisansta ağırlıklı Almanca, yüksek lisansta çok sayıda İngilizce program"
         },
         "popularPrograms": [
           "Mikroelektronik",
           "Makine Mühendisliği",
           "Malzeme Bilimi"
-        ],
-        "lat": 51.0272,
-        "lng": 13.7231,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "tudarmstadt",
         "name": "TU Darmstadt (Technische Universität Darmstadt)",
         "city": "Darmstadt",
-        "type": "Universität",
-        "founded": "1877",
         "description": "Bilgisayar bilimi, siber güvenlik ve elektrik-elektronik mühendisliğinde Almanya'nın öncü teknik üniversitelerinden biri.",
         "history": [
           "1877'de kurulan TU Darmstadt, 1972'de Almanya'da ilk kez bağımsız bir 'Informatik' (bilgisayar bilimi) fakültesi açan üniversite oldu ve bu alanda öncü konumunu bugüne kadar korudu.",
@@ -1206,31 +1022,20 @@
           "Mühendislik programlarında iş yükü ve akademik tempo yüksek",
           "Popüler bilgisayar bilimi programlarında başvuru rekabeti güçlü"
         ],
-        "badges": [
-          "tu9"
-        ],
         "quickFacts": {
           "students": "~26.000",
-          "language": "Lisansta Almanca, yüksek lisansta özellikle bilgisayar bilimi ve mühendislikte çok sayıda İngilizce program",
-          "tuition": "Dönemlik ~300 € katkı payı (okul ücreti yok)"
+          "language": "Lisansta Almanca, yüksek lisansta özellikle bilgisayar bilimi ve mühendislikte çok sayıda İngilizce program"
         },
         "popularPrograms": [
           "Bilgisayar Bilimi",
           "Siber Güvenlik",
           "Elektrik-Elektronik Mühendisliği"
-        ],
-        "lat": 49.8728,
-        "lng": 8.6512,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "tubraunschweig",
         "name": "TU Braunschweig (Technische Universität Carolo-Wilhelmina zu Braunschweig)",
         "city": "Braunschweig",
-        "type": "Universität",
-        "founded": "1745",
         "description": "1745'te kurulan, Almanya'nın en eski teknik üniversitesi; havacılık-uzay ve otomotiv mühendisliğinde güçlü bir araştırma geleneğine sahip.",
         "history": [
           "1745 yılında 'Collegium Carolinum' adıyla kurulan TU Braunschweig, Almanya'nın en eski teknik yükseköğretim kurumu olarak kabul edilir.",
@@ -1253,31 +1058,20 @@
           "Uluslararası tanınırlığı bazı TU9 üyelerine göre daha sınırlı",
           "Lisans düzeyinde İngilizce program seçeneği azdır"
         ],
-        "badges": [
-          "tu9"
-        ],
         "quickFacts": {
           "students": "~18.000",
-          "language": "Ağırlıklı Almanca, yüksek lisansta seçili İngilizce programlar",
-          "tuition": "Dönemlik ~300 € katkı payı (okul ücreti yok)"
+          "language": "Ağırlıklı Almanca, yüksek lisansta seçili İngilizce programlar"
         },
         "popularPrograms": [
           "Havacılık-Uzay Mühendisliği",
           "Otomotiv Mühendisliği",
           "Biyoteknoloji"
-        ],
-        "lat": 52.2733,
-        "lng": 10.5261,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hannover",
         "name": "Leibniz Universität Hannover",
         "city": "Hannover",
-        "type": "Universität",
-        "founded": "1831",
         "description": "Filozof ve matematikçi Leibniz'in adını taşıyan, mühendislik, hukuk ve doğa bilimlerinde güçlü bir araştırma üniversitesi.",
         "history": [
           "1831'de kurulan üniversite, adını Hannover'de yaşamış ünlü filozof ve matematikçi Gottfried Wilhelm Leibniz'den alır.",
@@ -1300,31 +1094,20 @@
           "Sosyal ve kültürel hayat daha büyük şehirlere göre sınırlı kalabilir",
           "Lisans düzeyinde İngilizce program seçeneği kısıtlı"
         ],
-        "badges": [
-          "tu9"
-        ],
         "quickFacts": {
           "students": "~29.000",
-          "language": "Ağırlıklı Almanca, yüksek lisansta mühendislikte İngilizce seçenekler",
-          "tuition": "Dönemlik ~340 € katkı payı (okul ücreti yok)"
+          "language": "Ağırlıklı Almanca, yüksek lisansta mühendislikte İngilizce seçenekler"
         },
         "popularPrograms": [
           "Makine Mühendisliği",
           "Fotonik",
           "Hukuk"
-        ],
-        "lat": 52.3841,
-        "lng": 9.7161,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "stuttgart",
         "name": "Universität Stuttgart",
         "city": "Stuttgart",
-        "type": "Universität",
-        "founded": "1829",
         "description": "Otomotiv ve havacılık mühendisliğinin kalbi Stuttgart bölgesinde, mühendislik ve mimarlıkta Almanya'nın en güçlü üniversitelerinden biri.",
         "history": [
           "1829'da kurulan Universität Stuttgart, Almanya'nın otomotiv sanayisinin merkezi sayılan Stuttgart bölgesinde, mühendislik eğitiminin köklü kurumlarından biri haline geldi.",
@@ -1347,31 +1130,20 @@
           "Stuttgart, Almanya'nın nispeten pahalı şehirlerinden biri",
           "Popüler mühendislik programlarında başvuru rekabeti yüksek"
         ],
-        "badges": [
-          "tu9"
-        ],
         "quickFacts": {
           "students": "~23.000",
-          "language": "Lisansta Almanca, yüksek lisansta çok sayıda İngilizce program",
-          "tuition": "Dönemlik ~200 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+          "language": "Lisansta Almanca, yüksek lisansta çok sayıda İngilizce program"
         },
         "popularPrograms": [
           "Otomotiv Mühendisliği",
           "Havacılık-Uzay Mühendisliği",
           "Mimarlık"
-        ],
-        "lat": 48.7801,
-        "lng": 9.1774,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "konstanz",
         "name": "Universität Konstanz",
         "city": "Konstanz",
-        "type": "Universität",
-        "founded": "1966",
         "description": "Bodensee kıyısında, araştırma yoğunluğuyla öne çıkan küçük ama seçkin bir 'reform üniversitesi'.",
         "history": [
           "1966'da kurulan Universität Konstanz, kuruluşundan itibaren geleneksel fakülte yapısı yerine disiplinler arası, araştırma odaklı bir 'reform üniversitesi' modeliyle tasarlandı.",
@@ -1394,31 +1166,20 @@
           "Küçük şehir yapısı, büyük şehirlerin sunduğu kültürel/sosyal çeşitliliği sunmuyor",
           "Sınırlı program seçeneği nedeniyle her akademik profile uygun olmayabilir"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~11.000",
-          "language": "Ağırlıklı Almanca, yüksek lisansta seçili İngilizce programlar",
-          "tuition": "Dönemlik ~150 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+          "language": "Ağırlıklı Almanca, yüksek lisansta seçili İngilizce programlar"
         },
         "popularPrograms": [
           "Siyaset Bilimi",
           "Kimya",
           "Bilgisayar Bilimi"
-        ],
-        "lat": 47.693,
-        "lng": 9.1859,
-        "tuitionFree": false,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "htwberlin",
         "name": "HTW Berlin (Hochschule für Technik und Wirtschaft Berlin)",
         "city": "Berlin",
-        "type": "Fachhochschule",
-        "founded": "1994",
         "description": "Berlin'in en büyük uygulamalı bilimler üniversitesi; mühendislik, işletme, bilgisayar bilimi ve tasarımda uygulamaya dönük eğitim.",
         "history": [
           "1994'te, bazıları 1900'lerin başına uzanan çeşitli teknik ve ticari okulların birleşmesiyle kurulan HTW Berlin, kısa sürede Berlin'in en büyük Hochschule'si (uygulamalı bilimler üniversitesi) haline geldi.",
@@ -1441,29 +1202,20 @@
           "Berlin, Almanya'nın orta-yüksek yaşam maliyetine sahip şehirlerinden biri",
           "Bazı popüler programlarda kontenjan sınırlı"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~15.000",
-          "language": "Ağırlıklı Almanca, işletme ve mühendislikte seçili İngilizce programlar",
-          "tuition": "Dönemlik ~310 € katkı payı (okul ücreti yok)"
+          "language": "Ağırlıklı Almanca, işletme ve mühendislikte seçili İngilizce programlar"
         },
         "popularPrograms": [
           "Mühendislik",
           "İşletme",
           "Tasarım"
-        ],
-        "lat": 52.4809,
-        "lng": 13.5246,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "furtwangen",
         "name": "Hochschule Furtwangen (HFU)",
         "city": "Furtwangen im Schwarzwald",
-        "type": "Fachhochschule",
-        "founded": "1850",
         "description": "Karadeniz Ormanı'nda (Schwarzwald), bilgisayar bilimi ve mühendislikte uluslararası öğrencilere özellikle popüler, küçük ölçekli bir uygulamalı bilimler üniversitesi.",
         "history": [
           "1850 yılında bir saat yapımcılığı okulu olarak kurulan HFU, zamanla teknolojiye odaklanan modern bir Hochschule'ye dönüştü; bugünkü üniversite statüsünü 1971'de kazandı.",
@@ -1486,29 +1238,20 @@
           "Sosyal hayat, büyük üniversite şehirlerine kıyasla daha sakin",
           "Bazı programlarda kampüsler arası (Furtwangen/Schwenningen) geçiş gerekebilir"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~2.700",
-          "language": "Bilgisayar bilimi ve mühendislikte çok sayıda İngilizce yüksek lisans programı",
-          "tuition": "Dönemlik ~230 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+          "language": "Bilgisayar bilimi ve mühendislikte çok sayıda İngilizce yüksek lisans programı"
         },
         "popularPrograms": [
           "Bilgisayar Bilimi",
           "Dijital Medya",
           "Mühendislik"
-        ],
-        "lat": 48.0511,
-        "lng": 8.2076,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hamburg",
         "name": "Universität Hamburg",
         "city": "Hamburg",
-        "type": "Universität",
-        "founded": "1919",
         "description": "Kuzey Almanya'nın en büyük üniversitesi; iklim araştırmalarında dünya çapında tanınan bir Exzellenzuniversität.",
         "history": [
           "1919'da kurulan Universität Hamburg, büyük Alman üniversiteleri arasında nispeten genç olmasına rağmen kısa sürede ülkenin en büyüklerinden birine dönüştü.",
@@ -1531,31 +1274,20 @@
           "Popüler bölümlerde kalabalık amfiler",
           "Tıp bölümünde yüksek başvuru rekabeti"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~44.000",
-          "language": "Ağırlıklı Almanca, bazı yüksek lisans programlarında İngilizce",
-          "tuition": "Dönemlik ~330 € katkı payı"
+          "language": "Ağırlıklı Almanca, bazı yüksek lisans programlarında İngilizce"
         },
         "popularPrograms": [
           "Tıp (UKE)",
           "İklim/Yer Bilimleri",
           "Hukuk"
-        ],
-        "lat": 53.5657,
-        "lng": 9.9847,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "fuberlin",
         "name": "Freie Universität Berlin (FU Berlin)",
         "city": "Berlin",
-        "type": "Universität",
-        "founded": "1948",
         "description": "Soğuk Savaş döneminde 'özgür' bir alternatif olarak kurulan, sosyal bilimler ve beşeri bilimlerde güçlü bir Exzellenzuniversität.",
         "history": [
           "1948'de, o dönem Sovyet kontrolündeki Doğu Berlin'de bulunan Humboldt-Universität'tan ayrılan öğrenci ve akademisyenler tarafından, ABD desteğiyle 'özgür' bir alternatif olarak kuruldu; bu yüzden 'Freie Universität' (Özgür Üniversite) adını taşır.",
@@ -1577,31 +1309,20 @@
           "Berlin'in kamu üniversitelerine özgü bürokrasi",
           "Berlin'de artan yaşam maliyeti"
         ],
-        "badges": [
-          "excellence"
-        ],
         "quickFacts": {
           "students": "~34.000",
-          "language": "Ağırlıklı Almanca, artan İngilizce yüksek lisans seçenekleri",
-          "tuition": "Dönemlik ~320 € katkı payı"
+          "language": "Ağırlıklı Almanca, artan İngilizce yüksek lisans seçenekleri"
         },
         "popularPrograms": [
           "Siyaset Bilimi",
           "Alan Çalışmaları",
           "Biyoloji/Yaşam Bilimleri"
-        ],
-        "lat": 52.4536,
-        "lng": 13.2878,
-        "tuitionFree": true,
-        "competitiveness": "high",
-        "level": "both"
+        ]
       },
       {
         "slug": "erlangen",
         "name": "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)",
         "city": "Erlangen/Nürnberg",
-        "type": "Universität",
-        "founded": "1743",
         "description": "Bavyera'nın Siemens ve teknoloji sanayisiyle iç içe, mühendislik ve tıpta güçlü büyük bir araştırma üniversitesi.",
         "history": [
           "1743'te Erlangen'de kurulan FAU, Bavyera'nın en eski üniversitelerinden biridir; 1961'de Nürnberg'deki ekonomi ve sosyal bilimler kurumlarıyla birleşerek bugünkü halini aldı.",
@@ -1623,29 +1344,20 @@
           "Popüler bölümlerde kalabalık öğrenci grupları",
           "Münih kurumlarına kıyasla daha az uluslararası tanınırlık"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~39.000",
-          "language": "Ağırlıklı Almanca, mühendislik/tıp yüksek lisansında İngilizce seçenekler",
-          "tuition": "Dönemlik ~120 € katkı payı"
+          "language": "Ağırlıklı Almanca, mühendislik/tıp yüksek lisansında İngilizce seçenekler"
         },
         "popularPrograms": [
           "Elektrik-Elektronik Mühendisliği",
           "Tıp",
           "Tıbbi Teknoloji"
-        ],
-        "lat": 49.5985,
-        "lng": 11.0036,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "bochum",
         "name": "Ruhr-Universität Bochum (RUB)",
         "city": "Bochum",
-        "type": "Universität",
-        "founded": "1962",
         "description": "Almanya'da İkinci Dünya Savaşı sonrası kurulan ilk yeni üniversite; Ruhr bölgesinin kalbinde, IT güvenliği ve mühendislikte güçlü.",
         "history": [
           "1962'de kurulan (1965'te açılan) RUB, Batı Almanya'da savaş sonrası kurulan ilk yeni üniversitedir; büyük, modernist bir kampüs olarak inşa edilmiştir.",
@@ -1667,29 +1379,20 @@
           "İlk yıllarda kalabalık amfi dersleri",
           "Sanayi bölgesi şehir çevresi"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~43.000",
-          "language": "Ağırlıklı Almanca, IT güvenliği/mühendislikte İngilizce seçenekler",
-          "tuition": "Dönemlik ~310 € katkı payı"
+          "language": "Ağırlıklı Almanca, IT güvenliği/mühendislikte İngilizce seçenekler"
         },
         "popularPrograms": [
           "IT Güvenliği",
           "Makine Mühendisliği",
           "Doğu Asya Çalışmaları"
-        ],
-        "lat": 51.4487,
-        "lng": 7.2609,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "mainz",
         "name": "Johannes Gutenberg-Universität Mainz (JGU)",
         "city": "Mainz",
-        "type": "Universität",
-        "founded": "1477",
         "description": "Matbaanın mucidi Gutenberg'in adını taşıyan, tıp ve yaşam bilimlerinde güçlü, BioNTech bağlantısıyla öne çıkan büyük bir üniversite.",
         "history": [
           "1477'de kurulan, 1823'te kapatılan ve 1946'da Fransız işgal bölgesinde kurulan ilk yeni üniversitelerden biri olarak yeniden açılan JGU, adını Mainz'da doğan matbaanın mucidi Johannes Gutenberg'den alır.",
@@ -1711,29 +1414,20 @@
           "Büyük öğrenci sayısı nedeniyle kalabalık ilk yıl dersleri",
           "Tıp bölümünde yüksek başvuru rekabeti"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~31.000",
-          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları",
-          "tuition": "Dönemlik ~300 € katkı payı"
+          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları"
         },
         "popularPrograms": [
           "Tıp",
           "Biyoloji/Yaşam Bilimleri",
           "İletişim Bilimleri"
-        ],
-        "lat": 49.9931,
-        "lng": 8.238,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "muenster",
         "name": "Westfälische Wilhelms-Universität Münster (WWU)",
         "city": "Münster",
-        "type": "Universität",
-        "founded": "1780",
         "description": "Almanya'nın en büyük üniversitelerinden biri; hukuk, işletme ve din bilimlerinde güçlü, bisiklet dostu bir üniversite şehri.",
         "history": [
           "1780'de kurulan WWU, günümüzde Almanya'nın en eski ve en büyük üniversitelerinden biri olup özellikle güçlü bir hukuk fakültesine sahiptir.",
@@ -1755,29 +1449,20 @@
           "Münster büyük şehir imkanları bakımından sınırlı orta ölçekli bir şehir",
           "Hukuk bölümünde yüksek başvuru rekabeti"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~43.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~300 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Hukuk",
           "İşletme",
           "Teoloji"
-        ],
-        "lat": 51.9616,
-        "lng": 7.6151,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "bremen",
         "name": "Universität Bremen",
         "city": "Bremen",
-        "type": "Universität",
-        "founded": "1971",
         "description": "Kuzey Almanya'da denizcilik, uzay ve malzeme bilimlerinde güçlü, genç ve araştırma odaklı bir üniversite.",
         "history": [
           "1971'de, Konstanz ve Bielefeld'e benzer şekilde disiplinler arası bir 'reform üniversitesi' olarak kuruldu.",
@@ -1799,29 +1484,20 @@
           "Bremen, Hamburg'a kıyasla daha küçük bir şehir",
           "Tıp gibi bazı alanlarda program bulunmuyor"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~19.000",
-          "language": "Ağırlıklı Almanca, bilimlerde artan İngilizce seçenekler",
-          "tuition": "Dönemlik ~330 € katkı payı"
+          "language": "Ağırlıklı Almanca, bilimlerde artan İngilizce seçenekler"
         },
         "popularPrograms": [
           "Deniz Bilimleri",
           "Uzay/Sistem Mühendisliği",
           "Bilgisayar Bilimi"
-        ],
-        "lat": 53.1079,
-        "lng": 8.8514,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "kiel",
         "name": "Christian-Albrechts-Universität zu Kiel (CAU)",
         "city": "Kiel",
-        "type": "Universität",
-        "founded": "1665",
         "description": "Baltık Denizi kıyısında, deniz bilimleri ve iklim araştırmalarında güçlü, Almanya'nın en kuzeydeki büyük üniversitelerinden biri.",
         "history": [
           "1665'te kurulan CAU, Almanya'nın daha eski üniversitelerinden biri olup Schleswig-Holstein eyaletinin başkenti Kiel'de, Baltık Denizi kıyısında yer alır.",
@@ -1843,29 +1519,20 @@
           "Lisans düzeyinde İngilizce seçenek azlığı",
           "Kuzey konumu çoğu uluslararası merkeze uzaklık anlamına geliyor"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~24.000",
-          "language": "Ağırlıklı Almanca, deniz bilimleri yüksek lisansında İngilizce seçenekler",
-          "tuition": "Dönemlik ~250 € katkı payı"
+          "language": "Ağırlıklı Almanca, deniz bilimleri yüksek lisansında İngilizce seçenekler"
         },
         "popularPrograms": [
           "Deniz/Okyanus Bilimleri",
           "Hukuk",
           "Tarım ve Beslenme Bilimleri"
-        ],
-        "lat": 54.3401,
-        "lng": 10.1225,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "marburg",
         "name": "Philipps-Universität Marburg",
         "city": "Marburg",
-        "type": "Universität",
-        "founded": "1527",
         "description": "Dünyanın ilk Protestan üniversitesi; tıp ve eczacılıkta güçlü, klasik bir Alman üniversite şehri.",
         "history": [
           "1527'de Hessen Landgrafı I. Philip tarafından kuruldu; dünyanın Protestan bir kurum olarak kurulan ilk üniversitesidir.",
@@ -1887,29 +1554,20 @@
           "Daha az İngilizce program seçeneği",
           "Büyük havalimanlarına göre daha uzak bir konum"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~22.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~270 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Tıp",
           "Eczacılık",
           "Beşeri Bilimler"
-        ],
-        "lat": 50.809,
-        "lng": 8.771,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "jena",
         "name": "Friedrich-Schiller-Universität Jena",
         "city": "Jena",
-        "type": "Universität",
-        "founded": "1558",
         "description": "Optik ve fotonikte (Carl Zeiss, Schott bağlantısıyla) güçlü, Thüringen'in tarihi üniversite şehrindeki köklü bir kurum.",
         "history": [
           "1558'de kurulan bu klasik Alman üniversitesi, tarihsel olarak burada ders veren Schiller, Hegel ve Fichte gibi isimlerle ilişkilendirilir.",
@@ -1930,29 +1588,20 @@
           "Bazı mesleki alanlarda sınırlı program seçeneği",
           "Daha az İngilizce lisans seçeneği"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~18.000",
-          "language": "Ağırlıklı Almanca, fotonik/fizik yüksek lisansında İngilizce seçenekler",
-          "tuition": "Dönemlik ~155 € katkı payı (Thüringen'de ek ücret yok/düşük)"
+          "language": "Ağırlıklı Almanca, fotonik/fizik yüksek lisansında İngilizce seçenekler"
         },
         "popularPrograms": [
           "Fizik/Optik ve Fotonik",
           "Kimya",
           "Biyoloji"
-        ],
-        "lat": 50.928,
-        "lng": 11.588,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "thkoeln",
         "name": "TH Köln (Technische Hochschule Köln)",
         "city": "Köln",
-        "type": "Fachhochschule",
-        "founded": "1971",
         "description": "Almanya'nın öğrenci sayısı bakımından en büyük uygulamalı bilimler üniversitesi; mühendislik, sosyal çalışma ve medyada geniş bir program yelpazesi.",
         "history": [
           "1971'de, bazıları daha eskiye uzanan çeşitli teknik ve ticari okulların birleşmesiyle kuruldu; ölçeğini ve araştırma profilini yansıtmak için 2015'te Technische Hochschule Köln adını aldı.",
@@ -1974,29 +1623,20 @@
           "Birden fazla kampüs daha fazla ulaşım gerektirebilir",
           "Klasik bir üniversiteye kıyasla daha az araştırma prestiji"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~27.000",
-          "language": "Ağırlıklı Almanca, mühendislik/işletmede seçili İngilizce programlar",
-          "tuition": "Dönemlik ~290 € katkı payı"
+          "language": "Ağırlıklı Almanca, mühendislik/işletmede seçili İngilizce programlar"
         },
         "popularPrograms": [
           "Makine Mühendisliği",
           "Sosyal Çalışma",
           "Medya Teknolojisi"
-        ],
-        "lat": 50.935,
-        "lng": 6.955,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hsmannheim",
         "name": "Hochschule Mannheim",
         "city": "Mannheim",
-        "type": "Fachhochschule",
-        "founded": "1963",
         "description": "Mannheim'ın sanayi bölgesinde, mühendislik ve bilgi teknolojilerinde uygulamaya dönük eğitim veren köklü bir Hochschule.",
         "history": [
           "1897'de kurulan bir mühendislik okuluna dayanır; 1963/1971'de tam Hochschule statüsü kazanmıştır.",
@@ -2018,29 +1658,20 @@
           "Sınırlı beşeri bilimler/sosyal bilimler seçeneği",
           "Popüler mühendislik programlarında rekabetçi kontenjanlar"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~5.500",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~200 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Makine Mühendisliği",
           "Bilgi Teknolojileri",
           "Biyoteknoloji"
-        ],
-        "lat": 49.4913,
-        "lng": 8.4676,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hskarlsruhe",
         "name": "Hochschule Karlsruhe (HKA)",
         "city": "Karlsruhe",
-        "type": "Fachhochschule",
-        "founded": "1878",
         "description": "Almanya'nın en eski uygulamalı bilimler üniversitelerinden biri; mühendislik ve mimarlıkta güçlü, KIT ile aynı şehirde.",
         "history": [
           "1878'de bir teknik meslek okulu olarak kuruldu; 1971'de tam bir Hochschule für Technik statüsü kazanan Almanya'nın en eski uygulamalı bilimler üniversitelerinden biridir.",
@@ -2062,29 +1693,20 @@
           "KIT'e kıyasla daha az uluslararası tanınırlık",
           "İlk dönemlerde kalabalık mühendislik grupları"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~8.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~155 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Makine Mühendisliği",
           "Mimarlık",
           "Bilgi Teknolojileri"
-        ],
-        "lat": 49.0089,
-        "lng": 8.3975,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "htwgkonstanz",
         "name": "HTWG Konstanz (Hochschule Konstanz Technik, Wirtschaft und Gestaltung)",
         "city": "Konstanz",
-        "type": "Fachhochschule",
-        "founded": "1906",
         "description": "Bodensee kıyısında, mühendislik, işletme ve tasarımı bir araya getiren uygulamaya dönük bir Hochschule (Universität Konstanz'dan farklı bir kurum).",
         "history": [
           "Kökleri 1906'ya uzanır; 1971'de tam bir Hochschule oldu. Yakınındaki araştırma odaklı Universität Konstanz'dan farklı, bağımsız bir kurumdur.",
@@ -2106,29 +1728,20 @@
           "Büyük şehir imkanları bakımından sınırlı küçük bir şehir",
           "Araştırma odaklı Universität Konstanz ile bazen karıştırılabiliyor"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~4.700",
-          "language": "Ağırlıklı Almanca, bazı İngilizce tasarım/işletme programları",
-          "tuition": "Dönemlik ~154 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+          "language": "Ağırlıklı Almanca, bazı İngilizce tasarım/işletme programları"
         },
         "popularPrograms": [
           "Makine Mühendisliği",
           "İşletme",
           "İletişim Tasarımı"
-        ],
-        "lat": 47.6743,
-        "lng": 9.1682,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "thingolstadt",
         "name": "Technische Hochschule Ingolstadt (THI)",
         "city": "Ingolstadt",
-        "type": "Fachhochschule",
-        "founded": "1994",
         "description": "Audi'nin merkezi Ingolstadt'ta, otomotiv mühendisliği ve yapay zekada uzmanlaşmış genç ve hızlı büyüyen bir Hochschule.",
         "history": [
           "1994'te, Ingolstadt'ın hızla büyüyen otomotiv sanayisine hizmet etmek üzere özel olarak kurulan, Almanya'nın daha genç Hochschule'lerinden biridir.",
@@ -2150,29 +1763,20 @@
           "Ingolstadt, büyük şehir imkanları bakımından daha küçük bir şehir",
           "Mühendislik/işletme/AI dışında sınırlı program yelpazesi"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~7.000",
-          "language": "Ağırlıklı Almanca, AI/mühendislikte çeşitli İngilizce yüksek lisans programları",
-          "tuition": "Dönemlik ~130 € katkı payı"
+          "language": "Ağırlıklı Almanca, AI/mühendislikte çeşitli İngilizce yüksek lisans programları"
         },
         "popularPrograms": [
           "Otomotiv Mühendisliği",
           "Yapay Zeka",
           "İşletme Bilişimi"
-        ],
-        "lat": 48.765,
-        "lng": 11.424,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hbrs",
         "name": "Hochschule Bonn-Rhein-Sieg (H-BRS)",
         "city": "Sankt Augustin (Bonn yakınında)",
-        "type": "Fachhochschule",
-        "founded": "1995",
         "description": "Bonn yakınında, bilgi teknolojileri ve mühendislikte güçlü, modern ve uluslararası odaklı bir Hochschule.",
         "history": [
           "1995'te kurulan, esas olarak Bonn yakınındaki Sankt Augustin'de bulunan, Rheinbach ve Hennef'te ek kampüsleri olan nispeten genç bir Hochschule'dir.",
@@ -2194,29 +1798,20 @@
           "Birden fazla küçük kampüse yayılmış",
           "Sınırlı beşeri bilimler/sosyal bilimler yelpazesi"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~9.000",
-          "language": "Almanca ve İngilizce karışık, bazı yüksek lisans programları tamamen İngilizce",
-          "tuition": "Dönemlik ~290 € katkı payı"
+          "language": "Almanca ve İngilizce karışık, bazı yüksek lisans programları tamamen İngilizce"
         },
         "popularPrograms": [
           "Bilgisayar Bilimi",
           "Elektrik-Elektronik Mühendisliği",
           "İşletme"
-        ],
-        "lat": 50.7714,
-        "lng": 7.165,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hda",
         "name": "Hochschule Darmstadt (h_da)",
         "city": "Darmstadt",
-        "type": "Fachhochschule",
-        "founded": "1971",
         "description": "TU Darmstadt'ın aynı şehrindeki büyük bir Hochschule; bilgi teknolojileri, medya ve mühendislikte güçlü.",
         "history": [
           "Kökleri 1876'da kurulan bir teknik okula uzanır; 1971'de Hessen'in en büyük uygulamalı bilimler üniversitesi statüsünü kazandı.",
@@ -2238,29 +1833,20 @@
           "Popüler IT programlarında kalabalık gruplar",
           "Sınırlı doğa bilimleri/beşeri bilimler yelpazesi"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~14.000",
-          "language": "Ağırlıklı Almanca, medya/IT yüksek lisansında bazı İngilizce seçenekler",
-          "tuition": "Dönemlik ~290 € katkı payı"
+          "language": "Ağırlıklı Almanca, medya/IT yüksek lisansında bazı İngilizce seçenekler"
         },
         "popularPrograms": [
           "Bilgisayar Bilimi",
           "Medya/İletişim",
           "Elektrik-Elektronik Mühendisliği"
-        ],
-        "lat": 49.8646,
-        "lng": 8.6321,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "reutlingen",
         "name": "Hochschule Reutlingen",
         "city": "Reutlingen",
-        "type": "Fachhochschule",
-        "founded": "1855",
         "description": "Tekstil mühendisliği kökenli, bugün uluslararası işletme ve mühendislikte güçlü, çok uluslu bir öğrenci topluluğuna sahip bir Hochschule.",
         "history": [
           "1855'te, bölgenin tarihi tekstil sanayisini yansıtan bir tekstil mühendisliği okulu olarak kuruldu; 1971'de Hochschule statüsü kazandı.",
@@ -2282,29 +1868,20 @@
           "Büyük şehir imkanları bakımından sınırlı küçük bir şehir",
           "İşletme programlarına girişte rekabet olabilir"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~6.000",
-          "language": "Almanca ve İngilizce karışık, ESB Business School büyük ölçüde İngilizce",
-          "tuition": "Dönemlik ~135 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+          "language": "Almanca ve İngilizce karışık, ESB Business School büyük ölçüde İngilizce"
         },
         "popularPrograms": [
           "Uluslararası İşletme (ESB)",
           "Tekstil Mühendisliği",
           "Mekatronik"
-        ],
-        "lat": 48.488,
-        "lng": 9.216,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "fhmuenster",
         "name": "FH Münster (Fachhochschule Münster)",
         "city": "Münster",
-        "type": "Fachhochschule",
-        "founded": "1971",
         "description": "Münster'da, mühendislik, tasarım ve sosyal çalışmalarda geniş bir program yelpazesine sahip büyük bir Hochschule.",
         "history": [
           "1971'de kurulan, bugün Almanya'nın daha büyük uygulamalı bilimler üniversitelerinden biri olan FH Münster, bisiklet dostu Münster şehrini WWU Münster ile paylaşıyor.",
@@ -2326,29 +1903,20 @@
           "Popüler programlarda kalabalık gruplar",
           "Sınırlı lisansüstü araştırma imkanı"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~14.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~290 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Makine Mühendisliği",
           "Tasarım",
           "Sosyal Çalışma"
-        ],
-        "lat": 51.9506,
-        "lng": 7.6198,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "osnabrueck",
         "name": "Hochschule Osnabrück",
         "city": "Osnabrück",
-        "type": "Fachhochschule",
-        "founded": "1971",
         "description": "Kuzeybatı Almanya'da, mühendislik, tarım bilimleri ve işletmede uygulamaya dönük eğitim veren bir Hochschule.",
         "history": [
           "1971'de kurulan, Aşağı Saksonya'nın Osnabrück bölgesine mühendislik, tarım ve işletme alanlarında uygulamaya dönük bir müfredatla hizmet veriyor.",
@@ -2370,29 +1938,20 @@
           "Osnabrück'te sınırlı büyük şehir imkanları",
           "Daha az İngilizce program"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~13.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~300 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Tarım Bilimleri",
           "Makine Mühendisliği",
           "İşletme"
-        ],
-        "lat": 52.276,
-        "lng": 8.0442,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "bht",
         "name": "Berliner Hochschule für Technik (BHT)",
         "city": "Berlin",
-        "type": "Fachhochschule",
-        "founded": "1971",
         "description": "Berlin'in en büyük teknik Hochschule'lerinden biri; mühendislik ve bilgi teknolojilerinde uygulamaya dönük, büyük bir öğrenci topluluğuna sahip.",
         "history": [
           "1971'de Technische Fachhochschule Berlin olarak kuruldu, daha sonra Beuth Hochschule für Technik adını aldı ve 2021'de tekrar Berliner Hochschule für Technik (BHT) olarak yeniden adlandırıldı.",
@@ -2414,29 +1973,20 @@
           "Popüler mühendislik/bilgisayar bilimi programlarında kalabalık gruplar",
           "Aynı şehirdeki TU Berlin'e kıyasla daha az araştırma prestiji"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~12.000",
-          "language": "Ağırlıklı Almanca, bilgisayar bilimi yüksek lisansında bazı İngilizce",
-          "tuition": "Dönemlik ~310 € katkı payı"
+          "language": "Ağırlıklı Almanca, bilgisayar bilimi yüksek lisansında bazı İngilizce"
         },
         "popularPrograms": [
           "Bilgisayar Bilimi",
           "Elektrik-Elektronik Mühendisliği",
           "Matematik"
-        ],
-        "lat": 52.5476,
-        "lng": 13.3572,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "jade",
         "name": "Jade Hochschule",
         "city": "Wilhelmshaven",
-        "type": "Fachhochschule",
-        "founded": "2009",
         "description": "Kuzey Almanya kıyısında, denizcilik mühendisliği ve lojistikte uzmanlaşmış küçük bir Hochschule.",
         "history": [
           "2009'da, her biri 1970'lere uzanan köklere sahip Wilhelmshaven, Oldenburg ve Elsfleth'teki Fachhochschule'lerin birleşmesiyle kuruldu.",
@@ -2458,29 +2008,20 @@
           "Büyük şehirlerden uzak, kıyıda bir konum",
           "Daha küçük uluslararası öğrenci topluluğu"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~5.700",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~290 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Denizcilik/Nautik Mühendislik",
           "Lojistik",
           "Makine Mühendisliği"
-        ],
-        "lat": 53.5286,
-        "lng": 8.1058,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "duesseldorf",
         "name": "Heinrich-Heine-Universität Düsseldorf (HHU)",
         "city": "Düsseldorf",
-        "type": "Universität",
-        "founded": "1965",
         "description": "Düsseldorflu şair Heinrich Heine'nin adını taşıyan, tıp ve yaşam bilimlerinde güçlü bir üniversite.",
         "history": [
           "Kökleri 1907'de kurulan bir tıp akademisine uzanır; 1965'te tam bir üniversite statüsü kazandı ve adını Düsseldorf doğumlu şair Heinrich Heine'den aldı.",
@@ -2501,29 +2042,20 @@
           "Beşeri bilimler dışında sınırlı program çeşitliliği",
           "Büyük şehirde yüksek yaşam maliyeti"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~34.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~310 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Tıp",
           "Biyoloji/Yaşam Bilimleri",
           "Hukuk"
-        ],
-        "lat": 51.19,
-        "lng": 6.7947,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "ude",
         "name": "Universität Duisburg-Essen (UDE)",
         "city": "Duisburg/Essen",
-        "type": "Universität",
-        "founded": "2003",
         "description": "Duisburg ve Essen üniversitelerinin birleşmesiyle oluşan, Ruhr bölgesinin en büyük üniversitelerinden biri.",
         "history": [
           "2003'te Duisburg ve Essen üniversitelerinin birleşmesiyle kuruldu; TU Dortmund ile birlikte 'University Alliance Ruhr' ittifakının üyesidir.",
@@ -2544,29 +2076,20 @@
           "Büyük öğrenci sayısı kalabalık dersler anlamına gelebilir",
           "Ruhr bölgesi klasik üniversite şehri hissi vermeyebilir"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~42.000",
-          "language": "Ağırlıklı Almanca, mühendislikte bazı İngilizce programlar",
-          "tuition": "Dönemlik ~320 € katkı payı"
+          "language": "Ağırlıklı Almanca, mühendislikte bazı İngilizce programlar"
         },
         "popularPrograms": [
           "Mühendislik",
           "Tıp",
           "Sosyal Bilimler"
-        ],
-        "lat": 51.4587,
-        "lng": 7.0122,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "tudortmund",
         "name": "Technische Universität Dortmund",
         "city": "Dortmund",
-        "type": "Universität",
-        "founded": "1968",
         "description": "Ruhr bölgesinde, istatistik ve fizikte güçlü, mühendislik odaklı bir teknik üniversite.",
         "history": [
           "1968'de kurulan TU Dortmund, Almanya'da nadir bulunan bağımsız bir İstatistik fakültesine sahip olmasıyla tanınır.",
@@ -2587,29 +2110,20 @@
           "Popüler mühendislik programlarında kalabalık gruplar",
           "Beşeri bilimlerde daha sınırlı seçenek"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~32.000",
-          "language": "Ağırlıklı Almanca, istatistik/mühendislikte bazı İngilizce",
-          "tuition": "Dönemlik ~310 € katkı payı"
+          "language": "Ağırlıklı Almanca, istatistik/mühendislikte bazı İngilizce"
         },
         "popularPrograms": [
           "İstatistik",
           "Fizik",
           "Makine Mühendisliği"
-        ],
-        "lat": 51.4925,
-        "lng": 7.416,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "bielefeld",
         "name": "Universität Bielefeld",
         "city": "Bielefeld",
-        "type": "Universität",
-        "founded": "1969",
         "description": "Sosyolojide dünya çapında etkili, tek bir dev bina içinde birleşik alışılmadık bir kampüse sahip bir reform üniversitesi.",
         "history": [
           "1969'da, Konstanz ve Bremen'e benzer disiplinler arası bir 'reform üniversitesi' olarak kuruldu; tüm fakülteleri tek bir dev, birbirine bağlı bina içinde barındırmasıyla tanınır.",
@@ -2630,29 +2144,20 @@
           "Bielefeld büyük şehir imkanları bakımından sınırlı",
           "Mühendislik gibi bazı alanlarda program bulunmuyor"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~24.000",
-          "language": "Ağırlıklı Almanca, sosyal bilimlerde bazı İngilizce yüksek lisans",
-          "tuition": "Dönemlik ~300 € katkı payı"
+          "language": "Ağırlıklı Almanca, sosyal bilimlerde bazı İngilizce yüksek lisans"
         },
         "popularPrograms": [
           "Sosyoloji",
           "Tarih",
           "Biyoloji"
-        ],
-        "lat": 52.0389,
-        "lng": 8.4951,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "paderborn",
         "name": "Universität Paderborn",
         "city": "Paderborn",
-        "type": "Universität",
-        "founded": "1972",
         "description": "'Bilgi Toplumu Üniversitesi' olarak anılan, bilgisayar bilimi ve bilgi teknolojilerinde güçlü bir üniversite.",
         "history": [
           "1972'de kurulan üniversite, Heinz Nixdorf Enstitüsü'ne ev sahipliği yapar ve bilgi teknolojileri alanındaki güçlü odağı nedeniyle 'Bilgi Toplumu Üniversitesi' olarak anılır.",
@@ -2673,29 +2178,20 @@
           "Tıp gibi bazı alanlarda program bulunmuyor",
           "Daha az uluslararası tanınırlık"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~20.000",
-          "language": "Ağırlıklı Almanca, bilgisayar biliminde bazı İngilizce yüksek lisans",
-          "tuition": "Dönemlik ~280 € katkı payı"
+          "language": "Ağırlıklı Almanca, bilgisayar biliminde bazı İngilizce yüksek lisans"
         },
         "popularPrograms": [
           "Bilgisayar Bilimi",
           "Makine Mühendisliği",
           "İşletme"
-        ],
-        "lat": 51.7189,
-        "lng": 8.7719,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "siegen",
         "name": "Universität Siegen",
         "city": "Siegen",
-        "type": "Universität",
-        "founded": "1972",
         "description": "Siegerland sanayi bölgesinde, sosyal bilimler, medya çalışmaları ve mühendislikte güçlü bir üniversite.",
         "history": [
           "1972'de kurulan üniversite, eski bir şehir meydanının üzerine inşa edilen ve şehrin kalbinde yer alan alışılmadık bir kampüse (Unteres Schloss/Paul-Bonatz-Campus) sahiptir.",
@@ -2716,29 +2212,20 @@
           "Sınırlı büyük şehir imkanları",
           "Daha az İngilizce program seçeneği"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~16.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~290 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Sosyal Bilimler",
           "Medya Çalışmaları",
           "Makine Mühendisliği"
-        ],
-        "lat": 50.8747,
-        "lng": 8.0247,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "wuppertal",
         "name": "Bergische Universität Wuppertal",
         "city": "Wuppertal",
-        "type": "Universität",
-        "founded": "1972",
         "description": "Bergisches Land bölgesinde, mimarlık, güvenlik mühendisliği ve fizikte güçlü bir üniversite.",
         "history": [
           "1972'de 'Gesamthochschule Wuppertal' olarak kuruldu, 2003'te bugünkü adını aldı.",
@@ -2759,29 +2246,20 @@
           "Bazı programlarda kalabalık gruplar",
           "Daha az uluslararası tanınırlık"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~24.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~300 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Mimarlık",
           "Güvenlik Mühendisliği",
           "Fizik"
-        ],
-        "lat": 51.2447,
-        "lng": 7.1519,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "luebeck",
         "name": "Universität zu Lübeck",
         "city": "Lübeck",
-        "type": "Universität",
-        "founded": "1964",
         "description": "Tıp ve tıbbi bilişimi bir araya getiren, küçük ama son derece odaklanmış bir üniversite.",
         "history": [
           "1964'te bir tıp akademisi olarak kuruldu, 1985'te tam üniversite statüsü kazandı.",
@@ -2802,29 +2280,20 @@
           "Lübeck küçük bir şehir",
           "Tıp bölümünde çok yüksek başvuru rekabeti"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~5.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~220 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Tıp",
           "Tıbbi Bilişim",
           "Moleküler Yaşam Bilimleri"
-        ],
-        "lat": 53.8655,
-        "lng": 10.7085,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "rostock",
         "name": "Universität Rostock",
         "city": "Rostock",
-        "type": "Universität",
-        "founded": "1419",
         "description": "1419'da kurulan, Kuzey Avrupa ve Baltık bölgesinin en eski üniversitelerinden biri.",
         "history": [
           "1419'da kurulan Universität Rostock, Baltık bölgesinin ve kesintisiz Almanca konuşulan bölgenin en eski üniversitesidir.",
@@ -2845,29 +2314,20 @@
           "Sınırlı büyük şehir imkanları",
           "Daha az İngilizce program"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~13.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~230 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Denizcilik Mühendisliği",
           "Tıp",
           "Tarım Bilimleri"
-        ],
-        "lat": 54.0865,
-        "lng": 12.1345,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "greifswald",
         "name": "Universität Greifswald",
         "city": "Greifswald",
-        "type": "Universität",
-        "founded": "1456",
         "description": "1456'da kurulan, Almanya'nın en eski üniversitelerinden biri; Baltık kıyısında küçük, tarihi bir üniversite şehri.",
         "history": [
           "1456'da kurulan Universität Greifswald, Almanya'nın en eski üniversitelerinden biridir ve şehrin kimliğiyle iç içe geçmiştir.",
@@ -2888,29 +2348,20 @@
           "Sınırlı uluslararası öğrenci topluluğu",
           "Daha az İngilizce program"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~10.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~220 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Tıp",
           "Teoloji",
           "Biyoloji"
-        ],
-        "lat": 54.0947,
-        "lng": 13.3877,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "magdeburg",
         "name": "Otto-von-Guericke-Universität Magdeburg",
         "city": "Magdeburg",
-        "type": "Universität",
-        "founded": "1993",
         "description": "Vakum pompasının mucidi fizikçi Otto von Guericke'nin adını taşıyan, mühendislik ve nörobilimde güçlü bir üniversite.",
         "history": [
           "1993'te, Almanya'nın birleşmesi sonrası birkaç teknik ve tıbbi kurumun birleşmesiyle kuruldu; adını Magdeburg'da yaşamış fizikçi ve belediye başkanı Otto von Guericke'den alır.",
@@ -2931,29 +2382,20 @@
           "Sınırlı büyük şehir kültürel imkanları",
           "Daha az İngilizce lisans seçeneği"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~14.000",
-          "language": "Ağırlıklı Almanca, nörobilimde bazı İngilizce yüksek lisans",
-          "tuition": "Dönemlik ~230 € katkı payı"
+          "language": "Ağırlıklı Almanca, nörobilimde bazı İngilizce yüksek lisans"
         },
         "popularPrograms": [
           "Mühendislik",
           "Nörobilim",
           "Tıp"
-        ],
-        "lat": 52.1397,
-        "lng": 11.6461,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "halle",
         "name": "Martin-Luther-Universität Halle-Wittenberg (MLU)",
         "city": "Halle (Saale)",
-        "type": "Universität",
-        "founded": "1502",
         "description": "Reform hareketinin merkezi Wittenberg'de kurulan, beşeri bilimler ve tarım bilimlerinde güçlü tarihi bir üniversite.",
         "history": [
           "1502'de Wittenberg'de kuruldu — Martin Luther'in ders verdiği şehir — ve 1817'de 1694'te kurulan Halle Üniversitesi ile birleşti.",
@@ -2974,29 +2416,20 @@
           "Sınırlı büyük şehir imkanları",
           "Daha az İngilizce program"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~18.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~230 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Beşeri Bilimler",
           "Tarım Bilimleri",
           "Doğa Bilimleri"
-        ],
-        "lat": 51.4832,
-        "lng": 11.9694,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "leipzig",
         "name": "Universität Leipzig",
         "city": "Leipzig",
-        "type": "Universität",
-        "founded": "1409",
         "description": "1409'da kurulan, dünyanın kesintisiz eğitim veren en eski üniversitelerinden biri; Goethe ve Nietzsche gibi isimlerin okuduğu köklü bir kurum.",
         "history": [
           "1409'da kurulan Universität Leipzig, dünyanın en eski, kesintisiz eğitim veren üniversitelerinden biridir; Goethe, Nietzsche ve Leibniz gibi isimler burada okudu ya da ders verdi.",
@@ -3017,29 +2450,20 @@
           "Büyük öğrenci sayısı kalabalık dersler anlamına gelebilir",
           "Doğu Almanya'da nispeten daha az İngilizce program"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~30.000",
-          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları",
-          "tuition": "Dönemlik ~200 € katkı payı"
+          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları"
         },
         "popularPrograms": [
           "Hukuk",
           "Tıp",
           "Spor Bilimleri"
-        ],
-        "lat": 51.3397,
-        "lng": 12.3776,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "tuchemnitz",
         "name": "Technische Universität Chemnitz",
         "city": "Chemnitz",
-        "type": "Universität",
-        "founded": "1836",
         "description": "Sakson sanayi geleneğinde, üretim mühendisliği ve hafif yapı malzemelerinde güçlü bir teknik üniversite.",
         "history": [
           "1836'da bir ticaret okulu olarak kurulan kurum, 1986'da üniversite statüsü, 1993'te ise 'Technische Universität' adını aldı.",
@@ -3060,29 +2484,20 @@
           "Sınırlı uluslararası öğrenci topluluğu",
           "Daha az İngilizce lisans seçeneği"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~10.000",
-          "language": "Ağırlıklı Almanca, mühendislikte bazı İngilizce yüksek lisans",
-          "tuition": "Dönemlik ~200 € katkı payı"
+          "language": "Ağırlıklı Almanca, mühendislikte bazı İngilizce yüksek lisans"
         },
         "popularPrograms": [
           "Üretim Mühendisliği",
           "Malzeme Bilimi",
           "Bilgisayar Bilimi"
-        ],
-        "lat": 50.8113,
-        "lng": 12.9226,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "potsdam",
         "name": "Universität Potsdam",
         "city": "Potsdam",
-        "type": "Universität",
-        "founded": "1991",
         "description": "Berlin yakınında, Sanssouci Sarayı arazisindeki kampüsüyle, siyaset bilimi ve dilbilimde güçlü bir üniversite.",
         "history": [
           "1991'de, Almanya'nın birleşmesinden kısa süre sonra kuruldu; kampüslerinden biri tarihi Sanssouci Parkı'ndaki Neues Palais'de (Yeni Saray) yer alır.",
@@ -3103,29 +2518,20 @@
           "Potsdam, Berlin'in gölgesinde kalabiliyor",
           "Sınırlı mühendislik/doğa bilimleri seçeneği"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~21.000",
-          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları",
-          "tuition": "Dönemlik ~300 € katkı payı"
+          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları"
         },
         "popularPrograms": [
           "Siyaset Bilimi",
           "Dilbilim",
           "Kamu Yönetimi"
-        ],
-        "lat": 52.4009,
-        "lng": 13.0089,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "viadrina",
         "name": "Europa-Universität Viadrina Frankfurt (Oder)",
         "city": "Frankfurt (Oder)",
-        "type": "Universität",
-        "founded": "1506",
         "description": "Polonya sınırında, Avrupa entegrasyonuna adanmış, hukuk ve kültürel çalışmalarda güçlü küçük bir üniversite.",
         "history": [
           "1506'da kurulan üniversite 1811'de kapatıldı; 1991'de, Polonya sınırındaki Frankfurt (Oder) şehrinde, açıkça Avrupa/Alman-Polonya entegrasyonuna odaklanan bir profille yeniden açıldı.",
@@ -3146,29 +2552,20 @@
           "Dar bir program yelpazesi (esas olarak hukuk/ekonomi/kültürel çalışmalar)",
           "Berlin'e kıyasla daha az tanınırlık"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~5.000",
-          "language": "Almanca, İngilizce ve Lehçe karışık",
-          "tuition": "Dönemlik ~150 € katkı payı"
+          "language": "Almanca, İngilizce ve Lehçe karışık"
         },
         "popularPrograms": [
           "Avrupa Hukuku",
           "Ekonomi",
           "Kültürel Çalışmalar"
-        ],
-        "lat": 52.3436,
-        "lng": 14.5507,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "btucottbus",
         "name": "Brandenburgische Technische Universität Cottbus-Senftenberg (BTU)",
         "city": "Cottbus",
-        "type": "Universität",
-        "founded": "1991",
         "description": "Lusatia kömür bölgesinin enerji dönüşümünde, çevre ve enerji mühendisliğinde güçlü bir teknik üniversite.",
         "history": [
           "1991'de Cottbus'ta kuruldu; 2013'te Senftenberg'deki Hochschule Lausitz ile birleşerek bugünkü halini aldı.",
@@ -3189,29 +2586,20 @@
           "Sınırlı uluslararası öğrenci topluluğu",
           "İki kampüse (Cottbus/Senftenberg) bölünmüş yapı"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~7.000",
-          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları",
-          "tuition": "Dönemlik ~200 € katkı payı"
+          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları"
         },
         "popularPrograms": [
           "Çevre Mühendisliği",
           "Enerji Teknolojileri",
           "Mimarlık"
-        ],
-        "lat": 51.7626,
-        "lng": 14.3289,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "wuerzburg",
         "name": "Julius-Maximilians-Universität Würzburg (JMU)",
         "city": "Würzburg",
-        "type": "Universität",
-        "founded": "1402",
         "description": "X ışınlarının kaşifi Wilhelm Röntgen'in Nobel ödülü kazandığı, tıp ve fizikte köklü bir üniversite.",
         "history": [
           "1402'de kurulan, 1582'de yeniden açılan JMU, Almanya'nın en eski üniversitelerinden biridir.",
@@ -3232,29 +2620,20 @@
           "Büyük şehir imkanları bakımından orta ölçekli bir şehir",
           "Daha az İngilizce lisans seçeneği"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~28.000",
-          "language": "Ağırlıklı Almanca, tıp/fizikte bazı İngilizce yüksek lisans",
-          "tuition": "Dönemlik ~130 € katkı payı"
+          "language": "Ağırlıklı Almanca, tıp/fizikte bazı İngilizce yüksek lisans"
         },
         "popularPrograms": [
           "Tıp",
           "Fizik",
           "Psikoloji"
-        ],
-        "lat": 49.7896,
-        "lng": 9.9331,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "regensburg",
         "name": "Universität Regensburg",
         "city": "Regensburg",
-        "type": "Universität",
-        "founded": "1962",
         "description": "Tuna kıyısında, kompakt tek kampüsüyle, kimya ve hukukta güçlü bir Bavyera 'reform üniversitesi'.",
         "history": [
           "1962'de kurulan, Bavyera'nın savaş sonrası kurulan 'reform üniversitelerinden' biri olan Regensburg, tüm fakültelerini tek bir kompakt kampüste birleştirir.",
@@ -3275,29 +2654,20 @@
           "Sınırlı büyük şehir gece hayatı",
           "Daha az İngilizce lisans seçeneği"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~20.000",
-          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları",
-          "tuition": "Dönemlik ~150 € katkı payı"
+          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları"
         },
         "popularPrograms": [
           "Kimya",
           "Hukuk",
           "Doğu Avrupa Çalışmaları"
-        ],
-        "lat": 49.0177,
-        "lng": 12.0966,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "passau",
         "name": "Universität Passau",
         "city": "Passau",
-        "type": "Universität",
-        "founded": "1978",
         "description": "Üç nehrin birleştiği tarihi bir şehirde, hukuk, ekonomi ve bilgisayar bilimde güçlü, uluslararası odaklı küçük bir üniversite.",
         "history": [
           "1978'de kurulan, eski bir manastır binasında (Nikolakloster) yer alan Universität Passau, Tuna, Inn ve Ilz nehirlerinin birleştiği tarihi bir şehirde bulunur.",
@@ -3318,29 +2688,20 @@
           "Popüler hukuk/ekonomi programlarında rekabet",
           "Avusturya sınırına yakın, biraz uzak bir konum"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~11.000",
-          "language": "Ağırlıklı Almanca, hukuk/ekonomide bazı İngilizce yüksek lisans",
-          "tuition": "Dönemlik ~130 € katkı payı"
+          "language": "Ağırlıklı Almanca, hukuk/ekonomide bazı İngilizce yüksek lisans"
         },
         "popularPrograms": [
           "Hukuk",
           "Ekonomi",
           "Bilgisayar Bilimi"
-        ],
-        "lat": 48.5733,
-        "lng": 13.461,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "bayreuth",
         "name": "Universität Bayreuth",
         "city": "Bayreuth",
-        "type": "Universität",
-        "founded": "1975",
         "description": "Spor bilimi ve Afrika çalışmalarında dünya çapında tanınan, Franken bölgesinde bir Bavyera üniversitesi.",
         "history": [
           "1975'te kurulan Universität Bayreuth, spor bilimi ve biyomedikal araştırmalarda güçlü bir programa sahiptir.",
@@ -3361,29 +2722,20 @@
           "Sınırlı mühendislik/doğa bilimleri seçeneği",
           "Daha az İngilizce lisans seçeneği"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~13.000",
-          "language": "Ağırlıklı Almanca, Afrika çalışmalarında bazı İngilizce",
-          "tuition": "Dönemlik ~140 € katkı payı"
+          "language": "Ağırlıklı Almanca, Afrika çalışmalarında bazı İngilizce"
         },
         "popularPrograms": [
           "Spor Bilimi",
           "Afrika Çalışmaları",
           "Hukuk ve İşletme"
-        ],
-        "lat": 49.9291,
-        "lng": 11.5888,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "augsburg",
         "name": "Universität Augsburg",
         "city": "Augsburg",
-        "type": "Universität",
-        "founded": "1970",
         "description": "Münih yakınında, hukuk, ekonomi ve büyüyen bir dijital kampüsle bilgisayar bilimde güçlü bir üniversite.",
         "history": [
           "1970'te kurulan Universität Augsburg, hukuk, ekonomi ve öğretmen eğitiminde güçlü bir gelenek sürdürür.",
@@ -3404,29 +2756,20 @@
           "Augsburg, Münih'in gölgesinde kalabiliyor",
           "Daha az İngilizce lisans seçeneği"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~20.000",
-          "language": "Ağırlıklı Almanca, bilgisayar biliminde bazı İngilizce",
-          "tuition": "Dönemlik ~140 € katkı payı"
+          "language": "Ağırlıklı Almanca, bilgisayar biliminde bazı İngilizce"
         },
         "popularPrograms": [
           "Hukuk",
           "Ekonomi",
           "Bilgisayar Bilimi"
-        ],
-        "lat": 48.3348,
-        "lng": 10.8979,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "bamberg",
         "name": "Otto-Friedrich-Universität Bamberg",
         "city": "Bamberg",
-        "type": "Universität",
-        "founded": "1647",
         "description": "UNESCO Dünya Mirası eski şehir merkezinde, beşeri bilimler ve sosyoloji araştırmalarında güçlü bir üniversite.",
         "history": [
           "1647'de kurulan, 1972'de modern bir üniversite olarak yeniden yapılanan Bamberg, UNESCO Dünya Mirası listesindeki tarihi şehir merkezine yayılmış bir kampüse sahiptir.",
@@ -3447,29 +2790,20 @@
           "Mühendislik/doğa bilimleri gibi alanlarda program bulunmuyor",
           "Daha az İngilizce program"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~13.000",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~140 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Sosyoloji",
           "Beşeri Bilimler",
           "Kültürel Miras Koruma"
-        ],
-        "lat": 49.8971,
-        "lng": 10.8909,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "kueichstaett",
         "name": "Katholische Universität Eichstätt-Ingolstadt (KU)",
         "city": "Eichstätt/Ingolstadt",
-        "type": "Universität",
-        "founded": "1980",
         "description": "Almanya'nın tek tam teşekküllü devlet onaylı Katolik üniversitesi; teoloji, eğitim ve (Ingolstadt kampüsünde) işletmede güçlü.",
         "history": [
           "1980'de kurulan KU, Almanya'da devlet tarafından tam olarak tanınan tek Katolik üniversitedir.",
@@ -3490,29 +2824,20 @@
           "Sınırlı program yelpazesi (mühendislik/tıp yok)",
           "Küçük şehir imkanları"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~5.000",
-          "language": "Ağırlıklı Almanca, işletmede bazı İngilizce programlar",
-          "tuition": "Dönemlik ~120 € katkı payı"
+          "language": "Ağırlıklı Almanca, işletmede bazı İngilizce programlar"
         },
         "popularPrograms": [
           "İşletme (WFI)",
           "Teoloji",
           "Eğitim Bilimleri"
-        ],
-        "lat": 48.8965,
-        "lng": 11.1858,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hohenheim",
         "name": "Universität Hohenheim",
         "city": "Stuttgart (Hohenheim)",
-        "type": "Universität",
-        "founded": "1818",
         "description": "Barok bir sarayda konumlanan, tarım bilimleri ve beslenme bilimlerinde Almanya'nın önde gelen uzman üniversitesi.",
         "history": [
           "1818'de bir tarım akademisi olarak kurulan Universität Hohenheim, Stuttgart'ın Hohenheim semtindeki barok Schloss Hohenheim sarayında yer alır.",
@@ -3533,29 +2858,20 @@
           "Sınırlı program yelpazesi (mühendislik/tıp yok)",
           "Stuttgart Üniversitesi ile bazen karıştırılabiliyor"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~10.000",
-          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları",
-          "tuition": "Dönemlik ~170 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları"
         },
         "popularPrograms": [
           "Tarım Bilimleri",
           "Beslenme Bilimleri",
           "İşletme"
-        ],
-        "lat": 48.7136,
-        "lng": 9.2117,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "ulm",
         "name": "Universität Ulm",
         "city": "Ulm",
-        "type": "Universität",
-        "founded": "1967",
         "description": "Tuna kıyısında, tıp, matematik/aktüerya bilimi ve mühendislikte güçlü, kompakt bir üniversite.",
         "history": [
           "1967'de kurulan Universität Ulm, 'Oberer Eselsberg' adlı tek, kompakt bir kampüste eğitim verir.",
@@ -3576,29 +2892,20 @@
           "Ulm orta ölçekli bir şehir",
           "Tıp bölümünde yüksek başvuru rekabeti"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~10.000",
-          "language": "Ağırlıklı Almanca, matematik/mühendislikte bazı İngilizce yüksek lisans",
-          "tuition": "Dönemlik ~170 € katkı payı; AB dışı öğrenciler için ayrıca ~1.500 €/dönem okul ücreti uygulanabilir (güncel tutarı danışmanlarımızla teyit edin)"
+          "language": "Ağırlıklı Almanca, matematik/mühendislikte bazı İngilizce yüksek lisans"
         },
         "popularPrograms": [
           "Tıp",
           "Matematik/Aktüerya Bilimi",
           "Mühendislik"
-        ],
-        "lat": 48.4225,
-        "lng": 9.9575,
-        "tuitionFree": false,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "saarland",
         "name": "Universität des Saarlandes",
         "city": "Saarbrücken",
-        "type": "Universität",
-        "founded": "1948",
         "description": "Fransız sınırında, bilgisayar bilimi ve yapay zekada Avrupa çapında tanınan güçlü bir üniversite.",
         "history": [
           "1948'de, o dönem Fransız yönetimindeki Saarland'da, Alman-Fransız akademik işbirliğine özel önem vererek kuruldu.",
@@ -3619,29 +2926,20 @@
           "Popüler bilgisayar bilimi programlarında yüksek rekabet",
           "Almanya'nın en küçük eyaletinde, biraz izole bir konum"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~17.000",
-          "language": "Ağırlıklı Almanca, bilgisayar biliminde çok sayıda İngilizce program",
-          "tuition": "Dönemlik ~285 € katkı payı"
+          "language": "Ağırlıklı Almanca, bilgisayar biliminde çok sayıda İngilizce program"
         },
         "popularPrograms": [
           "Bilgisayar Bilimi",
           "Yapay Zeka",
           "Hukuk"
-        ],
-        "lat": 49.2542,
-        "lng": 7.0428,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "rptu",
         "name": "RPTU Kaiserslautern-Landau",
         "city": "Kaiserslautern/Landau",
-        "type": "Universität",
-        "founded": "1970",
         "description": "2023'te birleşen, Kaiserslautern'de teknoloji ve Landau'da eğitim/beşeri bilimlerde uzmanlaşmış iki şehirli bir üniversite.",
         "history": [
           "2023'te, 1970'te kurulan TU Kaiserslautern ile Koblenz-Landau Üniversitesi'nin Landau kampüsünün birleşmesiyle oluşturuldu.",
@@ -3662,29 +2960,20 @@
           "Her iki şehir de küçük-orta ölçekli",
           "Yeni birleşme nedeniyle kurumsal kimlik hâlâ oturuyor"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~17.000",
-          "language": "Ağırlıklı Almanca, bilgisayar biliminde çok sayıda İngilizce program",
-          "tuition": "Dönemlik ~270 € katkı payı"
+          "language": "Ağırlıklı Almanca, bilgisayar biliminde çok sayıda İngilizce program"
         },
         "popularPrograms": [
           "Bilgisayar Bilimi",
           "Eğitim Bilimleri",
           "Mühendislik"
-        ],
-        "lat": 49.4278,
-        "lng": 7.7611,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "fernunihagen",
         "name": "FernUniversität in Hagen",
         "city": "Hagen",
-        "type": "Universität",
-        "founded": "1974",
         "description": "Almanya'nın tek devlet uzaktan eğitim üniversitesi; çalışan profesyoneller için esnek, öğrenci sayısı bakımından ülkenin en büyük üniversitesi.",
         "history": [
           "1974'te kurulan FernUniversität, Almanya'nın tek devlet destekli uzaktan eğitim üniversitesidir ve öğrenci sayısı bakımından ülkenin en büyük üniversitesidir.",
@@ -3705,29 +2994,20 @@
           "Öz disiplin ve zaman yönetimi gerektiriyor",
           "Almanca dil yeterliliği çoğu program için şart"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~60.000 (uzaktan eğitim)",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~130 € (ders başına ek ücretlerle)"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Hukuk",
           "İşletme",
           "Psikoloji"
-        ],
-        "lat": 51.3742,
-        "lng": 7.4886,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "oldenburg",
         "name": "Carl von Ossietzky Universität Oldenburg",
         "city": "Oldenburg",
-        "type": "Universität",
-        "founded": "1974",
         "description": "Kuzey Denizi'ne yakınlığıyla, rüzgar enerjisi araştırmalarında Almanya'nın önde gelen merkezlerinden biri.",
         "history": [
           "1974'te kurulan üniversite, adını Nobel Barış Ödülü sahibi gazeteci Carl von Ossietzky'den alır.",
@@ -3748,29 +3028,20 @@
           "Sınırlı tıp/mühendislik program yelpazesi",
           "Daha az uluslararası tanınırlık"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~15.000",
-          "language": "Ağırlıklı Almanca, enerji araştırmalarında bazı İngilizce",
-          "tuition": "Dönemlik ~280 € katkı payı"
+          "language": "Ağırlıklı Almanca, enerji araştırmalarında bazı İngilizce"
         },
         "popularPrograms": [
           "Rüzgar Enerjisi/Yenilenebilir Enerji",
           "Eğitim Bilimleri",
           "Müzikoloji"
-        ],
-        "lat": 53.1435,
-        "lng": 8.1657,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "hildesheim",
         "name": "Universität Hildesheim",
         "city": "Hildesheim",
-        "type": "Universität",
-        "founded": "1978",
         "description": "Beşeri bilimler, kültürel çalışmalar ve çeviribilimde uzmanlaşmış, küçük ama odaklanmış bir üniversite.",
         "history": [
           "1978'de kurulan Universität Hildesheim, beşeri bilimler, kültürel/medya çalışmaları ve psikolojide uzmanlaşmıştır.",
@@ -3791,29 +3062,20 @@
           "Hildesheim küçük bir şehir",
           "Mühendislik/doğa bilimleri programı bulunmuyor"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~8.000",
-          "language": "Ağırlıklı Almanca, çeviribilimde bazı İngilizce",
-          "tuition": "Dönemlik ~280 € katkı payı"
+          "language": "Ağırlıklı Almanca, çeviribilimde bazı İngilizce"
         },
         "popularPrograms": [
           "Çeviribilim",
           "Kültürel/Medya Çalışmaları",
           "Psikoloji"
-        ],
-        "lat": 52.1495,
-        "lng": 9.9563,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "leuphana",
         "name": "Leuphana Universität Lüneburg",
         "city": "Lüneburg",
-        "type": "Universität",
-        "founded": "1946",
         "description": "Daniel Libeskind tasarımı çarpıcı ana binasıyla tanınan, sürdürülebilirlik bilimi ve işletmede yenilikçi bir üniversite.",
         "history": [
           "Kökleri 1946'daki bir öğretmen okuluna uzanır; 2007'de 'Leuphana' adıyla yeniden markalandı ve tüm birinci sınıf öğrencilerinin katıldığı disiplinler arası 'Leuphana Semester' modelini başlattı.",
@@ -3834,29 +3096,20 @@
           "Lüneburg orta ölçekli bir şehir",
           "Sınırlı mühendislik/tıp seçeneği"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~10.000",
-          "language": "Ağırlıklı Almanca, sürdürülebilirlik/işletmede bazı İngilizce",
-          "tuition": "Dönemlik ~280 € katkı payı"
+          "language": "Ağırlıklı Almanca, sürdürülebilirlik/işletmede bazı İngilizce"
         },
         "popularPrograms": [
           "Sürdürülebilirlik Bilimi",
           "İşletme",
           "Eğitim Bilimleri"
-        ],
-        "lat": 53.2405,
-        "lng": 10.4057,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "tuclausthal",
         "name": "Technische Universität Clausthal",
         "city": "Clausthal-Zellerfeld",
-        "type": "Universität",
-        "founded": "1775",
         "description": "Harz Dağları'nda, hammadde ve maden mühendisliğinde uzmanlaşmış, Almanya'nın en eski teknik üniversitelerinden biri.",
         "history": [
           "1775'te bir maden akademisi (Bergakademie) olarak kurulan TU Clausthal, Almanya'nın en eski teknik yükseköğretim kurumlarından biridir.",
@@ -3877,29 +3130,20 @@
           "Çok dar bir program yelpazesi",
           "Kış ayları soğuk ve ulaşım zor olabilir"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~3.500",
-          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları",
-          "tuition": "Dönemlik ~250 € katkı payı"
+          "language": "Ağırlıklı Almanca, bazı İngilizce yüksek lisans programları"
         },
         "popularPrograms": [
           "Maden Mühendisliği",
           "Malzeme Bilimi",
           "Enerji Teknolojileri"
-        ],
-        "lat": 51.8047,
-        "lng": 10.3358,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       },
       {
         "slug": "vechta",
         "name": "Universität Vechta",
         "city": "Vechta",
-        "type": "Universität",
-        "founded": "1830",
         "description": "Almanya'nın en küçük devlet üniversitelerinden biri; eğitim bilimleri, sosyal çalışma ve gerontolojide uzmanlaşmış.",
         "history": [
           "Kökleri 1830'daki bir öğretmen eğitimi kurumuna uzanan Universität Vechta, 1995'te üniversite statüsü kazandı.",
@@ -3920,22 +3164,15 @@
           "Vechta çok küçük bir kasaba, büyük şehir imkanları yok",
           "Sınırlı uluslararası öğrenci topluluğu"
         ],
-        "badges": [],
         "quickFacts": {
           "students": "~5.500",
-          "language": "Ağırlıklı Almanca",
-          "tuition": "Dönemlik ~280 € katkı payı"
+          "language": "Ağırlıklı Almanca"
         },
         "popularPrograms": [
           "Eğitim Bilimleri",
           "Sosyal Çalışma",
           "Gerontoloji"
-        ],
-        "lat": 52.728,
-        "lng": 8.283,
-        "tuitionFree": true,
-        "competitiveness": "medium",
-        "level": "both"
+        ]
       }
     ],
     "cta": {

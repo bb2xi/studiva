@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "data:import": "node scripts/import-university-facts.mjs",
+    "data:check": "node scripts/check-university-links.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

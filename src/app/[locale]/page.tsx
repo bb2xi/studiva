@@ -13,12 +13,14 @@ import { Tag } from "@/components/Tag";
 import { MentorCardComingSoon } from "@/components/MentorCard";
 import { universityMedia, universityLogos } from "@/lib/universityMedia";
 import { heroPhotos } from "@/lib/heroPhotos";
+import { getUniversitySummaries } from "@/lib/universities";
+import { pageMetadata } from "@/lib/seo";
+import type { UniversitySummary } from "@/lib/discovery/types";
 
 type ServiceItem = { icon: string; title: string; description: string };
 type ProcessStep = { title: string; description: string };
 type ProcessFact = { label: string; text: string; slug?: string };
 type ProgramItem = { name: string; icon: string; description: string; homeNote: string };
-type UniversityItem = { slug: string; name: string; city: string; type: string; badges: string[] };
 type Stat = { value: string; label: string; highlight?: boolean; kind?: "number" | "text" };
 type TrustItem = { title: string; text: string };
 type FaqItem = { question: string; answer: string };
@@ -30,6 +32,13 @@ const FILTER_KEYS = ["universitat", "hochschule", "dual", "tu9", "excellence"] a
 const UNIVERSITY_PREVIEW_SLUGS = ["tum", "heidelberg", "rwth", "tuebingen", "tudresden", "htwberlin"];
 // Real campus photos for the showcase band, same diverse spread.
 const SHOWCASE_SLUGS = ["tum", "heidelberg", "tuebingen", "bonn", "freiburg", "tudresden"];
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const meta = await getTranslations({ locale, namespace: "meta" });
+  const home = await getTranslations({ locale, namespace: "home" });
+  return pageMetadata({ locale, path: "", title: `${meta("siteName")} | ${meta("tagline")}`, description: home("hero.subtitle") });
+}
 
 export default async function HomePage({
   params,
@@ -54,11 +63,11 @@ export default async function HomePage({
   const guideSlugs = home.raw("whyUs.guideSlugs") as string[];
   const faqIndices = home.raw("faqTeaser.indices") as number[];
   const programItems = programsT.raw("items") as ProgramItem[];
-  const allUniversityItems = universitiesT.raw("items") as UniversityItem[];
+  const allUniversityItems = await getUniversitySummaries(locale);
   const universityFilters = universitiesT.raw("filters") as Record<string, string>;
   const universityItems = UNIVERSITY_PREVIEW_SLUGS.map((slug) =>
     allUniversityItems.find((u) => u.slug === slug)
-  ).filter((u): u is UniversityItem => Boolean(u));
+  ).filter((u): u is UniversitySummary => Boolean(u));
   const showcasePhotos = SHOWCASE_SLUGS.map((slug) => ({
     slug,
     name: allUniversityItems.find((u) => u.slug === slug)?.name ?? slug,
@@ -69,7 +78,7 @@ export default async function HomePage({
   const allBlogPosts = blogT.raw("posts") as BlogPost[];
   const guidePosts = guideSlugs.map((slug) => allBlogPosts.find((p) => p.slug === slug)).filter((p): p is BlogPost => Boolean(p));
   const expertiseNote = (aboutT.raw("values.items") as { title: string; description: string }[])[2]?.description;
-  const FILTER_TYPE_MATCH: Record<string, (u: UniversityItem) => boolean> = {
+  const FILTER_TYPE_MATCH: Record<string, (u: UniversitySummary) => boolean> = {
     universitat: (u) => u.type === "Universität",
     hochschule: (u) => u.type === "Fachhochschule",
     dual: (u) => u.type === "Duale Hochschule",
@@ -289,7 +298,7 @@ export default async function HomePage({
                         </Heading>
                         <div className="mt-1 flex items-center gap-1.5 text-xs text-foreground-muted">
                           <MapPin size={12} />
-                          {uni.city}
+                          {uni.cityLabel}
                         </div>
                       </div>
                       <div className="hidden shrink-0 gap-1.5 sm:flex">
@@ -308,7 +317,7 @@ export default async function HomePage({
                 {filterChips.map((chip) => (
                   <Link
                     key={chip.key}
-                    href={`/universities?filter=${chip.key}`}
+                    href={`/universities?${chip.key === "tu9" || chip.key === "excellence" ? "badge" : "type"}=${chip.key}`}
                     className="inline-flex items-center gap-1.5 rounded-sm border border-border-strong px-3.5 py-1.5 text-xs font-semibold text-foreground-secondary transition-colors hover:border-forest hover:text-forest"
                   >
                     {chip.label}

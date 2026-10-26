@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { ArrowUpRight, CalendarDays, Clock } from "lucide-react";
 import { Link } from "@/i18n/navigation";
@@ -28,7 +29,7 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "blog" });
-  return { title: `${t("hero.title")} | Studiva` };
+  return pageMetadata({ locale, path: "/blog", title: `${t("hero.title")} | Studiva`, description: t("hero.subtitle") });
 }
 
 export default async function BlogPage({

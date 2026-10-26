@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import Container from "@/components/Container";
@@ -15,7 +16,7 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "contact" });
-  return { title: `${t("hero.title")} | Studiva` };
+  return pageMetadata({ locale, path: "/contact", title: `${t("hero.title")} | Studiva`, description: t("hero.subtitle") });
 }
 
 export default async function ContactPage({

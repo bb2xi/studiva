@@ -207,6 +207,17 @@ body {
   }
 }
 
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Count-up number reveal for ledger/stat figures (Reveal.tsx triggers the
    visible state; this just governs how the figure settles in). */
 @keyframes figure-settle {

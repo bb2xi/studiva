@@ -7,6 +7,9 @@ import { routing } from "@/i18n/routing";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import Toaster from "@/components/discovery/Toaster";
+import CompareTray from "@/components/discovery/CompareTray";
+import { getUniversitySummaries } from "@/lib/universities";
 import "../globals.css";
 
 // Display face — headings and the editorial "dek" lead-paragraph/pull-quote
@@ -68,6 +71,7 @@ export default async function LocaleLayout({
   const footer = await getTranslations({ locale, namespace: "footer" });
   const meta = await getTranslations({ locale, namespace: "meta" });
   const common = await getTranslations({ locale, namespace: "common" });
+  const universityNames = Object.fromEntries((await getUniversitySummaries(locale)).map((u) => [u.slug, u.name]));
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -100,6 +104,8 @@ export default async function LocaleLayout({
           <main className="flex-1">{children}</main>
           <Footer />
           <WhatsAppButton message={common("whatsappMessage")} label={common("whatsappAriaLabel")} />
+          <CompareTray names={universityNames} />
+          <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>

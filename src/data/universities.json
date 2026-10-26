@@ -1,0 +1,1190 @@
+[
+  {
+    "slug": "tum",
+    "type": "Universität",
+    "founded": "1868",
+    "badges": [
+      "tu9",
+      "excellence"
+    ],
+    "level": "both",
+    "competitiveness": "high",
+    "lat": 48.1497,
+    "lng": 11.5678,
+    "cities": [
+      "München"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "lmu",
+    "type": "Universität",
+    "founded": "1472",
+    "badges": [
+      "excellence"
+    ],
+    "level": "both",
+    "competitiveness": "high",
+    "lat": 48.1512,
+    "lng": 11.5806,
+    "cities": [
+      "München"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "huberlin",
+    "type": "Universität",
+    "founded": "1810",
+    "badges": [
+      "excellence"
+    ],
+    "level": "both",
+    "competitiveness": "high",
+    "lat": 52.517,
+    "lng": 13.3936,
+    "cities": [
+      "Berlin"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "rwth",
+    "type": "Universität",
+    "founded": "1870",
+    "badges": [
+      "tu9",
+      "excellence"
+    ],
+    "level": "both",
+    "competitiveness": "high",
+    "lat": 50.7782,
+    "lng": 6.0817,
+    "cities": [
+      "Aachen"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "mannheim",
+    "type": "Universität",
+    "founded": "1907",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 49.4794,
+    "lng": 8.4622,
+    "cities": [
+      "Mannheim"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "hm",
+    "type": "Fachhochschule",
+    "founded": "1971",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 48.1611,
+    "lng": 11.5486,
+    "cities": [
+      "München"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "frankfurtuas",
+    "type": "Fachhochschule",
+    "founded": "1971",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 50.1289,
+    "lng": 8.6858,
+    "cities": [
+      "Frankfurt am Main"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "dhbw",
+    "type": "Duale Hochschule",
+    "founded": "2009",
+    "badges": [],
+    "level": "bachelor",
+    "competitiveness": "medium",
+    "lat": 48.7784,
+    "lng": 9.1733,
+    "cities": [
+      "Stuttgart",
+      "Mannheim",
+      "Karlsruhe"
+    ],
+    "multiCampus": true
+  },
+  {
+    "slug": "iu",
+    "type": "Duale Hochschule",
+    "founded": "1998",
+    "badges": [],
+    "level": "bachelor",
+    "competitiveness": "medium",
+    "lat": 50.967,
+    "lng": 11.043,
+    "cities": [],
+    "multiCampus": true
+  },
+  {
+    "slug": "fom",
+    "type": "Duale Hochschule",
+    "founded": "1993",
+    "badges": [],
+    "level": "bachelor",
+    "competitiveness": "medium",
+    "lat": 51.4508,
+    "lng": 7.0131,
+    "cities": [],
+    "multiCampus": true
+  },
+  {
+    "slug": "heidelberg",
+    "type": "Universität",
+    "founded": "1386",
+    "badges": [
+      "excellence"
+    ],
+    "level": "both",
+    "competitiveness": "high",
+    "lat": 49.4097,
+    "lng": 8.7057,
+    "cities": [
+      "Heidelberg"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "tuebingen",
+    "type": "Universität",
+    "founded": "1477",
+    "badges": [
+      "excellence"
+    ],
+    "level": "both",
+    "competitiveness": "high",
+    "lat": 48.5225,
+    "lng": 9.0561,
+    "cities": [
+      "Tübingen"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "kit",
+    "type": "Universität",
+    "founded": "2009",
+    "badges": [
+      "tu9"
+    ],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 49.0117,
+    "lng": 8.4149,
+    "cities": [
+      "Karlsruhe"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "freiburg",
+    "type": "Universität",
+    "founded": "1457",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 47.9955,
+    "lng": 7.846,
+    "cities": [
+      "Freiburg im Breisgau"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "goettingen",
+    "type": "Universität",
+    "founded": "1734",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 51.5346,
+    "lng": 9.9349,
+    "cities": [
+      "Göttingen"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "bonn",
+    "type": "Universität",
+    "founded": "1818",
+    "badges": [
+      "excellence"
+    ],
+    "level": "both",
+    "competitiveness": "high",
+    "lat": 50.734,
+    "lng": 7.0956,
+    "cities": [
+      "Bonn"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "koeln",
+    "type": "Universität",
+    "founded": "1388",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 50.9279,
+    "lng": 6.9271,
+    "cities": [
+      "Köln"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "tuberlin",
+    "type": "Universität",
+    "founded": "1946",
+    "badges": [
+      "tu9",
+      "excellence"
+    ],
+    "level": "both",
+    "competitiveness": "high",
+    "lat": 52.5125,
+    "lng": 13.3269,
+    "cities": [
+      "Berlin"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "tudresden",
+    "type": "Universität",
+    "founded": "1828",
+    "badges": [
+      "tu9",
+      "excellence"
+    ],
+    "level": "both",
+    "competitiveness": "high",
+    "lat": 51.0272,
+    "lng": 13.7231,
+    "cities": [
+      "Dresden"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "tudarmstadt",
+    "type": "Universität",
+    "founded": "1877",
+    "badges": [
+      "tu9"
+    ],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 49.8728,
+    "lng": 8.6512,
+    "cities": [
+      "Darmstadt"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "tubraunschweig",
+    "type": "Universität",
+    "founded": "1745",
+    "badges": [
+      "tu9"
+    ],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 52.2733,
+    "lng": 10.5261,
+    "cities": [
+      "Braunschweig"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "hannover",
+    "type": "Universität",
+    "founded": "1831",
+    "badges": [
+      "tu9"
+    ],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 52.3841,
+    "lng": 9.7161,
+    "cities": [
+      "Hannover"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "stuttgart",
+    "type": "Universität",
+    "founded": "1829",
+    "badges": [
+      "tu9"
+    ],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 48.7801,
+    "lng": 9.1774,
+    "cities": [
+      "Stuttgart"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "konstanz",
+    "type": "Universität",
+    "founded": "1966",
+    "badges": [
+      "excellence"
+    ],
+    "level": "both",
+    "competitiveness": "high",
+    "lat": 47.693,
+    "lng": 9.1859,
+    "cities": [
+      "Konstanz"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "htwberlin",
+    "type": "Fachhochschule",
+    "founded": "1994",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 52.4809,
+    "lng": 13.5246,
+    "cities": [
+      "Berlin"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "furtwangen",
+    "type": "Fachhochschule",
+    "founded": "1850",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 48.0511,
+    "lng": 8.2076,
+    "cities": [
+      "Furtwangen im Schwarzwald"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "hamburg",
+    "type": "Universität",
+    "founded": "1919",
+    "badges": [
+      "excellence"
+    ],
+    "level": "both",
+    "competitiveness": "high",
+    "lat": 53.5657,
+    "lng": 9.9847,
+    "cities": [
+      "Hamburg"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "fuberlin",
+    "type": "Universität",
+    "founded": "1948",
+    "badges": [
+      "excellence"
+    ],
+    "level": "both",
+    "competitiveness": "high",
+    "lat": 52.4536,
+    "lng": 13.2878,
+    "cities": [
+      "Berlin"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "erlangen",
+    "type": "Universität",
+    "founded": "1743",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 49.5985,
+    "lng": 11.0036,
+    "cities": [
+      "Erlangen",
+      "Nürnberg"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "bochum",
+    "type": "Universität",
+    "founded": "1962",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 51.4487,
+    "lng": 7.2609,
+    "cities": [
+      "Bochum"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "mainz",
+    "type": "Universität",
+    "founded": "1477",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 49.9931,
+    "lng": 8.238,
+    "cities": [
+      "Mainz"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "muenster",
+    "type": "Universität",
+    "founded": "1780",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 51.9616,
+    "lng": 7.6151,
+    "cities": [
+      "Münster"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "bremen",
+    "type": "Universität",
+    "founded": "1971",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 53.1079,
+    "lng": 8.8514,
+    "cities": [
+      "Bremen"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "kiel",
+    "type": "Universität",
+    "founded": "1665",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 54.3401,
+    "lng": 10.1225,
+    "cities": [
+      "Kiel"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "marburg",
+    "type": "Universität",
+    "founded": "1527",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 50.809,
+    "lng": 8.771,
+    "cities": [
+      "Marburg"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "jena",
+    "type": "Universität",
+    "founded": "1558",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 50.928,
+    "lng": 11.588,
+    "cities": [
+      "Jena"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "thkoeln",
+    "type": "Fachhochschule",
+    "founded": "1971",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 50.935,
+    "lng": 6.955,
+    "cities": [
+      "Köln"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "hsmannheim",
+    "type": "Fachhochschule",
+    "founded": "1963",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 49.4913,
+    "lng": 8.4676,
+    "cities": [
+      "Mannheim"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "hskarlsruhe",
+    "type": "Fachhochschule",
+    "founded": "1878",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 49.0089,
+    "lng": 8.3975,
+    "cities": [
+      "Karlsruhe"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "htwgkonstanz",
+    "type": "Fachhochschule",
+    "founded": "1906",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 47.6743,
+    "lng": 9.1682,
+    "cities": [
+      "Konstanz"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "thingolstadt",
+    "type": "Fachhochschule",
+    "founded": "1994",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 48.765,
+    "lng": 11.424,
+    "cities": [
+      "Ingolstadt"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "hbrs",
+    "type": "Fachhochschule",
+    "founded": "1995",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 50.7714,
+    "lng": 7.165,
+    "cities": [
+      "Sankt Augustin"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "hda",
+    "type": "Fachhochschule",
+    "founded": "1971",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 49.8646,
+    "lng": 8.6321,
+    "cities": [
+      "Darmstadt"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "reutlingen",
+    "type": "Fachhochschule",
+    "founded": "1855",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 48.488,
+    "lng": 9.216,
+    "cities": [
+      "Reutlingen"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "fhmuenster",
+    "type": "Fachhochschule",
+    "founded": "1971",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 51.9506,
+    "lng": 7.6198,
+    "cities": [
+      "Münster"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "osnabrueck",
+    "type": "Fachhochschule",
+    "founded": "1971",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 52.276,
+    "lng": 8.0442,
+    "cities": [
+      "Osnabrück"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "bht",
+    "type": "Fachhochschule",
+    "founded": "1971",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 52.5476,
+    "lng": 13.3572,
+    "cities": [
+      "Berlin"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "jade",
+    "type": "Fachhochschule",
+    "founded": "2009",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 53.5286,
+    "lng": 8.1058,
+    "cities": [
+      "Wilhelmshaven"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "duesseldorf",
+    "type": "Universität",
+    "founded": "1965",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 51.19,
+    "lng": 6.7947,
+    "cities": [
+      "Düsseldorf"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "ude",
+    "type": "Universität",
+    "founded": "2003",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 51.4587,
+    "lng": 7.0122,
+    "cities": [
+      "Duisburg",
+      "Essen"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "tudortmund",
+    "type": "Universität",
+    "founded": "1968",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 51.4925,
+    "lng": 7.416,
+    "cities": [
+      "Dortmund"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "bielefeld",
+    "type": "Universität",
+    "founded": "1969",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 52.0389,
+    "lng": 8.4951,
+    "cities": [
+      "Bielefeld"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "paderborn",
+    "type": "Universität",
+    "founded": "1972",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 51.7189,
+    "lng": 8.7719,
+    "cities": [
+      "Paderborn"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "siegen",
+    "type": "Universität",
+    "founded": "1972",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 50.8747,
+    "lng": 8.0247,
+    "cities": [
+      "Siegen"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "wuppertal",
+    "type": "Universität",
+    "founded": "1972",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 51.2447,
+    "lng": 7.1519,
+    "cities": [
+      "Wuppertal"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "luebeck",
+    "type": "Universität",
+    "founded": "1964",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 53.8655,
+    "lng": 10.7085,
+    "cities": [
+      "Lübeck"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "rostock",
+    "type": "Universität",
+    "founded": "1419",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 54.0865,
+    "lng": 12.1345,
+    "cities": [
+      "Rostock"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "greifswald",
+    "type": "Universität",
+    "founded": "1456",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 54.0947,
+    "lng": 13.3877,
+    "cities": [
+      "Greifswald"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "magdeburg",
+    "type": "Universität",
+    "founded": "1993",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 52.1397,
+    "lng": 11.6461,
+    "cities": [
+      "Magdeburg"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "halle",
+    "type": "Universität",
+    "founded": "1502",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 51.4832,
+    "lng": 11.9694,
+    "cities": [
+      "Halle (Saale)"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "leipzig",
+    "type": "Universität",
+    "founded": "1409",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 51.3397,
+    "lng": 12.3776,
+    "cities": [
+      "Leipzig"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "tuchemnitz",
+    "type": "Universität",
+    "founded": "1836",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 50.8113,
+    "lng": 12.9226,
+    "cities": [
+      "Chemnitz"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "potsdam",
+    "type": "Universität",
+    "founded": "1991",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 52.4009,
+    "lng": 13.0089,
+    "cities": [
+      "Potsdam"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "viadrina",
+    "type": "Universität",
+    "founded": "1506",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 52.3436,
+    "lng": 14.5507,
+    "cities": [
+      "Frankfurt (Oder)"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "btucottbus",
+    "type": "Universität",
+    "founded": "1991",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 51.7626,
+    "lng": 14.3289,
+    "cities": [
+      "Cottbus"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "wuerzburg",
+    "type": "Universität",
+    "founded": "1402",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 49.7896,
+    "lng": 9.9331,
+    "cities": [
+      "Würzburg"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "regensburg",
+    "type": "Universität",
+    "founded": "1962",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 49.0177,
+    "lng": 12.0966,
+    "cities": [
+      "Regensburg"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "passau",
+    "type": "Universität",
+    "founded": "1978",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 48.5733,
+    "lng": 13.461,
+    "cities": [
+      "Passau"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "bayreuth",
+    "type": "Universität",
+    "founded": "1975",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 49.9291,
+    "lng": 11.5888,
+    "cities": [
+      "Bayreuth"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "augsburg",
+    "type": "Universität",
+    "founded": "1970",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 48.3348,
+    "lng": 10.8979,
+    "cities": [
+      "Augsburg"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "bamberg",
+    "type": "Universität",
+    "founded": "1647",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 49.8971,
+    "lng": 10.8909,
+    "cities": [
+      "Bamberg"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "kueichstaett",
+    "type": "Universität",
+    "founded": "1980",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 48.8965,
+    "lng": 11.1858,
+    "cities": [
+      "Eichstätt",
+      "Ingolstadt"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "hohenheim",
+    "type": "Universität",
+    "founded": "1818",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 48.7136,
+    "lng": 9.2117,
+    "cities": [
+      "Stuttgart"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "ulm",
+    "type": "Universität",
+    "founded": "1967",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 48.4225,
+    "lng": 9.9575,
+    "cities": [
+      "Ulm"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "saarland",
+    "type": "Universität",
+    "founded": "1948",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 49.2542,
+    "lng": 7.0428,
+    "cities": [
+      "Saarbrücken"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "rptu",
+    "type": "Universität",
+    "founded": "1970",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 49.4278,
+    "lng": 7.7611,
+    "cities": [
+      "Kaiserslautern",
+      "Landau"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "fernunihagen",
+    "type": "Universität",
+    "founded": "1974",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 51.3742,
+    "lng": 7.4886,
+    "cities": [
+      "Hagen"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "oldenburg",
+    "type": "Universität",
+    "founded": "1974",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 53.1435,
+    "lng": 8.1657,
+    "cities": [
+      "Oldenburg"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "hildesheim",
+    "type": "Universität",
+    "founded": "1978",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 52.1495,
+    "lng": 9.9563,
+    "cities": [
+      "Hildesheim"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "leuphana",
+    "type": "Universität",
+    "founded": "1946",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 53.2405,
+    "lng": 10.4057,
+    "cities": [
+      "Lüneburg"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "tuclausthal",
+    "type": "Universität",
+    "founded": "1775",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 51.8047,
+    "lng": 10.3358,
+    "cities": [
+      "Clausthal-Zellerfeld"
+    ],
+    "multiCampus": false
+  },
+  {
+    "slug": "vechta",
+    "type": "Universität",
+    "founded": "1830",
+    "badges": [],
+    "level": "both",
+    "competitiveness": "medium",
+    "lat": 52.728,
+    "lng": 8.283,
+    "cities": [
+      "Vechta"
+    ],
+    "multiCampus": false
+  }
+]

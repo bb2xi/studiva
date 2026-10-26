@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/seo";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import Container from "@/components/Container";
 import PageHero from "@/components/PageHero";
@@ -15,7 +16,7 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "faq" });
-  return { title: `${t("title")} | Studiva` };
+  return pageMetadata({ locale, path: "/faq", title: `${t("title")} | Studiva`, description: t("subtitle") });
 }
 
 export default async function FaqPage({
