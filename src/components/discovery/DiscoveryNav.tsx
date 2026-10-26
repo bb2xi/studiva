@@ -8,6 +8,7 @@ const LINKS = [
   { href: "/universities", key: "directory", exact: true },
   { href: "/universities/finder", key: "finder" },
   { href: "/universities/programmes", key: "programmes" },
+  { href: "/universities/subjects", key: "subjects" },
   { href: "/germany", key: "states" },
   { href: "/compare", key: "compare" },
   { href: "/shortlist", key: "shortlist" },

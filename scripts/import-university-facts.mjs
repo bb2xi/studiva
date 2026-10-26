@@ -94,6 +94,11 @@ for (const slug of slugs) {
         }
       : null;
   const subjectAreas = hskFacts ? subjectAreasOf(compass.fields) : [];
+  if (hskFacts) {
+    const counted = Object.keys(compass.areas ?? {}).sort();
+    if (counted.join() !== subjectAreas.join()) throw new Error(`${slug}: area counts (${counted}) disagree with fields (${subjectAreas})`);
+    hskFacts.areaCounts = Object.fromEntries(counted.map((area) => [area, compass.areas[area]]));
+  }
   // DAAD (international programmes) is the primary English source; the Compass's
   // language facet backs institutions DAAD does not list. Zero is "unknown", not "no".
   const englishSource =
@@ -149,7 +154,9 @@ const unknownSlugs = [
 if (unmappedFields.size) throw new Error(`Compass fields without a subject-area mapping: ${[...unmappedFields].join(", ")}`);
 if (unknownSlugs.length) throw new Error(`Verified data references unknown slugs: ${unknownSlugs.join(", ")}`);
 
-fs.writeFileSync(outPath, JSON.stringify({ generatedAt: verified.CHECKED_AT, records }, null, 2) + "\n");
+// Compass metadata the site needs for subject pages and their deep links.
+const compassMeta = { fetchedAt: hsk.fetchedAt, totalProgrammes: hsk.totalProgrammes, areaFields: hsk.areaFields, areaTotals: hsk.areaTotals };
+fs.writeFileSync(outPath, JSON.stringify({ generatedAt: verified.CHECKED_AT, compass: compassMeta, records }, null, 2) + "\n");
 
 const statusCounts = {};
 for (const r of Object.values(records)) statusCounts[r.nonEuTuition.status] = (statusCounts[r.nonEuTuition.status] ?? 0) + 1;

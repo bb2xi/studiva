@@ -3,6 +3,7 @@ import baseData from "@/data/universities.json";
 import factsData from "@/data/university-facts.json";
 import { computeCompleteness } from "@/lib/discovery/facts";
 import type {
+  CompassMeta,
   UniversityBase,
   UniversityDetail,
   UniversityFacts,
@@ -27,6 +28,7 @@ const FACTS = (factsData as { records: Record<string, UniversityFacts> }).record
 
 export const UNIVERSITY_SLUGS = BASE.map((u) => u.slug);
 export const FACTS_GENERATED_AT = (factsData as { generatedAt: string | null }).generatedAt;
+export const COMPASS = (factsData as unknown as { compass: CompassMeta }).compass;
 
 export function getFacts(slug: string): UniversityFacts | null {
   return FACTS[slug] ?? null;

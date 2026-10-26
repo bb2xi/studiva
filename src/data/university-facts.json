@@ -1,5 +1,135 @@
 {
   "generatedAt": "2026-10-26",
+  "compass": {
+    "fetchedAt": "2026-10-26",
+    "totalProgrammes": 22587,
+    "areaFields": {
+      "agriculture-environment": [
+        "1-1",
+        "1-8",
+        "1-12",
+        "1-126",
+        "1-403"
+      ],
+      "education-teaching": [
+        "1-17",
+        "1-396",
+        "1-397",
+        "1-398"
+      ],
+      "social-sciences": [
+        "1-26",
+        "1-29",
+        "1-37",
+        "1-40",
+        "1-399",
+        "1-406"
+      ],
+      "humanities-languages": [
+        "1-46",
+        "1-273",
+        "1-277",
+        "1-279",
+        "1-282",
+        "1-288",
+        "1-293",
+        "1-302",
+        "1-316",
+        "1-320",
+        "1-325",
+        "1-328",
+        "1-334",
+        "1-342",
+        "1-348",
+        "1-351",
+        "1-357",
+        "1-363",
+        "1-369",
+        "1-404"
+      ],
+      "engineering": [
+        "1-59",
+        "1-63",
+        "1-66",
+        "1-69",
+        "1-71",
+        "1-74",
+        "1-84",
+        "1-87",
+        "1-91",
+        "1-94",
+        "1-96",
+        "1-102",
+        "1-104",
+        "1-108",
+        "1-116",
+        "1-120",
+        "1-126",
+        "1-132",
+        "1-134",
+        "1-145",
+        "1-400",
+        "1-401"
+      ],
+      "architecture-planning": [
+        "1-56",
+        "1-109"
+      ],
+      "arts-design-music": [
+        "1-146",
+        "1-156",
+        "1-165",
+        "1-173",
+        "1-176",
+        "1-179",
+        "1-405"
+      ],
+      "natural-sciences": [
+        "1-193",
+        "1-204",
+        "1-212",
+        "1-214",
+        "1-217",
+        "1-242",
+        "1-248",
+        "1-250",
+        "1-402",
+        "1-403"
+      ],
+      "computer-science": [
+        "1-226"
+      ],
+      "mathematics": [
+        "1-237"
+      ],
+      "medicine-health": [
+        "1-255",
+        "1-263",
+        "1-270"
+      ],
+      "business-economics": [
+        "1-380"
+      ],
+      "law": [
+        "1-395"
+      ]
+    },
+    "areaTotals": {
+      "agriculture-environment": 636,
+      "education-teaching": 5791,
+      "social-sciences": 1900,
+      "humanities-languages": 3398,
+      "engineering": 3849,
+      "architecture-planning": 378,
+      "arts-design-music": 1883,
+      "natural-sciences": 1771,
+      "computer-science": 1993,
+      "mathematics": 534,
+      "medicine-health": 1116,
+      "business-economics": 3525,
+      "law": 549
+    }
+  },
   "records": {
     "tum": {
       "slug": "tum",
@@ -44,7 +174,20 @@
         "undergraduate": 52,
         "graduate": 111,
         "english": 66,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 17,
+          "architecture-planning": 9,
+          "business-economics": 21,
+          "computer-science": 22,
+          "education-teaching": 29,
+          "engineering": 62,
+          "humanities-languages": 1,
+          "mathematics": 8,
+          "medicine-health": 7,
+          "natural-sciences": 36,
+          "social-sciences": 7
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -105,7 +248,20 @@
         "undergraduate": 178,
         "graduate": 118,
         "english": 31,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 2,
+          "arts-design-music": 14,
+          "business-economics": 15,
+          "computer-science": 11,
+          "education-teaching": 104,
+          "humanities-languages": 95,
+          "law": 6,
+          "mathematics": 6,
+          "medicine-health": 8,
+          "natural-sciences": 29,
+          "social-sciences": 16
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -166,7 +322,22 @@
         "undergraduate": 75,
         "graduate": 115,
         "english": 27,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 5,
+          "architecture-planning": 1,
+          "arts-design-music": 5,
+          "business-economics": 8,
+          "computer-science": 4,
+          "education-teaching": 61,
+          "engineering": 1,
+          "humanities-languages": 53,
+          "law": 6,
+          "mathematics": 3,
+          "medicine-health": 16,
+          "natural-sciences": 17,
+          "social-sciences": 18
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -229,7 +400,20 @@
         "undergraduate": 80,
         "graduate": 107,
         "english": 33,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 5,
+          "architecture-planning": 5,
+          "business-economics": 8,
+          "computer-science": 10,
+          "education-teaching": 64,
+          "engineering": 58,
+          "humanities-languages": 12,
+          "mathematics": 6,
+          "medicine-health": 8,
+          "natural-sciences": 19,
+          "social-sciences": 8
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -290,7 +474,16 @@
         "undergraduate": 33,
         "graduate": 58,
         "english": 16,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "business-economics": 39,
+          "computer-science": 6,
+          "education-teaching": 34,
+          "humanities-languages": 34,
+          "law": 4,
+          "mathematics": 4,
+          "social-sciences": 9
+        }
       },
       "subjectAreas": [
         "business-economics",
@@ -347,7 +540,21 @@
         "undergraduate": 48,
         "graduate": 38,
         "english": 7,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "architecture-planning": 3,
+          "arts-design-music": 5,
+          "business-economics": 16,
+          "computer-science": 10,
+          "education-teaching": 2,
+          "engineering": 48,
+          "humanities-languages": 3,
+          "law": 1,
+          "mathematics": 5,
+          "medicine-health": 4,
+          "natural-sciences": 5,
+          "social-sciences": 8
+        }
       },
       "subjectAreas": [
         "architecture-planning",
@@ -409,7 +616,21 @@
         "undergraduate": 47,
         "graduate": 39,
         "english": 11,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 4,
+          "architecture-planning": 11,
+          "arts-design-music": 1,
+          "business-economics": 20,
+          "computer-science": 13,
+          "education-teaching": 1,
+          "engineering": 41,
+          "humanities-languages": 1,
+          "law": 3,
+          "medicine-health": 7,
+          "natural-sciences": 4,
+          "social-sciences": 10
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -471,7 +692,19 @@
         "undergraduate": 130,
         "graduate": 32,
         "english": 1,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 2,
+          "architecture-planning": 1,
+          "arts-design-music": 1,
+          "business-economics": 47,
+          "computer-science": 26,
+          "engineering": 54,
+          "humanities-languages": 2,
+          "law": 1,
+          "medicine-health": 17,
+          "social-sciences": 15
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -524,7 +757,21 @@
         "undergraduate": 129,
         "graduate": 55,
         "english": 17,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 3,
+          "architecture-planning": 1,
+          "arts-design-music": 8,
+          "business-economics": 79,
+          "computer-science": 21,
+          "education-teaching": 11,
+          "engineering": 21,
+          "humanities-languages": 4,
+          "law": 6,
+          "medicine-health": 23,
+          "natural-sciences": 1,
+          "social-sciences": 17
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -579,7 +826,15 @@
         "undergraduate": 33,
         "graduate": 29,
         "english": 1,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "business-economics": 34,
+          "computer-science": 11,
+          "engineering": 3,
+          "law": 6,
+          "medicine-health": 8,
+          "social-sciences": 12
+        }
       },
       "subjectAreas": [
         "business-economics",
@@ -635,7 +890,20 @@
         "undergraduate": 63,
         "graduate": 127,
         "english": 23,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "arts-design-music": 7,
+          "business-economics": 4,
+          "computer-science": 7,
+          "education-teaching": 72,
+          "engineering": 6,
+          "humanities-languages": 110,
+          "law": 5,
+          "mathematics": 7,
+          "medicine-health": 11,
+          "natural-sciences": 26,
+          "social-sciences": 10
+        }
       },
       "subjectAreas": [
         "arts-design-music",
@@ -696,7 +964,21 @@
         "undergraduate": 108,
         "graduate": 130,
         "english": 32,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 3,
+          "arts-design-music": 4,
+          "business-economics": 16,
+          "computer-science": 11,
+          "education-teaching": 60,
+          "engineering": 4,
+          "humanities-languages": 85,
+          "law": 3,
+          "mathematics": 3,
+          "medicine-health": 9,
+          "natural-sciences": 33,
+          "social-sciences": 22
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -758,7 +1040,20 @@
         "undergraduate": 45,
         "graduate": 70,
         "english": 22,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 3,
+          "architecture-planning": 2,
+          "arts-design-music": 2,
+          "business-economics": 8,
+          "computer-science": 11,
+          "education-teaching": 34,
+          "engineering": 35,
+          "humanities-languages": 5,
+          "mathematics": 8,
+          "natural-sciences": 23,
+          "social-sciences": 1
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -819,7 +1114,21 @@
         "undergraduate": 84,
         "graduate": 101,
         "english": 25,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 7,
+          "arts-design-music": 5,
+          "business-economics": 10,
+          "computer-science": 5,
+          "education-teaching": 44,
+          "engineering": 9,
+          "humanities-languages": 71,
+          "law": 3,
+          "mathematics": 4,
+          "medicine-health": 11,
+          "natural-sciences": 33,
+          "social-sciences": 16
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -881,7 +1190,21 @@
         "undergraduate": 98,
         "graduate": 104,
         "english": 31,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 15,
+          "architecture-planning": 1,
+          "arts-design-music": 5,
+          "business-economics": 15,
+          "computer-science": 10,
+          "education-teaching": 43,
+          "humanities-languages": 73,
+          "law": 7,
+          "mathematics": 7,
+          "medicine-health": 4,
+          "natural-sciences": 28,
+          "social-sciences": 15
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -943,7 +1266,22 @@
         "undergraduate": 113,
         "graduate": 111,
         "english": 40,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 7,
+          "architecture-planning": 1,
+          "arts-design-music": 8,
+          "business-economics": 6,
+          "computer-science": 9,
+          "education-teaching": 62,
+          "engineering": 8,
+          "humanities-languages": 83,
+          "law": 6,
+          "mathematics": 2,
+          "medicine-health": 9,
+          "natural-sciences": 37,
+          "social-sciences": 13
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -1006,7 +1344,21 @@
         "undergraduate": 148,
         "graduate": 216,
         "english": 37,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 3,
+          "arts-design-music": 10,
+          "business-economics": 17,
+          "computer-science": 5,
+          "education-teaching": 188,
+          "engineering": 2,
+          "humanities-languages": 79,
+          "law": 11,
+          "mathematics": 5,
+          "medicine-health": 16,
+          "natural-sciences": 29,
+          "social-sciences": 23
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -1068,7 +1420,21 @@
         "undergraduate": 47,
         "graduate": 87,
         "english": 18,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 7,
+          "architecture-planning": 17,
+          "arts-design-music": 4,
+          "business-economics": 8,
+          "computer-science": 11,
+          "education-teaching": 25,
+          "engineering": 48,
+          "humanities-languages": 11,
+          "law": 2,
+          "mathematics": 7,
+          "natural-sciences": 13,
+          "social-sciences": 4
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -1130,7 +1496,22 @@
         "undergraduate": 134,
         "graduate": 71,
         "english": 28,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 19,
+          "architecture-planning": 5,
+          "arts-design-music": 3,
+          "business-economics": 14,
+          "computer-science": 13,
+          "education-teaching": 77,
+          "engineering": 42,
+          "humanities-languages": 19,
+          "law": 4,
+          "mathematics": 8,
+          "medicine-health": 5,
+          "natural-sciences": 32,
+          "social-sciences": 16
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -1193,7 +1574,21 @@
         "undergraduate": 47,
         "graduate": 61,
         "english": 21,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 4,
+          "architecture-planning": 3,
+          "business-economics": 13,
+          "computer-science": 16,
+          "education-teaching": 21,
+          "engineering": 41,
+          "humanities-languages": 10,
+          "law": 9,
+          "mathematics": 5,
+          "medicine-health": 1,
+          "natural-sciences": 18,
+          "social-sciences": 13
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -1255,7 +1650,20 @@
         "undergraduate": 47,
         "graduate": 71,
         "english": 7,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 4,
+          "architecture-planning": 5,
+          "arts-design-music": 1,
+          "business-economics": 5,
+          "computer-science": 9,
+          "education-teaching": 46,
+          "engineering": 37,
+          "humanities-languages": 9,
+          "mathematics": 8,
+          "natural-sciences": 19,
+          "social-sciences": 6
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -1316,7 +1724,22 @@
         "undergraduate": 58,
         "graduate": 92,
         "english": 22,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 14,
+          "architecture-planning": 8,
+          "arts-design-music": 4,
+          "business-economics": 8,
+          "computer-science": 13,
+          "education-teaching": 60,
+          "engineering": 37,
+          "humanities-languages": 19,
+          "law": 5,
+          "mathematics": 5,
+          "medicine-health": 4,
+          "natural-sciences": 37,
+          "social-sciences": 12
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -1379,7 +1802,20 @@
         "undergraduate": 72,
         "graduate": 87,
         "english": 17,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 5,
+          "architecture-planning": 8,
+          "arts-design-music": 2,
+          "business-economics": 12,
+          "computer-science": 21,
+          "education-teaching": 34,
+          "engineering": 60,
+          "humanities-languages": 22,
+          "mathematics": 8,
+          "natural-sciences": 19,
+          "social-sciences": 9
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -1440,7 +1876,20 @@
         "undergraduate": 41,
         "graduate": 52,
         "english": 15,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "arts-design-music": 2,
+          "business-economics": 10,
+          "computer-science": 4,
+          "education-teaching": 38,
+          "engineering": 2,
+          "humanities-languages": 23,
+          "law": 5,
+          "mathematics": 6,
+          "medicine-health": 2,
+          "natural-sciences": 10,
+          "social-sciences": 18
+        }
       },
       "subjectAreas": [
         "arts-design-music",
@@ -1501,7 +1950,19 @@
         "undergraduate": 35,
         "graduate": 40,
         "english": 8,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 2,
+          "arts-design-music": 8,
+          "business-economics": 22,
+          "computer-science": 18,
+          "engineering": 30,
+          "humanities-languages": 7,
+          "law": 4,
+          "mathematics": 2,
+          "natural-sciences": 3,
+          "social-sciences": 2
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -1561,7 +2022,20 @@
         "undergraduate": 30,
         "graduate": 26,
         "english": 12,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 1,
+          "arts-design-music": 3,
+          "business-economics": 17,
+          "computer-science": 12,
+          "engineering": 26,
+          "humanities-languages": 2,
+          "law": 1,
+          "mathematics": 3,
+          "medicine-health": 9,
+          "natural-sciences": 3,
+          "social-sciences": 5
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -1622,7 +2096,20 @@
         "undergraduate": 158,
         "graduate": 210,
         "english": 32,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "arts-design-music": 8,
+          "business-economics": 17,
+          "computer-science": 11,
+          "education-teaching": 198,
+          "engineering": 5,
+          "humanities-languages": 84,
+          "law": 11,
+          "mathematics": 8,
+          "medicine-health": 7,
+          "natural-sciences": 32,
+          "social-sciences": 18
+        }
       },
       "subjectAreas": [
         "arts-design-music",
@@ -1683,7 +2170,19 @@
         "undergraduate": 80,
         "graduate": 105,
         "english": 23,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "arts-design-music": 12,
+          "business-economics": 7,
+          "computer-science": 7,
+          "education-teaching": 42,
+          "humanities-languages": 77,
+          "law": 2,
+          "mathematics": 4,
+          "medicine-health": 3,
+          "natural-sciences": 20,
+          "social-sciences": 17
+        }
       },
       "subjectAreas": [
         "arts-design-music",
@@ -1743,7 +2242,21 @@
         "undergraduate": 164,
         "graduate": 97,
         "english": 42,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 3,
+          "arts-design-music": 5,
+          "business-economics": 21,
+          "computer-science": 18,
+          "education-teaching": 92,
+          "engineering": 38,
+          "humanities-languages": 52,
+          "law": 6,
+          "mathematics": 8,
+          "medicine-health": 13,
+          "natural-sciences": 30,
+          "social-sciences": 14
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -1805,7 +2318,22 @@
         "undergraduate": 66,
         "graduate": 134,
         "english": 25,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 3,
+          "architecture-planning": 1,
+          "arts-design-music": 7,
+          "business-economics": 16,
+          "computer-science": 10,
+          "education-teaching": 46,
+          "engineering": 19,
+          "humanities-languages": 101,
+          "law": 5,
+          "mathematics": 4,
+          "medicine-health": 2,
+          "natural-sciences": 28,
+          "social-sciences": 21
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -1868,7 +2396,21 @@
         "undergraduate": 118,
         "graduate": 140,
         "english": 32,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 2,
+          "arts-design-music": 37,
+          "business-economics": 14,
+          "computer-science": 12,
+          "education-teaching": 56,
+          "engineering": 5,
+          "humanities-languages": 112,
+          "law": 11,
+          "mathematics": 6,
+          "medicine-health": 12,
+          "natural-sciences": 34,
+          "social-sciences": 17
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -1930,7 +2472,21 @@
         "undergraduate": 133,
         "graduate": 170,
         "english": 30,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "architecture-planning": 1,
+          "arts-design-music": 9,
+          "business-economics": 21,
+          "computer-science": 9,
+          "education-teaching": 158,
+          "engineering": 1,
+          "humanities-languages": 61,
+          "law": 15,
+          "mathematics": 3,
+          "medicine-health": 4,
+          "natural-sciences": 26,
+          "social-sciences": 17
+        }
       },
       "subjectAreas": [
         "architecture-planning",
@@ -1992,7 +2548,22 @@
         "undergraduate": 65,
         "graduate": 87,
         "english": 25,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 2,
+          "architecture-planning": 1,
+          "arts-design-music": 6,
+          "business-economics": 7,
+          "computer-science": 7,
+          "education-teaching": 48,
+          "engineering": 16,
+          "humanities-languages": 28,
+          "law": 5,
+          "mathematics": 6,
+          "medicine-health": 8,
+          "natural-sciences": 22,
+          "social-sciences": 17
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2055,7 +2626,21 @@
         "undergraduate": 107,
         "graduate": 125,
         "english": 26,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 7,
+          "arts-design-music": 4,
+          "business-economics": 18,
+          "computer-science": 7,
+          "education-teaching": 101,
+          "engineering": 10,
+          "humanities-languages": 45,
+          "law": 2,
+          "mathematics": 5,
+          "medicine-health": 5,
+          "natural-sciences": 32,
+          "social-sciences": 10
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2117,7 +2702,22 @@
         "undergraduate": 125,
         "graduate": 81,
         "english": 18,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 3,
+          "architecture-planning": 2,
+          "arts-design-music": 10,
+          "business-economics": 20,
+          "computer-science": 12,
+          "education-teaching": 30,
+          "engineering": 2,
+          "humanities-languages": 92,
+          "law": 6,
+          "mathematics": 13,
+          "medicine-health": 8,
+          "natural-sciences": 35,
+          "social-sciences": 29
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2180,7 +2780,21 @@
         "undergraduate": 132,
         "graduate": 79,
         "english": 17,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 3,
+          "arts-design-music": 5,
+          "business-economics": 20,
+          "computer-science": 11,
+          "education-teaching": 42,
+          "engineering": 4,
+          "humanities-languages": 91,
+          "law": 8,
+          "mathematics": 8,
+          "medicine-health": 4,
+          "natural-sciences": 42,
+          "social-sciences": 18
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2242,7 +2856,21 @@
         "undergraduate": 51,
         "graduate": 49,
         "english": 16,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 5,
+          "architecture-planning": 4,
+          "arts-design-music": 18,
+          "business-economics": 18,
+          "computer-science": 13,
+          "education-teaching": 3,
+          "engineering": 35,
+          "humanities-languages": 11,
+          "law": 5,
+          "mathematics": 1,
+          "natural-sciences": 7,
+          "social-sciences": 6
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2304,7 +2932,18 @@
         "undergraduate": 27,
         "graduate": 13,
         "english": 6,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 1,
+          "arts-design-music": 2,
+          "business-economics": 3,
+          "computer-science": 10,
+          "education-teaching": 1,
+          "engineering": 28,
+          "medicine-health": 1,
+          "natural-sciences": 2,
+          "social-sciences": 3
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2363,7 +3002,20 @@
         "undergraduate": 23,
         "graduate": 23,
         "english": 4,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 2,
+          "architecture-planning": 4,
+          "arts-design-music": 3,
+          "business-economics": 12,
+          "computer-science": 14,
+          "education-teaching": 1,
+          "engineering": 29,
+          "humanities-languages": 3,
+          "mathematics": 1,
+          "natural-sciences": 2,
+          "social-sciences": 2
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2424,7 +3076,17 @@
         "undergraduate": 21,
         "graduate": 17,
         "english": 4,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 2,
+          "architecture-planning": 2,
+          "arts-design-music": 2,
+          "business-economics": 9,
+          "computer-science": 8,
+          "engineering": 20,
+          "humanities-languages": 3,
+          "law": 2
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2482,7 +3144,21 @@
         "undergraduate": 42,
         "graduate": 50,
         "english": 28,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 5,
+          "architecture-planning": 2,
+          "arts-design-music": 4,
+          "business-economics": 38,
+          "computer-science": 29,
+          "engineering": 53,
+          "humanities-languages": 1,
+          "law": 1,
+          "mathematics": 14,
+          "medicine-health": 4,
+          "natural-sciences": 5,
+          "social-sciences": 4
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2544,7 +3220,17 @@
         "undergraduate": 21,
         "graduate": 19,
         "english": 7,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 1,
+          "business-economics": 12,
+          "computer-science": 8,
+          "engineering": 12,
+          "humanities-languages": 5,
+          "law": 1,
+          "natural-sciences": 6,
+          "social-sciences": 7
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2602,7 +3288,21 @@
         "undergraduate": 37,
         "graduate": 31,
         "english": 9,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 2,
+          "architecture-planning": 4,
+          "arts-design-music": 6,
+          "business-economics": 14,
+          "computer-science": 6,
+          "education-teaching": 1,
+          "engineering": 23,
+          "humanities-languages": 11,
+          "law": 2,
+          "mathematics": 5,
+          "natural-sciences": 3,
+          "social-sciences": 9
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2664,7 +3364,16 @@
         "undergraduate": 29,
         "graduate": 19,
         "english": 4,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "arts-design-music": 4,
+          "business-economics": 21,
+          "computer-science": 8,
+          "engineering": 17,
+          "medicine-health": 1,
+          "natural-sciences": 5,
+          "social-sciences": 1
+        }
       },
       "subjectAreas": [
         "arts-design-music",
@@ -2721,7 +3430,19 @@
         "undergraduate": 74,
         "graduate": 59,
         "english": 4,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 9,
+          "architecture-planning": 5,
+          "arts-design-music": 4,
+          "business-economics": 23,
+          "computer-science": 18,
+          "education-teaching": 22,
+          "engineering": 64,
+          "medicine-health": 16,
+          "natural-sciences": 6,
+          "social-sciences": 8
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2781,7 +3502,21 @@
         "undergraduate": 77,
         "graduate": 38,
         "english": 7,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 15,
+          "architecture-planning": 8,
+          "arts-design-music": 7,
+          "business-economics": 42,
+          "computer-science": 13,
+          "education-teaching": 13,
+          "engineering": 42,
+          "humanities-languages": 3,
+          "law": 7,
+          "medicine-health": 17,
+          "natural-sciences": 11,
+          "social-sciences": 15
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2843,7 +3578,18 @@
         "undergraduate": 36,
         "graduate": 38,
         "english": 4,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 9,
+          "architecture-planning": 3,
+          "arts-design-music": 2,
+          "business-economics": 8,
+          "computer-science": 16,
+          "engineering": 47,
+          "mathematics": 1,
+          "medicine-health": 1,
+          "natural-sciences": 5
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2902,7 +3648,20 @@
         "undergraduate": 46,
         "graduate": 15,
         "english": 2,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 2,
+          "architecture-planning": 6,
+          "business-economics": 22,
+          "computer-science": 7,
+          "engineering": 29,
+          "humanities-languages": 1,
+          "law": 4,
+          "mathematics": 14,
+          "medicine-health": 5,
+          "natural-sciences": 4,
+          "social-sciences": 2
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -2963,7 +3722,19 @@
         "undergraduate": 39,
         "graduate": 46,
         "english": 11,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "arts-design-music": 5,
+          "business-economics": 11,
+          "computer-science": 5,
+          "engineering": 2,
+          "humanities-languages": 35,
+          "law": 3,
+          "mathematics": 5,
+          "medicine-health": 8,
+          "natural-sciences": 20,
+          "social-sciences": 8
+        }
       },
       "subjectAreas": [
         "arts-design-music",
@@ -3023,7 +3794,21 @@
         "undergraduate": 158,
         "graduate": 175,
         "english": 16,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 6,
+          "architecture-planning": 4,
+          "arts-design-music": 7,
+          "business-economics": 32,
+          "computer-science": 18,
+          "education-teaching": 154,
+          "engineering": 40,
+          "humanities-languages": 63,
+          "mathematics": 14,
+          "medicine-health": 12,
+          "natural-sciences": 23,
+          "social-sciences": 24
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -3085,7 +3870,21 @@
         "undergraduate": 117,
         "graduate": 132,
         "english": 30,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 4,
+          "architecture-planning": 6,
+          "arts-design-music": 29,
+          "business-economics": 14,
+          "computer-science": 14,
+          "education-teaching": 173,
+          "engineering": 31,
+          "humanities-languages": 49,
+          "mathematics": 14,
+          "medicine-health": 22,
+          "natural-sciences": 11,
+          "social-sciences": 30
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -3147,7 +3946,21 @@
         "undergraduate": 72,
         "graduate": 81,
         "english": 18,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 2,
+          "arts-design-music": 6,
+          "business-economics": 6,
+          "computer-science": 9,
+          "education-teaching": 66,
+          "engineering": 4,
+          "humanities-languages": 36,
+          "law": 3,
+          "mathematics": 7,
+          "medicine-health": 6,
+          "natural-sciences": 20,
+          "social-sciences": 13
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -3209,7 +4022,19 @@
         "undergraduate": 119,
         "graduate": 136,
         "english": 8,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "arts-design-music": 9,
+          "business-economics": 14,
+          "computer-science": 10,
+          "education-teaching": 169,
+          "engineering": 13,
+          "humanities-languages": 37,
+          "mathematics": 4,
+          "medicine-health": 1,
+          "natural-sciences": 6,
+          "social-sciences": 3
+        }
       },
       "subjectAreas": [
         "arts-design-music",
@@ -3269,7 +4094,21 @@
         "undergraduate": 123,
         "graduate": 126,
         "english": 19,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "architecture-planning": 2,
+          "arts-design-music": 2,
+          "business-economics": 15,
+          "computer-science": 14,
+          "education-teaching": 139,
+          "engineering": 22,
+          "humanities-languages": 53,
+          "law": 3,
+          "mathematics": 3,
+          "medicine-health": 5,
+          "natural-sciences": 8,
+          "social-sciences": 14
+        }
       },
       "subjectAreas": [
         "architecture-planning",
@@ -3331,7 +4170,20 @@
         "undergraduate": 91,
         "graduate": 187,
         "english": 6,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "architecture-planning": 4,
+          "arts-design-music": 8,
+          "business-economics": 13,
+          "computer-science": 4,
+          "education-teaching": 192,
+          "engineering": 27,
+          "humanities-languages": 31,
+          "mathematics": 6,
+          "medicine-health": 2,
+          "natural-sciences": 9,
+          "social-sciences": 10
+        }
       },
       "subjectAreas": [
         "architecture-planning",
@@ -3392,7 +4244,15 @@
         "undergraduate": 17,
         "graduate": 17,
         "english": 6,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "computer-science": 12,
+          "engineering": 4,
+          "mathematics": 2,
+          "medicine-health": 7,
+          "natural-sciences": 7,
+          "social-sciences": 3
+        }
       },
       "subjectAreas": [
         "computer-science",
@@ -3448,7 +4308,21 @@
         "undergraduate": 143,
         "graduate": 100,
         "english": 19,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 8,
+          "architecture-planning": 1,
+          "business-economics": 11,
+          "computer-science": 12,
+          "education-teaching": 138,
+          "engineering": 25,
+          "humanities-languages": 36,
+          "law": 1,
+          "mathematics": 4,
+          "medicine-health": 7,
+          "natural-sciences": 13,
+          "social-sciences": 7
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -3510,7 +4384,22 @@
         "undergraduate": 92,
         "graduate": 47,
         "english": 8,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 5,
+          "architecture-planning": 1,
+          "arts-design-music": 11,
+          "business-economics": 7,
+          "computer-science": 5,
+          "education-teaching": 55,
+          "engineering": 1,
+          "humanities-languages": 35,
+          "law": 3,
+          "mathematics": 6,
+          "medicine-health": 11,
+          "natural-sciences": 28,
+          "social-sciences": 8
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -3573,7 +4462,20 @@
         "undergraduate": 60,
         "graduate": 72,
         "english": 23,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 5,
+          "arts-design-music": 2,
+          "business-economics": 21,
+          "computer-science": 14,
+          "education-teaching": 45,
+          "engineering": 37,
+          "humanities-languages": 8,
+          "mathematics": 6,
+          "medicine-health": 3,
+          "natural-sciences": 8,
+          "social-sciences": 10
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -3627,7 +4529,21 @@
         "undergraduate": 146,
         "graduate": 69,
         "english": 11,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 8,
+          "arts-design-music": 9,
+          "business-economics": 11,
+          "computer-science": 9,
+          "education-teaching": 60,
+          "engineering": 6,
+          "humanities-languages": 70,
+          "law": 6,
+          "mathematics": 3,
+          "medicine-health": 7,
+          "natural-sciences": 29,
+          "social-sciences": 17
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -3689,7 +4605,19 @@
         "undergraduate": 149,
         "graduate": 82,
         "english": 30,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "arts-design-music": 8,
+          "business-economics": 10,
+          "computer-science": 9,
+          "education-teaching": 90,
+          "humanities-languages": 72,
+          "law": 1,
+          "mathematics": 2,
+          "medicine-health": 5,
+          "natural-sciences": 23,
+          "social-sciences": 10
+        }
       },
       "subjectAreas": [
         "arts-design-music",
@@ -3749,7 +4677,20 @@
         "undergraduate": 48,
         "graduate": 69,
         "english": 16,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 1,
+          "business-economics": 22,
+          "computer-science": 18,
+          "education-teaching": 9,
+          "engineering": 35,
+          "humanities-languages": 23,
+          "law": 3,
+          "mathematics": 7,
+          "medicine-health": 6,
+          "natural-sciences": 14,
+          "social-sciences": 20
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -3810,7 +4751,20 @@
         "undergraduate": 93,
         "graduate": 97,
         "english": 29,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 3,
+          "arts-design-music": 1,
+          "business-economics": 18,
+          "computer-science": 13,
+          "education-teaching": 69,
+          "humanities-languages": 51,
+          "law": 10,
+          "mathematics": 3,
+          "medicine-health": 10,
+          "natural-sciences": 28,
+          "social-sciences": 20
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -3871,7 +4825,17 @@
         "undergraduate": 11,
         "graduate": 14,
         "english": 11,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "architecture-planning": 1,
+          "arts-design-music": 1,
+          "business-economics": 9,
+          "computer-science": 2,
+          "education-teaching": 1,
+          "humanities-languages": 8,
+          "law": 14,
+          "social-sciences": 10
+        }
       },
       "subjectAreas": [
         "architecture-planning",
@@ -3929,7 +4893,22 @@
         "undergraduate": 30,
         "graduate": 37,
         "english": 19,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 5,
+          "architecture-planning": 8,
+          "arts-design-music": 2,
+          "business-economics": 7,
+          "computer-science": 10,
+          "education-teaching": 3,
+          "engineering": 28,
+          "humanities-languages": 4,
+          "law": 3,
+          "mathematics": 5,
+          "medicine-health": 6,
+          "natural-sciences": 9,
+          "social-sciences": 5
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -3992,7 +4971,21 @@
         "undergraduate": 156,
         "graduate": 93,
         "english": 19,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 1,
+          "arts-design-music": 10,
+          "business-economics": 8,
+          "computer-science": 18,
+          "education-teaching": 84,
+          "engineering": 5,
+          "humanities-languages": 79,
+          "law": 7,
+          "mathematics": 11,
+          "medicine-health": 13,
+          "natural-sciences": 32,
+          "social-sciences": 12
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -4054,7 +5047,21 @@
         "undergraduate": 127,
         "graduate": 63,
         "english": 26,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "architecture-planning": 1,
+          "arts-design-music": 7,
+          "business-economics": 19,
+          "computer-science": 17,
+          "education-teaching": 67,
+          "engineering": 1,
+          "humanities-languages": 58,
+          "law": 10,
+          "mathematics": 5,
+          "medicine-health": 6,
+          "natural-sciences": 21,
+          "social-sciences": 13
+        }
       },
       "subjectAreas": [
         "architecture-planning",
@@ -4116,7 +5123,18 @@
         "undergraduate": 72,
         "graduate": 18,
         "english": 10,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 5,
+          "business-economics": 11,
+          "computer-science": 11,
+          "education-teaching": 57,
+          "humanities-languages": 14,
+          "law": 8,
+          "mathematics": 3,
+          "natural-sciences": 5,
+          "social-sciences": 8
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -4175,7 +5193,21 @@
         "undergraduate": 80,
         "graduate": 94,
         "english": 32,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 5,
+          "arts-design-music": 5,
+          "business-economics": 22,
+          "computer-science": 14,
+          "education-teaching": 53,
+          "engineering": 21,
+          "humanities-languages": 33,
+          "law": 11,
+          "mathematics": 9,
+          "medicine-health": 7,
+          "natural-sciences": 34,
+          "social-sciences": 8
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -4237,7 +5269,20 @@
         "undergraduate": 91,
         "graduate": 47,
         "english": 12,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "arts-design-music": 6,
+          "business-economics": 10,
+          "computer-science": 17,
+          "education-teaching": 56,
+          "engineering": 6,
+          "humanities-languages": 31,
+          "law": 6,
+          "mathematics": 9,
+          "medicine-health": 5,
+          "natural-sciences": 8,
+          "social-sciences": 5
+        }
       },
       "subjectAreas": [
         "arts-design-music",
@@ -4298,7 +5343,20 @@
         "undergraduate": 90,
         "graduate": 60,
         "english": 5,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "architecture-planning": 3,
+          "arts-design-music": 6,
+          "business-economics": 21,
+          "computer-science": 15,
+          "education-teaching": 67,
+          "humanities-languages": 42,
+          "law": 1,
+          "mathematics": 1,
+          "medicine-health": 2,
+          "natural-sciences": 3,
+          "social-sciences": 14
+        }
       },
       "subjectAreas": [
         "architecture-planning",
@@ -4359,7 +5417,20 @@
         "undergraduate": 91,
         "graduate": 35,
         "english": 6,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 2,
+          "arts-design-music": 8,
+          "business-economics": 13,
+          "computer-science": 3,
+          "education-teaching": 52,
+          "humanities-languages": 37,
+          "law": 1,
+          "mathematics": 4,
+          "medicine-health": 1,
+          "natural-sciences": 7,
+          "social-sciences": 22
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -4420,7 +5491,17 @@
         "undergraduate": 14,
         "graduate": 27,
         "english": 13,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 16,
+          "business-economics": 19,
+          "computer-science": 3,
+          "education-teaching": 4,
+          "engineering": 9,
+          "humanities-languages": 2,
+          "natural-sciences": 17,
+          "social-sciences": 1
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -4478,7 +5559,19 @@
         "undergraduate": 30,
         "graduate": 46,
         "english": 14,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "arts-design-music": 1,
+          "business-economics": 11,
+          "computer-science": 26,
+          "education-teaching": 15,
+          "engineering": 17,
+          "humanities-languages": 1,
+          "mathematics": 12,
+          "medicine-health": 2,
+          "natural-sciences": 19,
+          "social-sciences": 5
+        }
       },
       "subjectAreas": [
         "arts-design-music",
@@ -4538,7 +5631,22 @@
         "undergraduate": 104,
         "graduate": 70,
         "english": 26,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 1,
+          "architecture-planning": 1,
+          "arts-design-music": 3,
+          "business-economics": 16,
+          "computer-science": 28,
+          "education-teaching": 48,
+          "engineering": 14,
+          "humanities-languages": 52,
+          "law": 11,
+          "mathematics": 9,
+          "medicine-health": 6,
+          "natural-sciences": 21,
+          "social-sciences": 7
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -4601,7 +5709,22 @@
         "undergraduate": 97,
         "graduate": 150,
         "english": 28,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 6,
+          "architecture-planning": 8,
+          "arts-design-music": 1,
+          "business-economics": 17,
+          "computer-science": 8,
+          "education-teaching": 118,
+          "engineering": 37,
+          "humanities-languages": 9,
+          "law": 1,
+          "mathematics": 9,
+          "medicine-health": 3,
+          "natural-sciences": 30,
+          "social-sciences": 18
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -4657,7 +5780,18 @@
         "undergraduate": 11,
         "graduate": 25,
         "english": 0,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 1,
+          "business-economics": 6,
+          "computer-science": 6,
+          "education-teaching": 2,
+          "humanities-languages": 5,
+          "law": 8,
+          "mathematics": 3,
+          "natural-sciences": 1,
+          "social-sciences": 6
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -4716,7 +5850,22 @@
         "undergraduate": 45,
         "graduate": 129,
         "english": 18,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 5,
+          "architecture-planning": 1,
+          "arts-design-music": 5,
+          "business-economics": 11,
+          "computer-science": 7,
+          "education-teaching": 107,
+          "engineering": 8,
+          "humanities-languages": 35,
+          "law": 6,
+          "mathematics": 5,
+          "medicine-health": 4,
+          "natural-sciences": 23,
+          "social-sciences": 12
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -4779,7 +5928,19 @@
         "undergraduate": 37,
         "graduate": 50,
         "english": 6,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 4,
+          "arts-design-music": 7,
+          "business-economics": 5,
+          "computer-science": 15,
+          "education-teaching": 47,
+          "engineering": 2,
+          "humanities-languages": 28,
+          "mathematics": 3,
+          "natural-sciences": 6,
+          "social-sciences": 10
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -4839,7 +6000,21 @@
         "undergraduate": 48,
         "graduate": 52,
         "english": 34,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 11,
+          "architecture-planning": 1,
+          "arts-design-music": 5,
+          "business-economics": 26,
+          "computer-science": 6,
+          "education-teaching": 31,
+          "engineering": 7,
+          "humanities-languages": 15,
+          "law": 15,
+          "mathematics": 2,
+          "natural-sciences": 12,
+          "social-sciences": 29
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -4894,7 +6069,15 @@
         "undergraduate": 18,
         "graduate": 19,
         "english": 4,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 4,
+          "business-economics": 6,
+          "computer-science": 8,
+          "engineering": 25,
+          "mathematics": 2,
+          "natural-sciences": 8
+        }
       },
       "subjectAreas": [
         "agriculture-environment",
@@ -4943,7 +6126,18 @@
         "undergraduate": 19,
         "graduate": 24,
         "english": 0,
-        "fetchedAt": "2026-10-26"
+        "fetchedAt": "2026-10-26",
+        "areaCounts": {
+          "agriculture-environment": 1,
+          "arts-design-music": 2,
+          "business-economics": 3,
+          "education-teaching": 33,
+          "humanities-languages": 8,
+          "mathematics": 1,
+          "medicine-health": 2,
+          "natural-sciences": 3,
+          "social-sciences": 9
+        }
       },
       "subjectAreas": [
         "agriculture-environment",

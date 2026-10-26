@@ -106,11 +106,23 @@ export type UniversityFacts = {
     undergraduate: number;
     graduate: number;
     english: number;
+    /** Distinct programmes per Studiva subject area (the Compass's own count for the area's fields). */
+    areaCounts: Partial<Record<SubjectArea, number>>;
     fetchedAt: string;
   } | null;
   subjectAreas: SubjectArea[] | null;
   subjectAreasSource: string | null;
   checkedAt: string;
+};
+
+/** Higher Education Compass metadata behind the subject pages. */
+export type CompassMeta = {
+  fetchedAt: string;
+  totalProgrammes: number;
+  /** Compass field-of-study ids that make up each Studiva subject area. */
+  areaFields: Record<SubjectArea, string[]>;
+  /** Programmes per subject area across all institutions in Germany. */
+  areaTotals: Record<SubjectArea, number>;
 };
 
 export const COMPLETENESS_FIELDS = [

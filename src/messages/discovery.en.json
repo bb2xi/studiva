@@ -10,7 +10,8 @@
       "planner": "Application planner",
       "costs": "Cost calculator",
       "scholarships": "Scholarships",
-      "programmes": "Programme search"
+      "programmes": "Programme search",
+      "subjects": "Subjects"
     },
     "common": {
       "notVerified": "Not verified",
@@ -560,6 +561,14 @@
       "programmes": {
         "title": "Find study programmes in Germany",
         "description": "Search every degree programme in Germany (HRK Higher Education Compass) and DAAD's International Programmes by subject, degree, language and university."
+      },
+      "subjects": {
+        "title": "Universities in Germany by subject",
+        "description": "Find German universities by subject area — engineering, computer science, medicine, business and more — with programme counts from the HRK Higher Education Compass."
+      },
+      "subject": {
+        "title": "{subject}: universities in Germany",
+        "description": "{subject}: German universities with programmes in this area, programme counts from the HRK Higher Education Compass, non-EU tuition and English-taught programmes."
       }
     },
     "programmes": {
@@ -604,6 +613,26 @@
       "colLinks": "Links",
       "levelSplit": "{undergraduate} undergraduate · {graduate} graduate",
       "viewAll": "All programmes"
+    },
+    "subjectsPage": {
+      "title": "Universities by subject",
+      "subtitle": "See which universities in our directory offer programmes in each subject area, with programme counts from the HRK Higher Education Compass.",
+      "universities": "{count, plural, one {# university} other {# universities}} in our directory",
+      "programmes": "{count} programmes in Germany",
+      "note": "Programme counts from the HRK Higher Education Compass, fetched {date}. Studiva groups the Compass's fields of study into 13 subject areas; a university is listed under an area as soon as it offers one programme there.",
+      "englishNote": "English-taught counts are DAAD's International Programmes figures for the whole university, not for this subject.",
+      "areaTitle": "{subject}: universities in Germany",
+      "areaSubtitle": "The HRK Higher Education Compass lists {total} programmes in this area in Germany. {count, plural, one {# university} other {# universities}} in our directory offer programmes here.",
+      "allOnCompass": "All {total} programmes on the Higher Education Compass",
+      "filterDirectory": "Filter the directory by this subject",
+      "breadcrumb": "Subjects",
+      "colUniversity": "University",
+      "colProgrammes": "Programmes in this area",
+      "colTuition": "Non-EU tuition",
+      "colEnglish": "English-taught (DAAD)",
+      "colLinks": "Links",
+      "viewOnCompass": "On the Compass",
+      "otherSubjects": "Other subjects"
     }
   }
 }

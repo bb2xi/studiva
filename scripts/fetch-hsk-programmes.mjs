@@ -12,6 +12,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { HSK_FIELD_AREAS } from "./data/hsk-subject-areas.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const API = "https://api.daad.de/api/ajax/hsk/list";
@@ -61,8 +62,36 @@ for (const [slug, id] of Object.entries(HSK_IDS)) {
     graduate: countOf(f["hec-degreeProgrammeType"], "w"),
     english: countOf(f["hec-teachingLanguage"], "2"),
     fields,
+    areas: {},
   };
   await new Promise((resolve) => setTimeout(resolve, 300));
+}
+
+// Programmes per Studiva subject area, counted by the Compass itself with the
+// area's fields as one comma-separated filter — the same filter the site's deep
+// links use — so a programme listed under two fields of one area counts once.
+const AREA_FIELDS = {};
+for (const [field, areas] of Object.entries(HSK_FIELD_AREAS)) for (const area of areas) (AREA_FIELDS[area] ??= []).push(field);
+for (const fields of Object.values(AREA_FIELDS)) fields.sort((a, b) => a.localeCompare(b, "en", { numeric: true }));
+
+const jobs = [];
+for (const inst of Object.values(institutions))
+  for (const [area, fields] of Object.entries(AREA_FIELDS)) if (fields.some((f) => inst.fields[f])) jobs.push({ inst, area, fields });
+let nextJob = 0;
+await Promise.all(
+  Array.from({ length: 3 }, async () => {
+    while (nextJob < jobs.length) {
+      const { inst, area, fields } = jobs[nextJob++];
+      const r = await getJson("en", { "hec-institution": inst.institutionId, "hec-subjectGroup": fields.join(",") });
+      if (r.results.count) inst.areas[area] = r.results.count;
+      await new Promise((resolve) => setTimeout(resolve, 250));
+    }
+  })
+);
+const areaTotals = {};
+for (const [area, fields] of Object.entries(AREA_FIELDS)) {
+  areaTotals[area] = (await getJson("en", { "hec-subjectGroup": fields.join(",") })).results.count;
+  await new Promise((resolve) => setTimeout(resolve, 250));
 }
 
 const out = {
@@ -70,6 +99,8 @@ const out = {
   provider: "HRK Hochschulkompass",
   fetchedAt: new Date().toISOString().slice(0, 10),
   totalProgrammes: all.results.count,
+  areaFields: AREA_FIELDS,
+  areaTotals,
   institutions,
 };
 fs.writeFileSync(path.join(root, "scripts/data/hsk-programmes.json"), JSON.stringify(out, null, 2) + "\n");

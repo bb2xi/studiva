@@ -4,6 +4,7 @@ import trMessages from "@/messages/tr.json";
 import universities from "@/data/universities.json";
 import factsData from "@/data/university-facts.json";
 import { STATES } from "@/data/states";
+import { SUBJECT_AREAS } from "@/lib/discovery/types";
 import { SITE_URL } from "@/lib/seo";
 
 // Utility pages tied to a visitor's own browser state (shortlist, compare, planner) are noindex and left out.
@@ -14,6 +15,7 @@ const STATIC_PATHS = [
   "/universities",
   "/universities/finder",
   "/universities/programmes",
+  "/universities/subjects",
   "/germany",
   "/cost-calculator",
   "/scholarships",
@@ -30,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...STATIC_PATHS.map((path) => ({ path })),
     ...universities.map((u) => ({ path: `/universities/${u.slug}`, lastModified: factsDate ?? undefined })),
     ...STATES.map((s) => ({ path: `/germany/${s.slug}` })),
+    ...SUBJECT_AREAS.map((area) => ({ path: `/universities/subjects/${area}`, lastModified: factsDate ?? undefined })),
     ...trMessages.blog.posts.map((p) => ({ path: `/blog/${p.slug}`, lastModified: p.date })),
   ];
 

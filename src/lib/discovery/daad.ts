@@ -38,16 +38,26 @@ export const HSK_SEARCH_URL = "https://www.daad.de/en/studying-in-germany/univer
 const HSK_LEVEL = { bachelor: "g", master: "w" } as const;
 const HSK_LANGUAGE = { english: "2", german: "1" } as const;
 
+type HskQuery = {
+  q?: string;
+  institutionId?: string;
+  degree?: DaadDegree;
+  language?: DaadLanguage;
+  /** Field-of-study ids; the Compass treats a comma-separated list as "any of these". */
+  fields?: string[];
+};
+
 /** Filter parameters exactly as the Compass search page reads them (the keyword is "hec-q"). */
-export function hskFilterParams({ institutionId, degree, language }: { institutionId?: string; degree?: DaadDegree; language?: DaadLanguage }): [string, string][] {
+export function hskFilterParams({ institutionId, degree, language, fields }: HskQuery): [string, string][] {
   const params: [string, string][] = [];
   if (institutionId) params.push(["hec-institution", institutionId]);
+  if (fields?.length) params.push(["hec-subjectGroup", fields.join(",")]);
   if (degree) params.push(["hec-degreeProgrammeType", HSK_LEVEL[degree]]);
   if (language) params.push(["hec-teachingLanguage", HSK_LANGUAGE[language]]);
   return params;
 }
 
-export function hskSearchUrl(query: { q?: string; institutionId?: string; degree?: DaadDegree; language?: DaadLanguage } = {}) {
+export function hskSearchUrl(query: HskQuery = {}) {
   const params = new URLSearchParams();
   const q = query.q?.trim();
   if (q) params.set("hec-q", q);

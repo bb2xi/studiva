@@ -10,7 +10,8 @@
       "planner": "Başvuru planlayıcı",
       "costs": "Maliyet hesaplayıcı",
       "scholarships": "Burslar",
-      "programmes": "Program arama"
+      "programmes": "Program arama",
+      "subjects": "Alanlar"
     },
     "common": {
       "notVerified": "Doğrulanmadı",
@@ -560,6 +561,14 @@
       "programmes": {
         "title": "Almanya'da program ara",
         "description": "Almanya'daki tüm derece programlarında (HRK Hochschulkompass) ve DAAD Uluslararası Programlar veritabanında alana, dereceye, dile ve üniversiteye göre arama yapın."
+      },
+      "subjects": {
+        "title": "Almanya'da alanlara göre üniversiteler",
+        "description": "Almanya'daki üniversiteleri alana göre bulun — mühendislik, bilgisayar bilimi, tıp, işletme ve daha fazlası — HRK Hochschulkompass program sayılarıyla."
+      },
+      "subject": {
+        "title": "{subject}: Almanya'daki üniversiteler",
+        "description": "{subject}: bu alanda program sunan Alman üniversiteleri, HRK Hochschulkompass program sayıları, AB dışı okul ücreti ve İngilizce programlar."
       }
     },
     "programmes": {
@@ -604,6 +613,26 @@
       "colLinks": "Bağlantılar",
       "levelSplit": "{undergraduate} lisans · {graduate} lisansüstü",
       "viewAll": "Tüm programlar"
+    },
+    "subjectsPage": {
+      "title": "Alanlara göre üniversiteler",
+      "subtitle": "Rehberimizdeki hangi üniversitelerin hangi alanda program sunduğunu, HRK Hochschulkompass program sayılarıyla görün.",
+      "universities": "Rehberimizde {count} üniversite",
+      "programmes": "Almanya'da {count} program",
+      "note": "Program sayıları HRK Hochschulkompass'tan {date} tarihinde alındı. Studiva, Hochschulkompass'ın çalışma alanlarını 13 alana gruplandırır; bir alanda tek bir programı olan üniversite de o alanda listelenir.",
+      "englishNote": "İngilizce sayıları DAAD Uluslararası Programlar veritabanından alınır ve bu alanın değil, tüm üniversitenin sayısıdır.",
+      "areaTitle": "{subject}: Almanya'daki üniversiteler",
+      "areaSubtitle": "HRK Hochschulkompass bu alanda Almanya'da {total} program listeliyor. Rehberimizdeki {count} üniversite bu alanda program sunuyor.",
+      "allOnCompass": "Hochschulkompass'ta tüm {total} program",
+      "filterDirectory": "Rehberi bu alana göre filtrele",
+      "breadcrumb": "Alanlar",
+      "colUniversity": "Üniversite",
+      "colProgrammes": "Bu alandaki programlar",
+      "colTuition": "AB dışı okul ücreti",
+      "colEnglish": "İngilizce (DAAD)",
+      "colLinks": "Bağlantılar",
+      "viewOnCompass": "Hochschulkompass'ta",
+      "otherSubjects": "Diğer alanlar"
     }
   }
 }

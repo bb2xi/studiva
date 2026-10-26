@@ -329,7 +329,7 @@ export default async function UniversityDetailPage({ params }: { params: Promise
                           {subjectAreas.map((s) => (
                             <li key={s}>
                               <Link
-                                href={`/universities?subject=${s}`}
+                                href={`/universities/subjects/${s}`}
                                 className="inline-block rounded-sm border border-border-strong bg-surface px-2 py-1 text-xs text-foreground-secondary hover:border-forest hover:text-forest"
                               >
                                 {d(`subjects.${s}`)}

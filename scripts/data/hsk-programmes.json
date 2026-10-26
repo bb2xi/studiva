@@ -3,6 +3,132 @@
   "provider": "HRK Hochschulkompass",
   "fetchedAt": "2026-10-26",
   "totalProgrammes": 22587,
+  "areaFields": {
+    "agriculture-environment": [
+      "1-1",
+      "1-8",
+      "1-12",
+      "1-126",
+      "1-403"
+    ],
+    "education-teaching": [
+      "1-17",
+      "1-396",
+      "1-397",
+      "1-398"
+    ],
+    "social-sciences": [
+      "1-26",
+      "1-29",
+      "1-37",
+      "1-40",
+      "1-399",
+      "1-406"
+    ],
+    "humanities-languages": [
+      "1-46",
+      "1-273",
+      "1-277",
+      "1-279",
+      "1-282",
+      "1-288",
+      "1-293",
+      "1-302",
+      "1-316",
+      "1-320",
+      "1-325",
+      "1-328",
+      "1-334",
+      "1-342",
+      "1-348",
+      "1-351",
+      "1-357",
+      "1-363",
+      "1-369",
+      "1-404"
+    ],
+    "engineering": [
+      "1-59",
+      "1-63",
+      "1-66",
+      "1-69",
+      "1-71",
+      "1-74",
+      "1-84",
+      "1-87",
+      "1-91",
+      "1-94",
+      "1-96",
+      "1-102",
+      "1-104",
+      "1-108",
+      "1-116",
+      "1-120",
+      "1-126",
+      "1-132",
+      "1-134",
+      "1-145",
+      "1-400",
+      "1-401"
+    ],
+    "architecture-planning": [
+      "1-56",
+      "1-109"
+    ],
+    "arts-design-music": [
+      "1-146",
+      "1-156",
+      "1-165",
+      "1-173",
+      "1-176",
+      "1-179",
+      "1-405"
+    ],
+    "natural-sciences": [
+      "1-193",
+      "1-204",
+      "1-212",
+      "1-214",
+      "1-217",
+      "1-242",
+      "1-248",
+      "1-250",
+      "1-402",
+      "1-403"
+    ],
+    "computer-science": [
+      "1-226"
+    ],
+    "mathematics": [
+      "1-237"
+    ],
+    "medicine-health": [
+      "1-255",
+      "1-263",
+      "1-270"
+    ],
+    "business-economics": [
+      "1-380"
+    ],
+    "law": [
+      "1-395"
+    ]
+  },
+  "areaTotals": {
+    "agriculture-environment": 636,
+    "education-teaching": 5791,
+    "social-sciences": 1900,
+    "humanities-languages": 3398,
+    "engineering": 3849,
+    "architecture-planning": 378,
+    "arts-design-music": 1883,
+    "natural-sciences": 1771,
+    "computer-science": 1993,
+    "mathematics": 534,
+    "medicine-health": 1116,
+    "business-economics": 3525,
+    "law": 549
+  },
   "institutions": {
     "tum": {
       "hskName": "Technische Universität München",
@@ -51,6 +177,19 @@
         "1-380": 21,
         "1-396": 16,
         "1-398": 19
+      },
+      "areas": {
+        "social-sciences": 7,
+        "education-teaching": 29,
+        "agriculture-environment": 17,
+        "humanities-languages": 1,
+        "architecture-planning": 9,
+        "engineering": 62,
+        "natural-sciences": 36,
+        "mathematics": 8,
+        "computer-science": 22,
+        "medicine-health": 7,
+        "business-economics": 21
       }
     },
     "lmu": {
@@ -106,6 +245,19 @@
         "1-396": 2,
         "1-397": 12,
         "1-398": 87
+      },
+      "areas": {
+        "agriculture-environment": 2,
+        "social-sciences": 16,
+        "humanities-languages": 95,
+        "education-teaching": 104,
+        "computer-science": 11,
+        "arts-design-music": 14,
+        "natural-sciences": 29,
+        "mathematics": 6,
+        "medicine-health": 8,
+        "business-economics": 15,
+        "law": 6
       }
     },
     "huberlin": {
@@ -158,6 +310,21 @@
         "1-396": 6,
         "1-397": 5,
         "1-398": 49
+      },
+      "areas": {
+        "agriculture-environment": 5,
+        "education-teaching": 61,
+        "engineering": 1,
+        "social-sciences": 18,
+        "humanities-languages": 53,
+        "architecture-planning": 1,
+        "arts-design-music": 5,
+        "natural-sciences": 17,
+        "computer-science": 4,
+        "mathematics": 3,
+        "medicine-health": 16,
+        "law": 6,
+        "business-economics": 8
       }
     },
     "rwth": {
@@ -207,6 +374,19 @@
         "1-380": 8,
         "1-396": 32,
         "1-398": 32
+      },
+      "areas": {
+        "agriculture-environment": 5,
+        "social-sciences": 8,
+        "humanities-languages": 12,
+        "education-teaching": 64,
+        "architecture-planning": 5,
+        "engineering": 58,
+        "natural-sciences": 19,
+        "computer-science": 10,
+        "mathematics": 6,
+        "medicine-health": 8,
+        "business-economics": 8
       }
     },
     "mannheim": {
@@ -235,6 +415,15 @@
         "1-395": 4,
         "1-396": 2,
         "1-398": 32
+      },
+      "areas": {
+        "education-teaching": 34,
+        "social-sciences": 9,
+        "computer-science": 6,
+        "humanities-languages": 34,
+        "mathematics": 4,
+        "law": 4,
+        "business-economics": 39
       }
     },
     "hm": {
@@ -280,6 +469,20 @@
         "1-325": 2,
         "1-380": 16,
         "1-395": 1
+      },
+      "areas": {
+        "education-teaching": 2,
+        "social-sciences": 8,
+        "humanities-languages": 3,
+        "architecture-planning": 3,
+        "arts-design-music": 5,
+        "engineering": 48,
+        "natural-sciences": 5,
+        "mathematics": 5,
+        "computer-science": 10,
+        "law": 1,
+        "medicine-health": 4,
+        "business-economics": 16
       }
     },
     "frankfurtuas": {
@@ -321,6 +524,20 @@
         "1-380": 20,
         "1-395": 3,
         "1-406": 1
+      },
+      "areas": {
+        "education-teaching": 1,
+        "agriculture-environment": 4,
+        "social-sciences": 10,
+        "humanities-languages": 1,
+        "engineering": 41,
+        "architecture-planning": 11,
+        "arts-design-music": 1,
+        "natural-sciences": 4,
+        "computer-science": 13,
+        "medicine-health": 7,
+        "law": 3,
+        "business-economics": 20
       }
     },
     "dhbw": {
@@ -355,6 +572,18 @@
         "1-325": 2,
         "1-380": 47,
         "1-395": 1
+      },
+      "areas": {
+        "agriculture-environment": 2,
+        "humanities-languages": 2,
+        "social-sciences": 15,
+        "architecture-planning": 1,
+        "arts-design-music": 1,
+        "engineering": 54,
+        "computer-science": 26,
+        "medicine-health": 17,
+        "business-economics": 47,
+        "law": 1
       }
     },
     "iu": {
@@ -394,6 +623,20 @@
         "1-380": 79,
         "1-395": 6,
         "1-406": 1
+      },
+      "areas": {
+        "agriculture-environment": 3,
+        "education-teaching": 11,
+        "humanities-languages": 4,
+        "social-sciences": 17,
+        "engineering": 21,
+        "architecture-planning": 1,
+        "arts-design-music": 8,
+        "natural-sciences": 1,
+        "computer-science": 21,
+        "business-economics": 79,
+        "medicine-health": 23,
+        "law": 6
       }
     },
     "fom": {
@@ -413,6 +656,14 @@
         "1-255": 8,
         "1-380": 34,
         "1-395": 6
+      },
+      "areas": {
+        "engineering": 3,
+        "social-sciences": 12,
+        "medicine-health": 8,
+        "computer-science": 11,
+        "business-economics": 34,
+        "law": 6
       }
     },
     "heidelberg": {
@@ -463,6 +714,19 @@
         "1-395": 5,
         "1-396": 2,
         "1-398": 68
+      },
+      "areas": {
+        "social-sciences": 10,
+        "education-teaching": 72,
+        "engineering": 6,
+        "arts-design-music": 7,
+        "humanities-languages": 110,
+        "computer-science": 7,
+        "mathematics": 7,
+        "natural-sciences": 26,
+        "law": 5,
+        "business-economics": 4,
+        "medicine-health": 11
       }
     },
     "tuebingen": {
@@ -518,6 +782,20 @@
         "1-395": 3,
         "1-396": 2,
         "1-398": 51
+      },
+      "areas": {
+        "agriculture-environment": 3,
+        "education-teaching": 60,
+        "social-sciences": 22,
+        "engineering": 4,
+        "arts-design-music": 4,
+        "humanities-languages": 85,
+        "mathematics": 3,
+        "computer-science": 11,
+        "natural-sciences": 33,
+        "law": 3,
+        "medicine-health": 9,
+        "business-economics": 16
       }
     },
     "kit": {
@@ -564,6 +842,19 @@
         "1-380": 8,
         "1-396": 3,
         "1-398": 29
+      },
+      "areas": {
+        "social-sciences": 1,
+        "agriculture-environment": 3,
+        "education-teaching": 34,
+        "humanities-languages": 5,
+        "architecture-planning": 2,
+        "engineering": 35,
+        "arts-design-music": 2,
+        "computer-science": 11,
+        "natural-sciences": 23,
+        "mathematics": 8,
+        "business-economics": 8
       }
     },
     "freiburg": {
@@ -615,6 +906,20 @@
         "1-380": 10,
         "1-395": 3,
         "1-398": 42
+      },
+      "areas": {
+        "agriculture-environment": 7,
+        "education-teaching": 44,
+        "social-sciences": 16,
+        "humanities-languages": 71,
+        "arts-design-music": 5,
+        "engineering": 9,
+        "natural-sciences": 33,
+        "mathematics": 4,
+        "computer-science": 5,
+        "medicine-health": 11,
+        "law": 3,
+        "business-economics": 10
       }
     },
     "goettingen": {
@@ -663,6 +968,20 @@
         "1-395": 7,
         "1-396": 2,
         "1-398": 40
+      },
+      "areas": {
+        "agriculture-environment": 15,
+        "education-teaching": 43,
+        "humanities-languages": 73,
+        "social-sciences": 15,
+        "architecture-planning": 1,
+        "arts-design-music": 5,
+        "natural-sciences": 28,
+        "computer-science": 10,
+        "medicine-health": 4,
+        "mathematics": 7,
+        "law": 7,
+        "business-economics": 15
       }
     },
     "bonn": {
@@ -718,6 +1037,21 @@
         "1-395": 6,
         "1-396": 12,
         "1-398": 49
+      },
+      "areas": {
+        "agriculture-environment": 7,
+        "education-teaching": 62,
+        "humanities-languages": 83,
+        "social-sciences": 13,
+        "architecture-planning": 1,
+        "engineering": 8,
+        "arts-design-music": 8,
+        "mathematics": 2,
+        "computer-science": 9,
+        "natural-sciences": 37,
+        "business-economics": 6,
+        "medicine-health": 9,
+        "law": 6
       }
     },
     "koeln": {
@@ -775,6 +1109,20 @@
         "1-396": 1,
         "1-397": 50,
         "1-398": 146
+      },
+      "areas": {
+        "agriculture-environment": 3,
+        "social-sciences": 23,
+        "education-teaching": 188,
+        "engineering": 2,
+        "humanities-languages": 79,
+        "arts-design-music": 10,
+        "mathematics": 5,
+        "computer-science": 5,
+        "natural-sciences": 29,
+        "law": 11,
+        "business-economics": 17,
+        "medicine-health": 16
       }
     },
     "tuberlin": {
@@ -829,6 +1177,20 @@
         "1-395": 2,
         "1-396": 21,
         "1-398": 6
+      },
+      "areas": {
+        "agriculture-environment": 7,
+        "social-sciences": 4,
+        "education-teaching": 25,
+        "humanities-languages": 11,
+        "engineering": 48,
+        "architecture-planning": 17,
+        "arts-design-music": 4,
+        "natural-sciences": 13,
+        "computer-science": 11,
+        "mathematics": 7,
+        "law": 2,
+        "business-economics": 8
       }
     },
     "tudresden": {
@@ -893,6 +1255,21 @@
         "1-395": 4,
         "1-396": 11,
         "1-398": 64
+      },
+      "areas": {
+        "agriculture-environment": 19,
+        "education-teaching": 77,
+        "social-sciences": 16,
+        "architecture-planning": 5,
+        "humanities-languages": 19,
+        "engineering": 42,
+        "arts-design-music": 3,
+        "computer-science": 13,
+        "natural-sciences": 32,
+        "mathematics": 8,
+        "medicine-health": 5,
+        "law": 4,
+        "business-economics": 14
       }
     },
     "tudarmstadt": {
@@ -939,6 +1316,20 @@
         "1-395": 9,
         "1-396": 2,
         "1-398": 17
+      },
+      "areas": {
+        "agriculture-environment": 4,
+        "education-teaching": 21,
+        "social-sciences": 13,
+        "humanities-languages": 10,
+        "architecture-planning": 3,
+        "engineering": 41,
+        "natural-sciences": 18,
+        "computer-science": 16,
+        "mathematics": 5,
+        "medicine-health": 1,
+        "business-economics": 13,
+        "law": 9
       }
     },
     "tubraunschweig": {
@@ -990,6 +1381,19 @@
         "1-348": 1,
         "1-380": 5,
         "1-398": 43
+      },
+      "areas": {
+        "agriculture-environment": 4,
+        "social-sciences": 6,
+        "education-teaching": 46,
+        "humanities-languages": 9,
+        "architecture-planning": 5,
+        "engineering": 37,
+        "arts-design-music": 1,
+        "natural-sciences": 19,
+        "computer-science": 9,
+        "mathematics": 8,
+        "business-economics": 5
       }
     },
     "hannover": {
@@ -1048,6 +1452,21 @@
         "1-396": 15,
         "1-397": 5,
         "1-398": 43
+      },
+      "areas": {
+        "agriculture-environment": 14,
+        "education-teaching": 60,
+        "social-sciences": 12,
+        "humanities-languages": 19,
+        "architecture-planning": 8,
+        "engineering": 37,
+        "arts-design-music": 4,
+        "natural-sciences": 37,
+        "computer-science": 13,
+        "mathematics": 5,
+        "medicine-health": 4,
+        "business-economics": 8,
+        "law": 5
       }
     },
     "stuttgart": {
@@ -1097,6 +1516,19 @@
         "1-380": 12,
         "1-396": 3,
         "1-398": 29
+      },
+      "areas": {
+        "agriculture-environment": 5,
+        "social-sciences": 9,
+        "education-teaching": 34,
+        "architecture-planning": 8,
+        "engineering": 60,
+        "humanities-languages": 22,
+        "arts-design-music": 2,
+        "natural-sciences": 19,
+        "computer-science": 21,
+        "mathematics": 8,
+        "business-economics": 12
       }
     },
     "konstanz": {
@@ -1139,6 +1571,19 @@
         "1-395": 5,
         "1-396": 2,
         "1-398": 34
+      },
+      "areas": {
+        "education-teaching": 38,
+        "social-sciences": 18,
+        "humanities-languages": 23,
+        "engineering": 2,
+        "arts-design-music": 2,
+        "natural-sciences": 10,
+        "computer-science": 4,
+        "mathematics": 6,
+        "medicine-health": 2,
+        "business-economics": 10,
+        "law": 5
       }
     },
     "htwberlin": {
@@ -1176,6 +1621,18 @@
         "1-325": 2,
         "1-380": 22,
         "1-395": 4
+      },
+      "areas": {
+        "agriculture-environment": 2,
+        "social-sciences": 2,
+        "humanities-languages": 7,
+        "arts-design-music": 8,
+        "engineering": 30,
+        "natural-sciences": 3,
+        "mathematics": 2,
+        "computer-science": 18,
+        "law": 4,
+        "business-economics": 22
       }
     },
     "furtwangen": {
@@ -1212,6 +1669,19 @@
         "1-325": 2,
         "1-380": 17,
         "1-395": 1
+      },
+      "areas": {
+        "agriculture-environment": 1,
+        "humanities-languages": 2,
+        "social-sciences": 5,
+        "engineering": 26,
+        "arts-design-music": 3,
+        "natural-sciences": 3,
+        "computer-science": 12,
+        "mathematics": 3,
+        "medicine-health": 9,
+        "business-economics": 17,
+        "law": 1
       }
     },
     "hamburg": {
@@ -1268,6 +1738,19 @@
         "1-396": 18,
         "1-397": 2,
         "1-398": 173
+      },
+      "areas": {
+        "education-teaching": 198,
+        "social-sciences": 18,
+        "humanities-languages": 84,
+        "engineering": 5,
+        "arts-design-music": 8,
+        "computer-science": 11,
+        "mathematics": 8,
+        "natural-sciences": 32,
+        "medicine-health": 7,
+        "law": 11,
+        "business-economics": 17
       }
     },
     "fuberlin": {
@@ -1315,6 +1798,18 @@
         "1-395": 2,
         "1-397": 3,
         "1-398": 37
+      },
+      "areas": {
+        "social-sciences": 17,
+        "education-teaching": 42,
+        "humanities-languages": 77,
+        "arts-design-music": 12,
+        "computer-science": 7,
+        "natural-sciences": 20,
+        "medicine-health": 3,
+        "mathematics": 4,
+        "business-economics": 7,
+        "law": 2
       }
     },
     "erlangen": {
@@ -1377,6 +1872,20 @@
         "1-395": 6,
         "1-396": 3,
         "1-398": 82
+      },
+      "areas": {
+        "agriculture-environment": 3,
+        "education-teaching": 92,
+        "social-sciences": 14,
+        "humanities-languages": 52,
+        "engineering": 38,
+        "arts-design-music": 5,
+        "natural-sciences": 30,
+        "mathematics": 8,
+        "computer-science": 18,
+        "medicine-health": 13,
+        "law": 6,
+        "business-economics": 21
       }
     },
     "bochum": {
@@ -1431,6 +1940,21 @@
         "1-380": 16,
         "1-395": 5,
         "1-398": 43
+      },
+      "areas": {
+        "agriculture-environment": 3,
+        "education-teaching": 46,
+        "social-sciences": 21,
+        "humanities-languages": 101,
+        "architecture-planning": 1,
+        "engineering": 19,
+        "arts-design-music": 7,
+        "natural-sciences": 28,
+        "computer-science": 10,
+        "medicine-health": 2,
+        "mathematics": 4,
+        "business-economics": 16,
+        "law": 5
       }
     },
     "mainz": {
@@ -1491,6 +2015,20 @@
         "1-395": 11,
         "1-396": 2,
         "1-398": 52
+      },
+      "areas": {
+        "agriculture-environment": 2,
+        "education-teaching": 56,
+        "social-sciences": 17,
+        "humanities-languages": 112,
+        "engineering": 5,
+        "arts-design-music": 37,
+        "natural-sciences": 34,
+        "computer-science": 12,
+        "mathematics": 6,
+        "medicine-health": 12,
+        "business-economics": 14,
+        "law": 11
       }
     },
     "muenster": {
@@ -1542,6 +2080,20 @@
         "1-396": 2,
         "1-397": 23,
         "1-398": 131
+      },
+      "areas": {
+        "social-sciences": 17,
+        "education-teaching": 158,
+        "engineering": 1,
+        "architecture-planning": 1,
+        "humanities-languages": 61,
+        "natural-sciences": 26,
+        "arts-design-music": 9,
+        "computer-science": 9,
+        "mathematics": 3,
+        "medicine-health": 4,
+        "business-economics": 21,
+        "law": 15
       }
     },
     "bremen": {
@@ -1596,6 +2148,21 @@
         "1-396": 5,
         "1-397": 19,
         "1-398": 36
+      },
+      "areas": {
+        "agriculture-environment": 2,
+        "education-teaching": 48,
+        "humanities-languages": 28,
+        "social-sciences": 17,
+        "engineering": 16,
+        "architecture-planning": 1,
+        "arts-design-music": 6,
+        "natural-sciences": 22,
+        "computer-science": 7,
+        "mathematics": 6,
+        "medicine-health": 8,
+        "business-economics": 7,
+        "law": 5
       }
     },
     "kiel": {
@@ -1649,6 +2216,20 @@
         "1-395": 2,
         "1-396": 11,
         "1-398": 85
+      },
+      "areas": {
+        "agriculture-environment": 7,
+        "education-teaching": 101,
+        "social-sciences": 10,
+        "humanities-languages": 45,
+        "arts-design-music": 4,
+        "engineering": 10,
+        "computer-science": 7,
+        "mathematics": 5,
+        "natural-sciences": 32,
+        "law": 2,
+        "medicine-health": 5,
+        "business-economics": 18
       }
     },
     "marburg": {
@@ -1705,6 +2286,21 @@
         "1-380": 20,
         "1-395": 6,
         "1-398": 19
+      },
+      "areas": {
+        "agriculture-environment": 3,
+        "education-teaching": 30,
+        "social-sciences": 29,
+        "engineering": 2,
+        "architecture-planning": 2,
+        "humanities-languages": 92,
+        "arts-design-music": 10,
+        "computer-science": 12,
+        "natural-sciences": 35,
+        "mathematics": 13,
+        "medicine-health": 8,
+        "business-economics": 20,
+        "law": 6
       }
     },
     "jena": {
@@ -1762,6 +2358,20 @@
         "1-395": 8,
         "1-396": 5,
         "1-398": 34
+      },
+      "areas": {
+        "agriculture-environment": 3,
+        "education-teaching": 42,
+        "humanities-languages": 91,
+        "social-sciences": 18,
+        "engineering": 4,
+        "arts-design-music": 5,
+        "computer-science": 11,
+        "natural-sciences": 42,
+        "medicine-health": 4,
+        "mathematics": 8,
+        "business-economics": 20,
+        "law": 8
       }
     },
     "thkoeln": {
@@ -1807,6 +2417,20 @@
         "1-369": 5,
         "1-380": 18,
         "1-395": 5
+      },
+      "areas": {
+        "agriculture-environment": 5,
+        "education-teaching": 3,
+        "social-sciences": 6,
+        "humanities-languages": 11,
+        "engineering": 35,
+        "architecture-planning": 4,
+        "arts-design-music": 18,
+        "natural-sciences": 7,
+        "computer-science": 13,
+        "mathematics": 1,
+        "business-economics": 18,
+        "law": 5
       }
     },
     "hsmannheim": {
@@ -1836,6 +2460,17 @@
         "1-270": 1,
         "1-380": 3,
         "1-396": 1
+      },
+      "areas": {
+        "agriculture-environment": 1,
+        "education-teaching": 1,
+        "social-sciences": 3,
+        "engineering": 28,
+        "arts-design-music": 2,
+        "natural-sciences": 2,
+        "computer-science": 10,
+        "medicine-health": 1,
+        "business-economics": 3
       }
     },
     "hskarlsruhe": {
@@ -1870,6 +2505,19 @@
         "1-369": 1,
         "1-380": 12,
         "1-396": 1
+      },
+      "areas": {
+        "agriculture-environment": 2,
+        "education-teaching": 1,
+        "social-sciences": 2,
+        "humanities-languages": 3,
+        "architecture-planning": 4,
+        "engineering": 29,
+        "natural-sciences": 2,
+        "arts-design-music": 3,
+        "computer-science": 14,
+        "mathematics": 1,
+        "business-economics": 12
       }
     },
     "htwgkonstanz": {
@@ -1899,6 +2547,16 @@
         "1-351": 2,
         "1-380": 9,
         "1-395": 2
+      },
+      "areas": {
+        "agriculture-environment": 2,
+        "humanities-languages": 3,
+        "engineering": 20,
+        "arts-design-music": 2,
+        "computer-science": 8,
+        "architecture-planning": 2,
+        "law": 2,
+        "business-economics": 9
       }
     },
     "thingolstadt": {
@@ -1938,6 +2596,20 @@
         "1-325": 1,
         "1-380": 38,
         "1-395": 1
+      },
+      "areas": {
+        "agriculture-environment": 5,
+        "humanities-languages": 1,
+        "social-sciences": 4,
+        "engineering": 53,
+        "architecture-planning": 2,
+        "arts-design-music": 4,
+        "natural-sciences": 5,
+        "medicine-health": 4,
+        "computer-science": 29,
+        "mathematics": 14,
+        "law": 1,
+        "business-economics": 38
       }
     },
     "hbrs": {
@@ -1967,6 +2639,16 @@
         "1-325": 2,
         "1-380": 12,
         "1-395": 1
+      },
+      "areas": {
+        "agriculture-environment": 1,
+        "humanities-languages": 5,
+        "social-sciences": 7,
+        "engineering": 12,
+        "natural-sciences": 6,
+        "computer-science": 8,
+        "business-economics": 12,
+        "law": 1
       }
     },
     "hda": {
@@ -2006,6 +2688,20 @@
         "1-348": 1,
         "1-380": 14,
         "1-395": 2
+      },
+      "areas": {
+        "education-teaching": 1,
+        "agriculture-environment": 2,
+        "humanities-languages": 11,
+        "social-sciences": 9,
+        "engineering": 23,
+        "natural-sciences": 3,
+        "arts-design-music": 6,
+        "architecture-planning": 4,
+        "mathematics": 5,
+        "computer-science": 6,
+        "business-economics": 14,
+        "law": 2
       }
     },
     "reutlingen": {
@@ -2034,6 +2730,15 @@
         "1-248": 1,
         "1-270": 1,
         "1-380": 21
+      },
+      "areas": {
+        "social-sciences": 1,
+        "engineering": 17,
+        "arts-design-music": 4,
+        "natural-sciences": 5,
+        "computer-science": 8,
+        "medicine-health": 1,
+        "business-economics": 21
       }
     },
     "fhmuenster": {
@@ -2075,6 +2780,18 @@
         "1-270": 1,
         "1-380": 23,
         "1-396": 19
+      },
+      "areas": {
+        "agriculture-environment": 9,
+        "social-sciences": 8,
+        "engineering": 64,
+        "education-teaching": 22,
+        "arts-design-music": 4,
+        "architecture-planning": 5,
+        "natural-sciences": 6,
+        "medicine-health": 16,
+        "business-economics": 23,
+        "computer-science": 18
       }
     },
     "osnabrueck": {
@@ -2126,6 +2843,20 @@
         "1-395": 7,
         "1-396": 8,
         "1-398": 1
+      },
+      "areas": {
+        "education-teaching": 13,
+        "social-sciences": 15,
+        "agriculture-environment": 15,
+        "humanities-languages": 3,
+        "architecture-planning": 8,
+        "engineering": 42,
+        "arts-design-music": 7,
+        "natural-sciences": 11,
+        "computer-science": 13,
+        "business-economics": 42,
+        "law": 7,
+        "medicine-health": 17
       }
     },
     "bht": {
@@ -2164,6 +2895,17 @@
         "1-403": 2,
         "1-255": 1,
         "1-380": 8
+      },
+      "areas": {
+        "architecture-planning": 3,
+        "agriculture-environment": 9,
+        "engineering": 47,
+        "arts-design-music": 2,
+        "natural-sciences": 5,
+        "computer-science": 16,
+        "mathematics": 1,
+        "medicine-health": 1,
+        "business-economics": 8
       }
     },
     "jade": {
@@ -2200,6 +2942,19 @@
         "1-325": 1,
         "1-380": 22,
         "1-395": 4
+      },
+      "areas": {
+        "social-sciences": 2,
+        "agriculture-environment": 2,
+        "humanities-languages": 1,
+        "architecture-planning": 6,
+        "natural-sciences": 4,
+        "engineering": 29,
+        "medicine-health": 5,
+        "computer-science": 7,
+        "mathematics": 14,
+        "law": 4,
+        "business-economics": 22
       }
     },
     "duesseldorf": {
@@ -2242,6 +2997,18 @@
         "1-369": 8,
         "1-380": 11,
         "1-395": 3
+      },
+      "areas": {
+        "social-sciences": 8,
+        "engineering": 2,
+        "arts-design-music": 5,
+        "humanities-languages": 35,
+        "computer-science": 5,
+        "mathematics": 5,
+        "natural-sciences": 20,
+        "business-economics": 11,
+        "medicine-health": 8,
+        "law": 3
       }
     },
     "ude": {
@@ -2302,6 +3069,20 @@
         "1-396": 19,
         "1-397": 2,
         "1-398": 135
+      },
+      "areas": {
+        "agriculture-environment": 6,
+        "education-teaching": 154,
+        "social-sciences": 24,
+        "architecture-planning": 4,
+        "humanities-languages": 63,
+        "engineering": 40,
+        "arts-design-music": 7,
+        "natural-sciences": 23,
+        "computer-science": 18,
+        "mathematics": 14,
+        "medicine-health": 12,
+        "business-economics": 32
       }
     },
     "tudortmund": {
@@ -2363,6 +3144,20 @@
         "1-396": 12,
         "1-397": 34,
         "1-398": 136
+      },
+      "areas": {
+        "agriculture-environment": 4,
+        "education-teaching": 173,
+        "social-sciences": 30,
+        "humanities-languages": 49,
+        "architecture-planning": 6,
+        "engineering": 31,
+        "natural-sciences": 11,
+        "computer-science": 14,
+        "arts-design-music": 29,
+        "mathematics": 14,
+        "medicine-health": 22,
+        "business-economics": 14
       }
     },
     "bielefeld": {
@@ -2410,6 +3205,20 @@
         "1-396": 1,
         "1-397": 4,
         "1-398": 59
+      },
+      "areas": {
+        "agriculture-environment": 2,
+        "social-sciences": 13,
+        "education-teaching": 66,
+        "engineering": 4,
+        "arts-design-music": 6,
+        "humanities-languages": 36,
+        "mathematics": 7,
+        "computer-science": 9,
+        "natural-sciences": 20,
+        "law": 3,
+        "medicine-health": 6,
+        "business-economics": 6
       }
     },
     "paderborn": {
@@ -2452,6 +3261,18 @@
         "1-396": 15,
         "1-397": 15,
         "1-398": 137
+      },
+      "areas": {
+        "social-sciences": 3,
+        "education-teaching": 169,
+        "humanities-languages": 37,
+        "natural-sciences": 6,
+        "arts-design-music": 9,
+        "engineering": 13,
+        "mathematics": 4,
+        "computer-science": 10,
+        "medicine-health": 1,
+        "business-economics": 14
       }
     },
     "siegen": {
@@ -2498,6 +3319,20 @@
         "1-396": 18,
         "1-397": 5,
         "1-398": 120
+      },
+      "areas": {
+        "education-teaching": 139,
+        "social-sciences": 14,
+        "architecture-planning": 2,
+        "humanities-languages": 53,
+        "engineering": 22,
+        "arts-design-music": 2,
+        "natural-sciences": 8,
+        "computer-science": 14,
+        "mathematics": 3,
+        "medicine-health": 5,
+        "business-economics": 15,
+        "law": 3
       }
     },
     "wuppertal": {
@@ -2548,6 +3383,19 @@
         "1-396": 38,
         "1-397": 7,
         "1-398": 146
+      },
+      "areas": {
+        "social-sciences": 10,
+        "education-teaching": 192,
+        "humanities-languages": 31,
+        "architecture-planning": 4,
+        "arts-design-music": 8,
+        "engineering": 27,
+        "computer-science": 4,
+        "natural-sciences": 9,
+        "mathematics": 6,
+        "medicine-health": 2,
+        "business-economics": 13
       }
     },
     "luebeck": {
@@ -2569,6 +3417,14 @@
         "1-255": 4,
         "1-263": 2,
         "1-270": 1
+      },
+      "areas": {
+        "social-sciences": 3,
+        "engineering": 4,
+        "natural-sciences": 7,
+        "computer-science": 12,
+        "mathematics": 2,
+        "medicine-health": 7
       }
     },
     "rostock": {
@@ -2623,6 +3479,20 @@
         "1-396": 16,
         "1-397": 15,
         "1-398": 117
+      },
+      "areas": {
+        "agriculture-environment": 8,
+        "education-teaching": 138,
+        "social-sciences": 7,
+        "humanities-languages": 36,
+        "architecture-planning": 1,
+        "engineering": 25,
+        "natural-sciences": 13,
+        "computer-science": 12,
+        "mathematics": 4,
+        "medicine-health": 7,
+        "law": 1,
+        "business-economics": 11
       }
     },
     "greifswald": {
@@ -2668,6 +3538,21 @@
         "1-380": 7,
         "1-395": 3,
         "1-398": 55
+      },
+      "areas": {
+        "agriculture-environment": 5,
+        "education-teaching": 55,
+        "social-sciences": 8,
+        "humanities-languages": 35,
+        "engineering": 1,
+        "architecture-planning": 1,
+        "computer-science": 5,
+        "arts-design-music": 11,
+        "natural-sciences": 28,
+        "medicine-health": 11,
+        "mathematics": 6,
+        "business-economics": 7,
+        "law": 3
       }
     },
     "magdeburg": {
@@ -2713,6 +3598,19 @@
         "1-380": 21,
         "1-396": 15,
         "1-398": 24
+      },
+      "areas": {
+        "agriculture-environment": 5,
+        "education-teaching": 45,
+        "humanities-languages": 8,
+        "social-sciences": 10,
+        "engineering": 37,
+        "arts-design-music": 2,
+        "natural-sciences": 8,
+        "computer-science": 14,
+        "medicine-health": 3,
+        "mathematics": 6,
+        "business-economics": 21
       }
     },
     "halle": {
@@ -2774,6 +3672,20 @@
         "1-395": 6,
         "1-397": 5,
         "1-398": 52
+      },
+      "areas": {
+        "agriculture-environment": 8,
+        "education-teaching": 60,
+        "social-sciences": 17,
+        "engineering": 6,
+        "humanities-languages": 70,
+        "arts-design-music": 9,
+        "mathematics": 3,
+        "computer-science": 9,
+        "natural-sciences": 29,
+        "medicine-health": 7,
+        "law": 6,
+        "business-economics": 11
       }
     },
     "leipzig": {
@@ -2823,6 +3735,18 @@
         "1-396": 3,
         "1-397": 18,
         "1-398": 66
+      },
+      "areas": {
+        "social-sciences": 10,
+        "education-teaching": 90,
+        "humanities-languages": 72,
+        "arts-design-music": 8,
+        "computer-science": 9,
+        "natural-sciences": 23,
+        "mathematics": 2,
+        "medicine-health": 5,
+        "business-economics": 10,
+        "law": 1
       }
     },
     "tuchemnitz": {
@@ -2871,6 +3795,19 @@
         "1-380": 22,
         "1-395": 3,
         "1-398": 2
+      },
+      "areas": {
+        "agriculture-environment": 1,
+        "education-teaching": 9,
+        "social-sciences": 20,
+        "humanities-languages": 23,
+        "engineering": 35,
+        "natural-sciences": 14,
+        "computer-science": 18,
+        "mathematics": 7,
+        "medicine-health": 6,
+        "business-economics": 22,
+        "law": 3
       }
     },
     "potsdam": {
@@ -2916,6 +3853,19 @@
         "1-396": 2,
         "1-397": 3,
         "1-398": 63
+      },
+      "areas": {
+        "agriculture-environment": 3,
+        "education-teaching": 69,
+        "humanities-languages": 51,
+        "social-sciences": 20,
+        "arts-design-music": 1,
+        "computer-science": 13,
+        "natural-sciences": 28,
+        "mathematics": 3,
+        "medicine-health": 10,
+        "business-economics": 18,
+        "law": 10
       }
     },
     "viadrina": {
@@ -2946,6 +3896,16 @@
         "1-369": 4,
         "1-380": 9,
         "1-395": 14
+      },
+      "areas": {
+        "education-teaching": 1,
+        "social-sciences": 10,
+        "architecture-planning": 1,
+        "humanities-languages": 8,
+        "arts-design-music": 1,
+        "business-economics": 9,
+        "law": 14,
+        "computer-science": 2
       }
     },
     "btucottbus": {
@@ -2996,6 +3956,21 @@
         "1-380": 7,
         "1-395": 3,
         "1-398": 2
+      },
+      "areas": {
+        "social-sciences": 5,
+        "education-teaching": 3,
+        "agriculture-environment": 5,
+        "humanities-languages": 4,
+        "architecture-planning": 8,
+        "engineering": 28,
+        "arts-design-music": 2,
+        "natural-sciences": 9,
+        "computer-science": 10,
+        "mathematics": 5,
+        "medicine-health": 6,
+        "business-economics": 7,
+        "law": 3
       }
     },
     "wuerzburg": {
@@ -3054,6 +4029,20 @@
         "1-395": 7,
         "1-397": 4,
         "1-398": 73
+      },
+      "areas": {
+        "agriculture-environment": 1,
+        "education-teaching": 84,
+        "social-sciences": 12,
+        "humanities-languages": 79,
+        "engineering": 5,
+        "arts-design-music": 10,
+        "natural-sciences": 32,
+        "computer-science": 18,
+        "mathematics": 11,
+        "business-economics": 8,
+        "medicine-health": 13,
+        "law": 7
       }
     },
     "regensburg": {
@@ -3099,6 +4088,20 @@
         "1-395": 10,
         "1-397": 1,
         "1-398": 63
+      },
+      "areas": {
+        "social-sciences": 13,
+        "education-teaching": 67,
+        "humanities-languages": 58,
+        "engineering": 1,
+        "architecture-planning": 1,
+        "arts-design-music": 7,
+        "computer-science": 17,
+        "natural-sciences": 21,
+        "mathematics": 5,
+        "medicine-health": 6,
+        "business-economics": 19,
+        "law": 10
       }
     },
     "passau": {
@@ -3127,6 +4130,17 @@
         "1-380": 11,
         "1-395": 8,
         "1-398": 56
+      },
+      "areas": {
+        "agriculture-environment": 5,
+        "education-teaching": 57,
+        "humanities-languages": 14,
+        "social-sciences": 8,
+        "natural-sciences": 5,
+        "mathematics": 3,
+        "computer-science": 11,
+        "business-economics": 11,
+        "law": 8
       }
     },
     "bayreuth": {
@@ -3182,6 +4196,20 @@
         "1-395": 11,
         "1-396": 11,
         "1-398": 48
+      },
+      "areas": {
+        "agriculture-environment": 5,
+        "social-sciences": 8,
+        "education-teaching": 53,
+        "humanities-languages": 33,
+        "arts-design-music": 5,
+        "engineering": 21,
+        "natural-sciences": 34,
+        "medicine-health": 7,
+        "mathematics": 9,
+        "computer-science": 14,
+        "law": 11,
+        "business-economics": 22
       }
     },
     "augsburg": {
@@ -3225,6 +4253,19 @@
         "1-380": 10,
         "1-395": 6,
         "1-398": 51
+      },
+      "areas": {
+        "education-teaching": 56,
+        "social-sciences": 5,
+        "engineering": 6,
+        "humanities-languages": 31,
+        "arts-design-music": 6,
+        "natural-sciences": 8,
+        "computer-science": 17,
+        "medicine-health": 5,
+        "mathematics": 9,
+        "business-economics": 10,
+        "law": 6
       }
     },
     "bamberg": {
@@ -3269,6 +4310,19 @@
         "1-395": 1,
         "1-396": 11,
         "1-398": 57
+      },
+      "areas": {
+        "social-sciences": 14,
+        "education-teaching": 67,
+        "architecture-planning": 3,
+        "arts-design-music": 6,
+        "humanities-languages": 42,
+        "natural-sciences": 3,
+        "mathematics": 1,
+        "computer-science": 15,
+        "medicine-health": 2,
+        "law": 1,
+        "business-economics": 21
       }
     },
     "kueichstaett": {
@@ -3309,6 +4363,19 @@
         "1-380": 13,
         "1-395": 1,
         "1-398": 49
+      },
+      "areas": {
+        "agriculture-environment": 2,
+        "education-teaching": 52,
+        "social-sciences": 22,
+        "humanities-languages": 37,
+        "natural-sciences": 7,
+        "arts-design-music": 8,
+        "computer-science": 3,
+        "medicine-health": 1,
+        "mathematics": 4,
+        "business-economics": 13,
+        "law": 1
       }
     },
     "hohenheim": {
@@ -3336,6 +4403,16 @@
         "1-380": 19,
         "1-396": 2,
         "1-398": 2
+      },
+      "areas": {
+        "agriculture-environment": 16,
+        "education-teaching": 4,
+        "social-sciences": 1,
+        "humanities-languages": 2,
+        "computer-science": 3,
+        "engineering": 9,
+        "natural-sciences": 17,
+        "business-economics": 19
       }
     },
     "ulm": {
@@ -3371,6 +4448,18 @@
         "1-325": 1,
         "1-380": 11,
         "1-398": 14
+      },
+      "areas": {
+        "social-sciences": 5,
+        "education-teaching": 15,
+        "humanities-languages": 1,
+        "arts-design-music": 1,
+        "engineering": 17,
+        "natural-sciences": 19,
+        "mathematics": 12,
+        "computer-science": 26,
+        "medicine-health": 2,
+        "business-economics": 11
       }
     },
     "saarland": {
@@ -3422,6 +4511,21 @@
         "1-395": 11,
         "1-396": 3,
         "1-398": 44
+      },
+      "areas": {
+        "agriculture-environment": 1,
+        "social-sciences": 7,
+        "education-teaching": 48,
+        "humanities-languages": 52,
+        "architecture-planning": 1,
+        "engineering": 14,
+        "arts-design-music": 3,
+        "mathematics": 9,
+        "natural-sciences": 21,
+        "computer-science": 28,
+        "medicine-health": 6,
+        "law": 11,
+        "business-economics": 16
       }
     },
     "rptu": {
@@ -3479,6 +4583,21 @@
         "1-396": 14,
         "1-397": 3,
         "1-398": 88
+      },
+      "areas": {
+        "agriculture-environment": 6,
+        "social-sciences": 18,
+        "education-teaching": 118,
+        "humanities-languages": 9,
+        "architecture-planning": 8,
+        "engineering": 37,
+        "arts-design-music": 1,
+        "computer-science": 8,
+        "natural-sciences": 30,
+        "mathematics": 9,
+        "medicine-health": 3,
+        "business-economics": 17,
+        "law": 1
       }
     },
     "fernunihagen": {
@@ -3504,6 +4623,17 @@
         "1-369": 1,
         "1-380": 6,
         "1-395": 8
+      },
+      "areas": {
+        "agriculture-environment": 1,
+        "education-teaching": 2,
+        "humanities-languages": 5,
+        "social-sciences": 6,
+        "natural-sciences": 1,
+        "mathematics": 3,
+        "computer-science": 6,
+        "business-economics": 6,
+        "law": 8
       }
     },
     "oldenburg": {
@@ -3557,6 +4687,21 @@
         "1-396": 15,
         "1-397": 18,
         "1-398": 98
+      },
+      "areas": {
+        "agriculture-environment": 5,
+        "education-teaching": 107,
+        "social-sciences": 12,
+        "humanities-languages": 35,
+        "engineering": 8,
+        "architecture-planning": 1,
+        "arts-design-music": 5,
+        "natural-sciences": 23,
+        "mathematics": 5,
+        "computer-science": 7,
+        "medicine-health": 4,
+        "business-economics": 11,
+        "law": 6
       }
     },
     "hildesheim": {
@@ -3597,6 +4742,18 @@
         "1-369": 11,
         "1-380": 5,
         "1-398": 42
+      },
+      "areas": {
+        "agriculture-environment": 4,
+        "education-teaching": 47,
+        "social-sciences": 10,
+        "humanities-languages": 28,
+        "engineering": 2,
+        "arts-design-music": 7,
+        "natural-sciences": 6,
+        "mathematics": 3,
+        "computer-science": 15,
+        "business-economics": 5
       }
     },
     "leuphana": {
@@ -3640,6 +4797,20 @@
         "1-395": 15,
         "1-396": 3,
         "1-398": 25
+      },
+      "areas": {
+        "agriculture-environment": 11,
+        "education-teaching": 31,
+        "social-sciences": 29,
+        "engineering": 7,
+        "humanities-languages": 15,
+        "architecture-planning": 1,
+        "arts-design-music": 5,
+        "natural-sciences": 12,
+        "computer-science": 6,
+        "mathematics": 2,
+        "law": 15,
+        "business-economics": 26
       }
     },
     "tuclausthal": {
@@ -3671,6 +4842,14 @@
         "1-242": 1,
         "1-250": 2,
         "1-380": 6
+      },
+      "areas": {
+        "agriculture-environment": 4,
+        "natural-sciences": 8,
+        "engineering": 25,
+        "computer-science": 8,
+        "mathematics": 2,
+        "business-economics": 6
       }
     },
     "vechta": {
@@ -3703,6 +4882,17 @@
         "1-348": 1,
         "1-380": 3,
         "1-398": 32
+      },
+      "areas": {
+        "agriculture-environment": 1,
+        "social-sciences": 9,
+        "education-teaching": 33,
+        "humanities-languages": 8,
+        "mathematics": 1,
+        "arts-design-music": 2,
+        "natural-sciences": 3,
+        "medicine-health": 2,
+        "business-economics": 3
       }
     }
   }

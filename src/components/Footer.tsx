@@ -21,6 +21,7 @@ export default function Footer() {
     { href: "/universities", label: tools("directory") },
     { href: "/universities/finder", label: tools("finder") },
     { href: "/universities/programmes", label: tools("programmes") },
+    { href: "/universities/subjects", label: tools("subjects") },
     { href: "/germany", label: tools("states") },
     { href: "/cost-calculator", label: tools("costs") },
     { href: "/scholarships", label: tools("scholarships") },
