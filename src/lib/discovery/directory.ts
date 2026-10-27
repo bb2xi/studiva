@@ -8,8 +8,14 @@ export const TYPE_KEYS = { universitat: "Universität", hochschule: "Fachhochsch
 export type TypeKey = keyof typeof TYPE_KEYS;
 export const TYPE_KEY_LIST = Object.keys(TYPE_KEYS) as TypeKey[];
 
-export const SORT_KEYS = ["relevance", "name", "city", "state", "verified"] as const;
+export const SORT_KEYS = ["relevance", "programmes", "name", "city", "state", "english", "contribution", "verified"] as const;
 export type SortKey = (typeof SORT_KEYS)[number];
+
+/** The order actually applied: "relevance" only means something while searching. */
+export function effectiveSort(state: Pick<DirectoryState, "q" | "sort">): SortKey {
+  if (state.sort === null) return state.q ? "relevance" : "programmes";
+  return state.sort === "relevance" && !state.q ? "programmes" : state.sort;
+}
 
 export const PAGE_SIZE = 12;
 
@@ -25,7 +31,8 @@ export type DirectoryState = {
   fee: "any" | "none" | "charged";
   english: boolean;
   uniAssist: boolean;
-  sort: SortKey;
+  /** null = the default for the current query (see effectiveSort). */
+  sort: SortKey | null;
   page: number;
 };
 
@@ -41,7 +48,7 @@ export const DEFAULT_STATE: DirectoryState = {
   fee: "any",
   english: false,
   uniAssist: false,
-  sort: "relevance",
+  sort: null,
   page: 1,
 };
 
@@ -71,7 +78,7 @@ export function parseDirectoryState(params: ParamsLike): DirectoryState {
     fee: fee === "none" || fee === "charged" ? fee : "any",
     english: params.get("en") === "1",
     uniAssist: params.get("ua") === "1",
-    sort: sort && (SORT_KEYS as readonly string[]).includes(sort) ? (sort as SortKey) : "relevance",
+    sort: sort && (SORT_KEYS as readonly string[]).includes(sort) ? (sort as SortKey) : null,
     page: Number.isFinite(page) && page > 0 ? page : 1,
   };
 }
@@ -89,7 +96,7 @@ export function serializeDirectoryState(state: DirectoryState): string {
   if (state.fee !== "any") p.set("fee", state.fee);
   if (state.english) p.set("en", "1");
   if (state.uniAssist) p.set("ua", "1");
-  if (state.sort !== "relevance") p.set("sort", state.sort);
+  if (state.sort !== null) p.set("sort", state.sort);
   if (state.page > 1) p.set("page", String(state.page));
   return p.toString();
 }
@@ -183,11 +190,20 @@ export function runDirectoryQuery(
   const c = collator(locale);
   const stateName = (u: UniversitySummary) => STATES.find((s) => s.code === u.state)?.name[locale === "tr" ? "tr" : "en"] ?? "~";
   const sorted = [...filtered];
-  const sort = state.sort === "relevance" && !state.q ? "name" : state.sort;
+  const sort = effectiveSort(state);
+  // Unverified values (null) always sort last, whatever the direction.
+  const nullsLast = (a: number | null | undefined, b: number | null | undefined, dir: 1 | -1) =>
+    a == null ? (b == null ? 0 : 1) : b == null ? -1 : (a - b) * dir;
   sorted.sort((a, b) => {
     switch (sort) {
       case "relevance":
         return (scores.get(b.slug) ?? 0) - (scores.get(a.slug) ?? 0) || c.compare(a.name, b.name);
+      case "programmes":
+        return nullsLast(a.facts?.hsk?.programmes, b.facts?.hsk?.programmes, -1) || c.compare(a.name, b.name);
+      case "english":
+        return nullsLast(a.facts?.daad?.englishProgrammes, b.facts?.daad?.englishProgrammes, -1) || c.compare(a.name, b.name);
+      case "contribution":
+        return nullsLast(a.facts?.semesterContribution.amountEur, b.facts?.semesterContribution.amountEur, 1) || c.compare(a.name, b.name);
       case "city":
         return c.compare(a.cities[0] ?? "~", b.cities[0] ?? "~") || c.compare(a.name, b.name);
       case "state":

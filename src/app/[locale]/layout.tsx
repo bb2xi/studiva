@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Source_Serif_4, Source_Sans_3 } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import Navbar from "@/components/Navbar";
@@ -72,6 +72,13 @@ export default async function LocaleLayout({
   const meta = await getTranslations({ locale, namespace: "meta" });
   const common = await getTranslations({ locale, namespace: "common" });
   const universityNames = Object.fromEntries((await getUniversitySummaries(locale)).map((u) => [u.slug, u.name]));
+  // The long university profiles (universities.items, ~120 KB) are only read
+  // on the server, so they stay out of the messages serialized into every page.
+  const messages = await getMessages();
+  const clientMessages = {
+    ...messages,
+    universities: Object.fromEntries(Object.entries(messages.universities ?? {}).filter(([key]) => key !== "items")),
+  };
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -99,11 +106,13 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={clientMessages}>
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
-          <WhatsAppButton message={common("whatsappMessage")} label={common("whatsappAriaLabel")} />
+          <aside aria-label={common("quickContact")}>
+            <WhatsAppButton message={common("whatsappMessage")} label={common("whatsappAriaLabel")} />
+          </aside>
           <CompareTray names={universityNames} />
           <Toaster />
         </NextIntlClientProvider>

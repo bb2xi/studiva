@@ -120,7 +120,7 @@
     },
     "universities": {
       "title": "Öne Çıkan Üniversiteler",
-      "subtitle": "Exzellenzuniversität'lerden TU9 teknik üniversitelerine, Almanya genelinde danışmanlık verdiğimiz üniversitelerden bir kesit.",
+      "subtitle": "Exzellenzuniversität'lerden TU9 teknik üniversitelerine, Almanya genelindeki üniversitelerden bir seçki.",
       "linkText": "Tüm üniversiteleri gör"
     },
     "process": {
@@ -308,8 +308,8 @@
   },
   "universities": {
     "hero": {
-      "title": "Üniversitelerimiz",
-      "subtitle": "Exzellenzuniversität'lerden TU9 teknik üniversitelerine, Hochschule'lerden Dual Studium programlarına kadar Almanya'nın akademik yelpazesinden bir kesit."
+      "title": "Almanya'daki üniversiteler",
+      "subtitle": "Almanya'daki üniversiteleri okul ücretine, alana, eğitim diline ve konuma göre keşfedin. Veriler resmî kaynaklardan derlenir."
     },
     "items": [
       {
@@ -3189,8 +3189,8 @@
       "excellence": "Exzellenzuniversiteler"
     },
     "map": {
-      "title": "Almanya Haritasında Üniversitelerimiz",
-      "subtitle": "Danışmanlık verdiğimiz üniversitelerin şehirlere göre dağılımını inceleyin.",
+      "title": "Haritada üniversiteler",
+      "subtitle": "Üniversitelerin şehirlere göre dağılımını inceleyin.",
       "hint": "Bir işarete tıklayarak üniversite detaylarını görün; haritayı yakınlaştırıp kaydırabilirsiniz.",
       "zoomHint": "Yakınlaştırmak için haritaya tıklayın"
     },
@@ -3430,7 +3430,8 @@
   },
   "common": {
     "whatsappMessage": "Merhaba, Almanya'da üniversite başvurusu hakkında bilgi almak istiyorum.",
-    "whatsappAriaLabel": "WhatsApp'tan mesaj gönder"
+    "whatsappAriaLabel": "WhatsApp'tan mesaj gönder",
+    "quickContact": "Hızlı iletişim"
   },
   "faq": {
     "title": "Sık Sorulan Sorular",

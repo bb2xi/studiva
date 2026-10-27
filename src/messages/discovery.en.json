@@ -123,11 +123,14 @@
       "uniAssist": "Applications via uni-assist",
       "sort": "Sort by",
       "sortOptions": {
-        "relevance": "Best match",
+        "relevance": "Best match (search)",
         "name": "Name (A–Z)",
-        "city": "City",
-        "state": "Federal state",
-        "verified": "Most complete data"
+        "city": "City (A–Z)",
+        "state": "Federal state (A–Z)",
+        "verified": "Most complete data",
+        "programmes": "Most programmes (HRK)",
+        "english": "Most English-taught programmes (DAAD)",
+        "contribution": "Lowest semester contribution"
       },
       "resultCount": "{count, plural, =0 {No universities} one {# university} other {# universities}}",
       "showing": "Showing {from}–{to} of {total}",
@@ -143,7 +146,8 @@
       "next": "Next",
       "page": "Page {page}",
       "dataNote": "Fees, semester contributions and links checked {date} against official sources; programme counts and subject areas from the HRK Higher Education Compass and DAAD. Fields we could not verify are marked “Not verified” instead of estimated.",
-      "englishNote": "A university offering some English-taught programmes does not mean all its programmes are in English."
+      "englishNote": "A university offering some English-taught programmes does not mean all its programmes are in English.",
+      "skipToResults": "Skip to results"
     },
     "card": {
       "verifiedFields": "{filled}/{total} fields verified"

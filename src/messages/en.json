@@ -120,7 +120,7 @@
     },
     "universities": {
       "title": "Leading Universities",
-      "subtitle": "A cross-section of the universities Studiva advises on across Germany — from Excellence Universities to TU9 technical institutes.",
+      "subtitle": "A selection of universities across Germany, from Excellence Universities to TU9 technical institutes.",
       "linkText": "View all universities"
     },
     "process": {
@@ -308,8 +308,8 @@
   },
   "universities": {
     "hero": {
-      "title": "Our Universities",
-      "subtitle": "A cross-section of Germany's academic landscape — from Excellence Universities and TU9 technical institutes to Hochschulen and Dual Studium programs."
+      "title": "Universities in Germany",
+      "subtitle": "Explore universities in Germany by tuition, subject, language of instruction and location, with data from official sources."
     },
     "items": [
       {
@@ -3189,8 +3189,8 @@
       "excellence": "Excellence Universities"
     },
     "map": {
-      "title": "Our Universities on the Map of Germany",
-      "subtitle": "Explore where the universities we advise on are located.",
+      "title": "Universities on the map",
+      "subtitle": "See which cities the universities are in.",
       "hint": "Click a marker to see university details; you can zoom and pan the map.",
       "zoomHint": "Click the map to enable zoom"
     },
@@ -3430,7 +3430,8 @@
   },
   "common": {
     "whatsappMessage": "Hi, I'd like to get information about applying to a German university.",
-    "whatsappAriaLabel": "Send a WhatsApp message"
+    "whatsappAriaLabel": "Send a WhatsApp message",
+    "quickContact": "Quick contact"
   },
   "faq": {
     "title": "Frequently Asked Questions",

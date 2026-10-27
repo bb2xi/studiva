@@ -116,6 +116,7 @@ export default function GermanyMap({
   const mapRef = useRef<L.Map | null>(null);
   const clusterRef = useRef<L.MarkerClusterGroup | null>(null);
   const markersRef = useRef<Map<string, L.Marker>>(new Map());
+  const relabelRef = useRef<(() => void) | null>(null);
   const localeRef = useRef(locale);
   const [scrollZoomActive, setScrollZoomActive] = useState(false);
 
@@ -134,6 +135,10 @@ export default function GermanyMap({
       zoom: 6,
       minZoom: 6,
       maxZoom: 13,
+      // On touch screens a one-finger swipe must scroll the page, not pan the
+      // map (otherwise the map is a scroll trap); pinch-zoom and the zoom
+      // buttons still work.
+      dragging: !window.matchMedia("(pointer: coarse)").matches,
       scrollWheelZoom: false,
       maxBounds: bounds.pad(0.15),
       maxBoundsViscosity: 1,
@@ -241,29 +246,30 @@ export default function GermanyMap({
     clusterRef.current = cluster;
     map.addLayer(cluster);
 
-    // Leaflet keeps its own default keyboard handling enabled for cluster
-    // bubbles (they're reachable by Tab), but it never sets an aria-label —
-    // a screen reader just announces the bare count, e.g. "2, button". The
-    // plugin's internal cluster icons don't reliably fire a per-layer
-    // "layeradd" the way plain markers do, so instead of hooking a specific
-    // event, this just (re-)scans whatever cluster bubbles are actually in
-    // the DOM — cheap, and correct regardless of which internal event
-    // triggered the redraw.
+    // Cluster bubbles are Tab-reachable by default, which put dozens of map
+    // stops between the filters and the result list. The list (with its
+    // "show on map" action) is the keyboard route, so bubbles leave the Tab
+    // order but keep a label for screen readers. The plugin's cluster icons
+    // don't reliably fire a per-layer "layeradd", so this (re-)scans whatever
+    // bubbles are in the DOM after each redraw.
     const labelClusterBubbles = () => {
       const icons = map.getContainer().querySelectorAll<HTMLElement>(".leaflet-marker-icon");
       icons.forEach((el) => {
+        el.setAttribute("tabindex", "-1");
         const text = el.textContent?.trim() ?? "";
         if (!/^\d+$/.test(text)) return;
+        el.setAttribute("role", "img");
         el.setAttribute(
           "aria-label",
           localeRef.current === "tr"
-            ? `${text} üniversite, yakınlaştırmak için seçin`
-            : `${text} universities, select to zoom in`
+            ? `${text} üniversite`
+            : `${text} universities`
         );
       });
     };
     cluster.on("animationend", labelClusterBubbles);
     map.on("moveend zoomend", labelClusterBubbles);
+    relabelRef.current = labelClusterBubbles;
 
     const activateScrollZoom = () => {
       map.scrollWheelZoom.enable();
@@ -296,30 +302,18 @@ export default function GermanyMap({
       });
       marker.bindPopup(popupHtml(item, locale));
       markersRef.current.set(item.slug, marker);
-      // Leaflet's divIcon markers aren't keyboard-reachable out of the box.
-      // The focusable, positioned element Leaflet actually manages is the
-      // OUTER wrapper it creates around our divIcon HTML (what getElement()
-      // returns) — role/tabindex/aria-label have to go on that element
-      // itself, not on a div inside our HTML string, or nothing is actually
-      // in the tab order.
+      // Markers stay out of the Tab order (keyboard: false): the result list
+      // is the keyboard route to every university. The label still names the
+      // marker for screen-reader users exploring the map.
       marker.on("add", () => {
         const el = marker.getElement();
-        if (!el) return;
-        el.setAttribute("role", "button");
-        el.setAttribute("tabindex", "0");
-        el.setAttribute("aria-label", ariaLabel);
-        el.style.outlineOffset = "2px";
-        el.addEventListener("keydown", (e) => {
-          const ke = e as KeyboardEvent;
-          if (ke.key === "Enter" || ke.key === " ") {
-            ke.preventDefault();
-            marker.openPopup();
-          }
-        });
+        el?.setAttribute("role", "img");
+        el?.setAttribute("aria-label", ariaLabel);
       });
       return marker;
     });
     cluster.addLayers(markers);
+    requestAnimationFrame(() => relabelRef.current?.());
 
     if (items.length > 0) {
       const bounds = L.latLngBounds(items.map((i): [number, number] => [i.lat, i.lng]));

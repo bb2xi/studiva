@@ -123,11 +123,14 @@
       "uniAssist": "uni-assist üzerinden başvuru",
       "sort": "Sırala",
       "sortOptions": {
-        "relevance": "En uygun",
-        "name": "İsim (A–Z)",
-        "city": "Şehir",
-        "state": "Eyalet",
-        "verified": "En eksiksiz veri"
+        "relevance": "En uygun (arama)",
+        "name": "Ada göre (A–Z)",
+        "city": "Şehre göre (A–Z)",
+        "state": "Eyalete göre (A–Z)",
+        "verified": "Veri eksiksizliği",
+        "programmes": "En çok program (HRK)",
+        "english": "En çok İngilizce program (DAAD)",
+        "contribution": "En düşük dönem katkı payı"
       },
       "resultCount": "{count, plural, =0 {Üniversite bulunamadı} other {# üniversite}}",
       "showing": "{total} sonuçtan {from}–{to} gösteriliyor",
@@ -143,7 +146,8 @@
       "next": "Sonraki",
       "page": "Sayfa {page}",
       "dataNote": "Ücret, dönem katkı payı ve bağlantı bilgileri {date} tarihinde resmî kaynaklardan kontrol edildi; program sayıları ve çalışma alanları HRK Hochschulkompass ile DAAD'dan alındı. Doğrulayamadığımız bilgiler tahmin edilmek yerine “Doğrulanmadı” olarak gösterilir.",
-      "englishNote": "Bir üniversitenin bazı İngilizce programları olması, tüm programlarının İngilizce olduğu anlamına gelmez."
+      "englishNote": "Bir üniversitenin bazı İngilizce programları olması, tüm programlarının İngilizce olduğu anlamına gelmez.",
+      "skipToResults": "Sonuçlara atla"
     },
     "card": {
       "verifiedFields": "Doğrulanan alan: {filled}/{total}"

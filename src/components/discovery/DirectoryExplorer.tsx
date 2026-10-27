@@ -11,10 +11,12 @@ import {
   TYPE_KEY_LIST,
   activeFilterCount,
   buildUniversityIndex,
+  effectiveSort,
   parseDirectoryState,
   runDirectoryQuery,
   serializeDirectoryState,
   type DirectoryState,
+  type SortKey,
 } from "@/lib/discovery/directory";
 import { closestCandidate } from "@/lib/discovery/search";
 import { formatDate } from "@/lib/discovery/facts";
@@ -53,7 +55,7 @@ export default function DirectoryExplorer({
   const pathname = usePathname();
   const params = useSearchParams();
   const state = useMemo(() => parseDirectoryState(params), [params]);
-  const resultsRef = useRef<HTMLDivElement>(null);
+  const gridRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<HTMLDivElement>(null);
   const [focus, setFocus] = useState<{ slug: string | null; token: number }>({ slug: null, token: 0 });
 
@@ -82,7 +84,9 @@ export default function DirectoryExplorer({
 
   function goToPage(page: number) {
     update({ page }, { keepPage: true });
-    resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    // Land on the new cards themselves — never on the map above them.
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    gridRef.current?.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
   }
 
   const stateName = (code: StateCode) => STATE_BY_CODE[code].name[locale === "tr" ? "tr" : "en"];
@@ -140,23 +144,7 @@ export default function DirectoryExplorer({
         />
       </div>
 
-      <div className="mt-5 flex flex-wrap items-center justify-center gap-2" role="group" aria-label={t("levels.label")}>
-        {(["all", "bachelor", "master"] as const).map((level) => (
-          <button
-            key={level}
-            type="button"
-            aria-pressed={state.level === level}
-            onClick={() => update({ level })}
-            className={`rounded-sm border px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wide transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 ${
-              state.level === level ? "border-forest bg-forest text-white" : "border-border-strong bg-surface text-foreground-secondary hover:border-forest hover:text-forest"
-            }`}
-          >
-            {t(`levels.${level}`)}
-          </button>
-        ))}
-      </div>
-
-      <div className="mt-4 flex flex-wrap justify-center gap-2" role="group" aria-label={t("types.label")}>
+      <div className="mt-5 flex flex-wrap justify-center gap-2" role="group" aria-label={t("types.label")}>
         {TYPE_KEY_LIST.map((key) => (
           <button
             key={key}
@@ -269,7 +257,7 @@ export default function DirectoryExplorer({
         </div>
       </details>
 
-      <div ref={resultsRef} className="mt-6 flex scroll-mt-24 flex-col gap-3 border-y border-border py-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mt-6 flex flex-col gap-3 border-y border-border py-4 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-sm font-semibold text-foreground" aria-live="polite">
           {t("directory.resultCount", { count: result.total })}
           {result.total > PAGE_SIZE && <span className="ml-2 font-normal text-foreground-muted">{t("directory.showing", { from, to, total: result.total })}</span>}
@@ -277,11 +265,11 @@ export default function DirectoryExplorer({
         <label className="flex items-center gap-2 text-sm text-foreground-secondary">
           {t("directory.sort")}
           <select
-            value={state.sort}
-            onChange={(e) => update({ sort: e.target.value as DirectoryState["sort"] })}
+            value={effectiveSort(state)}
+            onChange={(e) => update({ sort: e.target.value as SortKey })}
             className="rounded-sm border border-border-strong bg-surface px-3 py-1.5 text-sm text-foreground"
           >
-            {SORT_KEYS.map((key) => (
+            {SORT_KEYS.filter((key) => key !== "relevance" || state.q).map((key) => (
               <option key={key} value={key}>
                 {t(`directory.sortOptions.${key}`)}
               </option>
@@ -328,6 +316,7 @@ export default function DirectoryExplorer({
         />
       </div>
 
+      <div id="results" ref={gridRef} tabIndex={-1} className="scroll-mt-24 focus:outline-none">
       {result.total === 0 ? (
         <div className="mx-auto mt-10 max-w-xl rounded-sm border border-border bg-surface p-8 text-center">
           <p className="font-display text-xl text-foreground">{t("directory.noResultsTitle")}</p>
@@ -365,6 +354,7 @@ export default function DirectoryExplorer({
           ))}
         </div>
       )}
+      </div>
 
       {result.pageCount > 1 && (
         <nav aria-label={t("directory.pagination")} className="mt-10 flex flex-wrap items-center justify-center gap-1.5">

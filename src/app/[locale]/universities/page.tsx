@@ -21,6 +21,7 @@ export default async function UniversitiesPage({ params }: { params: Promise<{ l
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: "universities" });
+  const d = await getTranslations({ locale, namespace: "discovery.directory" });
   const items = await getUniversitySummaries(locale);
   const map = t.raw("map") as { title: string; subtitle: string; hint: string; zoomHint: string };
 
@@ -39,6 +40,12 @@ export default async function UniversitiesPage({ params }: { params: Promise<{ l
 
   return (
     <>
+      <a
+        href="#results"
+        className="sr-only focus-visible:not-sr-only focus-visible:fixed focus-visible:left-4 focus-visible:top-20 focus-visible:z-[60] focus-visible:rounded-sm focus-visible:bg-brand focus-visible:px-4 focus-visible:py-2 focus-visible:text-sm focus-visible:font-semibold focus-visible:text-white"
+      >
+        {d("skipToResults")}
+      </a>
       <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} photo={heroPhotos.universities} />
       <DiscoveryNav />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />

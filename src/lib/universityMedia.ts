@@ -4,6 +4,20 @@ export type UniversityImage = {
   license: string;
 };
 
+/**
+ * Wikimedia thumbnail of a Commons file at one of the widths its thumbnailer
+ * serves (non-standard widths like 640 are rejected). Works for both original
+ * and existing-thumbnail URLs; SVGs are rendered to PNG. Anything else is
+ * returned unchanged.
+ */
+export function wikimediaThumb(url: string, width: 120 | 250 | 330 | 500): string {
+  const m = url.match(/^(https:\/\/upload\.wikimedia\.org\/wikipedia\/[a-z]+)\/(?:thumb\/)?([0-9a-f]\/[0-9a-f]{2})\/([^/]+)(?:\/[^/]+)?$/);
+  if (!m) return url;
+  const [, base, hash, file] = m;
+  if (!/\.(jpe?g|png|svg|gif|webp)$/i.test(file)) return url;
+  return `${base}/thumb/${hash}/${file}/${width}px-${file}${/\.svg$/i.test(file) ? ".png" : ""}`;
+}
+
 // Real campus photos sourced from Wikimedia Commons (freely licensed: CC BY / CC BY-SA / Public Domain / CC0).
 export const universityMedia: Record<string, UniversityImage[]> = {
   tum: [

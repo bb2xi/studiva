@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { ArrowUpRight, MapPin, Compass, GraduationCap } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { universityMedia, universityLogos } from "@/lib/universityMedia";
+import { universityMedia, universityLogos, wikimediaThumb } from "@/lib/universityMedia";
 import { STATE_BY_CODE } from "@/data/states";
 import type { UniversitySummary } from "@/lib/discovery/types";
 import { Tag } from "@/components/Tag";
@@ -37,10 +37,10 @@ export default function UniversityCard({ uni, onFocusMap }: { uni: UniversitySum
           <GraduationCap size={40} className="text-border-strong" aria-hidden />
         ) : logo ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img ref={checkLoaded} src={logo.url} alt="" loading="lazy" onError={() => setImageFailed(true)} className="max-h-[70%] max-w-[70%] object-contain" />
+          <img ref={checkLoaded} src={wikimediaThumb(logo.url, 250)} alt="" loading="lazy" onError={() => setImageFailed(true)} className="max-h-[70%] max-w-[70%] object-contain" />
         ) : (
           // eslint-disable-next-line @next/next/no-img-element
-          <img ref={checkLoaded} src={cover!.url} alt="" loading="lazy" onError={() => setImageFailed(true)} className="h-full w-full object-cover" />
+          <img ref={checkLoaded} src={wikimediaThumb(cover!.url, 500)} alt="" loading="lazy" onError={() => setImageFailed(true)} className="h-full w-full object-cover" />
         )}
         <div className="absolute right-3 top-3 z-20 flex gap-1.5">
           {onFocusMap && (
