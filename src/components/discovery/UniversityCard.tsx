@@ -6,13 +6,13 @@ import { ArrowUpRight, MapPin, Compass, GraduationCap } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { universityMedia, universityLogos, wikimediaThumb } from "@/lib/universityMedia";
 import { STATE_BY_CODE } from "@/data/states";
-import type { UniversitySummary } from "@/lib/discovery/types";
+import type { DirectoryItem } from "@/lib/discovery/types";
 import { Tag } from "@/components/Tag";
 import { Heading } from "@/components/Typography";
 import { FeeBadge } from "./FeeBadge";
 import { CompareButton, FavoriteButton } from "./ToggleButtons";
 
-export default function UniversityCard({ uni, onFocusMap }: { uni: UniversitySummary; onFocusMap?: (slug: string) => void }) {
+export default function UniversityCard({ uni, onFocusMap }: { uni: DirectoryItem & { description?: string }; onFocusMap?: (slug: string) => void }) {
   const locale = useLocale();
   const t = useTranslations("discovery");
   const logo = universityLogos[uni.slug];
@@ -75,7 +75,7 @@ export default function UniversityCard({ uni, onFocusMap }: { uni: UniversitySum
             {state && !uni.cityLabel.includes(state) ? ` · ${state}` : ""}
           </span>
         </div>
-        <p className="mt-3 line-clamp-3 flex-1 font-sans text-sm leading-relaxed text-foreground-secondary">{uni.description}</p>
+        <p className="mt-3 line-clamp-3 flex-1 font-sans text-sm leading-relaxed text-foreground-secondary">{uni.description ?? ""}</p>
         <div className="mt-4 flex items-center justify-between gap-2">
           <span className="text-[11px] text-foreground-muted">
             {t("card.verifiedFields", { filled: uni.completeness.filled, total: uni.completeness.total })}

@@ -4,6 +4,7 @@ import factsData from "@/data/university-facts.json";
 import { computeCompleteness } from "@/lib/discovery/facts";
 import type {
   CompassMeta,
+  DirectoryItem,
   UniversityBase,
   UniversityDetail,
   UniversityFacts,
@@ -77,6 +78,41 @@ export async function getUniversityDetails(locale: string): Promise<UniversityDe
 
 export async function getUniversitySummaries(locale: string): Promise<UniversitySummary[]> {
   return (await getUniversityDetails(locale)).map(toSummary);
+}
+
+/** Slim records for the directory UI — only what its cards, table, map, search and filters use. */
+export async function getDirectoryItems(locale: string): Promise<DirectoryItem[]> {
+  return (await getUniversitySummaries(locale)).map((u) => ({
+    slug: u.slug,
+    name: u.name,
+    cityLabel: u.cityLabel,
+    cities: u.cities,
+    state: u.state,
+    type: u.type,
+    badges: u.badges,
+    level: u.level,
+    lat: u.lat,
+    lng: u.lng,
+    multiCampus: u.multiCampus,
+    popularPrograms: u.popularPrograms,
+    completeness: { filled: u.completeness.filled, total: u.completeness.total },
+    facts: u.facts && {
+      officialName: u.facts.officialName,
+      ownership: u.facts.ownership,
+      nonEuTuition: { status: u.facts.nonEuTuition.status },
+      semesterContribution: { amountEur: u.facts.semesterContribution.amountEur, term: u.facts.semesterContribution.term },
+      uniAssistMember: u.facts.uniAssistMember,
+      englishTaught: u.facts.englishTaught,
+      subjectAreas: u.facts.subjectAreas,
+      daad: u.facts.daad && { englishProgrammes: u.facts.daad.englishProgrammes },
+      hsk: u.facts.hsk && {
+        programmes: u.facts.hsk.programmes,
+        undergraduate: u.facts.hsk.undergraduate,
+        graduate: u.facts.hsk.graduate,
+        english: u.facts.hsk.english,
+      },
+    },
+  }));
 }
 
 export async function getUniversityDetail(locale: string, slug: string): Promise<UniversityDetail | null> {

@@ -2,7 +2,7 @@ import type { Completeness, CompletenessField, Level, UniversityBase, University
 import { COMPLETENESS_FIELDS } from "./types";
 
 /** Degree levels on offer: the Higher Education Compass counts when we have them, otherwise the Studiva profile. */
-export function levelOf(u: Pick<UniversityBase, "level"> & { facts: UniversityFacts | null }): Level {
+export function levelOf(u: Pick<UniversityBase, "level"> & { facts: { hsk: { undergraduate: number; graduate: number } | null } | null }): Level {
   const h = u.facts?.hsk;
   if (!h || h.undergraduate + h.graduate === 0) return u.level;
   if (h.undergraduate > 0 && h.graduate > 0) return "both";

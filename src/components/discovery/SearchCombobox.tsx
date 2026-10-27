@@ -6,7 +6,7 @@ import { Search, X, GraduationCap, MapPin, Map as MapIcon } from "lucide-react";
 import { useRouter } from "@/i18n/navigation";
 import { normalize, search, type SearchIndex } from "@/lib/discovery/search";
 import { STATES, cityName } from "@/data/states";
-import type { StateCode, UniversitySummary } from "@/lib/discovery/types";
+import type { DirectoryItem, StateCode } from "@/lib/discovery/types";
 
 type Suggestion =
   | { kind: "university"; id: string; label: string; detail: string }
@@ -26,7 +26,7 @@ export default function SearchCombobox({
   onPickCity,
   onPickState,
 }: {
-  items: UniversitySummary[];
+  items: DirectoryItem[];
   index: SearchIndex;
   value: string;
   onChange: (q: string) => void;
@@ -144,7 +144,7 @@ export default function SearchCombobox({
             setActive(-1);
           }
         }}
-        className="w-full rounded-sm border border-border-strong bg-surface py-3 pl-11 pr-10 text-sm text-foreground placeholder:text-foreground-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 [&::-webkit-search-cancel-button]:hidden"
+        className="w-full rounded-sm border border-border-strong bg-surface py-3 pl-11 pr-12 text-sm text-foreground placeholder:text-foreground-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 [&::-webkit-search-cancel-button]:hidden"
       />
       {draft && (
         <button
@@ -154,7 +154,7 @@ export default function SearchCombobox({
             onChange("");
           }}
           aria-label={t("removeFilter", { label: draft })}
-          className="absolute right-2 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-sm text-foreground-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
+          className="absolute right-0.5 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-sm text-foreground-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
         >
           <X size={16} />
         </button>
@@ -176,7 +176,7 @@ export default function SearchCombobox({
                     pick(s);
                   }}
                   onMouseEnter={() => setActive(i)}
-                  className={`flex cursor-pointer items-center gap-3 px-4 py-2 text-sm ${i === active ? "bg-background-secondary text-forest" : "text-foreground"}`}
+                  className={`flex min-h-11 cursor-pointer items-center gap-3 px-4 py-2 text-sm ${i === active ? "bg-background-secondary text-forest" : "text-foreground"}`}
                 >
                   <SuggestionIcon size={15} className="shrink-0 text-foreground-muted" />
                   <span className="min-w-0 flex-1 truncate">{s.label}</span>

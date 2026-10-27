@@ -158,6 +158,27 @@ export type UniversitySummary = UniversityBase & {
   completeness: Completeness;
 };
 
+/** The facts the directory (cards, table, map, filters) actually uses — kept small for the client payload. */
+export type DirectoryFacts = {
+  officialName: string | null;
+  ownership: Ownership | null;
+  nonEuTuition: Pick<UniversityFacts["nonEuTuition"], "status">;
+  semesterContribution: Pick<UniversityFacts["semesterContribution"], "amountEur" | "term">;
+  uniAssistMember: boolean | null;
+  englishTaught: boolean | null;
+  subjectAreas: SubjectArea[] | null;
+  daad: Pick<NonNullable<UniversityFacts["daad"]>, "englishProgrammes"> | null;
+  hsk: Pick<NonNullable<UniversityFacts["hsk"]>, "programmes" | "undergraduate" | "graduate" | "english"> | null;
+};
+
+export type DirectoryItem = Pick<
+  UniversitySummary,
+  "slug" | "name" | "cityLabel" | "cities" | "state" | "type" | "badges" | "level" | "lat" | "lng" | "multiCampus" | "popularPrograms"
+> & {
+  completeness: Pick<Completeness, "filled" | "total">;
+  facts: DirectoryFacts | null;
+};
+
 /** Full record for the detail page. */
 export type UniversityDetail = UniversitySummary & {
   history: string[];

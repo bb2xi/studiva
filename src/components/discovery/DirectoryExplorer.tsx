@@ -1,398 +1,410 @@
 "use client";
 
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
 import dynamic from "next/dynamic";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { SlidersHorizontal, X } from "lucide-react";
+import { ChevronDown, LayoutGrid, Map as MapIcon, SlidersHorizontal, X } from "lucide-react";
+import Container from "@/components/Container";
 import {
   PAGE_SIZE,
   SORT_KEYS,
-  TYPE_KEY_LIST,
   activeFilterCount,
   buildUniversityIndex,
+  clearedState,
   effectiveSort,
   parseDirectoryState,
   runDirectoryQuery,
   serializeDirectoryState,
   type DirectoryState,
   type SortKey,
+  type ViewKey,
 } from "@/lib/discovery/directory";
 import { closestCandidate } from "@/lib/discovery/search";
 import { formatDate } from "@/lib/discovery/facts";
-import { STATES, STATE_BY_CODE, cityName } from "@/data/states";
-import type { StateCode, UniversitySummary } from "@/lib/discovery/types";
+import { STATE_BY_CODE, cityName } from "@/data/states";
+import type { DirectoryItem, StateCode } from "@/lib/discovery/types";
 import { SUBJECT_AREAS } from "@/lib/discovery/types";
+import DiscoveryHeader from "./DiscoveryHeader";
+import DirectoryFilters from "./DirectoryFilters";
+import DirectoryFilterSheet from "./DirectoryFilterSheet";
 import SearchCombobox from "./SearchCombobox";
 import UniversityCard from "./UniversityCard";
 
 const GermanyMap = dynamic(() => import("@/components/GermanyMap"), {
   ssr: false,
-  loading: () => (
-    <div className="h-[480px] w-full animate-pulse rounded-sm border border-border bg-background-secondary sm:h-[560px]" />
-  ),
+  loading: () => <div className="h-[70vh] min-h-[420px] w-full animate-pulse rounded-sm border border-border bg-background-secondary" />,
 });
 
-const chip =
-  "inline-flex items-center gap-1.5 rounded-sm border px-3 py-1.5 text-sm font-medium transition-colors duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50";
-const chipOn = "border-brand bg-brand text-white";
-const chipOff = "border-border-strong bg-surface text-foreground-secondary hover:border-brand hover:text-brand";
-
-export default function DirectoryExplorer({
-  items,
-  mapHint,
-  mapZoomHint,
-  dataCheckedAt,
-}: {
-  items: UniversitySummary[];
+type Props = {
+  items: DirectoryItem[];
+  dataCheckedAt: string | null;
   mapHint: string;
   mapZoomHint: string;
-  dataCheckedAt: string | null;
-}) {
-  const t = useTranslations("discovery");
-  const locale = useLocale();
-  const router = useRouter();
+};
+
+type Navigate = (next: DirectoryState, mode?: "push" | "replace") => void;
+
+/**
+ * Reads the directory state from the URL and writes every change back to it.
+ * The native History API keeps useSearchParams in sync without a server round
+ * trip, so filters apply instantly; view switches push an entry for "back".
+ */
+export default function DirectoryExplorer(props: Props) {
   const pathname = usePathname();
   const params = useSearchParams();
   const state = useMemo(() => parseDirectoryState(params), [params]);
-  const gridRef = useRef<HTMLDivElement>(null);
-  const mapRef = useRef<HTMLDivElement>(null);
-  const [focus, setFocus] = useState<{ slug: string | null; token: number }>({ slug: null, token: 0 });
+  const navigate = useCallback<Navigate>(
+    (next, mode = "replace") => {
+      const qs = serializeDirectoryState(next);
+      const url = qs ? `${pathname}?${qs}` : pathname;
+      if (mode === "push") window.history.pushState(null, "", url);
+      else window.history.replaceState(null, "", url);
+    },
+    [pathname]
+  );
+  return <DirectoryView {...props} state={state} onNavigate={navigate} />;
+}
+
+const chipBase =
+  "inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3.5 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50";
+
+/**
+ * The directory for a given state. The page also renders it with the default
+ * state as the prerendered fallback, so the first results are in the HTML.
+ */
+export function DirectoryView({ items, dataCheckedAt, mapHint, mapZoomHint, state, onNavigate }: Props & { state: DirectoryState; onNavigate?: Navigate }) {
+  const t = useTranslations("discovery");
+  const locale = useLocale();
+  const sidebarTitleId = useId();
+  const resultsRef = useRef<HTMLDivElement>(null);
+  const listRef = useRef<HTMLUListElement>(null);
+  const focusFromRef = useRef<number | null>(null);
+  const [sheet, setSheet] = useState<{ open: boolean; section: string | null }>({ open: false, section: null });
 
   const subjectLabels = useMemo(() => Object.fromEntries(SUBJECT_AREAS.map((s) => [s, t(`subjects.${s}`)])), [t]);
   const index = useMemo(() => buildUniversityIndex(items, subjectLabels), [items, subjectLabels]);
   const result = useMemo(() => runDirectoryQuery(items, index, state, locale), [items, index, state, locale]);
-
-  const hasSubjects = items.some((u) => u.facts?.subjectAreas?.length);
-  const hasEnglish = items.some((u) => u.facts?.englishTaught === true);
-  const hasUniAssist = items.some((u) => u.facts?.uniAssistMember === true);
+  const filterCount = activeFilterCount(state);
 
   const update = useCallback(
-    (patch: Partial<DirectoryState>, opts: { keepPage?: boolean } = {}) => {
-      const next = { ...state, ...patch, page: opts.keepPage ? (patch.page ?? state.page) : 1 };
-      const qs = serializeDirectoryState(next);
-      router.replace(qs ? `${pathname}?${qs}` : pathname, { scroll: false });
-    },
-    [state, router, pathname]
+    (patch: Partial<DirectoryState>, opts: { keepPage?: boolean; push?: boolean } = {}) =>
+      onNavigate?.({ ...state, ...patch, page: opts.keepPage ? (patch.page ?? state.page) : 1 }, opts.push ? "push" : "replace"),
+    [onNavigate, state]
   );
+  const clearAll = () => onNavigate?.(clearedState(state));
 
-  const setQuery = useCallback((q: string) => update({ q }), [update]);
-
-  function toggle<T extends string>(list: T[], value: T) {
-    return list.includes(value) ? list.filter((v) => v !== value) : [...list, value];
-  }
-
-  function goToPage(page: number) {
-    update({ page }, { keepPage: true });
-    // Land on the new cards themselves — never on the map above them.
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    gridRef.current?.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
-  }
+  // After "show more", move focus to the first newly shown card.
+  useEffect(() => {
+    const from = focusFromRef.current;
+    if (from === null) return;
+    focusFromRef.current = null;
+    listRef.current?.children[from]?.querySelector<HTMLElement>("a[href]")?.focus();
+  }, [result.visible.length]);
 
   const stateName = (code: StateCode) => STATE_BY_CODE[code].name[locale === "tr" ? "tr" : "en"];
+  const countText = t("directory.resultCount", { count: result.total });
 
   const activeChips: { key: string; label: string; remove: () => void }[] = [
     ...(state.q ? [{ key: "q", label: t("directory.searchChip", { q: state.q }), remove: () => update({ q: "" }) }] : []),
     ...(state.level !== "all" ? [{ key: "level", label: t(`levels.${state.level}`), remove: () => update({ level: "all" }) }] : []),
-    ...state.types.map((ty) => ({ key: `type-${ty}`, label: t(`types.${ty}`), remove: () => update({ types: state.types.filter((x) => x !== ty) }) })),
-    ...state.badges.map((b) => ({ key: `badge-${b}`, label: t(`directory.${b}`), remove: () => update({ badges: state.badges.filter((x) => x !== b) }) })),
-    ...state.states.map((s) => ({ key: `state-${s}`, label: stateName(s), remove: () => update({ states: state.states.filter((x) => x !== s) }) })),
-    ...(state.city ? [{ key: "city", label: t("directory.cityChip", { city: cityName(state.city, locale) }), remove: () => update({ city: "" }) }] : []),
-    ...(state.subject ? [{ key: "subject", label: t(`subjects.${state.subject}`), remove: () => update({ subject: "" }) }] : []),
-    ...(state.ownership !== "any" ? [{ key: "own", label: t(`ownership.${state.ownership}`), remove: () => update({ ownership: "any" }) }] : []),
     ...(state.fee !== "any"
       ? [{ key: "fee", label: state.fee === "none" ? t("directory.feeNone") : t("directory.feeCharged"), remove: () => update({ fee: "any" }) }]
       : []),
     ...(state.english ? [{ key: "en", label: t("directory.english"), remove: () => update({ english: false }) }] : []),
-    ...(state.uniAssist ? [{ key: "ua", label: t("directory.uniAssist"), remove: () => update({ uniAssist: false }) }] : []),
+    ...state.subjects.map((s) => ({ key: `subject-${s}`, label: t(`subjects.${s}`), remove: () => update({ subjects: state.subjects.filter((x) => x !== s) }) })),
+    ...state.states.map((s) => ({ key: `state-${s}`, label: stateName(s), remove: () => update({ states: state.states.filter((x) => x !== s) }) })),
+    ...(state.city ? [{ key: "city", label: t("directory.cityChip", { city: cityName(state.city, locale) }), remove: () => update({ city: "" }) }] : []),
+    ...state.types.map((ty) => ({ key: `type-${ty}`, label: t(`types.${ty}`), remove: () => update({ types: state.types.filter((x) => x !== ty) }) })),
+    ...(state.route !== "any"
+      ? [{ key: "route", label: state.route === "uniassist" ? t("directory.routeUniAssist") : t("directory.routeDirect"), remove: () => update({ route: "any" }) }]
+      : []),
+    ...(state.contributionMax !== null
+      ? [{ key: "cmax", label: t("directory.contributionChip", { amount: state.contributionMax }), remove: () => update({ contributionMax: null }) }]
+      : []),
+    ...(state.ownership !== "any" ? [{ key: "own", label: t(`ownership.${state.ownership}`), remove: () => update({ ownership: "any" }) }] : []),
+    ...state.badges.map((b) => ({ key: `badge-${b}`, label: t(`directory.${b}`), remove: () => update({ badges: state.badges.filter((x) => x !== b) }) })),
   ];
 
-  const didYouMean =
-    result.total === 0 && state.q ? closestCandidate(state.q, items.flatMap((u) => [u.name, ...u.cities])) : null;
+  const didYouMean = result.total === 0 && state.q ? closestCandidate(state.q, items.flatMap((u) => [u.name, ...u.cities])) : null;
 
   const mapItems = useMemo(
     () =>
-      result.all.map((u) => ({
-        slug: u.slug,
-        name: u.name,
-        city: u.cityLabel,
-        type: u.type,
-        badges: u.badges,
-        lat: u.lat,
-        lng: u.lng,
-        tuitionFree: u.facts?.nonEuTuition.status === "none",
-        competitiveness: u.competitiveness,
-      })),
-    [result.all]
+      state.view === "map"
+        ? result.all.map((u) => ({
+            slug: u.slug,
+            name: u.name,
+            city: u.cityLabel,
+            type: u.type,
+            badges: u.badges,
+            lat: u.lat,
+            lng: u.lng,
+            tuitionFree: u.facts?.nonEuTuition.status === "none",
+          }))
+        : [],
+    [result.all, state.view]
   );
 
-  const from = result.total === 0 ? 0 : (result.page - 1) * PAGE_SIZE + 1;
-  const to = Math.min(result.page * PAGE_SIZE, result.total);
-  const moreFilterCount =
-    state.states.length + (state.ownership !== "any" ? 1 : 0) + (state.fee !== "any" ? 1 : 0) + (state.uniAssist ? 1 : 0) + (state.english ? 1 : 0) + (state.subject ? 1 : 0);
+  function showOnMap(slug: string) {
+    update({ view: "map", focus: slug }, { push: true, keepPage: true });
+    resultsRef.current?.scrollIntoView({ block: "start" });
+  }
+
+  function setView(view: ViewKey) {
+    update({ view, focus: view === "map" ? state.focus : "" }, { push: true, keepPage: true });
+  }
+
+  const search = (
+    <SearchCombobox
+      items={items}
+      index={index}
+      value={state.q}
+      onChange={(q) => update({ q })}
+      onPickCity={(city) => update({ city })}
+      onPickState={(code) => update({ states: state.states.includes(code) ? state.states : [...state.states, code] })}
+    />
+  );
 
   return (
-    <div>
-      <div className="mx-auto max-w-2xl">
-        <SearchCombobox
-          items={items}
-          index={index}
-          value={state.q}
-          onChange={setQuery}
-          onPickCity={(city) => update({ city })}
-          onPickState={(code) => update({ states: state.states.includes(code) ? state.states : [...state.states, code] })}
-        />
-      </div>
+    <>
+      <DiscoveryHeader
+        compact
+        title={t("directory.title")}
+        subtitle={t("directory.subtitle", { count: items.length, date: dataCheckedAt ? formatDate(dataCheckedAt, locale) : "—" })}
+      >
+        <div className="mt-5 hidden max-w-2xl lg:block">{search}</div>
+      </DiscoveryHeader>
 
-      <div className="mt-5 flex flex-wrap justify-center gap-2" role="group" aria-label={t("types.label")}>
-        {TYPE_KEY_LIST.map((key) => (
-          <button
-            key={key}
-            type="button"
-            aria-pressed={state.types.includes(key)}
-            onClick={() => update({ types: toggle(state.types, key) })}
-            className={`${chip} ${state.types.includes(key) ? chipOn : chipOff}`}
-          >
-            {t(`types.${key}`)}
-            <span className={state.types.includes(key) ? "text-white/70" : "text-foreground-muted"}>({result.typeCounts[key]})</span>
-          </button>
-        ))}
-        {(["tu9", "excellence"] as const).map((b) => (
-          <button
-            key={b}
-            type="button"
-            aria-pressed={state.badges.includes(b)}
-            onClick={() => update({ badges: toggle(state.badges, b) })}
-            className={`${chip} ${state.badges.includes(b) ? chipOn : chipOff}`}
-          >
-            {t(`directory.${b}`)}
-            <span className={state.badges.includes(b) ? "text-white/70" : "text-foreground-muted"}>({result.badgeCounts[b]})</span>
-          </button>
-        ))}
-      </div>
-
-      <details className="group mx-auto mt-4 max-w-4xl rounded-sm border border-border bg-surface" open={moreFilterCount > 0 || undefined}>
-        <summary className="flex cursor-pointer list-none items-center justify-center gap-2 px-4 py-3 text-sm font-semibold text-foreground-secondary marker:content-none hover:text-forest">
-          <SlidersHorizontal size={16} />
-          {t("directory.moreFilters")}
-          {moreFilterCount > 0 && <span className="rounded-full bg-brand px-2 py-0.5 text-xs text-white">{moreFilterCount}</span>}
-        </summary>
-        <div className="grid grid-cols-1 gap-6 border-t border-border p-5 md:grid-cols-2 lg:grid-cols-3">
-          <fieldset className="lg:col-span-1">
-            <legend className="text-xs font-semibold uppercase tracking-wide text-foreground-secondary">{t("directory.state")}</legend>
-            <div className="mt-2 grid max-h-56 grid-cols-1 gap-1 overflow-auto pr-1 sm:grid-cols-2 lg:grid-cols-1">
-              {STATES.map((s) => (
-                <label key={s.code} className="flex cursor-pointer items-center gap-2 rounded-sm px-1 py-1 text-sm text-foreground-secondary hover:bg-background-secondary">
-                  <input
-                    type="checkbox"
-                    checked={state.states.includes(s.code)}
-                    onChange={() => update({ states: toggle(state.states, s.code) })}
-                    className="h-4 w-4 accent-[var(--brand)]"
-                  />
-                  {s.name[locale === "tr" ? "tr" : "en"]}
-                </label>
-              ))}
+      <Container bleed className="pb-16">
+        <div className="lg:grid lg:grid-cols-[16rem_minmax(0,1fr)] lg:gap-8 lg:pt-6 xl:grid-cols-[17rem_minmax(0,1fr)]">
+          <aside aria-labelledby={sidebarTitleId} className="hidden lg:block">
+            <div className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto overscroll-contain pb-6 pr-3">
+              <div className="flex items-center justify-between gap-2 border-b border-border pb-2">
+                <h2 id={sidebarTitleId} className="font-display text-lg font-medium text-foreground">
+                  {t("directory.filters")}
+                </h2>
+                {filterCount > 0 && (
+                  <button type="button" onClick={clearAll} className="min-h-9 text-xs font-semibold text-clay-dark underline underline-offset-2 hover:text-clay">
+                    {t("directory.clearAll")}
+                  </button>
+                )}
+              </div>
+              <DirectoryFilters state={state} facets={result.facets} onChange={update} idPrefix="side" />
             </div>
-          </fieldset>
+          </aside>
 
-          <div className="space-y-6">
-            <fieldset>
-              <legend className="text-xs font-semibold uppercase tracking-wide text-foreground-secondary">{t("directory.fee")}</legend>
-              <div className="mt-2 space-y-1">
-                {(["any", "none", "charged"] as const).map((fee) => (
-                  <label key={fee} className="flex cursor-pointer items-center gap-2 py-1 text-sm text-foreground-secondary">
-                    <input type="radio" name="fee" checked={state.fee === fee} onChange={() => update({ fee })} className="h-4 w-4 accent-[var(--brand)]" />
-                    {fee === "any" ? t("directory.feeAny") : fee === "none" ? t("directory.feeNone") : t("directory.feeCharged")}
-                  </label>
-                ))}
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend className="text-xs font-semibold uppercase tracking-wide text-foreground-secondary">{t("ownership.label")}</legend>
-              <div className="mt-2 space-y-1">
-                {(["any", "public", "private"] as const).map((own) => (
-                  <label key={own} className="flex cursor-pointer items-center gap-2 py-1 text-sm text-foreground-secondary">
-                    <input type="radio" name="own" checked={state.ownership === own} onChange={() => update({ ownership: own })} className="h-4 w-4 accent-[var(--brand)]" />
-                    {own === "any" ? t("directory.ownershipAny") : t(`ownership.${own}`)}
-                  </label>
-                ))}
-              </div>
-            </fieldset>
-          </div>
-
-          <div className="space-y-6">
-            {hasSubjects && (
-              <label className="block">
-                <span className="text-xs font-semibold uppercase tracking-wide text-foreground-secondary">{t("subjects.label")}</span>
-                <select
-                  value={state.subject}
-                  onChange={(e) => update({ subject: e.target.value as DirectoryState["subject"] })}
-                  className="mt-2 w-full rounded-sm border border-border-strong bg-surface px-3 py-2 text-sm text-foreground"
+          <div className="min-w-0">
+            {/* Small screens: search, filter button and quick filters stay at hand while scrolling. */}
+            <div className="sticky top-16 z-30 -mx-4 border-b border-border bg-background/95 px-4 pb-2 pt-3 backdrop-blur sm:-mx-6 sm:px-6 lg:hidden">
+              <div className="flex gap-2">
+                <div className="min-w-0 flex-1">{search}</div>
+                <button
+                  type="button"
+                  aria-haspopup="dialog"
+                  onClick={() => setSheet({ open: true, section: null })}
+                  className="inline-flex min-h-11 shrink-0 items-center gap-2 rounded-sm border border-border-strong bg-surface px-3 text-sm font-semibold text-foreground hover:border-forest"
                 >
-                  <option value="">{t("subjects.any")}</option>
-                  {SUBJECT_AREAS.map((s) => (
-                    <option key={s} value={s}>
-                      {t(`subjects.${s}`)}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            )}
-            {hasUniAssist && (
-              <label className="flex cursor-pointer items-start gap-2 text-sm text-foreground-secondary">
-                <input type="checkbox" checked={state.uniAssist} onChange={() => update({ uniAssist: !state.uniAssist })} className="mt-0.5 h-4 w-4 accent-[var(--brand)]" />
-                {t("directory.uniAssist")}
-              </label>
-            )}
-            {hasEnglish && (
-              <div>
-                <label className="flex cursor-pointer items-start gap-2 text-sm text-foreground-secondary">
-                  <input type="checkbox" checked={state.english} onChange={() => update({ english: !state.english })} className="mt-0.5 h-4 w-4 accent-[var(--brand)]" />
-                  {t("directory.english")}
+                  <SlidersHorizontal size={16} aria-hidden />
+                  {t("directory.filters")}
+                  {filterCount > 0 && <span className="rounded-full bg-brand px-1.5 text-xs text-white">{filterCount}</span>}
+                </button>
+              </div>
+              <div className="mt-2 flex items-center gap-2 overflow-x-auto pb-1 [scrollbar-width:none]">
+                <span className="shrink-0 pr-1 text-xs font-semibold text-foreground-secondary">{countText}</span>
+                <button
+                  type="button"
+                  aria-pressed={state.fee === "none"}
+                  onClick={() => update({ fee: state.fee === "none" ? "any" : "none" })}
+                  className={`${chipBase} min-h-11 ${state.fee === "none" ? "border-forest bg-forest text-white" : "border-border-strong bg-surface text-foreground-secondary"}`}
+                >
+                  {t("directory.quickFree")}
+                </button>
+                <button
+                  type="button"
+                  aria-pressed={state.english}
+                  onClick={() => update({ english: !state.english })}
+                  className={`${chipBase} min-h-11 ${state.english ? "border-forest bg-forest text-white" : "border-border-strong bg-surface text-foreground-secondary"}`}
+                >
+                  {t("directory.quickEnglish")}
+                </button>
+                <button
+                  type="button"
+                  aria-haspopup="dialog"
+                  onClick={() => setSheet({ open: true, section: "sheet-subject" })}
+                  className={`${chipBase} min-h-11 ${state.subjects.length ? "border-forest bg-forest-light text-forest" : "border-border-strong bg-surface text-foreground-secondary"}`}
+                >
+                  {t("subjects.label")}
+                  {state.subjects.length > 0 && ` (${state.subjects.length})`}
+                  <ChevronDown size={14} aria-hidden />
+                </button>
+                <button
+                  type="button"
+                  aria-haspopup="dialog"
+                  onClick={() => setSheet({ open: true, section: "sheet-state" })}
+                  className={`${chipBase} min-h-11 ${state.states.length ? "border-forest bg-forest-light text-forest" : "border-border-strong bg-surface text-foreground-secondary"}`}
+                >
+                  {t("directory.state")}
+                  {state.states.length > 0 && ` (${state.states.length})`}
+                  <ChevronDown size={14} aria-hidden />
+                </button>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-border py-3 lg:sticky lg:top-16 lg:z-30 lg:bg-background/95 lg:backdrop-blur">
+              <p className="hidden text-sm font-semibold text-foreground lg:block">
+                {countText}
+                {state.view === "cards" && result.remaining > 0 && (
+                  <span className="ml-2 font-normal text-foreground-muted">{t("directory.showingOf", { shown: result.visible.length, total: result.total })}</span>
+                )}
+              </p>
+              <div className="flex w-full min-w-0 items-center gap-2 sm:w-auto sm:justify-end">
+                <label className="flex min-w-0 flex-1 items-center gap-2 text-sm text-foreground-secondary sm:flex-none">
+                  <span className="hidden shrink-0 sm:inline">{t("directory.sort")}</span>
+                  <select
+                    aria-label={t("directory.sort")}
+                    value={effectiveSort(state)}
+                    onChange={(e) => update({ sort: e.target.value as SortKey })}
+                    className="min-h-11 w-full min-w-0 rounded-sm border border-border-strong bg-surface px-3 text-sm text-foreground sm:w-auto lg:min-h-9"
+                  >
+                    {SORT_KEYS.filter((key) => key !== "relevance" || state.q).map((key) => (
+                      <option key={key} value={key}>
+                        {t(`directory.sortOptions.${key}`)}
+                      </option>
+                    ))}
+                  </select>
                 </label>
-                <p className="ml-6 mt-1 text-[11px] leading-relaxed text-foreground-muted">{t("directory.englishNote")}</p>
+                <div role="group" aria-label={t("directory.viewLabel")} className="inline-flex shrink-0 rounded-sm border border-border-strong bg-surface p-0.5">
+                  {(
+                    [
+                      ["cards", LayoutGrid, t("directory.viewCards")],
+                      ["map", MapIcon, t("directory.viewMap")],
+                    ] as const
+                  ).map(([view, Icon, label]) => (
+                    <button
+                      key={view}
+                      type="button"
+                      aria-pressed={state.view === view}
+                      onClick={() => setView(view)}
+                      className={`inline-flex min-h-10 items-center gap-1.5 rounded-[3px] px-3 text-sm font-semibold transition-colors lg:min-h-8 ${
+                        state.view === view ? "bg-forest text-white" : "text-foreground-secondary hover:text-forest"
+                      }`}
+                    >
+                      <Icon size={15} aria-hidden />
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {activeChips.length > 0 && (
+              <div role="group" aria-label={t("directory.activeFilters")} className="mt-3 flex flex-wrap items-center gap-2">
+                {activeChips.map((c) => (
+                  <button
+                    key={c.key}
+                    type="button"
+                    onClick={c.remove}
+                    aria-label={t("directory.removeFilter", { label: c.label })}
+                    className="inline-flex min-h-9 items-center gap-1.5 rounded-full border border-border-strong bg-background-secondary px-3 text-xs font-medium text-foreground-secondary hover:border-clay hover:text-clay-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
+                  >
+                    {c.label}
+                    <X size={12} aria-hidden />
+                  </button>
+                ))}
+                {filterCount > 1 && (
+                  <button type="button" onClick={clearAll} className="min-h-9 text-xs font-semibold text-clay-dark underline underline-offset-2 hover:text-clay">
+                    {t("directory.clearAll")}
+                  </button>
+                )}
               </div>
             )}
+
+            <p className="sr-only" aria-live="polite">
+              {countText}
+            </p>
+
+            <div id="results" ref={resultsRef} tabIndex={-1} className="scroll-mt-44 focus:outline-none lg:scroll-mt-32">
+              {result.total === 0 ? (
+                <div className="mx-auto mt-10 max-w-xl rounded-sm border border-border bg-surface p-8 text-center">
+                  <p className="font-display text-xl text-foreground">{t("directory.noResultsTitle")}</p>
+                  <p className="mt-2 text-sm text-foreground-secondary">{t("directory.noResultsBody")}</p>
+                  {didYouMean && (
+                    <button type="button" onClick={() => update({ q: didYouMean })} className="mt-4 text-sm font-semibold text-forest underline underline-offset-2 hover:text-brand">
+                      {t("directory.didYouMean", { suggestion: didYouMean })}
+                    </button>
+                  )}
+                  {activeChips.length > 0 && (
+                    <div className="mt-5 flex flex-wrap justify-center gap-2">
+                      {activeChips.map((c) => (
+                        <button
+                          key={c.key}
+                          type="button"
+                          onClick={c.remove}
+                          className="inline-flex min-h-9 items-center gap-1.5 rounded-full border border-border-strong px-3 text-xs text-foreground-secondary hover:border-clay hover:text-clay-dark"
+                        >
+                          {c.label} <X size={12} aria-hidden />
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : state.view === "map" ? (
+                <div className="mt-6">
+                  <GermanyMap
+                    items={mapItems}
+                    locale={locale}
+                    hint={mapHint}
+                    zoomHint={mapZoomHint}
+                    emptyMessage={t("directory.noResultsTitle")}
+                    focusSlug={state.focus || null}
+                    focusToken={0}
+                  />
+                </div>
+              ) : (
+                <>
+                  <ul ref={listRef} className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
+                    {result.visible.map((uni) => (
+                      <li key={uni.slug}>
+                        <UniversityCard uni={uni} onFocusMap={showOnMap} />
+                      </li>
+                    ))}
+                  </ul>
+                  {result.remaining > 0 && (
+                    <div className="mt-8 flex flex-col items-center gap-2">
+                      <p className="text-xs text-foreground-muted">{t("directory.showingOf", { shown: result.visible.length, total: result.total })}</p>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          focusFromRef.current = result.visible.length;
+                          update({ page: result.page + 1 }, { keepPage: true });
+                        }}
+                        className="min-h-11 rounded-sm border border-forest px-6 text-sm font-semibold text-forest hover:bg-forest hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
+                      >
+                        {t("directory.showMore", { count: Math.min(PAGE_SIZE, result.remaining) })}
+                      </button>
+                    </div>
+                  )}
+                </>
+              )}
+            </div>
+
+            <div className="mt-10 space-y-1 text-xs text-foreground-muted">
+              {dataCheckedAt && <p>{t("directory.dataNote", { date: formatDate(dataCheckedAt, locale) })}</p>}
+              <p>{t("common.verifyNotice")}</p>
+            </div>
           </div>
         </div>
-      </details>
+      </Container>
 
-      <div className="mt-6 flex flex-col gap-3 border-y border-border py-4 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm font-semibold text-foreground" aria-live="polite">
-          {t("directory.resultCount", { count: result.total })}
-          {result.total > PAGE_SIZE && <span className="ml-2 font-normal text-foreground-muted">{t("directory.showing", { from, to, total: result.total })}</span>}
-        </p>
-        <label className="flex items-center gap-2 text-sm text-foreground-secondary">
-          {t("directory.sort")}
-          <select
-            value={effectiveSort(state)}
-            onChange={(e) => update({ sort: e.target.value as SortKey })}
-            className="rounded-sm border border-border-strong bg-surface px-3 py-1.5 text-sm text-foreground"
-          >
-            {SORT_KEYS.filter((key) => key !== "relevance" || state.q).map((key) => (
-              <option key={key} value={key}>
-                {t(`directory.sortOptions.${key}`)}
-              </option>
-            ))}
-          </select>
-        </label>
-      </div>
-
-      {activeChips.length > 0 && (
-        <div className="mt-3 flex flex-wrap items-center gap-2" aria-label={t("directory.activeFilters")}>
-          {activeChips.map((c) => (
-            <button
-              key={c.key}
-              type="button"
-              onClick={c.remove}
-              aria-label={t("directory.removeFilter", { label: c.label })}
-              className="inline-flex items-center gap-1.5 rounded-full border border-border-strong bg-background-secondary px-3 py-1 text-xs font-medium text-foreground-secondary hover:border-clay hover:text-clay-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
-            >
-              {c.label}
-              <X size={12} />
-            </button>
-          ))}
-          {activeFilterCount(state) > 1 && (
-            <button
-              type="button"
-              onClick={() => router.replace(pathname, { scroll: false })}
-              className="text-xs font-semibold text-clay-dark underline underline-offset-2 hover:text-clay"
-            >
-              {t("common.clearAll")}
-            </button>
-          )}
-        </div>
-      )}
-
-      <div ref={mapRef} className="mt-8 scroll-mt-24">
-        <GermanyMap
-          items={mapItems}
-          locale={locale}
-          hint={mapHint}
-          zoomHint={mapZoomHint}
-          emptyMessage={t("directory.noResultsTitle")}
-          focusSlug={focus.slug}
-          focusToken={focus.token}
-        />
-      </div>
-
-      <div id="results" ref={gridRef} tabIndex={-1} className="scroll-mt-24 focus:outline-none">
-      {result.total === 0 ? (
-        <div className="mx-auto mt-10 max-w-xl rounded-sm border border-border bg-surface p-8 text-center">
-          <p className="font-display text-xl text-foreground">{t("directory.noResultsTitle")}</p>
-          <p className="mt-2 text-sm text-foreground-secondary">{t("directory.noResultsBody")}</p>
-          {didYouMean && (
-            <button
-              type="button"
-              onClick={() => update({ q: didYouMean })}
-              className="mt-4 text-sm font-semibold text-forest underline underline-offset-2 hover:text-brand"
-            >
-              {t("directory.didYouMean", { suggestion: didYouMean })}
-            </button>
-          )}
-          {activeChips.length > 0 && (
-            <div className="mt-5 flex flex-wrap justify-center gap-2">
-              {activeChips.map((c) => (
-                <button key={c.key} type="button" onClick={c.remove} className="inline-flex items-center gap-1.5 rounded-full border border-border-strong px-3 py-1 text-xs text-foreground-secondary hover:border-clay hover:text-clay-dark">
-                  {c.label} <X size={12} />
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
-      ) : (
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {result.pageItems.map((uni) => (
-            <UniversityCard
-              key={uni.slug}
-              uni={uni}
-              onFocusMap={(slug) => {
-                setFocus((f) => ({ slug, token: f.token + 1 }));
-                mapRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-              }}
-            />
-          ))}
-        </div>
-      )}
-      </div>
-
-      {result.pageCount > 1 && (
-        <nav aria-label={t("directory.pagination")} className="mt-10 flex flex-wrap items-center justify-center gap-1.5">
-          <button
-            type="button"
-            disabled={result.page <= 1}
-            onClick={() => goToPage(result.page - 1)}
-            className="rounded-sm border border-border-strong px-3 py-2 text-sm text-foreground-secondary hover:border-forest hover:text-forest disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            {t("directory.previous")}
-          </button>
-          {Array.from({ length: result.pageCount }, (_, i) => i + 1).map((p) => (
-            <button
-              key={p}
-              type="button"
-              onClick={() => goToPage(p)}
-              aria-current={p === result.page ? "page" : undefined}
-              aria-label={t("directory.page", { page: p })}
-              className={`h-10 min-w-10 rounded-sm border px-3 text-sm ${p === result.page ? "border-forest bg-forest text-white" : "border-border-strong text-foreground-secondary hover:border-forest hover:text-forest"}`}
-            >
-              {p}
-            </button>
-          ))}
-          <button
-            type="button"
-            disabled={result.page >= result.pageCount}
-            onClick={() => goToPage(result.page + 1)}
-            className="rounded-sm border border-border-strong px-3 py-2 text-sm text-foreground-secondary hover:border-forest hover:text-forest disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            {t("directory.next")}
-          </button>
-        </nav>
-      )}
-
-      <div className="mx-auto mt-10 max-w-3xl space-y-1 text-center text-xs text-foreground-muted">
-        {dataCheckedAt && <p>{t("directory.dataNote", { date: formatDate(dataCheckedAt, locale) })}</p>}
-        <p>{t("common.verifyNotice")}</p>
-      </div>
-    </div>
+      <DirectoryFilterSheet
+        open={sheet.open}
+        scrollToId={sheet.section}
+        onClose={() => setSheet({ open: false, section: null })}
+        onClear={clearAll}
+        resultCount={result.total}
+      >
+        <DirectoryFilters state={state} facets={result.facets} onChange={update} idPrefix="sheet" touch />
+      </DirectoryFilterSheet>
+    </>
   );
 }

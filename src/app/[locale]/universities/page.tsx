@@ -1,13 +1,10 @@
 import { Suspense } from "react";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import PageHero from "@/components/PageHero";
-import Container from "@/components/Container";
-import SectionHeading from "@/components/SectionHeading";
 import CtaBand from "@/components/CtaBand";
 import DiscoveryNav from "@/components/discovery/DiscoveryNav";
-import DirectoryExplorer from "@/components/discovery/DirectoryExplorer";
-import { heroPhotos } from "@/lib/heroPhotos";
-import { getUniversitySummaries, FACTS_GENERATED_AT } from "@/lib/universities";
+import DirectoryExplorer, { DirectoryView } from "@/components/discovery/DirectoryExplorer";
+import { getDirectoryItems, FACTS_GENERATED_AT } from "@/lib/universities";
+import { DEFAULT_STATE } from "@/lib/discovery/directory";
 import { pageMetadata, SITE_URL } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -22,13 +19,14 @@ export default async function UniversitiesPage({ params }: { params: Promise<{ l
 
   const t = await getTranslations({ locale, namespace: "universities" });
   const d = await getTranslations({ locale, namespace: "discovery.directory" });
-  const items = await getUniversitySummaries(locale);
-  const map = t.raw("map") as { title: string; subtitle: string; hint: string; zoomHint: string };
+  const items = await getDirectoryItems(locale);
+  const map = t.raw("map") as { hint: string; zoomHint: string };
+  const props = { items, dataCheckedAt: FACTS_GENERATED_AT, mapHint: map.hint, mapZoomHint: map.zoomHint };
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: t("hero.title"),
+    name: d("title"),
     numberOfItems: items.length,
     itemListElement: items.map((u, i) => ({
       "@type": "ListItem",
@@ -46,21 +44,13 @@ export default async function UniversitiesPage({ params }: { params: Promise<{ l
       >
         {d("skipToResults")}
       </a>
-      <PageHero title={t("hero.title")} subtitle={t("hero.subtitle")} photo={heroPhotos.universities} />
       <DiscoveryNav />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-
-      <section className="py-16 sm:py-20">
-        <Container>
-          <SectionHeading title={map.title} subtitle={map.subtitle} />
-          <div className="mt-8">
-            <Suspense fallback={<div className="mx-auto h-12 max-w-2xl animate-pulse rounded-sm bg-background-secondary" />}>
-              <DirectoryExplorer items={items} mapHint={map.hint} mapZoomHint={map.zoomHint} dataCheckedAt={FACTS_GENERATED_AT} />
-            </Suspense>
-          </div>
-        </Container>
-      </section>
-
+      {/* The explorer reads its state from the URL, so it renders on the client; the prerendered
+          HTML is the same directory in its default state, including the first results. */}
+      <Suspense fallback={<DirectoryView {...props} state={DEFAULT_STATE} />}>
+        <DirectoryExplorer {...props} />
+      </Suspense>
       <CtaBand variant="universitiesList" title={t("cta.title")} subtitle={t("cta.subtitle")} buttonLabel={t("cta.button")} />
     </>
   );

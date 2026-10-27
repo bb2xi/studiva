@@ -331,11 +331,10 @@ export default function GermanyMap({
     const cluster = clusterRef.current;
     const marker = markersRef.current.get(focusSlug);
     if (!cluster || !marker) return;
-    cluster.zoomToShowLayer(marker, () => {
-      marker.openPopup();
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [focusToken]);
+    // Let the initial fit-to-results animation finish before zooming in.
+    const timer = window.setTimeout(() => cluster.zoomToShowLayer(marker, () => marker.openPopup()), 450);
+    return () => window.clearTimeout(timer);
+  }, [focusSlug, focusToken]);
 
   return (
     <div>
