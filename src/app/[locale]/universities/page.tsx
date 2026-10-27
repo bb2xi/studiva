@@ -20,8 +20,7 @@ export default async function UniversitiesPage({ params }: { params: Promise<{ l
   const t = await getTranslations({ locale, namespace: "universities" });
   const d = await getTranslations({ locale, namespace: "discovery.directory" });
   const items = await getDirectoryItems(locale);
-  const map = t.raw("map") as { hint: string; zoomHint: string };
-  const props = { items, dataCheckedAt: FACTS_GENERATED_AT, mapHint: map.hint, mapZoomHint: map.zoomHint };
+  const props = { items, dataCheckedAt: FACTS_GENERATED_AT };
 
   const jsonLd = {
     "@context": "https://schema.org",

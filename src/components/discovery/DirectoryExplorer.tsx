@@ -1,7 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react";
-import dynamic from "next/dynamic";
+import { useCallback, useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { ChevronDown, LayoutGrid, List, Map as MapIcon, SlidersHorizontal, X } from "lucide-react";
@@ -23,25 +22,20 @@ import {
 import { closestCandidate } from "@/lib/discovery/search";
 import { formatDate } from "@/lib/discovery/facts";
 import { STATE_BY_CODE, cityName } from "@/data/states";
+import { useMediaQuery } from "@/lib/useMediaQuery";
 import type { DirectoryItem, StateCode } from "@/lib/discovery/types";
 import { SUBJECT_AREAS } from "@/lib/discovery/types";
 import DiscoveryHeader from "./DiscoveryHeader";
 import DirectoryFilters from "./DirectoryFilters";
 import DirectoryFilterSheet from "./DirectoryFilterSheet";
+import DirectoryMap from "./DirectoryMap";
 import DirectoryTable from "./DirectoryTable";
 import SearchCombobox from "./SearchCombobox";
 import UniversityCard from "./UniversityCard";
 
-const GermanyMap = dynamic(() => import("@/components/GermanyMap"), {
-  ssr: false,
-  loading: () => <div className="h-[70vh] min-h-[420px] w-full animate-pulse rounded-sm border border-border bg-background-secondary" />,
-});
-
 type Props = {
   items: DirectoryItem[];
   dataCheckedAt: string | null;
-  mapHint: string;
-  mapZoomHint: string;
 };
 
 type Navigate = (next: DirectoryState, mode?: "push" | "replace") => void;
@@ -74,13 +68,14 @@ const chipBase =
  * The directory for a given state. The page also renders it with the default
  * state as the prerendered fallback, so the first results are in the HTML.
  */
-export function DirectoryView({ items, dataCheckedAt, mapHint, mapZoomHint, state, onNavigate }: Props & { state: DirectoryState; onNavigate?: Navigate }) {
+export function DirectoryView({ items, dataCheckedAt, state, onNavigate }: Props & { state: DirectoryState; onNavigate?: Navigate }) {
   const t = useTranslations("discovery");
   const locale = useLocale();
   const sidebarTitleId = useId();
   const resultsRef = useRef<HTMLDivElement>(null);
   const columnRef = useRef<HTMLDivElement>(null);
   const toolbarRef = useRef<HTMLDivElement>(null);
+  const mobileBarRef = useRef<HTMLDivElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
   const focusFromRef = useRef<number | null>(null);
   const [sheet, setSheet] = useState<{ open: boolean; section: string | null }>({ open: false, section: null });
@@ -89,6 +84,12 @@ export function DirectoryView({ items, dataCheckedAt, mapHint, mapZoomHint, stat
   const index = useMemo(() => buildUniversityIndex(items, subjectLabels), [items, subjectLabels]);
   const result = useMemo(() => runDirectoryQuery(items, index, state, locale), [items, index, state, locale]);
   const filterCount = activeFilterCount(state);
+  // On phones the map opens as a full-screen dialog over the card list, which stays where it was.
+  const phone = useMediaQuery("(max-width: 767.98px)");
+  const mapDialog = state.view === "map" && phone;
+  const flowView = mapDialog ? "cards" : state.view;
+  const cards = flowView === "cards" ? result.all.slice(0, result.page * PAGE_SIZE) : [];
+  const remaining = result.total - cards.length;
 
   const update = useCallback(
     (patch: Partial<DirectoryState>, opts: { keepPage?: boolean; push?: boolean } = {}) =>
@@ -116,7 +117,7 @@ export function DirectoryView({ items, dataCheckedAt, mapHint, mapZoomHint, stat
     if (from === null) return;
     focusFromRef.current = null;
     listRef.current?.children[from]?.querySelector<HTMLElement>("a[href]")?.focus();
-  }, [result.visible.length]);
+  }, [cards.length]);
 
   const stateName = (code: StateCode) => STATE_BY_CODE[code].name[locale === "tr" ? "tr" : "en"];
   const countText = t("directory.resultCount", { count: result.total });
@@ -144,31 +145,44 @@ export function DirectoryView({ items, dataCheckedAt, mapHint, mapZoomHint, stat
 
   const didYouMean = result.total === 0 && state.q ? closestCandidate(state.q, items.flatMap((u) => [u.name, ...u.cities])) : null;
 
-  const mapItems = useMemo(
-    () =>
-      state.view === "map"
-        ? result.all.map((u) => ({
-            slug: u.slug,
-            name: u.name,
-            city: u.cityLabel,
-            type: u.type,
-            badges: u.badges,
-            lat: u.lat,
-            lng: u.lng,
-            tuitionFree: u.facts?.nonEuTuition.status === "none",
-          }))
-        : [],
-    [result.all, state.view]
-  );
+  // Opening the map brings the top of the results right under whichever bar is sticky, so the
+  // map fits the screen. It runs once the map layout is in the DOM, before it paints.
+  const alignAfterRender = useRef(false);
+  useLayoutEffect(() => {
+    const results = resultsRef.current;
+    if (!alignAfterRender.current || !results || state.view !== "map") return;
+    alignAfterRender.current = false;
+    if (phone) return;
+    let stickyBottom = 0;
+    for (const bar of [mobileBarRef.current, toolbarRef.current]) {
+      if (!bar?.offsetParent) continue;
+      const style = getComputedStyle(bar);
+      if (style.position === "sticky") stickyBottom = Math.max(stickyBottom, parseFloat(style.top) + bar.offsetHeight);
+    }
+    window.scrollTo({ top: results.getBoundingClientRect().top + window.scrollY - stickyBottom });
+  }, [state.view, phone]);
 
   function showOnMap(slug: string) {
+    alignAfterRender.current = true;
     update({ view: "map", focus: slug }, { push: true, keepPage: true });
-    resultsRef.current?.scrollIntoView({ block: "start" });
   }
 
   function setView(view: ViewKey) {
+    alignAfterRender.current = view === "map";
     update({ view, focus: view === "map" ? state.focus : "" }, { push: true, keepPage: true });
   }
+
+  const mapProps = {
+    items: result.all,
+    allItems: items,
+    selected: state.focus || null,
+    onSelect: (slug: string | null) => update({ focus: slug ?? "" }, { keepPage: true }),
+    countText,
+    filterCount,
+    onOpenFilters: () => setSheet({ open: true, section: null }),
+    // Replace rather than push: the map's own entry gives way to the list with the filters chosen on the map.
+    onBack: () => update({ view: "cards", focus: "" }, { keepPage: true }),
+  };
 
   const search = (
     <SearchCombobox
@@ -211,7 +225,7 @@ export function DirectoryView({ items, dataCheckedAt, mapHint, mapZoomHint, stat
 
           <div ref={columnRef} className="min-w-0">
             {/* Small screens: search, filter button and quick filters stay at hand while scrolling. */}
-            <div className="sticky top-16 z-30 -mx-4 border-b border-border bg-background/95 px-4 pb-2 pt-3 backdrop-blur sm:-mx-6 sm:px-6 lg:hidden">
+            <div ref={mobileBarRef} className="sticky top-16 z-30 -mx-4 border-b border-border bg-background/95 px-4 pb-2 pt-3 backdrop-blur sm:-mx-6 sm:px-6 lg:hidden">
               <div className="flex gap-2">
                 <div className="min-w-0 flex-1">{search}</div>
                 <button
@@ -270,8 +284,8 @@ export function DirectoryView({ items, dataCheckedAt, mapHint, mapZoomHint, stat
               <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
                 <p className="hidden text-sm font-semibold text-foreground lg:block">
                   {countText}
-                  {state.view === "cards" && result.remaining > 0 && (
-                    <span className="ml-2 font-normal text-foreground-muted">{t("directory.showingOf", { shown: result.visible.length, total: result.total })}</span>
+                  {flowView === "cards" && remaining > 0 && (
+                    <span className="ml-2 font-normal text-foreground-muted">{t("directory.showingOf", { shown: cards.length, total: result.total })}</span>
                   )}
                 </p>
                 <div className="flex w-full min-w-0 items-center gap-2 sm:w-auto sm:justify-end">
@@ -368,47 +382,38 @@ export function DirectoryView({ items, dataCheckedAt, mapHint, mapZoomHint, stat
                     </div>
                   )}
                 </div>
-              ) : state.view === "table" ? (
-                <DirectoryTable items={result.visible} sort={effectiveSort(state)} onSort={(key) => update({ sort: key }, { keepPage: true })} onShowOnMap={showOnMap} />
-              ) : state.view === "map" ? (
-                <div className="mt-6">
-                  <GermanyMap
-                    items={mapItems}
-                    locale={locale}
-                    hint={mapHint}
-                    zoomHint={mapZoomHint}
-                    emptyMessage={t("directory.noResultsTitle")}
-                    focusSlug={state.focus || null}
-                    focusToken={0}
-                  />
-                </div>
+              ) : flowView === "table" ? (
+                <DirectoryTable items={result.all} sort={effectiveSort(state)} onSort={(key) => update({ sort: key }, { keepPage: true })} onShowOnMap={showOnMap} />
+              ) : flowView === "map" ? (
+                <DirectoryMap layout="inline" {...mapProps} />
               ) : (
                 <>
                   <ul ref={listRef} className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
-                    {result.visible.map((uni) => (
+                    {cards.map((uni) => (
                       <li key={uni.slug}>
                         <UniversityCard uni={uni} onShowOnMap={showOnMap} />
                       </li>
                     ))}
                   </ul>
-                  {result.remaining > 0 && (
+                  {remaining > 0 && (
                     <div className="mt-8 flex flex-col items-center gap-2">
-                      <p className="text-xs text-foreground-muted">{t("directory.showingOf", { shown: result.visible.length, total: result.total })}</p>
+                      <p className="text-xs text-foreground-muted">{t("directory.showingOf", { shown: cards.length, total: result.total })}</p>
                       <button
                         type="button"
                         onClick={() => {
-                          focusFromRef.current = result.visible.length;
+                          focusFromRef.current = cards.length;
                           update({ page: result.page + 1 }, { keepPage: true });
                         }}
                         className="min-h-11 rounded-sm border border-forest px-6 text-sm font-semibold text-forest hover:bg-forest hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
                       >
-                        {t("directory.showMore", { count: Math.min(PAGE_SIZE, result.remaining) })}
+                        {t("directory.showMore", { count: Math.min(PAGE_SIZE, remaining) })}
                       </button>
                     </div>
                   )}
                 </>
               )}
             </div>
+            {mapDialog && <DirectoryMap layout="dialog" {...mapProps} />}
 
             <div className="mt-10 space-y-1 text-xs text-foreground-muted">
               {dataCheckedAt && <p>{t("directory.dataNote", { date: formatDate(dataCheckedAt, locale) })}</p>}

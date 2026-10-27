@@ -699,6 +699,27 @@
         "varies": "Değişken",
         "unknown": "Doğrulanmadı"
       }
+    },
+    "map": {
+      "title": "Üniversite haritası",
+      "description": "Haritayı ok tuşlarıyla kaydırın, + ve − tuşlarıyla yakınlaştırın. Haritadaki üniversitelerin tümü Kartlar ve Liste görünümlerinde de yer alır.",
+      "listLabel": "Haritadaki üniversiteler",
+      "backToList": "Listeye dön",
+      "close": "Seçimi kapat",
+      "details": "Detaylar",
+      "detailsFor": "{name}: detaylar",
+      "zoomIn": "Yakınlaştır",
+      "zoomOut": "Uzaklaştır",
+      "wheelHint": "Haritayı yakınlaştırmak için {key} tuşunu basılı tutup kaydırın",
+      "touchHint": "Haritayı kaydırmak için iki parmak kullanın",
+      "cluster": "{count} üniversite",
+      "clusterCity": "{city}: {count} üniversite",
+      "clusterCityText": "{city} ({count})",
+      "marker": "{name}, {city}. AB dışı okul ücreti: {fee}",
+      "legendTitle": "AB dışı okul ücreti:",
+      "rowFee": "AB dışı ücret: {fee}",
+      "rowProgrammes": "{count} program (HRK)",
+      "attribution": "Powered by <a href=\"https://www.esri.com\">Esri</a> | Sources: Esri, HERE, Garmin, © OpenStreetMap contributors, and the GIS user community"
     }
   }
 }

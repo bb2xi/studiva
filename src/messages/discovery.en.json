@@ -699,6 +699,27 @@
         "varies": "Varies",
         "unknown": "Not verified"
       }
+    },
+    "map": {
+      "title": "University map",
+      "description": "Pan with the arrow keys and zoom with + and −. Every university on the map is also listed in the Cards and List views.",
+      "listLabel": "Universities on the map",
+      "backToList": "Back to list",
+      "close": "Close",
+      "details": "Details",
+      "detailsFor": "Details: {name}",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "wheelHint": "Hold {key} and scroll to zoom the map",
+      "touchHint": "Use two fingers to move the map",
+      "cluster": "{count, plural, one {# university} other {# universities}}",
+      "clusterCity": "{city}: {count, plural, one {# university} other {# universities}}",
+      "clusterCityText": "{city} ({count})",
+      "marker": "{name}, {city}. Non-EU tuition: {fee}",
+      "legendTitle": "Non-EU tuition:",
+      "rowFee": "Non-EU tuition: {fee}",
+      "rowProgrammes": "{count, plural, one {# programme} other {# programmes}} (HRK)",
+      "attribution": "Powered by <a href=\"https://www.esri.com\">Esri</a> | Sources: Esri, HERE, Garmin, © OpenStreetMap contributors, and the GIS user community"
     }
   }
 }

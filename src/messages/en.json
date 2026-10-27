@@ -3188,12 +3188,6 @@
       "tu9": "TU9 Universities",
       "excellence": "Excellence Universities"
     },
-    "map": {
-      "title": "Universities on the map",
-      "subtitle": "See which cities the universities are in.",
-      "hint": "Click a marker to see university details; you can zoom and pan the map.",
-      "zoomHint": "Click the map to enable zoom"
-    },
     "search": {
       "placeholder": "Search by university name or city...",
       "noResults": "No universities match your search."

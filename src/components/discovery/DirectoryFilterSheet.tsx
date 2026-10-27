@@ -3,6 +3,7 @@
 import { useEffect, useId, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { X } from "lucide-react";
+import { lockPageScroll } from "@/lib/scrollLock";
 
 /**
  * Full-screen filter panel for small screens, on a native modal <dialog>: the
@@ -27,6 +28,7 @@ export default function DirectoryFilterSheet({
 }) {
   const t = useTranslations("discovery.directory");
   const ref = useRef<HTMLDialogElement>(null);
+  const releaseScroll = useRef<(() => void) | null>(null);
   const titleId = useId();
 
   useEffect(() => {
@@ -34,23 +36,22 @@ export default function DirectoryFilterSheet({
     if (!dialog) return;
     if (open && !dialog.open) {
       dialog.showModal();
-      document.documentElement.style.overflow = "hidden";
+      releaseScroll.current = lockPageScroll();
       if (scrollToId) document.getElementById(scrollToId)?.scrollIntoView({ block: "start" });
     } else if (!open && dialog.open) {
       dialog.close();
     }
   }, [open, scrollToId]);
 
-  useEffect(() => () => {
-    document.documentElement.style.overflow = "";
-  }, []);
+  useEffect(() => () => releaseScroll.current?.(), []);
 
   return (
     <dialog
       ref={ref}
       aria-labelledby={titleId}
       onClose={() => {
-        document.documentElement.style.overflow = "";
+        releaseScroll.current?.();
+        releaseScroll.current = null;
         onClose();
       }}
       className="m-0 h-dvh max-h-none w-full max-w-none bg-surface p-0 text-foreground backdrop:bg-black/40 open:flex open:flex-col lg:hidden"

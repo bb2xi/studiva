@@ -3188,12 +3188,6 @@
       "tu9": "TU9 Üniversiteleri",
       "excellence": "Exzellenzuniversiteler"
     },
-    "map": {
-      "title": "Haritada üniversiteler",
-      "subtitle": "Üniversitelerin şehirlere göre dağılımını inceleyin.",
-      "hint": "Bir işarete tıklayarak üniversite detaylarını görün; haritayı yakınlaştırıp kaydırabilirsiniz.",
-      "zoomHint": "Yakınlaştırmak için haritaya tıklayın"
-    },
     "search": {
       "placeholder": "Üniversite adı veya şehir ara...",
       "noResults": "Aramanızla eşleşen üniversite bulunamadı."
