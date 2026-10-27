@@ -4,7 +4,7 @@ import { useCallback, useEffect, useId, useMemo, useRef, useState } from "react"
 import dynamic from "next/dynamic";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { ChevronDown, LayoutGrid, Map as MapIcon, SlidersHorizontal, X } from "lucide-react";
+import { ChevronDown, LayoutGrid, List, Map as MapIcon, SlidersHorizontal, X } from "lucide-react";
 import Container from "@/components/Container";
 import {
   PAGE_SIZE,
@@ -28,6 +28,7 @@ import { SUBJECT_AREAS } from "@/lib/discovery/types";
 import DiscoveryHeader from "./DiscoveryHeader";
 import DirectoryFilters from "./DirectoryFilters";
 import DirectoryFilterSheet from "./DirectoryFilterSheet";
+import DirectoryTable from "./DirectoryTable";
 import SearchCombobox from "./SearchCombobox";
 import UniversityCard from "./UniversityCard";
 
@@ -78,6 +79,8 @@ export function DirectoryView({ items, dataCheckedAt, mapHint, mapZoomHint, stat
   const locale = useLocale();
   const sidebarTitleId = useId();
   const resultsRef = useRef<HTMLDivElement>(null);
+  const columnRef = useRef<HTMLDivElement>(null);
+  const toolbarRef = useRef<HTMLDivElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
   const focusFromRef = useRef<number | null>(null);
   const [sheet, setSheet] = useState<{ open: boolean; section: string | null }>({ open: false, section: null });
@@ -93,6 +96,19 @@ export function DirectoryView({ items, dataCheckedAt, mapHint, mapZoomHint, stat
     [onNavigate, state]
   );
   const clearAll = () => onNavigate?.(clearedState(state));
+
+  // The table header sticks right under the toolbar, whose height changes with the active filter chips.
+  useEffect(() => {
+    const toolbar = toolbarRef.current;
+    const column = columnRef.current;
+    if (!toolbar || !column) return;
+    const observer = new ResizeObserver(() => {
+      const top = parseFloat(getComputedStyle(toolbar).top) || 0;
+      column.style.setProperty("--directory-toolbar-bottom", `${top + toolbar.offsetHeight}px`);
+    });
+    observer.observe(toolbar);
+    return () => observer.disconnect();
+  }, []);
 
   // After "show more", move focus to the first newly shown card.
   useEffect(() => {
@@ -193,7 +209,7 @@ export function DirectoryView({ items, dataCheckedAt, mapHint, mapZoomHint, stat
             </div>
           </aside>
 
-          <div className="min-w-0">
+          <div ref={columnRef} className="min-w-0">
             {/* Small screens: search, filter button and quick filters stay at hand while scrolling. */}
             <div className="sticky top-16 z-30 -mx-4 border-b border-border bg-background/95 px-4 pb-2 pt-3 backdrop-blur sm:-mx-6 sm:px-6 lg:hidden">
               <div className="flex gap-2">
@@ -250,80 +266,84 @@ export function DirectoryView({ items, dataCheckedAt, mapHint, mapZoomHint, stat
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-border py-3 lg:sticky lg:top-16 lg:z-30 lg:bg-background/95 lg:backdrop-blur">
-              <p className="hidden text-sm font-semibold text-foreground lg:block">
-                {countText}
-                {state.view === "cards" && result.remaining > 0 && (
-                  <span className="ml-2 font-normal text-foreground-muted">{t("directory.showingOf", { shown: result.visible.length, total: result.total })}</span>
-                )}
-              </p>
-              <div className="flex w-full min-w-0 items-center gap-2 sm:w-auto sm:justify-end">
-                <label className="flex min-w-0 flex-1 items-center gap-2 text-sm text-foreground-secondary sm:flex-none">
-                  <span className="hidden shrink-0 sm:inline">{t("directory.sort")}</span>
-                  <select
-                    aria-label={t("directory.sort")}
-                    value={effectiveSort(state)}
-                    onChange={(e) => update({ sort: e.target.value as SortKey })}
-                    className="min-h-11 w-full min-w-0 rounded-sm border border-border-strong bg-surface px-3 text-sm text-foreground sm:w-auto lg:min-h-9"
-                  >
-                    {SORT_KEYS.filter((key) => key !== "relevance" || state.q).map((key) => (
-                      <option key={key} value={key}>
-                        {t(`directory.sortOptions.${key}`)}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <div role="group" aria-label={t("directory.viewLabel")} className="inline-flex shrink-0 rounded-sm border border-border-strong bg-surface p-0.5">
-                  {(
-                    [
-                      ["cards", LayoutGrid, t("directory.viewCards")],
-                      ["map", MapIcon, t("directory.viewMap")],
-                    ] as const
-                  ).map(([view, Icon, label]) => (
-                    <button
-                      key={view}
-                      type="button"
-                      aria-pressed={state.view === view}
-                      onClick={() => setView(view)}
-                      className={`inline-flex min-h-10 items-center gap-1.5 rounded-[3px] px-3 text-sm font-semibold transition-colors lg:min-h-8 ${
-                        state.view === view ? "bg-forest text-white" : "text-foreground-secondary hover:text-forest"
-                      }`}
+            <div ref={toolbarRef} className="border-b border-border py-3 lg:sticky lg:top-16 lg:z-30 lg:bg-background/95 lg:backdrop-blur">
+              <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+                <p className="hidden text-sm font-semibold text-foreground lg:block">
+                  {countText}
+                  {state.view === "cards" && result.remaining > 0 && (
+                    <span className="ml-2 font-normal text-foreground-muted">{t("directory.showingOf", { shown: result.visible.length, total: result.total })}</span>
+                  )}
+                </p>
+                <div className="flex w-full min-w-0 items-center gap-2 sm:w-auto sm:justify-end">
+                  <label className="flex min-w-0 flex-1 items-center gap-2 text-sm text-foreground-secondary sm:flex-none">
+                    <span className="hidden shrink-0 sm:inline">{t("directory.sort")}</span>
+                    <select
+                      aria-label={t("directory.sort")}
+                      value={effectiveSort(state)}
+                      onChange={(e) => update({ sort: e.target.value as SortKey })}
+                      className="min-h-11 w-full min-w-0 rounded-sm border border-border-strong bg-surface px-3 text-sm text-foreground sm:w-auto lg:min-h-9"
                     >
-                      <Icon size={15} aria-hidden />
-                      {label}
-                    </button>
-                  ))}
+                      {SORT_KEYS.filter((key) => key !== "relevance" || state.q).map((key) => (
+                        <option key={key} value={key}>
+                          {t(`directory.sortOptions.${key}`)}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  <div role="group" aria-label={t("directory.viewLabel")} className="inline-flex shrink-0 rounded-sm border border-border-strong bg-surface p-0.5">
+                    {(
+                      [
+                        ["cards", LayoutGrid, t("directory.viewCards")],
+                        ["table", List, t("directory.viewTable")],
+                        ["map", MapIcon, t("directory.viewMap")],
+                      ] as const
+                    ).map(([view, Icon, label]) => (
+                      <button
+                        key={view}
+                        type="button"
+                        aria-pressed={state.view === view}
+                        onClick={() => setView(view)}
+                        className={`inline-flex min-h-10 items-center gap-1.5 rounded-[3px] px-3 text-sm font-semibold transition-colors lg:min-h-8 ${
+                          state.view === view ? "bg-forest text-white" : "text-foreground-secondary hover:text-forest"
+                        }`}
+                      >
+                        <Icon size={15} aria-hidden />
+                        <span className="sr-only sm:not-sr-only">{label}</span>
+                      </button>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {activeChips.length > 0 && (
-              <div role="group" aria-label={t("directory.activeFilters")} className="mt-3 flex flex-wrap items-center gap-2">
-                {activeChips.map((c) => (
-                  <button
-                    key={c.key}
-                    type="button"
-                    onClick={c.remove}
-                    aria-label={t("directory.removeFilter", { label: c.label })}
-                    className="inline-flex min-h-9 items-center gap-1.5 rounded-full border border-border-strong bg-background-secondary px-3 text-xs font-medium text-foreground-secondary hover:border-clay hover:text-clay-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
-                  >
-                    {c.label}
-                    <X size={12} aria-hidden />
-                  </button>
-                ))}
-                {filterCount > 1 && (
-                  <button type="button" onClick={clearAll} className="min-h-9 text-xs font-semibold text-clay-dark underline underline-offset-2 hover:text-clay">
-                    {t("directory.clearAll")}
-                  </button>
-                )}
-              </div>
-            )}
+              {activeChips.length > 0 && (
+                <div role="group" aria-label={t("directory.activeFilters")} className="mt-2.5 flex flex-wrap items-center gap-2">
+                  {activeChips.map((c) => (
+                    <button
+                      key={c.key}
+                      type="button"
+                      onClick={c.remove}
+                      aria-label={t("directory.removeFilter", { label: c.label })}
+                      className="inline-flex min-h-9 items-center gap-1.5 rounded-full border border-border-strong bg-background-secondary px-3 text-xs font-medium text-foreground-secondary hover:border-clay hover:text-clay-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
+                    >
+                      {c.label}
+                      <X size={12} aria-hidden />
+                    </button>
+                  ))}
+                  {filterCount > 1 && (
+                    <button type="button" onClick={clearAll} className="min-h-9 text-xs font-semibold text-clay-dark underline underline-offset-2 hover:text-clay">
+                      {t("directory.clearAll")}
+                    </button>
+                  )}
+                </div>
+              )}
+            </div>
 
             <p className="sr-only" aria-live="polite">
               {countText}
             </p>
 
             <div id="results" ref={resultsRef} tabIndex={-1} className="scroll-mt-44 focus:outline-none lg:scroll-mt-32">
+              <h2 className="sr-only">{t("directory.resultsHeading")}</h2>
               {result.total === 0 ? (
                 <div className="mx-auto mt-10 max-w-xl rounded-sm border border-border bg-surface p-8 text-center">
                   <p className="font-display text-xl text-foreground">{t("directory.noResultsTitle")}</p>
@@ -348,6 +368,8 @@ export function DirectoryView({ items, dataCheckedAt, mapHint, mapZoomHint, stat
                     </div>
                   )}
                 </div>
+              ) : state.view === "table" ? (
+                <DirectoryTable items={result.visible} sort={effectiveSort(state)} onSort={(key) => update({ sort: key }, { keepPage: true })} onShowOnMap={showOnMap} />
               ) : state.view === "map" ? (
                 <div className="mt-6">
                   <GermanyMap
@@ -365,7 +387,7 @@ export function DirectoryView({ items, dataCheckedAt, mapHint, mapZoomHint, stat
                   <ul ref={listRef} className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
                     {result.visible.map((uni) => (
                       <li key={uni.slug}>
-                        <UniversityCard uni={uni} onFocusMap={showOnMap} />
+                        <UniversityCard uni={uni} onShowOnMap={showOnMap} />
                       </li>
                     ))}
                   </ul>

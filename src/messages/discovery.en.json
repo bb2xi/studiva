@@ -173,23 +173,36 @@
       "viewTable": "List",
       "viewMap": "Map",
       "showMore": "{count, plural, one {Show # more university} other {Show # more universities}}",
-      "showingOf": "Showing {shown} of {total}"
+      "showingOf": "Showing {shown} of {total}",
+      "resultsHeading": "Results"
     },
     "card": {
-      "verifiedFields": "{filled}/{total} fields verified"
+      "verifiedFields": "{filled}/{total} fields verified",
+      "contribution": "Semester contribution",
+      "programmes": "Programmes (HRK)",
+      "english": "English-taught",
+      "route": "How to apply",
+      "routeUniAssist": "uni-assist",
+      "routeDirect": "Directly",
+      "showOnMap": "Show on map",
+      "showOnMapFor": "Show {name} on the map"
     },
     "favorites": {
       "add": "Save to shortlist",
       "remove": "Remove from shortlist",
       "added": "{name} saved to your shortlist",
-      "removed": "{name} removed from your shortlist"
+      "removed": "{name} removed from your shortlist",
+      "short": "Save",
+      "shortSaved": "Saved"
     },
     "compareToggle": {
       "add": "Add to comparison",
       "remove": "Remove from comparison",
       "added": "{name} added to comparison",
       "removed": "{name} removed from comparison",
-      "full": "You can compare up to 4 universities. Remove one first."
+      "full": "You can compare up to 4 universities. Remove one first.",
+      "short": "Compare",
+      "shortSelected": "Comparing"
     },
     "tray": {
       "label": "Comparison",
@@ -663,6 +676,29 @@
       "colLinks": "Links",
       "viewOnCompass": "On the Compass",
       "otherSubjects": "Other subjects"
+    },
+    "table": {
+      "caption": "Universities: state, institution type, non-EU tuition, semester contribution, programmes, English-taught programmes and how to apply",
+      "university": "University",
+      "state": "State",
+      "type": "Type",
+      "tuition": "Non-EU tuition",
+      "contribution": "Contribution",
+      "programmes": "Programmes (HRK)",
+      "english": "English",
+      "route": "Apply via",
+      "actions": "Actions",
+      "types": {
+        "Universität": "Universität",
+        "Fachhochschule": "Applied sciences",
+        "Duale Hochschule": "Cooperative (dual)"
+      },
+      "fee": {
+        "none": "None",
+        "charged": "Charged",
+        "varies": "Varies",
+        "unknown": "Not verified"
+      }
     }
   }
 }

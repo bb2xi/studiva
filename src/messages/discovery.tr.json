@@ -173,23 +173,36 @@
       "viewTable": "Liste",
       "viewMap": "Harita",
       "showMore": "{count} üniversite daha göster",
-      "showingOf": "{total} sonuçtan {shown} tanesi gösteriliyor"
+      "showingOf": "{total} sonuçtan {shown} tanesi gösteriliyor",
+      "resultsHeading": "Sonuçlar"
     },
     "card": {
-      "verifiedFields": "Doğrulanan alan: {filled}/{total}"
+      "verifiedFields": "Doğrulanan alan: {filled}/{total}",
+      "contribution": "Dönem katkı payı",
+      "programmes": "Programlar (HRK)",
+      "english": "İngilizce program",
+      "route": "Başvuru yolu",
+      "routeUniAssist": "uni-assist",
+      "routeDirect": "Doğrudan",
+      "showOnMap": "Haritada göster",
+      "showOnMapFor": "{name} haritada göster"
     },
     "favorites": {
       "add": "Kısa listeye kaydet",
       "remove": "Kısa listeden çıkar",
       "added": "{name} kısa listenize kaydedildi",
-      "removed": "{name} kısa listenizden çıkarıldı"
+      "removed": "{name} kısa listenizden çıkarıldı",
+      "short": "Kaydet",
+      "shortSaved": "Kaydedildi"
     },
     "compareToggle": {
       "add": "Karşılaştırmaya ekle",
       "remove": "Karşılaştırmadan çıkar",
       "added": "{name} karşılaştırmaya eklendi",
       "removed": "{name} karşılaştırmadan çıkarıldı",
-      "full": "En fazla 4 üniversite karşılaştırabilirsiniz. Önce birini çıkarın."
+      "full": "En fazla 4 üniversite karşılaştırabilirsiniz. Önce birini çıkarın.",
+      "short": "Karşılaştır",
+      "shortSelected": "Karşılaştırmada"
     },
     "tray": {
       "label": "Karşılaştırma",
@@ -663,6 +676,29 @@
       "colLinks": "Bağlantılar",
       "viewOnCompass": "Hochschulkompass'ta",
       "otherSubjects": "Diğer alanlar"
+    },
+    "table": {
+      "caption": "Üniversiteler: eyalet, kurum türü, AB dışı okul ücreti, dönem katkı payı, program sayısı, İngilizce program ve başvuru yolu",
+      "university": "Üniversite",
+      "state": "Eyalet",
+      "type": "Tür",
+      "tuition": "AB dışı ücret",
+      "contribution": "Katkı payı",
+      "programmes": "Programlar (HRK)",
+      "english": "İngilizce",
+      "route": "Başvuru",
+      "actions": "İşlemler",
+      "types": {
+        "Universität": "Universität",
+        "Fachhochschule": "Uygulamalı bilimler",
+        "Duale Hochschule": "İkili (dual)"
+      },
+      "fee": {
+        "none": "Yok",
+        "charged": "Var",
+        "varies": "Değişken",
+        "unknown": "Doğrulanmadı"
+      }
     }
   }
 }
