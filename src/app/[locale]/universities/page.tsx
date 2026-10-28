@@ -5,6 +5,7 @@ import DiscoveryNav from "@/components/discovery/DiscoveryNav";
 import DirectoryExplorer, { DirectoryView } from "@/components/discovery/DirectoryExplorer";
 import { getDirectoryItems, FACTS_GENERATED_AT } from "@/lib/universities";
 import { DEFAULT_STATE } from "@/lib/discovery/directory";
+import { packItems } from "@/lib/discovery/packedItems";
 import { pageMetadata, SITE_URL } from "@/lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -20,7 +21,7 @@ export default async function UniversitiesPage({ params }: { params: Promise<{ l
   const t = await getTranslations({ locale, namespace: "universities" });
   const d = await getTranslations({ locale, namespace: "discovery.directory" });
   const items = await getDirectoryItems(locale);
-  const props = { items, dataCheckedAt: FACTS_GENERATED_AT };
+  const props = { packedItems: packItems(items), dataCheckedAt: FACTS_GENERATED_AT };
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -39,7 +40,7 @@ export default async function UniversitiesPage({ params }: { params: Promise<{ l
     <>
       <a
         href="#results"
-        className="sr-only focus-visible:not-sr-only focus-visible:fixed focus-visible:left-4 focus-visible:top-20 focus-visible:z-[60] focus-visible:rounded-sm focus-visible:bg-brand focus-visible:px-4 focus-visible:py-2 focus-visible:text-sm focus-visible:font-semibold focus-visible:text-white"
+        className="sr-only focus-visible:not-sr-only focus-visible:fixed focus-visible:left-4 focus-visible:top-20 focus-visible:z-[60] focus-visible:rounded-sm focus-visible:bg-brand-fill focus-visible:px-4 focus-visible:py-2 focus-visible:text-sm focus-visible:font-semibold focus-visible:text-white"
       >
         {d("skipToResults")}
       </a>

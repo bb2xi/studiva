@@ -131,7 +131,7 @@ export default function DirectoryMap({ layout, items, allItems, selected, onSele
                 >
                   <SlidersHorizontal size={16} aria-hidden />
                   {t("directory.filters")}
-                  {filterCount > 0 && <span className="rounded-full bg-brand px-1.5 text-xs text-white">{filterCount}</span>}
+                  {filterCount > 0 && <span className="rounded-full bg-brand-fill px-1.5 text-xs text-white">{filterCount}</span>}
                 </button>
               </div>
               <MapLegend statuses={statuses} className="mt-2 justify-center" />
@@ -320,7 +320,7 @@ function MapSelectedCard({ uni, onClose, className, ref }: { uni: DirectoryItem;
         <Link
           href={`/universities/${uni.slug}`}
           aria-label={t("map.detailsFor", { name: uni.name })}
-          className="inline-flex min-h-11 items-center rounded-sm bg-forest px-4 text-xs font-semibold text-white hover:bg-forest-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 lg:min-h-9"
+          className="inline-flex min-h-11 items-center rounded-sm bg-forest-fill px-4 text-xs font-semibold text-white hover:bg-forest-fill-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 lg:min-h-9"
         >
           {t("map.details")}
         </Link>

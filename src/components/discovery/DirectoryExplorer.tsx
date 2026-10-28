@@ -23,7 +23,8 @@ import { closestCandidate } from "@/lib/discovery/search";
 import { formatDate } from "@/lib/discovery/facts";
 import { STATE_BY_CODE, cityName } from "@/data/states";
 import { useMediaQuery } from "@/lib/useMediaQuery";
-import type { DirectoryItem, StateCode } from "@/lib/discovery/types";
+import { unpackItems, type PackedItem } from "@/lib/discovery/packedItems";
+import type { StateCode } from "@/lib/discovery/types";
 import { SUBJECT_AREAS } from "@/lib/discovery/types";
 import DiscoveryHeader from "./DiscoveryHeader";
 import DirectoryFilters from "./DirectoryFilters";
@@ -34,7 +35,7 @@ import SearchCombobox from "./SearchCombobox";
 import UniversityCard from "./UniversityCard";
 
 type Props = {
-  items: DirectoryItem[];
+  packedItems: PackedItem[];
   dataCheckedAt: string | null;
 };
 
@@ -61,6 +62,17 @@ export default function DirectoryExplorer(props: Props) {
   return <DirectoryView {...props} state={state} onNavigate={navigate} />;
 }
 
+/** Scrolls the page so an element's top sits just under whichever bar sticks to the top of the screen. */
+function scrollUnderStickyBars(el: HTMLElement, bars: (HTMLElement | null)[], gap = 0) {
+  let stickyBottom = 0;
+  for (const bar of bars) {
+    if (!bar?.offsetParent) continue;
+    const style = getComputedStyle(bar);
+    if (style.position === "sticky") stickyBottom = Math.max(stickyBottom, parseFloat(style.top) + bar.offsetHeight);
+  }
+  window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - stickyBottom - gap });
+}
+
 const chipBase =
   "inline-flex shrink-0 items-center gap-1.5 rounded-full border px-3.5 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50";
 
@@ -68,8 +80,9 @@ const chipBase =
  * The directory for a given state. The page also renders it with the default
  * state as the prerendered fallback, so the first results are in the HTML.
  */
-export function DirectoryView({ items, dataCheckedAt, state, onNavigate }: Props & { state: DirectoryState; onNavigate?: Navigate }) {
+export function DirectoryView({ packedItems, dataCheckedAt, state, onNavigate }: Props & { state: DirectoryState; onNavigate?: Navigate }) {
   const t = useTranslations("discovery");
+  const items = useMemo(() => unpackItems(packedItems), [packedItems]);
   const locale = useLocale();
   const sidebarTitleId = useId();
   const resultsRef = useRef<HTMLDivElement>(null);
@@ -111,12 +124,15 @@ export function DirectoryView({ items, dataCheckedAt, state, onNavigate }: Props
     return () => observer.disconnect();
   }, []);
 
-  // After "show more", move focus to the first newly shown card.
+  // After "show more", the first new card moves to the top of the screen and takes focus.
   useEffect(() => {
     const from = focusFromRef.current;
     if (from === null) return;
     focusFromRef.current = null;
-    listRef.current?.children[from]?.querySelector<HTMLElement>("a[href]")?.focus();
+    const card = listRef.current?.children[from];
+    if (!(card instanceof HTMLElement)) return;
+    scrollUnderStickyBars(card, [mobileBarRef.current, toolbarRef.current], 12);
+    card.querySelector<HTMLElement>("a[href]")?.focus({ preventScroll: true });
   }, [cards.length]);
 
   const stateName = (code: StateCode) => STATE_BY_CODE[code].name[locale === "tr" ? "tr" : "en"];
@@ -152,14 +168,7 @@ export function DirectoryView({ items, dataCheckedAt, state, onNavigate }: Props
     const results = resultsRef.current;
     if (!alignAfterRender.current || !results || state.view !== "map") return;
     alignAfterRender.current = false;
-    if (phone) return;
-    let stickyBottom = 0;
-    for (const bar of [mobileBarRef.current, toolbarRef.current]) {
-      if (!bar?.offsetParent) continue;
-      const style = getComputedStyle(bar);
-      if (style.position === "sticky") stickyBottom = Math.max(stickyBottom, parseFloat(style.top) + bar.offsetHeight);
-    }
-    window.scrollTo({ top: results.getBoundingClientRect().top + window.scrollY - stickyBottom });
+    if (!phone) scrollUnderStickyBars(results, [mobileBarRef.current, toolbarRef.current]);
   }, [state.view, phone]);
 
   function showOnMap(slug: string) {
@@ -236,7 +245,7 @@ export function DirectoryView({ items, dataCheckedAt, state, onNavigate }: Props
                 >
                   <SlidersHorizontal size={16} aria-hidden />
                   {t("directory.filters")}
-                  {filterCount > 0 && <span className="rounded-full bg-brand px-1.5 text-xs text-white">{filterCount}</span>}
+                  {filterCount > 0 && <span className="rounded-full bg-brand-fill px-1.5 text-xs text-white">{filterCount}</span>}
                 </button>
               </div>
               <div className="mt-2 flex items-center gap-2 overflow-x-auto pb-1 [scrollbar-width:none]">
@@ -245,7 +254,7 @@ export function DirectoryView({ items, dataCheckedAt, state, onNavigate }: Props
                   type="button"
                   aria-pressed={state.fee === "none"}
                   onClick={() => update({ fee: state.fee === "none" ? "any" : "none" })}
-                  className={`${chipBase} min-h-11 ${state.fee === "none" ? "border-forest bg-forest text-white" : "border-border-strong bg-surface text-foreground-secondary"}`}
+                  className={`${chipBase} min-h-11 ${state.fee === "none" ? "border-forest-fill bg-forest-fill text-white" : "border-border-strong bg-surface text-foreground-secondary"}`}
                 >
                   {t("directory.quickFree")}
                 </button>
@@ -253,7 +262,7 @@ export function DirectoryView({ items, dataCheckedAt, state, onNavigate }: Props
                   type="button"
                   aria-pressed={state.english}
                   onClick={() => update({ english: !state.english })}
-                  className={`${chipBase} min-h-11 ${state.english ? "border-forest bg-forest text-white" : "border-border-strong bg-surface text-foreground-secondary"}`}
+                  className={`${chipBase} min-h-11 ${state.english ? "border-forest-fill bg-forest-fill text-white" : "border-border-strong bg-surface text-foreground-secondary"}`}
                 >
                   {t("directory.quickEnglish")}
                 </button>
@@ -318,7 +327,7 @@ export function DirectoryView({ items, dataCheckedAt, state, onNavigate }: Props
                         aria-pressed={state.view === view}
                         onClick={() => setView(view)}
                         className={`inline-flex min-h-10 items-center gap-1.5 rounded-[3px] px-3 text-sm font-semibold transition-colors lg:min-h-8 ${
-                          state.view === view ? "bg-forest text-white" : "text-foreground-secondary hover:text-forest"
+                          state.view === view ? "bg-forest-fill text-white" : "text-foreground-secondary hover:text-forest"
                         }`}
                       >
                         <Icon size={15} aria-hidden />
@@ -404,7 +413,7 @@ export function DirectoryView({ items, dataCheckedAt, state, onNavigate }: Props
                           focusFromRef.current = cards.length;
                           update({ page: result.page + 1 }, { keepPage: true });
                         }}
-                        className="min-h-11 rounded-sm border border-forest px-6 text-sm font-semibold text-forest hover:bg-forest hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
+                        className="min-h-11 rounded-sm border border-forest px-6 text-sm font-semibold text-forest hover:bg-forest-fill hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50"
                       >
                         {t("directory.showMore", { count: Math.min(PAGE_SIZE, remaining) })}
                       </button>

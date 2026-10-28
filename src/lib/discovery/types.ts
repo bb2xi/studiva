@@ -163,7 +163,7 @@ export type DirectoryFacts = {
   officialName: string | null;
   ownership: Ownership | null;
   nonEuTuition: Pick<UniversityFacts["nonEuTuition"], "status">;
-  semesterContribution: Pick<UniversityFacts["semesterContribution"], "amountEur" | "term">;
+  semesterContribution: Pick<UniversityFacts["semesterContribution"], "amountEur">;
   uniAssistMember: boolean | null;
   englishTaught: boolean | null;
   subjectAreas: SubjectArea[] | null;
@@ -173,9 +173,9 @@ export type DirectoryFacts = {
 
 export type DirectoryItem = Pick<
   UniversitySummary,
-  "slug" | "name" | "cityLabel" | "cities" | "state" | "type" | "badges" | "level" | "lat" | "lng" | "multiCampus" | "popularPrograms"
+  "slug" | "name" | "cityLabel" | "cities" | "state" | "type" | "badges" | "level" | "lat" | "lng" | "popularPrograms"
 > & {
-  completeness: Pick<Completeness, "filled" | "total">;
+  completeness: Pick<Completeness, "filled">;
   facts: DirectoryFacts | null;
 };
 

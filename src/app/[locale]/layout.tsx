@@ -72,12 +72,15 @@ export default async function LocaleLayout({
   const meta = await getTranslations({ locale, namespace: "meta" });
   const common = await getTranslations({ locale, namespace: "common" });
   const universityNames = Object.fromEntries((await getUniversitySummaries(locale)).map((u) => [u.slug, u.name]));
-  // The long university profiles (universities.items, ~120 KB) are only read
-  // on the server, so they stay out of the messages serialized into every page.
+  // Client components only read these namespaces; everything else (page
+  // metadata, detail and state pages, long profiles) is translated on the
+  // server and stays out of the messages serialized into every page.
   const messages = await getMessages();
+  const serverOnly = new Set(["meta", "detail", "states", "subjectsPage"]);
   const clientMessages = {
-    ...messages,
-    universities: Object.fromEntries(Object.entries(messages.universities ?? {}).filter(([key]) => key !== "items")),
+    nav: messages.nav,
+    contact: { form: messages.contact.form },
+    discovery: Object.fromEntries(Object.entries(messages.discovery).filter(([key]) => !serverOnly.has(key))),
   };
 
   const jsonLd = {

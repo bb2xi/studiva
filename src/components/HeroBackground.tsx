@@ -1,3 +1,5 @@
+import HeroImage from "./HeroImage";
+
 export type HeroPhoto = { url: string; artist: string; license: string };
 
 /**
@@ -14,11 +16,8 @@ export default function HeroBackground({ photo }: { photo?: HeroPhoto }) {
   }
   return (
     <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <HeroImage
         src={photo.url}
-        alt=""
-        loading="eager"
         className="absolute inset-0 h-full w-full scale-110 object-cover opacity-55 [animation:ken-burns_18s_ease-in-out_infinite_alternate] motion-reduce:animate-none"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-[#15130f] via-[#15130f]/75 to-[#15130f]/35" />

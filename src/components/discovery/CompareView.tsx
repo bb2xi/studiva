@@ -201,10 +201,10 @@ export default function CompareView({ items }: { items: UniversitySummary[] }) {
           <p className="font-display text-xl text-foreground">{t("compare.empty")}</p>
           <p className="mt-2 text-sm text-foreground-secondary">{t("compare.emptyBody")}</p>
           <div className="mt-5 flex flex-wrap justify-center gap-3">
-            <Link href="/universities" className="rounded-sm bg-brand px-4 py-2 text-sm font-semibold text-white hover:bg-brand-dark">
+            <Link href="/universities" className="rounded-sm bg-brand-fill px-4 py-2 text-sm font-semibold text-white hover:bg-brand-fill-hover">
               {t("shortlist.browse")}
             </Link>
-            <Link href="/shortlist" className="rounded-sm border border-forest px-4 py-2 text-sm font-semibold text-forest hover:bg-forest hover:text-white">
+            <Link href="/shortlist" className="rounded-sm border border-forest px-4 py-2 text-sm font-semibold text-forest hover:bg-forest-fill hover:text-white">
               {t("nav.shortlist")}
             </Link>
           </div>

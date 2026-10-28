@@ -221,7 +221,7 @@ export default function FinderWizard({ items }: { items: UniversitySummary[] }) 
           <button
             type="button"
             onClick={() => go(answers, isLast ? "results" : stepIndex + 1)}
-            className="rounded-sm bg-brand px-5 py-2 text-sm font-semibold text-white hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
+            className="rounded-sm bg-brand-fill px-5 py-2 text-sm font-semibold text-white hover:bg-brand-fill-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
           >
             {isLast ? t("finder.seeResults") : t("finder.next")}
           </button>

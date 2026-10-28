@@ -194,7 +194,7 @@ export default async function UniversityDetailPage({ params }: { params: Promise
                     href={facts.officialUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 rounded-sm bg-brand px-4 py-2 text-sm font-semibold text-white hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
+                    className="inline-flex items-center gap-1.5 rounded-sm bg-brand-fill px-4 py-2 text-sm font-semibold text-white hover:bg-brand-fill-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
                   >
                     {d("common.officialWebsite")}
                     <ExternalLink size={14} />

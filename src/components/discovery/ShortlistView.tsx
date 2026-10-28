@@ -35,10 +35,10 @@ export default function ShortlistView({ items }: { items: UniversitySummary[] })
         <p className="mt-4 font-display text-xl text-foreground">{t("empty")}</p>
         <p className="mt-2 text-sm text-foreground-secondary">{t("emptyBody")}</p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <Link href="/universities" className="rounded-sm bg-brand px-4 py-2 text-sm font-semibold text-white hover:bg-brand-dark">
+          <Link href="/universities" className="rounded-sm bg-brand-fill px-4 py-2 text-sm font-semibold text-white hover:bg-brand-fill-hover">
             {t("browse")}
           </Link>
-          <Link href="/universities/finder" className="rounded-sm border border-forest px-4 py-2 text-sm font-semibold text-forest hover:bg-forest hover:text-white">
+          <Link href="/universities/finder" className="rounded-sm border border-forest px-4 py-2 text-sm font-semibold text-forest hover:bg-forest-fill hover:text-white">
             {t("useFinder")}
           </Link>
         </div>
@@ -62,7 +62,7 @@ export default function ShortlistView({ items }: { items: UniversitySummary[] })
               setCompareList(selected);
               router.push(`/compare?ids=${selected.join(",")}`);
             }}
-            className="inline-flex items-center gap-1.5 rounded-sm bg-brand px-4 py-2 text-sm font-semibold text-white hover:bg-brand-dark disabled:cursor-not-allowed disabled:opacity-40"
+            className="inline-flex items-center gap-1.5 rounded-sm bg-brand-fill px-4 py-2 text-sm font-semibold text-white hover:bg-brand-fill-hover disabled:cursor-not-allowed disabled:opacity-40"
           >
             <Scale size={16} />
             {t("compareSaved")} ({selected.length})

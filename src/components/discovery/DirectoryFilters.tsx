@@ -40,13 +40,13 @@ export default function DirectoryFilters({ state, facets, onChange, idPrefix, to
   return (
     <div>
       <Section id={`${idPrefix}-fee`} title={t("directory.fee")} active={state.fee !== "any"} onClear={() => onChange({ fee: "any" })}>
-        <FilterOption touch={touch}type="radio" name={`${idPrefix}-fee`} checked={state.fee === "any"} label={t("directory.feeAny")} onSelect={() => onChange({ fee: "any" })} />
-        <FilterOption touch={touch}type="radio" name={`${idPrefix}-fee`} checked={state.fee === "none"} count={facets.fee.none} label={t("directory.feeNone")} onSelect={() => onChange({ fee: "none" })} />
-        <FilterOption touch={touch}type="radio" name={`${idPrefix}-fee`} checked={state.fee === "charged"} count={facets.fee.charged} label={t("directory.feeCharged")} onSelect={() => onChange({ fee: "charged" })} />
+        <FilterOption touch={touch} type="radio" name={`${idPrefix}-fee`} checked={state.fee === "any"} label={t("directory.feeAny")} onSelect={() => onChange({ fee: "any" })} />
+        <FilterOption touch={touch} type="radio" name={`${idPrefix}-fee`} checked={state.fee === "none"} count={facets.fee.none} label={t("directory.feeNone")} onSelect={() => onChange({ fee: "none" })} />
+        <FilterOption touch={touch} type="radio" name={`${idPrefix}-fee`} checked={state.fee === "charged"} count={facets.fee.charged} label={t("directory.feeCharged")} onSelect={() => onChange({ fee: "charged" })} />
       </Section>
 
       <Section id={`${idPrefix}-language`} title={t("directory.language")} active={state.english} onClear={() => onChange({ english: false })}>
-        <FilterOption touch={touch}type="checkbox" checked={state.english} count={facets.english} label={t("directory.english")} onSelect={() => onChange({ english: !state.english })} />
+        <FilterOption touch={touch} type="checkbox" checked={state.english} count={facets.english} label={t("directory.english")} onSelect={() => onChange({ english: !state.english })} />
         <p className="mt-1 px-1.5 text-[11px] leading-relaxed text-foreground-muted">{t("directory.englishNote")}</p>
       </Section>
 
@@ -101,7 +101,7 @@ export default function DirectoryFilters({ state, facets, onChange, idPrefix, to
       </Section>
 
       <Section id={`${idPrefix}-route`} title={t("directory.route")} active={state.route !== "any"} onClear={() => onChange({ route: "any" })}>
-        <FilterOption touch={touch}type="radio" name={`${idPrefix}-route`} checked={state.route === "any"} label={t("directory.routeAny")} onSelect={() => onChange({ route: "any" })} />
+        <FilterOption touch={touch} type="radio" name={`${idPrefix}-route`} checked={state.route === "any"} label={t("directory.routeAny")} onSelect={() => onChange({ route: "any" })} />
         <FilterOption
           touch={touch}
           type="radio"
@@ -158,7 +158,7 @@ export default function DirectoryFilters({ state, facets, onChange, idPrefix, to
         onClear={() => onChange({ ownership: "any" })}
         defaultOpen={false}
       >
-        <FilterOption touch={touch}type="radio" name={`${idPrefix}-own`} checked={state.ownership === "any"} label={t("directory.ownershipAny")} onSelect={() => onChange({ ownership: "any" })} />
+        <FilterOption touch={touch} type="radio" name={`${idPrefix}-own`} checked={state.ownership === "any"} label={t("directory.ownershipAny")} onSelect={() => onChange({ ownership: "any" })} />
         <FilterOption
           touch={touch}
           type="radio"

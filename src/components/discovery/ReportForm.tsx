@@ -65,7 +65,7 @@ export default function ReportForm({ slug }: { slug: string }) {
           <button
             type="submit"
             disabled={status === "sending"}
-            className="rounded-sm bg-forest px-4 py-2 text-sm font-semibold text-white hover:bg-forest-dark disabled:opacity-60"
+            className="rounded-sm bg-forest-fill px-4 py-2 text-sm font-semibold text-white hover:bg-forest-fill-hover disabled:opacity-60"
           >
             {status === "sending" ? t("sending") : t("submit")}
           </button>

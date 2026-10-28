@@ -15,11 +15,11 @@ function variantClass(variant: ButtonVariant, invert: boolean) {
   if (variant === "secondary") {
     return invert
       ? "rounded-sm border border-white/40 px-6 py-3 text-white hover:bg-white/10 active:scale-[0.97] focus-visible:ring-white/60"
-      : "rounded-sm border border-forest px-6 py-3 text-forest hover:bg-forest hover:text-white active:scale-[0.97] focus-visible:ring-forest/50";
+      : "rounded-sm border border-forest px-6 py-3 text-forest hover:bg-forest-fill hover:text-white active:scale-[0.97] focus-visible:ring-forest/50";
   }
   return invert
     ? "rounded-sm bg-white px-6 py-3 text-brand shadow-soft hover:shadow-elevated active:scale-[0.97] focus-visible:ring-white/60"
-    : "rounded-sm bg-brand px-6 py-3 text-white shadow-soft hover:bg-brand-dark hover:shadow-glow active:scale-[0.97] focus-visible:ring-brand/50";
+    : "rounded-sm bg-brand-fill px-6 py-3 text-white shadow-soft hover:bg-brand-fill-hover hover:shadow-glow active:scale-[0.97] focus-visible:ring-brand/50";
 }
 
 type SharedProps = {

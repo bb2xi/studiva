@@ -21,7 +21,7 @@ function ShortlistLink({ label, onClick }: { label: string; onClick?: () => void
     >
       <Bookmark size={20} />
       {count > 0 && (
-        <span className="absolute -right-0.5 -top-0.5 flex h-5 min-w-5 items-center justify-center rounded-full bg-forest px-1 text-[11px] font-semibold text-white">
+        <span className="absolute -right-0.5 -top-0.5 flex h-5 min-w-5 items-center justify-center rounded-full bg-forest-fill px-1 text-[11px] font-semibold text-white">
           {count}
         </span>
       )}
@@ -83,7 +83,7 @@ export default function Navbar() {
                   active ? "text-forest" : "text-foreground-secondary hover:text-forest"
                 }`}
               >
-                <Label as="span" className="opacity-100">
+                <Label as="span" className="opacity-100!">
                   {link.label}
                 </Label>
                 <span

@@ -40,7 +40,7 @@ export default function DiscoveryNav() {
                   }`}
                 >
                   {t(link.key)}
-                  {count > 0 && <span className="rounded-full bg-forest px-1.5 text-[11px] font-semibold text-white">{count}</span>}
+                  {count > 0 && <span className="rounded-full bg-forest-fill px-1.5 text-[11px] font-semibold text-white">{count}</span>}
                 </Link>
               </li>
             );

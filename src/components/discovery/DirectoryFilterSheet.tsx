@@ -69,7 +69,8 @@ export default function DirectoryFilterSheet({
           <X size={20} />
         </button>
       </div>
-      <div className="flex-1 overflow-y-auto px-4">{children}</div>
+      {/* Only built while open: closed, it would double the filter markup in every page load. */}
+      <div className="flex-1 overflow-y-auto px-4">{open && children}</div>
       <div className="flex gap-3 border-t border-border bg-surface px-4 py-3">
         <button
           type="button"
@@ -78,7 +79,7 @@ export default function DirectoryFilterSheet({
         >
           {t("clearAll")}
         </button>
-        <button type="button" onClick={onClose} className="min-h-11 flex-[2] rounded-sm bg-brand px-4 text-sm font-semibold text-white hover:bg-brand-dark">
+        <button type="button" onClick={onClose} className="min-h-11 flex-[2] rounded-sm bg-brand-fill px-4 text-sm font-semibold text-white hover:bg-brand-fill-hover">
           {t("showResults", { count: resultCount })}
         </button>
       </div>

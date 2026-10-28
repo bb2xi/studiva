@@ -41,7 +41,7 @@ export default function CompareTray({ names }: { names: Record<string, string> }
           </button>
           <Link
             href={`/compare?ids=${selected.join(",")}`}
-            className="rounded-sm bg-brand px-4 py-2 text-sm font-semibold text-white hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
+            className="rounded-sm bg-brand-fill px-4 py-2 text-sm font-semibold text-white hover:bg-brand-fill-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
           >
             {t("compare")}
           </Link>

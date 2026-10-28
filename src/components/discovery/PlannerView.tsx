@@ -61,7 +61,7 @@ export default function PlannerView({ items }: { items: UniversitySummary[] }) {
             <button
               type="button"
               onClick={() => shortlistToAdd.forEach((s) => addToPlanner(s))}
-              className="inline-flex items-center gap-1.5 rounded-sm border border-forest px-4 py-2 text-sm font-semibold text-forest hover:bg-forest hover:text-white"
+              className="inline-flex items-center gap-1.5 rounded-sm border border-forest px-4 py-2 text-sm font-semibold text-forest hover:bg-forest-fill hover:text-white"
             >
               <Plus size={15} /> {t("fromShortlist")} ({shortlistToAdd.length})
             </button>

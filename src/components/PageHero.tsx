@@ -1,4 +1,5 @@
 import Container from "./Container";
+import HeroImage from "./HeroImage";
 import { Heading, Dek } from "./Typography";
 
 export type PageHeroPhoto = { url: string; artist: string; license: string };
@@ -16,13 +17,7 @@ export default function PageHero({
     <section className="relative overflow-hidden border-b border-black/20 bg-[#15130f] py-24 text-white sm:py-28">
       {photo && (
         <>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={photo.url}
-            alt=""
-            loading="eager"
-            className="absolute inset-0 h-full w-full object-cover opacity-45"
-          />
+          <HeroImage src={photo.url} className="absolute inset-0 h-full w-full object-cover opacity-45" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#15130f] via-[#15130f]/70 to-[#15130f]/30" />
           <div className="absolute inset-0 bg-forest/25 mix-blend-multiply" />
         </>

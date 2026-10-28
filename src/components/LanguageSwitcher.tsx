@@ -23,7 +23,7 @@ export default function LanguageSwitcher() {
           onClick={() => router.replace(`${pathname}${window.location.search}`, { locale: loc })}
           className={`rounded-full px-2.5 py-1 font-medium transition-colors cursor-pointer ${
             locale === loc
-              ? "bg-brand text-white"
+              ? "bg-brand-fill text-white"
               : "text-slate-500 hover:text-brand"
           }`}
           aria-current={locale === loc}

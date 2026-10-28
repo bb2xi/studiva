@@ -10,7 +10,8 @@
     "data:import": "node scripts/import-university-facts.mjs",
     "data:check": "node scripts/check-university-links.mjs",
     "data:daad": "node scripts/fetch-daad-programmes.mjs",
-    "data:hsk": "node scripts/fetch-hsk-programmes.mjs"
+    "data:hsk": "node scripts/fetch-hsk-programmes.mjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
@@ -22,6 +23,8 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
     "@tailwindcss/postcss": "^4",
     "@types/leaflet": "^1.9.22",
     "@types/leaflet.markercluster": "^1.5.6",

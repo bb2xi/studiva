@@ -9,11 +9,11 @@ const DARK_VARIANTS: CtaBandVariant[] = ["home", "universitiesList", "university
 const FOREST_VARIANTS: CtaBandVariant[] = ["services", "programs"];
 
 const WRAP_CLASS: Record<CtaBandVariant, string> = {
-  home: "bg-grain bg-gradient-to-br from-brand to-brand-dark",
-  universitiesList: "bg-grain bg-gradient-to-br from-brand to-brand-dark",
-  universityDetail: "bg-grain bg-gradient-to-br from-brand to-brand-dark",
-  services: "bg-grain bg-forest",
-  programs: "bg-grain bg-forest",
+  home: "bg-grain bg-gradient-to-br from-brand-fill to-brand-fill-hover",
+  universitiesList: "bg-grain bg-gradient-to-br from-brand-fill to-brand-fill-hover",
+  universityDetail: "bg-grain bg-gradient-to-br from-brand-fill to-brand-fill-hover",
+  services: "bg-grain bg-forest-fill",
+  programs: "bg-grain bg-forest-fill",
   blog: "border-t-2 border-accent bg-background-secondary",
 };
 

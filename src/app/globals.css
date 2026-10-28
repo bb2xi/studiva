@@ -54,6 +54,15 @@
   --clay: #a04d2c;
   --clay-dark: #8c3c21;
   --clay-light: #f3e2d9;
+
+  /* Fills that carry white text (buttons, selected toggles, badges). In the
+     light theme they are the brand and forest colours themselves; the dark
+     theme lightens --brand/--forest for text on dark surfaces, so its fills
+     need deeper shades to keep white text at 4.5:1. */
+  --brand-fill: var(--brand);
+  --brand-fill-hover: var(--brand-dark);
+  --forest-fill: var(--forest);
+  --forest-fill-hover: var(--forest-dark);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -73,7 +82,7 @@
     --brand-dark: #a3c9ff;
     --brand-light: #132544;
 
-    --forest: #4a8868;
+    --forest: #5e9d7c;
     --forest-dark: #8fbba3;
     --forest-light: #1c2a20;
 
@@ -84,6 +93,11 @@
     --clay: #d97f52;
     --clay-dark: #f0a98c;
     --clay-light: #2e1c14;
+
+    --brand-fill: #2a66d6;
+    --brand-fill-hover: #255fcf;
+    --forest-fill: #3a7556;
+    --forest-fill-hover: #336b4d;
   }
 }
 
@@ -103,6 +117,10 @@
   --color-brand-dark: var(--brand-dark);
   --color-brand-light: var(--brand-light);
 
+  --color-brand-fill: var(--brand-fill);
+  --color-brand-fill-hover: var(--brand-fill-hover);
+  --color-forest-fill: var(--forest-fill);
+  --color-forest-fill-hover: var(--forest-fill-hover);
   --color-forest: var(--forest);
   --color-forest-dark: var(--forest-dark);
   --color-forest-light: var(--forest-light);

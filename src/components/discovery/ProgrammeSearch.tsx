@@ -104,7 +104,7 @@ export default function ProgrammeSearch({ institutions }: { institutions: Instit
       <div className="mt-5 flex flex-wrap items-center gap-3">
         <button
           type="submit"
-          className="inline-flex items-center gap-2 rounded-sm bg-brand px-4 py-2 text-sm font-semibold text-white hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
+          className="inline-flex items-center gap-2 rounded-sm bg-brand-fill px-4 py-2 text-sm font-semibold text-white hover:bg-brand-fill-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/50 focus-visible:ring-offset-2"
         >
           <Search size={15} aria-hidden />
           {t("submit")}

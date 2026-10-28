@@ -84,7 +84,7 @@ export default async function SubjectPage({ params }: { params: Promise<{ locale
           </ol>
         </nav>
         <div className="mt-5 flex flex-wrap gap-2">
-          <a href={hskSearchUrl({ fields })} target="_blank" rel="noopener noreferrer" className={`${buttonClass} bg-brand text-white hover:bg-brand-dark`}>
+          <a href={hskSearchUrl({ fields })} target="_blank" rel="noopener noreferrer" className={`${buttonClass} bg-brand-fill text-white hover:bg-brand-fill-hover`}>
             {t("allOnCompass", { total })} <ExternalLink size={14} aria-hidden />
           </a>
           <Link href={`/universities?subject=${area}`} className={`${buttonClass} border border-brand text-brand hover:bg-brand-light`}>
